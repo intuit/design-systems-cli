@@ -1,0 +1,6 @@
+{
+  "extends": "./packages/eslint-config/index.js",
+  "rules": {
+    "complexity": 0
+  }
+}

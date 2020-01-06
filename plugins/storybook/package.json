@@ -1,0 +1,59 @@
+{
+  "name": "@design-systems/storybook",
+  "version": "0.74.0",
+  "description": "The storybook command for @design-systems-cli",
+  "main": "dist/index.js",
+  "author": "Adam Dierkens <adam@dierkens.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc --build"
+  },
+  "files": [
+    "dist",
+    ".storybook"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/intuit/design-systems-cli.git"
+  },
+  "dependencies": {
+    "@babel/core": "7.7.2",
+    "@design-systems/build": "link:../build",
+    "@design-systems/cli-utils": "link:../../packages/cli-utils",
+    "@design-systems/plugin": "link:../../packages/plugin",
+    "@proof-ui/storybook": "0.0.9",
+    "@storybook/addon-a11y": "5.2.6",
+    "@storybook/addon-actions": "5.2.6",
+    "@storybook/addon-backgrounds": "5.2.6",
+    "@storybook/addon-centered": "5.2.6",
+    "@storybook/addon-knobs": "5.2.6",
+    "@storybook/addon-notes": "5.2.6",
+    "@storybook/addon-viewport": "5.2.6",
+    "@storybook/addons": "5.2.6",
+    "@storybook/components": "5.2.6",
+    "@storybook/react": "5.2.6",
+    "@storybook/theming": "5.2.6",
+    "babel-loader": "8.0.6",
+    "core-js": "3.4.2",
+    "dedent": "0.7.0",
+    "github-url-to-object": "4.0.4",
+    "react-docgen-typescript-loader": "3.6.0",
+    "source-map-loader": "0.2.4",
+    "story2sketch": "1.7.0",
+    "storybook-addon-jsx": "7.1.13",
+    "storybook-addon-react-docgen": "1.2.28",
+    "storybook-dark-mode": "0.1.9",
+    "tslib": "1.10.0",
+    "webpack": "4.41.2",
+    "webpack-filter-warnings-plugin": "1.2.1"
+  },
+  "peerDependencies": {
+    "react": ">= 16",
+    "react-dom": ">= 16"
+  },
+  "devDependencies": {
+    "@types/dedent": "0.7.0",
+    "react": "16.12.0",
+    "react-dom": "16.12.0"
+  }
+}

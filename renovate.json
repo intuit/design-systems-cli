@@ -1,0 +1,46 @@
+{
+  "extends": ["schedule:earlyMondays"],
+  "automerge": false,
+  "patch": {
+    "labels": ["dependency-update"]
+  },
+  "minor": {
+    "labels": ["dependency-update"]
+  },
+  "major": {
+    "labels": ["dependency-update"]
+  },
+  "digest": {
+    "labels": ["dependency-update"]
+  },
+  "packageRules": [
+    {
+      "packagePatterns": ["@proof-ui"],
+      "groupName": "proof"
+    },
+    {
+      "packagePatterns": ["@reach"],
+      "groupName": "reach"
+    },
+    {
+      "packagePatterns": ["auto", "@auto-it"],
+      "groupName": "auto"
+    },
+    {
+      "packagePatterns": ["@ids", "@ids-open", "@ids-beta"],
+      "groupName": "ids"
+    },
+    {
+      "packagePatterns": ["@fuego"],
+      "groupName": "fuego"
+    },
+    {
+      "packageNames": ["react"],
+      "allowedVersions": "16.8.6"
+    },
+    {
+      "packageNames": ["react-dom"],
+      "allowedVersions": "16.8.6"
+    }
+  ]
+}

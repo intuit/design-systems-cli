@@ -1,0 +1,35 @@
+{
+  "name": "@design-systems/playroom",
+  "version": "0.74.0",
+  "description": "The playroom command for @design-systems-cli",
+  "main": "dist/index.js",
+  "author": "Adam Dierkens <adam@dierkens.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc --build"
+  },
+  "files": [
+    "dist"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/intuit/design-systems-cli.git"
+  },
+  "dependencies": {
+    "@babel/core": "7.7.2",
+    "@babel/register": "7.7.0",
+    "@design-systems/build": "link:../../plugins/build",
+    "@design-systems/cli-utils": "link:../../packages/cli-utils",
+    "@design-systems/plugin": "link:../../packages/plugin",
+    "babel-plugin-import-redirect": "1.1.1",
+    "css-loader": "3.2.0",
+    "fast-glob": "3.1.0",
+    "file-loader": "4.3.0",
+    "fs-extra": "8.1.0",
+    "playroom": "hipstersmoothie/playroom#snippets",
+    "react-element-to-jsx-string": "14.1.0",
+    "style-loader": "1.0.0",
+    "tslib": "1.10.0",
+    "webpack": "4.41.2"
+  }
+}

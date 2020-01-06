@@ -1,0 +1,27 @@
+{
+  "name": "@design-systems/plugin",
+  "version": "0.74.0",
+  "description": "Plugin structure for the @design-systems CLI",
+  "main": "dist/index.js",
+  "author": "Adam Dierkens <adam@dierkens.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc --build"
+  },
+  "files": [
+    "dist"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/intuit/design-systems-cli.git"
+  },
+  "dependencies": {
+    "command-line-application": "0.9.5",
+    "tslib": "1.10.0",
+    "utility-types": "3.10.0"
+  },
+  "keywords": [
+    "ids",
+    "cli"
+  ]
+}

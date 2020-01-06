@@ -1,0 +1,12 @@
+{
+  "extends": "../../tsconfig.build.json",
+  "include": ["src/**/*", "src/templates.json", "../../typings/**/*"],
+
+  "compilerOptions": {
+    "outDir": "./dist",
+    "rootDir": "./src",
+    "composite": true
+  },
+
+  "references": [{ "path": "../cli-utils" }, { "path": "../plugin" }]
+}

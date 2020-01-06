@@ -1,0 +1,41 @@
+{
+  "name": "@design-systems/load-config",
+  "version": "0.74.0",
+  "main": "./dist/index.js",
+  "types": "./dist",
+  "repository": "https://github.com/intuit/design-systems-cli.git",
+  "author": "Andrew Lisowski lisowski54@gmail.com",
+  "contributors": [
+    "Andrew Lisowski lisowski54@gmail.com"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc --build",
+    "start": "yarn build --watch",
+    "test": "../cli/bin/ds.js test"
+  },
+  "files": [
+    "dist",
+    "!*.test.*",
+    "!__snapshots__",
+    "!__tests__"
+  ],
+  "dependencies": {
+    "@design-systems/core": "link:../core",
+    "@design-systems/plugin": "link:../plugin",
+    "change-case": "3.1.0",
+    "cosmiconfig": "6.0.0",
+    "dedent": "0.7.0",
+    "deepmerge": "4.2.2",
+    "dlv": "1.1.3",
+    "flat": "5.0.0",
+    "resolve": "1.12.0",
+    "tslib": "1.10.0"
+  },
+  "devDependencies": {
+    "@types/cosmiconfig": "5.0.3",
+    "@types/dlv": "1.1.1",
+    "@types/flat": "0.0.28",
+    "@types/resolve": "0.0.8"
+  }
+}

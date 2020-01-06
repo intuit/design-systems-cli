@@ -1,0 +1,38 @@
+{
+  "name": "@design-systems/lint",
+  "version": "0.74.0",
+  "description": "The lint command for @design-systems-cli",
+  "main": "dist/index.js",
+  "author": "Adam Dierkens <adam@dierkens.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc --build"
+  },
+  "files": [
+    "dist",
+    ".eslintignore"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/intuit/design-systems-cli.git"
+  },
+  "dependencies": {
+    "@design-systems/cli-utils": "link:../../packages/cli-utils",
+    "@design-systems/eslint-config": "link:../../packages/eslint-config",
+    "@design-systems/plugin": "link:../../packages/plugin",
+    "@design-systems/stylelint-config": "link:../../packages/stylelint-config",
+    "eslint": "6.7.1",
+    "eslint-formatter-github": "0.4.2",
+    "eslint-formatter-pretty": "3.0.1",
+    "fast-glob": "3.1.0",
+    "get-monorepo-packages": "1.2.0",
+    "stylelint": "12.0.0",
+    "stylelint-formatter-github": "0.3.2",
+    "stylelint-formatter-pretty": "1.1.3",
+    "tslib": "1.10.0"
+  },
+  "devDependencies": {
+    "@types/eslint": "6.1.3",
+    "@types/stylelint": "9.10.1"
+  }
+}

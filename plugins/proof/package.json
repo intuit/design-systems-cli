@@ -1,0 +1,40 @@
+{
+  "name": "@design-systems/proof",
+  "version": "0.74.0",
+  "description": "The proof command for @design-systems-cli",
+  "main": "dist/index.js",
+  "author": "Adam Dierkens <adam@dierkens.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc --build"
+  },
+  "files": [
+    "dist",
+    "proof.config.base.js"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/intuit/design-systems-cli.git"
+  },
+  "dependencies": {
+    "@babel/core": "7.7.2",
+    "@babel/plugin-transform-runtime": "7.6.2",
+    "@babel/preset-typescript": "7.7.2",
+    "@design-systems/cli-utils": "link:../../packages/cli-utils",
+    "@design-systems/plugin": "link:../../packages/plugin",
+    "@proof-ui/a11y-plugin": "0.0.9",
+    "@proof-ui/add-all-plugin": "0.0.9",
+    "@proof-ui/applitools-plugin": "0.0.9",
+    "@proof-ui/babel-plugin": "0.0.9",
+    "@proof-ui/cli": "0.0.9",
+    "@proof-ui/config": "0.0.9",
+    "@proof-ui/junit-plugin": "0.0.9",
+    "@proof-ui/skip-tests-plugin": "0.0.9",
+    "babel-preset-power-assert": "3.0.0",
+    "tslib": "1.10.0"
+  },
+  "devDependencies": {
+    "@types/signale": "1.2.1",
+    "@types/webdriverio": "4.13.3"
+  }
+}

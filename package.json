@@ -1,0 +1,82 @@
+{
+  "name": "@design-systems/monorepo",
+  "private": true,
+  "license": "MIT",
+  "author": {
+    "email": "lisowski54@gmail.com",
+    "name": "Andrew Lisowski"
+  },
+  "scripts": {
+    "start": "tsc --build tsconfig.dev.json  --watch",
+    "clean": "yarn clean:build && yarn clean:modules",
+    "clean:modules": "lerna clean --yes && rimraf node_modules",
+    "clean:build": "rimraf packages/*/dist && rimraf packages/*/tsconfig.tsbuildinfo && rimraf plugins/*/tsconfig.tsbuildinfo",
+    "build": "lerna run build --stream",
+    "lint": "./packages/cli/bin/ds.js lint",
+    "test": "./packages/cli/bin/ds.js test",
+    "create:plugin": "./scripts/create-plugin.js",
+    "create:package": "./packages/cli/bin/ds.js create package"
+  },
+  "workspaces": [
+    "packages/*",
+    "plugins/*"
+  ],
+  "prettier": {
+    "singleQuote": true
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/intuit/design-systems-cli.git"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/",
+    "access": "public"
+  },
+  "devDependencies": {
+    "@auto-it/all-contributors": "8.8.0",
+    "@auto-it/first-time-contributor": "8.8.0",
+    "@auto-it/released": "8.8.0",
+    "auto": "7.16.3",
+    "change-case": "3.1.0",
+    "copy-template-dir": "1.4.0",
+    "lerna": "3.19.0",
+    "memfs": "2.16.1",
+    "prettier": "1.19.1",
+    "rimraf": "3.0.0",
+    "signale": "1.4.0",
+    "storybook-addon-sketch": "0.1.0",
+    "typescript": "3.7.2"
+  },
+  "auto": {
+    "plugins": [
+      "npm",
+      "released",
+      "first-time-contributor",
+      [
+        "all-contributors",
+        {
+          "types": {
+            "plugin": "**/plugin/**/*",
+            "code": [
+              "**/src/**/*",
+              "**/package.json",
+              "**/tsconfig.json"
+            ]
+          }
+        }
+      ]
+    ],
+    "labels": [
+      {
+        "name": "dependencies",
+        "changelogTitle": "🔩 Dependency Updates",
+        "releaseType": "none"
+      },
+      {
+        "name": "blog-post",
+        "changelogTitle": "📚 Blog Post",
+        "releaseType": "none"
+      }
+    ]
+  }
+}

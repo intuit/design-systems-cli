@@ -1,0 +1,46 @@
+{
+  "name": "@design-systems/core",
+  "version": "0.74.0",
+  "description": "The core structure of the @design-systems CLI",
+  "author": "Adam Dierkens <adam@dierkens.com>",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc --build",
+    "start": "yarn build --watch",
+    "test": "../cli/bin/ds.js test"
+  },
+  "files": [
+    "bin",
+    "dist"
+  ],
+  "bin": {
+    "ds": "./bin/ds.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/intuit/design-systems-cli.git"
+  },
+  "dependencies": {
+    "@design-systems/build": "link:../../plugins/build",
+    "@design-systems/bundle": "link:../../plugins/bundle",
+    "@design-systems/clean": "link:../../plugins/clean",
+    "@design-systems/cli-utils": "link:../cli-utils",
+    "@design-systems/create-command": "link:../../plugins/create-command",
+    "@design-systems/dev": "link:../../plugins/dev",
+    "@design-systems/lint": "link:../../plugins/lint",
+    "@design-systems/playroom": "link:../../plugins/playroom",
+    "@design-systems/plugin": "link:../plugin",
+    "@design-systems/proof": "link:../../plugins/proof",
+    "@design-systems/size": "link:../../plugins/size",
+    "@design-systems/storybook": "link:../../plugins/storybook",
+    "@design-systems/test": "link:../../plugins/test",
+    "@design-systems/update": "link:../../plugins/update",
+    "import-cwd": "3.0.0",
+    "tslib": "1.10.0"
+  },
+  "keywords": [
+    "ids",
+    "cli"
+  ]
+}

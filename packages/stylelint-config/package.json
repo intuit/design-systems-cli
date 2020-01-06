@@ -1,0 +1,31 @@
+{
+  "name": "@design-systems/stylelint-config",
+  "version": "0.74.0",
+  "description": "The stylelint-config of the @design-systems CLI",
+  "main": "index.js",
+  "author": "Adam Dierkens <adam@dierkens.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/intuit/design-systems-cli.git"
+  },
+  "keywords": [
+    "stylelint",
+    "stylelint-config"
+  ],
+  "dependencies": {
+    "stylelint-a11y": "1.2.2",
+    "stylelint-config-css-modules": "2.1.0",
+    "stylelint-config-prettier": "6.0.0",
+    "stylelint-config-recommended": "3.0.0",
+    "stylelint-config-styled-components": "0.1.1",
+    "stylelint-declaration-block-no-ignored-properties": "2.2.0",
+    "stylelint-order": "3.1.1",
+    "stylelint-processor-styled-components": "1.9.0",
+    "stylelint-selector-tag-no-without-class": "2.0.2",
+    "tslib": "1.10.0"
+  },
+  "peerDependencies": {
+    "stylelint": ">7.x"
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "extends": "../../tsconfig.build.json",
+  "include": ["src/**/*.ts", "../../typings/**/*"],
+  "compilerOptions": {
+    "outDir": "./dist",
+    "rootDir": "./src",
+    "composite": true
+  },
+  "references": [
+    {
+      "path": "../plugin"
+    },
+    {
+      "path": "../cli-utils"
+    },
+    {
+      "path": "../../plugins/build"
+    },
+    {
+      "path": "../../plugins/bundle"
+    },
+    {
+      "path": "../../plugins/clean"
+    },
+    {
+      "path": "../../plugins/create-command"
+    },
+    {
+      "path": "../../plugins/dev"
+    },
+    {
+      "path": "../../plugins/lint"
+    },
+    {
+      "path": "../../plugins/playroom"
+    },
+    {
+      "path": "../../plugins/size"
+    },
+    {
+      "path": "../../plugins/storybook"
+    },
+    {
+      "path": "../../plugins/test"
+    },
+    {
+      "path": "../../plugins/update"
+    },
+    {
+      "path": "../../plugins/proof"
+    },
+    {
+      "path": "../../plugins/bundle"
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "name": "@design-systems/create-command",
+  "version": "0.74.0",
+  "description": "The create command for @design-systems-cli",
+  "main": "dist/index.js",
+  "author": "Adam Dierkens <adam@dierkens.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc --build"
+  },
+  "files": [
+    "dist",
+    "templates"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/intuit/design-systems-cli.git"
+  },
+  "dependencies": {
+    "@design-systems/cli-utils": "link:../../packages/cli-utils",
+    "@design-systems/create": "link:../../packages/create",
+    "@design-systems/plugin": "link:../../packages/plugin",
+    "change-case": "3.1.0",
+    "cli-spinners": "2.2.0",
+    "colorette": "1.1.0",
+    "copy-template-dir": "1.4.0",
+    "dedent": "0.7.0",
+    "degit": "https://github.com/hipstersmoothie/degit.git#private-release",
+    "fs-extra": "8.1.0",
+    "inquirer": "7.0.0",
+    "progress-estimator": "0.2.2",
+    "terminal-link": "2.0.0",
+    "tslib": "1.10.0"
+  }
+}

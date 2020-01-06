@@ -1,0 +1,29 @@
+{
+  "name": "@design-systems/dev",
+  "version": "0.74.0",
+  "description": "The dev command for @design-systems-cli",
+  "main": "dist/index.js",
+  "author": "Adam Dierkens <adam@dierkens.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc --build"
+  },
+  "files": [
+    "dist"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/intuit/design-systems-cli.git"
+  },
+  "dependencies": {
+    "@design-systems/cli-utils": "link:../../packages/cli-utils",
+    "@design-systems/plugin": "link:../../packages/plugin",
+    "chokidar": "3.3.0",
+    "find-package-json": "1.2.0",
+    "resolve-cwd": "3.0.0",
+    "tslib": "1.10.0"
+  },
+  "devDependencies": {
+    "@types/find-package-json": "1.1.0"
+  }
+}

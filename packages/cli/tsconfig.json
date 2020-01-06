@@ -1,0 +1,20 @@
+{
+  "extends": "../../tsconfig.build.json",
+  "include": ["src/**/*.ts", "../../typings/**/*"],
+  "compilerOptions": {
+    "outDir": "./dist",
+    "rootDir": "./src",
+    "composite": true
+  },
+  "references": [
+    {
+      "path": "../load-config"
+    },
+    {
+      "path": "../cli-utils"
+    },
+    {
+      "path": "../core"
+    }
+  ]
+}

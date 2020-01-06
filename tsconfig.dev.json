@@ -1,0 +1,13 @@
+{
+  "files": [],
+  "include": [],
+
+  "references": [
+    {
+      "path": "packages/cli"
+    },
+    {
+      "path": "packages/babel-plugin-include-styles"
+    }
+  ]
+}

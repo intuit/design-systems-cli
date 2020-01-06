@@ -1,0 +1,36 @@
+{
+  "name": "@design-systems/babel-plugin-include-styles",
+  "version": "0.74.0",
+  "description": "A babel plugin that automatically includes the styles for a scoped monorepo design system built with `@design-systems/cli`",
+  "main": "./dist/index.js",
+  "types": "./dist",
+  "author": "Andrew Lisowski lisowski54@gmail.com",
+  "contributors": [
+    "Andrew Lisowski lisowski54@gmail.com"
+  ],
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "build": "tsc --build tsconfig.json",
+    "test": "../cli/bin/ds.js test",
+    "lint": "../cli/bin/ds.js lint"
+  },
+  "files": [
+    "dist",
+    "!*.test.*",
+    "!__snapshots__",
+    "!__tests__"
+  ],
+  "dependencies": {
+    "@babel/traverse": "7.7.2",
+    "tslib": "1.10.0"
+  },
+  "devDependencies": {
+    "@babel/core": "7.7.4",
+    "@babel/types": "7.7.4",
+    "@types/node": "12.12.12",
+    "auto": "7.16.3"
+  }
+}

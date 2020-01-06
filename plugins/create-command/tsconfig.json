@@ -1,0 +1,16 @@
+{
+  "extends": "../../tsconfig.build.json",
+  "include": ["src/**/*.ts", "../../typings/**/*"],
+
+  "compilerOptions": {
+    "outDir": "./dist",
+    "rootDir": "./src",
+    "composite": true
+  },
+
+  "references": [
+    { "path": "../../packages/cli-utils" },
+    { "path": "../../packages/plugin" },
+    { "path": "../../packages/create" }
+  ]
+}

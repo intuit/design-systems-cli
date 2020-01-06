@@ -1,0 +1,28 @@
+{
+  "name": "@design-systems/docs",
+  "version": "0.74.0",
+  "private": true,
+  "author": "Andrew Lisowski <lisowski54@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/intuit/design-systems-cli.git"
+  },
+  "dependencies": {
+    "@design-systems/core": "link:../core",
+    "@design-systems/load-config": "link:../load-config",
+    "command-line-docs": "0.0.6",
+    "dedent": "0.7.0",
+    "mkdirp": "0.5.1",
+    "tslib": "1.10.0"
+  },
+  "scripts": {
+    "generate": "./generate-docs.js",
+    "dev": "yarn generate && docsify serve src",
+    "deploy": "NODE_ENV=production && yarn generate && push-dir --cleanup --verbose --dir=src --branch=gh-pages"
+  },
+  "devDependencies": {
+    "command-line-docs": "0.0.6",
+    "docsify-cli": "4.4.0",
+    "push-dir": "0.4.1"
+  }
+}

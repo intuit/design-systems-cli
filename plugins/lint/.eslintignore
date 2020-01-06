@@ -1,0 +1,7 @@
+**/*.d.ts
+**/node_modules
+**/dist
+**/out
+target/
+**/templates/component/
+**/templates/monorepo/
