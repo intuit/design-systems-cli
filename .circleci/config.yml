@@ -44,6 +44,7 @@ jobs:
       - restore_cache: *restore-cache
       - run: ls -alt
       - run: *yarn
+      - run: ls -alt
       - save_cache: *save-cache
       - persist_to_workspace:
           root: .
@@ -55,7 +56,9 @@ jobs:
     steps:
       - attach_workspace:
           at: ~/design-systems-cli
+      - run: ls -alt
       - run: *build
+      - run: ls -alt
       - persist_to_workspace:
           root: .
           paths:
@@ -90,6 +93,7 @@ jobs:
       - attach_workspace:
           at: ~/design-systems-cli
       # - run: mkdir ~/.ssh/ && echo -e "Host github.com\n\tStrictHostKeyChecking no\n" > ~/.ssh/config
+      - run: ls -alt
       - run:
           name: Release
           command: ls -alt && ls -alt ~/ && git status --verbose && yarn auto shipit
