@@ -8,6 +8,9 @@
   "contributors": [
     "Andrew Lisowski lisowski54@gmail.com"
   ],
+  "publishConfig": {
+    "access": "public"
+  },
   "license": "MIT",
   "scripts": {
     "build": "tsc --build",

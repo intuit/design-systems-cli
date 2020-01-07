@@ -6,6 +6,9 @@
   "bin": "dist/bundle.js",
   "author": "Andrew Lisowski <lisowski54@gmail.com>",
   "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "build": "yarn build:typescript && yarn bundle",
     "build:typescript": "tsc --build",

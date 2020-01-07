@@ -10,6 +10,9 @@
     "start": "yarn build --watch",
     "test": "../cli/bin/ds.js test"
   },
+  "publishConfig": {
+    "access": "public"
+  },
   "files": [
     "bin",
     "dist"

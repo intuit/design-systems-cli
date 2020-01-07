@@ -9,6 +9,9 @@
     "type": "git",
     "url": "https://github.com/intuit/design-systems-cli.git"
   },
+  "publishConfig": {
+    "access": "public"
+  },
   "keywords": [
     "stylelint",
     "stylelint-config"

@@ -8,6 +8,9 @@
     "build": "tsc --build",
     "start": "yarn build --watch"
   },
+  "publishConfig": {
+    "access": "public"
+  },
   "files": [
     "bin",
     "dist"

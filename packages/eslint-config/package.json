@@ -9,6 +9,9 @@
     "type": "git",
     "url": "https://github.com/intuit/design-systems-cli.git"
   },
+  "publishConfig": {
+    "access": "public"
+  },
   "dependencies": {
     "@design-systems/cli-utils": "link:../cli-utils",
     "@typescript-eslint/eslint-plugin": "2.8.0",
