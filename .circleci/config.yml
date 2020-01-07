@@ -26,12 +26,12 @@ aliases:
   - &yarn
     name: Install Dependencies
     command: yarn install --frozen-lockfile --non-interactive --cache-folder=~/.cache/yarn
-  - &lint
-    name: Lint
-    command: yarn lint
-  - &test
-    name: Test
-    command: yarn test
+  # - &lint
+  #   name: Lint
+  #   command: yarn lint
+  # - &test
+  #   name: Test
+  #   command: yarn test
   - &build
     name: Build
     command: yarn build
@@ -60,28 +60,28 @@ jobs:
           paths:
             - .
 
-  lint:
-    <<: *defaults
-    steps:
-      - attach_workspace:
-          at: ~/design-systems-cli
-      - run: *lint
+  # lint:
+  #   <<: *defaults
+  #   steps:
+  #     - attach_workspace:
+  #         at: ~/design-systems-cli
+  #     - run: *lint
 
-  test:
-    <<: *defaults
-    steps:
-      - attach_workspace:
-          at: ~/design-systems-cli
-      - run: *test
+  # test:
+  #   <<: *defaults
+  #   steps:
+  #     - attach_workspace:
+  #         at: ~/design-systems-cli
+  #     - run: *test
 
-  pr-check:
-    <<: *defaults
-    steps:
-      - attach_workspace:
-          at: ~/design-systems-cli
-      - run:
-          name: Check PR for semantic version label
-          command: auto pr-check --pr $CHANGE_ID --url $CIRCLE_BUILD_URL
+  # pr-check:
+  #   <<: *defaults
+  #   steps:
+  #     - attach_workspace:
+  #         at: ~/design-systems-cli
+  #     - run:
+  #         name: Check PR for semantic version label
+  #         command: auto pr-check --pr $CHANGE_ID --url $CIRCLE_BUILD_URL
 
   release:
     <<: *defaults
@@ -93,14 +93,14 @@ jobs:
           name: Release
           command: ls -alt && ls -alt ~/ && git status --verbose && yarn auto shipit
 
-  publishDocs:
-    <<: *defaults
-    steps:
-      - attach_workspace:
-          at: ~/design-systems-cli
-      - run:
-          name: Publish Docs
-          command: yarn lerna run --scope @design-systems/docs deploy
+  # publishDocs:
+  #   <<: *defaults
+  #   steps:
+  #     - attach_workspace:
+  #         at: ~/design-systems-cli
+  #     - run:
+  #         name: Publish Docs
+  #         command: yarn lerna run --scope @design-systems/docs deploy
 
 workflows:
   version: 2
@@ -112,31 +112,31 @@ workflows:
           requires:
             - install
 
-      - lint:
-          requires:
-            - build
+      # - lint:
+      #     requires:
+      #       - build
 
-      - test:
-          requires:
-            - build
+      # - test:
+      #     requires:
+      #       - build
 
-      - pr-check:
-          requires:
-            - build
-          filters:
-            branches:
-              ignore:
-                - master
+      # - pr-check:
+      #     requires:
+      #       - build
+      #     filters:
+      #       branches:
+      #         ignore:
+      #           - master
 
       - release:
           requires:
-            - test
-            - lint
-
-      - publishDocs:
-          requires:
-            - release
-          filters:
-            branches:
-              only:
-                - master
+            - build
+            # - test
+            # - lint
+      # - publishDocs:
+      #     requires:
+      #       - release
+      #     filters:
+      #       branches:
+      #         only:
+      #           - master
