@@ -1,6 +1,6 @@
 {
   "name": "@design-systems/create",
-  "version": "0.74.1",
+  "version": "0.74.2",
   "description": "Initialize a @design-systems/cli monorepo",
   "main": "dist/index.js",
   "bin": "dist/bundle.js",
