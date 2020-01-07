@@ -99,6 +99,8 @@ jobs:
       - attach_workspace:
           at: ~/design-systems-cli
       - run: mkdir ~/.ssh/ && echo -e "Host github.com\n\tStrictHostKeyChecking no\n" > ~/.ssh/config
+      - run: git config --global user.email "lisowski54@gmail.com"
+      - run: git config --global user.name "Andrew Lisowski"
       - run:
           name: Publish Docs
           command: yarn lerna run --scope @design-systems/docs deploy
