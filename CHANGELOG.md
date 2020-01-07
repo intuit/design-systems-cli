@@ -1,3 +1,15 @@
+# v0.74.3 (Tue Jan 07 2020)
+
+#### ⚠️  Pushed to master
+
+- set identity during docs publish  ([@hipstersmoothie](https://github.com/hipstersmoothie))
+
+#### Authors: 1
+
+- Andrew Lisowski ([@hipstersmoothie](https://github.com/hipstersmoothie))
+
+---
+
 # v0.74.2 (Tue Jan 07 2020)
 
 #### ⚠️  Pushed to master
