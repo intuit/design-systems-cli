@@ -1,6 +1,6 @@
 {
   "name": "@design-systems/load-config",
-  "version": "0.74.2",
+  "version": "0.74.3",
   "main": "./dist/index.js",
   "types": "./dist",
   "repository": "https://github.com/intuit/design-systems-cli.git",
