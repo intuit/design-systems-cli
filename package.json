@@ -36,7 +36,7 @@
     "@auto-it/all-contributors": "8.8.0",
     "@auto-it/first-time-contributor": "8.8.0",
     "@auto-it/released": "8.8.0",
-    "auto": "7.16.3",
+    "auto": "8.8.0",
     "change-case": "3.1.0",
     "copy-template-dir": "1.4.0",
     "lerna": "3.19.0",

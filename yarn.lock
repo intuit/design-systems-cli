@@ -293,7 +293,24 @@
     url-join "^4.0.0"
     user-home "^2.0.0"
 
-"@auto-it/released@8.8.0":
+"@auto-it/npm@^8.8.0":
+  version "8.8.0"
+  resolved "https://registry.yarnpkg.com/@auto-it/npm/-/npm-8.8.0.tgz#eecac889593084d68af52a03479a929503610bc0"
+  integrity sha512-wk3RJCv2PPCsfqnjXTFr9hj0DtspAp9GQv43lVkduU7WayIgei4gK/VE60cPPAala8pFtEjeWoa7srSjp1FAMg==
+  dependencies:
+    "@auto-it/core" "^8.8.0"
+    env-ci "^4.1.1"
+    get-monorepo-packages "^1.1.0"
+    parse-author "^2.0.0"
+    parse-github-url "1.0.2"
+    registry-url "^5.1.0"
+    semver "^7.0.0"
+    tslib "1.10.0"
+    typescript-memoize "^1.0.0-alpha.3"
+    url-join "^4.0.0"
+    user-home "^2.0.0"
+
+"@auto-it/released@8.8.0", "@auto-it/released@^8.8.0":
   version "8.8.0"
   resolved "https://registry.yarnpkg.com/@auto-it/released/-/released-8.8.0.tgz#7696617a9c1a72231a24b9991daff054272eb54d"
   integrity sha512-B1RPyUsFnAeBFlcjRbg28UyfiAPdZl6sKVMONH0THCvT++ecAgLe8MgULiGlEfy3CQcGNl8LJZWb/QMyogxdFw==
@@ -1479,7 +1496,7 @@
     minimist "^1.2.0"
 
 "@design-systems/build@link:plugins/build":
-  version "0.74.0"
+  version "0.74.1"
   dependencies:
     "@babel/code-frame" "7.5.5"
     "@babel/core" "7.7.2"
@@ -1519,7 +1536,7 @@
     typescript "3.7.2"
 
 "@design-systems/bundle@link:plugins/bundle":
-  version "0.74.0"
+  version "0.74.1"
   dependencies:
     "@design-systems/build" "link:plugins/build"
     "@design-systems/cli-utils" "link:packages/cli-utils"
@@ -1537,7 +1554,7 @@
     webpack "4.41.2"
 
 "@design-systems/clean@link:plugins/clean":
-  version "0.74.0"
+  version "0.74.1"
   dependencies:
     "@design-systems/cli-utils" "link:packages/cli-utils"
     "@design-systems/plugin" "link:packages/plugin"
@@ -1546,7 +1563,7 @@
     tslib "1.10.0"
 
 "@design-systems/cli-utils@link:packages/cli-utils":
-  version "0.74.0"
+  version "0.74.1"
   dependencies:
     find-up "4.1.0"
     npm-which "3.0.1"
@@ -1556,7 +1573,7 @@
     webpack "4.41.2"
 
 "@design-systems/core@link:packages/core":
-  version "0.74.0"
+  version "0.74.1"
   dependencies:
     "@design-systems/build" "link:plugins/build"
     "@design-systems/bundle" "link:plugins/bundle"
@@ -1576,7 +1593,7 @@
     tslib "1.10.0"
 
 "@design-systems/create-command@link:plugins/create-command":
-  version "0.74.0"
+  version "0.74.1"
   dependencies:
     "@design-systems/cli-utils" "link:packages/cli-utils"
     "@design-systems/create" "link:packages/create"
@@ -1594,10 +1611,10 @@
     tslib "1.10.0"
 
 "@design-systems/create@link:packages/create":
-  version "0.74.0"
+  version "0.74.1"
 
 "@design-systems/dev@link:plugins/dev":
-  version "0.74.0"
+  version "0.74.1"
   dependencies:
     "@design-systems/cli-utils" "link:packages/cli-utils"
     "@design-systems/plugin" "link:packages/plugin"
@@ -1607,7 +1624,7 @@
     tslib "1.10.0"
 
 "@design-systems/eslint-config@link:packages/eslint-config":
-  version "0.74.0"
+  version "0.74.1"
   dependencies:
     "@design-systems/cli-utils" "link:packages/cli-utils"
     "@typescript-eslint/eslint-plugin" "2.8.0"
@@ -1630,7 +1647,7 @@
     tslib "1.10.0"
 
 "@design-systems/lint@link:plugins/lint":
-  version "0.74.0"
+  version "0.74.1"
   dependencies:
     "@design-systems/cli-utils" "link:packages/cli-utils"
     "@design-systems/eslint-config" "link:packages/eslint-config"
@@ -1647,7 +1664,7 @@
     tslib "1.10.0"
 
 "@design-systems/load-config@link:packages/load-config":
-  version "0.74.0"
+  version "0.74.1"
   dependencies:
     "@design-systems/core" "link:packages/core"
     "@design-systems/plugin" "link:packages/plugin"
@@ -1661,7 +1678,7 @@
     tslib "1.10.0"
 
 "@design-systems/playroom@link:plugins/playroom":
-  version "0.74.0"
+  version "0.74.1"
   dependencies:
     "@babel/core" "7.7.2"
     "@babel/register" "7.7.0"
@@ -1680,14 +1697,14 @@
     webpack "4.41.2"
 
 "@design-systems/plugin@link:packages/plugin":
-  version "0.74.0"
+  version "0.74.1"
   dependencies:
     command-line-application "0.9.5"
     tslib "1.10.0"
     utility-types "3.10.0"
 
 "@design-systems/proof@link:plugins/proof":
-  version "0.74.0"
+  version "0.74.1"
   dependencies:
     "@babel/core" "7.7.2"
     "@babel/plugin-transform-runtime" "7.6.2"
@@ -1706,7 +1723,7 @@
     tslib "1.10.0"
 
 "@design-systems/size@link:plugins/size":
-  version "0.74.0"
+  version "0.74.1"
   dependencies:
     "@design-systems/cli-utils" "link:packages/cli-utils"
     "@design-systems/plugin" "link:packages/plugin"
@@ -1736,7 +1753,7 @@
     webpack-sources "1.4.3"
 
 "@design-systems/storybook@link:plugins/storybook":
-  version "0.74.0"
+  version "0.74.1"
   dependencies:
     "@babel/core" "7.7.2"
     "@design-systems/build" "link:plugins/build"
@@ -1769,7 +1786,7 @@
     webpack-filter-warnings-plugin "1.2.1"
 
 "@design-systems/stylelint-config@link:packages/stylelint-config":
-  version "0.74.0"
+  version "0.74.1"
   dependencies:
     stylelint-a11y "1.2.2"
     stylelint-config-css-modules "2.1.0"
@@ -1783,7 +1800,7 @@
     tslib "1.10.0"
 
 "@design-systems/test@link:plugins/test":
-  version "0.74.0"
+  version "0.74.1"
   dependencies:
     "@babel/core" "7.7.2"
     "@design-systems/build" "link:plugins/build"
@@ -1803,7 +1820,7 @@
     tslib "1.10.0"
 
 "@design-systems/update@link:plugins/update":
-  version "0.74.0"
+  version "0.74.1"
   dependencies:
     "@design-systems/cli-utils" "link:packages/cli-utils"
     "@design-systems/plugin" "link:packages/plugin"
@@ -5175,6 +5192,21 @@ auto@7.16.3:
     chalk "^3.0.0"
     command-line-application "^0.9.3"
     dedent "^0.7.0"
+    signale "^1.4.0"
+    tslib "1.10.0"
+
+auto@8.8.0:
+  version "8.8.0"
+  resolved "https://registry.yarnpkg.com/auto/-/auto-8.8.0.tgz#983b44d03502e4e3b9237ba73911487d4ede3131"
+  integrity sha512-9xtp2lIZLaHyH/geGLFPG5EKrUSqPM0fpQJM86Q7AIRrnAgNu0jzjfYhGbeKrelLNgnJlnXndiZ4Jd3mbvWp0Q==
+  dependencies:
+    "@auto-it/core" "^8.8.0"
+    "@auto-it/npm" "^8.8.0"
+    "@auto-it/released" "^8.8.0"
+    chalk "^3.0.0"
+    command-line-application "^0.9.3"
+    endent "^1.3.0"
+    module-alias "^2.2.2"
     signale "^1.4.0"
     tslib "1.10.0"
 
@@ -13508,6 +13540,11 @@ modify-values@^1.0.0:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/modify-values/-/modify-values-1.0.1.tgz#b3939fa605546474e3e3e3c63d64bd43b4ee6022"
   integrity sha512-xV2bxeN6F7oYjZWTe/YPAy6MN2M+sL4u/Rlm2AHCIVGfo2p1yGmBHQ6vHehl4bRTZBdHu3TSkWdYgkwpYzAGSw==
+
+module-alias@^2.2.2:
+  version "2.2.2"
+  resolved "https://registry.yarnpkg.com/module-alias/-/module-alias-2.2.2.tgz#151cdcecc24e25739ff0aa6e51e1c5716974c0e0"
+  integrity sha512-A/78XjoX2EmNvppVWEhM2oGk3x4lLxnkEA4jTbaK97QKSDjkIoOsKQlfylt/d3kKKi596Qy3NP5XrXJ6fZIC9Q==
 
 move-concurrently@^1.0.1:
   version "1.0.1"
