@@ -91,7 +91,7 @@ jobs:
       # - run: mkdir ~/.ssh/ && echo -e "Host github.com\n\tStrictHostKeyChecking no\n" > ~/.ssh/config
       - run:
           name: Release
-          command: git status --porcelain && yarn auto shipit
+          command: git status --verbose && yarn auto shipit
 
   publishDocs:
     <<: *defaults
