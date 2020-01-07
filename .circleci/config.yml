@@ -42,6 +42,7 @@ jobs:
     steps:
       - checkout
       - restore_cache: *restore-cache
+      - run: ls -alt
       - run: *yarn
       - save_cache: *save-cache
       - persist_to_workspace:
