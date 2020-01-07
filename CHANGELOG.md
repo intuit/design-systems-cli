@@ -1,3 +1,15 @@
+# v0.74.2 (Tue Jan 07 2020)
+
+#### ⚠️  Pushed to master
+
+- align auto versions  ([@hipstersmoothie](https://github.com/hipstersmoothie))
+
+#### Authors: 1
+
+- Andrew Lisowski ([@hipstersmoothie](https://github.com/hipstersmoothie))
+
+---
+
 # v0.74.1 (Tue Jan 07 2020)
 
 #### ⚠️  Pushed to master
