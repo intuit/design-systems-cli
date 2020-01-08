@@ -24,7 +24,7 @@ function addons(entry = []) {
       // Tools
       require.resolve('@storybook/addon-backgrounds/register'),
       require.resolve('storybook-dark-mode/register'),
-      require.resolve('@cgds/storybook-addon-sketch/register-options'),
+      require.resolve('storybook-addon-sketch/register-options'),
       require.resolve('@storybook/addon-viewport/register')
     ];
   }

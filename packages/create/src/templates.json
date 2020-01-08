@@ -4,37 +4,37 @@
       "name": "ts",
       "url": "https://github.com/design-systems-templates/monorepo-template",
       "description": "A TypeScript monorepo",
-      "sha": "5d262a01acbcac15bb9ca7c50f922a4deb6d2c3f"
+      "sha": "89a4989882090bebda1d708f70368a0a8f0df589"
     },
     {
       "name": "js",
       "url": "https://github.com/design-systems-templates/monorepo-template",
       "description": "A JavaScript monorepo",
-      "sha": "e1513758309363d838e100ce6c04eed41b1633e5"
+      "sha": "06e8ff9964ca8982d4f9c1d17681b291f7caf668"
     },
     {
       "name": "styled-components",
       "url": "https://github.com/design-systems-templates/monorepo-template",
       "description": "A TypeScript monorepo for styled-components",
-      "sha": "f9d7a226d6c12320bbf856083f031df5553d4bf4"
+      "sha": "c27e1a90fdf144f4fc4651ff71b61a89a555c032"
     },
     {
       "name": "styled-components-js",
       "url": "https://github.com/design-systems-templates/monorepo-template",
       "description": "A JavaScript monorepo for styled-components",
-      "sha": "8c61e1b2cd9344296c02fe075848201666b61365"
+      "sha": "760298bbf103c91ac9930dfbbf0f75e1b17e9ac5"
     },
     {
       "name": "componentless",
       "url": "https://github.com/design-systems-templates/monorepo-template",
       "description": "A TypeScript monorepo without components",
-      "sha": "ab78b5d85350d1d9a07fcba9efc2011c45402715"
+      "sha": "e73c0d187166a1295db6a41a391529ccf850748b"
     },
     {
       "name": "componentless-js",
       "url": "https://github.com/design-systems-templates/monorepo-template",
       "description": "A JavaScript monorepo without components",
-      "sha": "03cebca154bf0ceb1e5fd496e629d27b69ba11b9"
+      "sha": "25fc430322ccb421052a009ca24c93a7c3024ebe"
     }
   ],
   "component": [
@@ -42,25 +42,25 @@
       "name": "ts",
       "url": "https://github.com/design-systems-templates/component-template",
       "description": "A TypeScript component",
-      "sha": "66734f870acb295306cd51f3bcfca2cdebae105c"
+      "sha": "8aeb702a4037d2b3b4e6feb5d08dac15ebf95eb1"
     },
     {
       "name": "js",
       "url": "https://github.com/design-systems-templates/component-template",
       "description": "A JavaScript component",
-      "sha": "164695bf8912e4ab167e602018ee3025d8e5fbb9"
+      "sha": "a9a328b83a4f3d478f39f1d60a05d9a78d0da6e4"
     },
     {
       "name": "styled-components",
       "url": "https://github.com/design-systems-templates/component-template",
       "description": "A TypeScript styled-components component",
-      "sha": "50c7db579d829bb9b617c2a3e15eeb9ef05d5cf5"
+      "sha": "c023a4fb3ac259f4500fc377bde7160b2d437158"
     },
     {
       "name": "styled-components-js",
       "url": "https://github.com/design-systems-templates/component-template",
       "description": "A JavaScript styled-components component",
-      "sha": "979cc68b214e0b8507f6ba8e2cb39270726c9fce"
+      "sha": "3d1980259416f21c7c14f282048083d4c1b0063f"
     }
   ],
   "package": [
@@ -68,13 +68,13 @@
       "name": "ts",
       "url": "https://github.com/design-systems-templates/package-template",
       "description": "A TypeScript package",
-      "sha": "035bbc3a09657fce80129dbc6a834512b9e3c490"
+      "sha": "c80da4b1cb3c8dd61dcabdbdf2a2337e8a83207d"
     },
     {
       "name": "js",
       "url": "https://github.com/design-systems-templates/package-template",
       "description": "A JavaScript package",
-      "sha": "4656fcf637030db91f5d56e40ea50f5e3ad84ca1"
+      "sha": "c3395d0200021ce646772f27c269e2fc5d07a1b8"
     }
   ]
 }

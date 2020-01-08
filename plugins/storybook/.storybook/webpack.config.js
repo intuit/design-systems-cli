@@ -186,7 +186,7 @@ module.exports = async ({ config }) => {
   addSourceMaps(config);
 
   config.devtool = 'eval-source-map';
-  config.entry.push(require.resolve('@cgds/storybook-addon-sketch/entry'));
+  config.entry.push(require.resolve('storybook-addon-sketch/entry'));
 
   const projectRoot = getMonorepoRoot();
   const configPath = path.join(
