@@ -42,7 +42,7 @@
       "name": "ts",
       "url": "https://github.com/design-systems-templates/component-template",
       "description": "A TypeScript component",
-      "sha": "d13fff96ccd71cf873227eeef183d6dab0754eb4"
+      "sha": "5e8602231a72b3c6bbd65c68bbf3d4a2b9c79078"
     },
     {
       "name": "js",
@@ -54,7 +54,7 @@
       "name": "styled-components",
       "url": "https://github.com/design-systems-templates/component-template",
       "description": "A TypeScript styled-components component",
-      "sha": "a413afc983d4b26716df3397cdfd7ce0a2818b7d"
+      "sha": "a7d2141880a93ce82be3fda7748affb47cc426e9"
     },
     {
       "name": "styled-components-js",

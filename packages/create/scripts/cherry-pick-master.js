@@ -89,7 +89,7 @@ async function updateTemplate(info) {
 /** Cherry pick the commits */
 async function main() {
   /** Go through each template and update their sha if needed */
-  await [Object.entries(currentTemplates)[2]].reduce(async (last, template) => {
+  await Object.entries(currentTemplates).reduce(async (last, template) => {
     await last;
     return updateTemplate(template);
   }, Promise.resolve());
