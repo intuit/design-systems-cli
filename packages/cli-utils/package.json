@@ -1,6 +1,6 @@
 {
   "name": "@design-systems/cli-utils",
-  "version": "0.74.6",
+  "version": "0.74.7",
   "description": "Utility functions for the @design-systems CLI",
   "main": "dist/index.js",
   "author": "Adam Dierkens <adam@dierkens.com>",
