@@ -14,6 +14,7 @@
     "build:typescript": "tsc --build",
     "bundle": "webpack && chmod +x ./dist/bundle.js",
     "start": "yarn build:typescript --watch",
+    "templates:pick": "node ./scripts/cherry-pick-master",
     "templates:update": "node ./scripts/update-templates"
   },
   "files": [

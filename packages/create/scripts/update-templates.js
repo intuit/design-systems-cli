@@ -20,23 +20,7 @@ function getSha(branch) {
     .trim();
 }
 
-/** Rebase all branches on to master */
-function mergeBranch(branch, templates) {
-  templates.forEach(template => {
-    if (template.name === 'ts') {
-      execSync(`git push origin ${branch}`);
-      return;
-    }
-
-    execSync(`git checkout ${template.name}`);
-    execSync(`git merge ${branch} -m "Merge ${branch}"`);
-    execSync(`git push origin ${branch}`);
-
-    // eslint-disable-next-line no-param-reassign
-    template.sha = getSha(template.name);
-  });
-}
-
+/** Go through each template and update their sha if needed */
 Object.entries(currentTemplates).forEach(([type, templates]) => {
   // eslint-disable-next-line no-console
   console.log('TYPE:', type);
@@ -46,6 +30,7 @@ Object.entries(currentTemplates).forEach(([type, templates]) => {
     const branch = template.name === 'ts' ? 'master' : template.name;
     const sha = getSha(branch);
 
+    // The templates.json is out of date with the SHAs on the system
     if (template.sha !== sha) {
       // eslint-disable-next-line no-console
       console.log(
@@ -56,10 +41,6 @@ Object.entries(currentTemplates).forEach(([type, templates]) => {
 
       // eslint-disable-next-line no-param-reassign
       template.sha = sha;
-
-      if (branch === 'master') {
-        mergeBranch(branch, templates);
-      }
     }
   });
 });
