@@ -1,3 +1,15 @@
+# v0.74.5 (Tue Jan 07 2020)
+
+#### 🐛  Bug Fix
+
+- fix storybook-addon-sketch dep  ([@hipstersmoothie](https://github.com/hipstersmoothie))
+
+#### Authors: 1
+
+- Andrew Lisowski ([@hipstersmoothie](https://github.com/hipstersmoothie))
+
+---
+
 # v0.74.4 (Tue Jan 07 2020)
 
 #### 🐛  Bug Fix
