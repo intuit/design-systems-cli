@@ -1,3 +1,15 @@
+# v0.74.8 (Wed Jan 08 2020)
+
+#### 🐛  Bug Fix
+
+- update component template  ([@hipstersmoothie](https://github.com/hipstersmoothie))
+
+#### Authors: 1
+
+- Andrew Lisowski ([@hipstersmoothie](https://github.com/hipstersmoothie))
+
+---
+
 # v0.74.7 (Wed Jan 08 2020)
 
 #### 🐛  Bug Fix
