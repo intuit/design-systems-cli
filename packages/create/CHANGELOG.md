@@ -1,3 +1,15 @@
+# v0.74.6 (Wed Jan 08 2020)
+
+#### 🐛  Bug Fix
+
+- update monorepo template  ([@hipstersmoothie](https://github.com/hipstersmoothie))
+
+#### Authors: 1
+
+- Andrew Lisowski ([@hipstersmoothie](https://github.com/hipstersmoothie))
+
+---
+
 # v0.74.4 (Tue Jan 07 2020)
 
 #### 🐛  Bug Fix
