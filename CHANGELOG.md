@@ -1,3 +1,15 @@
+# v0.74.11 (Mon Jan 13 2020)
+
+#### ⚠️  Pushed to master
+
+- fix docs release  ([@hipstersmoothie](https://github.com/hipstersmoothie))
+
+#### Authors: 1
+
+- Andrew Lisowski ([@hipstersmoothie](https://github.com/hipstersmoothie))
+
+---
+
 # v0.74.10 (Mon Jan 13 2020)
 
 #### ⚠️  Pushed to master
