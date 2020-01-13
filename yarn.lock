@@ -198,12 +198,12 @@
     postcss-value-parser "^4.0.2"
     throat "^5.0.0"
 
-"@auto-it/all-contributors@8.8.0":
-  version "8.8.0"
-  resolved "https://registry.yarnpkg.com/@auto-it/all-contributors/-/all-contributors-8.8.0.tgz#14e74b4a46d331a70052f9a27401d929cea4e540"
-  integrity sha512-t0OLwfFOFAhwCkwy2MKp6tQHL3rcahC8/nzjOqmxJI6QFPGoIC5YtlMudm5X1QwS1/9Cqhhw5aHVLa0pFE3W+w==
+"@auto-it/all-contributors@9.0.1":
+  version "9.0.1"
+  resolved "https://registry.yarnpkg.com/@auto-it/all-contributors/-/all-contributors-9.0.1.tgz#67bb17ffc38f1f367497959eff6a38f8f268516e"
+  integrity sha512-OhvXPhzW8CRqhnm5elbEgKcjVTKFT2prCrCcPKhX+jmDsEJURosyXGlBukBhLOowDc+T6z3CQl23C9tKlae3Fw==
   dependencies:
-    "@auto-it/core" "^8.8.0"
+    "@auto-it/core" "^9.0.1"
     anymatch "^3.1.1"
     tslib "1.10.0"
 
@@ -237,23 +237,23 @@
     typescript-memoize "^1.0.0-alpha.3"
     url-join "^4.0.0"
 
-"@auto-it/core@^8.8.0":
-  version "8.8.0"
-  resolved "https://registry.yarnpkg.com/@auto-it/core/-/core-8.8.0.tgz#a2df557a6794b1c990d2a721a6622bda70be958e"
-  integrity sha512-nRXIVvAA4j1o3IEQN2Di68ud3dHlcjlP+IbDRv1fWIMa/N9lvxVLRq5qhkKZgjGWQuJeSXZ3QyraAN8tyBTNqA==
+"@auto-it/core@^9.0.1":
+  version "9.0.1"
+  resolved "https://registry.yarnpkg.com/@auto-it/core/-/core-9.0.1.tgz#34389cc39089f78c973a9f7e0ae88fd32c782b30"
+  integrity sha512-+ujiTSy9bgvjmZlvjH7BdzegcchA2jOLgJgy8vcz2KRBg/cIL0ytCZIlcgq6lCdAnms9ARdS+12/tsTQuNI4SQ==
   dependencies:
     "@octokit/graphql" "^4.0.0"
     "@octokit/plugin-enterprise-compatibility" "1.1.1"
     "@octokit/plugin-retry" "^2.2.0"
     "@octokit/plugin-throttling" "^2.6.0"
-    "@octokit/rest" "16.35.2"
+    "@octokit/rest" "16.36.0"
     await-to-js "^2.1.1"
     cosmiconfig "6.0.0"
     deepmerge "^4.0.0"
     dotenv "^8.0.0"
     endent "^1.3.0"
     enquirer "^2.3.0"
-    env-ci "^4.1.1"
+    env-ci "^5.0.1"
     gitlog "^3.1.2"
     https-proxy-agent "^4.0.0"
     import-cwd "^3.0.0"
@@ -267,12 +267,12 @@
     typescript-memoize "^1.0.0-alpha.3"
     url-join "^4.0.0"
 
-"@auto-it/first-time-contributor@8.8.0":
-  version "8.8.0"
-  resolved "https://registry.yarnpkg.com/@auto-it/first-time-contributor/-/first-time-contributor-8.8.0.tgz#5abe95f0b8a218f9471eb2033b4892c19d86f7b2"
-  integrity sha512-eNv4pIFesgJKxRriD6uIybJMTRykAXYGWoYpAenLZP6HNXhDxeuj6MtD0ONzM4orAVKsL2SxCutWuKRCXOKsJw==
+"@auto-it/first-time-contributor@9.0.1":
+  version "9.0.1"
+  resolved "https://registry.yarnpkg.com/@auto-it/first-time-contributor/-/first-time-contributor-9.0.1.tgz#456e518f741149a97165193ff94ffed06ee27888"
+  integrity sha512-iNraIomuQCQYw1CJ6QzjRtQ7KWK1nCNzv1vuu12FqDaF1Gt9fmKvhBSdIPiUixxWACqK6Nd5aPUrCsyGO4uPeQ==
   dependencies:
-    "@auto-it/core" "^8.8.0"
+    "@auto-it/core" "^9.0.1"
     array.prototype.flatmap "^1.2.2"
     tslib "1.10.0"
 
@@ -293,13 +293,13 @@
     url-join "^4.0.0"
     user-home "^2.0.0"
 
-"@auto-it/npm@^8.8.0":
-  version "8.8.0"
-  resolved "https://registry.yarnpkg.com/@auto-it/npm/-/npm-8.8.0.tgz#eecac889593084d68af52a03479a929503610bc0"
-  integrity sha512-wk3RJCv2PPCsfqnjXTFr9hj0DtspAp9GQv43lVkduU7WayIgei4gK/VE60cPPAala8pFtEjeWoa7srSjp1FAMg==
+"@auto-it/npm@^9.0.1":
+  version "9.0.1"
+  resolved "https://registry.yarnpkg.com/@auto-it/npm/-/npm-9.0.1.tgz#759d86c4b8abe873dd369a4a982bf228d45d1fd1"
+  integrity sha512-rXyyn/HVwQ3FswgocWDmJD+A2B7iEO+FpZtpNfJhTeRERNCB5XK3Tna5y8aQAt5lEXsXc/VrM/+eEGIxKJJ/xA==
   dependencies:
-    "@auto-it/core" "^8.8.0"
-    env-ci "^4.1.1"
+    "@auto-it/core" "^9.0.1"
+    env-ci "^5.0.1"
     get-monorepo-packages "^1.1.0"
     parse-author "^2.0.0"
     parse-github-url "1.0.2"
@@ -310,12 +310,12 @@
     url-join "^4.0.0"
     user-home "^2.0.0"
 
-"@auto-it/released@8.8.0", "@auto-it/released@^8.8.0":
-  version "8.8.0"
-  resolved "https://registry.yarnpkg.com/@auto-it/released/-/released-8.8.0.tgz#7696617a9c1a72231a24b9991daff054272eb54d"
-  integrity sha512-B1RPyUsFnAeBFlcjRbg28UyfiAPdZl6sKVMONH0THCvT++ecAgLe8MgULiGlEfy3CQcGNl8LJZWb/QMyogxdFw==
+"@auto-it/released@9.0.1", "@auto-it/released@^9.0.1":
+  version "9.0.1"
+  resolved "https://registry.yarnpkg.com/@auto-it/released/-/released-9.0.1.tgz#b77f50353db6ae708a4a3e926d6e610b1a7c32a3"
+  integrity sha512-e+IfLPN6xKVl6PZ9Bn5yrOGu+l5SGpTTP90aWfoviHa2yq5F3FoE7fv6Iwh0dtftqLDIAQsAsYemtCbJjztOcQ==
   dependencies:
-    "@auto-it/core" "^8.8.0"
+    "@auto-it/core" "^9.0.1"
     deepmerge "^4.0.0"
     tslib "1.10.0"
 
@@ -1496,7 +1496,7 @@
     minimist "^1.2.0"
 
 "@design-systems/build@link:plugins/build":
-  version "0.74.1"
+  version "0.74.9"
   dependencies:
     "@babel/code-frame" "7.5.5"
     "@babel/core" "7.7.2"
@@ -1536,7 +1536,7 @@
     typescript "3.7.2"
 
 "@design-systems/bundle@link:plugins/bundle":
-  version "0.74.1"
+  version "0.74.9"
   dependencies:
     "@design-systems/build" "link:plugins/build"
     "@design-systems/cli-utils" "link:packages/cli-utils"
@@ -1554,7 +1554,7 @@
     webpack "4.41.2"
 
 "@design-systems/clean@link:plugins/clean":
-  version "0.74.1"
+  version "0.74.9"
   dependencies:
     "@design-systems/cli-utils" "link:packages/cli-utils"
     "@design-systems/plugin" "link:packages/plugin"
@@ -1563,7 +1563,7 @@
     tslib "1.10.0"
 
 "@design-systems/cli-utils@link:packages/cli-utils":
-  version "0.74.1"
+  version "0.74.9"
   dependencies:
     find-up "4.1.0"
     npm-which "3.0.1"
@@ -1573,7 +1573,7 @@
     webpack "4.41.2"
 
 "@design-systems/core@link:packages/core":
-  version "0.74.1"
+  version "0.74.9"
   dependencies:
     "@design-systems/build" "link:plugins/build"
     "@design-systems/bundle" "link:plugins/bundle"
@@ -1593,7 +1593,7 @@
     tslib "1.10.0"
 
 "@design-systems/create-command@link:plugins/create-command":
-  version "0.74.1"
+  version "0.74.9"
   dependencies:
     "@design-systems/cli-utils" "link:packages/cli-utils"
     "@design-systems/create" "link:packages/create"
@@ -1611,10 +1611,10 @@
     tslib "1.10.0"
 
 "@design-systems/create@link:packages/create":
-  version "0.74.1"
+  version "0.74.9"
 
 "@design-systems/dev@link:plugins/dev":
-  version "0.74.1"
+  version "0.74.9"
   dependencies:
     "@design-systems/cli-utils" "link:packages/cli-utils"
     "@design-systems/plugin" "link:packages/plugin"
@@ -1624,7 +1624,7 @@
     tslib "1.10.0"
 
 "@design-systems/eslint-config@link:packages/eslint-config":
-  version "0.74.1"
+  version "0.74.9"
   dependencies:
     "@design-systems/cli-utils" "link:packages/cli-utils"
     "@typescript-eslint/eslint-plugin" "2.8.0"
@@ -1647,7 +1647,7 @@
     tslib "1.10.0"
 
 "@design-systems/lint@link:plugins/lint":
-  version "0.74.1"
+  version "0.74.9"
   dependencies:
     "@design-systems/cli-utils" "link:packages/cli-utils"
     "@design-systems/eslint-config" "link:packages/eslint-config"
@@ -1664,7 +1664,7 @@
     tslib "1.10.0"
 
 "@design-systems/load-config@link:packages/load-config":
-  version "0.74.1"
+  version "0.74.9"
   dependencies:
     "@design-systems/core" "link:packages/core"
     "@design-systems/plugin" "link:packages/plugin"
@@ -1678,7 +1678,7 @@
     tslib "1.10.0"
 
 "@design-systems/playroom@link:plugins/playroom":
-  version "0.74.1"
+  version "0.74.9"
   dependencies:
     "@babel/core" "7.7.2"
     "@babel/register" "7.7.0"
@@ -1697,14 +1697,14 @@
     webpack "4.41.2"
 
 "@design-systems/plugin@link:packages/plugin":
-  version "0.74.1"
+  version "0.74.9"
   dependencies:
     command-line-application "0.9.5"
     tslib "1.10.0"
     utility-types "3.10.0"
 
 "@design-systems/proof@link:plugins/proof":
-  version "0.74.1"
+  version "0.74.9"
   dependencies:
     "@babel/core" "7.7.2"
     "@babel/plugin-transform-runtime" "7.6.2"
@@ -1723,7 +1723,7 @@
     tslib "1.10.0"
 
 "@design-systems/size@link:plugins/size":
-  version "0.74.1"
+  version "0.74.9"
   dependencies:
     "@design-systems/cli-utils" "link:packages/cli-utils"
     "@design-systems/plugin" "link:packages/plugin"
@@ -1753,7 +1753,7 @@
     webpack-sources "1.4.3"
 
 "@design-systems/storybook@link:plugins/storybook":
-  version "0.74.1"
+  version "0.74.9"
   dependencies:
     "@babel/core" "7.7.2"
     "@design-systems/build" "link:plugins/build"
@@ -1780,13 +1780,14 @@
     story2sketch "1.7.0"
     storybook-addon-jsx "7.1.13"
     storybook-addon-react-docgen "1.2.28"
+    storybook-addon-sketch "0.1.0"
     storybook-dark-mode "0.1.9"
     tslib "1.10.0"
     webpack "4.41.2"
     webpack-filter-warnings-plugin "1.2.1"
 
 "@design-systems/stylelint-config@link:packages/stylelint-config":
-  version "0.74.1"
+  version "0.74.9"
   dependencies:
     stylelint-a11y "1.2.2"
     stylelint-config-css-modules "2.1.0"
@@ -1800,7 +1801,7 @@
     tslib "1.10.0"
 
 "@design-systems/test@link:plugins/test":
-  version "0.74.1"
+  version "0.74.9"
   dependencies:
     "@babel/core" "7.7.2"
     "@design-systems/build" "link:plugins/build"
@@ -1820,7 +1821,7 @@
     tslib "1.10.0"
 
 "@design-systems/update@link:plugins/update":
-  version "0.74.1"
+  version "0.74.9"
   dependencies:
     "@design-systems/cli-utils" "link:packages/cli-utils"
     "@design-systems/plugin" "link:packages/plugin"
@@ -3000,25 +3001,7 @@
     once "^1.4.0"
     universal-user-agent "^4.0.0"
 
-"@octokit/rest@16.35.2":
-  version "16.35.2"
-  resolved "https://registry.yarnpkg.com/@octokit/rest/-/rest-16.35.2.tgz#0098c9e2a895d4afb0fa6578479283553543143c"
-  integrity sha512-iijaNZpn9hBpUdh8YdXqNiWazmq4R1vCUsmxpBB0kCQ0asHZpCx+HNs22eiHuwYKRhO31ZSAGBJLi0c+3XHaKQ==
-  dependencies:
-    "@octokit/request" "^5.2.0"
-    "@octokit/request-error" "^1.0.2"
-    atob-lite "^2.0.0"
-    before-after-hook "^2.0.0"
-    btoa-lite "^1.0.0"
-    deprecation "^2.0.0"
-    lodash.get "^4.4.2"
-    lodash.set "^4.3.2"
-    lodash.uniq "^4.5.0"
-    octokit-pagination-methods "^1.1.0"
-    once "^1.4.0"
-    universal-user-agent "^4.0.0"
-
-"@octokit/rest@^16.28.4", "@octokit/rest@^16.28.7":
+"@octokit/rest@16.36.0", "@octokit/rest@^16.28.4", "@octokit/rest@^16.28.7":
   version "16.36.0"
   resolved "https://registry.yarnpkg.com/@octokit/rest/-/rest-16.36.0.tgz#99892c57ba632c2a7b21845584004387b56c2cb7"
   integrity sha512-zoZj7Ya4vWBK4fjTwK2Cnmu7XBB1p9ygSvTk2TthN6DVJXM4hQZQoAiknWFLJWSTix4dnA3vuHtjPZbExYoCZA==
@@ -5195,14 +5178,14 @@ auto@7.16.3:
     signale "^1.4.0"
     tslib "1.10.0"
 
-auto@8.8.0:
-  version "8.8.0"
-  resolved "https://registry.yarnpkg.com/auto/-/auto-8.8.0.tgz#983b44d03502e4e3b9237ba73911487d4ede3131"
-  integrity sha512-9xtp2lIZLaHyH/geGLFPG5EKrUSqPM0fpQJM86Q7AIRrnAgNu0jzjfYhGbeKrelLNgnJlnXndiZ4Jd3mbvWp0Q==
+auto@9.0.1:
+  version "9.0.1"
+  resolved "https://registry.yarnpkg.com/auto/-/auto-9.0.1.tgz#fb02a87807495b05be537103fbe632b3754dfeee"
+  integrity sha512-MwZjbObgWnu1YwHVNwmwLFIyx8wYmzuofXusJzfpKPFnbEwdKJssE6lFI4ymMeEB/s2phEC+opSCuJmrSYJnJQ==
   dependencies:
-    "@auto-it/core" "^8.8.0"
-    "@auto-it/npm" "^8.8.0"
-    "@auto-it/released" "^8.8.0"
+    "@auto-it/core" "^9.0.1"
+    "@auto-it/npm" "^9.0.1"
+    "@auto-it/released" "^9.0.1"
     chalk "^3.0.0"
     command-line-application "^0.9.3"
     endent "^1.3.0"
@@ -8591,6 +8574,14 @@ env-ci@^4.1.1:
     execa "^3.2.0"
     java-properties "^1.0.0"
 
+env-ci@^5.0.1:
+  version "5.0.1"
+  resolved "https://registry.yarnpkg.com/env-ci/-/env-ci-5.0.1.tgz#f5904477d1e1ae7593110c133292171d8b1a5d6c"
+  integrity sha512-xXgohoOAFFF1Y3EdsSKP7olyH/DLS6ZD3aglV6mDFAXBqBXLJSsZLrOZdYfDs5mOmgNaP3YYynObzwF3QkC24g==
+  dependencies:
+    execa "^4.0.0"
+    java-properties "^1.0.0"
+
 env-paths@^2.2.0:
   version "2.2.0"
   resolved "https://registry.yarnpkg.com/env-paths/-/env-paths-2.2.0.tgz#cdca557dc009152917d6166e2febe1f039685e43"
@@ -9163,6 +9154,21 @@ execa@^3.2.0:
     npm-run-path "^4.0.0"
     onetime "^5.1.0"
     p-finally "^2.0.0"
+    signal-exit "^3.0.2"
+    strip-final-newline "^2.0.0"
+
+execa@^4.0.0:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/execa/-/execa-4.0.0.tgz#7f37d6ec17f09e6b8fc53288611695b6d12b9daf"
+  integrity sha512-JbDUxwV3BoT5ZVXQrSVbAiaXhXUkIwvbhPIwZ0N13kX+5yCzOhUNdocxB/UQRuYOHRYYwAxKYwJYc0T4D12pDA==
+  dependencies:
+    cross-spawn "^7.0.0"
+    get-stream "^5.0.0"
+    human-signals "^1.1.1"
+    is-stream "^2.0.0"
+    merge-stream "^2.0.0"
+    npm-run-path "^4.0.0"
+    onetime "^5.1.0"
     signal-exit "^3.0.2"
     strip-final-newline "^2.0.0"
 

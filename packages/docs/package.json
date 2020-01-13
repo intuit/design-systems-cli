@@ -18,7 +18,7 @@
   "scripts": {
     "generate": "./generate-docs.js",
     "dev": "yarn generate && docsify serve src",
-    "deploy": "NODE_ENV=production && yarn generate && push-dir --cleanup --verbose --dir=src --branch=gh-pages"
+    "deploy": "NODE_ENV=production && yarn generate && push-dir --cleanup --verbose --dir=src --branch=gh-pages --message='Updating Docs [skip ci]'"
   },
   "devDependencies": {
     "command-line-docs": "0.0.6",
