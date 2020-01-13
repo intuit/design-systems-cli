@@ -1,3 +1,16 @@
+# v0.74.10 (Mon Jan 13 2020)
+
+#### ⚠️  Pushed to master
+
+- `@design-systems/cli-utils`, `@design-systems/cli`, `@design-systems/core`, `@design-systems/create`, `@design-systems/plugin`, `@design-systems/storybook`
+  - remove mentions of internal tooling  ([@hipstersmoothie](https://github.com/hipstersmoothie))
+
+#### Authors: 1
+
+- Andrew Lisowski ([@hipstersmoothie](https://github.com/hipstersmoothie))
+
+---
+
 # v0.74.9 (Wed Jan 08 2020)
 
 #### ⚠️  Pushed to master
