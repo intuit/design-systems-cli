@@ -8,7 +8,7 @@ export default ({ input, output }: { input: string; output: string }) => ({
   verbose: true,
   fixPseudo: true,
   outputBy: 'kind',
-  pageTitle: 'cgds',
+  pageTitle: 'design-system',
   puppeteerOptions: {
     args: ['--no-sandbox', '--disable-setuid-sandbox']
   },

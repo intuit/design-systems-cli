@@ -30,7 +30,6 @@
     "@types/signale": "1.2.1"
   },
   "keywords": [
-    "ids",
     "cli"
   ]
 }

@@ -24,7 +24,6 @@
     "utility-types": "3.10.0"
   },
   "keywords": [
-    "ids",
     "cli"
   ]
 }

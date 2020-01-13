@@ -4,37 +4,37 @@
       "name": "ts",
       "url": "https://github.com/design-systems-templates/monorepo-template",
       "description": "A TypeScript monorepo",
-      "sha": "4cb40350708a4c6fd9f58a06c193c3b013764aa8"
+      "sha": "391d32f59d70d032f45d369df2627f00d9e9874e"
     },
     {
       "name": "js",
       "url": "https://github.com/design-systems-templates/monorepo-template",
       "description": "A JavaScript monorepo",
-      "sha": "45368c3f71b9da04501acce6bd4aacf7c77c11e0"
+      "sha": "380e11d970c58e27146add327176f59c1a74bdaf"
     },
     {
       "name": "styled-components",
       "url": "https://github.com/design-systems-templates/monorepo-template",
       "description": "A TypeScript monorepo for styled-components",
-      "sha": "bceb923c856be804c11dd9319bcc844b24926d16"
+      "sha": "7c068be52665f2497e0d7acdbc6fc08cfdf20d1d"
     },
     {
       "name": "styled-components-js",
       "url": "https://github.com/design-systems-templates/monorepo-template",
       "description": "A JavaScript monorepo for styled-components",
-      "sha": "47eb199ab46fedc9e5040a4c88fb0629adb14e33"
+      "sha": "cffe846bcfe946b8ed7e0733c3805dcf86058b59"
     },
     {
       "name": "componentless",
       "url": "https://github.com/design-systems-templates/monorepo-template",
       "description": "A TypeScript monorepo without components",
-      "sha": "12da0a0836a81884ab7daa38362584443e9a4758"
+      "sha": "77c1c76bd649eb3a8177c3114bf71d5237582849"
     },
     {
       "name": "componentless-js",
       "url": "https://github.com/design-systems-templates/monorepo-template",
       "description": "A JavaScript monorepo without components",
-      "sha": "2125c363ca9dd193954c6077d7bbd56a3bb45cd0"
+      "sha": "fe8451326cf0bee6b720b275187ead99b057c408"
     }
   ],
   "component": [

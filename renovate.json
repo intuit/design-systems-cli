@@ -27,10 +27,6 @@
       "groupName": "auto"
     },
     {
-      "packagePatterns": ["@ids", "@ids-open", "@ids-beta"],
-      "groupName": "ids"
-    },
-    {
       "packagePatterns": ["@fuego"],
       "groupName": "fuego"
     },

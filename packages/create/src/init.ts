@@ -14,7 +14,7 @@ const systemStandalone: CliCommand = {
   ...system,
   examples: [
     'npm init @design-systems',
-    'npm init @design-systems --name ids --repo hipstersmoothie/material'
+    'npm init @design-systems --name my-design-system --repo hipstersmoothie/material'
   ],
   options: [
     ...(system.options || []),

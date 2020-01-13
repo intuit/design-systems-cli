@@ -34,8 +34,8 @@ export const system: CliCommand = {
   name: 'system',
   description: 'Scaffold a new `ds` system',
   examples: [
-    'ds create system --name ids',
-    'ds create system --name ids --repo hipstersmoothie/material'
+    'ds create system --name my-design-system',
+    'ds create system --name my-design-system --repo hipstersmoothie/material'
   ],
   options: [
     listTemplates,

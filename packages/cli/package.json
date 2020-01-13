@@ -35,7 +35,6 @@
     "update-check": "1.5.3"
   },
   "keywords": [
-    "ids",
     "cli"
   ],
   "devDependencies": {

@@ -4020,8 +4020,8 @@ _From #154_
 
 #### 🐛  Bug Fix
 
-- Fix some build things [#2](https://github.com/adierkens/ids-cli/pull/2) ([@adierkens](https://github.com/adierkens))
-- Change comp template path [#1](https://github.com/adierkens/ids-cli/pull/1) ([@adierkens](https://github.com/adierkens))
+- Fix some build things [#2](https://github.com/adierkens/design-systems-cli/pull/2) ([@adierkens](https://github.com/adierkens))
+- Change comp template path [#1](https://github.com/adierkens/design-systems-cli/pull/1) ([@adierkens](https://github.com/adierkens))
 
 #### ⚠️  Pushed to master
 
@@ -4047,7 +4047,7 @@ _From #154_
 
 #### 🐛  Bug Fix
 
-- Change comp template path [#1](https://github.com/adierkens/ids-cli/pull/1) ([@adierkens](https://github.com/adierkens))
+- Change comp template path [#1](https://github.com/adierkens/design-systems-cli/pull/1) ([@adierkens](https://github.com/adierkens))
 
 #### ⚠️  Pushed to master
 
