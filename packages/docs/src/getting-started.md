@@ -78,9 +78,10 @@ To setup your project for use with `auto`:
 2. Go to `Environment Variables`
 3. Add [`GH_TOKEN`](https://help.github.com/en/github/authenticating-to-github/creating-a-personal-access-token-for-the-command-line)
 4. Add [`NPM_TOKEN`](https://docs.npmjs.com/creating-and-viewing-authentication-tokens)
-5. Go to `Advanced Settings`
-6. Enable `Build forked pull requests` (ensure PRs get build too)
-7. Run `GH_TOKEN=YOUR_GH_TOKEN yarn auto create-labels`
+5. Add [`CIRCLE_TOKEN`](https://circleci.com/docs/2.0/managing-api-tokens/#creating-a-project-api-token)
+6. Go to `Advanced Settings`
+7. Enable `Build forked pull requests` (ensure PRs get build too)
+8. Run `GH_TOKEN=YOUR_GH_TOKEN yarn auto create-labels`
 
 #### Turning on canary releases
 
