@@ -50,7 +50,7 @@ There are a host of good storybook state packages available. The one that we hav
 
 If you are trying to run one of your sub-packages scripts with `npm` you will find that it cannot find the bin file.
 
-This is `npm` and `yarn` have different resolution strategies for bin files. `npm` only looks in the current working directory's `node_modules`, while `yarn` will walk up to the root of your monorepo to find the bin file.
+This is because `npm` and `yarn` have different resolution strategies for bin files. `npm` only looks in the current working directory's `node_modules`, while `yarn` will walk up to the root of your monorepo to find the bin file.
 
 For that reason you must run the script with `yarn` instead of `npm`.
 

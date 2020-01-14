@@ -16,7 +16,7 @@ curl -o- -L https://yarnpkg.com/install.sh | bash
 
 ## Creating your Design System
 
-To scaffold you design system monorepo run the following command:
+To scaffold your design system monorepo run the following command:
 
 ```sh
 npm init @design-systems
@@ -48,7 +48,7 @@ Now you are all set to develop your components locally!
 
 !> You **must** run sub-package scripts with `yarn`! Read more [here](/faq?id=why-arent-my-scripts-running).
 
-## Continuos Integration
+## Continuous Integration
 
 The default template for a `@design-systems/cli` comes with our preferred workflow for developing design systems.
 You can use other CI platforms and should use our circleCI config as a guide.
