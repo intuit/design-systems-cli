@@ -48,7 +48,7 @@ Now you are all set to develop your components locally!
 
 !> You **must** run sub-package scripts with `yarn`! Read more [here](/faq?id=why-arent-my-scripts-running).
 
-## Continuos Integration
+## Continuous Integration
 
 The default template for a `@design-systems/cli` comes with our preferred workflow for developing design systems.
 You can use other CI platforms and should use our circleCI config as a guide.
