@@ -6,7 +6,7 @@
 
 A CLI toolbox for creating design systems.
 
-Visit the documentation [here](https://github.intuit.com/pages/design-systems/cli/#/).
+Visit the documentation [here](https://intuit.github.io/design-systems-cli/#).
 
 ## Contributing
 
