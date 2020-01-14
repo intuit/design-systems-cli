@@ -44,4 +44,61 @@ Now we can start developing our components. To start the storybook and build you
 yarn dev
 ```
 
+Now you are all set to develop your components locally!
+
 !> You **must** run sub-package scripts with `yarn`! Read more [here](/faq?id=why-arent-my-scripts-running).
+
+## Continuos Integration
+
+The default template for a `@design-systems/cli` comes with our preferred workflow for developing design systems.
+You can use other CI platforms and should use our circleCI config as a guide.
+
+It does a lot for you:
+
+- Runs lint
+- Runs tests (unit + proofs)
+- Builds storybook and playroom + deploys as build artifact
+- Publishes code to npm
+- Runs size checks
+- Runs a11y checks
+
+To get started building your design system with circleCI navigate to circleCi and:
+
+1. Click `Add Projects`
+2. Find you project and click `Set Up Project`
+
+### Setting up `auto`
+
+The `@design-systems/cli` uses [auto](https://github.com/intuit/auto) to post comments on PRs and automate releases.
+To post comments it will need a `GH_TOKEN`, and to publish releases a `NPM_TOKEN`.
+
+To setup your project for use with `auto`:
+
+1. Navigate to your project nad click the gear icon
+2. Go to `Environment Variables`
+3. Add [`GH_TOKEN`](https://help.github.com/en/github/authenticating-to-github/creating-a-personal-access-token-for-the-command-line)
+4. Add [`NPM_TOKEN`](https://docs.npmjs.com/creating-and-viewing-authentication-tokens)
+5. Go to `Advanced Settings`
+6. Enable `Build forked pull requests` (ensure PRs get build too)
+
+#### Turning on canary releases
+
+`auto` can make `canary` releases of your code upon every push to a pull request.
+These are tests releases that normal consumers will not see, but others can use for testing.
+
+Canary releases come with some security risks.
+They expose your publishing keys when PRs are being built, but they are also a great way to test.
+
+To enable `canary` releases:
+
+1. Go to `Advanced Settings`
+2. Enable `Pass secrets to builds from forked pull requests`
+
+And modify release step in the workflow to match the following:
+
+```yml
+- release:
+    requires:
+      - unit-tests
+      - lint
+```
