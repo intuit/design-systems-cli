@@ -80,6 +80,7 @@ To setup your project for use with `auto`:
 4. Add [`NPM_TOKEN`](https://docs.npmjs.com/creating-and-viewing-authentication-tokens)
 5. Go to `Advanced Settings`
 6. Enable `Build forked pull requests` (ensure PRs get build too)
+7. Run `GH_TOKEN=YOUR_GH_TOKEN yarn auto create-labels`
 
 #### Turning on canary releases
 
