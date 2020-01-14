@@ -1,3 +1,16 @@
+# v0.74.13 (Mon Jan 13 2020)
+
+#### ⚠️  Pushed to master
+
+- `@design-systems/create`
+  - add resolution  ([@hipstersmoothie](https://github.com/hipstersmoothie))
+
+#### Authors: 1
+
+- Andrew Lisowski ([@hipstersmoothie](https://github.com/hipstersmoothie))
+
+---
+
 # v0.74.12 (Mon Jan 13 2020)
 
 #### ⚠️  Pushed to master
