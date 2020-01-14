@@ -1,6 +1,6 @@
 {
   "name": "@design-systems/cli",
-  "version": "0.74.13",
+  "version": "1.0.0",
   "description": "A cli for scaffolding and building design systems",
   "author": "Adam Dierkens <adam@dierkens.com>",
   "license": "MIT",
