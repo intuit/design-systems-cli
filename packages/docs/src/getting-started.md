@@ -16,7 +16,7 @@ curl -o- -L https://yarnpkg.com/install.sh | bash
 
 ## Creating your Design System
 
-To scaffold you design system monorepo run the following command:
+To scaffold your design system monorepo run the following command:
 
 ```sh
 npm init @design-systems

@@ -19,7 +19,7 @@ The command you will most often use while developing is the `dev` command.
 This command can be used at the root of the project or from the component level (example: `components/Card`).
 
 When `dev` is run from the root it will build all of your components and serve a storybook with all of their stories.
-This will reflect what you published storybook will look like.
+This will reflect what your published storybook will look like.
 Once you start adding more components you might notice that builds are taking longer.
 Usually you don't need to see all the stories at once, this might even be distracting.
 
@@ -43,7 +43,7 @@ To test your project the commands you will run the most are:
 
 These commands can be run from the root or package level.
 From the root all files will be tested.
-From the package only the contents of that pacakge will tests
+From the package only the contents of that package will tested.
 
 ## Cleaning up
 

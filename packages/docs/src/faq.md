@@ -23,14 +23,14 @@ The published versions of the package will contain the actual versions and not t
 
 For the props tables to be complete you have to makes sure you do a few things.
 
-1. `Named Export` - The most important thing the docgen needs is for you component to have a named export. You can also have/use a default export, but the named export must also be present. This is the way that the docgen matches your component usage to definition.
+1. `Named Export` - The most important thing the docgen needs is for your component to have a named export. You can also have/use a default export, but the named export must also be present. This is the way that the docgen matches your component usage to definition.
 
    ```jsx
    export const Card = () => <div />;
    export default Card;
    ```
 
-2. `Description` - The props table section will also utilize any jsDoc style comments you use for both the component and each of it's props. These comments will both appear in your storybook as well as in your editor. This works in both TS and JS.
+2. `Description` - The props table section will also utilize any jsDoc style comments you use for both the component and each of its props. These comments will both appear in your storybook as well as in your editor. This works in both TS and JS.
 
    ```tsx
    interface CardProps {
@@ -50,13 +50,12 @@ There are a host of good storybook state packages available. The one that we hav
 
 If you are trying to run one of your sub-packages scripts with `npm` you will find that it cannot find the bin file.
 
-This is `npm` and `yarn` have different resolution strategies for bin files. `npm` only looks in the current working directory's `node_modules`, while `yarn` will walk up to the root of your monorepo to find the bin file.
+This is because `npm` and `yarn` have different resolution strategies for bin files. `npm` only looks in the current working directory's `node_modules`, while `yarn` will walk up to the root of your monorepo to find the bin file.
 
 For that reason you must run the script with `yarn` instead of `npm`.
 
 ```sh
 # Instead of this
-
 npm run build
 
 # Do This
