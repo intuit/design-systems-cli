@@ -1,3 +1,17 @@
+# v0.74.12 (Mon Jan 13 2020)
+
+#### ⚠️  Pushed to master
+
+- add circleCI setup docs  ([@hipstersmoothie](https://github.com/hipstersmoothie))
+- `@design-systems/create`
+  - add intregation tests to monorepo template  ([@hipstersmoothie](https://github.com/hipstersmoothie))
+
+#### Authors: 1
+
+- Andrew Lisowski ([@hipstersmoothie](https://github.com/hipstersmoothie))
+
+---
+
 # v0.74.11 (Mon Jan 13 2020)
 
 #### ⚠️  Pushed to master
