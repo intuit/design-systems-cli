@@ -47,6 +47,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <td align="center"><a href="http://tylerkrupicka.com"><img src="https://avatars1.githubusercontent.com/u/5761061?v=4" width="100px;" alt=""/><br /><sub><b>Tyler Krupicka</b></sub></a><br /><a href="https://github.com/intuit/design-systems-cli/commits?author=tylerkrupicka" title="Code">💻</a></td>
     <td align="center"><a href="https://github.com/kgassner"><img src="https://avatars0.githubusercontent.com/u/11743655?v=4" width="100px;" alt=""/><br /><sub><b>Kendall Gassner</b></sub></a><br /><a href="https://github.com/intuit/design-systems-cli/commits?author=kgassner" title="Code">💻</a></td>
     <td align="center"><a href="https://github.com/kharrop"><img src="https://avatars0.githubusercontent.com/u/24794756?v=4" width="100px;" alt=""/><br /><sub><b>Kelly Harrop</b></sub></a><br /><a href="#design-kharrop" title="Design">🎨</a></td>
+    <td align="center"><a href="http://peter.mikit.sh"><img src="https://avatars3.githubusercontent.com/u/1571918?v=4" width="100px;" alt=""/><br /><sub><b>Peter Mikitsh</b></sub></a><br /><a href="https://github.com/intuit/design-systems-cli/commits?author=petermikitsh" title="Documentation">📖</a></td>
   </tr>
 </table>
 

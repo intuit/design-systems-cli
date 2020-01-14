@@ -61,6 +61,15 @@
       "contributions": [
         "design"
       ]
+    },
+    {
+      "login": "petermikitsh",
+      "name": "Peter Mikitsh",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/1571918?v=4",
+      "profile": "http://peter.mikit.sh",
+      "contributions": [
+        "doc"
+      ]
     }
   ],
   "contributorsPerLine": 7
