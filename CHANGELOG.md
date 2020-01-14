@@ -1,3 +1,27 @@
+# v1.0.0 (Tue Jan 14 2020)
+
+#### 💥  Breaking Change
+
+- `@design-systems/cli`
+  - Release v1 :champagne:  :ship: [#3](https://github.com/intuit/design-systems-cli/pull/3) ([@hipstersmoothie](https://github.com/hipstersmoothie))
+
+#### 🐛  Bug Fix
+
+- fix publishing [#4](https://github.com/intuit/design-systems-cli/pull/4) ([@hipstersmoothie](https://github.com/hipstersmoothie))
+
+#### 📝  Documentation
+
+- Add @kharrop as a contributor for the logo design [#2](https://github.com/intuit/design-systems-cli/pull/2) ([@adierkens](https://github.com/adierkens))
+- fix: typo, README link [#1](https://github.com/intuit/design-systems-cli/pull/1) ([@petermikitsh](https://github.com/petermikitsh))
+
+#### Authors: 3
+
+- Adam Dierkens ([@adierkens](https://github.com/adierkens))
+- Andrew Lisowski ([@hipstersmoothie](https://github.com/hipstersmoothie))
+- Peter Mikitsh ([@petermikitsh](https://github.com/petermikitsh))
+
+---
+
 # v0.74.13 (Mon Jan 13 2020)
 
 #### ⚠️  Pushed to master
