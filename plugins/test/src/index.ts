@@ -56,7 +56,7 @@ export default class TestPlugin implements Plugin<TestArgs> {
         process.exit(1);
       }
     } catch (e) {
-      this.logger.trace(e);
+      this.logger.error(e);
       process.exit(1);
     }
   }
