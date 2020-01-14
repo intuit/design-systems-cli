@@ -56,7 +56,6 @@ For that reason you must run the script with `yarn` instead of `npm`.
 
 ```sh
 # Instead of this
-
 npm run build
 
 # Do This
