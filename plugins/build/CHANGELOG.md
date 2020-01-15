@@ -1,3 +1,15 @@
+# v1.0.5 (Wed Jan 15 2020)
+
+#### 🐛  Bug Fix
+
+- Hash the classnames based on the contents of the css file  ([@adierkens](https://github.com/adierkens))
+
+#### Authors: 1
+
+- Adam Dierkens ([@adierkens](https://github.com/adierkens))
+
+---
+
 # v1.0.4 (Wed Jan 15 2020)
 
 #### 🐛  Bug Fix

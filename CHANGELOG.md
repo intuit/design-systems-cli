@@ -1,3 +1,16 @@
+# v1.0.5 (Wed Jan 15 2020)
+
+#### 🐛  Bug Fix
+
+- `@design-systems/build`
+  - Hash the classnames based on the contents of the css file + selector + package.json [#13](https://github.com/intuit/design-systems-cli/pull/13) ([@adierkens](https://github.com/adierkens))
+
+#### Authors: 1
+
+- Adam Dierkens ([@adierkens](https://github.com/adierkens))
+
+---
+
 # v1.0.4 (Wed Jan 15 2020)
 
 #### 🐛  Bug Fix
