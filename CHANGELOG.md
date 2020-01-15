@@ -1,3 +1,16 @@
+# v1.0.2 (Wed Jan 15 2020)
+
+#### 🐛  Bug Fix
+
+- `@design-systems/storybook`
+  - add clearer docs around custom storybook config [#9](https://github.com/intuit/design-systems-cli/pull/9) ([@hipstersmoothie](https://github.com/hipstersmoothie))
+
+#### Authors: 1
+
+- Andrew Lisowski ([@hipstersmoothie](https://github.com/hipstersmoothie))
+
+---
+
 # v1.0.1 (Wed Jan 15 2020)
 
 #### 🐛  Bug Fix
