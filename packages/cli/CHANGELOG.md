@@ -1,3 +1,15 @@
+# v1.0.4 (Wed Jan 15 2020)
+
+#### 🐛  Bug Fix
+
+- merge user supplied args so they don't get overwritten  ([@hipstersmoothie](https://github.com/hipstersmoothie))
+
+#### Authors: 1
+
+- Andrew Lisowski ([@hipstersmoothie](https://github.com/hipstersmoothie))
+
+---
+
 # v1.0.1 (Wed Jan 15 2020)
 
 #### 🐛  Bug Fix

@@ -1,3 +1,18 @@
+# v1.0.4 (Wed Jan 15 2020)
+
+#### 🐛  Bug Fix
+
+- `@design-systems/build`
+  - ignore building/copying mdx files [#12](https://github.com/intuit/design-systems-cli/pull/12) ([@hipstersmoothie](https://github.com/hipstersmoothie))
+- `@design-systems/cli`
+  - merge user supplied args so they don't get overwritten [#11](https://github.com/intuit/design-systems-cli/pull/11) ([@hipstersmoothie](https://github.com/hipstersmoothie))
+
+#### Authors: 1
+
+- Andrew Lisowski ([@hipstersmoothie](https://github.com/hipstersmoothie))
+
+---
+
 # v1.0.3 (Wed Jan 15 2020)
 
 #### 🐛  Bug Fix
