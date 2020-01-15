@@ -44,6 +44,7 @@
     "fs-extra": "8.1.0",
     "icss-utils": "4.1.1",
     "minimatch": "3.0.4",
+    "pkg-up": "3.1.0",
     "postcss": "7.0.26",
     "postcss-hexrgba": "2.0.0",
     "postcss-icss-selectors": "2.0.3",

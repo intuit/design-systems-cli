@@ -4,6 +4,9 @@ import autoprefixer from 'autoprefixer';
 import hexRGBA from 'postcss-hexrgba';
 import modules from 'postcss-modules';
 import fs from 'fs-extra';
+import crypto from 'crypto';
+import path from 'path';
+import pkgUp from 'pkg-up';
 
 interface PostCSSContext {
   env?: string;
@@ -11,17 +14,35 @@ interface PostCSSContext {
 }
 
 module.exports = function(ctx: PostCSSContext = { outDir: 'dist' }) {
-  const generateScopedName =
-    (ctx.env !== 'module' && '[local]') ||
-    (process.env.NODE_ENV === 'development' && '[name]-[local]') ||
-    '[hash:base64:7]';
-
   return {
     plugins: [
       nested,
       modules({
         camelCase: true,
-        generateScopedName,
+        generateScopedName(name: string, filename: string, css: string) {
+          const base = path.basename(filename, '.css');
+          const pkgJson = pkgUp.sync({ cwd: path.dirname(filename) });
+
+          if (ctx.env !== 'module') {
+            return name;
+          }
+
+          const hash = crypto
+            .createHash('md5')
+            .update(base)
+            .update(name)
+            .update(css);
+
+          if (pkgJson) {
+            try {
+              const pkgJsonContent = fs.readFileSync(pkgJson, 'utf-8');
+              hash.update(pkgJsonContent);
+            } catch (e) {}
+          }
+
+          const hashString = hash.digest('hex');
+          return `${base}-${name}-${hashString.substr(hashString.length - 7)}`;
+        },
         async getJSON(
           cssFileName: string,
           json: Record<string, string>,
