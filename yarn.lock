@@ -1521,6 +1521,7 @@
     fs-extra "8.1.0"
     icss-utils "4.1.1"
     minimatch "3.0.4"
+    pkg-up "3.1.0"
     postcss "7.0.26"
     postcss-hexrgba "2.0.0"
     postcss-icss-selectors "2.0.3"
@@ -14800,6 +14801,13 @@ pkg-up@2.0.0:
   integrity sha1-yBmscoBZpGHKscOImivjxJoATX8=
   dependencies:
     find-up "^2.1.0"
+
+pkg-up@3.1.0:
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/pkg-up/-/pkg-up-3.1.0.tgz#100ec235cc150e4fd42519412596a28512a0def5"
+  integrity sha512-nDywThFk1i4BQK4twPQ6TA4RT8bDY96yeuCVBWL3ePARCiEKDRSrNGbFIgUJpLp+XeIR65v8ra7WuJOFUBtkMA==
+  dependencies:
+    find-up "^3.0.0"
 
 playroom@hipstersmoothie/playroom#snippets:
   version "0.0.0-semantically-released"
