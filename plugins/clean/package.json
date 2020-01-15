@@ -1,6 +1,6 @@
 {
   "name": "@design-systems/clean",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "The clean command for @design-systems-cli",
   "main": "dist/index.js",
   "author": "Adam Dierkens <adam@dierkens.com>",
