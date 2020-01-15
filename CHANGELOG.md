@@ -1,3 +1,16 @@
+# v1.0.3 (Wed Jan 15 2020)
+
+#### 🐛  Bug Fix
+
+- `@design-systems/update`
+  - use correct changelog link [#10](https://github.com/intuit/design-systems-cli/pull/10) ([@hipstersmoothie](https://github.com/hipstersmoothie))
+
+#### Authors: 1
+
+- Andrew Lisowski ([@hipstersmoothie](https://github.com/hipstersmoothie))
+
+---
+
 # v1.0.2 (Wed Jan 15 2020)
 
 #### 🐛  Bug Fix
