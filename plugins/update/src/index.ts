@@ -62,7 +62,7 @@ async function getReleaseNotes(since: string) {
   logger.debug(`Getting release notes since v${since}`);
 
   const res = await fetch(
-    'https://github.com/raw/intuit/design-systems-cli/master/CHANGELOG.md'
+    'https://raw.githubusercontent.com/intuit/design-systems-cli/master/CHANGELOG.md'
   );
   const changelog = await res.text();
 
