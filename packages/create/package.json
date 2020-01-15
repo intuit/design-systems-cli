@@ -48,7 +48,7 @@
     "change-case": "3.1.0",
     "cli-spinners": "2.2.0",
     "colorette": "1.1.0",
-    "command-line-application": "0.9.5",
+    "command-line-application": "0.9.6",
     "copy-template-dir": "1.4.0",
     "dedent": "0.7.0",
     "degit": "https://github.com/hipstersmoothie/degit.git#private-release",

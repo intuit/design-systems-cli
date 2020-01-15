@@ -19,7 +19,7 @@
     "url": "https://github.com/intuit/design-systems-cli.git"
   },
   "dependencies": {
-    "command-line-application": "0.9.5",
+    "command-line-application": "0.9.6",
     "tslib": "1.10.0",
     "utility-types": "3.10.0"
   },

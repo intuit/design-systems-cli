@@ -1699,7 +1699,7 @@
 "@design-systems/plugin@link:packages/plugin":
   version "0.74.13"
   dependencies:
-    command-line-application "0.9.5"
+    command-line-application "0.9.6"
     tslib "1.10.0"
     utility-types "3.10.0"
 
@@ -6818,10 +6818,10 @@ comma-separated-tokens@^1.0.0:
   resolved "https://registry.yarnpkg.com/comma-separated-tokens/-/comma-separated-tokens-1.0.7.tgz#419cd7fb3258b1ed838dc0953167a25e152f5b59"
   integrity sha512-Jrx3xsP4pPv4AwJUDWY9wOXGtwPXARej6Xd99h4TUGotmf8APuquKMpK+dnD3UgyxK7OEWaisjZz+3b5jtL6xQ==
 
-command-line-application@0.9.5, command-line-application@^0.9.3:
-  version "0.9.5"
-  resolved "https://registry.yarnpkg.com/command-line-application/-/command-line-application-0.9.5.tgz#ae538f549d41f7496cf5d6cf356425c34ed30555"
-  integrity sha512-dLL/2HDrOScJrZbvAPCNGme9ZR758Uv50mD5nHQz8Y8DE/BgFfSHxlIF9azu+hWtlVpcb0F9CVbo57Omu250Ew==
+command-line-application@0.9.6:
+  version "0.9.6"
+  resolved "https://registry.yarnpkg.com/command-line-application/-/command-line-application-0.9.6.tgz#03da3db29a0dbee1af601f03198a2f2425d67803"
+  integrity sha512-7wc7YX7s/hqZWKp4r37IBlW/Bhh92HWeQW2VV++Mt9x35AKFntz9f7A94Zz+AsImHZmRGHd8iNW5m0jUd4GQpg==
   dependencies:
     "@types/command-line-args" "^5.0.0"
     "@types/command-line-usage" "^5.0.1"
@@ -6855,6 +6855,20 @@ command-line-application@^0.8.0:
     command-line-usage "^5.0.5"
     meant "^1.0.1"
     remove-markdown "^0.3.0"
+
+command-line-application@^0.9.3:
+  version "0.9.5"
+  resolved "https://registry.yarnpkg.com/command-line-application/-/command-line-application-0.9.5.tgz#ae538f549d41f7496cf5d6cf356425c34ed30555"
+  integrity sha512-dLL/2HDrOScJrZbvAPCNGme9ZR758Uv50mD5nHQz8Y8DE/BgFfSHxlIF9azu+hWtlVpcb0F9CVbo57Omu250Ew==
+  dependencies:
+    "@types/command-line-args" "^5.0.0"
+    "@types/command-line-usage" "^5.0.1"
+    chalk "^2.4.1"
+    command-line-args "^5.1.1"
+    command-line-usage "^6.0.0"
+    meant "^1.0.1"
+    remove-markdown "^0.3.0"
+    tslib "1.10.0"
 
 command-line-args@^5.0.2, command-line-args@^5.1.1:
   version "5.1.1"
