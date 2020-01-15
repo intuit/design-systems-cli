@@ -1,3 +1,21 @@
+# v1.0.1 (Wed Jan 15 2020)
+
+#### 🐛  Bug Fix
+
+- `@design-systems/cli`, `@design-systems/create`, `@design-systems/plugin`
+  - upgrade command-line-application [#8](https://github.com/intuit/design-systems-cli/pull/8) ([@hipstersmoothie](https://github.com/hipstersmoothie))
+
+#### 📝  Documentation
+
+- `@design-systems/test`
+  - correct kendall [#5](https://github.com/intuit/design-systems-cli/pull/5) ([@hipstersmoothie](https://github.com/hipstersmoothie))
+
+#### Authors: 1
+
+- Andrew Lisowski ([@hipstersmoothie](https://github.com/hipstersmoothie))
+
+---
+
 # v1.0.0 (Tue Jan 14 2020)
 
 #### 💥  Breaking Change

@@ -1,3 +1,15 @@
+# v1.0.1 (Wed Jan 15 2020)
+
+#### 🐛  Bug Fix
+
+- upgrade command-line-application  ([@hipstersmoothie](https://github.com/hipstersmoothie))
+
+#### Authors: 1
+
+- Andrew Lisowski ([@hipstersmoothie](https://github.com/hipstersmoothie))
+
+---
+
 # v1.0.0 (Tue Jan 14 2020)
 
 #### 🐛  Bug Fix
