@@ -8,6 +8,7 @@ import dotenv from 'dotenv';
 import path from 'path';
 import get from 'dlv';
 import checkForUpdate from 'update-check';
+import merge from 'deepmerge';
 
 import { createLogger, setLogLevel } from '@design-systems/cli-utils';
 import { loadConfig, validateConfig } from '@design-systems/load-config';
@@ -106,7 +107,7 @@ export async function main() {
       ? args._command.join('.')
       : args._command;
 
-    return plugin.run({ ...global, ...get(config, commandPath, {}), ...args });
+    return plugin.run(merge.all([global, args, get(config, commandPath, {})]));
   }
 
   log.error(`No matching command found: ${commandName}`);
