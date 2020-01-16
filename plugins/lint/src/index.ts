@@ -280,7 +280,7 @@ export default class LintPlugin implements Plugin<LintArgs> {
           ...result,
           warnings: [
             ...result.warnings,
-            ...disables.ranges.map((range: any) => ({
+            ...disables.ranges.map(range => ({
               rule: range.unusedRule,
               severity: 'warning' as stylelint.Severity,
               text: 'Needless stylint-disable',

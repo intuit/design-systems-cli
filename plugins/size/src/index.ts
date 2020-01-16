@@ -13,7 +13,7 @@ import fs from 'fs-extra';
 import Commently from 'commently';
 import getExports from '@royriojas/get-exports-from-file';
 import changeCase from 'change-case';
-import InjectPlugin, { registry } from 'webpack-inject-plugin';
+import InjectPlugin from 'webpack-inject-plugin';
 
 import { table as cliTable } from 'table';
 import markdownTable from 'markdown-table';
@@ -463,7 +463,6 @@ async function getSizes(options: GetSizesOptions & CommonOptions) {
 
     logger.debug(`Installing: ${options.name}`);
 
-    console.log({options})
     if (options.registry) {
       execSync(`yarn add ${options.name} --registry ${options.registry}`, execOptions);
     } else {
