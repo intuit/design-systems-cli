@@ -1,3 +1,16 @@
+# v1.1.0 (Thu Jan 16 2020)
+
+#### 🚀  Enhancement
+
+- `@design-systems/lint`, `@design-systems/size`
+  - add size option for private registry [#15](https://github.com/intuit/design-systems-cli/pull/15) ([@hipstersmoothie](https://github.com/hipstersmoothie))
+
+#### Authors: 1
+
+- Andrew Lisowski ([@hipstersmoothie](https://github.com/hipstersmoothie))
+
+---
+
 # v1.0.6 (Wed Jan 15 2020)
 
 #### 🐛  Bug Fix
