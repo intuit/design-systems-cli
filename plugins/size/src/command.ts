@@ -67,6 +67,12 @@ const command: CliCommand = {
       config: true
     },
     {
+      name: 'registry',
+      type: String,
+      description: 'The registry to install packages from',
+      config: true
+    },
+    {
       name: 'comment',
       type: Boolean,
       description:

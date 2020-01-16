@@ -81,7 +81,7 @@ jobs:
           at: ~/design-systems-cli
       - run:
           name: Check PR for semantic version label
-          command: auto pr-check --pr $CHANGE_ID --url $CIRCLE_BUILD_URL
+          command: yarn auto pr-check --pr $CHANGE_ID --url $CIRCLE_BUILD_URL
 
   release:
     <<: *defaults
