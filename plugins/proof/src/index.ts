@@ -18,7 +18,7 @@ export default class ProofPlugin implements Plugin<CLIArguments> {
         process.exit(1);
       }
     } catch (e) {
-      this.logger.trace(e);
+      this.logger.error(e);
       process.exit(1);
     }
   }
