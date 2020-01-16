@@ -13,7 +13,7 @@ import fs from 'fs-extra';
 import Commently from 'commently';
 import getExports from '@royriojas/get-exports-from-file';
 import changeCase from 'change-case';
-import InjectPlugin from 'webpack-inject-plugin';
+import InjectPlugin, { registry } from 'webpack-inject-plugin';
 
 import { table as cliTable } from 'table';
 import markdownTable from 'markdown-table';
@@ -54,6 +54,8 @@ export interface SizeArgs {
   all?: boolean;
   /** Package names to ignore */
   ignore?: string[];
+  /** The registry to install packages from */
+  registry?: string;
 }
 
 interface Export {
@@ -433,6 +435,8 @@ interface CommonOptions {
   chunkByExport?: boolean;
   /** Whether the size output will be diffed */
   diff?: boolean;
+  /** The registry to install packages from */
+  registry?: string;
 }
 
 interface GetSizesOptions {
@@ -459,7 +463,12 @@ async function getSizes(options: GetSizesOptions & CommonOptions) {
 
     logger.debug(`Installing: ${options.name}`);
 
-    execSync(`yarn add ${options.name}`, execOptions);
+    console.log({options})
+    if (options.registry) {
+      execSync(`yarn add ${options.name} --registry ${options.registry}`, execOptions);
+    } else {
+      execSync(`yarn add ${options.name}`, execOptions);
+    }
   } catch (error) {
     logger.debug(error);
     logger.warn(`Could not find package ${options.name}...`);
@@ -516,7 +525,8 @@ async function calcSizeForPackage({
   scope,
   persist,
   chunkByExport,
-  diff
+  diff,
+  registry
 }: CommonOptions): Promise<Size> {
   const sizes = await getSizes({
     name,
@@ -524,7 +534,8 @@ async function calcSizeForPackage({
     scope,
     persist,
     chunkByExport,
-    diff
+    diff,
+    registry
   });
 
   const js = sizes.filter(size => !size.chunkNames.includes('css'));
@@ -558,7 +569,8 @@ async function diffSizeForPackage({
   main,
   persist = false,
   chunkByExport = false,
-  diff = false
+  diff = false,
+  registry
 }: DiffSizeForPackageOptions): Promise<SizeResult> {
   let master: Size;
 
@@ -569,7 +581,8 @@ async function diffSizeForPackage({
       scope: 'master',
       persist,
       chunkByExport,
-      diff
+      diff,
+      registry
     });
   } catch (error) {
     logger.error(
@@ -586,7 +599,8 @@ async function diffSizeForPackage({
     scope: 'pr',
     persist,
     chunkByExport,
-    diff
+    diff,
+    registry
   });
   const masterSize = master.js + master.css;
   const prSize = pr.js + pr.css;
@@ -714,7 +728,8 @@ async function calcSizeForAllPackages(args: SizeArgs) {
         name: packageJson.package.name,
         main: packagePath,
         persist: undefined,
-        chunkByExport: args.detailed
+        chunkByExport: args.detailed,
+        registry: args.registry
       });
       results.push(size);
 
@@ -754,17 +769,18 @@ async function calcSizeForAllPackages(args: SizeArgs) {
 }
 
 /** Start the webpack bundle analyzer for both of the bundles. */
-async function startAnalyze(name: string) {
+async function startAnalyze(name: string, registry?: string) {
   logger.start('Analyzing build output...');
 
   await Promise.all([
-    getSizes({ name, importName: name, scope: 'master', analyze: true }),
+    getSizes({ name, importName: name, scope: 'master', analyze: true, registry }),
     getSizes({
       name: process.cwd(),
       importName: name,
       scope: 'pr',
       analyze: true,
-      analyzerPort: 9000
+      analyzerPort: 9000,
+      registry
     })
   ]);
 }
@@ -861,7 +877,7 @@ export default class SizePlugin implements Plugin<SizeArgs> {
     }
 
     if (args.analyze) {
-      await startAnalyze(name);
+      await startAnalyze(name, args.registry);
       return;
     }
 
@@ -876,7 +892,8 @@ export default class SizePlugin implements Plugin<SizeArgs> {
       main: process.cwd(),
       persist: args.persist || args.diff,
       chunkByExport: args.detailed,
-      diff: args.diff
+      diff: args.diff,
+      registry: args.registry
     });
     const header = args.css ? cssHeader : defaultHeader;
 
