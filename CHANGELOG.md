@@ -1,3 +1,16 @@
+# v1.0.6 (Wed Jan 15 2020)
+
+#### 🐛  Bug Fix
+
+- `@design-systems/proof`
+  - log proof error [#14](https://github.com/intuit/design-systems-cli/pull/14) ([@hipstersmoothie](https://github.com/hipstersmoothie))
+
+#### Authors: 1
+
+- Andrew Lisowski ([@hipstersmoothie](https://github.com/hipstersmoothie))
+
+---
+
 # v1.0.5 (Wed Jan 15 2020)
 
 #### 🐛  Bug Fix
