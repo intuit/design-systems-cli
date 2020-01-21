@@ -1,3 +1,58 @@
+# v1.1.1 (Tue Jan 21 2020)
+
+### Release Notes
+
+_From #30_
+
+<details>
+<summary>testing-library/jest-dom</summary>
+
+---
+
+#### 🐛  Bug Fix
+
+- `@design-systems/storybook`
+  - upgrade storybook [#34](https://github.com/intuit/design-systems-cli/pull/34) ([@hipstersmoothie](https://github.com/hipstersmoothie))
+
+#### 🏠  Internal
+
+- Update renovate.json [#28](https://github.com/intuit/design-systems-cli/pull/28) ([@hipstersmoothie](https://github.com/hipstersmoothie))
+- Update renovate.json [#27](https://github.com/intuit/design-systems-cli/pull/27) ([@hipstersmoothie](https://github.com/hipstersmoothie))
+- Update renovate.json [#26](https://github.com/intuit/design-systems-cli/pull/26) ([@hipstersmoothie](https://github.com/hipstersmoothie))
+- Update label [#21](https://github.com/intuit/design-systems-cli/pull/21) ([@hipstersmoothie](https://github.com/hipstersmoothie))
+- Update renovate.json [#16](https://github.com/intuit/design-systems-cli/pull/16) ([@hipstersmoothie](https://github.com/hipstersmoothie))
+
+#### 🔩 Dependency Updates
+
+- Update auto [#17](https://github.com/intuit/design-systems-cli/pull/17) ([@renovate-bot](https://github.com/renovate-bot) [@hipstersmoothie](https://github.com/hipstersmoothie))
+- `@design-systems/build`, `@design-systems/dev`, `@design-systems/size`
+  - Update dependency chokidar to v3.3.1 [#39](https://github.com/intuit/design-systems-cli/pull/39) ([@renovate-bot](https://github.com/renovate-bot))
+- `@design-systems/test`
+  - Update dependency babel-plugin-istanbul to v5.2.0 [#37](https://github.com/intuit/design-systems-cli/pull/37) ([@renovate-bot](https://github.com/renovate-bot))
+- `@design-systems/size`
+  - Update dependency @types/webpack-sources to v0.1.6 [#36](https://github.com/intuit/design-systems-cli/pull/36) ([@renovate-bot](https://github.com/renovate-bot))
+- `@design-systems/babel-plugin-include-styles`
+  - Update dependency @types/node to v12.12.25 [#35](https://github.com/intuit/design-systems-cli/pull/35) ([@renovate-bot](https://github.com/renovate-bot))
+- `@design-systems/bundle`
+  - Update dependency case-sensitive-paths-webpack-plugin to v2.3.0 [#38](https://github.com/intuit/design-systems-cli/pull/38) ([@renovate-bot](https://github.com/renovate-bot))
+- `@design-systems/test`
+  - Update dependency @types/babel__core to v7.1.3 [#31](https://github.com/intuit/design-systems-cli/pull/31) ([@renovate-bot](https://github.com/renovate-bot))
+- `@design-systems/test`
+  - Update dependency @types/jest to v24.9.0 [#33](https://github.com/intuit/design-systems-cli/pull/33) ([@renovate-bot](https://github.com/renovate-bot))
+- `@design-systems/dev`
+  - Update dependency @types/find-package-json to v1.1.1 [#32](https://github.com/intuit/design-systems-cli/pull/32) ([@renovate-bot](https://github.com/renovate-bot))
+- `@design-systems/babel-plugin-include-styles`, `@design-systems/build`, `@design-systems/playroom`, `@design-systems/proof`, `@design-systems/storybook`, `@design-systems/test`
+  - Update babel monorepo to v7.8.3 [#29](https://github.com/intuit/design-systems-cli/pull/29) ([@renovate-bot](https://github.com/renovate-bot) [@hipstersmoothie](https://github.com/hipstersmoothie))
+- `@design-systems/test`
+  - Update dependency @testing-library/jest-dom to v4.2.4 [#30](https://github.com/intuit/design-systems-cli/pull/30) ([@hipstersmoothie](https://github.com/hipstersmoothie))
+
+#### Authors: 2
+
+- Andrew Lisowski ([@hipstersmoothie](https://github.com/hipstersmoothie))
+- WhiteSource Renovate ([@renovate-bot](https://github.com/renovate-bot))
+
+---
+
 # v1.1.0 (Thu Jan 16 2020)
 
 #### 🚀  Enhancement

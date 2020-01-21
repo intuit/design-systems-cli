@@ -1,3 +1,18 @@
+# v1.1.1 (Tue Jan 21 2020)
+
+#### 🐛  Bug Fix
+
+- Update dependency chokidar to v3.3.1  ([@renovate-bot](https://github.com/renovate-bot))
+- Update babel monorepo to v7.8.3  ([@renovate-bot](https://github.com/renovate-bot))
+- Update auto  ([@renovate-bot](https://github.com/renovate-bot))
+
+#### Authors: 2
+
+- Andrew Lisowski ([@hipstersmoothie](https://github.com/hipstersmoothie))
+- WhiteSource Renovate ([@renovate-bot](https://github.com/renovate-bot))
+
+---
+
 # v1.0.5 (Wed Jan 15 2020)
 
 #### 🐛  Bug Fix

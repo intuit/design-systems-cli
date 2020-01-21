@@ -1,3 +1,16 @@
+# v1.1.1 (Tue Jan 21 2020)
+
+#### 🐛  Bug Fix
+
+- Update dependency case-sensitive-paths-webpack-plugin to v2.3.0  ([@renovate-bot](https://github.com/renovate-bot))
+
+#### Authors: 2
+
+- Andrew Lisowski ([@hipstersmoothie](https://github.com/hipstersmoothie))
+- WhiteSource Renovate ([@renovate-bot](https://github.com/renovate-bot))
+
+---
+
 # v0.74.1 (Tue Jan 07 2020)
 
 #### ⚠️  Pushed to master

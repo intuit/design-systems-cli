@@ -1,3 +1,15 @@
+# v1.1.1 (Tue Jan 21 2020)
+
+#### 🐛  Bug Fix
+
+- Update babel monorepo to v7.8.3  ([@renovate-bot](https://github.com/renovate-bot))
+
+#### Authors: 1
+
+- WhiteSource Renovate ([@renovate-bot](https://github.com/renovate-bot))
+
+---
+
 # v0.74.1 (Tue Jan 07 2020)
 
 #### ⚠️  Pushed to master

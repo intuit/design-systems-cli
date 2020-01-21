@@ -1,3 +1,17 @@
+# v1.1.1 (Tue Jan 21 2020)
+
+#### 🐛  Bug Fix
+
+- upgrade storybook  ([@hipstersmoothie](https://github.com/hipstersmoothie))
+- Update babel monorepo to v7.8.3  ([@renovate-bot](https://github.com/renovate-bot))
+
+#### Authors: 2
+
+- Andrew Lisowski ([@hipstersmoothie](https://github.com/hipstersmoothie))
+- WhiteSource Renovate ([@renovate-bot](https://github.com/renovate-bot))
+
+---
+
 # v1.0.2 (Wed Jan 15 2020)
 
 #### 🐛  Bug Fix
