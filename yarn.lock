@@ -2210,7 +2210,7 @@
     storybook-addon-jsx "7.1.13"
     storybook-addon-react-docgen "1.2.28"
     storybook-addon-sketch "0.1.0"
-    storybook-dark-mode "0.1.9"
+    storybook-dark-mode "0.2.0"
     tslib "1.10.0"
     webpack "4.41.2"
     webpack-filter-warnings-plugin "1.2.1"
@@ -9026,14 +9026,6 @@ entities@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/entities/-/entities-2.0.0.tgz#68d6084cab1b079767540d80e56a39b423e4abf4"
   integrity sha512-D9f7V0JSRwIxlRI2mjMqufDrRDnx8p+eEOz7aUM9SuvF8gsBzra0/6tbjl1m8eQHrZlYj6PxqE00hZ1SAIKPLw==
-
-env-ci@4.5.1:
-  version "4.5.1"
-  resolved "https://registry.yarnpkg.com/env-ci/-/env-ci-4.5.1.tgz#2ef014dcb974728b46d1244e491e9e6ccc1923ef"
-  integrity sha512-Xtmr+ordf8POu3NcNzx3eOa2zHyfD4h3fPHX5fLklkWa86ck35n1c9oZmyUnVPUl9zHnpZWdWtCUBPSWEagjCQ==
-  dependencies:
-    execa "^3.2.0"
-    java-properties "^1.0.0"
 
 env-ci@4.5.2, env-ci@^4.1.1:
   version "4.5.2"
@@ -18541,10 +18533,10 @@ storybook-chromatic@^2.2.2:
     tree-kill "^1.1.0"
     uuid "^3.3.2"
 
-storybook-dark-mode@0.1.9:
-  version "0.1.9"
-  resolved "https://registry.yarnpkg.com/storybook-dark-mode/-/storybook-dark-mode-0.1.9.tgz#11d9329143c341d2ee8672cb868e81ed5509b6c5"
-  integrity sha512-P4/4gC7/JkDpmYT2BCP//dAUSdVVLVMBeoe8Lgd/oiDZNAEvaX63Gc8uLEyeU5NCYTC0JuqlTL+jYY9Hmv6ZIA==
+storybook-dark-mode@0.2.0:
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/storybook-dark-mode/-/storybook-dark-mode-0.2.0.tgz#08c65093f0e31b2945808a0c9227be27c9325e8c"
+  integrity sha512-dR7g8Dk5C+d68BGMnN1e29t6lM0sprb+v3RMaO4oU/2/e0HckNtRzP7YHolI42aLqygBsbjWNPHsqRwTTBpiYQ==
   dependencies:
     fast-deep-equal "^2.0.1"
     memoizerific "^1.11.3"
