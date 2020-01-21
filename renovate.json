@@ -1,6 +1,8 @@
 {
   "extends": ["group:monorepos", "packages:postcss", "packages:linters"],
   "automerge": false,
+  "prHourlyLimit": 0,
+  "prConcurrentLimit": 0,
   "patch": {
     "labels": ["dependency-update"]
   },
