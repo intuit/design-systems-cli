@@ -2065,7 +2065,7 @@
     eslint-config-xo "0.27.2"
     eslint-config-xo-react "0.20.0"
     eslint-import-resolver-lerna "https://github.com/hipstersmoothie/eslint-import-resolver-lerna.git#catch"
-    eslint-plugin-import "2.18.2"
+    eslint-plugin-import "2.20.0"
     eslint-plugin-jest "23.0.4"
     eslint-plugin-jsdoc "18.1.5"
     eslint-plugin-jsx-a11y "6.2.3"
@@ -9027,14 +9027,6 @@ entities@^2.0.0:
   resolved "https://registry.yarnpkg.com/entities/-/entities-2.0.0.tgz#68d6084cab1b079767540d80e56a39b423e4abf4"
   integrity sha512-D9f7V0JSRwIxlRI2mjMqufDrRDnx8p+eEOz7aUM9SuvF8gsBzra0/6tbjl1m8eQHrZlYj6PxqE00hZ1SAIKPLw==
 
-env-ci@4.5.1:
-  version "4.5.1"
-  resolved "https://registry.yarnpkg.com/env-ci/-/env-ci-4.5.1.tgz#2ef014dcb974728b46d1244e491e9e6ccc1923ef"
-  integrity sha512-Xtmr+ordf8POu3NcNzx3eOa2zHyfD4h3fPHX5fLklkWa86ck35n1c9oZmyUnVPUl9zHnpZWdWtCUBPSWEagjCQ==
-  dependencies:
-    execa "^3.2.0"
-    java-properties "^1.0.0"
-
 env-ci@4.5.2, env-ci@^4.1.1:
   version "4.5.2"
   resolved "https://registry.yarnpkg.com/env-ci/-/env-ci-4.5.2.tgz#40b08825dcf4ed5b2cddd3d638190571cf96347a"
@@ -9291,7 +9283,7 @@ eslint-import-resolver-node@^0.3.2:
     debug "^2.6.9"
     resolve "^1.5.0"
 
-eslint-module-utils@^2.4.0, eslint-module-utils@^2.4.1:
+eslint-module-utils@^2.4.1:
   version "2.5.0"
   resolved "https://registry.yarnpkg.com/eslint-module-utils/-/eslint-module-utils-2.5.0.tgz#cdf0b40d623032274ccd2abd7e64c4e524d6e19c"
   integrity sha512-kCo8pZaNz2dsAW7nCUjuVoI11EBXXpIzfNxmaoLhXoRDOnqXLC4iSGVRdZPhOitfbdEfMEfKOiENaK6wDPZEGw==
@@ -9299,22 +9291,23 @@ eslint-module-utils@^2.4.0, eslint-module-utils@^2.4.1:
     debug "^2.6.9"
     pkg-dir "^2.0.0"
 
-eslint-plugin-import@2.18.2:
-  version "2.18.2"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-import/-/eslint-plugin-import-2.18.2.tgz#02f1180b90b077b33d447a17a2326ceb400aceb6"
-  integrity sha512-5ohpsHAiUBRNaBWAF08izwUGlbrJoJJ+W9/TBwsGoR1MnlgfwMIKrFeSjWbt6moabiXW9xNvtFz+97KHRfI4HQ==
+eslint-plugin-import@2.20.0:
+  version "2.20.0"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-import/-/eslint-plugin-import-2.20.0.tgz#d749a7263fb6c29980def8e960d380a6aa6aecaa"
+  integrity sha512-NK42oA0mUc8Ngn4kONOPsPB1XhbUvNHqF+g307dPV28aknPoiNnKLFd9em4nkswwepdF5ouieqv5Th/63U7YJQ==
   dependencies:
     array-includes "^3.0.3"
+    array.prototype.flat "^1.2.1"
     contains-path "^0.1.0"
     debug "^2.6.9"
     doctrine "1.5.0"
     eslint-import-resolver-node "^0.3.2"
-    eslint-module-utils "^2.4.0"
+    eslint-module-utils "^2.4.1"
     has "^1.0.3"
     minimatch "^3.0.4"
     object.values "^1.1.0"
     read-pkg-up "^2.0.0"
-    resolve "^1.11.0"
+    resolve "^1.12.0"
 
 eslint-plugin-jest@23.0.4:
   version "23.0.4"

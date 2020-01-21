@@ -23,7 +23,7 @@
     "eslint-config-xo": "0.27.2",
     "eslint-config-xo-react": "0.20.0",
     "eslint-import-resolver-lerna": "https://github.com/hipstersmoothie/eslint-import-resolver-lerna.git#catch",
-    "eslint-plugin-import": "2.18.2",
+    "eslint-plugin-import": "2.20.0",
     "eslint-plugin-jest": "23.0.4",
     "eslint-plugin-jsdoc": "18.1.5",
     "eslint-plugin-jsx-a11y": "6.2.3",
