@@ -24,7 +24,8 @@
     },
     {
       "packagePatterns": ["auto", "@auto-it"],
-      "groupName": "auto"
+      "groupName": "auto",
+      "excludePackageNames": ["autoprefixer"]
     }
   ]
 }
