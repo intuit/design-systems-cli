@@ -48,6 +48,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <td align="center"><a href="https://github.com/kendallgassner"><img src="https://avatars0.githubusercontent.com/u/15275462?s=400&v=4" width="100px;" alt=""/><br /><sub><b>Kendall Gassner</b></sub></a><br /><a href="https://github.com/intuit/design-systems-cli/commits?author=kendallgassner" title="Code">💻</a></td>
     <td align="center"><a href="https://github.com/kharrop"><img src="https://avatars0.githubusercontent.com/u/24794756?v=4" width="100px;" alt=""/><br /><sub><b>Kelly Harrop</b></sub></a><br /><a href="#design-kharrop" title="Design">🎨</a></td>
     <td align="center"><a href="http://peter.mikit.sh"><img src="https://avatars3.githubusercontent.com/u/1571918?v=4" width="100px;" alt=""/><br /><sub><b>Peter Mikitsh</b></sub></a><br /><a href="https://github.com/intuit/design-systems-cli/commits?author=petermikitsh" title="Documentation">📖</a></td>
+    <td align="center"><a href="https://renovate.whitesourcesoftware.com"><img src="https://avatars0.githubusercontent.com/u/25180681?v=4" width="100px;" alt=""/><br /><sub><b>WhiteSource Renovate</b></sub></a><br /><a href="https://github.com/intuit/design-systems-cli/commits?author=renovate-bot" title="Code">💻</a> <a href="https://github.com/intuit/design-systems-cli/commits?author=renovate-bot" title="Tests">⚠️</a></td>
   </tr>
 </table>
 
