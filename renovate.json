@@ -1,5 +1,5 @@
 {
-  "extends": ["group:monorepos", "packages:postcss", "packages:linters"],
+  "extends": ["group:monorepos", "packages:postcss"],
   "automerge": false,
   "prHourlyLimit": 0,
   "prConcurrentLimit": 0,
@@ -28,6 +28,11 @@
       "packagePatterns": ["auto", "@auto-it"],
       "groupName": "auto",
       "excludePackageNames": ["autoprefixer"]
+    },
+    {
+      "extends": "packages:linters",
+      "packagePatterns": ["^eslint"],
+      "groupName": "linters"
     }
   ]
 }
