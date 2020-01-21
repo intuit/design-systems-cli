@@ -27,6 +27,6 @@
     "tslib": "1.10.0"
   },
   "devDependencies": {
-    "@types/find-package-json": "1.1.0"
+    "@types/find-package-json": "1.1.1"
   }
 }
