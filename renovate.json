@@ -33,6 +33,10 @@
       "extends": "packages:linters",
       "packagePatterns": ["^eslint"],
       "groupName": "linters"
+    },
+    {
+      "packagePatterns": ["stylelint"],
+      "groupName": "stylelint"
     }
   ]
 }
