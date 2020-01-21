@@ -27,7 +27,7 @@
     "colorette": "1.1.0",
     "commently": "5.69.1",
     "cross-spawn": "7.0.1",
-    "css-loader": "3.2.0",
+    "css-loader": "3.4.2",
     "diff2html": "2.12.2",
     "file-size": "1.0.0",
     "fs-extra": "8.1.0",
