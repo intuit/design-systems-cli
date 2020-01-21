@@ -1,5 +1,5 @@
 {
-  "extends": ["group:monorepos"],
+  "extends": ["group:monorepos", "packages:postcss", "packages:linters"],
   "automerge": false,
   "patch": {
     "labels": ["dependency-update"]
@@ -25,10 +25,6 @@
     {
       "packagePatterns": ["auto", "@auto-it"],
       "groupName": "auto"
-    },
-    {
-      "extends": "packages:linters",
-      "groupName": "linters"
     }
   ]
 }
