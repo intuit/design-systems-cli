@@ -207,36 +207,6 @@
     anymatch "^3.1.1"
     tslib "1.10.0"
 
-"@auto-it/core@^7.17.0":
-  version "7.17.0"
-  resolved "https://registry.yarnpkg.com/@auto-it/core/-/core-7.17.0.tgz#4b0496472481226337dcb58dbef2639e5cb463fa"
-  integrity sha512-bjgAmb7dna70pUYghfyMPZWk5ArSnwPOpa9V3ZsgE/7JxTCxM/GBOubywDA5htOCgNBxfWezWERf5ZjgYm28hA==
-  dependencies:
-    "@octokit/graphql" "^4.0.0"
-    "@octokit/plugin-enterprise-compatibility" "1.1.1"
-    "@octokit/plugin-retry" "^2.2.0"
-    "@octokit/plugin-throttling" "^2.6.0"
-    "@octokit/rest" "16.35.0"
-    await-to-js "^2.1.1"
-    cosmiconfig "6.0.0"
-    dedent "^0.7.0"
-    deepmerge "^4.0.0"
-    dotenv "^8.0.0"
-    enquirer "^2.3.0"
-    env-ci "^4.1.1"
-    gitlog "^3.1.2"
-    https-proxy-agent "^3.0.0"
-    import-cwd "^3.0.0"
-    lodash.chunk "^4.2.0"
-    node-fetch "2.6.0"
-    semver "^6.0.0"
-    signale "^1.4.0"
-    tapable "^2.0.0-beta.2"
-    tinycolor2 "^1.4.1"
-    tslib "1.10.0"
-    typescript-memoize "^1.0.0-alpha.3"
-    url-join "^4.0.0"
-
 "@auto-it/core@^9.1.0":
   version "9.1.0"
   resolved "https://registry.yarnpkg.com/@auto-it/core/-/core-9.1.0.tgz#3d2eb8f74b8d60ec40a0b3146af06c6e2e356e19"
@@ -276,23 +246,6 @@
     array.prototype.flatmap "^1.2.2"
     tslib "1.10.0"
 
-"@auto-it/npm@^7.17.0":
-  version "7.17.0"
-  resolved "https://registry.yarnpkg.com/@auto-it/npm/-/npm-7.17.0.tgz#f06b2850f397468126a42c43ba5373a3b8678cce"
-  integrity sha512-W93I4UN8vNxuHsa7q1tnM7kO95JGp5IZEFv/eC59AMR5617nCRzVfDrGyAqz82XJuhBD2wsICaAOmA3d0Fdg3A==
-  dependencies:
-    "@auto-it/core" "^7.17.0"
-    env-ci "^4.1.1"
-    get-monorepo-packages "^1.1.0"
-    parse-author "^2.0.0"
-    parse-github-url "1.0.2"
-    registry-url "^5.1.0"
-    semver "^6.0.0"
-    tslib "1.10.0"
-    typescript-memoize "^1.0.0-alpha.3"
-    url-join "^4.0.0"
-    user-home "^2.0.0"
-
 "@auto-it/npm@^9.1.0":
   version "9.1.0"
   resolved "https://registry.yarnpkg.com/@auto-it/npm/-/npm-9.1.0.tgz#5adc2bcc448823873e24a2582273f4f6683e075c"
@@ -316,15 +269,6 @@
   integrity sha512-E7QERxcMz7VJcc5T3EoLm54W4XAz119mGqmCQPtGfK++PME1GTuyGy3FB2kp+7qbVpc9Gglb8E+jfwUUR5YBog==
   dependencies:
     "@auto-it/core" "^9.1.0"
-    deepmerge "^4.0.0"
-    tslib "1.10.0"
-
-"@auto-it/released@^7.17.0":
-  version "7.17.0"
-  resolved "https://registry.yarnpkg.com/@auto-it/released/-/released-7.17.0.tgz#55ee4ebacc149fda265d575f44193b3342cee54a"
-  integrity sha512-A4ZTihgw8dy0ocaocujDH0G6mbGuCSUWSSGaAQuM8+Sdduz5Du3UE3OzdYjGEXj+ciIs3hATPy3cwMs5rynqIg==
-  dependencies:
-    "@auto-it/core" "^7.17.0"
     deepmerge "^4.0.0"
     tslib "1.10.0"
 
@@ -2984,24 +2928,6 @@
     once "^1.4.0"
     universal-user-agent "^4.0.0"
 
-"@octokit/rest@16.35.0":
-  version "16.35.0"
-  resolved "https://registry.yarnpkg.com/@octokit/rest/-/rest-16.35.0.tgz#7ccc1f802f407d5b8eb21768c6deca44e7b4c0d8"
-  integrity sha512-9ShFqYWo0CLoGYhA1FdtdykJuMzS/9H6vSbbQWDX4pWr4p9v+15MsH/wpd/3fIU+tSxylaNO48+PIHqOkBRx3w==
-  dependencies:
-    "@octokit/request" "^5.2.0"
-    "@octokit/request-error" "^1.0.2"
-    atob-lite "^2.0.0"
-    before-after-hook "^2.0.0"
-    btoa-lite "^1.0.0"
-    deprecation "^2.0.0"
-    lodash.get "^4.4.2"
-    lodash.set "^4.3.2"
-    lodash.uniq "^4.5.0"
-    octokit-pagination-methods "^1.1.0"
-    once "^1.4.0"
-    universal-user-agent "^4.0.0"
-
 "@octokit/rest@16.37.0":
   version "16.37.0"
   resolved "https://registry.yarnpkg.com/@octokit/rest/-/rest-16.37.0.tgz#e08501c471199cb4942587f2425a7990b34a49eb"
@@ -3824,17 +3750,6 @@
   version "7.0.1"
   resolved "https://registry.yarnpkg.com/@types/babel__code-frame/-/babel__code-frame-7.0.1.tgz#baf2529c4abbfb5e4008c845efcfe39a187e2f99"
   integrity sha512-FFfbQozKxYmOnCKFYV+EQprjBI7u2yaNc2ly/K9AhzyC8MzXtCtSRqptpw+HUJxhwCOo5mLwf1ATmzyhOaVbDg==
-
-"@types/babel__core@7.1.2":
-  version "7.1.2"
-  resolved "https://registry.yarnpkg.com/@types/babel__core/-/babel__core-7.1.2.tgz#608c74f55928033fce18b99b213c16be4b3d114f"
-  integrity sha512-cfCCrFmiGY/yq0NuKNxIQvZFy9kY/1immpSpTngOnyIbD4+eJOG5mxphhHDv3CHL9GltO4GcKr54kGBg3RNdbg==
-  dependencies:
-    "@babel/parser" "^7.1.0"
-    "@babel/types" "^7.0.0"
-    "@types/babel__generator" "*"
-    "@types/babel__template" "*"
-    "@types/babel__traverse" "*"
 
 "@types/babel__core@7.1.3", "@types/babel__core@^7.1.0":
   version "7.1.3"
@@ -5182,20 +5097,6 @@ author-regex@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/author-regex/-/author-regex-1.0.0.tgz#d08885be6b9bbf9439fe087c76287245f0a81450"
   integrity sha1-0IiFvmubv5Q5/gh8dihyRfCoFFA=
-
-auto@7.17.0:
-  version "7.17.0"
-  resolved "https://registry.yarnpkg.com/auto/-/auto-7.17.0.tgz#13ad4c00a47ee7b7f8e697c1511b63680722df93"
-  integrity sha512-FxBCYhTTq79s+Sjk9oX38A6Dck5hyYiwNoqOi1KXYGn430mJnLArjfnfWjQdOecClnVgGGBwAKgV1o8EqHVkUg==
-  dependencies:
-    "@auto-it/core" "^7.17.0"
-    "@auto-it/npm" "^7.17.0"
-    "@auto-it/released" "^7.17.0"
-    chalk "^3.0.0"
-    command-line-application "^0.9.3"
-    dedent "^0.7.0"
-    signale "^1.4.0"
-    tslib "1.10.0"
 
 auto@9.1.0:
   version "9.1.0"
@@ -8571,13 +8472,6 @@ enhanced-resolve@^4.0.0, enhanced-resolve@^4.1.0:
     memory-fs "^0.5.0"
     tapable "^1.0.0"
 
-enquirer@^2.3.0:
-  version "2.3.2"
-  resolved "https://registry.yarnpkg.com/enquirer/-/enquirer-2.3.2.tgz#1c30284907cadff5ed2404bd8396036dd3da070e"
-  integrity sha512-PLhTMPUXlnaIv9D3Cq3/Zr1xb7soeDDgunobyCmYLUG19n24dvC8i+ZZgm2DekGpDnx7JvFSHV7lxfM58PMtbA==
-  dependencies:
-    ansi-colors "^3.2.1"
-
 enquirer@^2.3.4:
   version "2.3.4"
   resolved "https://registry.yarnpkg.com/enquirer/-/enquirer-2.3.4.tgz#c608f2e1134c7f68c1c9ee056de13f9b31076de9"
@@ -10793,14 +10687,6 @@ https-proxy-agent@^2.2.1, https-proxy-agent@^2.2.3:
   version "2.2.4"
   resolved "https://registry.yarnpkg.com/https-proxy-agent/-/https-proxy-agent-2.2.4.tgz#4ee7a737abd92678a293d9b34a1af4d0d08c787b"
   integrity sha512-OmvfoQ53WLjtA9HeYP9RNrWMJzzAz1JGaSFr1nijg0PVR1JaD/xbJq1mdEIIlxGpXp9eSe/O2LgU9DJmTPd0Eg==
-  dependencies:
-    agent-base "^4.3.0"
-    debug "^3.1.0"
-
-https-proxy-agent@^3.0.0:
-  version "3.0.1"
-  resolved "https://registry.yarnpkg.com/https-proxy-agent/-/https-proxy-agent-3.0.1.tgz#b8c286433e87602311b01c8ea34413d856a4af81"
-  integrity sha512-+ML2Rbh6DAuee7d07tYGEKOEi2voWPUGan+ExdPbPW6Z3svq+JCqr0v8WmKPOkz1vOVykPCBSuobe7G8GJUtVg==
   dependencies:
     agent-base "^4.3.0"
     debug "^3.1.0"
