@@ -31,7 +31,7 @@
     "get-monorepo-packages": "1.2.0",
     "stylelint": "12.0.0",
     "stylelint-formatter-github": "0.3.2",
-    "stylelint-formatter-pretty": "1.1.3",
+    "stylelint-formatter-pretty": "1.1.4",
     "tslib": "1.10.0"
   },
   "devDependencies": {
