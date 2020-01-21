@@ -4566,10 +4566,10 @@
   resolved "https://registry.yarnpkg.com/@types/events/-/events-3.0.0.tgz#2862f3f58a9a7f7c3e78d79f130dd4d71c25c2a7"
   integrity sha512-EaObqwIvayI5a8dCzhFrjKzVwKLxjoG9T6Ppd5CEo07LRKfQ8Yokw54r5+Wq7FaBQ+yXRvQAYPrHwya1/UFt9g==
 
-"@types/find-package-json@1.1.0":
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/@types/find-package-json/-/find-package-json-1.1.0.tgz#203c49fc4ecf1012c27f1fc245f90e67c8481e7d"
-  integrity sha512-dd7/1Zy1aeMC80AhTiFW6goknToIkUj8Z+Q3jvnk/pU6oMT1DukQb1d3IO/cHpJW0LkXjUVcl9t60N7bOh8F/Q==
+"@types/find-package-json@1.1.1":
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/@types/find-package-json/-/find-package-json-1.1.1.tgz#c0d296ac74fe3309ed0fe75a9c3edb42a776d30c"
+  integrity sha512-XMCocYkg6VUpkbOQMKa3M5cgc3MvU/LJKQwd3VUJrWZbLr2ARUggupsCAF8DxjEEIuSO6HlnH+vl+XV4bgVeEQ==
   dependencies:
     "@types/node" "*"
 
