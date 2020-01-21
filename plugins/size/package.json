@@ -28,7 +28,7 @@
     "commently": "5.56.1",
     "cross-spawn": "7.0.1",
     "css-loader": "3.2.0",
-    "diff2html": "2.12.1",
+    "diff2html": "2.12.2",
     "file-size": "1.0.0",
     "fs-extra": "8.1.0",
     "get-monorepo-packages": "1.2.0",

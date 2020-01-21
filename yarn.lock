@@ -1924,7 +1924,7 @@
     minimist "^1.2.0"
 
 "@design-systems/build@link:plugins/build":
-  version "1.1.0"
+  version "1.1.1"
   dependencies:
     "@babel/code-frame" "7.8.3"
     "@babel/core" "7.8.3"
@@ -1965,7 +1965,7 @@
     typescript "3.7.2"
 
 "@design-systems/bundle@link:plugins/bundle":
-  version "1.1.0"
+  version "1.1.1"
   dependencies:
     "@design-systems/build" "link:plugins/build"
     "@design-systems/cli-utils" "link:packages/cli-utils"
@@ -1983,7 +1983,7 @@
     webpack "4.41.2"
 
 "@design-systems/clean@link:plugins/clean":
-  version "1.1.0"
+  version "1.1.1"
   dependencies:
     "@design-systems/cli-utils" "link:packages/cli-utils"
     "@design-systems/plugin" "link:packages/plugin"
@@ -1992,7 +1992,7 @@
     tslib "1.10.0"
 
 "@design-systems/cli-utils@link:packages/cli-utils":
-  version "1.1.0"
+  version "1.1.1"
   dependencies:
     find-up "4.1.0"
     npm-which "3.0.1"
@@ -2002,7 +2002,7 @@
     webpack "4.41.2"
 
 "@design-systems/core@link:packages/core":
-  version "1.1.0"
+  version "1.1.1"
   dependencies:
     "@design-systems/build" "link:plugins/build"
     "@design-systems/bundle" "link:plugins/bundle"
@@ -2022,7 +2022,7 @@
     tslib "1.10.0"
 
 "@design-systems/create-command@link:plugins/create-command":
-  version "1.1.0"
+  version "1.1.1"
   dependencies:
     "@design-systems/cli-utils" "link:packages/cli-utils"
     "@design-systems/create" "link:packages/create"
@@ -2040,10 +2040,10 @@
     tslib "1.10.0"
 
 "@design-systems/create@link:packages/create":
-  version "1.1.0"
+  version "1.1.1"
 
 "@design-systems/dev@link:plugins/dev":
-  version "1.1.0"
+  version "1.1.1"
   dependencies:
     "@design-systems/cli-utils" "link:packages/cli-utils"
     "@design-systems/plugin" "link:packages/plugin"
@@ -2053,7 +2053,7 @@
     tslib "1.10.0"
 
 "@design-systems/eslint-config@link:packages/eslint-config":
-  version "1.1.0"
+  version "1.1.1"
   dependencies:
     "@design-systems/cli-utils" "link:packages/cli-utils"
     "@typescript-eslint/eslint-plugin" "2.8.0"
@@ -2076,7 +2076,7 @@
     tslib "1.10.0"
 
 "@design-systems/lint@link:plugins/lint":
-  version "1.1.0"
+  version "1.1.1"
   dependencies:
     "@design-systems/cli-utils" "link:packages/cli-utils"
     "@design-systems/eslint-config" "link:packages/eslint-config"
@@ -2093,7 +2093,7 @@
     tslib "1.10.0"
 
 "@design-systems/load-config@link:packages/load-config":
-  version "1.1.0"
+  version "1.1.1"
   dependencies:
     "@design-systems/core" "link:packages/core"
     "@design-systems/plugin" "link:packages/plugin"
@@ -2107,7 +2107,7 @@
     tslib "1.10.0"
 
 "@design-systems/playroom@link:plugins/playroom":
-  version "1.1.0"
+  version "1.1.1"
   dependencies:
     "@babel/core" "7.8.3"
     "@babel/register" "7.8.3"
@@ -2126,14 +2126,14 @@
     webpack "4.41.2"
 
 "@design-systems/plugin@link:packages/plugin":
-  version "1.1.0"
+  version "1.1.1"
   dependencies:
     command-line-application "0.9.6"
     tslib "1.10.0"
     utility-types "3.10.0"
 
 "@design-systems/proof@link:plugins/proof":
-  version "1.1.0"
+  version "1.1.1"
   dependencies:
     "@babel/core" "7.8.3"
     "@babel/plugin-transform-runtime" "7.8.3"
@@ -2152,7 +2152,7 @@
     tslib "1.10.0"
 
 "@design-systems/size@link:plugins/size":
-  version "1.1.0"
+  version "1.1.1"
   dependencies:
     "@design-systems/cli-utils" "link:packages/cli-utils"
     "@design-systems/plugin" "link:packages/plugin"
@@ -2163,7 +2163,7 @@
     commently "5.56.1"
     cross-spawn "7.0.1"
     css-loader "3.2.0"
-    diff2html "2.12.1"
+    diff2html "2.12.2"
     file-size "1.0.0"
     fs-extra "8.1.0"
     get-monorepo-packages "1.2.0"
@@ -2182,7 +2182,7 @@
     webpack-sources "1.4.3"
 
 "@design-systems/storybook@link:plugins/storybook":
-  version "1.1.0"
+  version "1.1.1"
   dependencies:
     "@babel/core" "7.8.3"
     "@design-systems/build" "link:plugins/build"
@@ -2216,7 +2216,7 @@
     webpack-filter-warnings-plugin "1.2.1"
 
 "@design-systems/stylelint-config@link:packages/stylelint-config":
-  version "1.1.0"
+  version "1.1.1"
   dependencies:
     stylelint-a11y "1.2.2"
     stylelint-config-css-modules "2.1.0"
@@ -2230,7 +2230,7 @@
     tslib "1.10.0"
 
 "@design-systems/test@link:plugins/test":
-  version "1.1.0"
+  version "1.1.1"
   dependencies:
     "@babel/core" "7.8.3"
     "@design-systems/build" "link:plugins/build"
@@ -2250,7 +2250,7 @@
     tslib "1.10.0"
 
 "@design-systems/update@link:plugins/update":
-  version "1.1.0"
+  version "1.1.1"
   dependencies:
     "@design-systems/cli-utils" "link:packages/cli-utils"
     "@design-systems/plugin" "link:packages/plugin"
@@ -8561,10 +8561,10 @@ diff-sequences@^24.9.0:
   resolved "https://registry.yarnpkg.com/diff-sequences/-/diff-sequences-24.9.0.tgz#5715d6244e2aa65f48bba0bc972db0b0b11e95b5"
   integrity sha512-Dj6Wk3tWyTE+Fo1rW8v0Xhwk80um6yFYKbuAxc9c3EZxIHFDYwbi34Uk42u1CdnIiVorvt4RmlSDjIPyzGC2ew==
 
-diff2html@2.12.1:
-  version "2.12.1"
-  resolved "https://registry.yarnpkg.com/diff2html/-/diff2html-2.12.1.tgz#98139705ad529909fc709ba944347cf4d5e05ea4"
-  integrity sha512-c0JSkz5QL+/wP6nRM0j6rcJs2YoLlDILC1RLbSWqiKx+s6a2MSu0p4Prqyao+x6UDOpkfm5cTaX2mmc+d7xhdQ==
+diff2html@2.12.2:
+  version "2.12.2"
+  resolved "https://registry.yarnpkg.com/diff2html/-/diff2html-2.12.2.tgz#356d35f9c87c42ebd11558bedf1c99c5b00886e8"
+  integrity sha512-G/Zn1KyG/OeC+67N/P26WHsQpjrjUiRyWGvg29ypy3MxSsBmF0bzsU/Irq70i2UAg+f/MzmLx4v/Nkt01TOU3g==
   dependencies:
     diff "^4.0.1"
     hogan.js "^3.0.2"
