@@ -9027,14 +9027,6 @@ entities@^2.0.0:
   resolved "https://registry.yarnpkg.com/entities/-/entities-2.0.0.tgz#68d6084cab1b079767540d80e56a39b423e4abf4"
   integrity sha512-D9f7V0JSRwIxlRI2mjMqufDrRDnx8p+eEOz7aUM9SuvF8gsBzra0/6tbjl1m8eQHrZlYj6PxqE00hZ1SAIKPLw==
 
-env-ci@4.5.1:
-  version "4.5.1"
-  resolved "https://registry.yarnpkg.com/env-ci/-/env-ci-4.5.1.tgz#2ef014dcb974728b46d1244e491e9e6ccc1923ef"
-  integrity sha512-Xtmr+ordf8POu3NcNzx3eOa2zHyfD4h3fPHX5fLklkWa86ck35n1c9oZmyUnVPUl9zHnpZWdWtCUBPSWEagjCQ==
-  dependencies:
-    execa "^3.2.0"
-    java-properties "^1.0.0"
-
 env-ci@4.5.2, env-ci@^4.1.1:
   version "4.5.2"
   resolved "https://registry.yarnpkg.com/env-ci/-/env-ci-4.5.2.tgz#40b08825dcf4ed5b2cddd3d638190571cf96347a"
@@ -13696,10 +13688,10 @@ mem@^4.0.0:
     mimic-fn "^2.0.0"
     p-is-promise "^2.0.0"
 
-memfs@2.16.1:
-  version "2.16.1"
-  resolved "https://registry.yarnpkg.com/memfs/-/memfs-2.16.1.tgz#ef6ed9b24c7df07704758fce42431c3838291ffa"
-  integrity sha512-hOUIxeXPuDeryPx1h+WxkBWJwWmd8f1lYXBdUMFMLEhxGGlaP6ri30eW9K4cMpbuizNsAwQe2SK3KyRa9qodXw==
+memfs@2.17.1:
+  version "2.17.1"
+  resolved "https://registry.yarnpkg.com/memfs/-/memfs-2.17.1.tgz#bfcc11b6308214b4fb33eaca101132722d22e103"
+  integrity sha512-4kAcqibPAd8DN8/UIW/6OwvbhNq6MqwsQ0pxjo+2ZmxPlQAbn9TAepnRpdeYfw4Qq0Y+QqwE6wngLUowo2fcjg==
   dependencies:
     fast-extend "0.0.2"
     fs-monkey "^0.3.3"
