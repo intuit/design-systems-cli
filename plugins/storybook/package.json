@@ -24,7 +24,7 @@
     "@design-systems/build": "link:../build",
     "@design-systems/cli-utils": "link:../../packages/cli-utils",
     "@design-systems/plugin": "link:../../packages/plugin",
-    "@proof-ui/storybook": "0.0.9",
+    "@proof-ui/storybook": "0.0.12",
     "@storybook/addon-a11y": "5.3.8",
     "@storybook/addon-actions": "5.3.8",
     "@storybook/addon-backgrounds": "5.3.8",
