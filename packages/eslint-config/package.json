@@ -21,7 +21,7 @@
     "eslint-config-airbnb": "18.0.1",
     "eslint-config-prettier": "6.7.0",
     "eslint-config-xo": "0.27.2",
-    "eslint-config-xo-react": "0.20.0",
+    "eslint-config-xo-react": "0.22.0",
     "eslint-import-resolver-lerna": "https://github.com/hipstersmoothie/eslint-import-resolver-lerna.git#catch",
     "eslint-plugin-import": "2.18.2",
     "eslint-plugin-jest": "23.0.4",
