@@ -67,7 +67,7 @@
     ],
     "labels": [
       {
-        "name": "dependencies",
+        "name": "dependency-update",
         "changelogTitle": "🔩 Dependency Updates",
         "releaseType": "none"
       },
