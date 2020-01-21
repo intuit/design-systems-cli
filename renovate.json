@@ -1,4 +1,5 @@
 {
+  "extends": ["group:monorepos"],
   "automerge": false,
   "patch": {
     "labels": ["dependency-update"]
@@ -26,16 +27,8 @@
       "groupName": "auto"
     },
     {
-      "packagePatterns": ["@fuego"],
-      "groupName": "fuego"
-    },
-    {
-      "packageNames": ["react"],
-      "allowedVersions": "16.8.6"
-    },
-    {
-      "packageNames": ["react-dom"],
-      "allowedVersions": "16.8.6"
+      "extends": "packages:linters",
+      "groupName": "linters"
     }
   ]
 }
