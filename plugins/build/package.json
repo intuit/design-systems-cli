@@ -32,7 +32,7 @@
     "@babel/runtime": "7.7.2",
     "@design-systems/cli-utils": "link:../../packages/cli-utils",
     "@design-systems/plugin": "link:../../packages/plugin",
-    "autoprefixer": "9.7.1",
+    "autoprefixer": "9.7.4",
     "babel-plugin-styled-components": "1.10.6",
     "babel-preset-jest": "24.9.0",
     "change-case": "3.1.0",
