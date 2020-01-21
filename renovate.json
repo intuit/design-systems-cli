@@ -1,5 +1,4 @@
 {
-  "extends": ["schedule:earlyMondays"],
   "automerge": false,
   "patch": {
     "labels": ["dependency-update"]
