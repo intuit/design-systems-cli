@@ -55,6 +55,6 @@
     "@types/table": "4.0.7",
     "@types/terser-webpack-plugin": "2.2.0",
     "@types/webpack-bundle-analyzer": "2.13.3",
-    "@types/webpack-sources": "0.1.5"
+    "@types/webpack-sources": "0.1.6"
   }
 }
