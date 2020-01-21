@@ -37,7 +37,7 @@
     "@storybook/react": "5.3.8",
     "@storybook/theming": "5.3.8",
     "babel-loader": "8.0.6",
-    "core-js": "3.4.2",
+    "core-js": "3.6.4",
     "dedent": "0.7.0",
     "github-url-to-object": "4.0.4",
     "react-docgen-typescript-loader": "3.6.0",
