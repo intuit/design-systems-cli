@@ -2178,7 +2178,7 @@
     tslib "1.10.0"
     webpack "4.41.2"
     webpack-bundle-analyzer "3.6.0"
-    webpack-inject-plugin "1.5.3"
+    webpack-inject-plugin "1.5.4"
     webpack-sources "1.4.3"
 
 "@design-systems/storybook@link:plugins/storybook":
@@ -9026,14 +9026,6 @@ entities@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/entities/-/entities-2.0.0.tgz#68d6084cab1b079767540d80e56a39b423e4abf4"
   integrity sha512-D9f7V0JSRwIxlRI2mjMqufDrRDnx8p+eEOz7aUM9SuvF8gsBzra0/6tbjl1m8eQHrZlYj6PxqE00hZ1SAIKPLw==
-
-env-ci@4.5.1:
-  version "4.5.1"
-  resolved "https://registry.yarnpkg.com/env-ci/-/env-ci-4.5.1.tgz#2ef014dcb974728b46d1244e491e9e6ccc1923ef"
-  integrity sha512-Xtmr+ordf8POu3NcNzx3eOa2zHyfD4h3fPHX5fLklkWa86ck35n1c9oZmyUnVPUl9zHnpZWdWtCUBPSWEagjCQ==
-  dependencies:
-    execa "^3.2.0"
-    java-properties "^1.0.0"
 
 env-ci@4.5.2, env-ci@^4.1.1:
   version "4.5.2"
@@ -20456,10 +20448,10 @@ webpack-hot-middleware@^2.25.0:
     querystring "^0.2.0"
     strip-ansi "^3.0.0"
 
-webpack-inject-plugin@1.5.3:
-  version "1.5.3"
-  resolved "https://registry.yarnpkg.com/webpack-inject-plugin/-/webpack-inject-plugin-1.5.3.tgz#4d6894eb7d1bfbc1e30c75f2708699910d6ae6b2"
-  integrity sha512-Ri8dzjWvR5XQ/uRZM0xHdzAMQy1n337RopmXhsZ/p0K9GYMBRW1x+YrLEqSwH26wPcyZDcpDW0dmv9YfcJZUIw==
+webpack-inject-plugin@1.5.4:
+  version "1.5.4"
+  resolved "https://registry.yarnpkg.com/webpack-inject-plugin/-/webpack-inject-plugin-1.5.4.tgz#7d953f45fb51bb4d208ea9b1e6a792a5a879e0af"
+  integrity sha512-oDb30CX3YbKqGNfREANs7VnrFRrND/4aicd4Hcl0ZEOz6AdlJGIHzdX2/u1rq7r+VyRRUS1QDaKUoqHbZvfs6w==
   dependencies:
     "@types/loader-utils" "^1.1.3"
     "@types/webpack" "^4.4.17"
