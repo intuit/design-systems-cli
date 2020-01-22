@@ -33,7 +33,7 @@
     "identity-obj-proxy": "3.0.0",
     "jest": "24.8.0",
     "jest-github-reporter": "0.3.4",
-    "jest-junit": "6.4.0",
+    "jest-junit": "10.0.0",
     "polyfill-object.fromentries": "1.0.1",
     "tslib": "1.10.0"
   },
