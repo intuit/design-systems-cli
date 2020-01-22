@@ -29,12 +29,14 @@ export default function getSnippets() {
         [name]:
           typeof jsx === 'string'
             ? jsx
-            : jsxToString(jsx, {
+            : jsxToString(jsx as React.ReactNode, {
                 showDefaultProps: false,
-                displayName: (component: DisplayNamed) =>
-                  component.type.displayName ||
-                  component.type.name ||
-                  component.type
+                displayName: component =>
+                  component &&
+                  typeof component === 'object' && 
+                  ((component as any).type.displayName ||
+                    (component as any).type.name ||
+                    (component as any).type)
               })
       }))
     );
