@@ -5,7 +5,7 @@ import {
 } from '@design-systems/cli-utils';
 import fs from 'fs';
 import path from 'path';
-import changeCase from 'change-case';
+import { camelCase } from 'change-case';
 import ts from 'typescript';
 import postcss from 'postcss';
 import postcssIcssSelectors from 'postcss-icss-selectors';
@@ -274,7 +274,7 @@ export default class TypescriptCompiler {
 
           if (style) {
             const classes = Object.keys(style);
-            const camelClasses = classes.map(s => changeCase.camelCase(s));
+            const camelClasses = classes.map(s => camelCase(s));
             const className = node.name.getText();
             const exists = Boolean(
               classes.includes(className) || camelClasses.includes(className)

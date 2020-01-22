@@ -13,7 +13,8 @@ import os from 'os';
 import path from 'path';
 import { execSync } from 'child_process';
 import inquirer from 'inquirer';
-import changeCase from 'change-case';
+import { pascalCase, paramCase, camelCase } from 'change-case';
+import { titleCase } from 'title-case';
 import dedent from 'dedent';
 import createEstimator from 'progress-estimator';
 import spinners from 'cli-spinners';
@@ -75,8 +76,8 @@ const defaultVersion = (lernaInfo && lernaInfo.version) || '0.0.0';
 
 /** Determine the destination directory of the templated package. */
 function getDestDirectory(command: CreationChoice, name: string) {
-  const pascal = changeCase.pascalCase(name);
-  const kebab = changeCase.paramCase(name);
+  const pascal = pascalCase(name);
+  const kebab = paramCase(name);
 
   return (
     (command === 'component' && path.join(BASE_DIR, 'components', pascal)) ||
@@ -118,7 +119,7 @@ const askName = async (type: CreationChoice, force?: boolean) =>
 
       if (type !== 'system') {
         try {
-          const name = `@${monorepoName()}/${changeCase.kebabCase(input)}`;
+          const name = `@${monorepoName()}/${paramCase(input)}`;
           execSync(`npm view ${name}`, { stdio: 'ignore' });
 
           return `Package already exists on the registry: "${name}"`;
@@ -235,10 +236,15 @@ async function getTemplatePath(args: CreateArgs): Promise<string> {
     verbose: true
   });
 
-  emitter.on('info', (info: { /** A message from the degit process. */
-    message: string }) => {
-    logger.debug(info.message);
-  });
+  emitter.on(
+    'info',
+    (info: {
+      /** A message from the degit process. */
+      message: string;
+    }) => {
+      logger.debug(info.message);
+    }
+  );
 
   const dir = path.join(
     os.tmpdir(),
@@ -282,8 +288,8 @@ export default async function run(args: CreateArgs) {
       (await askRepo()),
     monorepoName: monorepoName()
   };
-  const pascal = changeCase.pascalCase(config.name);
-  const kebab = changeCase.paramCase(config.name);
+  const pascal = pascalCase(config.name);
+  const kebab = paramCase(config.name);
   let destinationDirectory = getDestDirectory(command, config.name);
 
   if ('cwd' in args && args.cwd) {
@@ -304,10 +310,10 @@ export default async function run(args: CreateArgs) {
   await copy(template, destinationDirectory, {
     ...config,
     cliVersion,
-    title: changeCase.titleCase(config.name),
+    title: titleCase(config.name),
     kebab,
     pascal,
-    camel: changeCase.camelCase(config.name)
+    camel: camelCase(config.name)
   });
   logger.debug('Created templated directory!');
 

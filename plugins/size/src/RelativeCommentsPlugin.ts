@@ -3,7 +3,7 @@
 import webpack from 'webpack';
 import { RawSource } from 'webpack-sources';
 import { monorepoName } from '@design-systems/cli-utils';
-import changeCase from 'change-case';
+import { paramCase } from 'change-case';
 
 interface RelativeCommentsPluginOptions {
   /** The name of the package */
@@ -45,9 +45,7 @@ export default class RelativeCommentsPlugin {
                   newPath = p1.replace(
                     /\.\.\/([a-zA-Z0-9_-]+)\//,
                     (whole: string, packageName: string) =>
-                      `@${monorepoName()}/${changeCase.kebabCase(
-                        packageName
-                      )}/`.trim()
+                      `@${monorepoName()}/${paramCase(packageName)}/`.trim()
                   );
                 }
 
