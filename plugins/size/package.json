@@ -43,7 +43,7 @@
     "tslib": "1.10.0",
     "webpack": "4.41.5",
     "webpack-bundle-analyzer": "3.6.0",
-    "webpack-inject-plugin": "1.5.3",
+    "webpack-inject-plugin": "1.5.4",
     "webpack-sources": "1.4.3"
   },
   "devDependencies": {
