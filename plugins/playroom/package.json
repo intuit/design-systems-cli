@@ -33,6 +33,6 @@
     "react-element-to-jsx-string": "14.1.0",
     "style-loader": "1.0.0",
     "tslib": "1.10.0",
-    "webpack": "4.41.2"
+    "webpack": "4.41.5"
   }
 }
