@@ -40,7 +40,6 @@
     "change-case": "4.1.1",
     "copy-template-dir": "1.4.0",
     "lerna": "3.20.2",
-    "memfs": "3.0.4",
     "prettier": "1.19.1",
     "rimraf": "3.0.0",
     "signale": "1.4.0",

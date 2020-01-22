@@ -3,7 +3,7 @@ import { Plugin } from '@design-systems/plugin';
 import env from 'env-ci';
 
 // eslint-disable-next-line jest/no-jest-import
-import jest from 'jest';
+import { runCLI } from 'jest';
 import createJestAnnotations from 'jest-github-reporter/dist/create-check';
 
 export interface TestArgs {
@@ -36,7 +36,7 @@ export default class TestPlugin implements Plugin<TestArgs> {
     );
 
     try {
-      const { results } = await jest.runCLI(
+      const { results } = await runCLI(
         {
           _: [],
           $0: 'jest',
@@ -49,7 +49,9 @@ export default class TestPlugin implements Plugin<TestArgs> {
       );
 
       if (annotate) {
-        await createJestAnnotations(results as jest.AggregatedResult);
+        await createJestAnnotations(
+          results as Parameters<typeof createJestAnnotations>[0]
+        );
       }
 
       if (results.numFailedTests > 0) {
