@@ -1,3 +1,17 @@
+# v1.2.0 (Wed Jan 22 2020)
+
+#### 🐛  Bug Fix
+
+- fix tests  ([@hipstersmoothie](https://github.com/hipstersmoothie))
+- Update dependency fast-glob to v3.1.1  ([@renovate-bot](https://github.com/renovate-bot))
+
+#### Authors: 2
+
+- Andrew Lisowski ([@hipstersmoothie](https://github.com/hipstersmoothie))
+- WhiteSource Renovate ([@renovate-bot](https://github.com/renovate-bot))
+
+---
+
 # v0.74.1 (Tue Jan 07 2020)
 
 #### ⚠️  Pushed to master

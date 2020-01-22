@@ -1,3 +1,16 @@
+# v1.2.0 (Wed Jan 22 2020)
+
+#### 🐛  Bug Fix
+
+- Update dependency env-ci to v5  ([@renovate-bot](https://github.com/renovate-bot))
+- Update dependency env-ci to v4.5.2  ([@renovate-bot](https://github.com/renovate-bot))
+
+#### Authors: 1
+
+- WhiteSource Renovate ([@renovate-bot](https://github.com/renovate-bot))
+
+---
+
 # v1.0.4 (Wed Jan 15 2020)
 
 #### 🐛  Bug Fix

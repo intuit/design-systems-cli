@@ -1,3 +1,22 @@
+# v1.2.0 (Wed Jan 22 2020)
+
+#### 🐛  Bug Fix
+
+- fix build  ([@hipstersmoothie](https://github.com/hipstersmoothie))
+- Update dependency webpack to v4.41.5  ([@renovate-bot](https://github.com/renovate-bot))
+- Update dependency terminal-link to v2.1.1  ([@renovate-bot](https://github.com/renovate-bot))
+- Update dependency inquirer to v7.0.3  ([@renovate-bot](https://github.com/renovate-bot))
+- Update dependency change-case to v4
+
+fix build  ([@hipstersmoothie](https://github.com/hipstersmoothie))
+
+#### Authors: 2
+
+- Andrew Lisowski ([@hipstersmoothie](https://github.com/hipstersmoothie))
+- WhiteSource Renovate ([@renovate-bot](https://github.com/renovate-bot))
+
+---
+
 # v1.0.1 (Wed Jan 15 2020)
 
 #### 🐛  Bug Fix

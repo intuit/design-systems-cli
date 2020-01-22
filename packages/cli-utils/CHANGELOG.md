@@ -1,3 +1,15 @@
+# v1.2.0 (Wed Jan 22 2020)
+
+#### 🐛  Bug Fix
+
+- Update dependency webpack to v4.41.5  ([@renovate-bot](https://github.com/renovate-bot))
+
+#### Authors: 1
+
+- WhiteSource Renovate ([@renovate-bot](https://github.com/renovate-bot))
+
+---
+
 # v0.74.10 (Mon Jan 13 2020)
 
 #### 🐛  Bug Fix

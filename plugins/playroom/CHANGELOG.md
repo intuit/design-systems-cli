@@ -1,3 +1,21 @@
+# v1.2.0 (Wed Jan 22 2020)
+
+#### 🐛  Bug Fix
+
+- fix build  ([@hipstersmoothie](https://github.com/hipstersmoothie))
+- Update dependency react-element-to-jsx-string to v14.3.1  ([@hipstersmoothie](https://github.com/hipstersmoothie))
+- Update dependency file-loader to v5  ([@renovate-bot](https://github.com/renovate-bot))
+- Update dependency fast-glob to v3.1.1  ([@renovate-bot](https://github.com/renovate-bot))
+- Update dependency webpack to v4.41.5  ([@renovate-bot](https://github.com/renovate-bot))
+- Update dependency style-loader to v1.1.3  ([@renovate-bot](https://github.com/renovate-bot))
+- Update dependency css-loader to v3.4.2  ([@renovate-bot](https://github.com/renovate-bot))
+
+#### Authors: 1
+
+- WhiteSource Renovate ([@renovate-bot](https://github.com/renovate-bot))
+
+---
+
 # v1.1.1 (Tue Jan 21 2020)
 
 #### 🐛  Bug Fix

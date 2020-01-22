@@ -1,3 +1,17 @@
+# v1.2.0 (Wed Jan 22 2020)
+
+#### 🐛  Bug Fix
+
+- Update dependency terser-webpack-plugin to v2.3.2  ([@renovate-bot](https://github.com/renovate-bot))
+- Update dependency webpack to v4.41.5  ([@renovate-bot](https://github.com/renovate-bot))
+- Update dependency style-loader to v1.1.3  ([@renovate-bot](https://github.com/renovate-bot))
+
+#### Authors: 1
+
+- WhiteSource Renovate ([@renovate-bot](https://github.com/renovate-bot))
+
+---
+
 # v1.1.1 (Tue Jan 21 2020)
 
 #### 🐛  Bug Fix

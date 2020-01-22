@@ -1,3 +1,254 @@
+# v1.2.0 (Wed Jan 22 2020)
+
+### Release Notes
+
+_From #99_
+
+<details>
+<summary>facebook/jest</summary>
+
+### [`v25.1.0`](https://togithub.com/facebook/jest/blob/master/CHANGELOG.md#&#8203;2510)
+
+[Compare Source](https://togithub.com/facebook/jest/compare/ff9269be05fd8316e95232198fce3463bf2f270e...v25.1.0)
+
+##### Features
+
+-   `[babel-plugin-jest-hoist]` Show codeframe on static hoisting issues ([#&#8203;8865](https://togithub.com/facebook/jest/pull/8865))
+-   `[babel-plugin-jest-hoist]` Add `BigInt` to `WHITELISTED_IDENTIFIERS` ([#&#8203;8382](https://togithub.com/facebook/jest/pull/8382))
+-   `[babel-preset-jest]` Add `@babel/plugin-syntax-bigint` ([#&#8203;8382](https://togithub.com/facebook/jest/pull/8382))
+-   `[expect]` Add `BigInt` support to `toBeGreaterThan`, `toBeGreaterThanOrEqual`, `toBeLessThan` and `toBeLessThanOrEqual` ([#&#8203;8382](https://togithub.com/facebook/jest/pull/8382))
+-   `[expect, jest-matcher-utils]` Display change counts in annotation lines ([#&#8203;9035](https://togithub.com/facebook/jest/pull/9035))
+-   `[expect, jest-snapshot]` Support custom inline snapshot matchers ([#&#8203;9278](https://togithub.com/facebook/jest/pull/9278))
+-   `[jest-config]` Throw the full error message and stack when a Jest preset is missing a dependency ([#&#8203;8924](https://togithub.com/facebook/jest/pull/8924))
+-   `[jest-config]` [**BREAKING**] Set default display name color based on runner ([#&#8203;8689](https://togithub.com/facebook/jest/pull/8689))
+-   `[jest-config]` Merge preset globals with project globals ([#&#8203;9027](https://togithub.com/facebook/jest/pull/9027))
+-   `[jest-config]` Support `.cjs` config files ([#&#8203;9291](https://togithub.com/facebook/jest/pull/9291))
+-   `[jest-config]` [**BREAKING**] Support `.mjs` config files ([#&#8203;9431](https://togithub.com/facebook/jest/pull/9431))
+-   `[jest-core]` Support reporters as default exports ([#&#8203;9161](https://togithub.com/facebook/jest/pull/9161))
+-   `[jest-core]` Support `--findRelatedTests` paths case insensitivity on Windows ([#&#8203;8900](https://togithub.com/facebook/jest/issues/8900))
+-   `[jest-diff]` Add options for colors and symbols ([#&#8203;8841](https://togithub.com/facebook/jest/pull/8841))
+-   `[jest-diff]` [**BREAKING**] Export as ECMAScript module ([#&#8203;8873](https://togithub.com/facebook/jest/pull/8873))
+-   `[jest-diff]` Add `includeChangeCounts` and rename `Indicator` options ([#&#8203;8881](https://togithub.com/facebook/jest/pull/8881))
+-   `[jest-diff]` Add `changeColor` and `patchColor` options ([#&#8203;8911](https://togithub.com/facebook/jest/pull/8911))
+-   `[jest-diff]` Add `trailingSpaceFormatter` option and replace cyan with `commonColor` ([#&#8203;8927](https://togithub.com/facebook/jest/pull/8927))
+-   `[jest-diff]` Add `firstOrLastEmptyLineReplacement` option and export 3 `diffLines` functions ([#&#8203;8955](https://togithub.com/facebook/jest/pull/8955))
+-   `[jest-environment]` Add optional `getVmContext` next to `runScript` ([#&#8203;9252](https://togithub.com/facebook/jest/pull/9252) & [#&#8203;9428](https://togithub.com/facebook/jest/pull/9428))
+-   `[jest-environment-jsdom]` Add `fakeTimersLolex` ([#&#8203;8925](https://togithub.com/facebook/jest/pull/8925))
+-   `[jest-environment-node]` Add `fakeTimersLolex` ([#&#8203;8925](https://togithub.com/facebook/jest/pull/8925))
+-   `[jest-environment-node]` Add `queueMicrotask` ([#&#8203;9140](https://togithub.com/facebook/jest/pull/9140))
+-   `[jest-environment-node]` Implement `getVmContext` ([#&#8203;9252](https://togithub.com/facebook/jest/pull/9252) & [#&#8203;9428](https://togithub.com/facebook/jest/pull/9428))
+-   `[@jest/fake-timers]` Add Lolex as implementation of fake timers ([#&#8203;8897](https://togithub.com/facebook/jest/pull/8897))
+-   `[jest-get-type]` Add `BigInt` support. ([#&#8203;8382](https://togithub.com/facebook/jest/pull/8382))
+-   `[jest-matcher-utils]` Add `BigInt` support to `ensureNumbers` `ensureActualIsNumber`, `ensureExpectedIsNumber` ([#&#8203;8382](https://togithub.com/facebook/jest/pull/8382))
+-   `[jest-matcher-utils]` Ignore highlighting matched asymmetricMatcher in diffs ([#&#8203;9257](https://togithub.com/facebook/jest/pull/9257))
+-   `[jest-reporters]` Export utils for path formatting ([#&#8203;9162](https://togithub.com/facebook/jest/pull/9162))
+-   `[jest-reporters]` Provides global coverage thresholds as watermarks for istanbul ([#&#8203;9416](https://togithub.com/facebook/jest/pull/9416))
+-   `[jest-runner]` Warn if a worker had to be force exited ([#&#8203;8206](https://togithub.com/facebook/jest/pull/8206))
+-   `[jest-runtime]` [**BREAKING**] Do not export `ScriptTransformer` - it can be imported from `@jest/transform` instead ([#&#8203;9256](https://togithub.com/facebook/jest/pull/9256))
+-   `[jest-runtime]` Use `JestEnvironment.getVmContext` and `vm.compileFunction` if available to avoid the module wrapper ([#&#8203;9252](https://togithub.com/facebook/jest/pull/9252) & [#&#8203;9428](https://togithub.com/facebook/jest/pull/9428))
+-   `[jest-snapshot]` Display change counts in annotation lines ([#&#8203;8982](https://togithub.com/facebook/jest/pull/8982))
+-   `[jest-snapshot]` [**BREAKING**] Improve report when the matcher has properties ([#&#8203;9104](https://togithub.com/facebook/jest/pull/9104))
+-   `[jest-snapshot]` Improve colors when snapshots are updatable ([#&#8203;9132](https://togithub.com/facebook/jest/pull/9132))
+-   `[jest-snapshot]` Ignore indentation for most serialized objects ([#&#8203;9203](https://togithub.com/facebook/jest/pull/9203))
+-   `[jest-transform]` Create `createTranspilingRequire` function for easy transpiling modules ([#&#8203;9194](https://togithub.com/facebook/jest/pull/9194))
+-   `[jest-transform]` [**BREAKING**] Return transformed code as a string, do not wrap in `vm.Script` ([#&#8203;9253](https://togithub.com/facebook/jest/pull/9253))
+-   `[@jest/test-result]` Create method to create empty `TestResult` ([#&#8203;8867](https://togithub.com/facebook/jest/pull/8867))
+-   `[jest-worker]` [**BREAKING**] Return a promise from `end()`, resolving with the information whether workers exited gracefully ([#&#8203;8206](https://togithub.com/facebook/jest/pull/8206))
+-   `[jest-reporters]` Transform file paths into hyperlinks ([#&#8203;8980](https://togithub.com/facebook/jest/pull/8980))
+
+##### Fixes
+
+-   `[expect]` Display `expectedDiff` more carefully in `toBeCloseTo` ([#&#8203;8389](https://togithub.com/facebook/jest/pull/8389))
+-   `[expect]` Avoid incorrect difference for subset when `toMatchObject` fails ([#&#8203;9005](https://togithub.com/facebook/jest/pull/9005))
+-   `[expect]` Consider all RegExp flags for equality ([#&#8203;9167](https://togithub.com/facebook/jest/pull/9167))
+-   `[expect]` [**BREAKING**] Consider primitives different from wrappers instantiated with `new` ([#&#8203;9167](https://togithub.com/facebook/jest/pull/9167))
+-   `[expect]` Prevent maintaining RegExp state between multiple tests ([#&#8203;9289](https://togithub.com/facebook/jest/pull/9289))
+-   `[expect]` Fix subsetEquality false circular reference detection ([#&#8203;9322](https://togithub.com/facebook/jest/pull/9322))
+-   `[jest-config]` Use half of the available cores when `watchAll` mode is enabled ([#&#8203;9117](https://togithub.com/facebook/jest/pull/9117))
+-   `[jest-config]` Fix Jest multi project runner still cannot handle exactly one project ([#&#8203;8894](https://togithub.com/facebook/jest/pull/8894))
+-   `[jest-console]` Add missing `console.group` calls to `NullConsole` ([#&#8203;9024](https://togithub.com/facebook/jest/pull/9024))
+-   `[jest-core]` Don't include unref'd timers in --detectOpenHandles results ([#&#8203;8941](https://togithub.com/facebook/jest/pull/8941))
+-   `[jest-core]` Limit number of workers when creating haste maps in projects ([#&#8203;9259](https://togithub.com/facebook/jest/pull/9259))
+-   `[jest-diff]` Do not inverse format if line consists of one change ([#&#8203;8903](https://togithub.com/facebook/jest/pull/8903))
+-   `[jest-diff]` Rename some new options and change their default values ([#&#8203;9077](https://togithub.com/facebook/jest/pull/9077))
+-   `[jest-environment-node]` Fix `TextEncoder.encode` not referencing same global `Uint8Array` constructor ([#&#8203;9261](https://togithub.com/facebook/jest/pull/9261))
+-   `[jest-fake-timers]` `getTimerCount` will not include cancelled immediates ([#&#8203;8764](https://togithub.com/facebook/jest/pull/8764))
+-   `[jest-fake-timers]` Support `util.promisify` on `setTimeout` ([#&#8203;9180](https://togithub.com/facebook/jest/pull/9180))
+-   `[jest-jasmine2, jest-circus]` Improve error message format for Node's assert.fail ([#&#8203;9262](https://togithub.com/facebook/jest/pull/9262))
+-   `[jest-leak-detector]` [**BREAKING**] Use `weak-napi` instead of `weak` package ([#&#8203;8686](https://togithub.com/facebook/jest/pull/8686))
+-   `[jest-mock]` Fix for mockReturnValue overriding mockImplementationOnce ([#&#8203;8398](https://togithub.com/facebook/jest/pull/8398))
+-   `[jest-reporters]` Make node-notifier an optional dependency ([#&#8203;8918](https://togithub.com/facebook/jest/pull/8918))
+-   `[jest-reporters]` Make all arguments to methods on `BaseReporter` optional ([#&#8203;9159](https://togithub.com/facebook/jest/pull/9159))
+-   `[jest-resolve]`: Set MODULE_NOT_FOUND as error code when module is not resolved from paths ([#&#8203;8487](https://togithub.com/facebook/jest/pull/8487))
+-   `[jest-resolve-dependencies]` Handle dynamic dependencies correctly even when using module maps ([#&#8203;9303](https://togithub.com/facebook/jest/pull/9303))
+-   `[jest-snapshot]` Remove only the added newlines in multiline snapshots ([#&#8203;8859](https://togithub.com/facebook/jest/pull/8859))
+-   `[jest-snapshot]` Distinguish empty string from external snapshot not written ([#&#8203;8880](https://togithub.com/facebook/jest/pull/8880))
+-   `[jest-snapshot]` [**BREAKING**] Distinguish empty string from internal snapshot not written ([#&#8203;8898](https://togithub.com/facebook/jest/pull/8898))
+-   `[jest-snapshot]` [**BREAKING**] Remove `report` method and throw matcher errors ([#&#8203;9049](https://togithub.com/facebook/jest/pull/9049))
+-   `[jest-snapshot]` Omit irrelevant `received` properties when property matchers fail ([#&#8203;9198](https://togithub.com/facebook/jest/pull/9198))
+-   `[jest-transform]` Properly cache transformed files across tests ([#&#8203;8890](https://togithub.com/facebook/jest/pull/8890))
+-   `[jest-transform]` Don't fail the test suite when a generated source map is invalid ([#&#8203;9058](https://togithub.com/facebook/jest/pull/9058))
+-   `[jest-types]` [**BREAKING**] Use less `null | undefined` in config types ([#&#8203;9200](https://togithub.com/facebook/jest/pull/9200))
+-   `[jest-util]` Allow querying process.domain ([#&#8203;9136](https://togithub.com/facebook/jest/pull/9136))
+-   `[pretty-format]` Correctly detect memoized elements ([#&#8203;9196](https://togithub.com/facebook/jest/pull/9196))
+-   `[pretty-format]` Fix pretty-format to respect displayName on forwardRef ([#&#8203;9422](https://togithub.com/facebook/jest/pull/9422))
+
+##### Chore & Maintenance
+
+-   `[*]` [**BREAKING**] Drop support for Node 6 ([#&#8203;8455](https://togithub.com/facebook/jest/pull/8455))
+-   `[*]` Add Node 12 to CI ([#&#8203;8411](https://togithub.com/facebook/jest/pull/8411))
+-   `[*]` [**BREAKING**] Upgrade to Micromatch v4 ([#&#8203;8852](https://togithub.com/facebook/jest/pull/8852))
+-   `[babel-plugin-jest-hoist]` [**BREAKING**] Use ESM exports ([#&#8203;8874](https://togithub.com/facebook/jest/pull/8874))
+-   `[docs]` Add alias and optional boolean value to `coverage` CLI Reference ([#&#8203;8996](https://togithub.com/facebook/jest/pull/8996))
+-   `[docs]` Fix broken link pointing to legacy JS file in "Snapshot Testing".
+-   `[docs]` Add `setupFilesAfterEnv` and `jest.setTimeout` example ([#&#8203;8971](https://togithub.com/facebook/jest/pull/8971))
+-   `[expect]` Test that `toStrictEqual` is equivalent to Node's `assert.deepStrictEqual` ([#&#8203;9167](https://togithub.com/facebook/jest/pull/9167))
+-   `[jest]` [**BREAKING**] Use ESM exports ([#&#8203;8874](https://togithub.com/facebook/jest/pull/8874))
+-   `[jest-cli]` [**BREAKING**] Use ESM exports ([#&#8203;8874](https://togithub.com/facebook/jest/pull/8874))
+-   `[jest-cli]` [**BREAKING**] Remove re-exports from `@jest/core` ([#&#8203;8874](https://togithub.com/facebook/jest/pull/8874))
+-   `[jest-diff]` Remove the need to export `splitLines0` function ([#&#8203;9151](https://togithub.com/facebook/jest/pull/9151))
+-   `[jest-environment-jsdom]` [**BREAKING**] Upgrade JSDOM from v11 to v15 ([#&#8203;8851](https://togithub.com/facebook/jest/pull/8851))
+-   `[jest-haste-map]` Upgrade to `fsevents@2` ([#&#8203;9215](https://togithub.com/facebook/jest/pull/9215))
+-   `[jest-reporters]` [**BREAKING**] Upgrade Istanbul dependencies, which are used for code coverage ([#&#8203;9192](https://togithub.com/facebook/jest/pull/9192))
+-   `[jest-util]` [**BREAKING**] Remove deprecated exports ([#&#8203;8863](https://togithub.com/facebook/jest/pull/8863))
+-   `[jest-validate]` [**BREAKING**] Use ESM exports ([#&#8203;8874](https://togithub.com/facebook/jest/pull/8874))
+-   `[jest-types]` Mark `InitialOptions` as `Partial` ([#&#8203;8848](https://togithub.com/facebook/jest/pull/8848))
+-   `[jest-config]` Refactor `normalize` to be more type safe ([#&#8203;8848](https://togithub.com/facebook/jest/pull/8848))
+
+##### Performance
+
+_From #81_
+
+<details>
+<summary>blakeembrey/change-case</summary>
+
+_From #61_
+
+<details>
+<summary>algolia/react-element-to-jsx-string</summary>
+
+### [`v14.3.1`](https://togithub.com/algolia/react-element-to-jsx-string/blob/master/CHANGELOG.md#&#8203;1431httpsgithubcomalgoliareact-element-to-jsx-stringcomparev1430v1431-2020-01-21)
+
+[Compare Source](https://togithub.com/algolia/react-element-to-jsx-string/compare/v14.3.0...v14.3.1)
+
+##### Bug Fixes
+
+-   Fix TypeScript type declaration ([#&#8203;516](https://togithub.com/algolia/react-element-to-jsx-string/issues/516)) ([c4fe54a](https://togithub.com/algolia/react-element-to-jsx-string/commit/c4fe54adcafbe688d397fe652e61952a56e7cffe))
+
+### [`v14.3.0`](https://togithub.com/algolia/react-element-to-jsx-string/blob/master/CHANGELOG.md#&#8203;1430httpsgithubcomalgoliareact-element-to-jsx-stringcomparev1420v1430-2020-01-17)
+
+[Compare Source](https://togithub.com/algolia/react-element-to-jsx-string/compare/v14.2.0...v14.3.0)
+
+##### Features
+
+-   allow filterProps to be a function ([#&#8203;417](https://togithub.com/algolia/react-element-to-jsx-string/issues/417)) ([c4908bb](https://togithub.com/algolia/react-element-to-jsx-string/commit/c4908bb))
+
+### [`v14.2.0`](https://togithub.com/algolia/react-element-to-jsx-string/blob/master/CHANGELOG.md#&#8203;1430httpsgithubcomalgoliareact-element-to-jsx-stringcomparev1420v1430-2020-01-17)
+
+[Compare Source](https://togithub.com/algolia/react-element-to-jsx-string/compare/v14.1.0...v14.2.0)
+
+##### Features
+
+-   allow filterProps to be a function ([#&#8203;417](https://togithub.com/algolia/react-element-to-jsx-string/issues/417)) ([c4908bb](https://togithub.com/algolia/react-element-to-jsx-string/commit/c4908bb))
+
+</details>
+
+---
+
+---
+
+#### 🚀  Enhancement
+
+- `@design-systems/build`, `@design-systems/clean`, `@design-systems/test`
+  - Update jest monorepo to v25 [#99](https://github.com/intuit/design-systems-cli/pull/99) ([@hipstersmoothie](https://github.com/hipstersmoothie))
+
+#### 🏠  Internal
+
+- Run renovate monthly [#102](https://github.com/intuit/design-systems-cli/pull/102) ([@hipstersmoothie](https://github.com/hipstersmoothie))
+- 1 PR per update [#98](https://github.com/intuit/design-systems-cli/pull/98) ([@hipstersmoothie](https://github.com/hipstersmoothie))
+- add stylelint group [#74](https://github.com/intuit/design-systems-cli/pull/74) ([@hipstersmoothie](https://github.com/hipstersmoothie))
+- group eslint [#62](https://github.com/intuit/design-systems-cli/pull/62) ([@hipstersmoothie](https://github.com/hipstersmoothie))
+- Update renovate.json [#45](https://github.com/intuit/design-systems-cli/pull/45) ([@hipstersmoothie](https://github.com/hipstersmoothie))
+
+#### 🔩 Dependency Updates
+
+- Update dependency commently to v5.69.1 [#40](https://github.com/intuit/design-systems-cli/pull/40) ([@renovate-bot](https://github.com/renovate-bot))
+- Update dependency memfs to v3 [#87](https://github.com/intuit/design-systems-cli/pull/87) ([@renovate-bot](https://github.com/renovate-bot))
+- Update dependency lerna to v3.20.2 [#56](https://github.com/intuit/design-systems-cli/pull/56) ([@renovate-bot](https://github.com/renovate-bot))
+- `@design-systems/playroom`
+  - Update dependency react-element-to-jsx-string to v14.3.1 [#61](https://github.com/intuit/design-systems-cli/pull/61) ([@hipstersmoothie](https://github.com/hipstersmoothie))
+- `@design-systems/update`
+  - Update dependency marked to v0.8.0 [#57](https://github.com/intuit/design-systems-cli/pull/57) ([@renovate-bot](https://github.com/renovate-bot))
+- `@design-systems/eslint-config`, `@design-systems/test`
+  - Update typescript-eslint monorepo to v2.17.0 [#77](https://github.com/intuit/design-systems-cli/pull/77) ([@renovate-bot](https://github.com/renovate-bot) [@hipstersmoothie](https://github.com/hipstersmoothie))
+- `@design-systems/test`
+  - Update dependency babel-plugin-istanbul to v6 [#80](https://github.com/intuit/design-systems-cli/pull/80) ([@renovate-bot](https://github.com/renovate-bot))
+- `@design-systems/playroom`
+  - Update dependency file-loader to v5 [#84](https://github.com/intuit/design-systems-cli/pull/84) ([@renovate-bot](https://github.com/renovate-bot))
+- `@design-systems/eslint-config`, `@design-systems/lint`
+  - Update linters [#92](https://github.com/intuit/design-systems-cli/pull/92) ([@renovate-bot](https://github.com/renovate-bot) [@hipstersmoothie](https://github.com/hipstersmoothie))
+- `@design-systems/lint`
+  - Update dependency @types/eslint to v6.1.5 [#101](https://github.com/intuit/design-systems-cli/pull/101) ([@renovate-bot](https://github.com/renovate-bot))
+- `@design-systems/update`
+  - Update dependency marked-terminal to v4 [#86](https://github.com/intuit/design-systems-cli/pull/86) ([@renovate-bot](https://github.com/renovate-bot))
+- `@design-systems/storybook`
+  - Update dependency storybook-dark-mode to v0.2.0 [#64](https://github.com/intuit/design-systems-cli/pull/64) ([@renovate-bot](https://github.com/renovate-bot))
+- `@design-systems/bundle`, `@design-systems/size`
+  - Update dependency terser-webpack-plugin to v2.3.2 [#70](https://github.com/intuit/design-systems-cli/pull/70) ([@renovate-bot](https://github.com/renovate-bot))
+- `@design-systems/size`
+  - Update dependency webpack-inject-plugin to v1.5.4 [#73](https://github.com/intuit/design-systems-cli/pull/73) ([@renovate-bot](https://github.com/renovate-bot))
+- `@design-systems/proof`, `@design-systems/storybook`
+  - Update proof to v0.0.12 [#76](https://github.com/intuit/design-systems-cli/pull/76) ([@renovate-bot](https://github.com/renovate-bot))
+- `@design-systems/babel-plugin-include-styles`
+  - Update dependency @types/node to v13 [#79](https://github.com/intuit/design-systems-cli/pull/79) ([@renovate-bot](https://github.com/renovate-bot))
+- `@design-systems/cli`, `@design-systems/test`
+  - Update dependency env-ci to v5 [#82](https://github.com/intuit/design-systems-cli/pull/82) ([@renovate-bot](https://github.com/renovate-bot))
+- `@design-systems/test`
+  - Update dependency jest-junit to v10 [#85](https://github.com/intuit/design-systems-cli/pull/85) ([@renovate-bot](https://github.com/renovate-bot))
+- `@design-systems/load-config`
+  - Update dependency resolve to v1.15.0 [#100](https://github.com/intuit/design-systems-cli/pull/100) ([@renovate-bot](https://github.com/renovate-bot))
+- `@design-systems/lint`
+  - Update dependency @types/eslint to v6.1.4 [#96](https://github.com/intuit/design-systems-cli/pull/96) ([@renovate-bot](https://github.com/renovate-bot))
+- `@design-systems/stylelint-config`, `@design-systems/lint`
+  - Update stylelint [#93](https://github.com/intuit/design-systems-cli/pull/93) ([@renovate-bot](https://github.com/renovate-bot))
+- `@design-systems/create`, `@design-systems/create-command`
+  - Update dependency inquirer to v7.0.3 [#55](https://github.com/intuit/design-systems-cli/pull/55) ([@renovate-bot](https://github.com/renovate-bot))
+- `@design-systems/build`
+  - Update dependency postcss-modules to v1.5.0 [#60](https://github.com/intuit/design-systems-cli/pull/60) ([@renovate-bot](https://github.com/renovate-bot))
+- `@design-systems/create`, `@design-systems/load-config`, `@design-systems/build`, `@design-systems/create-command`, `@design-systems/size`
+  - Update dependency change-case to v4 [#81](https://github.com/intuit/design-systems-cli/pull/81) ([@hipstersmoothie](https://github.com/hipstersmoothie))
+- `@design-systems/size`
+  - Update dependency mini-css-extract-plugin to v0.9.0 [#59](https://github.com/intuit/design-systems-cli/pull/59) ([@renovate-bot](https://github.com/renovate-bot))
+- `@design-systems/build`, `@design-systems/clean`, `@design-systems/lint`, `@design-systems/playroom`
+  - Update dependency fast-glob to v3.1.1 [#54](https://github.com/intuit/design-systems-cli/pull/54) ([@renovate-bot](https://github.com/renovate-bot))
+- `@design-systems/build`
+  - Update dependency typescript to v3.7.5 [#71](https://github.com/intuit/design-systems-cli/pull/71) ([@renovate-bot](https://github.com/renovate-bot))
+- `@design-systems/bundle`, `@design-systems/playroom`
+  - Update dependency style-loader to v1.1.3 [#65](https://github.com/intuit/design-systems-cli/pull/65) ([@renovate-bot](https://github.com/renovate-bot))
+- `@design-systems/create`, `@design-systems/create-command`
+  - Update dependency terminal-link to v2.1.1 [#69](https://github.com/intuit/design-systems-cli/pull/69) ([@renovate-bot](https://github.com/renovate-bot))
+- `@design-systems/cli-utils`, `@design-systems/create`, `@design-systems/bundle`, `@design-systems/playroom`, `@design-systems/size`, `@design-systems/storybook`
+  - Update dependency webpack to v4.41.5 [#72](https://github.com/intuit/design-systems-cli/pull/72) ([@renovate-bot](https://github.com/renovate-bot))
+- `@design-systems/load-config`
+  - Update dependency resolve to v1.14.2 [#63](https://github.com/intuit/design-systems-cli/pull/63) ([@renovate-bot](https://github.com/renovate-bot))
+- `@design-systems/playroom`, `@design-systems/size`
+  - Update dependency css-loader to v3.4.2 [#42](https://github.com/intuit/design-systems-cli/pull/42) ([@renovate-bot](https://github.com/renovate-bot))
+- `@design-systems/cli`, `@design-systems/test`
+  - Update dependency env-ci to v4.5.2 [#44](https://github.com/intuit/design-systems-cli/pull/44) ([@renovate-bot](https://github.com/renovate-bot))
+- `@design-systems/storybook`
+  - Update dependency core-js to v3.6.4 [#41](https://github.com/intuit/design-systems-cli/pull/41) ([@renovate-bot](https://github.com/renovate-bot))
+- `@design-systems/size`
+  - Update dependency diff2html to v2.12.2 [#43](https://github.com/intuit/design-systems-cli/pull/43) ([@renovate-bot](https://github.com/renovate-bot))
+- `@design-systems/update`
+  - Update dependency semver to v7 [#88](https://github.com/intuit/design-systems-cli/pull/88) ([@renovate-bot](https://github.com/renovate-bot))
+
+#### Authors: 2
+
+- Andrew Lisowski ([@hipstersmoothie](https://github.com/hipstersmoothie))
+- WhiteSource Renovate ([@renovate-bot](https://github.com/renovate-bot))
+
+---
+
 # v1.1.1 (Tue Jan 21 2020)
 
 ### Release Notes

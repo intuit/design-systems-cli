@@ -1,3 +1,18 @@
+# v1.2.0 (Wed Jan 22 2020)
+
+#### 🐛  Bug Fix
+
+- Update proof to v0.0.12  ([@renovate-bot](https://github.com/renovate-bot))
+- Update dependency webpack to v4.41.5  ([@renovate-bot](https://github.com/renovate-bot))
+- Update dependency storybook-dark-mode to v0.2.0  ([@renovate-bot](https://github.com/renovate-bot))
+- Update dependency core-js to v3.6.4  ([@renovate-bot](https://github.com/renovate-bot))
+
+#### Authors: 1
+
+- WhiteSource Renovate ([@renovate-bot](https://github.com/renovate-bot))
+
+---
+
 # v1.1.1 (Tue Jan 21 2020)
 
 #### 🐛  Bug Fix

@@ -1,3 +1,19 @@
+# v1.2.0 (Wed Jan 22 2020)
+
+#### 🐛  Bug Fix
+
+- Update dependency @types/eslint to v6.1.5  ([@renovate-bot](https://github.com/renovate-bot))
+- Update stylelint  ([@renovate-bot](https://github.com/renovate-bot))
+- Update linters  ([@renovate-bot](https://github.com/renovate-bot))
+- Update dependency @types/eslint to v6.1.4  ([@renovate-bot](https://github.com/renovate-bot))
+- Update dependency fast-glob to v3.1.1  ([@renovate-bot](https://github.com/renovate-bot))
+
+#### Authors: 1
+
+- WhiteSource Renovate ([@renovate-bot](https://github.com/renovate-bot))
+
+---
+
 # v1.1.0 (Thu Jan 16 2020)
 
 #### 🐛  Bug Fix
