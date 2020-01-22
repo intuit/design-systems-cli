@@ -56,6 +56,16 @@ module.exports = {
     'import/no-unassigned-import': [2, { allow: ['**/*.css'] }],
     // makes commenting out lines quickly a hassle
     'capitalized-comments': 0,
+    'import/extensions': [
+      2,
+      'always',
+      {
+        js: 'never',
+        jsx: 'never',
+        ts: 'never',
+        tsx: 'never'
+      }
+    ],
 
     /* airbnb */
 
