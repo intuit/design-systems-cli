@@ -27,7 +27,7 @@
     "babel-plugin-import-redirect": "1.1.1",
     "css-loader": "3.4.2",
     "fast-glob": "3.1.1",
-    "file-loader": "4.3.0",
+    "file-loader": "5.0.2",
     "fs-extra": "8.1.0",
     "playroom": "hipstersmoothie/playroom#snippets",
     "react-element-to-jsx-string": "14.1.0",
