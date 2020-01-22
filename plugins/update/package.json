@@ -27,7 +27,7 @@
     "marked": "0.7.0",
     "marked-terminal": "3.3.0",
     "node-fetch": "2.6.0",
-    "semver": "6.3.0",
+    "semver": "7.1.1",
     "tslib": "1.10.0"
   },
   "devDependencies": {
