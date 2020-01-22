@@ -45,7 +45,7 @@ export default class RelativeCommentsPlugin {
                   newPath = p1.replace(
                     /\.\.\/([a-zA-Z0-9_-]+)\//,
                     (whole: string, packageName: string) =>
-                      `@${monorepoName()}/${changeCase.kebabCase(
+                      `@${monorepoName()}/${changeCase.paramCase(
                         packageName
                       )}/`.trim()
                   );

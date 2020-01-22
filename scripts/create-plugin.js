@@ -5,6 +5,7 @@ const path = require('path');
 const log = require('signale');
 const fs = require('fs');
 const changeCase = require('change-case');
+const { titleCase } = require('title-case');
 const { app } = require('command-line-application');
 const inquirer = require('inquirer');
 
@@ -42,7 +43,7 @@ async function create(options) {
 
   const vars = {
     version,
-    title: changeCase.titleCase(name),
+    title: titleCase(name),
     kebab,
     pascal: changeCase.pascalCase(name)
   };

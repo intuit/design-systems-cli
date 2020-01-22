@@ -14,6 +14,7 @@ import path from 'path';
 import { execSync } from 'child_process';
 import inquirer from 'inquirer';
 import changeCase from 'change-case';
+import { titleCase } from "title-case";
 import dedent from 'dedent';
 import createEstimator from 'progress-estimator';
 import spinners from 'cli-spinners';
@@ -118,7 +119,7 @@ const askName = async (type: CreationChoice, force?: boolean) =>
 
       if (type !== 'system') {
         try {
-          const name = `@${monorepoName()}/${changeCase.kebabCase(input)}`;
+          const name = `@${monorepoName()}/${changeCase.paramCase(input)}`;
           execSync(`npm view ${name}`, { stdio: 'ignore' });
 
           return `Package already exists on the registry: "${name}"`;
@@ -304,7 +305,7 @@ export default async function run(args: CreateArgs) {
   await copy(template, destinationDirectory, {
     ...config,
     cliVersion,
-    title: changeCase.titleCase(config.name),
+    title: titleCase(config.name),
     kebab,
     pascal,
     camel: changeCase.camelCase(config.name)

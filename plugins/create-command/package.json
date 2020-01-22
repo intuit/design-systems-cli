@@ -23,7 +23,7 @@
     "@design-systems/cli-utils": "link:../../packages/cli-utils",
     "@design-systems/create": "link:../../packages/create",
     "@design-systems/plugin": "link:../../packages/plugin",
-    "change-case": "3.1.0",
+    "change-case": "4.1.1",
     "cli-spinners": "2.2.0",
     "colorette": "1.1.0",
     "copy-template-dir": "1.4.0",
@@ -33,6 +33,7 @@
     "inquirer": "7.0.3",
     "progress-estimator": "0.2.2",
     "terminal-link": "2.1.1",
+    "title-case": "3.0.2",
     "tslib": "1.10.0"
   }
 }
