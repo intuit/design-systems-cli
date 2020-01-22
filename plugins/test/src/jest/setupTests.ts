@@ -11,8 +11,12 @@ window.matchMedia =
 // @ts-ignore
 if (global.document) {
   document.createRange = () => ({
-    setStart: () => {},
-    setEnd: () => {},
+    setStart: () => {
+      // range polyfill 
+    },
+    setEnd: () => {
+      // range polyfill 
+    },
     // @ts-ignore
     commonAncestorContainer: {
       nodeName: 'BODY',
