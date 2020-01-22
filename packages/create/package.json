@@ -1,6 +1,6 @@
 {
   "name": "@design-systems/create",
-  "version": "1.1.1",
+  "version": "1.2.0",
   "description": "Initialize a @design-systems/cli monorepo",
   "main": "dist/index.js",
   "bin": "dist/bundle.js",
@@ -29,7 +29,6 @@
     "@design-systems/cli-utils": "link:../cli-utils",
     "@design-systems/plugin": "link:../plugin",
     "change-case": ">=3.x",
-    "title-case": ">=3.x",
     "cli-spinners": ">=2.x",
     "colorette": ">=1.x",
     "command-line-application": ">=0.x",
@@ -39,7 +38,8 @@
     "fs-extra": ">=8.x",
     "inquirer": ">=6.x",
     "progress-estimator": ">=0.x",
-    "terminal-link": ">=1.x"
+    "terminal-link": ">=1.x",
+    "title-case": ">=3.x"
   },
   "devDependencies": {
     "@design-systems/cli-utils": "link:../cli-utils",
