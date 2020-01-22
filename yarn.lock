@@ -9854,12 +9854,12 @@ fast-diff@^1.1.2:
   resolved "https://registry.yarnpkg.com/fast-diff/-/fast-diff-1.2.0.tgz#73ee11982d86caaf7959828d519cfe927fac5f03"
   integrity sha512-xJuoT5+L99XlZ8twedaRf6Ax2TgQVxvgZOYoPKqZufmJib0tL2tegPBOZb1pVNgIhlqDlA0eO0c3wBvQcmzx4w==
 
-fast-extend@0.0.2:
-  version "0.0.2"
-  resolved "https://registry.yarnpkg.com/fast-extend/-/fast-extend-0.0.2.tgz#f5ec42cf40b9460f521a6387dfb52deeed671dbd"
-  integrity sha1-9exCz0C5Rg9SGmOH37Ut7u1nHb0=
+fast-extend@1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/fast-extend/-/fast-extend-1.0.2.tgz#3b8a5b09cbc8ff3d6d47eaf397398c0a643e441b"
+  integrity sha512-XXA9RmlPatkFKUzqVZAFth18R4Wo+Xug/S+C7YlYA3xrXwfPlW3dqNwOb4hvQo7wZJ2cNDYhrYuPzVOfHy5/uQ==
 
-fast-glob@3.1.1:
+fast-glob@3.1.1, fast-glob@^3.1.1:
   version "3.1.1"
   resolved "https://registry.yarnpkg.com/fast-glob/-/fast-glob-3.1.1.tgz#87ee30e9e9f3eb40d6f254a7997655da753d7c82"
   integrity sha512-nTCREpBY8w8r+boyFYAx21iL6faSsQynliPHM4Uf56SbkyohCNxpVPEH9xrF5TXKy+IsjkPUHDKiUkzBVRXn9g==
@@ -9881,17 +9881,6 @@ fast-glob@^2.0.2, fast-glob@^2.2.4, fast-glob@^2.2.6:
     is-glob "^4.0.0"
     merge2 "^1.2.3"
     micromatch "^3.1.10"
-
-fast-glob@^3.1.1:
-  version "3.1.1"
-  resolved "https://registry.yarnpkg.com/fast-glob/-/fast-glob-3.1.1.tgz#87ee30e9e9f3eb40d6f254a7997655da753d7c82"
-  integrity sha512-nTCREpBY8w8r+boyFYAx21iL6faSsQynliPHM4Uf56SbkyohCNxpVPEH9xrF5TXKy+IsjkPUHDKiUkzBVRXn9g==
-  dependencies:
-    "@nodelib/fs.stat" "^2.0.2"
-    "@nodelib/fs.walk" "^1.2.3"
-    glob-parent "^5.1.0"
-    merge2 "^1.3.0"
-    micromatch "^4.0.2"
 
 fast-json-parse@^1.0.0, fast-json-parse@^1.0.3:
   version "1.0.3"
@@ -10350,7 +10339,7 @@ fs-minipass@^2.0.0:
   dependencies:
     minipass "^3.0.0"
 
-fs-monkey@^0.3.3:
+fs-monkey@0.3.3:
   version "0.3.3"
   resolved "https://registry.yarnpkg.com/fs-monkey/-/fs-monkey-0.3.3.tgz#7960bb2b1fa2653731b9d0e2e84812a7e8b3664a"
   integrity sha512-FNUvuTAJ3CqCQb5ELn+qCbGR/Zllhf2HtwsdAtBi59s1WeCjKMT81fHcSu7dwIskqGVK+MmOrb7VOBlq3/SItw==
@@ -13769,13 +13758,13 @@ mem@^4.0.0:
     mimic-fn "^2.0.0"
     p-is-promise "^2.0.0"
 
-memfs@2.16.1:
-  version "2.16.1"
-  resolved "https://registry.yarnpkg.com/memfs/-/memfs-2.16.1.tgz#ef6ed9b24c7df07704758fce42431c3838291ffa"
-  integrity sha512-hOUIxeXPuDeryPx1h+WxkBWJwWmd8f1lYXBdUMFMLEhxGGlaP6ri30eW9K4cMpbuizNsAwQe2SK3KyRa9qodXw==
+memfs@3.0.4:
+  version "3.0.4"
+  resolved "https://registry.yarnpkg.com/memfs/-/memfs-3.0.4.tgz#17997ec34d67d0a4756f6a34f2fefd13a8dbab08"
+  integrity sha512-OcZEzwX9E5AoY8SXjuAvw0DbIAYwUzV/I236I8Pqvrlv7sL/Y0E9aRCon05DhaV8pg1b32uxj76RgW0s5xjHBA==
   dependencies:
-    fast-extend "0.0.2"
-    fs-monkey "^0.3.3"
+    fast-extend "1.0.2"
+    fs-monkey "0.3.3"
 
 memoize-one@^5.0.0:
   version "5.1.1"
