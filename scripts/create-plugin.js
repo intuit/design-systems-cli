@@ -4,7 +4,7 @@ const copy = require('copy-template-dir');
 const path = require('path');
 const log = require('signale');
 const fs = require('fs');
-const changeCase = require('change-case');
+const { paramCase, pascalCase } = require('change-case');
 const { titleCase } = require('title-case');
 const { app } = require('command-line-application');
 const inquirer = require('inquirer');
@@ -36,7 +36,7 @@ async function create(options) {
     ]));
   }
 
-  const kebab = changeCase.paramCase(name);
+  const kebab = paramCase(name);
   const outDir = path.join(__dirname, '../plugins', kebab);
 
   fs.mkdirSync(outDir);
@@ -45,7 +45,7 @@ async function create(options) {
     version,
     title: titleCase(name),
     kebab,
-    pascal: changeCase.pascalCase(name)
+    pascal: pascalCase(name)
   };
 
   copy(inDir, outDir, vars, (err, createdFiles) => {

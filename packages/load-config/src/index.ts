@@ -6,7 +6,7 @@ import dedent from 'dedent';
 import resolve from 'resolve';
 import path from 'path';
 import flat from 'flat';
-import changeCase from 'change-case';
+import { camelCase } from 'change-case';
 
 type FlagTypes =
   | number
@@ -59,7 +59,7 @@ export function getValidationSchema(command: CliCommand) {
         schema[option.name].description = option.description;
       }
 
-      schema[changeCase.camelCase(option.name)] = schema[option.name];
+      schema[camelCase(option.name)] = schema[option.name];
     });
   }
 
@@ -69,7 +69,7 @@ export function getValidationSchema(command: CliCommand) {
 
       if (Object.keys(subSchema).length > 0) {
         schema[subCommand.name] = subSchema;
-        schema[changeCase.camelCase(subCommand.name)] = subSchema;
+        schema[camelCase(subCommand.name)] = subSchema;
       }
     });
   }
@@ -166,7 +166,7 @@ export function validateConfig(schema: Schema, command: CliCommand): Schema {
       Object.entries(config).map(([configPath, value]) => [
         configPath
           .split('.')
-          .map(part => changeCase.camelCase(part))
+          .map(part => camelCase(part))
           .join('.'),
         value
       ])

@@ -12,7 +12,7 @@ import chunk from 'lodash.chunk';
 import fs from 'fs-extra';
 import Commently from 'commently';
 import getExports from '@royriojas/get-exports-from-file';
-import changeCase from 'change-case';
+import { camelCase } from 'change-case';
 import InjectPlugin from 'webpack-inject-plugin';
 
 import { table as cliTable } from 'table';
@@ -321,9 +321,7 @@ const config = async ({
     chunkByExport
       ? allExports.map(e => {
           const content = e.default
-            ? `export { default as ${changeCase.camelCase(
-                e.name
-              )} } from "${importName}";`
+            ? `export { default as ${camelCase(e.name)} } from "${importName}";`
             : `export { ${e.name} } from "${importName}";`;
 
           plugins.push(new InjectPlugin(() => content, { entryName: e.name }));
@@ -464,7 +462,10 @@ async function getSizes(options: GetSizesOptions & CommonOptions) {
     logger.debug(`Installing: ${options.name}`);
 
     if (options.registry) {
-      execSync(`yarn add ${options.name} --registry ${options.registry}`, execOptions);
+      execSync(
+        `yarn add ${options.name} --registry ${options.registry}`,
+        execOptions
+      );
     } else {
       execSync(`yarn add ${options.name}`, execOptions);
     }
@@ -772,7 +773,13 @@ async function startAnalyze(name: string, registry?: string) {
   logger.start('Analyzing build output...');
 
   await Promise.all([
-    getSizes({ name, importName: name, scope: 'master', analyze: true, registry }),
+    getSizes({
+      name,
+      importName: name,
+      scope: 'master',
+      analyze: true,
+      registry
+    }),
     getSizes({
       name: process.cwd(),
       importName: name,
