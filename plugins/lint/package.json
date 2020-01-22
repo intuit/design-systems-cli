@@ -27,7 +27,7 @@
     "eslint": "6.7.1",
     "eslint-formatter-github": "0.4.2",
     "eslint-formatter-pretty": "3.0.1",
-    "fast-glob": "3.1.0",
+    "fast-glob": "3.1.1",
     "get-monorepo-packages": "1.2.0",
     "stylelint": "12.0.0",
     "stylelint-formatter-github": "0.3.2",

@@ -1945,7 +1945,7 @@
     clean-css "4.2.1"
     colorette "1.1.0"
     dedent "0.7.0"
-    fast-glob "3.1.0"
+    fast-glob "3.1.1"
     fs-extra "8.1.0"
     icss-utils "4.1.1"
     minimatch "3.0.4"
@@ -1987,7 +1987,7 @@
   dependencies:
     "@design-systems/cli-utils" "link:packages/cli-utils"
     "@design-systems/plugin" "link:packages/plugin"
-    fast-glob "3.1.0"
+    fast-glob "3.1.1"
     fs-extra "8.1.0"
     tslib "1.10.0"
 
@@ -2085,7 +2085,7 @@
     eslint "6.7.1"
     eslint-formatter-github "0.4.2"
     eslint-formatter-pretty "3.0.1"
-    fast-glob "3.1.0"
+    fast-glob "3.1.1"
     get-monorepo-packages "1.2.0"
     stylelint "12.0.0"
     stylelint-formatter-github "0.3.2"
@@ -2116,7 +2116,7 @@
     "@design-systems/plugin" "link:packages/plugin"
     babel-plugin-import-redirect "1.1.1"
     css-loader "3.4.2"
-    fast-glob "3.1.0"
+    fast-glob "3.1.1"
     file-loader "4.3.0"
     fs-extra "8.1.0"
     playroom hipstersmoothie/playroom#snippets
@@ -9820,10 +9820,10 @@ fast-extend@0.0.2:
   resolved "https://registry.yarnpkg.com/fast-extend/-/fast-extend-0.0.2.tgz#f5ec42cf40b9460f521a6387dfb52deeed671dbd"
   integrity sha1-9exCz0C5Rg9SGmOH37Ut7u1nHb0=
 
-fast-glob@3.1.0:
-  version "3.1.0"
-  resolved "https://registry.yarnpkg.com/fast-glob/-/fast-glob-3.1.0.tgz#77375a7e3e6f6fc9b18f061cddd28b8d1eec75ae"
-  integrity sha512-TrUz3THiq2Vy3bjfQUB2wNyPdGBeGmdjbzzBLhfHN4YFurYptCKwGq/TfiRavbGywFRzY6U2CdmQ1zmsY5yYaw==
+fast-glob@3.1.1:
+  version "3.1.1"
+  resolved "https://registry.yarnpkg.com/fast-glob/-/fast-glob-3.1.1.tgz#87ee30e9e9f3eb40d6f254a7997655da753d7c82"
+  integrity sha512-nTCREpBY8w8r+boyFYAx21iL6faSsQynliPHM4Uf56SbkyohCNxpVPEH9xrF5TXKy+IsjkPUHDKiUkzBVRXn9g==
   dependencies:
     "@nodelib/fs.stat" "^2.0.2"
     "@nodelib/fs.walk" "^1.2.3"
