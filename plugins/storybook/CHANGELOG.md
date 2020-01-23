@@ -1,3 +1,15 @@
+# v1.2.1 (Wed Jan 22 2020)
+
+#### 🐛  Bug Fix
+
+- update some thing for storybook 5.3  ([@hipstersmoothie](https://github.com/hipstersmoothie))
+
+#### Authors: 1
+
+- Andrew Lisowski ([@hipstersmoothie](https://github.com/hipstersmoothie))
+
+---
+
 # v1.2.0 (Wed Jan 22 2020)
 
 #### 🐛  Bug Fix

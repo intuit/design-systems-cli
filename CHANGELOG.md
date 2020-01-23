@@ -1,3 +1,16 @@
+# v1.2.1 (Wed Jan 22 2020)
+
+#### 🐛  Bug Fix
+
+- `@design-systems/storybook`
+  - update some thing for storybook 5.3 [#103](https://github.com/intuit/design-systems-cli/pull/103) ([@hipstersmoothie](https://github.com/hipstersmoothie))
+
+#### Authors: 1
+
+- Andrew Lisowski ([@hipstersmoothie](https://github.com/hipstersmoothie))
+
+---
+
 # v1.2.0 (Wed Jan 22 2020)
 
 ### Release Notes
