@@ -2,7 +2,7 @@ const { getMonorepoRoot } = require('@design-systems/cli-utils');
 const fs = require('fs');
 const path = require('path');
 
-function addons(entry = []) {
+function managerEntries(entry = []) {
   const projectRoot = getMonorepoRoot();
   const hasAddons =
     fs.existsSync(path.join(projectRoot, '.storybook/addons.js')) ||
@@ -32,4 +32,4 @@ function addons(entry = []) {
   return newAddons;
 }
 
-module.exports = { addons };
+module.exports = { managerEntries };

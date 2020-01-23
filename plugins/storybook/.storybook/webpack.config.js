@@ -87,10 +87,6 @@ async function addCss(config) {
 
   // Generate normal source map through css loaders
   cssLoader.options.sourceMap = true;
-  cssRule.use[0] = {
-    loader: cssRule.use[0],
-    options: { sourceMap: true }
-  };
   cssLoader.options.importLoaders = 1;
 
   // Must come before modules is set to true
