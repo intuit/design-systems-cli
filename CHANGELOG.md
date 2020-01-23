@@ -1,3 +1,16 @@
+# v1.2.2 (Thu Jan 23 2020)
+
+#### 🐛  Bug Fix
+
+- `@design-systems/create`
+  - update deps in monorepo template [#105](https://github.com/intuit/design-systems-cli/pull/105) ([@hipstersmoothie](https://github.com/hipstersmoothie))
+
+#### Authors: 1
+
+- Andrew Lisowski ([@hipstersmoothie](https://github.com/hipstersmoothie))
+
+---
+
 # v1.2.1 (Wed Jan 22 2020)
 
 #### 🐛  Bug Fix

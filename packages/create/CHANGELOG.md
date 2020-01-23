@@ -1,3 +1,15 @@
+# v1.2.2 (Thu Jan 23 2020)
+
+#### 🐛  Bug Fix
+
+- update deps in monorepo template  ([@hipstersmoothie](https://github.com/hipstersmoothie))
+
+#### Authors: 1
+
+- Andrew Lisowski ([@hipstersmoothie](https://github.com/hipstersmoothie))
+
+---
+
 # v1.2.0 (Wed Jan 22 2020)
 
 #### 🐛  Bug Fix
