@@ -66,13 +66,25 @@ export interface TemplateOptions {
   monorepoName: string;
 }
 
-/** Get the default author name from the local system. */
-const defaultAuthorName = () =>
-  String(execSync('git config --get user.name')).trim();
-/** Get the default author email from the local system. */
-const defaultAuthorEmail = () =>
-  String(execSync('git config --get user.email')).trim();
 const defaultVersion = (lernaInfo && lernaInfo.version) || '0.0.0';
+
+/** Get the default author name from the local system. */
+const defaultAuthorName = () => {
+  try {
+    return String(execSync('git config --get user.name')).trim()
+  } catch (error) {
+    return '';
+  }
+};
+
+/** Get the default author email from the local system. */
+const defaultAuthorEmail = () => {
+  try {
+    return String(execSync('git config --get user.email')).trim();
+  } catch (error) {
+    return '';
+  }
+}
 
 /** Determine the destination directory of the templated package. */
 function getDestDirectory(command: CreationChoice, name: string) {
