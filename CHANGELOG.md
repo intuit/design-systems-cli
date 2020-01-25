@@ -1,3 +1,16 @@
+# v1.2.3 (Fri Jan 24 2020)
+
+#### 🐛  Bug Fix
+
+- `@design-systems/create`
+  - gracefully handle no git user set [#107](https://github.com/intuit/design-systems-cli/pull/107) ([@hipstersmoothie](https://github.com/hipstersmoothie))
+
+#### Authors: 1
+
+- Andrew Lisowski ([@hipstersmoothie](https://github.com/hipstersmoothie))
+
+---
+
 # v1.2.2 (Thu Jan 23 2020)
 
 #### 🐛  Bug Fix
