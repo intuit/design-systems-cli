@@ -1,3 +1,18 @@
+# v1.2.4 (Wed Jan 29 2020)
+
+#### 🐛  Bug Fix
+
+- `@design-systems/size`
+  - Revert "lerna fails with this message when no changed packages" [#112](https://github.com/intuit/design-systems-cli/pull/112) ([@hipstersmoothie](https://github.com/hipstersmoothie))
+- `@design-systems/eslint-config`, `@design-systems/size`
+  - Size bug [#111](https://github.com/intuit/design-systems-cli/pull/111) ([@hipstersmoothie](https://github.com/hipstersmoothie))
+
+#### Authors: 1
+
+- Andrew Lisowski ([@hipstersmoothie](https://github.com/hipstersmoothie))
+
+---
+
 # v1.2.3 (Fri Jan 24 2020)
 
 #### 🐛  Bug Fix

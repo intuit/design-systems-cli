@@ -1,3 +1,19 @@
+# v1.2.4 (Wed Jan 29 2020)
+
+#### 🐛  Bug Fix
+
+- ignore stderr  ([@hipstersmoothie](https://github.com/hipstersmoothie))
+- lerna fails with this message when no changed packages  ([@hipstersmoothie](https://github.com/hipstersmoothie))
+- Revert "lerna fails with this message when no changed packages"
+
+5b842d7b8c31614552754b935ce0c65c631cff34  ([@hipstersmoothie](https://github.com/hipstersmoothie))
+
+#### Authors: 1
+
+- Andrew Lisowski ([@hipstersmoothie](https://github.com/hipstersmoothie))
+
+---
+
 # v1.2.0 (Wed Jan 22 2020)
 
 #### 🐛  Bug Fix

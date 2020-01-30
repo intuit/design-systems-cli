@@ -1,3 +1,15 @@
+# v1.2.4 (Wed Jan 29 2020)
+
+#### 🐛  Bug Fix
+
+- turn off eslint rule  ([@hipstersmoothie](https://github.com/hipstersmoothie))
+
+#### Authors: 1
+
+- Andrew Lisowski ([@hipstersmoothie](https://github.com/hipstersmoothie))
+
+---
+
 # v1.2.0 (Wed Jan 22 2020)
 
 #### 🐛  Bug Fix
