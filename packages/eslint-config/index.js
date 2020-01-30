@@ -167,6 +167,7 @@ module.exports = {
       rules: {
         'react/prop-types': 0,
         'no-explicit-type-exports/no-explicit-type-exports': 2,
+        'no-unused-expressions': 0,
         //  !!! Add this back once TS plugins supports `as const`
         '@typescript-eslint/no-object-literal-type-assertion': 0,
         '@typescript-eslint/no-this-alias': 2,
