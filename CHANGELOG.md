@@ -1,3 +1,16 @@
+# v1.2.5 (Thu Jan 30 2020)
+
+#### 🐛  Bug Fix
+
+- `@design-systems/eslint-config`
+  - Edit ts linting rule [#113](https://github.com/intuit/design-systems-cli/pull/113) ([@hipstersmoothie](https://github.com/hipstersmoothie))
+
+#### Authors: 1
+
+- Andrew Lisowski ([@hipstersmoothie](https://github.com/hipstersmoothie))
+
+---
+
 # v1.2.4 (Wed Jan 29 2020)
 
 #### 🐛  Bug Fix
