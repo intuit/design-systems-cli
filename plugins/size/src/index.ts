@@ -667,7 +667,7 @@ function getChangedPackages() {
   const all = getPackages('.');
 
   try {
-    const packages = execSync('lerna changed --ndjson')
+    const packages = execSync('lerna changed --ndjson', { stdio: ['pipe'] })
       .toString()
       .trim()
       .split('\n');
