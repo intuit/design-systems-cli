@@ -667,7 +667,7 @@ function getChangedPackages() {
   const all = getPackages('.');
 
   try {
-    const packages = execSync('lerna changed --ndjson')
+    const packages = execSync('lerna changed --ndjson', { stdio: ['pipe'] })
       .toString()
       .trim()
       .split('\n');
@@ -677,7 +677,12 @@ function getChangedPackages() {
       return { location: json.location, package: { ...json } };
     });
   } catch (error) {
-    if (!error.message.includes('fatal: ambiguous argument')) {
+    if (
+      !(
+        error.message.includes('fatal: ambiguous argument') ||
+        error.message.includes('Command failed')
+      )
+    ) {
       throw error;
     }
 

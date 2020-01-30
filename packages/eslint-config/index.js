@@ -54,6 +54,7 @@ module.exports = {
     // ]
     /* xo config */
     'import/no-unassigned-import': [2, { allow: ['**/*.css'] }],
+    'import/no-named-as-default': 0,
     // makes commenting out lines quickly a hassle
     'capitalized-comments': 0,
     'import/extensions': [
