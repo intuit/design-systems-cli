@@ -7,11 +7,10 @@ export const defaults = {
   outputDirectory: 'dist',
   cssMain: 'main.css',
   ignore: [
-    './**/*.mdx',
+    './**/*.+(md|mdx)',
     './**/__tests__/**',
     './**/__snapshots__/**',
-    './**/*.+(stories|test).*',
-    './**/*.+(md|jpg|jpeg|png|svg)'
+    './**/*.+(stories|test).*'
   ]
 };
 
