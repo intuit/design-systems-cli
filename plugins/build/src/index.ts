@@ -168,13 +168,21 @@ export default class BuildPlugin implements Plugin<BuildArgs> {
       default:
         this.logger.pending(`copy -> ${file}`);
 
-        return fs.copy(
+        await fs.copy(
           file,
           path.join(
-            getOutPath(inputDirectory, file, outputDirectory),
+            getOutPath(inputDirectory, file, path.join(outputDirectory, 'cjs')),
             path.basename(file)
           )
         );
+        await fs.copy(
+          file,
+          path.join(
+            getOutPath(inputDirectory, file, path.join(outputDirectory, 'esm')),
+            path.basename(file)
+          )
+        );
+        break;
     }
   };
 
