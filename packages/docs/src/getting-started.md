@@ -29,6 +29,7 @@ This command will walk you through the initial set up of your system.
 After you are done `cd` to the generated folder and start adding components with the following command:
 
 ```sh
+yarn # install dependencies
 yarn run create --name component
 ```
 
