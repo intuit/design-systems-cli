@@ -1,3 +1,16 @@
+# v1.3.0 (Tue Feb 04 2020)
+
+#### 🐛  Bug Fix
+
+- copy images to both output dirs  ([@hipstersmoothie](https://github.com/hipstersmoothie))
+- include images in build  ([@hipstersmoothie](https://github.com/hipstersmoothie))
+
+#### Authors: 1
+
+- Andrew Lisowski ([@hipstersmoothie](https://github.com/hipstersmoothie))
+
+---
+
 # v1.2.0 (Wed Jan 22 2020)
 
 #### 🐛  Bug Fix

@@ -1,3 +1,21 @@
+# v1.3.0 (Tue Feb 04 2020)
+
+#### 🚀  Enhancement
+
+- `@design-systems/build`
+  - Copy Images to dist [#135](https://github.com/intuit/design-systems-cli/pull/135) ([@hipstersmoothie](https://github.com/hipstersmoothie))
+
+#### 📝  Documentation
+
+- Add install step to getting started [#134](https://github.com/intuit/design-systems-cli/pull/134) ([@tylerkrupicka](https://github.com/tylerkrupicka))
+
+#### Authors: 2
+
+- Andrew Lisowski ([@hipstersmoothie](https://github.com/hipstersmoothie))
+- Tyler Krupicka ([@tylerkrupicka](https://github.com/tylerkrupicka))
+
+---
+
 # v1.2.5 (Thu Jan 30 2020)
 
 #### 🐛  Bug Fix
