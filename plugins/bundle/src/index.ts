@@ -1,4 +1,4 @@
-import { createLogger, getMonorepoRoot } from '@design-systems/cli-utils';
+import { createLogger, getMonorepoRoot, getRepoRoot } from '@design-systems/cli-utils';
 import { Plugin } from '@design-systems/plugin';
 import fs from 'fs';
 import path from 'path';
@@ -33,7 +33,7 @@ function pack(config: webpack.Configuration): Promise<webpack.Stats> {
 async function getConfig(
   options: ConfigOptions
 ): Promise<webpack.Configuration> {
-  const root = getMonorepoRoot();
+  const root = getMonorepoRoot() || getRepoRoot();
   const customConfigPath = path.join(root, 'webpack.config.js');
   let config = baseWebpackConfig;
   if (fs.existsSync(customConfigPath)) {
