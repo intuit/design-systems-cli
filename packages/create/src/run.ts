@@ -71,7 +71,7 @@ const defaultVersion = (lernaInfo && lernaInfo.version) || '0.0.0';
 /** Get the default author name from the local system. */
 const defaultAuthorName = () => {
   try {
-    return String(execSync('git config --get user.name')).trim()
+    return String(execSync('git config --get user.name')).trim();
   } catch (error) {
     return '';
   }
@@ -84,16 +84,22 @@ const defaultAuthorEmail = () => {
   } catch (error) {
     return '';
   }
-}
+};
 
 /** Determine the destination directory of the templated package. */
-function getDestDirectory(command: CreationChoice, name: string) {
+function getDestDirectory(
+  command: CreationChoice,
+  name: string,
+  dest?: string
+) {
   const pascal = pascalCase(name);
   const kebab = paramCase(name);
 
   return (
-    (command === 'component' && path.join(BASE_DIR, 'components', pascal)) ||
-    (command === 'package' && path.join(BASE_DIR, 'packages', kebab)) ||
+    (command === 'component' &&
+      path.join(BASE_DIR, dest ?? 'components', pascal)) ||
+    (command === 'package' && path.join(BASE_DIR, dest ?? 'packages', kebab)) ||
+    dest ||
     name
   );
 }
@@ -210,6 +216,9 @@ export interface CreateArgsBase {
 export interface CreateComponentArgs extends CreateArgsBase {
   /** The create component sub-command */
   _command: ['create', 'component'];
+
+  /** A custom directory to use instead of `components` */
+  destination?: string;
 }
 
 export interface CreateSystemArgs extends CreateArgsBase {
@@ -224,6 +233,9 @@ export interface CreateSystemArgs extends CreateArgsBase {
 export interface CreatePackageArgs extends CreateArgsBase {
   /** The create package sub-command */
   _command: ['create', 'package'];
+
+  /** A custom directory to use instead of `packages` */
+  destination?: string;
 }
 
 type CreateArgs = CreateComponentArgs | CreateSystemArgs | CreatePackageArgs;
@@ -302,7 +314,11 @@ export default async function run(args: CreateArgs) {
   };
   const pascal = pascalCase(config.name);
   const kebab = paramCase(config.name);
-  let destinationDirectory = getDestDirectory(command, config.name);
+  let destinationDirectory = getDestDirectory(
+    command,
+    config.name,
+    'destination' in args ? args.destination : undefined
+  );
 
   if ('cwd' in args && args.cwd) {
     logger.debug('Creating repo in current working directory...');

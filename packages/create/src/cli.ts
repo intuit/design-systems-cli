@@ -30,6 +30,13 @@ const force: Option = {
   type: Boolean
 };
 
+const destination: Option = {
+  name: 'destination',
+  description: 'Override the top level destination folder',
+  alias: 'd',
+  type: String
+};
+
 export const system: CliCommand = {
   name: 'system',
   description: 'Scaffold a new `ds` system',
@@ -70,6 +77,7 @@ const cli: CliCommand = {
       examples: ['ds create component --name dropdown'],
       options: [
         listTemplates,
+        destination,
         {
           ...name,
           description:
@@ -85,6 +93,7 @@ const cli: CliCommand = {
       examples: ['ds create package --name utils'],
       options: [
         listTemplates,
+        destination,
         {
           ...name,
           description:
