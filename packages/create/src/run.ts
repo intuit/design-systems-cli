@@ -352,7 +352,7 @@ export default async function run(args: CreateArgs) {
       🏎️   Start developing:
 
       yarn
-      cd components/${pascal}
+      cd ${destinationDirectory}
       yarn dev
     `);
   } else if (command === 'package') {
@@ -362,7 +362,7 @@ export default async function run(args: CreateArgs) {
       📦   Start developing:
 
       yarn
-      cd packages/${kebab}
+      cd ${destinationDirectory}
       yarn start
     `);
   } else {
