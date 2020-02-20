@@ -50,6 +50,9 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <td align="center"><a href="http://peter.mikit.sh"><img src="https://avatars3.githubusercontent.com/u/1571918?v=4" width="100px;" alt=""/><br /><sub><b>Peter Mikitsh</b></sub></a><br /><a href="https://github.com/intuit/design-systems-cli/commits?author=petermikitsh" title="Documentation">📖</a></td>
     <td align="center"><a href="https://renovate.whitesourcesoftware.com"><img src="https://avatars0.githubusercontent.com/u/25180681?v=4" width="100px;" alt=""/><br /><sub><b>WhiteSource Renovate</b></sub></a><br /><a href="https://github.com/intuit/design-systems-cli/commits?author=renovate-bot" title="Code">💻</a> <a href="https://github.com/intuit/design-systems-cli/commits?author=renovate-bot" title="Tests">⚠️</a></td>
   </tr>
+  <tr>
+    <td align="center"><a href="https://github.com/mishavp2001"><img src="https://avatars2.githubusercontent.com/u/1007097?v=4" width="100px;" alt=""/><br /><sub><b>mishavp2001</b></sub></a><br /><a href="https://github.com/intuit/design-systems-cli/commits?author=mishavp2001" title="Code">💻</a></td>
+  </tr>
 </table>
 
 <!-- markdownlint-enable -->
