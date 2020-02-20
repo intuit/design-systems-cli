@@ -28,7 +28,7 @@ class SauceLogger {
     proof.hooks.browserFactory.tap('sauce', browserFactory => {
       browserFactory.hooks.capabilities.tap('sauce', capabilities => {
         logger.info(chalk.gray('Sauce Labs URL'), capabilities.resultsUrl);
-        logger.debug(chalk.gray('TEP URL'), capabilities.sessionDashboardURL);
+        logger.debug(chalk.gray('Connection URL'), capabilities.sessionDashboardURL);
       });
     });
   }
