@@ -1,3 +1,16 @@
+# v1.3.1 (Thu Feb 20 2020)
+
+#### 🐛  Bug Fix
+
+- `@design-systems/cli-utils`, `@design-systems/bundle`
+  - Support Non-Monorepo Package Root [#136](https://github.com/intuit/design-systems-cli/pull/136) ([@mishavp2001](https://github.com/mishavp2001))
+
+#### Authors: 1
+
+- [@mishavp2001](https://github.com/mishavp2001)
+
+---
+
 # v1.3.0 (Tue Feb 04 2020)
 
 #### 🚀  Enhancement
