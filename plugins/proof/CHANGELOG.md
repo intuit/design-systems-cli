@@ -1,3 +1,15 @@
+# v1.3.2 (Thu Feb 20 2020)
+
+#### 🐛  Bug Fix
+
+- renaming from TEP to Connection  (raj_vasikarla@intuit.com)
+
+#### Authors: 1
+
+- Raj Vasikarla (raj_vasikarla@intuit.com)
+
+---
+
 # v1.2.0 (Wed Jan 22 2020)
 
 #### 🐛  Bug Fix

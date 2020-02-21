@@ -1,3 +1,16 @@
+# v1.4.1 (Thu Feb 20 2020)
+
+#### 🐛  Bug Fix
+
+- `@design-systems/proof`
+  - renaming from TEP to Connection [#140](https://github.com/intuit/design-systems-cli/pull/140) ([@vasikarla](https://github.com/vasikarla))
+
+#### Authors: 1
+
+- Raj Vasikarla ([@vasikarla](https://github.com/vasikarla))
+
+---
+
 # v1.3.1 (Thu Feb 20 2020)
 
 #### 🐛  Bug Fix
