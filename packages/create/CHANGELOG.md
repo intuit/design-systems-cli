@@ -1,3 +1,15 @@
+# v1.4.2 (Thu Feb 27 2020)
+
+#### 🐛  Bug Fix
+
+- update package template  ([@hipstersmoothie](https://github.com/hipstersmoothie))
+
+#### Authors: 1
+
+- Andrew Lisowski ([@hipstersmoothie](https://github.com/hipstersmoothie))
+
+---
+
 # v1.2.3 (Fri Jan 24 2020)
 
 #### 🐛  Bug Fix

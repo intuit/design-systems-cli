@@ -1,3 +1,16 @@
+# v1.4.2 (Thu Feb 27 2020)
+
+#### 🐛  Bug Fix
+
+- `@design-systems/create`
+  - update package template [#141](https://github.com/intuit/design-systems-cli/pull/141) ([@hipstersmoothie](https://github.com/hipstersmoothie))
+
+#### Authors: 1
+
+- Andrew Lisowski ([@hipstersmoothie](https://github.com/hipstersmoothie))
+
+---
+
 # v1.4.1 (Thu Feb 20 2020)
 
 #### 🐛  Bug Fix
