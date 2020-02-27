@@ -68,13 +68,13 @@
       "name": "ts",
       "url": "https://github.com/design-systems-templates/package-template",
       "description": "A TypeScript package",
-      "sha": "c80da4b1cb3c8dd61dcabdbdf2a2337e8a83207d"
+      "sha": "e5b05e8a930dbaa8372bcee651b2d0b39dcb3108"
     },
     {
       "name": "js",
       "url": "https://github.com/design-systems-templates/package-template",
       "description": "A JavaScript package",
-      "sha": "c3395d0200021ce646772f27c269e2fc5d07a1b8"
+      "sha": "da68a8a3ce8c7c5f973512ea615db51bc2edd22d"
     }
   ]
 }

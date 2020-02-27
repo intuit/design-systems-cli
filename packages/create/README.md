@@ -11,7 +11,7 @@ npm init @design-systems
 ## Updating templates
 
 1. Update the master branch of one of the templates
-2. Run the `templates:pick` then `templates:pick` scripts from `packages/create`
+2. Run the `templates:pick` then `templates:update` scripts from `packages/create`
 
 These scripts will do the following:
 
