@@ -43,7 +43,7 @@
     "prettier": "1.19.1",
     "rimraf": "3.0.0",
     "signale": "1.4.0",
-    "typescript": "3.7.5"
+    "typescript": "3.8.3"
   },
   "auto": {
     "plugins": [
