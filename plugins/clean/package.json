@@ -27,6 +27,6 @@
     "tslib": "1.10.0"
   },
   "devDependencies": {
-    "@types/fs-extra": "8.0.1"
+    "@types/fs-extra": "8.1.0"
   }
 }
