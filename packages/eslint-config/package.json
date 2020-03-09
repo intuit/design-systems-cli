@@ -14,8 +14,8 @@
   },
   "dependencies": {
     "@design-systems/cli-utils": "link:../cli-utils",
-    "@typescript-eslint/eslint-plugin": "2.17.0",
-    "@typescript-eslint/parser": "2.17.0",
+    "@typescript-eslint/eslint-plugin": "2.23.0",
+    "@typescript-eslint/parser": "2.23.0",
     "babel-eslint": "10.0.3",
     "eslint": "6.8.0",
     "eslint-config-airbnb": "18.0.1",
