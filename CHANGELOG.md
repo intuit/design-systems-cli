@@ -1,3 +1,16 @@
+# v1.4.3 (Tue Mar 10 2020)
+
+#### 🐛  Bug Fix
+
+- `@design-systems/dev`
+  - fix circular dep bug in `ds dev` [#160](https://github.com/intuit/design-systems-cli/pull/160) ([@hipstersmoothie](https://github.com/hipstersmoothie))
+
+#### Authors: 1
+
+- Andrew Lisowski ([@hipstersmoothie](https://github.com/hipstersmoothie))
+
+---
+
 # v1.4.2 (Thu Feb 27 2020)
 
 #### 🐛  Bug Fix

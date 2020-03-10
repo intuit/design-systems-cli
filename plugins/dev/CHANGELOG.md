@@ -1,3 +1,15 @@
+# v1.4.3 (Tue Mar 10 2020)
+
+#### 🐛  Bug Fix
+
+- fix circular dep bug in `ds dev`  ([@hipstersmoothie](https://github.com/hipstersmoothie))
+
+#### Authors: 1
+
+- Andrew Lisowski ([@hipstersmoothie](https://github.com/hipstersmoothie))
+
+---
+
 # v1.1.1 (Tue Jan 21 2020)
 
 #### 🐛  Bug Fix
