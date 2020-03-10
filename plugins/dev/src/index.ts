@@ -46,12 +46,16 @@ const createDepsSet = (
     deps.add(packageJson.name);
   }
 
-  filterDeps(monorepo, packageJson, 'dependencies').map(dep =>
-    createDepsSet(monorepo, resolve(`${dep}/package.json`), deps)
-  );
-  filterDeps(monorepo, packageJson, 'devDependencies').map(dep =>
-    createDepsSet(monorepo, resolve(`${dep}/package.json`), deps)
-  );
+  const subDeps = [
+    ...filterDeps(monorepo, packageJson, 'dependencies'),
+    ...filterDeps(monorepo, packageJson, 'devDependencies')
+  ];
+
+  subDeps.forEach(dep => {
+    if (!deps.has(dep)) {
+      createDepsSet(monorepo, resolve(`${dep}/package.json`), deps);
+    }
+  });
 
   return deps;
 };
