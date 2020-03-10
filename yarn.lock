@@ -1936,7 +1936,7 @@
     minimist "^1.2.0"
 
 "@design-systems/build@link:plugins/build":
-  version "1.1.1"
+  version "1.4.2"
   dependencies:
     "@babel/code-frame" "7.8.3"
     "@babel/core" "7.8.3"
@@ -1977,7 +1977,7 @@
     typescript "3.7.5"
 
 "@design-systems/bundle@link:plugins/bundle":
-  version "1.1.1"
+  version "1.4.2"
   dependencies:
     "@design-systems/build" "link:plugins/build"
     "@design-systems/cli-utils" "link:packages/cli-utils"
@@ -1995,7 +1995,7 @@
     webpack "4.41.5"
 
 "@design-systems/clean@link:plugins/clean":
-  version "1.1.1"
+  version "1.4.2"
   dependencies:
     "@design-systems/cli-utils" "link:packages/cli-utils"
     "@design-systems/plugin" "link:packages/plugin"
@@ -2004,7 +2004,7 @@
     tslib "1.10.0"
 
 "@design-systems/cli-utils@link:packages/cli-utils":
-  version "1.1.1"
+  version "1.4.2"
   dependencies:
     find-up "4.1.0"
     npm-which "3.0.1"
@@ -2014,7 +2014,7 @@
     webpack "4.41.5"
 
 "@design-systems/core@link:packages/core":
-  version "1.1.1"
+  version "1.4.2"
   dependencies:
     "@design-systems/build" "link:plugins/build"
     "@design-systems/bundle" "link:plugins/bundle"
@@ -2034,7 +2034,7 @@
     tslib "1.10.0"
 
 "@design-systems/create-command@link:plugins/create-command":
-  version "1.1.1"
+  version "1.4.2"
   dependencies:
     "@design-systems/cli-utils" "link:packages/cli-utils"
     "@design-systems/create" "link:packages/create"
@@ -2046,17 +2046,17 @@
     dedent "0.7.0"
     degit "https://github.com/hipstersmoothie/degit.git#private-release"
     fs-extra "8.1.0"
-    inquirer "7.0.3"
+    inquirer "7.1.0"
     progress-estimator "0.2.2"
     terminal-link "2.1.1"
     title-case "3.0.2"
     tslib "1.10.0"
 
 "@design-systems/create@link:packages/create":
-  version "1.1.1"
+  version "1.4.2"
 
 "@design-systems/dev@link:plugins/dev":
-  version "1.1.1"
+  version "1.4.2"
   dependencies:
     "@design-systems/cli-utils" "link:packages/cli-utils"
     "@design-systems/plugin" "link:packages/plugin"
@@ -2066,7 +2066,7 @@
     tslib "1.10.0"
 
 "@design-systems/eslint-config@link:packages/eslint-config":
-  version "1.1.1"
+  version "1.4.2"
   dependencies:
     "@design-systems/cli-utils" "link:packages/cli-utils"
     "@typescript-eslint/eslint-plugin" "2.17.0"
@@ -2089,7 +2089,7 @@
     tslib "1.10.0"
 
 "@design-systems/lint@link:plugins/lint":
-  version "1.1.1"
+  version "1.4.2"
   dependencies:
     "@design-systems/cli-utils" "link:packages/cli-utils"
     "@design-systems/eslint-config" "link:packages/eslint-config"
@@ -2106,7 +2106,7 @@
     tslib "1.10.0"
 
 "@design-systems/load-config@link:packages/load-config":
-  version "1.1.1"
+  version "1.4.2"
   dependencies:
     "@design-systems/core" "link:packages/core"
     "@design-systems/plugin" "link:packages/plugin"
@@ -2120,7 +2120,7 @@
     tslib "1.10.0"
 
 "@design-systems/playroom@link:plugins/playroom":
-  version "1.1.1"
+  version "1.4.2"
   dependencies:
     "@babel/core" "7.8.3"
     "@babel/register" "7.8.3"
@@ -2139,14 +2139,14 @@
     webpack "4.41.5"
 
 "@design-systems/plugin@link:packages/plugin":
-  version "1.1.1"
+  version "1.4.2"
   dependencies:
     command-line-application "0.9.6"
     tslib "1.10.0"
     utility-types "3.10.0"
 
 "@design-systems/proof@link:plugins/proof":
-  version "1.1.1"
+  version "1.4.2"
   dependencies:
     "@babel/core" "7.8.3"
     "@babel/plugin-transform-runtime" "7.8.3"
@@ -2165,7 +2165,7 @@
     tslib "1.10.0"
 
 "@design-systems/size@link:plugins/size":
-  version "1.1.1"
+  version "1.4.2"
   dependencies:
     "@design-systems/cli-utils" "link:packages/cli-utils"
     "@design-systems/plugin" "link:packages/plugin"
@@ -2195,7 +2195,7 @@
     webpack-sources "1.4.3"
 
 "@design-systems/storybook@link:plugins/storybook":
-  version "1.1.1"
+  version "1.4.2"
   dependencies:
     "@babel/core" "7.8.3"
     "@design-systems/build" "link:plugins/build"
@@ -2229,7 +2229,7 @@
     webpack-filter-warnings-plugin "1.2.1"
 
 "@design-systems/stylelint-config@link:packages/stylelint-config":
-  version "1.1.1"
+  version "1.4.2"
   dependencies:
     stylelint-a11y "1.2.2"
     stylelint-config-css-modules "2.2.0"
@@ -2243,7 +2243,7 @@
     tslib "1.10.0"
 
 "@design-systems/test@link:plugins/test":
-  version "1.1.1"
+  version "1.4.2"
   dependencies:
     "@babel/core" "7.8.3"
     "@design-systems/build" "link:plugins/build"
@@ -2263,7 +2263,7 @@
     tslib "1.10.0"
 
 "@design-systems/update@link:plugins/update":
-  version "1.1.1"
+  version "1.4.2"
   dependencies:
     "@design-systems/cli-utils" "link:packages/cli-utils"
     "@design-systems/plugin" "link:packages/plugin"
@@ -11662,23 +11662,23 @@ inquirer@6.5.0:
     strip-ansi "^5.1.0"
     through "^2.3.6"
 
-inquirer@7.0.3:
-  version "7.0.3"
-  resolved "https://registry.yarnpkg.com/inquirer/-/inquirer-7.0.3.tgz#f9b4cd2dff58b9f73e8d43759436ace15bed4567"
-  integrity sha512-+OiOVeVydu4hnCGLCSX+wedovR/Yzskv9BFqUNNKq9uU2qg7LCcCo3R86S2E7WLo0y/x2pnEZfZe1CoYnORUAw==
+inquirer@7.1.0:
+  version "7.1.0"
+  resolved "https://registry.yarnpkg.com/inquirer/-/inquirer-7.1.0.tgz#1298a01859883e17c7264b82870ae1034f92dd29"
+  integrity sha512-5fJMWEmikSYu0nv/flMc475MhGbB7TSPd/2IpFV4I4rMklboCH2rQjYY5kKiYGHqUF9gvaambupcJFFG9dvReg==
   dependencies:
     ansi-escapes "^4.2.1"
-    chalk "^2.4.2"
+    chalk "^3.0.0"
     cli-cursor "^3.1.0"
     cli-width "^2.0.0"
     external-editor "^3.0.3"
     figures "^3.0.0"
     lodash "^4.17.15"
     mute-stream "0.0.8"
-    run-async "^2.2.0"
+    run-async "^2.4.0"
     rxjs "^6.5.3"
     string-width "^4.1.0"
-    strip-ansi "^5.1.0"
+    strip-ansi "^6.0.0"
     through "^2.3.6"
 
 inquirer@^6.2.0:
@@ -17870,6 +17870,13 @@ run-async@^2.2.0:
   version "2.3.0"
   resolved "https://registry.yarnpkg.com/run-async/-/run-async-2.3.0.tgz#0371ab4ae0bdd720d4166d7dfda64ff7a445a6c0"
   integrity sha1-A3GrSuC91yDUFm19/aZP96RFpsA=
+  dependencies:
+    is-promise "^2.1.0"
+
+run-async@^2.4.0:
+  version "2.4.0"
+  resolved "https://registry.yarnpkg.com/run-async/-/run-async-2.4.0.tgz#e59054a5b86876cfae07f431d18cbaddc594f1e8"
+  integrity sha512-xJTbh/d7Lm7SBhc1tNvTpeCHaEzoyxPrqNlvSdMfBTYwaY++UJFyXUOxAtsRUXjlqOfj8luNaR9vjCh4KeV+pg==
   dependencies:
     is-promise "^2.1.0"
 
