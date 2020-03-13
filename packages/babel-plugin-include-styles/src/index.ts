@@ -3,6 +3,7 @@ import * as BabelTypes from '@babel/types';
 // eslint-disable-next-line import/no-extraneous-dependencies
 import { NodePath } from '@babel/core';
 
+import resolvePackage from './resolve-package';
 import exists from './exists';
 
 export interface Babel {
@@ -34,7 +35,7 @@ export default function includeStyles(
       return;
     }
 
-    if (importName.includes('main.css')) {
+    if (importName.match(/\.css$/)) {
       // Only keep 1 import per imported css file
       if (cssImports.has(importName)) {
         path.remove();
@@ -54,8 +55,20 @@ export default function includeStyles(
     }
 
     // After walk dependencies to find more css to include
+    const packageJson = resolvePackage(importName)
+
+    if (!packageJson) {
+      return;
+    }
+
+    // After walk dependencies to find more css to include
     // eslint-disable-next-line global-require, import/no-dynamic-require, @typescript-eslint/no-var-requires
-    const { dependencies = {} } = require(`${importName}/package.json`);
+    const { dependencies = {}, name } = require(packageJson);
+
+    // In case we happen to find a package.json that is for the specified scope
+    if (!SCOPE_REGEX.test(name)) {
+      return;
+    }
 
     Object.keys(dependencies).forEach((dependency: string) =>
       insertCssImports(path, dependency)

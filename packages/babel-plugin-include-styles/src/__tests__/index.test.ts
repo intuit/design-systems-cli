@@ -1,8 +1,13 @@
 import { transform } from './helpers/utils';
 import exists from '../exists';
+import resolvePackage from '../resolve-package';
 
 jest.mock('../exists.ts');
+jest.mock('../resolve-package.ts');
 jest.mock('@cgds/test/package.json', () => ({}), { virtual: true });
+
+const resolveSpy = resolvePackage as jest.Mock
+resolveSpy.mockReturnValue('@cgds/test/package.json')
 
 test('should not change css import', () => {
   const source = 'import "@cgds/test/dist/main.css";';
@@ -48,4 +53,18 @@ test("shouldn't add css import if file doesn't exist", () => {
   exists.mockReturnValueOnce(false);
   const source = 'import Test from "@cgds/test";';
   expect(transform(source)).toBe('import Test from "@cgds/test";');
+});
+
+test("should work for other css imports", () => {
+  // @ts-ignore
+  exists.mockReturnValueOnce(false);
+  const source = 'import "@cgds/some/dist/other.css";';
+  expect(transform(source)).toBe(source);
+});
+
+test("should not fail for deeper imports", () => {
+  // @ts-ignore
+  exists.mockReturnValueOnce(false);
+  const source = 'import "@cgds/some/dist/other.js";';
+  expect(transform(source)).toBe(source);
 });
