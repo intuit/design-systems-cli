@@ -1,3 +1,16 @@
+# v1.4.4 (Fri Mar 13 2020)
+
+#### 🐛  Bug Fix
+
+- `@design-systems/babel-plugin-include-styles`
+  - fix resolving files other than main import [#161](https://github.com/intuit/design-systems-cli/pull/161) ([@hipstersmoothie](https://github.com/hipstersmoothie))
+
+#### Authors: 1
+
+- Andrew Lisowski ([@hipstersmoothie](https://github.com/hipstersmoothie))
+
+---
+
 # v1.4.3 (Tue Mar 10 2020)
 
 #### 🐛  Bug Fix
