@@ -1,3 +1,16 @@
+# v1.4.5 (Tue Mar 17 2020)
+
+#### 🐛  Bug Fix
+
+- `@design-systems/babel-plugin-include-styles`
+  - catch findUp's errors [#162](https://github.com/intuit/design-systems-cli/pull/162) ([@hipstersmoothie](https://github.com/hipstersmoothie))
+
+#### Authors: 1
+
+- Andrew Lisowski ([@hipstersmoothie](https://github.com/hipstersmoothie))
+
+---
+
 # v1.4.4 (Fri Mar 13 2020)
 
 #### 🐛  Bug Fix

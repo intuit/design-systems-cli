@@ -1,3 +1,15 @@
+# v1.4.5 (Tue Mar 17 2020)
+
+#### 🐛  Bug Fix
+
+- catch findUp's errors  ([@hipstersmoothie](https://github.com/hipstersmoothie))
+
+#### Authors: 1
+
+- Andrew Lisowski ([@hipstersmoothie](https://github.com/hipstersmoothie))
+
+---
+
 # v1.4.4 (Fri Mar 13 2020)
 
 #### 🐛  Bug Fix
