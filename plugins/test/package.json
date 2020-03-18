@@ -1,6 +1,6 @@
 {
   "name": "@design-systems/test",
-  "version": "1.4.5",
+  "version": "1.4.6",
   "description": "The test command for @design-systems-cli",
   "main": "dist/index.js",
   "author": "Adam Dierkens <adam@dierkens.com>",
