@@ -1,3 +1,15 @@
+# v1.4.6 (Wed Mar 18 2020)
+
+#### 🐛  Bug Fix
+
+- don't load stories in node_modules  ([@hipstersmoothie](https://github.com/hipstersmoothie))
+
+#### Authors: 1
+
+- Andrew Lisowski ([@hipstersmoothie](https://github.com/hipstersmoothie))
+
+---
+
 # v1.2.1 (Wed Jan 22 2020)
 
 #### 🐛  Bug Fix

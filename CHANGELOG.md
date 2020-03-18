@@ -1,3 +1,16 @@
+# v1.4.6 (Wed Mar 18 2020)
+
+#### 🐛  Bug Fix
+
+- `@design-systems/storybook`
+  - don't load stories in node_modules [#163](https://github.com/intuit/design-systems-cli/pull/163) ([@hipstersmoothie](https://github.com/hipstersmoothie))
+
+#### Authors: 1
+
+- Andrew Lisowski ([@hipstersmoothie](https://github.com/hipstersmoothie))
+
+---
+
 # v1.4.5 (Tue Mar 17 2020)
 
 #### 🐛  Bug Fix
