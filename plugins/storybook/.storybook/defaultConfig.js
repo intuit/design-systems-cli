@@ -4,7 +4,7 @@ configure(
   require.context(
     COMPONENT,
     true,
-    /^\.\/(?!(?:node_modules)).*\.stories\.(tsx|ts|js|jsx)$/
+    /^\.\/((?!node_modules).)*\.stories\.(tsx|ts|js|jsx|mdx)$/
   ),
   module
 );
