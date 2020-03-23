@@ -32,7 +32,7 @@
     "env-ci": "5.0.1",
     "identity-obj-proxy": "3.0.0",
     "jest": "25.1.0",
-    "jest-github-reporter": "0.3.4",
+    "jest-github-reporter": "0.4.4",
     "jest-junit": "10.0.0",
     "polyfill-object.fromentries": "1.0.1",
     "tslib": "1.11.1"
