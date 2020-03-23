@@ -39,7 +39,7 @@
     "optimize-css-assets-webpack-plugin": "5.0.3",
     "signale": "1.4.0",
     "table": "5.4.6",
-    "terser-webpack-plugin": "2.3.2",
+    "terser-webpack-plugin": "2.3.5",
     "tslib": "1.10.0",
     "webpack": "4.41.5",
     "webpack-bundle-analyzer": "3.6.0",
