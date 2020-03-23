@@ -32,7 +32,7 @@
     "dotenv": "8.2.0",
     "env-ci": "5.0.1",
     "fs-extra": "8.1.0",
-    "tslib": "1.10.0",
+    "tslib": "1.11.1",
     "update-check": "1.5.3"
   },
   "keywords": [
