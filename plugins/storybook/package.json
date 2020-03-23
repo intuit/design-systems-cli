@@ -20,7 +20,7 @@
     "access": "public"
   },
   "dependencies": {
-    "@babel/core": "7.8.3",
+    "@babel/core": "7.9.0",
     "@design-systems/build": "link:../build",
     "@design-systems/cli-utils": "link:../../packages/cli-utils",
     "@design-systems/plugin": "link:../../packages/plugin",
@@ -36,7 +36,7 @@
     "@storybook/components": "5.3.17",
     "@storybook/react": "5.3.17",
     "@storybook/theming": "5.3.17",
-    "babel-loader": "8.0.6",
+    "babel-loader": "8.1.0",
     "core-js": "3.6.4",
     "dedent": "0.7.0",
     "github-url-to-object": "4.0.4",
