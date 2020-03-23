@@ -1936,7 +1936,7 @@
     minimist "^1.2.0"
 
 "@design-systems/build@link:plugins/build":
-  version "1.4.2"
+  version "1.4.6"
   dependencies:
     "@babel/code-frame" "7.8.3"
     "@babel/core" "7.8.3"
@@ -1977,7 +1977,7 @@
     typescript "3.7.5"
 
 "@design-systems/bundle@link:plugins/bundle":
-  version "1.4.2"
+  version "1.4.6"
   dependencies:
     "@design-systems/build" "link:plugins/build"
     "@design-systems/cli-utils" "link:packages/cli-utils"
@@ -1990,12 +1990,12 @@
     get-monorepo-packages "1.2.0"
     postcss-loader "3.0.0"
     style-loader "1.1.3"
-    terser-webpack-plugin "2.3.2"
+    terser-webpack-plugin "2.3.5"
     tslib "1.10.0"
     webpack "4.41.5"
 
 "@design-systems/clean@link:plugins/clean":
-  version "1.4.2"
+  version "1.4.6"
   dependencies:
     "@design-systems/cli-utils" "link:packages/cli-utils"
     "@design-systems/plugin" "link:packages/plugin"
@@ -2004,7 +2004,7 @@
     tslib "1.10.0"
 
 "@design-systems/cli-utils@link:packages/cli-utils":
-  version "1.4.2"
+  version "1.4.6"
   dependencies:
     find-up "4.1.0"
     npm-which "3.0.1"
@@ -2014,7 +2014,7 @@
     webpack "4.41.5"
 
 "@design-systems/core@link:packages/core":
-  version "1.4.2"
+  version "1.4.6"
   dependencies:
     "@design-systems/build" "link:plugins/build"
     "@design-systems/bundle" "link:plugins/bundle"
@@ -2034,7 +2034,7 @@
     tslib "1.10.0"
 
 "@design-systems/create-command@link:plugins/create-command":
-  version "1.4.2"
+  version "1.4.6"
   dependencies:
     "@design-systems/cli-utils" "link:packages/cli-utils"
     "@design-systems/create" "link:packages/create"
@@ -2053,10 +2053,10 @@
     tslib "1.10.0"
 
 "@design-systems/create@link:packages/create":
-  version "1.4.2"
+  version "1.4.6"
 
 "@design-systems/dev@link:plugins/dev":
-  version "1.4.2"
+  version "1.4.6"
   dependencies:
     "@design-systems/cli-utils" "link:packages/cli-utils"
     "@design-systems/plugin" "link:packages/plugin"
@@ -2066,7 +2066,7 @@
     tslib "1.10.0"
 
 "@design-systems/eslint-config@link:packages/eslint-config":
-  version "1.4.2"
+  version "1.4.6"
   dependencies:
     "@design-systems/cli-utils" "link:packages/cli-utils"
     "@typescript-eslint/eslint-plugin" "2.17.0"
@@ -2089,7 +2089,7 @@
     tslib "1.10.0"
 
 "@design-systems/lint@link:plugins/lint":
-  version "1.4.2"
+  version "1.4.6"
   dependencies:
     "@design-systems/cli-utils" "link:packages/cli-utils"
     "@design-systems/eslint-config" "link:packages/eslint-config"
@@ -2106,7 +2106,7 @@
     tslib "1.10.0"
 
 "@design-systems/load-config@link:packages/load-config":
-  version "1.4.2"
+  version "1.4.6"
   dependencies:
     "@design-systems/core" "link:packages/core"
     "@design-systems/plugin" "link:packages/plugin"
@@ -2120,7 +2120,7 @@
     tslib "1.10.0"
 
 "@design-systems/playroom@link:plugins/playroom":
-  version "1.4.2"
+  version "1.4.6"
   dependencies:
     "@babel/core" "7.8.3"
     "@babel/register" "7.8.3"
@@ -2139,14 +2139,14 @@
     webpack "4.41.5"
 
 "@design-systems/plugin@link:packages/plugin":
-  version "1.4.2"
+  version "1.4.6"
   dependencies:
     command-line-application "0.9.6"
     tslib "1.10.0"
     utility-types "3.10.0"
 
 "@design-systems/proof@link:plugins/proof":
-  version "1.4.2"
+  version "1.4.6"
   dependencies:
     "@babel/core" "7.8.3"
     "@babel/plugin-transform-runtime" "7.8.3"
@@ -2165,7 +2165,7 @@
     tslib "1.10.0"
 
 "@design-systems/size@link:plugins/size":
-  version "1.4.2"
+  version "1.4.6"
   dependencies:
     "@design-systems/cli-utils" "link:packages/cli-utils"
     "@design-systems/plugin" "link:packages/plugin"
@@ -2187,7 +2187,7 @@
     optimize-css-assets-webpack-plugin "5.0.3"
     signale "1.4.0"
     table "5.4.6"
-    terser-webpack-plugin "2.3.2"
+    terser-webpack-plugin "2.3.5"
     tslib "1.10.0"
     webpack "4.41.5"
     webpack-bundle-analyzer "3.6.0"
@@ -2195,7 +2195,7 @@
     webpack-sources "1.4.3"
 
 "@design-systems/storybook@link:plugins/storybook":
-  version "1.4.2"
+  version "1.4.6"
   dependencies:
     "@babel/core" "7.8.3"
     "@design-systems/build" "link:plugins/build"
@@ -2229,7 +2229,7 @@
     webpack-filter-warnings-plugin "1.2.1"
 
 "@design-systems/stylelint-config@link:packages/stylelint-config":
-  version "1.4.2"
+  version "1.4.6"
   dependencies:
     stylelint-a11y "1.2.3"
     stylelint-config-css-modules "2.2.0"
@@ -2243,7 +2243,7 @@
     tslib "1.10.0"
 
 "@design-systems/test@link:plugins/test":
-  version "1.4.2"
+  version "1.4.6"
   dependencies:
     "@babel/core" "7.8.3"
     "@design-systems/build" "link:plugins/build"
@@ -2263,7 +2263,7 @@
     tslib "1.10.0"
 
 "@design-systems/update@link:plugins/update":
-  version "1.4.2"
+  version "1.4.6"
   dependencies:
     "@design-systems/cli-utils" "link:packages/cli-utils"
     "@design-systems/plugin" "link:packages/plugin"
@@ -15134,7 +15134,7 @@ p-limit@^1.1.0:
   dependencies:
     p-try "^1.0.0"
 
-p-limit@^2.0.0, p-limit@^2.2.0:
+p-limit@^2.0.0, p-limit@^2.2.0, p-limit@^2.2.2:
   version "2.2.2"
   resolved "https://registry.yarnpkg.com/p-limit/-/p-limit-2.2.2.tgz#61279b67721f5287aa1c13a9a7fbbc48c9291b1e"
   integrity sha512-WGR+xHecKTr7EbUEhyLSh5Dube9JtdiG78ufaeLxTgpudf/20KqyMioIUZJAezlTIi6evxuoUs9YXc11cU+yzQ==
@@ -19567,15 +19567,16 @@ terminal-link@2.1.1, terminal-link@^2.0.0:
     ansi-escapes "^4.2.1"
     supports-hyperlinks "^2.0.0"
 
-terser-webpack-plugin@2.3.2, terser-webpack-plugin@^2.1.2:
-  version "2.3.2"
-  resolved "https://registry.yarnpkg.com/terser-webpack-plugin/-/terser-webpack-plugin-2.3.2.tgz#6d3d1b0590c8f729bfbaeb7fb2528b8b62db4c74"
-  integrity sha512-SmvB/6gtEPv+CJ88MH5zDOsZdKXPS/Uzv2//e90+wM1IHFUhsguPKEILgzqrM1nQ4acRXN/SV4Obr55SXC+0oA==
+terser-webpack-plugin@2.3.5:
+  version "2.3.5"
+  resolved "https://registry.yarnpkg.com/terser-webpack-plugin/-/terser-webpack-plugin-2.3.5.tgz#5ad971acce5c517440ba873ea4f09687de2f4a81"
+  integrity sha512-WlWksUoq+E4+JlJ+h+U+QUzXpcsMSSNXkDy9lBVkSqDn1w23Gg29L/ary9GeJVYCGiNJJX7LnVc4bwL1N3/g1w==
   dependencies:
     cacache "^13.0.1"
     find-cache-dir "^3.2.0"
-    jest-worker "^24.9.0"
-    schema-utils "^2.6.1"
+    jest-worker "^25.1.0"
+    p-limit "^2.2.2"
+    schema-utils "^2.6.4"
     serialize-javascript "^2.1.2"
     source-map "^0.6.1"
     terser "^4.4.3"
@@ -19595,6 +19596,20 @@ terser-webpack-plugin@^1.4.3:
     terser "^4.1.2"
     webpack-sources "^1.4.0"
     worker-farm "^1.7.0"
+
+terser-webpack-plugin@^2.1.2:
+  version "2.3.2"
+  resolved "https://registry.yarnpkg.com/terser-webpack-plugin/-/terser-webpack-plugin-2.3.2.tgz#6d3d1b0590c8f729bfbaeb7fb2528b8b62db4c74"
+  integrity sha512-SmvB/6gtEPv+CJ88MH5zDOsZdKXPS/Uzv2//e90+wM1IHFUhsguPKEILgzqrM1nQ4acRXN/SV4Obr55SXC+0oA==
+  dependencies:
+    cacache "^13.0.1"
+    find-cache-dir "^3.2.0"
+    jest-worker "^24.9.0"
+    schema-utils "^2.6.1"
+    serialize-javascript "^2.1.2"
+    source-map "^0.6.1"
+    terser "^4.4.3"
+    webpack-sources "^1.4.3"
 
 terser@^4.1.2, terser@^4.3.9:
   version "4.6.1"
