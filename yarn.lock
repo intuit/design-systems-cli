@@ -1936,7 +1936,7 @@
     minimist "^1.2.0"
 
 "@design-systems/build@link:plugins/build":
-  version "1.4.2"
+  version "1.4.6"
   dependencies:
     "@babel/code-frame" "7.8.3"
     "@babel/core" "7.8.3"
@@ -1977,7 +1977,7 @@
     typescript "3.7.5"
 
 "@design-systems/bundle@link:plugins/bundle":
-  version "1.4.2"
+  version "1.4.6"
   dependencies:
     "@design-systems/build" "link:plugins/build"
     "@design-systems/cli-utils" "link:packages/cli-utils"
@@ -1995,7 +1995,7 @@
     webpack "4.41.5"
 
 "@design-systems/clean@link:plugins/clean":
-  version "1.4.2"
+  version "1.4.6"
   dependencies:
     "@design-systems/cli-utils" "link:packages/cli-utils"
     "@design-systems/plugin" "link:packages/plugin"
@@ -2004,7 +2004,7 @@
     tslib "1.10.0"
 
 "@design-systems/cli-utils@link:packages/cli-utils":
-  version "1.4.2"
+  version "1.4.6"
   dependencies:
     find-up "4.1.0"
     npm-which "3.0.1"
@@ -2014,7 +2014,7 @@
     webpack "4.41.5"
 
 "@design-systems/core@link:packages/core":
-  version "1.4.2"
+  version "1.4.6"
   dependencies:
     "@design-systems/build" "link:plugins/build"
     "@design-systems/bundle" "link:plugins/bundle"
@@ -2034,7 +2034,7 @@
     tslib "1.10.0"
 
 "@design-systems/create-command@link:plugins/create-command":
-  version "1.4.2"
+  version "1.4.6"
   dependencies:
     "@design-systems/cli-utils" "link:packages/cli-utils"
     "@design-systems/create" "link:packages/create"
@@ -2053,10 +2053,10 @@
     tslib "1.10.0"
 
 "@design-systems/create@link:packages/create":
-  version "1.4.2"
+  version "1.4.6"
 
 "@design-systems/dev@link:plugins/dev":
-  version "1.4.2"
+  version "1.4.6"
   dependencies:
     "@design-systems/cli-utils" "link:packages/cli-utils"
     "@design-systems/plugin" "link:packages/plugin"
@@ -2066,7 +2066,7 @@
     tslib "1.10.0"
 
 "@design-systems/eslint-config@link:packages/eslint-config":
-  version "1.4.2"
+  version "1.4.6"
   dependencies:
     "@design-systems/cli-utils" "link:packages/cli-utils"
     "@typescript-eslint/eslint-plugin" "2.17.0"
@@ -2089,7 +2089,7 @@
     tslib "1.10.0"
 
 "@design-systems/lint@link:plugins/lint":
-  version "1.4.2"
+  version "1.4.6"
   dependencies:
     "@design-systems/cli-utils" "link:packages/cli-utils"
     "@design-systems/eslint-config" "link:packages/eslint-config"
@@ -2106,7 +2106,7 @@
     tslib "1.10.0"
 
 "@design-systems/load-config@link:packages/load-config":
-  version "1.4.2"
+  version "1.4.6"
   dependencies:
     "@design-systems/core" "link:packages/core"
     "@design-systems/plugin" "link:packages/plugin"
@@ -2120,7 +2120,7 @@
     tslib "1.10.0"
 
 "@design-systems/playroom@link:plugins/playroom":
-  version "1.4.2"
+  version "1.4.6"
   dependencies:
     "@babel/core" "7.8.3"
     "@babel/register" "7.8.3"
@@ -2139,14 +2139,14 @@
     webpack "4.41.5"
 
 "@design-systems/plugin@link:packages/plugin":
-  version "1.4.2"
+  version "1.4.6"
   dependencies:
     command-line-application "0.9.6"
     tslib "1.10.0"
     utility-types "3.10.0"
 
 "@design-systems/proof@link:plugins/proof":
-  version "1.4.2"
+  version "1.4.6"
   dependencies:
     "@babel/core" "7.8.3"
     "@babel/plugin-transform-runtime" "7.8.3"
@@ -2165,7 +2165,7 @@
     tslib "1.10.0"
 
 "@design-systems/size@link:plugins/size":
-  version "1.4.2"
+  version "1.4.6"
   dependencies:
     "@design-systems/cli-utils" "link:packages/cli-utils"
     "@design-systems/plugin" "link:packages/plugin"
@@ -2195,7 +2195,7 @@
     webpack-sources "1.4.3"
 
 "@design-systems/storybook@link:plugins/storybook":
-  version "1.4.2"
+  version "1.4.6"
   dependencies:
     "@babel/core" "7.8.3"
     "@design-systems/build" "link:plugins/build"
@@ -2229,7 +2229,7 @@
     webpack-filter-warnings-plugin "1.2.1"
 
 "@design-systems/stylelint-config@link:packages/stylelint-config":
-  version "1.4.2"
+  version "1.4.6"
   dependencies:
     stylelint-a11y "1.2.3"
     stylelint-config-css-modules "2.2.0"
@@ -2243,7 +2243,7 @@
     tslib "1.10.0"
 
 "@design-systems/test@link:plugins/test":
-  version "1.4.2"
+  version "1.4.6"
   dependencies:
     "@babel/core" "7.8.3"
     "@design-systems/build" "link:plugins/build"
@@ -2263,7 +2263,7 @@
     tslib "1.10.0"
 
 "@design-systems/update@link:plugins/update":
-  version "1.4.2"
+  version "1.4.6"
   dependencies:
     "@design-systems/cli-utils" "link:packages/cli-utils"
     "@design-systems/plugin" "link:packages/plugin"
@@ -17884,10 +17884,10 @@ rimraf@2.6.3:
   dependencies:
     glob "^7.1.3"
 
-rimraf@3.0.0, rimraf@^3.0.0:
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/rimraf/-/rimraf-3.0.0.tgz#614176d4b3010b75e5c390eb0ee96f6dc0cebb9b"
-  integrity sha512-NDGVxTsjqfunkds7CqsOiEnxln4Bo7Nddl3XhS4pXg5OzwkLqJ971ZVAAnB+DDLnF76N+VnDEiBHaVV8I06SUg==
+rimraf@3.0.2:
+  version "3.0.2"
+  resolved "https://registry.yarnpkg.com/rimraf/-/rimraf-3.0.2.tgz#f1a5402ba6220ad52cc1282bac1ae3aa49fd061a"
+  integrity sha512-JZkJMZkAGFFPP2YqXZXPbMlMBgsxzE8ILs4lMIX/2o0L9UBw9O/Y3o6wFw/i9YLapcUJWwqbi3kdxIPdC62TIA==
   dependencies:
     glob "^7.1.3"
 
@@ -17895,6 +17895,13 @@ rimraf@^2.2.8, rimraf@^2.5.2, rimraf@^2.5.4, rimraf@^2.6.1, rimraf@^2.6.2, rimra
   version "2.7.1"
   resolved "https://registry.yarnpkg.com/rimraf/-/rimraf-2.7.1.tgz#35797f13a7fdadc566142c29d4f07ccad483e3ec"
   integrity sha512-uWjbaKIK3T1OSVptzX7Nl6PvQ3qAGtKEtVRjRuazjfL3Bx5eI409VZSqgND+4UNnmzLVdPj9FqFJNPqBZFve4w==
+  dependencies:
+    glob "^7.1.3"
+
+rimraf@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/rimraf/-/rimraf-3.0.0.tgz#614176d4b3010b75e5c390eb0ee96f6dc0cebb9b"
+  integrity sha512-NDGVxTsjqfunkds7CqsOiEnxln4Bo7Nddl3XhS4pXg5OzwkLqJ971ZVAAnB+DDLnF76N+VnDEiBHaVV8I06SUg==
   dependencies:
     glob "^7.1.3"
 
