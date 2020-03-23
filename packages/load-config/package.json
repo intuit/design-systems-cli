@@ -37,7 +37,7 @@
   },
   "devDependencies": {
     "@types/cosmiconfig": "5.0.3",
-    "@types/dlv": "1.1.1",
+    "@types/dlv": "1.1.2",
     "@types/flat": "0.0.28",
     "@types/resolve": "1.14.0"
   }

@@ -4392,10 +4392,10 @@
   resolved "https://registry.yarnpkg.com/@types/dedent/-/dedent-0.7.0.tgz#155f339ca404e6dd90b9ce46a3f78fd69ca9b050"
   integrity sha512-EGlKlgMhnLt/cM4DbUSafFdrkeJoC9Mvnj0PUCU7tFmTjMjNRT957kXCx0wYm3JuEq4o4ZsS5vG+NlkM2DMd2A==
 
-"@types/dlv@1.1.1":
-  version "1.1.1"
-  resolved "https://registry.yarnpkg.com/@types/dlv/-/dlv-1.1.1.tgz#61efd23f4226e4c9c0661428650837e10cfb622f"
-  integrity sha512-AYhjSVEURK9oQko30yJhiipywk/6D1Sns3TuYS4NxO6kyShF/fLWzgu+tXRlX2QvpGyX9Y3BKnxb6Sq2eI5Ocg==
+"@types/dlv@1.1.2":
+  version "1.1.2"
+  resolved "https://registry.yarnpkg.com/@types/dlv/-/dlv-1.1.2.tgz#02d4fcc41c5f707753427867c64fdae543031fb9"
+  integrity sha512-OyiZ3jEKu7RtGO1yp9oOdK0cTwZ/10oE9PDJ6fyN3r9T5wkyOcvr6awdugjYdqF6KVO5eUvt7jx7rk2Eylufow==
 
 "@types/dotenv@6.1.1":
   version "6.1.1"
