@@ -34,6 +34,6 @@
     "progress-estimator": "0.2.2",
     "terminal-link": "2.1.1",
     "title-case": "3.0.2",
-    "tslib": "1.10.0"
+    "tslib": "1.11.1"
   }
 }

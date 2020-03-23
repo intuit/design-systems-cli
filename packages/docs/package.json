@@ -13,7 +13,7 @@
     "command-line-docs": "0.0.6",
     "dedent": "0.7.0",
     "mkdirp": "1.0.3",
-    "tslib": "1.10.0"
+    "tslib": "1.11.1"
   },
   "scripts": {
     "generate": "./generate-docs.js",
