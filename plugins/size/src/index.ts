@@ -21,7 +21,7 @@ import signale from 'signale';
 import colorette from 'colorette';
 import fileSize from 'file-size';
 import getPackages from 'get-monorepo-packages';
-import { Diff2Html } from 'diff2html';
+import Diff2Html from 'diff2html';
 import opn from 'opn';
 
 import webpack from 'webpack';
@@ -812,9 +812,8 @@ function createDiff() {
     return;
   }
 
-  const outputHtml = Diff2Html.getPrettyHtml(diff, {
-    inputFormat: 'diff',
-    showFiles: true,
+  const outputHtml = Diff2Html.html(diff, {
+    drawFileList: true,
     matching: 'lines',
     outputFormat: 'side-by-side'
   });
