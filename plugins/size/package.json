@@ -28,7 +28,7 @@
     "commently": "5.73.5",
     "cross-spawn": "7.0.1",
     "css-loader": "3.4.2",
-    "diff2html": "2.12.2",
+    "diff2html": "3.1.6",
     "file-size": "1.0.0",
     "fs-extra": "8.1.0",
     "get-monorepo-packages": "1.2.0",
@@ -48,6 +48,7 @@
   },
   "devDependencies": {
     "@types/fs-extra": "8.1.0",
+    "@types/hogan.js": "3.0.0",
     "@types/lodash.chunk": "4.2.6",
     "@types/mini-css-extract-plugin": "0.9.1",
     "@types/opn": "5.1.0",
