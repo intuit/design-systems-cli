@@ -2283,7 +2283,7 @@
     env-ci "5.0.1"
     identity-obj-proxy "3.0.0"
     jest "25.1.0"
-    jest-github-reporter "0.3.4"
+    jest-github-reporter "0.4.4"
     jest-junit "10.0.0"
     polyfill-object.fromentries "1.0.1"
     tslib "1.10.0"
@@ -3544,7 +3544,7 @@
     once "^1.4.0"
     universal-user-agent "^4.0.0"
 
-"@octokit/rest@16.43.1":
+"@octokit/rest@16.43.1", "@octokit/rest@^16.43.1":
   version "16.43.1"
   resolved "https://registry.yarnpkg.com/@octokit/rest/-/rest-16.43.1.tgz#3b11e7d1b1ac2bbeeb23b08a17df0b20947eda6b"
   integrity sha512-gfFKwRT/wFxq5qlNjnW2dh+qh74XgTQ2B179UX5K1HYCluioWj8Ndbgqw2PVqa1NnVJkGHp2ovMpVn/DImlmkw==
@@ -8015,6 +8015,18 @@ create-check@^0.5.0:
     execa "^2.0.4"
     lodash.chunk "^4.2.0"
 
+create-check@^0.6.0:
+  version "0.6.33"
+  resolved "https://registry.yarnpkg.com/create-check/-/create-check-0.6.33.tgz#d4168a03bc213705b274cb52fba363d41f809eae"
+  integrity sha512-xClgCOb2S7Uj+ZQoqIGMipZCi8MqN+K2hH4tIIpAEV4uocsQBeYWvBypYDsnlyip52zIG23M3eDjkeefdPvfew==
+  dependencies:
+    "@octokit/app" "^4.1.0"
+    "@octokit/rest" "^16.43.1"
+    await-to-js "^2.1.1"
+    env-ci "^5.0.0"
+    execa "^4.0.0"
+    lodash.chunk "^4.2.0"
+
 create-ecdh@^4.0.0:
   version "4.0.3"
   resolved "https://registry.yarnpkg.com/create-ecdh/-/create-ecdh-4.0.3.tgz#c9111b6f33045c4697f144787f9254cdc77c45ff"
@@ -9272,6 +9284,14 @@ env-ci@^2.1.0:
   dependencies:
     execa "^1.0.0"
     java-properties "^0.2.9"
+
+env-ci@^5.0.0:
+  version "5.0.2"
+  resolved "https://registry.yarnpkg.com/env-ci/-/env-ci-5.0.2.tgz#48b6687f8af8cdf5e31b8fcf2987553d085249d9"
+  integrity sha512-Xc41mKvjouTXD3Oy9AqySz1IeyvJvHZ20Twf5ZLYbNpPPIuCnL/qHCmNlD01LoNy0JTunw9HPYVptD19Ac7Mbw==
+  dependencies:
+    execa "^4.0.0"
+    java-properties "^1.0.0"
 
 env-paths@^2.2.0:
   version "2.2.0"
@@ -12688,14 +12708,14 @@ jest-get-type@^25.1.0:
   resolved "https://registry.yarnpkg.com/jest-get-type/-/jest-get-type-25.1.0.tgz#1cfe5fc34f148dc3a8a3b7275f6b9ce9e2e8a876"
   integrity sha512-yWkBnT+5tMr8ANB6V+OjmrIJufHtCAqI5ic2H40v+tRqxDmE0PGnIiTyvRWFOMtmVHYpwRqyazDbTnhpjsGvLw==
 
-jest-github-reporter@0.3.4:
-  version "0.3.4"
-  resolved "https://registry.yarnpkg.com/jest-github-reporter/-/jest-github-reporter-0.3.4.tgz#bde4938a65e1529cb37f055ae643c00151c72a89"
-  integrity sha512-BHP0FOz6qYz4Oi8+BFXpiVXeNfDYeTn4cu1YDrqUZU2tw2Ppi2p/+kuduISwwievSwJ2D815GQ/Kbpqu/TbMKA==
+jest-github-reporter@0.4.4:
+  version "0.4.4"
+  resolved "https://registry.yarnpkg.com/jest-github-reporter/-/jest-github-reporter-0.4.4.tgz#97ac29b7f8f99431934ed95af3bcd4049fdc761c"
+  integrity sha512-pAsB4pu3cC9cwepwJKI+h88zAHr+nJ36wiur61aQP9GSnDcuqRdEUWNYIrndDbpNQ7h6T4apdaTb61nX0EMbhQ==
   dependencies:
     "@octokit/rest" "^16.28.7"
-    create-check "^0.5.0"
-    strip-ansi "^5.2.0"
+    create-check "^0.6.0"
+    strip-ansi "^6.0.0"
 
 jest-haste-map@^25.1.0:
   version "25.1.0"
