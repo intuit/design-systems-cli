@@ -49,9 +49,7 @@ export default class TestPlugin implements Plugin<TestArgs> {
       );
 
       if (annotate) {
-        await createJestAnnotations(
-          results as Parameters<typeof createJestAnnotations>[0]
-        );
+        await createJestAnnotations(results);
       }
 
       if (results.numFailedTests > 0) {
