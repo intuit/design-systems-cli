@@ -3,7 +3,7 @@
 
   <h1></h1>
 
-  <p>A CLI toolbox for creating design systems.</p>
+  <p>A CLI toolbox for creating design systems</p>
 </div>
 
 <div align="center">
