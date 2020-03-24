@@ -1,3 +1,26 @@
+# v1.4.7 (Tue Mar 24 2020)
+
+:tada: This release contains work from a new contributor! :tada:
+
+Thank you, WhiteSource Renovate ([@renovate-bot](https://github.com/renovate-bot)), for all your work!
+
+#### 🔩 Dependency Updates
+
+- Update babel monorepo [#115](https://github.com/intuit/design-systems-cli/pull/115) ([@hipstersmoothie](https://github.com/hipstersmoothie) [@renovate[bot]](https://github.com/renovate[bot]))
+- Update dependency tslib to v1.11.1 [#152](https://github.com/intuit/design-systems-cli/pull/152) ([@renovate-bot](https://github.com/renovate-bot) [@renovate[bot]](https://github.com/renovate[bot]))
+- Update storybook monorepo to v5.3.17 [#129](https://github.com/intuit/design-systems-cli/pull/129) ([@renovate-bot](https://github.com/renovate-bot) [@renovate[bot]](https://github.com/renovate[bot]))
+- Update react monorepo to v16.13.1 [#156](https://github.com/intuit/design-systems-cli/pull/156) ([@renovate-bot](https://github.com/renovate-bot) [@renovate[bot]](https://github.com/renovate[bot]))
+- Update dependency storybook-addon-jsx to v7.1.15 [#125](https://github.com/intuit/design-systems-cli/pull/125) ([@renovate-bot](https://github.com/renovate-bot) [@renovate[bot]](https://github.com/renovate[bot]))
+- Update dependency storybook-dark-mode to v0.3.1 [#151](https://github.com/intuit/design-systems-cli/pull/151) ([@renovate-bot](https://github.com/renovate-bot) [@renovate[bot]](https://github.com/renovate[bot]))
+
+#### Authors: 3
+
+- [@renovate[bot]](https://github.com/renovate[bot])
+- Andrew Lisowski ([@hipstersmoothie](https://github.com/hipstersmoothie))
+- WhiteSource Renovate ([@renovate-bot](https://github.com/renovate-bot))
+
+---
+
 # v1.4.6 (Wed Mar 18 2020)
 
 #### 🐛  Bug Fix

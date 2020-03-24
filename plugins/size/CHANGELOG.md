@@ -1,3 +1,27 @@
+# v1.4.7 (Tue Mar 24 2020)
+
+:tada: This release contains work from a new contributor! :tada:
+
+Thank you, WhiteSource Renovate ([@renovate-bot](https://github.com/renovate-bot)), for all your work!
+
+#### 🔩 Dependency Updates
+
+- Update dependency diff2html to v3 [#158](https://github.com/intuit/design-systems-cli/pull/158) ([@renovate-bot](https://github.com/renovate-bot) [@hipstersmoothie](https://github.com/hipstersmoothie) [@renovate[bot]](https://github.com/renovate[bot]))
+- Update dependency tslib to v1.11.1 [#152](https://github.com/intuit/design-systems-cli/pull/152) ([@renovate-bot](https://github.com/renovate-bot) [@renovate[bot]](https://github.com/renovate[bot]))
+- Update dependency markdown-table to v2 [#132](https://github.com/intuit/design-systems-cli/pull/132) ([@renovate-bot](https://github.com/renovate-bot) [@renovate[bot]](https://github.com/renovate[bot]))
+- Update dependency commently to v5.73.5 [#121](https://github.com/intuit/design-systems-cli/pull/121) ([@renovate-bot](https://github.com/renovate-bot) [@renovate[bot]](https://github.com/renovate[bot]))
+- Update dependency terser-webpack-plugin to v2.3.5 [#126](https://github.com/intuit/design-systems-cli/pull/126) ([@renovate-bot](https://github.com/renovate-bot) [@renovate[bot]](https://github.com/renovate[bot]))
+- Update dependency @types/fs-extra to v8.1.0 [#143](https://github.com/intuit/design-systems-cli/pull/143) ([@renovate-bot](https://github.com/renovate-bot) [@renovate[bot]](https://github.com/renovate[bot]))
+- Update dependency @types/mini-css-extract-plugin to v0.9.1 [#144](https://github.com/intuit/design-systems-cli/pull/144) ([@renovate-bot](https://github.com/renovate-bot) [@renovate[bot]](https://github.com/renovate[bot]))
+
+#### Authors: 3
+
+- [@renovate[bot]](https://github.com/renovate[bot])
+- Andrew Lisowski ([@hipstersmoothie](https://github.com/hipstersmoothie))
+- WhiteSource Renovate ([@renovate-bot](https://github.com/renovate-bot))
+
+---
+
 # v1.2.4 (Wed Jan 29 2020)
 
 #### 🐛  Bug Fix

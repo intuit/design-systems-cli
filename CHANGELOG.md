@@ -1,3 +1,87 @@
+# v1.4.7 (Tue Mar 24 2020)
+
+:tada: This release contains work from a new contributor! :tada:
+
+Thank you, WhiteSource Renovate ([@renovate-bot](https://github.com/renovate-bot)), for all your work!
+
+#### 🐛 Bug Fix
+
+- Release Dependency Updates [#164](https://github.com/intuit/design-systems-cli/pull/164) ([@hipstersmoothie](https://github.com/hipstersmoothie))
+
+#### 🔩 Dependency Updates
+
+- Update stylelint [#157](https://github.com/intuit/design-systems-cli/pull/157) ([@renovate-bot](https://github.com/renovate-bot) [@renovate[bot]](https://github.com/renovate[bot]))
+- Update dependency rimraf to v3.0.2 [#123](https://github.com/intuit/design-systems-cli/pull/123) ([@renovate-bot](https://github.com/renovate-bot) [@renovate[bot]](https://github.com/renovate[bot]))
+- Update dependency mkdirp to v1 [#133](https://github.com/intuit/design-systems-cli/pull/133) ([@renovate-bot](https://github.com/renovate-bot) [@renovate[bot]](https://github.com/renovate[bot]))
+- `@design-systems/build`
+  - Update dependency postcss to v7.0.27 [#149](https://github.com/intuit/design-systems-cli/pull/149) ([@hipstersmoothie](https://github.com/hipstersmoothie) [@renovate[bot]](https://github.com/renovate[bot]))
+- `@design-systems/babel-plugin-include-styles`, `@design-systems/cli-utils`, `@design-systems/cli`, `@design-systems/core`, `@design-systems/create`, `@design-systems/eslint-config`, `@design-systems/load-config`, `@design-systems/plugin`, `@design-systems/stylelint-config`, `@design-systems/build`, `@design-systems/bundle`, `@design-systems/clean`, `@design-systems/create-command`, `@design-systems/dev`, `@design-systems/lint`, `@design-systems/playroom`, `@design-systems/proof`, `@design-systems/size`, `@design-systems/storybook`, `@design-systems/test`, `@design-systems/update`
+  - Update dependency tslib to v1.11.1 [#152](https://github.com/intuit/design-systems-cli/pull/152) ([@renovate-bot](https://github.com/renovate-bot) [@renovate[bot]](https://github.com/renovate[bot]))
+- `@design-systems/storybook`
+  - Update storybook monorepo to v5.3.17 [#129](https://github.com/intuit/design-systems-cli/pull/129) ([@renovate-bot](https://github.com/renovate-bot) [@renovate[bot]](https://github.com/renovate[bot]))
+- `@design-systems/storybook`
+  - Update react monorepo to v16.13.1 [#156](https://github.com/intuit/design-systems-cli/pull/156) ([@renovate-bot](https://github.com/renovate-bot) [@renovate[bot]](https://github.com/renovate[bot]))
+- `@design-systems/size`
+  - Update dependency markdown-table to v2 [#132](https://github.com/intuit/design-systems-cli/pull/132) ([@renovate-bot](https://github.com/renovate-bot) [@renovate[bot]](https://github.com/renovate[bot]))
+- `@design-systems/update`
+  - Update dependency semver to v7.1.3 [#124](https://github.com/intuit/design-systems-cli/pull/124) ([@renovate-bot](https://github.com/renovate-bot) [@renovate[bot]](https://github.com/renovate[bot]))
+- `@design-systems/lint`
+  - Update dependency @types/eslint to v6.1.8 [#117](https://github.com/intuit/design-systems-cli/pull/117) ([@renovate-bot](https://github.com/renovate-bot) [@renovate[bot]](https://github.com/renovate[bot]))
+- `@design-systems/eslint-config`
+  - Update linters [#128](https://github.com/intuit/design-systems-cli/pull/128) ([@renovate-bot](https://github.com/renovate-bot) [@renovate[bot]](https://github.com/renovate[bot]))
+- `@design-systems/babel-plugin-include-styles`
+  - Update dependency @types/node to v13.9.3 [#118](https://github.com/intuit/design-systems-cli/pull/118) ([@renovate-bot](https://github.com/renovate-bot) [@renovate[bot]](https://github.com/renovate[bot]))
+- `@design-systems/size`
+  - Update dependency commently to v5.73.5 [#121](https://github.com/intuit/design-systems-cli/pull/121) ([@renovate-bot](https://github.com/renovate-bot) [@renovate[bot]](https://github.com/renovate[bot]))
+- `@design-systems/storybook`
+  - Update dependency storybook-addon-jsx to v7.1.15 [#125](https://github.com/intuit/design-systems-cli/pull/125) ([@renovate-bot](https://github.com/renovate-bot) [@renovate[bot]](https://github.com/renovate[bot]))
+- `@design-systems/test`
+  - Update dependency @types/jest to v25 [#131](https://github.com/intuit/design-systems-cli/pull/131) ([@renovate-bot](https://github.com/renovate-bot) [@hipstersmoothie](https://github.com/hipstersmoothie) [@renovate[bot]](https://github.com/renovate[bot]))
+- `@design-systems/build`
+  - Update auto [#114](https://github.com/intuit/design-systems-cli/pull/114) ([@renovate-bot](https://github.com/renovate-bot) [@renovate[bot]](https://github.com/renovate[bot]))
+- `@design-systems/size`
+  - Update dependency diff2html to v3 [#158](https://github.com/intuit/design-systems-cli/pull/158) ([@renovate-bot](https://github.com/renovate-bot) [@hipstersmoothie](https://github.com/hipstersmoothie) [@renovate[bot]](https://github.com/renovate[bot]))
+- `@design-systems/bundle`, `@design-systems/size`
+  - Update dependency terser-webpack-plugin to v2.3.5 [#126](https://github.com/intuit/design-systems-cli/pull/126) ([@renovate-bot](https://github.com/renovate-bot) [@renovate[bot]](https://github.com/renovate[bot]))
+- `@design-systems/babel-plugin-include-styles`, `@design-systems/build`, `@design-systems/playroom`, `@design-systems/proof`, `@design-systems/storybook`, `@design-systems/test`
+  - Update babel monorepo [#115](https://github.com/intuit/design-systems-cli/pull/115) ([@hipstersmoothie](https://github.com/hipstersmoothie) [@renovate[bot]](https://github.com/renovate[bot]))
+- `@design-systems/build`
+  - Update dependency clean-css to v4.2.3 [#120](https://github.com/intuit/design-systems-cli/pull/120) ([@renovate-bot](https://github.com/renovate-bot) [@renovate[bot]](https://github.com/renovate[bot]))
+- `@design-systems/build`
+  - Update dependency babel-plugin-styled-components to v1.10.7 [#119](https://github.com/intuit/design-systems-cli/pull/119) ([@renovate-bot](https://github.com/renovate-bot) [@renovate[bot]](https://github.com/renovate[bot]))
+- `@design-systems/storybook`
+  - Update dependency storybook-dark-mode to v0.3.1 [#151](https://github.com/intuit/design-systems-cli/pull/151) ([@renovate-bot](https://github.com/renovate-bot) [@renovate[bot]](https://github.com/renovate[bot]))
+- `@design-systems/build`, `@design-systems/test`
+  - Update dependency @types/babel__core to v7.1.6 [#142](https://github.com/intuit/design-systems-cli/pull/142) ([@renovate-bot](https://github.com/renovate-bot) [@renovate[bot]](https://github.com/renovate[bot]))
+- `@design-systems/update`
+  - Update dependency @types/node-fetch to v2.5.5 [#145](https://github.com/intuit/design-systems-cli/pull/145) ([@renovate-bot](https://github.com/renovate-bot) [@renovate[bot]](https://github.com/renovate[bot]))
+- `@design-systems/create`, `@design-systems/create-command`
+  - Update dependency inquirer to v7.1.0 [#122](https://github.com/intuit/design-systems-cli/pull/122) ([@renovate-bot](https://github.com/renovate-bot) [@renovate[bot]](https://github.com/renovate[bot]))
+- `@design-systems/load-config`
+  - Update dependency resolve to v1.15.1 [#150](https://github.com/intuit/design-systems-cli/pull/150) ([@renovate-bot](https://github.com/renovate-bot) [@renovate[bot]](https://github.com/renovate[bot]))
+- `@design-systems/build`
+  - Update dependency pretty-ms to v6 [#159](https://github.com/intuit/design-systems-cli/pull/159) ([@renovate-bot](https://github.com/renovate-bot) [@renovate[bot]](https://github.com/renovate[bot]))
+- `@design-systems/create`, `@design-systems/build`, `@design-systems/clean`, `@design-systems/size`
+  - Update dependency @types/fs-extra to v8.1.0 [#143](https://github.com/intuit/design-systems-cli/pull/143) ([@renovate-bot](https://github.com/renovate-bot) [@renovate[bot]](https://github.com/renovate[bot]))
+- `@design-systems/size`
+  - Update dependency @types/mini-css-extract-plugin to v0.9.1 [#144](https://github.com/intuit/design-systems-cli/pull/144) ([@renovate-bot](https://github.com/renovate-bot) [@renovate[bot]](https://github.com/renovate[bot]))
+- `@design-systems/build`, `@design-systems/clean`, `@design-systems/lint`, `@design-systems/playroom`
+  - Update dependency fast-glob to v3.2.2 [#146](https://github.com/intuit/design-systems-cli/pull/146) ([@renovate-bot](https://github.com/renovate-bot) [@renovate[bot]](https://github.com/renovate[bot]))
+- `@design-systems/build`
+  - Update dependency type-fest to v0.12.0 [#127](https://github.com/intuit/design-systems-cli/pull/127) ([@renovate-bot](https://github.com/renovate-bot) [@renovate[bot]](https://github.com/renovate[bot]))
+- `@design-systems/create`
+  - Update dependency webpack-cli to v3.3.11 [#155](https://github.com/intuit/design-systems-cli/pull/155) ([@renovate-bot](https://github.com/renovate-bot) [@renovate[bot]](https://github.com/renovate[bot]))
+- `@design-systems/load-config`
+  - Update dependency @types/dlv to v1.1.2 [#116](https://github.com/intuit/design-systems-cli/pull/116) ([@renovate-bot](https://github.com/renovate-bot) [@renovate[bot]](https://github.com/renovate[bot]))
+
+#### Authors: 3
+
+- [@renovate[bot]](https://github.com/renovate[bot])
+- Andrew Lisowski ([@hipstersmoothie](https://github.com/hipstersmoothie))
+- WhiteSource Renovate ([@renovate-bot](https://github.com/renovate-bot))
+
+---
+
 # v1.4.6 (Wed Mar 18 2020)
 
 #### 🐛  Bug Fix
