@@ -1,6 +1,6 @@
 {
   "name": "@design-systems/proof",
-  "version": "1.4.6",
+  "version": "1.4.7",
   "description": "The proof command for @design-systems-cli",
   "main": "dist/index.js",
   "author": "Adam Dierkens <adam@dierkens.com>",
