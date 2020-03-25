@@ -9,8 +9,10 @@ import playroom from 'playroom/lib';
 import glob from 'fast-glob';
 
 import playroomConfig from './playroom.config';
+import getSnippets from './snippets';
 
 const logger = createLogger({ scope: 'playroom' });
+
 /** Create the entry file for playroom. This file imports all necessary CSS and JS. */
 async function createEntry(exclude: string[], excludeNamed: string[]) {
   let globs = ['components/**/package.json', '!**/node_modules/**'];
@@ -73,6 +75,22 @@ async function createEntry(exclude: string[], excludeNamed: string[]) {
   return entryPath;
 }
 
+/** Create a file with all the snippets */
+async function createSnippets() {
+  const snippets = getSnippets();
+  const snippetFilePath = path.join(os.tmpdir(), 'playroom.snippets.js');
+
+  fs.removeSync(snippetFilePath);
+  logger.trace(snippets);
+  fs.writeFileSync(
+    snippetFilePath,
+    `export default ${JSON.stringify(snippets)}`,
+    'utf8'
+  );
+
+  return snippetFilePath;
+}
+
 interface PlayroomArgs {
   /** The supported sub-commands */
   _command: ['playroom', 'build' | 'start'];
@@ -90,10 +108,11 @@ export default class PlayroomPlugin implements Plugin {
 
     const command = args._command.includes('build') ? 'build' : 'start';
 
+    const snippets = await createSnippets();
     const entry = await createEntry(exclude, excludeNamed);
     const instance = playroom({
       cwd: process.cwd(),
-      ...playroomConfig({ entry, title: monorepoName() })
+      ...(await playroomConfig({ entry, title: monorepoName(), snippets }))
     });
 
     logger.debug(`Running playroom with ${command} command`);

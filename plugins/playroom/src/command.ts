@@ -32,6 +32,13 @@ const command: CliCommand = {
       description: 'Array of component names to only use the default export.',
       config: true
     }
+  ],
+  footer: [
+    {
+      header: 'Snippets',
+      content:
+        'Export an arrary of Playroom Snippets in each of your components. These will all be loaded into playroom at once.'
+    }
   ]
 };
 
