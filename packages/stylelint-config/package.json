@@ -1,6 +1,6 @@
 {
   "name": "@design-systems/stylelint-config",
-  "version": "1.4.7",
+  "version": "1.4.8",
   "description": "The stylelint-config of the @design-systems CLI",
   "main": "index.js",
   "author": "Adam Dierkens <adam@dierkens.com>",
