@@ -1,3 +1,16 @@
+# v1.4.8 (Wed Mar 25 2020)
+
+#### 🐛 Bug Fix
+
+- `@design-systems/build`, `@design-systems/playroom`
+  - Update playroom for official snippet support :tada: [#165](https://github.com/intuit/design-systems-cli/pull/165) ([@hipstersmoothie](https://github.com/hipstersmoothie))
+
+#### Authors: 1
+
+- Andrew Lisowski ([@hipstersmoothie](https://github.com/hipstersmoothie))
+
+---
+
 # v1.4.7 (Tue Mar 24 2020)
 
 :tada: This release contains work from a new contributor! :tada:
