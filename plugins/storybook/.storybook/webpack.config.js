@@ -87,7 +87,7 @@ async function addCss(config) {
       {
         include: /(dist|node_modules)/,
         loader: [
-         'style-loader',
+          'style-loader',
           { loader: 'css-loader', options: { sourceMap: true } }
         ]
       },
@@ -95,7 +95,7 @@ async function addCss(config) {
       {
         exclude: /(dist|node_modules)/,
         loader: [
-         'style-loader',
+          'style-loader',
           {
             loader: 'css-loader',
             options: {
