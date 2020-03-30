@@ -1,6 +1,6 @@
 {
   "name": "@design-systems/babel-plugin-include-styles",
-  "version": "1.4.8",
+  "version": "1.4.9",
   "description": "A babel plugin that automatically includes the styles for a scoped monorepo design system built with `@design-systems/cli`",
   "main": "./dist/index.js",
   "types": "./dist",
