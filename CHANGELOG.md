@@ -1,3 +1,16 @@
+# v1.4.9 (Mon Mar 30 2020)
+
+#### 🐛 Bug Fix
+
+- `@design-systems/storybook`
+  - fix loading css in storybook [#166](https://github.com/intuit/design-systems-cli/pull/166) ([@hipstersmoothie](https://github.com/hipstersmoothie))
+
+#### Authors: 1
+
+- Andrew Lisowski ([@hipstersmoothie](https://github.com/hipstersmoothie))
+
+---
+
 # v1.4.8 (Wed Mar 25 2020)
 
 #### 🐛 Bug Fix
