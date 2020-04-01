@@ -1,43 +1,41 @@
-import {
-    createLogger
-} from '@design-systems/cli-utils';
-import Diff2Html from 'diff2html';
-import { execSync } from 'child_process';
-import fs from 'fs-extra';
-import opn from 'opn';
+import { createLogger } from '@design-systems/cli-utils'
+import Diff2Html from 'diff2html'
+import { execSync } from 'child_process'
+import fs from 'fs-extra'
+import opn from 'opn'
 
-const logger = createLogger({ scope: 'size' });
+const logger = createLogger({ scope: 'size' })
 
 /** Open a html git diff of the two bundles. */
-function createDiff() {
-    logger.start('Creating diff of build output...');
+function createDiff () {
+  logger.start('Creating diff of build output...')
 
-    execSync('git remote add pr ../bundle-pr && git fetch pr', {
-        cwd: 'bundle-master',
-        stdio: 'ignore'
-    });
+  execSync('git remote add pr ../bundle-pr && git fetch pr', {
+    cwd: 'bundle-master',
+    stdio: 'ignore'
+  })
 
-    const diff = execSync(
-        "git --no-pager diff master pr/master -- ':!package-lock.json' ':!yarn.lock'",
-        {
-            cwd: 'bundle-master'
-        }
-    ).toString();
-
-    if (!diff) {
-        logger.success('No differences found in bundles!');
-        return;
+  const diff = execSync(
+    "git --no-pager diff master pr/master -- ':!package-lock.json' ':!yarn.lock'",
+    {
+      cwd: 'bundle-master'
     }
+  ).toString()
 
-    const outputHtml = Diff2Html.html(diff, {
-        drawFileList: true,
-        matching: 'lines',
-        outputFormat: 'side-by-side'
-    });
+  if (!diff) {
+    logger.success('No differences found in bundles!')
+    return
+  }
 
-    fs.writeFileSync(
-        'diff.html',
-        `
+  const outputHtml = Diff2Html.html(diff, {
+    drawFileList: true,
+    matching: 'lines',
+    outputFormat: 'side-by-side'
+  })
+
+  fs.writeFileSync(
+    'diff.html',
+    `
         <html>
           <head>
             <!-- CSS -->
@@ -73,11 +71,11 @@ function createDiff() {
           </script>
         </html>
       `
-    );
+  )
 
-    opn('diff.html', { wait: false }).then(() =>
-        logger.info('Diff opened in browser!')
-    );
+  opn('diff.html', { wait: false }).then(() =>
+    logger.info('Diff opened in browser!')
+  )
 }
 
-export { createDiff } 
+export { createDiff }
