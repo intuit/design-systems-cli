@@ -48,9 +48,50 @@ interface SizeArgs {
     percent: number;
   }
 
+  interface ConfigOptions {
+    /** The directory to make a webpack config for */
+    dir: string;
+  }
+
+  interface CommonOptions {
+    /** The name of the package to get size for */
+    name: string;
+    /** The name of to import the pacakge with */
+    importName: string;
+    /** Where the code is located. */
+    scope: Scope;
+    /** Whether to persist the generated bundle to the filesystem */
+    persist?: boolean;
+    /** Create chunks based on the exports from the component */
+    chunkByExport?: boolean;
+    /** Whether the size output will be diffed */
+    diff?: boolean;
+    /** The registry to install packages from */
+    registry?: string;
+  }
+  
+  interface GetSizesOptions {
+    /** Whether to start the analyzer */
+    analyze?: boolean;
+    /** What port to start the analyzer on */
+    analyzerPort?: number;
+  }
+
+  type Scope = 'pr' | 'master';
+
+  interface DiffSizeForPackageOptions
+  extends Omit<CommonOptions, 'importName' | 'scope'> {
+  /** Path to the local built pacakge */
+  main: string;
+}
+
   export {
     SizeArgs,
     Export,
     Size,
-    SizeResult
+    SizeResult,
+    ConfigOptions,
+    CommonOptions,
+    GetSizesOptions,
+    DiffSizeForPackageOptions
   }

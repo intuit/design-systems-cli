@@ -147,4 +147,8 @@ const formatExports = (
     return lines;
   };
 
-export { formatLine, defaultTotals, formatExports }
+/** Turn an array of key value pairs into an object */
+const fromEntries = <T>(entries: [string, T][]): Record<string, T> =>
+  Object.assign({}, ...entries.map(([name, value]) => ({ [name]: value })));  
+
+export { formatLine, defaultTotals, formatExports, fromEntries }
