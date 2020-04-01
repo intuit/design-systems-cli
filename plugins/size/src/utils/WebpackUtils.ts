@@ -133,6 +133,7 @@ const config = async ({ dir, name, importName, analyze, analyzerPort, chunkByExp
 };
 
 /** run webpack */
+// eslint-disable-next-line no-shadow
 async function runWebpack(config: webpack.Configuration): Promise<webpack.Stats> {
     return new Promise((resolve, reject) => {
         try {
