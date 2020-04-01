@@ -1,7 +1,7 @@
 import {
     SizeResult,
     Export
-} from "./interfaces"
+} from "../interfaces"
 import fileSize from 'file-size';
 import colorette from 'colorette';
 

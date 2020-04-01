@@ -1,6 +1,6 @@
 import {
-    monorepoName,
-    createLogger} from '@design-systems/cli-utils';
+    createLogger
+} from '@design-systems/cli-utils';
 import Diff2Html from 'diff2html';
 const logger = createLogger({ scope: 'size' });
 import { execSync } from 'child_process';
@@ -10,33 +10,33 @@ import opn from 'opn';
 /** Open a html git diff of the two bundles. */
 function createDiff() {
     logger.start('Creating diff of build output...');
-  
+
     execSync('git remote add pr ../bundle-pr && git fetch pr', {
-      cwd: 'bundle-master',
-      stdio: 'ignore'
+        cwd: 'bundle-master',
+        stdio: 'ignore'
     });
-  
+
     const diff = execSync(
-      "git --no-pager diff master pr/master -- ':!package-lock.json' ':!yarn.lock'",
-      {
-        cwd: 'bundle-master'
-      }
+        "git --no-pager diff master pr/master -- ':!package-lock.json' ':!yarn.lock'",
+        {
+            cwd: 'bundle-master'
+        }
     ).toString();
-  
+
     if (!diff) {
-      logger.success('No differences found in bundles!');
-      return;
+        logger.success('No differences found in bundles!');
+        return;
     }
-  
+
     const outputHtml = Diff2Html.html(diff, {
-      drawFileList: true,
-      matching: 'lines',
-      outputFormat: 'side-by-side'
+        drawFileList: true,
+        matching: 'lines',
+        outputFormat: 'side-by-side'
     });
-  
+
     fs.writeFileSync(
-      'diff.html',
-      `
+        'diff.html',
+        `
         <html>
           <head>
             <!-- CSS -->
@@ -73,10 +73,10 @@ function createDiff() {
         </html>
       `
     );
-  
+
     opn('diff.html', { wait: false }).then(() =>
-      logger.info('Diff opened in browser!')
+        logger.info('Diff opened in browser!')
     );
-  }
+}
 
 export { createDiff } 

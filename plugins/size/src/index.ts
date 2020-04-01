@@ -1,29 +1,16 @@
 import {
-  monorepoName,
   createLogger
 } from '@design-systems/cli-utils';
 import {
   SizeArgs,
-  Size,
-  SizeResult,
-  CommonOptions
-} from "./interfaces"
+  SizeResult} from "./interfaces"
 import { Plugin } from '@design-systems/plugin';
-import { execSync } from 'child_process';
-import path from 'path';
 import fs from 'fs-extra';
-import Commently from 'commently';
-import { table as cliTable } from 'table';
-import signale from 'signale';
-import Diff2Html from 'diff2html';
-import opn from 'opn';
-import { formatLine, defaultTotals, formatExports } from "./formatUtils";
-import { startAnalyze, getSizes, calcSizeForAllPackages, reportResults, table, diffSizeForPackage } from "./CalcSizeUtils";
+import { formatLine, formatExports } from "./utils/formatUtils";
+import { startAnalyze, calcSizeForAllPackages, reportResults, table, diffSizeForPackage } from "./utils/CalcSizeUtils";
 import { createDiff } from "./utils/DiffUtils";
 const FAILURE_THRESHOLD = 5;
 const logger = createLogger({ scope: 'size' });
-const RUNTIME_SIZE = 537;
-
 
 const cssHeader = [
   'master: js',
