@@ -6,7 +6,6 @@ import {
 } from '@design-systems/cli-utils';
 import {
   SizeArgs,
-  Export,
   Size,
   SizeResult
 } from "./interfaces"
@@ -27,7 +26,7 @@ import signale from 'signale';
 import getPackages from 'get-monorepo-packages';
 import Diff2Html from 'diff2html';
 import opn from 'opn';
-import { formatLine, defaultTotals } from "./formatUtils";
+import { formatLine, defaultTotals, formatExports } from "./formatUtils";
 import webpack from 'webpack';
 import Terser from 'terser-webpack-plugin';
 import MiniCssExtractPlugin from 'mini-css-extract-plugin';
@@ -67,55 +66,9 @@ async function runWebpack(
 
 
 
-/** Get the size of a chunk */
-const sumChunk = (exported: Export[], chunkName: string) =>
-  exported
-    .filter(m => m.chunkNames.includes(chunkName))
-    .reduce((acc, i) => acc + i.size, 0);
 
-/** Format a export lines of the output table. */
-const formatExports = (
-  { master, pr }: SizeResult,
-  css?: boolean,
-  preName = ''
-) => {
-  const masterExports = master.exported || [];
-  const masterCSS = sumChunk(masterExports, 'css');
-  const prExports = pr.exported || [];
-  const prCSS = sumChunk(prExports, 'css');
-  const lines: (string | number)[][] = [];
 
-  const chunks = prExports.reduce((acc, i) => {
-    i.chunkNames.forEach(name => acc.add(name));
-    return acc;
-  }, new Set<string>());
 
-  chunks.forEach(chunkName => {
-    if (chunkName === 'css') {
-      return;
-    }
-
-    const masterChunks = sumChunk(masterExports, chunkName);
-    const prChunks = sumChunk(prExports, chunkName);
-
-    lines.push([
-      `${preName}${chunkName}`,
-      ...formatLine(
-        {
-          master: {
-            css: masterCSS,
-            js: masterChunks ? masterChunks - RUNTIME_SIZE : 0
-          },
-          pr: { css: prCSS, js: prChunks - RUNTIME_SIZE },
-          percent: 0
-        },
-        css
-      )
-    ]);
-  });
-
-  return lines;
-};
 
 const cssHeader = [
   'master: js',
