@@ -1,16 +1,17 @@
 import {
   createLogger
 } from '@design-systems/cli-utils';
-const logger = createLogger({ scope: 'size' });
+import { Plugin } from '@design-systems/plugin';
+import fs from 'fs-extra';
 import {
   SizeArgs,
   SizeResult} from "./interfaces"
-import { Plugin } from '@design-systems/plugin';
-import fs from 'fs-extra';
 import { formatLine, formatExports } from "./utils/formatUtils";
 import { calcSizeForAllPackages, reportResults, table, diffSizeForPackage } from "./utils/CalcSizeUtils";
 import { startAnalyze } from "./utils/WebpackUtils";
 import { createDiff } from "./utils/DiffUtils";
+
+const logger = createLogger({ scope: 'size' });
 const FAILURE_THRESHOLD = 5;
 
 const cssHeader = [

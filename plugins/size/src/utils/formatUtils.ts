@@ -1,9 +1,9 @@
+import fileSize from 'file-size';
+import colorette from 'colorette';
 import {
     SizeResult,
     Export
 } from "../interfaces"
-import fileSize from 'file-size';
-import colorette from 'colorette';
 
 const FAILURE_THRESHOLD = 5;
 const RUNTIME_SIZE = 537;

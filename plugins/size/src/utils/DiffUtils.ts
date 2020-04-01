@@ -2,10 +2,11 @@ import {
     createLogger
 } from '@design-systems/cli-utils';
 import Diff2Html from 'diff2html';
-const logger = createLogger({ scope: 'size' });
 import { execSync } from 'child_process';
 import fs from 'fs-extra';
 import opn from 'opn';
+
+const logger = createLogger({ scope: 'size' });
 
 /** Open a html git diff of the two bundles. */
 function createDiff() {

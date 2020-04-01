@@ -1,63 +1,24 @@
-import { mockPackage } from './CalcSizeUtils';
 import {
     createLogger
   } from '@design-systems/cli-utils';
-  const logger = createLogger({ scope: 'size' });
 import webpack from 'webpack';
-import { ConfigOptions, GetSizesOptions, CommonOptions } from "../interfaces";
 import path from 'path';
 import fs from 'fs-extra';
 import getExports from '@royriojas/get-exports-from-file';
-import { fromEntries } from "./formatUtils";
 import { camelCase } from 'change-case';
 import InjectPlugin from 'webpack-inject-plugin';
 import Terser from 'terser-webpack-plugin';
 import MiniCssExtractPlugin from 'mini-css-extract-plugin';
 import OptimizeCSSAssetsPlugin from 'optimize-css-assets-webpack-plugin';
-import RelativeCommentsPlugin from '../RelativeCommentsPlugin';
 import { BundleAnalyzerPlugin } from 'webpack-bundle-analyzer';
 import { getMonorepoRoot, getLogLevel } from '@design-systems/cli-utils';
 import { execSync, ExecSyncOptions } from 'child_process';
+import RelativeCommentsPlugin from '../RelativeCommentsPlugin';
+import { fromEntries } from "./formatUtils";
+import { ConfigOptions, GetSizesOptions, CommonOptions } from "../interfaces";
+import { mockPackage } from './CalcSizeUtils';
 
-/** Start the webpack bundle analyzer for both of the bundles. */
-async function startAnalyze(name: string, registry?: string) {
-    logger.start('Analyzing build output...');
-    await Promise.all([
-        getSizes({
-            name,
-            importName: name,
-            scope: 'master',
-            analyze: true,
-            registry
-        }),
-        getSizes({
-            name: process.cwd(),
-            importName: name,
-            scope: 'pr',
-            analyze: true,
-            analyzerPort: 9000,
-            registry
-        })
-    ]);
-}
-
-async function runWebpack(config: webpack.Configuration): Promise<webpack.Stats> {
-    return new Promise((resolve, reject) => {
-        try {
-            const compiler = webpack(config);
-            compiler.run((err, stats) => {
-                if (err)
-                    return reject(err);
-                return resolve(stats);
-            });
-        }
-        catch (error) {
-            logger.error('Something went wrong!');
-            logger.error(error);
-            logger.trace('Webpack Configuration:\n', config);
-        }
-    });
-}
+const logger = createLogger({ scope: 'size' });
 
 /** Generate webpack config. */
 const config = async ({ dir, name, importName, analyze, analyzerPort, chunkByExport, diff }: ConfigOptions & CommonOptions & GetSizesOptions) => {
@@ -91,6 +52,7 @@ const config = async ({ dir, name, importName, analyze, analyzerPort, chunkByExp
     if (fs.existsSync(css)) {
         entry.css = [css];
     }
+
     logger.debug('Webpack Entry Files:\n', entry);
     return {
         devtool: false,
@@ -118,6 +80,7 @@ const config = async ({ dir, name, importName, analyze, analyzerPort, chunkByExp
                     logger.debug(`Externalizing: ${request}`);
                     return callback(null, JSON.stringify(request));
                 }
+
                 callback(undefined, undefined);
             }
         ],
@@ -169,6 +132,27 @@ const config = async ({ dir, name, importName, analyze, analyzerPort, chunkByExp
     } as webpack.Configuration;
 };
 
+/**
+ *
+ */
+async function runWebpack(config: webpack.Configuration): Promise<webpack.Stats> {
+    return new Promise((resolve, reject) => {
+        try {
+            const compiler = webpack(config);
+            compiler.run((err, stats) => {
+                if (err)
+                    return reject(err);
+                return resolve(stats);
+            });
+        }
+        catch (error) {
+            logger.error('Something went wrong!');
+            logger.error(error);
+            logger.trace('Webpack Configuration:\n', config);
+        }
+    });
+}
+
 /** Install package to tmp dir and run webpack on it to calculate size. */
 async function getSizes(options: GetSizesOptions & CommonOptions) {
     const dir = mockPackage();
@@ -181,6 +165,7 @@ async function getSizes(options: GetSizesOptions & CommonOptions) {
         if (fs.existsSync(browsersList)) {
             fs.copyFileSync(browsersList, path.join(dir, '.browserslistrc'));
         }
+
         logger.debug(`Installing: ${options.name}`);
         if (options.registry) {
             execSync(`yarn add ${options.name} --registry ${options.registry}`, execOptions);
@@ -194,6 +179,7 @@ async function getSizes(options: GetSizesOptions & CommonOptions) {
         logger.warn(`Could not find package ${options.name}...`);
         return [];
     }
+
     const result = await runWebpack(await config({
         dir,
         ...options
@@ -212,16 +198,44 @@ async function getSizes(options: GetSizesOptions & CommonOptions) {
         execSync('git add .', { cwd: out });
         execSync('git commit -m "init"', { cwd: out });
     }
+
     fs.removeSync(dir);
     if (result.hasErrors()) {
         throw new Error(result.toString('errors-only'));
     }
+
     const { assets } = result.toJson();
     if (!assets) {
         return [];
     }
+
     return assets;
 }
+
+/** Start the webpack bundle analyzer for both of the bundles. */
+async function startAnalyze(name: string, registry?: string) {
+    logger.start('Analyzing build output...');
+    await Promise.all([
+        getSizes({
+            name,
+            importName: name,
+            scope: 'master',
+            analyze: true,
+            registry
+        }),
+        getSizes({
+            name: process.cwd(),
+            importName: name,
+            scope: 'pr',
+            analyze: true,
+            analyzerPort: 9000,
+            registry
+        })
+    ]);
+}
+
+
+
 
 export {
     startAnalyze,
