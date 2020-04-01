@@ -12,7 +12,6 @@
     "lib": ["esnext", "dom"],
     "resolveJsonModule": true,
     "downlevelIteration": true,
-    "importHelpers": true,
-    "no-shadowed-variable": false
+    "importHelpers": true
   }
 }
