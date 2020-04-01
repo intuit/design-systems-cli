@@ -4,6 +4,12 @@ import {
   createLogger,
   getLogLevel
 } from '@design-systems/cli-utils';
+import {
+  SizeArgs,
+  Export,
+  Size,
+  SizeResult
+} from "./interfaces"
 import { Plugin } from '@design-systems/plugin';
 import { execSync, ExecSyncOptions } from 'child_process';
 import path from 'path';
@@ -18,12 +24,10 @@ import InjectPlugin from 'webpack-inject-plugin';
 import { table as cliTable } from 'table';
 import markdownTable from 'markdown-table';
 import signale from 'signale';
-import colorette from 'colorette';
-import fileSize from 'file-size';
 import getPackages from 'get-monorepo-packages';
 import Diff2Html from 'diff2html';
 import opn from 'opn';
-
+import { formatLine, defaultTotals } from "./formatUtils";
 import webpack from 'webpack';
 import Terser from 'terser-webpack-plugin';
 import MiniCssExtractPlugin from 'mini-css-extract-plugin';
@@ -34,56 +38,6 @@ import RelativeCommentsPlugin from './RelativeCommentsPlugin';
 const FAILURE_THRESHOLD = 5;
 const logger = createLogger({ scope: 'size' });
 const RUNTIME_SIZE = 537;
-
-export interface SizeArgs {
-  /** Start a webpack bundle analyzer for each bundle */
-  analyze?: boolean;
-  /** Split the CSS and JS sizes */
-  css?: boolean;
-  /** Show the cost of each export from the package */
-  detailed?: boolean;
-  /** Persist the bundles to the filesystem */
-  persist?: boolean;
-  /** Open a diff of the two bundles */
-  diff?: boolean;
-  /** Run in CI mode. Much more quiet output. */
-  ci?: boolean;
-  /** Comment on the Pull request with the results. (Only from CI + must set env var GH_TOKEN) */
-  comment?: boolean;
-  /** Ignore git and run size for all packages */
-  all?: boolean;
-  /** Package names to ignore */
-  ignore?: string[];
-  /** The registry to install packages from */
-  registry?: string;
-}
-
-interface Export {
-  /** The name of the chunk the file belongs to */
-  chunkNames: string[];
-  /** Name of the emitted file */
-  name: string;
-  /** Size of the emitted file */
-  size: number;
-}
-
-interface Size {
-  /** The size of the CSS */
-  css: number;
-  /** The size of the JS */
-  js: number;
-  /** Top level exports of package */
-  exported?: Export[];
-}
-
-interface SizeResult {
-  /** The size of current master */
-  master: Size;
-  /** The size of the local changes */
-  pr: Size;
-  /** The difference between sizes */
-  percent: number;
-}
 
 /** Turn an array of key value pairs into an object */
 export const fromEntries = <T>(entries: [string, T][]): Record<string, T> =>
@@ -109,52 +63,9 @@ async function runWebpack(
   });
 }
 
-/** Format the size to a human readable format. */
-const format = (size: number) => {
-  const result = fileSize(Math.abs(size)).human('si');
 
-  return size < 0 ? `-${result}` : result;
-};
 
-/** Color truncate a percent value. */
-const formatPercent = (num: number) => {
-  const truncated = num.toFixed(Math.abs(num) < 1 && Math.abs(num) > 0 ? 2 : 0);
-  const percent = `${truncated === '0.00' ? 0 : truncated}%`;
 
-  if (num === Infinity) return 'N/A';
-  if (num < 0) return colorette.green(percent);
-  if (num > FAILURE_THRESHOLD) return colorette.red(percent);
-
-  return percent;
-};
-
-/** Format a line of the output table. */
-const formatLine = ({ master, pr }: SizeResult, css?: boolean) => {
-  if (css) {
-    const jsDiff = pr.js - master.js;
-    const cssDiff = pr.css - master.css;
-
-    return [
-      format(master.js),
-      format(pr.js),
-      format(jsDiff),
-      formatPercent((jsDiff / master.js) * 100),
-      format(master.css),
-      format(pr.css),
-      format(cssDiff),
-      formatPercent((cssDiff / (master.css || 1)) * 100)
-    ];
-  }
-
-  const diff = pr.js + pr.css - (master.js + master.css);
-
-  return [
-    format(master.js + master.css),
-    format(pr.js + pr.css),
-    format(diff),
-    formatPercent((diff / (master.js + master.css)) * 100)
-  ];
-};
 
 /** Get the size of a chunk */
 const sumChunk = (exported: Export[], chunkName: string) =>
@@ -217,47 +128,9 @@ const cssHeader = [
   '%'
 ];
 
-/** Get the sum of some metric from a size result */
-const sumResult = (
-  results: SizeResult[],
-  target: 'master' | 'pr',
-  type: 'js' | 'css'
-) => results.reduce((acc, result) => acc + result[target][type], 0);
 
-/** Create the total line for the output table  */
-const defaultTotals = (results: SizeResult[], css?: boolean) => {
-  const masterJS = sumResult(results, 'master', 'js');
-  const pullJS = sumResult(results, 'pr', 'js');
-  const jsDiff = pullJS - masterJS;
 
-  const masterCSS = sumResult(results, 'master', 'css');
-  const pullCSS = sumResult(results, 'pr', 'css');
-  const cssDiff = pullCSS - masterCSS;
 
-  if (css) {
-    return [
-      'Total',
-      format(masterJS),
-      format(pullJS),
-      format(jsDiff),
-      formatPercent((jsDiff / masterJS) * 100),
-      format(masterCSS),
-      format(pullCSS),
-      format(cssDiff),
-      formatPercent((cssDiff / (masterCSS || 1)) * 100)
-    ];
-  }
-
-  const diff = pullJS + pullCSS - (masterJS + masterCSS);
-
-  return [
-    'Total',
-    format(masterJS + masterCSS),
-    format(pullJS + pullCSS),
-    format(diff),
-    formatPercent((diff / (masterJS + masterCSS)) * 100)
-  ];
-};
 
 const defaultHeader = ['master', 'pr', '+/-', '%'];
 
@@ -320,15 +193,15 @@ const config = async ({
   const entry = fromEntries(
     chunkByExport
       ? allExports.map(e => {
-          const content = e.default
-            ? `export { default as ${camelCase(e.name)} } from "${importName}";`
-            : `export { ${e.name} } from "${importName}";`;
+        const content = e.default
+          ? `export { default as ${camelCase(e.name)} } from "${importName}";`
+          : `export { ${e.name} } from "${importName}";`;
 
-          plugins.push(new InjectPlugin(() => content, { entryName: e.name }));
+        plugins.push(new InjectPlugin(() => content, { entryName: e.name }));
 
-          // This is the actual package "undefined"
-          return [e.name, [path.join(__dirname, 'undefined.js')]];
-        })
+        // This is the actual package "undefined"
+        return [e.name, [path.join(__dirname, 'undefined.js')]];
+      })
       : [['js', [js]]]
   );
 
@@ -361,7 +234,7 @@ const config = async ({
        *
        * so this function aims to exclude any sub-path.
        */
-      function(context, request, callback) {
+      function (context, request, callback) {
         if (peers.find(peer => request.startsWith(`${peer}/`))) {
           logger.debug(`Externalizing: ${request}`);
           return callback(null, JSON.stringify(request));
@@ -404,16 +277,16 @@ const config = async ({
       diff
         ? new RelativeCommentsPlugin({ importName })
         : new Terser({
-            extractComments: false,
-            cache: true,
-            parallel: true,
-            sourceMap: false,
-            terserOptions: {
-              output: {
-                comments: false
-              }
+          extractComments: false,
+          cache: true,
+          parallel: true,
+          sourceMap: false,
+          terserOptions: {
+            output: {
+              comments: false
             }
-          })
+          }
+        })
     ].filter(Boolean)
   } as webpack.Configuration;
 };
