@@ -85,6 +85,11 @@ interface SizeArgs {
   main: string;
 }
 
+interface RelativeCommentsPluginOptions {
+  /** The name of the package */
+  importName: string;
+}
+
   export {
     SizeArgs,
     Export,
@@ -93,5 +98,6 @@ interface SizeArgs {
     ConfigOptions,
     CommonOptions,
     GetSizesOptions,
-    DiffSizeForPackageOptions
+    DiffSizeForPackageOptions,
+    RelativeCommentsPluginOptions
   }

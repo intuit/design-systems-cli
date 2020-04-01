@@ -4,11 +4,7 @@ import webpack from 'webpack';
 import { RawSource } from 'webpack-sources';
 import { monorepoName } from '@design-systems/cli-utils';
 import { paramCase } from 'change-case';
-
-interface RelativeCommentsPluginOptions {
-  /** The name of the package */
-  importName: string;
-}
+import { RelativeCommentsPluginOptions } from './interfaces';
 
 /** Normalizes comments for better diffs */
 export default class RelativeCommentsPlugin {
