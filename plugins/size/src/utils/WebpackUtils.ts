@@ -132,9 +132,7 @@ const config = async ({ dir, name, importName, analyze, analyzerPort, chunkByExp
     } as webpack.Configuration;
 };
 
-/**
- *
- */
+/** run webpack */
 async function runWebpack(config: webpack.Configuration): Promise<webpack.Stats> {
     return new Promise((resolve, reject) => {
         try {
