@@ -6,9 +6,6 @@ import { withKnobs } from '@storybook/addon-knobs';
 import { themes as storybookThemes, ThemeContext } from '@storybook/theming';
 import { jsxDecorator } from 'storybook-addon-jsx';
 import { select } from '@storybook/addon-knobs';
-import configProof from '@proof-ui/storybook';
-
-configProof();
 
 let lightLogo;
 let darkLogo;
