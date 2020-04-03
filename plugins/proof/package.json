@@ -25,19 +25,18 @@
     "@babel/preset-typescript": "7.9.0",
     "@design-systems/cli-utils": "link:../../packages/cli-utils",
     "@design-systems/plugin": "link:../../packages/plugin",
-    "@proof-ui/a11y-plugin": "0.0.13-canary.551ab9f.0",
-    "@proof-ui/add-all-plugin": "0.0.13-canary.551ab9f.0",
-    "@proof-ui/applitools-plugin": "0.0.13-canary.551ab9f.0",
-    "@proof-ui/babel-plugin": "0.0.13-canary.551ab9f.0",
-    "@proof-ui/cli": "0.0.13-canary.551ab9f.0",
-    "@proof-ui/config": "0.0.13-canary.551ab9f.0",
-    "@proof-ui/junit-plugin": "0.0.13-canary.551ab9f.0",
-    "@proof-ui/skip-tests-plugin": "0.0.13-canary.551ab9f.0",
+    "@proof-ui/a11y-plugin": "1.0.0-canary.b17b5d2.0",
+    "@proof-ui/add-all-plugin": "1.0.0-canary.b17b5d2.0",
+    "@proof-ui/applitools-plugin": "1.0.0-canary.b17b5d2.0",
+    "@proof-ui/babel-plugin": "1.0.0-canary.b17b5d2.0",
+    "@proof-ui/cli": "1.0.0-canary.b17b5d2.0",
+    "@proof-ui/config": "1.0.0-canary.b17b5d2.0",
+    "@proof-ui/junit-plugin": "1.0.0-canary.b17b5d2.0",
+    "@proof-ui/skip-tests-plugin": "1.0.0-canary.b17b5d2.0",
     "babel-preset-power-assert": "3.0.0",
     "tslib": "1.11.1"
   },
   "devDependencies": {
-    "@types/signale": "1.2.1",
-    "@types/webdriverio": "4.13.3"
+    "@types/signale": "1.2.1"
   }
 }

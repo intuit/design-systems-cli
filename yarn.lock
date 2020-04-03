@@ -2271,14 +2271,14 @@
     "@babel/preset-typescript" "7.9.0"
     "@design-systems/cli-utils" "link:packages/cli-utils"
     "@design-systems/plugin" "link:packages/plugin"
-    "@proof-ui/a11y-plugin" "0.0.13-canary.551ab9f.0"
-    "@proof-ui/add-all-plugin" "0.0.13-canary.551ab9f.0"
-    "@proof-ui/applitools-plugin" "0.0.13-canary.551ab9f.0"
-    "@proof-ui/babel-plugin" "0.0.13-canary.551ab9f.0"
-    "@proof-ui/cli" "0.0.13-canary.551ab9f.0"
-    "@proof-ui/config" "0.0.13-canary.551ab9f.0"
-    "@proof-ui/junit-plugin" "0.0.13-canary.551ab9f.0"
-    "@proof-ui/skip-tests-plugin" "0.0.13-canary.551ab9f.0"
+    "@proof-ui/a11y-plugin" "1.0.0-canary.b17b5d2.0"
+    "@proof-ui/add-all-plugin" "1.0.0-canary.b17b5d2.0"
+    "@proof-ui/applitools-plugin" "1.0.0-canary.b17b5d2.0"
+    "@proof-ui/babel-plugin" "1.0.0-canary.b17b5d2.0"
+    "@proof-ui/cli" "1.0.0-canary.b17b5d2.0"
+    "@proof-ui/config" "1.0.0-canary.b17b5d2.0"
+    "@proof-ui/junit-plugin" "1.0.0-canary.b17b5d2.0"
+    "@proof-ui/skip-tests-plugin" "1.0.0-canary.b17b5d2.0"
     babel-preset-power-assert "3.0.0"
     tslib "1.11.1"
 
@@ -2319,7 +2319,6 @@
     "@design-systems/build" "link:plugins/build"
     "@design-systems/cli-utils" "link:packages/cli-utils"
     "@design-systems/plugin" "link:packages/plugin"
-    "@proof-ui/storybook" "0.0.12"
     "@storybook/addon-a11y" "5.3.17"
     "@storybook/addon-actions" "5.3.17"
     "@storybook/addon-backgrounds" "5.3.17"
@@ -3690,42 +3689,42 @@
   dependencies:
     "@types/node" ">= 8"
 
-"@proof-ui/a11y-plugin@0.0.13-canary.551ab9f.0":
-  version "0.0.13-canary.551ab9f.0"
-  resolved "https://registry.yarnpkg.com/@proof-ui/a11y-plugin/-/a11y-plugin-0.0.13-canary.551ab9f.0.tgz#eead52393807d1764adefd69f16bce37f1c8874e"
-  integrity sha512-ptZI9cViUDoHZ2CwEVwCdhJD2eXyVHfuJBbqxG0F5R/jWCGZwLfY2j9E5DNeatRUHwTYIhpiZEVMzSIiLZupLw==
+"@proof-ui/a11y-plugin@1.0.0-canary.b17b5d2.0":
+  version "1.0.0-canary.b17b5d2.0"
+  resolved "https://registry.yarnpkg.com/@proof-ui/a11y-plugin/-/a11y-plugin-1.0.0-canary.b17b5d2.0.tgz#25cc2e3256f2b0ee54c45bdd058bb7c17a5741a8"
+  integrity sha512-swET2TllEgh0Ok3vvJ2IIgDiufo5iPNWAlZmQfvXHZQSWDSc9TIbf4sHRpjToRpnB9z12zcrFvy/xo/umzm+Cw==
   dependencies:
     axe-core "3.5.2"
 
-"@proof-ui/add-all-plugin@0.0.13-canary.551ab9f.0":
-  version "0.0.13-canary.551ab9f.0"
-  resolved "https://registry.yarnpkg.com/@proof-ui/add-all-plugin/-/add-all-plugin-0.0.13-canary.551ab9f.0.tgz#b832c55ab5c3781eef646ae22c81d728cd4b9847"
-  integrity sha512-OoeIHeDgrvI2QBJywoBPiL4rWQrE9eNUFv2VfS3fZX2nu1jY4GYCvHwk9lplm71N23pkNlITr3O4uYCVDuAmgw==
+"@proof-ui/add-all-plugin@1.0.0-canary.b17b5d2.0":
+  version "1.0.0-canary.b17b5d2.0"
+  resolved "https://registry.yarnpkg.com/@proof-ui/add-all-plugin/-/add-all-plugin-1.0.0-canary.b17b5d2.0.tgz#9434c6639242cee97d42ccd0cbb814b8b69edf2c"
+  integrity sha512-N6zrHXVIKIdU6cQdlZyroHfdLZjtljwpNiUqwvBN/PWNPYo83TNFZwSWYWAuiJVXFtBfxZ2ly9WkFK2DwFchoA==
 
-"@proof-ui/applitools-plugin@0.0.13-canary.551ab9f.0":
-  version "0.0.13-canary.551ab9f.0"
-  resolved "https://registry.yarnpkg.com/@proof-ui/applitools-plugin/-/applitools-plugin-0.0.13-canary.551ab9f.0.tgz#2869bc94816063dc8945d4d366036f201d05df45"
-  integrity sha512-C5CUeup+f0iy6fzTKV9O7krOH4Soln7NzOimV/jnhLplANKIlQ98rBpE3eM79QDseceAGPqYcLV/4fGZ5yEukA==
+"@proof-ui/applitools-plugin@1.0.0-canary.b17b5d2.0":
+  version "1.0.0-canary.b17b5d2.0"
+  resolved "https://registry.yarnpkg.com/@proof-ui/applitools-plugin/-/applitools-plugin-1.0.0-canary.b17b5d2.0.tgz#9a43404b2c068e7ad7b6c855dfd2a2db8711df5e"
+  integrity sha512-k8za7sjfjIQGCyH90cSMUbiDzudUDsnuheMgkUVgQa+HF3xeKhAnYKzXJgK3vxjUjxDOLUtpdTcsX/5mE6bBmQ==
   dependencies:
     "@applitools/eyes-selenium" "4.33.31"
     "@applitools/eyes-webdriverio" "5.9.23"
 
-"@proof-ui/babel-plugin@0.0.13-canary.551ab9f.0":
-  version "0.0.13-canary.551ab9f.0"
-  resolved "https://registry.yarnpkg.com/@proof-ui/babel-plugin/-/babel-plugin-0.0.13-canary.551ab9f.0.tgz#12d79f19ce1bb5fa05281617e6316004b8e70b50"
-  integrity sha512-6jG4ngwK75y88j1R//Zkea9J9bV9RbX0jvVT35iXmWKmBIml5kB5t7mhCiVa/MJLVzvcwjEcBmmoTP0sm5rlsw==
+"@proof-ui/babel-plugin@1.0.0-canary.b17b5d2.0":
+  version "1.0.0-canary.b17b5d2.0"
+  resolved "https://registry.yarnpkg.com/@proof-ui/babel-plugin/-/babel-plugin-1.0.0-canary.b17b5d2.0.tgz#e2d5f40fa1460fbbf73b56b5284468f3dca43530"
+  integrity sha512-BO1WtKMoAB3QBl4g9I47ZPT1Sh+S32nGS2jkXpJIKlD1aZudiTvH1LA8n6kr32GVqVfiGnU3eIDqsF2ZNDAzAQ==
   dependencies:
     "@babel/core" "^7.9.0"
     "@babel/register" "^7.9.0"
     babel-preset-power-assert "^3.0.0"
 
-"@proof-ui/browser@0.0.13-canary.551ab9f.0":
-  version "0.0.13-canary.551ab9f.0"
-  resolved "https://registry.yarnpkg.com/@proof-ui/browser/-/browser-0.0.13-canary.551ab9f.0.tgz#e3eac1663378615fccf9f5b12d342f86959ee339"
-  integrity sha512-iDKevwbjwgkI3NhoX/tZ68hVWRKIstvVE2Pa8Cdy97TellvpXYZA2khLpJg1VHfSjVJUBUmbGBvAOG4xHNkyBQ==
+"@proof-ui/browser@1.0.0-canary.b17b5d2.0":
+  version "1.0.0-canary.b17b5d2.0"
+  resolved "https://registry.yarnpkg.com/@proof-ui/browser/-/browser-1.0.0-canary.b17b5d2.0.tgz#8f3fe037f265ca8e6b457f02a3bbdffdc7d861dd"
+  integrity sha512-0iHsibRD6ygv8wloZhzzE4YCmeJ8iS46m9f5xSQscwSP3jCw59LXxblEx2rEXOUxuCjiojzDNpLT9jmIt0jiPA==
   dependencies:
-    "@proof-ui/logger" "0.0.13-canary.551ab9f.0"
-    "@proof-ui/utils" "0.0.13-canary.551ab9f.0"
+    "@proof-ui/logger" "1.0.0-canary.b17b5d2.0"
+    "@proof-ui/utils" "1.0.0-canary.b17b5d2.0"
     "@types/tapable" "^1.0.5"
     "@types/url-join" "4.0.0"
     "@types/url-parse" "1.4.3"
@@ -3737,95 +3736,90 @@
     url-parse "1.4.7"
     webdriverio "^5.22.4"
 
-"@proof-ui/cli-plugin@0.0.13-canary.551ab9f.0":
-  version "0.0.13-canary.551ab9f.0"
-  resolved "https://registry.yarnpkg.com/@proof-ui/cli-plugin/-/cli-plugin-0.0.13-canary.551ab9f.0.tgz#4f3aca283ce22a6985b630d975695db25a983443"
-  integrity sha512-QookS18pf6e10mgYJwiabG9DAIoNFFq6TZSVT0d0UiyzzMradl1NNcXJhmRs5NZUs2j+EvIaYKSQAcp31U9dMQ==
+"@proof-ui/cli-plugin@1.0.0-canary.b17b5d2.0":
+  version "1.0.0-canary.b17b5d2.0"
+  resolved "https://registry.yarnpkg.com/@proof-ui/cli-plugin/-/cli-plugin-1.0.0-canary.b17b5d2.0.tgz#a2aebe273f504099d774bace0e8db0ccb37d2da2"
+  integrity sha512-3pgNDgWZfyFk8aLFtC3intzCzml1MTdjhsSHj8ATXPGm77CHuUzjEvTgcI/a/Ns0oyGQBQkYjph7UC1Poh1BFw==
 
-"@proof-ui/cli@0.0.13-canary.551ab9f.0":
-  version "0.0.13-canary.551ab9f.0"
-  resolved "https://registry.yarnpkg.com/@proof-ui/cli/-/cli-0.0.13-canary.551ab9f.0.tgz#b796241d91c0bcafe28b40376020e712c6f4a104"
-  integrity sha512-7aF92eneyCCsB1x3lxtAE6DMuZ3wE4Kh8yYr4FdM+mCRYvPbNMciKJP9wny6jjy7oJDnvkQ2ugGCbjYPoL6MxA==
+"@proof-ui/cli@1.0.0-canary.b17b5d2.0":
+  version "1.0.0-canary.b17b5d2.0"
+  resolved "https://registry.yarnpkg.com/@proof-ui/cli/-/cli-1.0.0-canary.b17b5d2.0.tgz#fbbef07c13a06bc56aa35ce1b076cbbe86b0efb8"
+  integrity sha512-QmQTEGKGjM5EdaHwAwKNZd2O4uUBJlybFC00cFwekm/yHSJcJf7ITNtXIJF2zF9l0FGf5yDbfnWpe3TXcyutyA==
   dependencies:
-    "@proof-ui/babel-plugin" "0.0.13-canary.551ab9f.0"
-    "@proof-ui/cli-plugin" "0.0.13-canary.551ab9f.0"
-    "@proof-ui/config" "0.0.13-canary.551ab9f.0"
-    "@proof-ui/console-plugin" "0.0.13-canary.551ab9f.0"
-    "@proof-ui/core" "0.0.13-canary.551ab9f.0"
-    "@proof-ui/logger" "0.0.13-canary.551ab9f.0"
+    "@proof-ui/babel-plugin" "1.0.0-canary.b17b5d2.0"
+    "@proof-ui/cli-plugin" "1.0.0-canary.b17b5d2.0"
+    "@proof-ui/config" "1.0.0-canary.b17b5d2.0"
+    "@proof-ui/console-plugin" "1.0.0-canary.b17b5d2.0"
+    "@proof-ui/core" "1.0.0-canary.b17b5d2.0"
+    "@proof-ui/logger" "1.0.0-canary.b17b5d2.0"
     chalk "^3.0.0"
     command-line-application "^0.9.6"
     url "^0.11.0"
 
-"@proof-ui/config@0.0.13-canary.551ab9f.0":
-  version "0.0.13-canary.551ab9f.0"
-  resolved "https://registry.yarnpkg.com/@proof-ui/config/-/config-0.0.13-canary.551ab9f.0.tgz#9e2d51a625888ebff5479276b18619113b08f957"
-  integrity sha512-q/q3n0Udv3/Anf3s4fnqidvxvb4ZXwM31nF9Wy7bwTENQz277xqi57dCc7m+0k1rPkKNc8KhO6ZZnMqskHidog==
+"@proof-ui/config@1.0.0-canary.b17b5d2.0":
+  version "1.0.0-canary.b17b5d2.0"
+  resolved "https://registry.yarnpkg.com/@proof-ui/config/-/config-1.0.0-canary.b17b5d2.0.tgz#a3a308c9d16b987c3764858377b694797d6ab0a1"
+  integrity sha512-eYUODSn8GOgFvpcHpoTzT65zNfhk+wg7NNk4IheaL0d6Y4fwlZaoVvA6wKUJ7aOOSWp3JF5gRY4lbT0refVJJA==
   dependencies:
-    "@proof-ui/browser" "0.0.13-canary.551ab9f.0"
-    "@proof-ui/logger" "0.0.13-canary.551ab9f.0"
+    "@proof-ui/browser" "1.0.0-canary.b17b5d2.0"
+    "@proof-ui/logger" "1.0.0-canary.b17b5d2.0"
     cosmiconfig "^6.0.0"
 
-"@proof-ui/console-plugin@0.0.13-canary.551ab9f.0":
-  version "0.0.13-canary.551ab9f.0"
-  resolved "https://registry.yarnpkg.com/@proof-ui/console-plugin/-/console-plugin-0.0.13-canary.551ab9f.0.tgz#c3b1b4426c1eb2cd2282ff99c3e910737748c6d4"
-  integrity sha512-eG9NpBpWRLm0Z3Zcq8reiKyhiHeejUxgZ8G3eJ6+0Gt4T9bD2n2qOSiNIgoGlrCCjQ3IGvp+IqV7YYLSoJGE7w==
+"@proof-ui/console-plugin@1.0.0-canary.b17b5d2.0":
+  version "1.0.0-canary.b17b5d2.0"
+  resolved "https://registry.yarnpkg.com/@proof-ui/console-plugin/-/console-plugin-1.0.0-canary.b17b5d2.0.tgz#71b64c3e918b30b80e902e257f6a7d3832ed584d"
+  integrity sha512-2qqEGosgfnyIdcx6zGWgR1ns3c8U+vORIJXJm6oQO+9hB/fanXdJkvZPoNjPJN1vlcPrEsLs+/t7tLmMvI2+bQ==
   dependencies:
     chalk "^3.0.0"
 
-"@proof-ui/core@0.0.13-canary.551ab9f.0":
-  version "0.0.13-canary.551ab9f.0"
-  resolved "https://registry.yarnpkg.com/@proof-ui/core/-/core-0.0.13-canary.551ab9f.0.tgz#04f7cf547af93e5c12b901c782edb97cfc9517a4"
-  integrity sha512-9N7cljDa3CFkkDnKAis/C1HJY6gO3UZcSgNMeZd3ZWXJ2lp27L5gBb8HdIvaVAbareGrTcoGAWzk4ZIaXIGcLA==
+"@proof-ui/core@1.0.0-canary.b17b5d2.0":
+  version "1.0.0-canary.b17b5d2.0"
+  resolved "https://registry.yarnpkg.com/@proof-ui/core/-/core-1.0.0-canary.b17b5d2.0.tgz#d899447af9ff56c5377a2503ed1ee26ba4d5beca"
+  integrity sha512-hB6u1ijEqekwS5MZjSck8BS8TIauA6bS9WBNVqGY4G9vDJvADTxiihsdP9nVsCRdRuORa5KhljSOT4EWMMzW0A==
   dependencies:
-    "@proof-ui/browser" "0.0.13-canary.551ab9f.0"
-    "@proof-ui/logger" "0.0.13-canary.551ab9f.0"
-    "@proof-ui/test" "0.0.13-canary.551ab9f.0"
+    "@proof-ui/browser" "1.0.0-canary.b17b5d2.0"
+    "@proof-ui/logger" "1.0.0-canary.b17b5d2.0"
+    "@proof-ui/test" "1.0.0-canary.b17b5d2.0"
     "@types/tapable" "^1.0.5"
     fast-glob "^3.2.2"
     promise-pool-executor "^1.1.1"
     tapable "^1.1.3"
 
-"@proof-ui/junit-plugin@0.0.13-canary.551ab9f.0":
-  version "0.0.13-canary.551ab9f.0"
-  resolved "https://registry.yarnpkg.com/@proof-ui/junit-plugin/-/junit-plugin-0.0.13-canary.551ab9f.0.tgz#2316ccba168dd118d7f0e4ec53d492c85a9de259"
-  integrity sha512-DzeRcY0vROUr3pSxHsY6/g+fIgR8HEIUPbZK1SELv8xeUB+twhHj0xZlBG5u52WoamvnMehcVdTkV34hweRVAA==
+"@proof-ui/junit-plugin@1.0.0-canary.b17b5d2.0":
+  version "1.0.0-canary.b17b5d2.0"
+  resolved "https://registry.yarnpkg.com/@proof-ui/junit-plugin/-/junit-plugin-1.0.0-canary.b17b5d2.0.tgz#84b0bed3ab6aa04af091065ecf3fd01beb2c6193"
+  integrity sha512-pE6y/lB3dEl8Y6fz0WcDgS8nX9cFVWxQVm+viXenNnCALKCkeZF6q33iomOQvrYeA4LLryYn5D640om0YStH9A==
   dependencies:
     junit-report-builder "^1.3.3"
     xmlbuilder "^15.1.0"
 
-"@proof-ui/logger@0.0.13-canary.551ab9f.0":
-  version "0.0.13-canary.551ab9f.0"
-  resolved "https://registry.yarnpkg.com/@proof-ui/logger/-/logger-0.0.13-canary.551ab9f.0.tgz#2844c95089297feceeb443639685aeb9ca4e46ac"
-  integrity sha512-nLcdM39ykWZz1bfpfQlRyEmc+/tojB9U6WPbiwBp1P94oWs+j8QAuJ6BKs6NCrIh7388wQP8PMQCE6i3SHZwDw==
+"@proof-ui/logger@1.0.0-canary.b17b5d2.0":
+  version "1.0.0-canary.b17b5d2.0"
+  resolved "https://registry.yarnpkg.com/@proof-ui/logger/-/logger-1.0.0-canary.b17b5d2.0.tgz#5bbdd273607cb0f945ce2e881509dd2db2fb67a0"
+  integrity sha512-eHsedF05QRg8tE0VqdOxu1xobO+dE9fzFDy6ba3DCQc2u8kDdjTx2t+JvQTuFXra83aUMuI4rKaBz8h867DA1w==
   dependencies:
     "@types/signale" "^1.4.0"
     signale "^1.4.0"
 
-"@proof-ui/skip-tests-plugin@0.0.13-canary.551ab9f.0":
-  version "0.0.13-canary.551ab9f.0"
-  resolved "https://registry.yarnpkg.com/@proof-ui/skip-tests-plugin/-/skip-tests-plugin-0.0.13-canary.551ab9f.0.tgz#ae1689b2f7437140ccd92738b7bcb0eeb1193c49"
-  integrity sha512-W8RluGR9GwLkND0FApWhzZXSwdnPhjcssIJCSHN+PhTqm+in54jdEhzXp7MA58rXABgOJrle7AsS7MmtbeuMkw==
+"@proof-ui/skip-tests-plugin@1.0.0-canary.b17b5d2.0":
+  version "1.0.0-canary.b17b5d2.0"
+  resolved "https://registry.yarnpkg.com/@proof-ui/skip-tests-plugin/-/skip-tests-plugin-1.0.0-canary.b17b5d2.0.tgz#4322987b139f1f30da3dcc14612f3e4782dc3717"
+  integrity sha512-eqJ4RSiLXDtNo+oo+dnK6RPOP3lf3OhpxhA7vc+E9++/SVdXpMZN86lope16oKYOelXPZ3UNGF2QBWBcB6/qGg==
 
-"@proof-ui/storybook@0.0.12":
-  version "0.0.12"
-  resolved "https://registry.yarnpkg.com/@proof-ui/storybook/-/storybook-0.0.12.tgz#e60d12780453ca7eacb3eed4bd4f0249c7310333"
-  integrity sha512-BCes8Y/M9Bemyldtb8W64R06QE9YaIbiAGUQxPkx7w7AGO/KGNlbtcm8tySkOcN5F2G4uYY7RejwEFO2JZAHtw==
-
-"@proof-ui/test@0.0.13-canary.551ab9f.0":
-  version "0.0.13-canary.551ab9f.0"
-  resolved "https://registry.yarnpkg.com/@proof-ui/test/-/test-0.0.13-canary.551ab9f.0.tgz#a4e16b80e2b8099e21014bbc8ecbc77e5d2405f5"
-  integrity sha512-WGqd7NMu9koucvsqBW+jm/D9Kths/J2yzaj1AiPYrfcVX3x8rB34r4q2esSWlQM6+oKLPUJpjmFjT7i7Fa23gw==
+"@proof-ui/test@1.0.0-canary.b17b5d2.0":
+  version "1.0.0-canary.b17b5d2.0"
+  resolved "https://registry.yarnpkg.com/@proof-ui/test/-/test-1.0.0-canary.b17b5d2.0.tgz#18a8aff7de4f98880f97c29f358572bace05db7c"
+  integrity sha512-tNUou5302udsiq21Y74KoOnYKPWqMeOYmgkh5kvzm7to3ic7/oFZ7553bf5xMWDWTvoxXw9gSlJuzKfEJghJIQ==
   dependencies:
-    "@proof-ui/browser" "0.0.13-canary.551ab9f.0"
+    "@proof-ui/browser" "1.0.0-canary.b17b5d2.0"
     "@types/power-assert" "^1.5.3"
     power-assert "^1.6.1"
     webdriverio "^5.22.4"
 
-"@proof-ui/utils@0.0.13-canary.551ab9f.0":
-  version "0.0.13-canary.551ab9f.0"
-  resolved "https://registry.yarnpkg.com/@proof-ui/utils/-/utils-0.0.13-canary.551ab9f.0.tgz#0cd5689682ea92d175accb807b2f6b62d05704b4"
-  integrity sha512-j9sjOjmuEkMS8W5zjyJLLhVRoMRfXnCJZKS7mQ6sAncKGNlzI/sRaKt8kQOWeYfRzbCARR0hMGYaGnyydQrnxA==
+"@proof-ui/utils@1.0.0-canary.b17b5d2.0":
+  version "1.0.0-canary.b17b5d2.0"
+  resolved "https://registry.yarnpkg.com/@proof-ui/utils/-/utils-1.0.0-canary.b17b5d2.0.tgz#2a540a8afe1faf1fda6f00e2af7e30d06680800f"
+  integrity sha512-N68LT0PC6SVGxdSy7cJX5b3hLMSEAJkvGUEPgiB5vdrd+MI+S6R7yArd5NIQ6ifFO220jauxJAgP1vjZY6nmhg==
 
 "@reach/router@^1.2.1":
   version "1.2.1"
@@ -5087,13 +5081,6 @@
     "@types/node" "*"
     "@types/unist" "*"
     "@types/vfile-message" "*"
-
-"@types/webdriverio@4.13.3":
-  version "4.13.3"
-  resolved "https://registry.yarnpkg.com/@types/webdriverio/-/webdriverio-4.13.3.tgz#c1571c4e62724135c0b11e7d7e36b07af5168856"
-  integrity sha512-AfSQM1xTO9Ax+u9uSQPDuw69DQ0qA2RMoKHn86jCgWNcwKVUjGMSP4sfSl3JOfcZN8X/gWvn7znVPp2/g9zcJA==
-  dependencies:
-    "@types/node" "*"
 
 "@types/webpack-bundle-analyzer@2.13.3":
   version "2.13.3"
@@ -20545,11 +20532,6 @@ typescript-memoize@^1.0.0-alpha.3:
   integrity sha1-aZpUFfiGaUqNbi5UUbwoo5prwvk=
   dependencies:
     core-js "2.4.1"
-
-typescript@3.7.5:
-  version "3.7.5"
-  resolved "https://registry.yarnpkg.com/typescript/-/typescript-3.7.5.tgz#0692e21f65fd4108b9330238aac11dd2e177a1ae"
-  integrity sha512-/P5lkRXkWHNAbcJIiHPfRoKqyd7bsyCma1hZNUGfn20qm64T6ZBlrzprymeu918H+mB/0rIg2gGK/BXkhhYgBw==
 
 typescript@3.8.3, typescript@^3.7.5:
   version "3.8.3"
