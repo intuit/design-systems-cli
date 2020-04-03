@@ -11,24 +11,31 @@ const babelConfig = {
   presets: [
     '@babel/preset-env',
     '@babel/preset-typescript',
-    'babel-preset-power-assert'
+    'babel-preset-power-assert',
   ],
   plugins: [
     [
       '@babel/plugin-transform-runtime',
       {
-        regenerator: true
-      }
-    ]
-  ]
+        regenerator: true,
+      },
+    ],
+  ],
 };
 
 class SauceLogger {
   apply(proof) {
-    proof.hooks.browserFactory.tap('sauce', browserFactory => {
-      browserFactory.hooks.capabilities.tap('sauce', capabilities => {
-        logger.info(chalk.gray('Sauce Labs URL'), capabilities.resultsUrl);
-        logger.debug(chalk.gray('Connection URL'), capabilities.sessionDashboardURL);
+    proof.hooks.browserFactory.tap('sauce', (browserFactory) => {
+      browserFactory.hooks.capabilities.tap('sauce', (capabilities) => {
+        if (capabilities.resultsUrl) {
+          logger.info(chalk.gray('Sauce Labs URL'), capabilities.resultsUrl);
+        }
+        if (capabilities.sessionDashboardURL) {
+          logger.debug(
+            chalk.gray('Connection URL'),
+            capabilities.sessionDashboardURL
+          );
+        }
       });
     });
   }
@@ -45,7 +52,7 @@ module.exports = {
     new SauceLogger(),
     new A11yPlugin({ config: {} }),
     new BabelPlugin({
-      config: babelConfig
-    })
-  ]
+      config: babelConfig,
+    }),
+  ],
 };
