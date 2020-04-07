@@ -52,6 +52,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
   </tr>
   <tr>
     <td align="center"><a href="https://github.com/mishavp2001"><img src="https://avatars2.githubusercontent.com/u/1007097?v=4" width="100px;" alt=""/><br /><sub><b>mishavp2001</b></sub></a><br /><a href="https://github.com/intuit/design-systems-cli/commits?author=mishavp2001" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/vasikarla"><img src="https://avatars0.githubusercontent.com/u/1945958?v=4" width="100px;" alt=""/><br /><sub><b>Raj Vasikarla</b></sub></a><br /><a href="https://github.com/intuit/design-systems-cli/commits?author=vasikarla" title="Code">💻</a></td>
   </tr>
 </table>
 
