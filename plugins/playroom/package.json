@@ -1,6 +1,6 @@
 {
   "name": "@design-systems/playroom",
-  "version": "1.4.10",
+  "version": "1.4.11",
   "description": "The playroom command for @design-systems-cli",
   "main": "dist/index.js",
   "author": "Adam Dierkens <adam@dierkens.com>",
