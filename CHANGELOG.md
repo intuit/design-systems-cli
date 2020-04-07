@@ -1,3 +1,16 @@
+# v1.4.10 (Mon Apr 06 2020)
+
+#### 🐛 Bug Fix
+
+- `@design-systems/size`
+  - breaking down index into multiple files + utils [#192](https://github.com/intuit/design-systems-cli/pull/192) (raj_vasikarla@intuit.com)
+
+#### Authors: 1
+
+- Raj Vasikarla ([@vasikarla](https://github.com/vasikarla))
+
+---
+
 # v1.4.9 (Mon Mar 30 2020)
 
 #### 🐛 Bug Fix

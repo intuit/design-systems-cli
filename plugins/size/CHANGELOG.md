@@ -1,3 +1,15 @@
+# v1.4.10 (Mon Apr 06 2020)
+
+#### 🐛 Bug Fix
+
+- breaking down index into multiple files + utils [#192](https://github.com/intuit/design-systems-cli/pull/192) (raj_vasikarla@intuit.com)
+
+#### Authors: 1
+
+- Raj Vasikarla ([@vasikarla](https://github.com/vasikarla))
+
+---
+
 # v1.4.7 (Tue Mar 24 2020)
 
 :tada: This release contains work from a new contributor! :tada:
