@@ -1,4 +1,5 @@
 import copy from 'copy-template-dir';
+import fs from 'fs';
 
 /** Copy a template dir to some location. */
 export default async function template(
@@ -11,6 +12,14 @@ export default async function template(
       if (err) {
         return reject(err);
       }
+
+      createdFiles.forEach(file => {
+        const contents = fs.readFileSync(file, { encoding: 'utf8' });
+        fs.writeFileSync(
+          file,
+          contents.replace(/\\{/g, '{').replace(/\\}/g, '}')
+        );
+      });
 
       resolve(createdFiles);
     });
