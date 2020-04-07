@@ -1,3 +1,16 @@
+# v1.4.11 (Tue Apr 07 2020)
+
+#### 🐛 Bug Fix
+
+- `@design-systems/create`
+  - replace escaped curly braces in templates [#195](https://github.com/intuit/design-systems-cli/pull/195) ([@hipstersmoothie](https://github.com/hipstersmoothie))
+
+#### Authors: 1
+
+- Andrew Lisowski ([@hipstersmoothie](https://github.com/hipstersmoothie))
+
+---
+
 # v1.4.10 (Mon Apr 06 2020)
 
 #### 🐛 Bug Fix
