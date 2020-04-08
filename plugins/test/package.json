@@ -38,7 +38,7 @@
     "tslib": "1.11.1"
   },
   "devDependencies": {
-    "@types/babel__core": "7.1.6",
+    "@types/babel__core": "7.1.7",
     "@types/env-ci": "3.1.0"
   }
 }
