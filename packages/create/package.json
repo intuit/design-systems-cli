@@ -58,7 +58,7 @@
     "progress-estimator": "0.2.2",
     "terminal-link": "2.1.1",
     "title-case": "3.0.2",
-    "ts-loader": "6.2.1",
+    "ts-loader": "6.2.2",
     "tslib": "1.11.1",
     "webpack": "4.41.5",
     "webpack-cli": "3.3.11"
