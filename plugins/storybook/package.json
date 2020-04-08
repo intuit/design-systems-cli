@@ -40,7 +40,7 @@
     "core-js": "3.6.4",
     "dedent": "0.7.0",
     "github-url-to-object": "4.0.4",
-    "react-docgen-typescript-loader": "3.6.0",
+    "react-docgen-typescript-loader": "3.7.2",
     "source-map-loader": "0.2.4",
     "story2sketch": "1.7.0",
     "storybook-addon-jsx": "7.1.15",
