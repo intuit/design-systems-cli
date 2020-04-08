@@ -1,3 +1,16 @@
+# v1.4.12 (Wed Apr 08 2020)
+
+#### 🐛 Bug Fix
+
+- `@design-systems/proof`
+  - Loosen Proof version range [#196](https://github.com/intuit/design-systems-cli/pull/196) ([@hipstersmoothie](https://github.com/hipstersmoothie))
+
+#### Authors: 1
+
+- Andrew Lisowski ([@hipstersmoothie](https://github.com/hipstersmoothie))
+
+---
+
 # v1.4.11 (Tue Apr 07 2020)
 
 #### 🐛 Bug Fix
