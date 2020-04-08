@@ -2111,7 +2111,7 @@
     minimist "^1.2.0"
 
 "@design-systems/build@link:plugins/build":
-  version "1.4.8"
+  version "1.4.11"
   dependencies:
     "@babel/code-frame" "7.8.3"
     "@babel/core" "7.9.0"
@@ -2152,7 +2152,7 @@
     typescript "3.8.3"
 
 "@design-systems/bundle@link:plugins/bundle":
-  version "1.4.8"
+  version "1.4.11"
   dependencies:
     "@design-systems/build" "link:plugins/build"
     "@design-systems/cli-utils" "link:packages/cli-utils"
@@ -2170,7 +2170,7 @@
     webpack "4.41.5"
 
 "@design-systems/clean@link:plugins/clean":
-  version "1.4.8"
+  version "1.4.11"
   dependencies:
     "@design-systems/cli-utils" "link:packages/cli-utils"
     "@design-systems/plugin" "link:packages/plugin"
@@ -2179,7 +2179,7 @@
     tslib "1.11.1"
 
 "@design-systems/cli-utils@link:packages/cli-utils":
-  version "1.4.8"
+  version "1.4.11"
   dependencies:
     find-up "4.1.0"
     npm-which "3.0.1"
@@ -2189,7 +2189,7 @@
     webpack "4.41.5"
 
 "@design-systems/core@link:packages/core":
-  version "1.4.8"
+  version "1.4.11"
   dependencies:
     "@design-systems/build" "link:plugins/build"
     "@design-systems/bundle" "link:plugins/bundle"
@@ -2209,7 +2209,7 @@
     tslib "1.11.1"
 
 "@design-systems/create-command@link:plugins/create-command":
-  version "1.4.8"
+  version "1.4.11"
   dependencies:
     "@design-systems/cli-utils" "link:packages/cli-utils"
     "@design-systems/create" "link:packages/create"
@@ -2228,10 +2228,10 @@
     tslib "1.11.1"
 
 "@design-systems/create@link:packages/create":
-  version "1.4.8"
+  version "1.4.11"
 
 "@design-systems/dev@link:plugins/dev":
-  version "1.4.8"
+  version "1.4.11"
   dependencies:
     "@design-systems/cli-utils" "link:packages/cli-utils"
     "@design-systems/plugin" "link:packages/plugin"
@@ -2241,7 +2241,7 @@
     tslib "1.11.1"
 
 "@design-systems/eslint-config@link:packages/eslint-config":
-  version "1.4.8"
+  version "1.4.11"
   dependencies:
     "@design-systems/cli-utils" "link:packages/cli-utils"
     "@typescript-eslint/eslint-plugin" "2.17.0"
@@ -2264,7 +2264,7 @@
     tslib "1.11.1"
 
 "@design-systems/lint@link:plugins/lint":
-  version "1.4.8"
+  version "1.4.11"
   dependencies:
     "@design-systems/cli-utils" "link:packages/cli-utils"
     "@design-systems/eslint-config" "link:packages/eslint-config"
@@ -2281,7 +2281,7 @@
     tslib "1.11.1"
 
 "@design-systems/load-config@link:packages/load-config":
-  version "1.4.8"
+  version "1.4.11"
   dependencies:
     "@design-systems/core" "link:packages/core"
     "@design-systems/plugin" "link:packages/plugin"
@@ -2295,7 +2295,7 @@
     tslib "1.11.1"
 
 "@design-systems/playroom@link:plugins/playroom":
-  version "1.4.8"
+  version "1.4.11"
   dependencies:
     "@babel/core" "7.9.0"
     "@babel/register" "7.9.0"
@@ -2314,33 +2314,33 @@
     webpack "4.41.5"
 
 "@design-systems/plugin@link:packages/plugin":
-  version "1.4.8"
+  version "1.4.11"
   dependencies:
     command-line-application "0.9.6"
     tslib "1.11.1"
     utility-types "3.10.0"
 
 "@design-systems/proof@link:plugins/proof":
-  version "1.4.8"
+  version "1.4.11"
   dependencies:
     "@babel/core" "7.9.0"
     "@babel/plugin-transform-runtime" "7.9.0"
     "@babel/preset-typescript" "7.9.0"
     "@design-systems/cli-utils" "link:packages/cli-utils"
     "@design-systems/plugin" "link:packages/plugin"
-    "@proof-ui/a11y-plugin" "0.0.12"
-    "@proof-ui/add-all-plugin" "0.0.12"
-    "@proof-ui/applitools-plugin" "0.0.12"
-    "@proof-ui/babel-plugin" "0.0.12"
-    "@proof-ui/cli" "0.0.12"
-    "@proof-ui/config" "0.0.12"
-    "@proof-ui/junit-plugin" "0.0.12"
-    "@proof-ui/skip-tests-plugin" "0.0.12"
+    "@proof-ui/a11y-plugin" "^0.0.12"
+    "@proof-ui/add-all-plugin" "^0.0.12"
+    "@proof-ui/applitools-plugin" "^0.0.12"
+    "@proof-ui/babel-plugin" "^0.0.12"
+    "@proof-ui/cli" "^0.0.12"
+    "@proof-ui/config" "^0.0.12"
+    "@proof-ui/junit-plugin" "^0.0.12"
+    "@proof-ui/skip-tests-plugin" "^0.0.12"
     babel-preset-power-assert "3.0.0"
     tslib "1.11.1"
 
 "@design-systems/size@link:plugins/size":
-  version "1.4.8"
+  version "1.4.11"
   dependencies:
     "@design-systems/cli-utils" "link:packages/cli-utils"
     "@design-systems/plugin" "link:packages/plugin"
@@ -2370,7 +2370,7 @@
     webpack-sources "1.4.3"
 
 "@design-systems/storybook@link:plugins/storybook":
-  version "1.4.8"
+  version "1.4.11"
   dependencies:
     "@babel/core" "7.9.0"
     "@design-systems/build" "link:plugins/build"
@@ -2404,7 +2404,7 @@
     webpack-filter-warnings-plugin "1.2.1"
 
 "@design-systems/stylelint-config@link:packages/stylelint-config":
-  version "1.4.8"
+  version "1.4.11"
   dependencies:
     stylelint-a11y "1.2.3"
     stylelint-config-css-modules "2.2.0"
@@ -2418,7 +2418,7 @@
     tslib "1.11.1"
 
 "@design-systems/test@link:plugins/test":
-  version "1.4.8"
+  version "1.4.11"
   dependencies:
     "@babel/core" "7.9.0"
     "@design-systems/build" "link:plugins/build"
@@ -2438,7 +2438,7 @@
     tslib "1.11.1"
 
 "@design-systems/update@link:plugins/update":
-  version "1.4.8"
+  version "1.4.11"
   dependencies:
     "@design-systems/cli-utils" "link:packages/cli-utils"
     "@design-systems/plugin" "link:packages/plugin"
@@ -3747,19 +3747,19 @@
   dependencies:
     "@types/node" ">= 8"
 
-"@proof-ui/a11y-plugin@0.0.12":
+"@proof-ui/a11y-plugin@^0.0.12":
   version "0.0.12"
   resolved "https://registry.yarnpkg.com/@proof-ui/a11y-plugin/-/a11y-plugin-0.0.12.tgz#00f41af9c54415a23d170fb778b2ed776aa0f43a"
   integrity sha512-sTrshQFFJkWQ6fRfCltN/7bbhIH1L6AUAMnPTWOriH67Go8yVtEBe4Cobu6AzsMXer0SKiTSR//k42f3ssN+8Q==
   dependencies:
     axe-core "3.1.2"
 
-"@proof-ui/add-all-plugin@0.0.12":
+"@proof-ui/add-all-plugin@^0.0.12":
   version "0.0.12"
   resolved "https://registry.yarnpkg.com/@proof-ui/add-all-plugin/-/add-all-plugin-0.0.12.tgz#6a3cd3ca600e9b72fda53cbe38d4386a8fcbba1b"
   integrity sha512-xHi4uoNdGIhlmA/6TsJsryn8R7hJDMduK0V/yeMT+k3ahP3TPQWeg/L/BsBuird10qH8GOFyKqFm/PWyD2czLQ==
 
-"@proof-ui/applitools-plugin@0.0.12":
+"@proof-ui/applitools-plugin@^0.0.12":
   version "0.0.12"
   resolved "https://registry.yarnpkg.com/@proof-ui/applitools-plugin/-/applitools-plugin-0.0.12.tgz#103c1ac6ac35d68401664e1f3d5d0469b7d5b552"
   integrity sha512-1szU+WMUXqLL9XAEdkWCzcIJ/zucYMzve1XANzQV6dMnee7oBOHJlCld0CRehmeLfEq3MqE5vc5RWFM+85ldXA==
@@ -3767,7 +3767,7 @@
     "@applitools/eyes-selenium" "4.28.1"
     "@applitools/eyes.webdriverio" "^2.9.0"
 
-"@proof-ui/babel-plugin@0.0.12", "@proof-ui/babel-plugin@^0.0.12":
+"@proof-ui/babel-plugin@^0.0.12":
   version "0.0.12"
   resolved "https://registry.yarnpkg.com/@proof-ui/babel-plugin/-/babel-plugin-0.0.12.tgz#857747ec4ebcf02b37399bb4e89839da5df2336d"
   integrity sha512-8fbPVmr/95Fx/jvta2j5jN8LoiEx3sC7JgIjwzqmgnggpDQr7VaxKrRZB77RLWoM/f0gvVntV452yfkpX6QwjA==
@@ -3799,7 +3799,7 @@
   resolved "https://registry.yarnpkg.com/@proof-ui/cli-plugin/-/cli-plugin-0.0.12.tgz#1c248076b7692709ca3614471609777da17775d9"
   integrity sha512-uGhdNaEjrArq2aqnEYm0VwX6CHh3Cg+E0sF3OdyRrbBOxBJe8qV+eFWsTcMe+QR2PoSI11pR6alGESrPyO44/Q==
 
-"@proof-ui/cli@0.0.12":
+"@proof-ui/cli@^0.0.12":
   version "0.0.12"
   resolved "https://registry.yarnpkg.com/@proof-ui/cli/-/cli-0.0.12.tgz#4a5882e2f8f19e1916e9a25a7d01d33154238fcb"
   integrity sha512-+BB8HPT7I2fwwT3fctovyzy/8DBfdjIf3ZZjEGAmxi3PxwZcjiQ0xosVBLkJREJWHwZ/S2xE6CcoAOTPlKjHMA==
@@ -3814,7 +3814,7 @@
     command-line-application "^0.1.8"
     url "^0.11.0"
 
-"@proof-ui/config@0.0.12", "@proof-ui/config@^0.0.12":
+"@proof-ui/config@^0.0.12":
   version "0.0.12"
   resolved "https://registry.yarnpkg.com/@proof-ui/config/-/config-0.0.12.tgz#c3134ad02a9aeaf612d12b5b97b5c2d511efa10c"
   integrity sha512-Isa/PR4sxBryn6foMQsYCI13zPH+Hw0ObXDiObcIliWRFxausA9QWHEbP352wNQAYYZ+U4s/fTvvIKUwZ37JfQ==
@@ -3842,7 +3842,7 @@
     promise-pool-executor "^1.1.1"
     tapable "^1.1.3"
 
-"@proof-ui/junit-plugin@0.0.12":
+"@proof-ui/junit-plugin@^0.0.12":
   version "0.0.12"
   resolved "https://registry.yarnpkg.com/@proof-ui/junit-plugin/-/junit-plugin-0.0.12.tgz#1089427baa0dec357cbcc55d6b8226ae24d7f27a"
   integrity sha512-5KAZuJH3bJKOF2z7dOsQ41bb6R6MPETXkBlEr6snt4LJJyFkDflXQQ+COy0R7yD8VFbuuAEPlXhPQ+y44H8eSA==
@@ -3858,7 +3858,7 @@
     "@types/signale" "^1.2.1"
     signale "^1.4.0"
 
-"@proof-ui/skip-tests-plugin@0.0.12":
+"@proof-ui/skip-tests-plugin@^0.0.12":
   version "0.0.12"
   resolved "https://registry.yarnpkg.com/@proof-ui/skip-tests-plugin/-/skip-tests-plugin-0.0.12.tgz#2c52986ea7ce442336e01de8ebf4c4b880df1481"
   integrity sha512-rsJmRQ+Vxfu+johjbt1n81/6kpQajJzEhJdBK8maJ+HU02lQmZ4ZGy+h8Y73/iSiwgtl2RYqWgwP67uoKq5/Ow==
