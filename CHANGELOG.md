@@ -1,3 +1,16 @@
+# v1.4.14 (Thu Apr 09 2020)
+
+#### 🐛 Bug Fix
+
+- `@design-systems/proof`
+  - remove applitools dep in proof plugin [#198](https://github.com/intuit/design-systems-cli/pull/198) ([@hipstersmoothie](https://github.com/hipstersmoothie))
+
+#### Authors: 1
+
+- Andrew Lisowski ([@hipstersmoothie](https://github.com/hipstersmoothie))
+
+---
+
 # v1.4.13 (Wed Apr 08 2020)
 
 #### 🐛 Bug Fix
