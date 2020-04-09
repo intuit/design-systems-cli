@@ -1,3 +1,15 @@
+# v1.4.13 (Wed Apr 08 2020)
+
+#### 🐛 Bug Fix
+
+- update proof in storybook plugin too [#197](https://github.com/intuit/design-systems-cli/pull/197) ([@hipstersmoothie](https://github.com/hipstersmoothie))
+
+#### Authors: 1
+
+- Andrew Lisowski ([@hipstersmoothie](https://github.com/hipstersmoothie))
+
+---
+
 # v1.4.9 (Mon Mar 30 2020)
 
 #### 🐛 Bug Fix
