@@ -1,3 +1,17 @@
+# v1.4.15 (Fri Apr 10 2020)
+
+#### 🐛 Bug Fix
+
+- `@design-systems/storybook`
+  - update storybook-addon-react-docgen dependency [#199](https://github.com/intuit/design-systems-cli/pull/199) ([@vasikarla](https://github.com/vasikarla) [@hipstersmoothie](https://github.com/hipstersmoothie))
+
+#### Authors: 2
+
+- Andrew Lisowski ([@hipstersmoothie](https://github.com/hipstersmoothie))
+- Raj Vasikarla ([@vasikarla](https://github.com/vasikarla))
+
+---
+
 # v1.4.14 (Thu Apr 09 2020)
 
 #### 🐛 Bug Fix
