@@ -44,7 +44,7 @@
     "source-map-loader": "0.2.4",
     "story2sketch": "1.7.0",
     "storybook-addon-jsx": "7.1.15",
-    "storybook-addon-react-docgen": "1.2.28",
+    "storybook-addon-react-docgen": "1.2.32",
     "storybook-addon-sketch": "0.1.0",
     "storybook-dark-mode": "0.3.1",
     "tslib": "1.11.1",
