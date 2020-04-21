@@ -1,3 +1,16 @@
+# v1.5.0 (Tue Apr 21 2020)
+
+#### 🚀 Enhancement
+
+- `@design-systems/storybook`
+  - feat: adding feature to auto assign a port [#204](https://github.com/intuit/design-systems-cli/pull/204) ([@vasikarla](https://github.com/vasikarla))
+
+#### Authors: 1
+
+- Raj Vasikarla ([@vasikarla](https://github.com/vasikarla))
+
+---
+
 # v1.4.15 (Fri Apr 10 2020)
 
 #### 🐛 Bug Fix
