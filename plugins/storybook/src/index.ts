@@ -61,9 +61,11 @@ export default class StorybookPlugin implements Plugin<StorybookArgs> {
         // Checking if the findPort is set to true and auto-assigning a port
         let port = 6000;
         if ('findPort' in args && args.findPort === true) {
+          this.logger.debug(`Find Port Option set to : True`);
           fp(6000, 7000, function(freePort: number){
             port = freePort;
           });
+          this.logger.debug(`Port user for Storybook : ${port}`);
         }
 
         storybook({
