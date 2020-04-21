@@ -3,10 +3,10 @@
 import { createLogger } from '@design-systems/cli-utils';
 import { Plugin } from '@design-systems/plugin';
 import path from 'path';
+import fp from 'find-free-port';
 import storybook from '@storybook/react/standalone';
 import Story2sketch from 'story2sketch/lib/server/Story2sketch';
 import config from './story2sketch.config';
-import fp from 'find-free-port';
 
 export interface BuildArgs {
   /** The command identifier */
