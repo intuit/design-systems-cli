@@ -27,7 +27,12 @@ const command: CliCommand = {
           name: 'ci',
           type: Boolean,
           description: 'Start the storybook server in CI mode'
-        }
+        },
+        {
+          name: 'findPort',
+          type: Boolean,
+          description: 'Automatically assign a port if the default (6006) is occupied'
+        }        
       ]
     }
   ],
