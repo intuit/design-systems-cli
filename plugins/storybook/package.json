@@ -39,6 +39,7 @@
     "babel-loader": "8.1.0",
     "core-js": "3.6.4",
     "dedent": "0.7.0",
+    "get-port": "5.1.1",
     "github-url-to-object": "4.0.4",
     "react-docgen-typescript-loader": "3.6.0",
     "source-map-loader": "0.2.4",
