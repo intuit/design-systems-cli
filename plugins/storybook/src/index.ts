@@ -6,6 +6,7 @@ import path from 'path';
 import storybook from '@storybook/react/standalone';
 import Story2sketch from 'story2sketch/lib/server/Story2sketch';
 import config from './story2sketch.config';
+import fp from 'find-free-port';
 
 export interface BuildArgs {
   /** The command identifier */
@@ -19,6 +20,8 @@ export interface StartArgs {
   _command: ['storybook', 'start'];
   /** Start the storybook in CI mode. */
   ci?: boolean;
+  /**Automatically finds an available port when the default port is occupied */
+  findPort?: boolean;
 }
 
 type StorybookArgs = BuildArgs | StartArgs;
@@ -54,10 +57,18 @@ export default class StorybookPlugin implements Plugin<StorybookArgs> {
         }
       } else if (args._command[1] === 'start') {
         this.logger.debug(`Watching storybook for: ${process.env.COMPONENT}`);
+        
+        // Checking if the findPort is set to true and auto-assigning a port
+        let port = 6000;
+        if ('findPort' in args && args.findPort === true) {
+          fp(6000, 7000, function(freePort: number){
+            port = freePort;
+          });
+        }
 
         storybook({
           mode: 'dev',
-          port: 6006,
+          port: port,
           configDir: path.join(__dirname, '../.storybook'),
           ci: 'ci' in args && args.ci
         });
