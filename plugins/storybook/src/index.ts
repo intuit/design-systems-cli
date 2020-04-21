@@ -3,7 +3,7 @@
 import { createLogger } from '@design-systems/cli-utils';
 import { Plugin } from '@design-systems/plugin';
 import path from 'path';
-import fp from 'find-free-port';
+import getPort from 'get-port';
 import storybook from '@storybook/react/standalone';
 import Story2sketch from 'story2sketch/lib/server/Story2sketch';
 import config from './story2sketch.config';
@@ -59,13 +59,10 @@ export default class StorybookPlugin implements Plugin<StorybookArgs> {
         this.logger.debug(`Watching storybook for: ${process.env.COMPONENT}`);
         
         // Checking if the findPort is set to true and auto-assigning a port
-        let port = 6000;
+        let port;
         if ('findPort' in args && args.findPort === true) {
-          this.logger.debug(`Find Port Option set to : True`);
-          fp(6000, 7000, function(freePort: number){
-            port = freePort;
-          });
-          this.logger.debug(`Port user for Storybook : ${port}`);
+          port = await getPort({port: 6006});
+          this.logger.debug(`Port used for Storybook : ${port}`);
         }
 
         storybook({
