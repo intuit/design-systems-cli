@@ -1915,7 +1915,7 @@
     minimist "^1.2.0"
 
 "@design-systems/build@link:plugins/build":
-  version "1.4.15"
+  version "1.5.0"
   dependencies:
     "@babel/code-frame" "7.8.3"
     "@babel/core" "7.9.0"
@@ -1956,7 +1956,7 @@
     typescript "3.8.3"
 
 "@design-systems/bundle@link:plugins/bundle":
-  version "1.4.15"
+  version "1.5.0"
   dependencies:
     "@design-systems/build" "link:plugins/build"
     "@design-systems/cli-utils" "link:packages/cli-utils"
@@ -1974,7 +1974,7 @@
     webpack "4.41.5"
 
 "@design-systems/clean@link:plugins/clean":
-  version "1.4.15"
+  version "1.5.0"
   dependencies:
     "@design-systems/cli-utils" "link:packages/cli-utils"
     "@design-systems/plugin" "link:packages/plugin"
@@ -1983,7 +1983,7 @@
     tslib "1.11.1"
 
 "@design-systems/cli-utils@link:packages/cli-utils":
-  version "1.4.15"
+  version "1.5.0"
   dependencies:
     find-up "4.1.0"
     npm-which "3.0.1"
@@ -1993,7 +1993,7 @@
     webpack "4.41.5"
 
 "@design-systems/core@link:packages/core":
-  version "1.4.15"
+  version "1.5.0"
   dependencies:
     "@design-systems/build" "link:plugins/build"
     "@design-systems/bundle" "link:plugins/bundle"
@@ -2013,7 +2013,7 @@
     tslib "1.11.1"
 
 "@design-systems/create-command@link:plugins/create-command":
-  version "1.4.15"
+  version "1.5.0"
   dependencies:
     "@design-systems/cli-utils" "link:packages/cli-utils"
     "@design-systems/create" "link:packages/create"
@@ -2032,10 +2032,10 @@
     tslib "1.11.1"
 
 "@design-systems/create@link:packages/create":
-  version "1.4.15"
+  version "1.5.0"
 
 "@design-systems/dev@link:plugins/dev":
-  version "1.4.15"
+  version "1.5.0"
   dependencies:
     "@design-systems/cli-utils" "link:packages/cli-utils"
     "@design-systems/plugin" "link:packages/plugin"
@@ -2045,7 +2045,7 @@
     tslib "1.11.1"
 
 "@design-systems/eslint-config@link:packages/eslint-config":
-  version "1.4.15"
+  version "1.5.0"
   dependencies:
     "@design-systems/cli-utils" "link:packages/cli-utils"
     "@typescript-eslint/eslint-plugin" "2.17.0"
@@ -2068,7 +2068,7 @@
     tslib "1.11.1"
 
 "@design-systems/lint@link:plugins/lint":
-  version "1.4.15"
+  version "1.5.0"
   dependencies:
     "@design-systems/cli-utils" "link:packages/cli-utils"
     "@design-systems/eslint-config" "link:packages/eslint-config"
@@ -2085,7 +2085,7 @@
     tslib "1.11.1"
 
 "@design-systems/load-config@link:packages/load-config":
-  version "1.4.15"
+  version "1.5.0"
   dependencies:
     "@design-systems/core" "link:packages/core"
     "@design-systems/plugin" "link:packages/plugin"
@@ -2099,7 +2099,7 @@
     tslib "1.11.1"
 
 "@design-systems/playroom@link:plugins/playroom":
-  version "1.4.15"
+  version "1.5.0"
   dependencies:
     "@babel/core" "7.9.0"
     "@babel/register" "7.9.0"
@@ -2118,14 +2118,14 @@
     webpack "4.41.5"
 
 "@design-systems/plugin@link:packages/plugin":
-  version "1.4.15"
+  version "1.5.0"
   dependencies:
     command-line-application "0.9.6"
     tslib "1.11.1"
     utility-types "3.10.0"
 
 "@design-systems/proof@link:plugins/proof":
-  version "1.4.15"
+  version "1.5.0"
   dependencies:
     "@babel/core" "7.9.0"
     "@babel/plugin-transform-runtime" "7.9.0"
@@ -2143,7 +2143,7 @@
     tslib "1.11.1"
 
 "@design-systems/size@link:plugins/size":
-  version "1.4.15"
+  version "1.5.0"
   dependencies:
     "@design-systems/cli-utils" "link:packages/cli-utils"
     "@design-systems/plugin" "link:packages/plugin"
@@ -2151,7 +2151,7 @@
     change-case "4.1.1"
     chokidar "3.3.1"
     colorette "1.1.0"
-    commently "5.73.5"
+    commently "5.74.0"
     cross-spawn "7.0.1"
     css-loader "3.4.2"
     diff2html "3.1.6"
@@ -2173,7 +2173,7 @@
     webpack-sources "1.4.3"
 
 "@design-systems/storybook@link:plugins/storybook":
-  version "1.4.15"
+  version "1.5.0"
   dependencies:
     "@babel/core" "7.9.0"
     "@design-systems/build" "link:plugins/build"
@@ -2208,7 +2208,7 @@
     webpack-filter-warnings-plugin "1.2.1"
 
 "@design-systems/stylelint-config@link:packages/stylelint-config":
-  version "1.4.15"
+  version "1.5.0"
   dependencies:
     stylelint-a11y "1.2.3"
     stylelint-config-css-modules "2.2.0"
@@ -2222,7 +2222,7 @@
     tslib "1.11.1"
 
 "@design-systems/test@link:plugins/test":
-  version "1.4.15"
+  version "1.5.0"
   dependencies:
     "@babel/core" "7.9.0"
     "@design-systems/build" "link:plugins/build"
@@ -2242,7 +2242,7 @@
     tslib "1.11.1"
 
 "@design-systems/update@link:plugins/update":
-  version "1.4.15"
+  version "1.5.0"
   dependencies:
     "@design-systems/cli-utils" "link:packages/cli-utils"
     "@design-systems/plugin" "link:packages/plugin"
@@ -7548,10 +7548,10 @@ comment-parser@^0.7.2:
   resolved "https://registry.yarnpkg.com/comment-parser/-/comment-parser-0.7.2.tgz#baf6d99b42038678b81096f15b630d18142f4b8a"
   integrity sha512-4Rjb1FnxtOcv9qsfuaNuVsmmVn4ooVoBHzYfyKteiXwIU84PClyGA5jASoFMwPV93+FPh9spwueXauxFJZkGAg==
 
-commently@5.73.5:
-  version "5.73.5"
-  resolved "https://registry.yarnpkg.com/commently/-/commently-5.73.5.tgz#4b2ea1c9b036026e900ca89b64ffcd0ac3a17072"
-  integrity sha512-z9r38IuqT7ox2rEudwhN5UoOwfwGnJQhpiQDa8gcamLHOd/a3o9+wYE/V0wiXxk8pSAePmh49/K37fjzJUmuOg==
+commently@5.74.0:
+  version "5.74.0"
+  resolved "https://registry.yarnpkg.com/commently/-/commently-5.74.0.tgz#7fc9460d84c6953640b2f39603b8656612e4763e"
+  integrity sha512-sQtWRKvySBLiTiS1ur8a7/6Mory85T13lNFqxlG/bwDvSMVGK6MEc6svGwOrg6UNC+Qygm5+o9JWsgaahTcEpA==
   dependencies:
     "@octokit/rest" "16.33.1"
     debug "4.1.1"
