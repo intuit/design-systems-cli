@@ -59,10 +59,11 @@ export default class StorybookPlugin implements Plugin<StorybookArgs> {
         this.logger.debug(`Watching storybook for: ${process.env.COMPONENT}`);
         
         // Checking if the findPort is set to true and auto-assigning a port
-        let port;
+        let port = 6006;
         if ('findPort' in args && args.findPort === true) {
-          port = await getPort({port: 6006});
-          this.logger.debug(`Port used for Storybook : ${port}`);
+          port = await getPort();
+          this.logger.debug(`Random available port used for Storybook 
+            since 6006 is occupied : ${port}`);
         }
 
         storybook({
