@@ -70,7 +70,7 @@ export default class StorybookPlugin implements Plugin<StorybookArgs> {
 
         storybook({
           mode: 'dev',
-          port: port,
+          port,
           configDir: path.join(__dirname, '../.storybook'),
           ci: 'ci' in args && args.ci
         });
