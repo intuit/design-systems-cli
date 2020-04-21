@@ -20,7 +20,7 @@ export interface StartArgs {
   _command: ['storybook', 'start'];
   /** Start the storybook in CI mode. */
   ci?: boolean;
-  /**Automatically finds an available port when the default port is occupied */
+  /** Automatically finds an available port when the default port is occupied */
   findPort?: boolean;
 }
 
