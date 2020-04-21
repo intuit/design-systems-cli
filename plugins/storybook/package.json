@@ -39,7 +39,7 @@
     "babel-loader": "8.1.0",
     "core-js": "3.6.4",
     "dedent": "0.7.0",
-    "find-free-port": "2.0.0",
+    "get-port": "5.1.1",
     "github-url-to-object": "4.0.4",
     "react-docgen-typescript-loader": "3.6.0",
     "source-map-loader": "0.2.4",
@@ -49,7 +49,6 @@
     "storybook-addon-sketch": "^0.1.0",
     "storybook-dark-mode": "^0.3.1",
     "tslib": "1.11.1",
-    "get-port": "5.1.1",
     "webpack": "4.41.5",
     "webpack-filter-warnings-plugin": "1.2.1"
   },

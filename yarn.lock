@@ -2194,7 +2194,7 @@
     babel-loader "8.1.0"
     core-js "3.6.4"
     dedent "0.7.0"
-    find-free-port "2.0.0"
+    get-port "5.1.1"
     github-url-to-object "4.0.4"
     react-docgen-typescript-loader "3.6.0"
     source-map-loader "0.2.4"
@@ -10274,11 +10274,6 @@ find-cache-dir@^3.0.0, find-cache-dir@^3.2.0:
     commondir "^1.0.1"
     make-dir "^3.0.0"
     pkg-dir "^4.1.0"
-
-find-free-port@2.0.0:
-  version "2.0.0"
-  resolved "https://registry.npmjs.intuit.com:443/artifactory/api/npm/npm-intuit/find-free-port/-/find-free-port-2.0.0.tgz#4b22e5f6579eb1a38c41ac6bcb3efed1b6da9b1b"
-  integrity sha1-SyLl9leesaOMQaxryz7+0bbamxs=
 
 find-package-json@1.2.0:
   version "1.2.0"
