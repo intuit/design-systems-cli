@@ -6,8 +6,7 @@
   "author": "Adam Dierkens <adam@dierkens.com>",
   "license": "MIT",
   "scripts": {
-    "build": "tsc --build",
-    "test": "../../packages/cli/bin/ds.js test"
+    "build": "tsc --build"
   },
   "files": [
     "dist",
