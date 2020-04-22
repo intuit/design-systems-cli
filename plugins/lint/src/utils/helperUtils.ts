@@ -1,11 +1,11 @@
 import getPackages from 'get-monorepo-packages';
 import fs from 'fs';
+import stylelint from 'stylelint';
 import path from 'path';
 import {
   getMonorepoRoot
 } from '@design-systems/cli-utils';
 import { LintArgs, StylelintResult } from '../interfaces';
-import stylelint from 'stylelint';
 
 /** Get the folders that contain packages in the monorepo. */
 function getPackageFolders() {

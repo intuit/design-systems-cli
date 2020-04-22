@@ -1,6 +1,6 @@
 import stylelint from 'stylelint';
 
-interface LintArgs {
+export interface LintArgs {
     /** Attempt to fix the lint errors. */
     fix?: boolean;
     /** Do not use any cached results from previous runs. */
@@ -11,7 +11,7 @@ interface LintArgs {
     files?: string[];
 }
 
-type StylelintResult = stylelint.LinterResult & {
+export type StylelintResult = stylelint.LinterResult & {
     /** Lines with needless disables */
     needlessDisables?: {
         /** The files the needless disables are found in */
@@ -25,8 +25,3 @@ type StylelintResult = stylelint.LinterResult & {
         }[];
     }[];
 };
-
-export {
-    LintArgs,
-    StylelintResult
-}
