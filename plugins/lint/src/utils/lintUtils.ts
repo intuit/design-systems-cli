@@ -57,7 +57,7 @@ async function lintJS(args: LintArgs): Promise<number> {
       cache: !args.noCache && !bustCache,
       cacheLocation,
       extensions: ['ts', 'tsx', 'js', 'jsx'],
-      ignorePath: path.join(__dirname, '../.eslintignore'),
+      ignorePath: path.join(__dirname, '../../.eslintignore'),
       reportUnusedDisableDirectives: true
     });
 
