@@ -93,6 +93,16 @@ jobs:
           name: Release
           command: yarn auto shipit
 
+  integration-ds:
+    <<: *defaults
+    steps:
+      - attach_workspace:
+          at: ~/integration-ds
+      - run: mkdir ~/.ssh/ && echo -e "Host github.com\n\tStrictHostKeyChecking no\n" > ~/.ssh/config
+      - run:
+          name: GetIntegrationDS
+          command: git clone git@github.com:design-systems-templates/integration-ds.git
+
   publishDocs:
     <<: *defaults
     steps:
@@ -135,6 +145,10 @@ workflows:
           requires:
             - test
             - lint
+      
+      - integration-ds
+          requires:
+            - release
 
       - publishDocs:
           requires:
