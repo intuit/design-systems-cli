@@ -102,7 +102,7 @@ jobs:
       - run:
           name: Get Integration Design Systems Repo
           command: git clone git@github.com:design-systems-templates/integration-ds.git
-      - list:
+      - run:
           name: List
           command: ls -l
       # - run:
