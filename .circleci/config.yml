@@ -183,10 +183,10 @@ workflows:
           requires:
             - release
 
-      - publishDocs:
-          requires:
-            - release
-          filters:
-            branches:
-              only:
-                - master
+      # - publishDocs:
+      #     requires:
+      #       - release
+      #     filters:
+      #       branches:
+      #         only:
+      #           - master
