@@ -98,7 +98,7 @@ jobs:
     steps:
       - run: mkdir ~/.ssh/ && echo -e "Host github.com\n\tStrictHostKeyChecking no\n" > ~/.ssh/config
       - run:
-          name: GetIntegrationDS
+          name: Get Integration Design Systems Repo
           command: git clone git@github.com:design-systems-templates/integration-ds.git
       - run:
           name: Install Dependencies
