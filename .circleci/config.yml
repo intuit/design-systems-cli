@@ -37,61 +37,61 @@ aliases:
     command: yarn build
 
 jobs:
-  install:
-    <<: *defaults
-    steps:
-      - checkout
-      - restore_cache: *restore-cache
-      - run: *yarn
-      - save_cache: *save-cache
-      - persist_to_workspace:
-          root: .
-          paths:
-            - .
+  # install:
+  #   <<: *defaults
+  #   steps:
+  #     - checkout
+  #     - restore_cache: *restore-cache
+  #     - run: *yarn
+  #     - save_cache: *save-cache
+  #     - persist_to_workspace:
+  #         root: .
+  #         paths:
+  #           - .
 
-  build:
-    <<: *defaults
-    steps:
-      - attach_workspace:
-          at: ~/design-systems-cli
-      - run: *build
-      - persist_to_workspace:
-          root: .
-          paths:
-            - .
+  # build:
+  #   <<: *defaults
+  #   steps:
+  #     - attach_workspace:
+  #         at: ~/design-systems-cli
+  #     - run: *build
+  #     - persist_to_workspace:
+  #         root: .
+  #         paths:
+  #           - .
 
-  lint:
-    <<: *defaults
-    steps:
-      - attach_workspace:
-          at: ~/design-systems-cli
-      - run: *lint
+  # lint:
+  #   <<: *defaults
+  #   steps:
+  #     - attach_workspace:
+  #         at: ~/design-systems-cli
+  #     - run: *lint
 
-  test:
-    <<: *defaults
-    steps:
-      - attach_workspace:
-          at: ~/design-systems-cli
-      - run: *test
+  # test:
+  #   <<: *defaults
+  #   steps:
+  #     - attach_workspace:
+  #         at: ~/design-systems-cli
+  #     - run: *test
 
-  pr-check:
-    <<: *defaults
-    steps:
-      - attach_workspace:
-          at: ~/design-systems-cli
-      - run:
-          name: Check PR for semantic version label
-          command: yarn auto pr-check --pr $CHANGE_ID --url $CIRCLE_BUILD_URL
+  # pr-check:
+  #   <<: *defaults
+  #   steps:
+  #     - attach_workspace:
+  #         at: ~/design-systems-cli
+  #     - run:
+  #         name: Check PR for semantic version label
+  #         command: yarn auto pr-check --pr $CHANGE_ID --url $CIRCLE_BUILD_URL
 
-  release:
-    <<: *defaults
-    steps:
-      - attach_workspace:
-          at: ~/design-systems-cli
-      - run: mkdir ~/.ssh/ && echo -e "Host github.com\n\tStrictHostKeyChecking no\n" > ~/.ssh/config
-      - run:
-          name: Release
-          command: yarn auto shipit
+  # release:
+  #   <<: *defaults
+  #   steps:
+  #     - attach_workspace:
+  #         at: ~/design-systems-cli
+  #     - run: mkdir ~/.ssh/ && echo -e "Host github.com\n\tStrictHostKeyChecking no\n" > ~/.ssh/config
+  #     - run:
+  #         name: Release
+  #         command: yarn auto shipit
 
   integration-ds:
     <<: *defaults
@@ -152,32 +152,32 @@ workflows:
   version: 2
   build_and_test:
     jobs:
-      - install
+      # - install
 
-      - build:
-          requires:
-            - install
+      # - build:
+      #     requires:
+      #       - install
 
-      - lint:
-          requires:
-            - build
+      # - lint:
+      #     requires:
+      #       - build
 
-      - test:
-          requires:
-            - build
+      # - test:
+      #     requires:
+      #       - build
 
-      - pr-check:
-          requires:
-            - build
-          filters:
-            branches:
-              ignore:
-                - master
+      # - pr-check:
+      #     requires:
+      #       - build
+      #     filters:
+      #       branches:
+      #         ignore:
+      #           - master
 
-      - release:
-          requires:
-            - test
-            - lint
+      # - release:
+      #     requires:
+      #       - test
+      #       - lint
       
       - integration-ds:
           requires:
@@ -190,4 +190,3 @@ workflows:
             branches:
               only:
                 - master
-                
