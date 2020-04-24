@@ -104,7 +104,7 @@ jobs:
           command: cd ~/ && git clone git@github.com:design-systems-templates/integration-ds.git
       - run:
           name: List
-          command: cd integration-ds && ls -l
+          command: cd integration-ds && ls -l 
       # - run:
       #     name: Install Dependencies
       #     command: cd integration-ds && yarn install
