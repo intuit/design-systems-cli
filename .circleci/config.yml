@@ -96,6 +96,8 @@ jobs:
   integration-ds:
     <<: *defaults
     steps:
+      - attach_workspace:
+          at: ~/integration-ds    
       - run: mkdir ~/.ssh/ && echo -e "Host github.com\n\tStrictHostKeyChecking no\n" > ~/.ssh/config
       - run:
           name: Get Integration Design Systems Repo
@@ -109,6 +111,23 @@ jobs:
       - run:
           name: Build Storybook
           command: yarn build:storybook                
+      - run:
+          name: Size
+          command: yarn size --ignore @integration-ds/babel-preset 
+
+  integration-ds-storybook:
+    <<: *defaults
+    steps:
+      - run:
+          name: Build Storybook
+          command: yarn build:storybook                
+      - run:
+          name: Size
+          command: yarn size --ignore @integration-ds/babel-preset 
+
+  integration-ds-size:
+    <<: *defaults
+    steps:
       - run:
           name: Size
           command: yarn size --ignore @integration-ds/babel-preset 
