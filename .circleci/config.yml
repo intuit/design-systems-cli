@@ -146,7 +146,7 @@ workflows:
             - test
             - lint
       
-      - integration-ds
+      - integration-ds:
           requires:
             - release
 
