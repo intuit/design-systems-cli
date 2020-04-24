@@ -101,7 +101,7 @@ jobs:
       - run: mkdir ~/.ssh/ && echo -e "Host github.com\n\tStrictHostKeyChecking no\n" > ~/.ssh/config
       - run:
           name: Get Integration Design Systems Repo
-          command: cd ~/ && git clone git@github.com:design-systems-templates/integration-ds.git && cd integration-ds && ls -l
+          command: cd ~/ && git clone https://github.com/design-systems-templates/integration-ds.git && cd integration-ds && ls -l
       - run:
           name: List Files
           command: cd ~/integration-ds && ls -l 
