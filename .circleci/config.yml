@@ -96,8 +96,6 @@ jobs:
   integration-ds:
     <<: *defaults
     steps:
-      - attach_workspace:
-          at: ~/integration-ds
       - run: mkdir ~/.ssh/ && echo -e "Host github.com\n\tStrictHostKeyChecking no\n" > ~/.ssh/config
       - run:
           name: GetIntegrationDS
