@@ -129,41 +129,41 @@ workflows:
   version: 2
   build_and_test:
     jobs:
-      - install
+      # - install
 
-      - build:
-          requires:
-            - install
+      # - build:
+      #     requires:
+      #       - install
 
-      - lint:
-          requires:
-            - build
+      # - lint:
+      #     requires:
+      #       - build
 
-      - test:
-          requires:
-            - build
+      # - test:
+      #     requires:
+      #       - build
 
-      - pr-check:
-          requires:
-            - build
-          filters:
-            branches:
-              ignore:
-                - master
+      # - pr-check:
+      #     requires:
+      #       - build
+      #     filters:
+      #       branches:
+      #         ignore:
+      #           - master
 
-      - release:
-          requires:
-            - test
-            - lint
+      # - release:
+      #     requires:
+      #       - test
+      #       - lint
       
       - integration-ds:
-          requires:
-            - release
+          # requires:
+          #   - release
 
-      - publishDocs:
-          requires:
-            - release
-          filters:
-            branches:
-              only:
-                - master
+      # - publishDocs:
+      #     requires:
+      #       - release
+      #     filters:
+      #       branches:
+      #         only:
+      #           - master
