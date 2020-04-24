@@ -107,7 +107,7 @@ jobs:
           name: Build
           command: yarn build
       - run:
-          name: Build:Storybook
+          name: Build Storybook
           command: yarn build:storybook                
       - run:
           name: Size
