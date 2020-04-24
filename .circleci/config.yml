@@ -103,8 +103,8 @@ jobs:
           name: Get Integration Design Systems Repo
           command: cd ~/ && git clone git@github.com:design-systems-templates/integration-ds.git
       - run:
-          name: List
-          command: cd integration-ds && ls -l 
+          name: List Files
+          command: cd integration-ds && ls -l
       # - run:
       #     name: Install Dependencies
       #     command: cd integration-ds && yarn install
