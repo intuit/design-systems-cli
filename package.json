@@ -34,9 +34,9 @@
   },
   "devDependencies": {
     "@auto-it/all-contributors": "9.28.3",
-    "@auto-it/first-time-contributor": "9.21.0",
-    "@auto-it/released": "9.21.0",
-    "auto": "9.21.0",
+    "@auto-it/first-time-contributor": "9.28.3",
+    "@auto-it/released": "9.28.3",
+    "auto": "9.28.3",
     "change-case": "4.1.1",
     "copy-template-dir": "1.4.0",
     "lerna": "3.20.2",
