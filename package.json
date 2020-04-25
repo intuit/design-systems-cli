@@ -33,7 +33,7 @@
     "access": "public"
   },
   "devDependencies": {
-    "@auto-it/all-contributors": "9.21.0",
+    "@auto-it/all-contributors": "9.28.3",
     "@auto-it/first-time-contributor": "9.21.0",
     "@auto-it/released": "9.21.0",
     "auto": "9.21.0",
