@@ -108,32 +108,35 @@ jobs:
       - run:
           name: Install Dependencies
           command: cd integration-ds && yarn install
+      - update-canary-cli:
+          name: Update Canary CLI
+          command: cd integration-ds && yarn add -W 1.4.16-canary.204.3918.0
       - run:
           name: Build
-          command: yarn build
+          command: cd integration-ds && yarn build
       - run:
           name: Build Storybook
-          command: yarn build:storybook                
+          command: cd integration-ds && yarn build:storybook                
       - run:
           name: Size
-          command: yarn size --ignore @integration-ds/babel-preset 
+          command: cd integration-ds && yarn size --ignore @integration-ds/babel-preset 
 
   integration-ds-storybook:
     <<: *defaults
     steps:
       - run:
           name: Build Storybook
-          command: yarn build:storybook                
+          command: cd integration-ds && yarn build:storybook                
       - run:
           name: Size
-          command: yarn size --ignore @integration-ds/babel-preset 
+          command: cd integration-ds && yarn size --ignore @integration-ds/babel-preset 
 
   integration-ds-size:
     <<: *defaults
     steps:
       - run:
           name: Size
-          command: yarn size --ignore @integration-ds/babel-preset 
+          command: cd integration-ds && yarn size --ignore @integration-ds/babel-preset 
 
   publishDocs:
     <<: *defaults
