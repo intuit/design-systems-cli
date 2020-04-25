@@ -114,12 +114,12 @@ jobs:
       - run:
           name: Build
           command: cd integration-ds && yarn build
-      - run:
-          name: Build Storybook
-          command: cd integration-ds && yarn build:storybook                
-      - run:
-          name: Size
-          command: cd integration-ds && yarn size --ignore @integration-ds/babel-preset 
+      # - run:
+      #     name: Build Storybook
+      #     command: cd integration-ds && yarn build:storybook                
+      # - run:
+      #     name: Size
+      #     command: cd integration-ds && yarn size --ignore @integration-ds/babel-preset 
 
   integration-ds-storybook:
     <<: *defaults
@@ -187,8 +187,21 @@ workflows:
           filters:
             branches:
               ignore:
-                - master          
-
+                - master    
+      - integration-ds-storybook:
+          requires:
+            - integration-ds
+          filters:
+            branches:
+              ignore:
+                - master    
+      - integration-ds-size:
+          requires:
+            - integration-ds
+          filters:
+            branches:
+              ignore:
+                - master                
       - publishDocs:
           requires:
             - release
