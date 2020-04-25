@@ -117,6 +117,8 @@ jobs:
   integration-ds-storybook:
     <<: *defaults
     steps:
+      - attach_workspace:
+          at: ~/integration-ds        
       - run:
           name: Build Storybook
           command: ls -l                
@@ -124,6 +126,8 @@ jobs:
   integration-ds-size:
     <<: *defaults
     steps:
+      - attach_workspace:
+          at: ~/integration-ds        
       - run:
           name: Size
           command: cd integration-ds && yarn size --ignore @integration-ds/babel-preset 
@@ -131,6 +135,8 @@ jobs:
   integration-ds-test:
     <<: *defaults
     steps:
+      - attach_workspace:
+          at: ~/integration-ds        
       - run:
           name: Test
           command: cd integration-ds && yarn test
@@ -138,6 +144,8 @@ jobs:
   integration-ds-lint:
     <<: *defaults
     steps:
+      - attach_workspace:
+          at: ~/integration-ds        
       - run:
           name: Test
           command: cd integration-ds && yarn lint
