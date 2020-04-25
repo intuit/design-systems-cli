@@ -131,12 +131,21 @@ jobs:
       - run:
           name: Size
           command: cd integration-ds && yarn size --ignore @integration-ds/babel-preset 
+          
   integration-ds-test:
     <<: *defaults
     steps:
       - run:
           name: Test
           command: cd integration-ds && yarn test
+
+  integration-ds-lint:
+    <<: *defaults
+    steps:
+      - run:
+          name: Test
+          command: cd integration-ds && yarn lint
+
   publishDocs:
     <<: *defaults
     steps:
@@ -206,7 +215,14 @@ workflows:
           filters:
             branches:
               ignore:
-                - master                
+                - master
+      - integration-ds-lint:
+          requires:
+            - integration-ds
+          filters:
+            branches:
+              ignore:
+                - master                                
       - publishDocs:
           requires:
             - release
