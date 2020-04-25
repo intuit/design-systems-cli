@@ -180,7 +180,6 @@ workflows:
             branches:
               ignore:
                 - master
-
       - release:
           requires:
             - test
