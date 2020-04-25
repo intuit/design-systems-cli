@@ -167,6 +167,7 @@ workflows:
             branches:
               ignore:
                 - master
+                - renovate.*
       - publishDocs:
           requires:
             - release
