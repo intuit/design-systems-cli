@@ -118,7 +118,7 @@ jobs:
           at: ~/integration-ds        
       - run:
           name: Build Storybook
-          command: ls -l                
+          command: ls -l && pwd              
 
   # integration-ds-size:
   #   <<: *defaults
