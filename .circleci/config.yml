@@ -92,9 +92,9 @@ jobs:
       - run:
           name: Release
           command: yarn auto shipit
-      - run:
-          name: Release-Version
-          command: yarn auto shipit --quiet
+      # - run:
+      #     name: Release-Version
+      #     command: yarn auto shipit --quiet
 
   integration-ds:
     <<: *defaults
@@ -114,12 +114,6 @@ jobs:
       - run:
           name: Build
           command: cd integration-ds && yarn build
-      # - run:
-      #     name: Build Storybook
-      #     command: cd integration-ds && yarn build:storybook                
-      # - run:
-      #     name: Size
-      #     command: cd integration-ds && yarn size --ignore @integration-ds/babel-preset 
 
   integration-ds-storybook:
     <<: *defaults
