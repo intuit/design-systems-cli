@@ -92,7 +92,57 @@ jobs:
       - run:
           name: Release
           command: yarn auto shipit
+      - run:
+          name: Release-Version
+          command: yarn auto shipit --quiet
 
+  integration-ds:
+    <<: *defaults
+    steps:
+      - attach_workspace:
+          at: ~/integration-ds    
+      - run: mkdir ~/.ssh/ && echo -e "Host github.com\n\tStrictHostKeyChecking no\n" > ~/.ssh/config
+      - run:
+          name: Get Integration Design Systems Repo
+          command: git clone https://github.com/design-systems-templates/integration-ds.git && ls -l     
+      - run:
+          name: Install Dependencies
+          command: cd integration-ds && yarn install
+      - run:
+          name: Update Canary CLI
+          command: cd integration-ds && yarn add -W @design-systems/cli@1.4.16-canary.204.3918.0
+      - run:
+          name: Build
+          command: cd integration-ds && yarn build
+      # - run:
+      #     name: Build Storybook
+      #     command: cd integration-ds && yarn build:storybook                
+      # - run:
+      #     name: Size
+      #     command: cd integration-ds && yarn size --ignore @integration-ds/babel-preset 
+
+  integration-ds-storybook:
+    <<: *defaults
+    steps:
+      - run:
+          name: Build Storybook
+          command: cd integration-ds && yarn build:storybook                
+      - run:
+          name: Size
+          command: cd integration-ds && yarn size --ignore @integration-ds/babel-preset 
+
+  integration-ds-size:
+    <<: *defaults
+    steps:
+      - run:
+          name: Size
+          command: cd integration-ds && yarn size --ignore @integration-ds/babel-preset 
+  integration-ds-test:
+    <<: *defaults
+    steps:
+      - run:
+          name: Test
+          command: cd integration-ds && yarn test
   publishDocs:
     <<: *defaults
     steps:
@@ -135,7 +185,35 @@ workflows:
           requires:
             - test
             - lint
-
+      
+      - integration-ds:
+          requires:
+            - release
+          filters:
+            branches:
+              ignore:
+                - master    
+      - integration-ds-storybook:
+          requires:
+            - integration-ds
+          filters:
+            branches:
+              ignore:
+                - master    
+      - integration-ds-size:
+          requires:
+            - integration-ds
+          filters:
+            branches:
+              ignore:
+                - master                
+      - integration-ds-test:
+          requires:
+            - integration-ds
+          filters:
+            branches:
+              ignore:
+                - master                
       - publishDocs:
           requires:
             - release
