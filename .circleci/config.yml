@@ -108,7 +108,7 @@ jobs:
       - run:
           name: Install Dependencies
           command: cd integration-ds && yarn install
-      - update-canary-cli:
+      - run:
           name: Update Canary CLI
           command: cd integration-ds && yarn add -W 1.4.16-canary.204.3918.0
       - run:
