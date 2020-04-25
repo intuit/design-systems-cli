@@ -59,7 +59,6 @@ jobs:
           root: .
           paths:
             - .
-
   lint:
     <<: *defaults
     steps:
@@ -120,10 +119,7 @@ jobs:
     steps:
       - run:
           name: Build Storybook
-          command: cd integration-ds && yarn build:storybook                
-      - run:
-          name: Size
-          command: cd integration-ds && yarn size --ignore @integration-ds/babel-preset 
+          command: ls -l                
 
   integration-ds-size:
     <<: *defaults
