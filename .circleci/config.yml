@@ -110,54 +110,30 @@ jobs:
       - run:
           name: Build
           command: cd integration-ds && yarn build
+      - run:
+          name: Build Storybook
+          command: yarn build:storybook               
+      - run:
+          name: Size
+          command: cd integration-ds && yarn size --ignore @integration-ds/babel-preset 
+      - run:
+          name: Test
+          command: cd integration-ds && yarn test
+      - run:
+          name: Test
+          command: cd integration-ds && yarn lint
 
-  integration-ds-storybook:
+  publishDocs:
     <<: *defaults
     steps:
       - attach_workspace:
-          at: ~/integration-ds        
+          at: ~/design-systems-cli
+      - run: mkdir ~/.ssh/ && echo -e "Host github.com\n\tStrictHostKeyChecking no\n" > ~/.ssh/config
+      - run: git config --global user.email "lisowski54@gmail.com"
+      - run: git config --global user.name "Andrew Lisowski"
       - run:
-          name: Build Storybook
-          command: ls -l && pwd              
-
-  # integration-ds-size:
-  #   <<: *defaults
-  #   steps:
-  #     - attach_workspace:
-  #         at: ~/integration-ds        
-  #     - run:
-  #         name: Size
-  #         command: cd integration-ds && yarn size --ignore @integration-ds/babel-preset 
-          
-  # integration-ds-test:
-  #   <<: *defaults
-  #   steps:
-  #     - attach_workspace:
-  #         at: ~/integration-ds        
-  #     - run:
-  #         name: Test
-  #         command: cd integration-ds && yarn test
-
-  # integration-ds-lint:
-  #   <<: *defaults
-  #   steps:
-  #     - attach_workspace:
-  #         at: ~/integration-ds        
-  #     - run:
-  #         name: Test
-  #         command: cd integration-ds && yarn lint
-
-  # publishDocs:
-  #   <<: *defaults
-  #   steps:
-  #     - attach_workspace:
-  #         at: ~/design-systems-cli
-  #     - run: mkdir ~/.ssh/ && echo -e "Host github.com\n\tStrictHostKeyChecking no\n" > ~/.ssh/config
-  #     - run: git config --global user.email "lisowski54@gmail.com"
-  #     - run: git config --global user.name "Andrew Lisowski"
-  #     - run:
-  #         name: Publish Docs
-  #         command: yarn lerna run --scope @design-systems/docs deploy
+          name: Publish Docs
+          command: yarn lerna run --scope @design-systems/docs deploy
 
 workflows:
   version: 2
@@ -195,35 +171,7 @@ workflows:
           filters:
             branches:
               ignore:
-                - master    
-      - integration-ds-storybook:
-          requires:
-            - integration-ds
-          filters:
-            branches:
-              ignore:
-                - master    
-      # - integration-ds-size:
-      #     requires:
-      #       - integration-ds
-      #     filters:
-      #       branches:
-      #         ignore:
-      #           - master                
-      # - integration-ds-test:
-      #     requires:
-      #       - integration-ds
-      #     filters:
-      #       branches:
-      #         ignore:
-      #           - master
-      # - integration-ds-lint:
-      #     requires:
-      #       - integration-ds
-      #     filters:
-      #       branches:
-      #         ignore:
-      #           - master                                
+                - master
       # - publishDocs:
       #     requires:
       #       - release
