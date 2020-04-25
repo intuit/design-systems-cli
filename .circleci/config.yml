@@ -104,20 +104,19 @@ jobs:
           command: git clone https://github.com/design-systems-templates/integration-ds.git && ls -l
       - run:
           name: List Files
-          command: cd integration-ds && ls -l 
-          
-      # - run:
-      #     name: Install Dependencies
-      #     command: cd integration-ds && yarn install
-      # - run:
-      #     name: Build
-      #     command: yarn build
-      # - run:
-      #     name: Build Storybook
-      #     command: yarn build:storybook                
-      # - run:
-      #     name: Size
-      #     command: yarn size --ignore @integration-ds/babel-preset 
+          command: cd integration-ds && ls -l           
+      - run:
+          name: Install Dependencies
+          command: cd integration-ds && yarn install
+      - run:
+          name: Build
+          command: yarn build
+      - run:
+          name: Build Storybook
+          command: yarn build:storybook                
+      - run:
+          name: Size
+          command: yarn size --ignore @integration-ds/babel-preset 
 
   integration-ds-storybook:
     <<: *defaults
