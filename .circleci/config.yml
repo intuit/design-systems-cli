@@ -112,7 +112,7 @@ jobs:
           command: cd integration-ds && yarn build
       - run:
           name: Build Storybook
-          command: yarn build:storybook               
+          command: cd integration-ds && yarn build:storybook               
       - run:
           name: Size
           command: cd integration-ds && yarn size --ignore @integration-ds/babel-preset 
