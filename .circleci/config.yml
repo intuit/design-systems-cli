@@ -112,14 +112,16 @@ jobs:
           command: cd integration-ds && yarn build
 
   integration-ds-storybook:
+    <<: *defaults
     steps:
       - attach_workspace:
           at: ~/integration-ds        
       - run:
           name: Build Storybook
-          command: pwd                
+          command: ls -l                
 
   # integration-ds-size:
+  #   <<: *defaults
   #   steps:
   #     - attach_workspace:
   #         at: ~/integration-ds        
@@ -128,6 +130,7 @@ jobs:
   #         command: cd integration-ds && yarn size --ignore @integration-ds/babel-preset 
           
   # integration-ds-test:
+  #   <<: *defaults
   #   steps:
   #     - attach_workspace:
   #         at: ~/integration-ds        
@@ -136,6 +139,7 @@ jobs:
   #         command: cd integration-ds && yarn test
 
   # integration-ds-lint:
+  #   <<: *defaults
   #   steps:
   #     - attach_workspace:
   #         at: ~/integration-ds        
@@ -143,17 +147,17 @@ jobs:
   #         name: Test
   #         command: cd integration-ds && yarn lint
 
-  publishDocs:
-    <<: *defaults
-    steps:
-      - attach_workspace:
-          at: ~/design-systems-cli
-      - run: mkdir ~/.ssh/ && echo -e "Host github.com\n\tStrictHostKeyChecking no\n" > ~/.ssh/config
-      - run: git config --global user.email "lisowski54@gmail.com"
-      - run: git config --global user.name "Andrew Lisowski"
-      - run:
-          name: Publish Docs
-          command: yarn lerna run --scope @design-systems/docs deploy
+  # publishDocs:
+  #   <<: *defaults
+  #   steps:
+  #     - attach_workspace:
+  #         at: ~/design-systems-cli
+  #     - run: mkdir ~/.ssh/ && echo -e "Host github.com\n\tStrictHostKeyChecking no\n" > ~/.ssh/config
+  #     - run: git config --global user.email "lisowski54@gmail.com"
+  #     - run: git config --global user.name "Andrew Lisowski"
+  #     - run:
+  #         name: Publish Docs
+  #         command: yarn lerna run --scope @design-systems/docs deploy
 
 workflows:
   version: 2
@@ -199,27 +203,27 @@ workflows:
             branches:
               ignore:
                 - master    
-      - integration-ds-size:
-          requires:
-            - integration-ds
-          filters:
-            branches:
-              ignore:
-                - master                
-      - integration-ds-test:
-          requires:
-            - integration-ds
-          filters:
-            branches:
-              ignore:
-                - master
-      - integration-ds-lint:
-          requires:
-            - integration-ds
-          filters:
-            branches:
-              ignore:
-                - master                                
+      # - integration-ds-size:
+      #     requires:
+      #       - integration-ds
+      #     filters:
+      #       branches:
+      #         ignore:
+      #           - master                
+      # - integration-ds-test:
+      #     requires:
+      #       - integration-ds
+      #     filters:
+      #       branches:
+      #         ignore:
+      #           - master
+      # - integration-ds-lint:
+      #     requires:
+      #       - integration-ds
+      #     filters:
+      #       branches:
+      #         ignore:
+      #           - master                                
       # - publishDocs:
       #     requires:
       #       - release
