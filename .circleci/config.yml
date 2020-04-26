@@ -90,14 +90,11 @@ jobs:
       - run: mkdir ~/.ssh/ && echo -e "Host github.com\n\tStrictHostKeyChecking no\n" > ~/.ssh/config
       - run:
           name: Release
-          command: yarn auto shipit --quiet
+          command: VERSION=$(yarn auto shipit --quiet)
 
   integration-ds:
     <<: *defaults
     steps:
-      # - attach_workspace:
-      #     at: ~/integration-ds    
-      # - run: mkdir ~/.ssh/ && echo -e "Host github.com\n\tStrictHostKeyChecking no\n" > ~/.ssh/config
       - run:
           name: Get Integration Design Systems Repo
           command: git clone https://github.com/design-systems-templates/integration-ds.git && ls -l     
@@ -120,7 +117,7 @@ jobs:
           name: Test
           command: cd integration-ds && yarn test
       - run:
-          name: Test
+          name: Lint
           command: cd integration-ds && yarn lint
 
   publishDocs:
