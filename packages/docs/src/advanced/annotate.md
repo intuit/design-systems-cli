@@ -7,7 +7,7 @@ Commands with annoations support:
 - `lint` - Add annotations in JS/TS and CSS for errors and warnings
 - `test` - Add annotations in test files for failed tests
 
-Just use the `--annotation` flag and install the GitHub apps then the commands should create annoations when run in a CI environment.
+Just use the `--annotate` flag and install the GitHub apps then the commands should create annoations when run in a CI environment.
 
 Apps to install:
 
