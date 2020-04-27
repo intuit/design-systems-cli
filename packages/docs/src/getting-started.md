@@ -102,6 +102,5 @@ And modify release step in the workflow to match the following:
 ```yml
 - release:
     requires:
-      - unit-tests
-      - lint
+      - documentation
 ```
