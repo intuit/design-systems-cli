@@ -101,7 +101,7 @@ jobs:
           name: Get Integration Design Systems Repo
           command: |
             echo "VERSION"
-            echo ${VERSION}
+            echo $VERSION
             git clone https://github.com/design-systems-templates/integration-ds.git && ls -l     
       - run:
           name: Install Dependencies
