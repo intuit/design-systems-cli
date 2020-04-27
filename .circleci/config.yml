@@ -90,14 +90,19 @@ jobs:
       - run: mkdir ~/.ssh/ && echo -e "Host github.com\n\tStrictHostKeyChecking no\n" > ~/.ssh/config
       - run:
           name: Release
-          command: VERSION=$(yarn auto shipit --quiet)
+          command:  |
+            echo 'export VERSION=$(yarn auto shipit --quiet)' >> $BASH_ENV
+            source $BASH_ENV          
 
   integration-ds:
     <<: *defaults
     steps:
       - run:
           name: Get Integration Design Systems Repo
-          command: git clone https://github.com/design-systems-templates/integration-ds.git && ls -l     
+          command: |
+            echo "VERSION"
+            echo ${VERSION}
+            git clone https://github.com/design-systems-templates/integration-ds.git && ls -l     
       - run:
           name: Install Dependencies
           command: cd integration-ds && yarn install
