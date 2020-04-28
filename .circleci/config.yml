@@ -100,24 +100,23 @@ jobs:
       - attach_workspace:
           at: ~/design-systems-cli
       - run: mkdir ~/.ssh/ && echo -e "Host github.com\n\tStrictHostKeyChecking no\n" > ~/.ssh/config
-      - run:
-          name: Release
-          command:  |
-            echo 'export VERSION=$(node -v)' >> $BASH_ENV
-            source $BASH_ENV     
-            echo $VERSION
-            echo ${VERSION}            
+      - run: mkdir -p workspace
+      - run: echo "Hello, world!" > workspace/echo-output
+      - persist_to_workspace:
+          root: workspace
+          paths:
+            - echo-output           
 
   integration-ds:
     <<: *defaults
     steps:
+      - attach_workspace:
+          at: ~/design-systems-cli/workspace    
       - run:
           name: Get Integration Design Systems Repo
           command: |
             source $BASH_ENV     
-            echo "VERSION"
-            echo $VERSION
-            echo ${VERSION}
+            echo  ~/design-systems-cli/workspace/echo-output
             git clone https://github.com/design-systems-templates/integration-ds.git && ls -l     
       - run:
           name: Install Dependencies
