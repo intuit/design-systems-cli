@@ -111,7 +111,7 @@ jobs:
   integration-ds:
     <<: *defaults
     environment:
-          VERSION: cat ~/design-systems-cli/cli_version    
+          VERSION: $(cat ~/design-systems-cli/cli_version)    
     steps:
       - attach_workspace:
           at: ~/design-systems-cli    
