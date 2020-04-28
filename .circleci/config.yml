@@ -108,14 +108,14 @@ jobs:
           command: |
             git clone https://github.com/design-systems-templates/integration-ds.git
       - run:
+          name: Install Dependencies
+          command: cd integration-ds && yarn install
+      - run:
           name: Update Canary CLI 
           command: |
             CANARY_VERSION="$(cat ~/design-systems-cli/cli_version)"
             cat ~/design-systems-cli/cli_version
             eval "cd integration-ds && yarn add -W @design-systems/cli@"${CANARY_VERSION}
-      - run:
-          name: Install Dependencies
-          command: cd integration-ds && yarn install
       - run:
           name: Build
           command: cd integration-ds && yarn build
