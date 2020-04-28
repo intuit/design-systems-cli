@@ -116,9 +116,8 @@ jobs:
       - run:
           name: Get Integration Design Systems Repo
           command: |
-            # cat ~/design-systems-cli/cli_version
-            version=$(<cat ~/design-systems-cli/cli_version)
-            echo $(@design-systems/cli"${version}")
+            cat ~/design-systems-cli/cli_version
+            git clone https://github.com/design-systems-templates/integration-ds.git
       - run:
           name: Install Dependencies
           command: cd integration-ds && yarn install
