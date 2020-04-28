@@ -102,6 +102,7 @@ jobs:
       - run: mkdir ~/.ssh/ && echo -e "Host github.com\n\tStrictHostKeyChecking no\n" > ~/.ssh/config
       - run: mkdir -p workspace
       - run: echo "Hello, world!" > workspace/echo-output
+      - run: ls -l
       - persist_to_workspace:
           root: workspace
           paths:
@@ -111,10 +112,11 @@ jobs:
     <<: *defaults
     steps:
       - attach_workspace:
-          at: ~/design-systems-cli    
+          at: ~/design-systems-cli/workspace    
       - run:
           name: Get Integration Design Systems Repo
           command: |
+            ls -l
             cat ~/design-systems-cli/workspace/echo-output
       - run:
           name: Install Dependencies
