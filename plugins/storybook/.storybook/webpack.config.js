@@ -38,7 +38,12 @@ function findBabelRules(config) {
 }
 
 function modifyBabel(config, callback) {
-  findBabelRules(config).forEach(callback);
+  const rules = findBabelRules(config);
+  
+  // Only the first rule is for src files
+  if (rules[0]) {
+    callback(rules[0])
+  }
 }
 
 function addTypescript(config) {
@@ -154,7 +159,6 @@ function addCustomBabelOptions(config) {
     rule.use[0].options.presets = [...defaultPresets, ...presets];
     rule.use[0].options.plugins = [...defaultPlugins, ...plugins];
 
-    // TODO: remove when storybook hits 6.0.0.
     rule.exclude = [/node_modules/];
   });
 }

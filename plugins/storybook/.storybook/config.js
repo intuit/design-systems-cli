@@ -1,4 +1,3 @@
-import React from 'react';
 import { addDecorator, addParameters } from '@storybook/react';
 import { withA11y } from '@storybook/addon-a11y';
 import { withPropsTable } from 'storybook-addon-react-docgen';
