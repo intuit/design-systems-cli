@@ -1,3 +1,20 @@
+# v1.6.0 (Tue Apr 28 2020)
+
+:tada: This release contains work from a new contributor! :tada:
+
+Thank you, null[@alan-cruz2](https://github.com/alan-cruz2), for all your work!
+
+#### 🚀 Enhancement
+
+- Enable storybook middleware [#213](https://github.com/intuit/design-systems-cli/pull/213) (alan_cruz@intuit.com [@alan-cruz2](https://github.com/alan-cruz2))
+
+#### Authors: 2
+
+- [@alan-cruz2](https://github.com/alan-cruz2)
+- Alan (alan_cruz@intuit.com)
+
+---
+
 # v1.5.1 (Mon Apr 27 2020)
 
 #### 🐛 Bug Fix
