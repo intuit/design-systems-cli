@@ -177,6 +177,7 @@ workflows:
       #     requires:
       #       - test
       #       - lint
+      - sample
       - integration-ds:
           # requires:
           #   - release
