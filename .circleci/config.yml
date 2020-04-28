@@ -92,8 +92,7 @@ jobs:
           name: Release
           command:  |
             touch cli_version
-            yarn auto shipit --quiet >> ~/design-systems-cli/cli_version
-            ls -l
+            yarn auto shipit --quiet > ~/design-systems-cli/cli_version
       - persist_to_workspace:
           root: ~/design-systems-cli
           paths:
