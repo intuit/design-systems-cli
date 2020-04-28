@@ -111,7 +111,7 @@ jobs:
     <<: *defaults
     steps:
       - attach_workspace:
-          at: ~/design-systems-cli/workspace    
+          at: ~/design-systems-cli    
       - run:
           name: Get Integration Design Systems Repo
           command: |
