@@ -72,10 +72,10 @@ export default class StorybookPlugin implements Plugin<StorybookArgs> {
           configDir: path.join(__dirname, '../.storybook'),
           ci: 'ci' in args && args.ci
         });
-        
       }
     } catch (e) {
-      this.logger.error(e);
+      this.logger.error('Failed to build storybook');
+      this.logger.trace(e)
       process.exit(1);
     }
   }

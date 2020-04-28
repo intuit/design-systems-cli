@@ -10,6 +10,7 @@ const { getPostCssConfig } = require('@design-systems/build');
 const githubUrlToObject = require('github-url-to-object');
 const FilterWarningsPlugin = require('webpack-filter-warnings-plugin');
 const BABEL_CONFIG = require.resolve('@design-systems/build/babel.config');
+const ForkTsCheckerWebpackPlugin = require('fork-ts-checker-webpack-plugin');
 
 function findBabelRules(config) {
   return config.module.rules.filter(rule => {
@@ -79,6 +80,14 @@ function addTypescript(config) {
       }
     ]
   });
+
+  config.plugins.push(
+    new ForkTsCheckerWebpackPlugin({
+      formatter: 'codeframe',
+      checkSyntacticErrors: true,
+      reportFiles: ['**/*.stories.tsx', '!**/node_modules/**']
+    })
+  );
 }
 
 async function addCss(config) {
