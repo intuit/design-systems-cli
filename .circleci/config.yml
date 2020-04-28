@@ -100,10 +100,11 @@ jobs:
       - attach_workspace:
           at: ~/design-systems-cli
       - run: mkdir ~/.ssh/ && echo -e "Host github.com\n\tStrictHostKeyChecking no\n" > ~/.ssh/config
-      - run: echo "1.5.1-canary.209.4286.0" > workspace/echo-output
+      - run: touch echo-output
+      - run: echo "Hello, world!" > ~/design-systems-cli/echo-output
       - run: ls -l
       - persist_to_workspace:
-          root: workspace
+          root: ~/design-systems-cli
           paths:
             - echo-output           
 
@@ -111,12 +112,11 @@ jobs:
     <<: *defaults
     steps:
       - attach_workspace:
-          at: ~/design-systems-cli/workspace    
+          at: ~/design-systems-cli    
       - run:
           name: Get Integration Design Systems Repo
           command: |
-            ls -l
-            cat ~/design-systems-cli/workspace/echo-output
+            cat ~/design-systems-cli/echo-output
       - run:
           name: Install Dependencies
           command: cd integration-ds && yarn install
