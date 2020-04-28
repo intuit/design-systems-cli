@@ -114,6 +114,7 @@ jobs:
       - run:
           name: Get Integration Design Systems Repo
           command: |
+            source $BASH_ENV     
             echo "VERSION"
             echo $VERSION
             echo ${VERSION}
