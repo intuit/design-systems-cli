@@ -115,7 +115,7 @@ jobs:
       - run:
           name: Get Integration Design Systems Repo
           command: |
-            echo  "cat ~/design-systems-cli/workspace/echo-output"
+            echo  'cat ~/design-systems-cli/workspace/echo-output'
       - run:
           name: Install Dependencies
           command: cd integration-ds && yarn install
