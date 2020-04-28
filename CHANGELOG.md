@@ -1,3 +1,28 @@
+# v1.5.1 (Mon Apr 27 2020)
+
+#### 🐛 Bug Fix
+
+- `@design-systems/storybook`
+  - Update only desired babel config [#212](https://github.com/intuit/design-systems-cli/pull/212) ([@hipstersmoothie](https://github.com/hipstersmoothie))
+
+#### 🏠 Internal
+
+- `@design-systems/lint`
+  - refactor: organizing code [#205](https://github.com/intuit/design-systems-cli/pull/205) ([@vasikarla](https://github.com/vasikarla))
+
+#### 📝 Documentation
+
+- docs: update getting started canary release guide [#210](https://github.com/intuit/design-systems-cli/pull/210) ([@orther](https://github.com/orther))
+- docs: fix typo in annotate.md [#211](https://github.com/intuit/design-systems-cli/pull/211) ([@orther](https://github.com/orther))
+
+#### Authors: 3
+
+- Andrew Lisowski ([@hipstersmoothie](https://github.com/hipstersmoothie))
+- Brandon Orther ([@orther](https://github.com/orther))
+- Raj Vasikarla ([@vasikarla](https://github.com/vasikarla))
+
+---
+
 # v1.5.0 (Tue Apr 21 2020)
 
 #### 🚀 Enhancement

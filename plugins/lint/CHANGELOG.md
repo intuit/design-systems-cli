@@ -1,3 +1,15 @@
+# v1.5.1 (Mon Apr 27 2020)
+
+#### 🏠 Internal
+
+- refactor: organizing code [#205](https://github.com/intuit/design-systems-cli/pull/205) ([@vasikarla](https://github.com/vasikarla))
+
+#### Authors: 1
+
+- Raj Vasikarla ([@vasikarla](https://github.com/vasikarla))
+
+---
+
 # v1.4.7 (Tue Mar 24 2020)
 
 :tada: This release contains work from a new contributor! :tada:

@@ -1,3 +1,15 @@
+# v1.5.1 (Mon Apr 27 2020)
+
+#### 🐛 Bug Fix
+
+- Update only desired babel config [#212](https://github.com/intuit/design-systems-cli/pull/212) ([@hipstersmoothie](https://github.com/hipstersmoothie))
+
+#### Authors: 1
+
+- Andrew Lisowski ([@hipstersmoothie](https://github.com/hipstersmoothie))
+
+---
+
 # v1.5.0 (Tue Apr 21 2020)
 
 #### 🚀 Enhancement
