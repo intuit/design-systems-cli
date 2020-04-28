@@ -181,6 +181,8 @@ workflows:
       - integration-ds:
           # requires:
           #   - release
+          requires:
+            - sample
           filters:
             branches:
               ignore:
