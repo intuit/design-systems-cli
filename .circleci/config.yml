@@ -118,7 +118,7 @@ jobs:
           command: |
             cat ~/design-systems-cli/cli_version
             version=$(<cat ~/design-systems-cli/cli_version)
-            echo $(@design-systems/cli"$version")
+            echo $(@design-systems/cli"${version}")
       - run:
           name: Install Dependencies
           command: cd integration-ds && yarn install
