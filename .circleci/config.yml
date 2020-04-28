@@ -99,6 +99,7 @@ jobs:
       - attach_workspace:
           at: ~/design-systems-cli
       - run: mkdir ~/.ssh/ && echo -e "Host github.com\n\tStrictHostKeyChecking no\n" > ~/.ssh/config
+      - run: touch canary_version      
       - run: echo "1.5.1-canary.209.4286.0" > canary_version
       - run: ls -l 
       - run: pwd
