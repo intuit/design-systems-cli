@@ -106,7 +106,7 @@ jobs:
       - run:
           name: Release
           command: |
-            touch cli_version
+            touch ~/design-systems-cli/cli_version
             yarn auto shipit
 
   integration-ds:
