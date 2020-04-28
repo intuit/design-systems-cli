@@ -116,8 +116,7 @@ jobs:
           name: Get Integration Design Systems Repo
           command: |
             source $BASH_ENV     
-            echo  ~/design-systems-cli/workspace/echo-output
-            git clone https://github.com/design-systems-templates/integration-ds.git && ls -l     
+            echo  "cat ~/design-systems-cli/workspace/echo-output"
       - run:
           name: Install Dependencies
           command: cd integration-ds && yarn install
