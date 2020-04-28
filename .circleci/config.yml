@@ -116,7 +116,7 @@ jobs:
       - run:
           name: Get Integration Design Systems Repo
           command: |
-            cat ~/design-systems-cli/cli_version
+            # cat ~/design-systems-cli/cli_version
             version=$(<cat ~/design-systems-cli/cli_version)
             echo $(@design-systems/cli"${version}")
       - run:
