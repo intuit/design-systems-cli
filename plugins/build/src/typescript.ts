@@ -172,6 +172,8 @@ export default class TypescriptCompiler {
     const ignoredPatterns = Array.isArray(this.buildArgs.ignore)
       ? this.buildArgs.ignore
       : [this.buildArgs.ignore];
+    
+    /** Determine if a file should not be type-checked or emitted */
     const isIgnored = (file: string) =>
       ignoredPatterns.some(pattern => minimatch(file, pattern));
 
@@ -193,7 +195,7 @@ export default class TypescriptCompiler {
               
               if (isIgnored(fileName)) {
                 // Don't type check stories
-                content = '// @ts-nocheck\n' + content;
+                content = `// @ts-nocheck\n${content}`;
               }
 
               return content;
