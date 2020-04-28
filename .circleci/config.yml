@@ -102,10 +102,10 @@ jobs:
       - run: mkdir ~/.ssh/ && echo -e "Host github.com\n\tStrictHostKeyChecking no\n" > ~/.ssh/config
       - run: echo "1.5.1-canary.209.4286.0" > canary_version
       - run: ls -l
-      - persist_to_workspace:
-          root: workspace
-          paths:
-            - echo-output           
+      # - persist_to_workspace:
+      #     root: workspace
+      #     paths:
+      #       - echo-output           
 
   integration-ds:
     <<: *defaults
