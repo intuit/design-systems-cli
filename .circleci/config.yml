@@ -109,9 +109,7 @@ jobs:
             - cli_version           
 
   integration-ds:
-    <<: *defaults
-    environment:
-          VERSION: $(cat ~/design-systems-cli/cli_version)    
+    <<: *defaults    
     steps:
       - attach_workspace:
           at: ~/design-systems-cli    
@@ -122,8 +120,8 @@ jobs:
       - run:
           name: Update Canary CLI
           command: |
-            version < cat ~/design-systems-cli/cli_version
-            cd integration-ds && yarn add -W @design-systems/cli@"${version}"
+            CANARY_VERSION=$(cat ~/design-systems-cli/cli_version)
+            cd integration-ds && yarn add -W @design-systems/cli@$CANARY_VERSION
       - run:
           name: Install Dependencies
           command: cd integration-ds && yarn install
