@@ -121,8 +121,9 @@ jobs:
           name: Update Canary CLI
           command: |
             CANARY_VERSION="$(cat ~/design-systems-cli/cli_version)"
+            UPDATE = "cd integration-ds && yarn add -W @design-systems/cli@{CANARY_VERSION}"
             echo $CANARY_VERSION
-            cd integration-ds && yarn add -W @design-systems/cli@ && $CANARY_VERSION
+            cd integration-ds && $UPDATE
       - run:
           name: Install Dependencies
           command: cd integration-ds && yarn install
