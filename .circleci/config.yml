@@ -115,7 +115,6 @@ jobs:
       - run:
           name: Get Integration Design Systems Repo
           command: |
-            source $BASH_ENV     
             echo  "cat ~/design-systems-cli/workspace/echo-output"
       - run:
           name: Install Dependencies
