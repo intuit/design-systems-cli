@@ -10,6 +10,7 @@ import ts from 'typescript';
 import postcss from 'postcss';
 import postcssIcssSelectors from 'postcss-icss-selectors';
 import { extractICSS } from 'icss-utils';
+import minimatch from 'minimatch';
 
 import { BuildArgs } from '.';
 import { getPostCssConfigSync } from './postcss';
@@ -168,10 +169,37 @@ export default class TypescriptCompiler {
 
     this.logger.trace('Generating Types...');
 
+    const ignoredPatterns = Array.isArray(this.buildArgs.ignore)
+      ? this.buildArgs.ignore
+      : [this.buildArgs.ignore];
+    const isIgnored = (file: string) =>
+      ignoredPatterns.some(pattern => minimatch(file, pattern));
+
     try {
       const diagnostics: ts.Diagnostic[] = [];
       const host = ts.createSolutionBuilderHost(
-        undefined,
+        {
+          ...ts.sys,
+          writeFile(fileName, content) {
+            if (isIgnored(fileName)) {
+              return;
+            }
+
+            fs.writeFileSync(fileName, content)
+          },
+          readFile(fileName, encoding = 'utf8') {
+            if (fs.existsSync(fileName)) {
+              let content = fs.readFileSync(fileName, encoding);
+              
+              if (isIgnored(fileName)) {
+                // Don't type check stories
+                content = '// @ts-nocheck\n' + content;
+              }
+
+              return content;
+            }
+          }
+        },
         undefined,
         d => diagnostics.push(d),
         d => this.logger.trace(d.messageText)
@@ -190,7 +218,7 @@ export default class TypescriptCompiler {
         outDir: this.buildArgs.outputDirectory || '',
         incremental: true,
         declarationMap: true,
-        emitDeclarationOnly: true
+        emitDeclarationOnly: true,
       });
 
       const postcssConfig = getPostCssConfigSync({
