@@ -116,14 +116,15 @@ jobs:
       - run:
           name: Get Integration Design Systems Repo
           command: |
-            cat ~/design-systems-cli/cli_version
             git clone https://github.com/design-systems-templates/integration-ds.git
+      - run:
+          name: Update Canary CLI
+          command: |
+            version = cat ~/design-systems-cli/cli_version
+            cd integration-ds && yarn add -W @design-systems/cli@"$version"
       - run:
           name: Install Dependencies
           command: cd integration-ds && yarn install
-      - run:
-          name: Update Canary CLI
-          command: cd integration-ds && yarn add -W @design-systems/cli@${cat ~/design-systems-cli/cli_version}
       - run:
           name: Build
           command: cd integration-ds && yarn build
