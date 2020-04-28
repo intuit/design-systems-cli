@@ -1,4 +1,5 @@
 import { CliCommand } from '@design-systems/plugin';
+import dedent from 'dedent';
 
 const command: CliCommand = {
   name: 'dev',
