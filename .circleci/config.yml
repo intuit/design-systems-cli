@@ -37,76 +37,66 @@ aliases:
     command: yarn build
 
 jobs:
-  # install:
-  #   <<: *defaults
-  #   steps:
-  #     - checkout
-  #     - restore_cache: *restore-cache
-  #     - run: *yarn
-  #     - save_cache: *save-cache
-  #     - persist_to_workspace:
-  #         root: .
-  #         paths:
-  #           - .
+  install:
+    <<: *defaults
+    steps:
+      - checkout
+      - restore_cache: *restore-cache
+      - run: *yarn
+      - save_cache: *save-cache
+      - persist_to_workspace:
+          root: .
+          paths:
+            - .
 
-  # build:
-  #   <<: *defaults
-  #   steps:
-  #     - attach_workspace:
-  #         at: ~/design-systems-cli
-  #     - run: *build
-  #     - persist_to_workspace:
-  #         root: .
-  #         paths:
-  #           - .
-  # lint:
-  #   <<: *defaults
-  #   steps:
-  #     - attach_workspace:
-  #         at: ~/design-systems-cli
-  #     - run: *lint
+  build:
+    <<: *defaults
+    steps:
+      - attach_workspace:
+          at: ~/design-systems-cli
+      - run: *build
+      - persist_to_workspace:
+          root: .
+          paths:
+            - .
+  lint:
+    <<: *defaults
+    steps:
+      - attach_workspace:
+          at: ~/design-systems-cli
+      - run: *lint
 
-  # test:
-  #   <<: *defaults
-  #   steps:
-  #     - attach_workspace:
-  #         at: ~/design-systems-cli
-  #     - run: *test
+  test:
+    <<: *defaults
+    steps:
+      - attach_workspace:
+          at: ~/design-systems-cli
+      - run: *test
 
-  # pr-check:
-  #   <<: *defaults
-  #   steps:
-  #     - attach_workspace:
-  #         at: ~/design-systems-cli
-  #     - run:
-  #         name: Check PR for semantic version label
-  #         command: yarn auto pr-check --pr $CHANGE_ID --url $CIRCLE_BUILD_URL
+  pr-check:
+    <<: *defaults
+    steps:
+      - attach_workspace:
+          at: ~/design-systems-cli
+      - run:
+          name: Check PR for semantic version label
+          command: yarn auto pr-check --pr $CHANGE_ID --url $CIRCLE_BUILD_URL
 
-  # release:
-  #   <<: *defaults
-  #   steps:
-  #     - attach_workspace:
-  #         at: ~/design-systems-cli
-  #     - run: mkdir ~/.ssh/ && echo -e "Host github.com\n\tStrictHostKeyChecking no\n" > ~/.ssh/config
-  #     - run:
-  #         name: Release
-  #         command:  |
-  #           echo 'export VERSION=$(yarn auto shipit --quiet)' >> $BASH_ENV
-  #           source $BASH_ENV          
-
-  sample:
+  release:
     <<: *defaults
     steps:
       - attach_workspace:
           at: ~/design-systems-cli
       - run: mkdir ~/.ssh/ && echo -e "Host github.com\n\tStrictHostKeyChecking no\n" > ~/.ssh/config
-      - run: touch cli_version
-      - run: echo "1.5.1-canary.209.4286.0" > ~/design-systems-cli/cli_version
-      - run: ls -l
+      - run:
+          name: Release
+          command:  |
+            touch cli_version
+            yarn auto shipit --quiet > ~/design-systems-cli/cli_version
       - persist_to_workspace:
           root: ~/design-systems-cli
           paths:
-            - cli_version           
+            - cli_version                                 
 
   integration-ds:
     <<: *defaults    
@@ -122,78 +112,75 @@ jobs:
           command: |
             CANARY_VERSION="$(cat ~/design-systems-cli/cli_version)"
             eval "cd integration-ds && yarn add -W @design-systems/cli@"${CANARY_VERSION}
+      - run:
+          name: Install Dependencies
+          command: cd integration-ds && yarn install
+      - run:
+          name: Build
+          command: cd integration-ds && yarn build
+      - run:
+          name: Build Storybook
+          command: cd integration-ds && yarn build:storybook               
+      - run:
+          name: Size
+          command: cd integration-ds && yarn size --ignore @integration-ds/babel-preset 
+      - run:
+          name: Test
+          command: cd integration-ds && yarn test
+      - run:
+          name: Lint
+          command: cd integration-ds && yarn lint
 
-      # - run:
-      #     name: Install Dependencies
-      #     command: cd integration-ds && yarn install
-      # - run:
-      #     name: Build
-      #     command: cd integration-ds && yarn build
-      # - run:
-      #     name: Build Storybook
-      #     command: cd integration-ds && yarn build:storybook               
-      # - run:
-      #     name: Size
-      #     command: cd integration-ds && yarn size --ignore @integration-ds/babel-preset 
-      # - run:
-      #     name: Test
-      #     command: cd integration-ds && yarn test
-      # - run:
-      #     name: Lint
-      #     command: cd integration-ds && yarn lint
-
-  # publishDocs:
-  #   <<: *defaults
-  #   steps:
-  #     - attach_workspace:
-  #         at: ~/design-systems-cli
-  #     - run: mkdir ~/.ssh/ && echo -e "Host github.com\n\tStrictHostKeyChecking no\n" > ~/.ssh/config
-  #     - run: git config --global user.email "lisowski54@gmail.com"
-  #     - run: git config --global user.name "Andrew Lisowski"
-  #     - run:
-  #         name: Publish Docs
-  #         command: yarn lerna run --scope @design-systems/docs deploy
+  publishDocs:
+    <<: *defaults
+    steps:
+      - attach_workspace:
+          at: ~/design-systems-cli
+      - run: mkdir ~/.ssh/ && echo -e "Host github.com\n\tStrictHostKeyChecking no\n" > ~/.ssh/config
+      - run: git config --global user.email "lisowski54@gmail.com"
+      - run: git config --global user.name "Andrew Lisowski"
+      - run:
+          name: Publish Docs
+          command: yarn lerna run --scope @design-systems/docs deploy
 
 workflows:
   version: 2
   build_and_test:
     jobs:
-      # - install
-      # - build:
-      #     requires:
-      #       - install
-      # - lint:
-      #     requires:
-      #       - build
-      # - test:
-      #     requires:
-      #       - build
-      # - pr-check:
-      #     requires:
-      #       - build
-      #     filters:
-      #       branches:
-      #         ignore:
-      #           - master
-      # - release:
-      #     requires:
-      #       - test
-      #       - lint
+      - install
+      - build:
+          requires:
+            - install
+      - lint:
+          requires:
+            - build
+      - test:
+          requires:
+            - build
+      - pr-check:
+          requires:
+            - build
+          filters:
+            branches:
+              ignore:
+                - master
+      - release:
+          requires:
+            - test
+            - lint
       - sample
       - integration-ds:
-          # requires:
-          #   - release
           requires:
-            - sample
+            - release
           filters:
             branches:
               ignore:
                 - master
                 - renovate.*
-      # - publishDocs:
-      #     requires:
-      #       - release
-      #     filters:
-      #       branches:
-      #         only:
-      #           - master
+      - publishDocs:
+          requires:
+            - release
+          filters:
+            branches:
+              only:
+                - master
