@@ -82,6 +82,21 @@ jobs:
           name: Check PR for semantic version label
           command: yarn auto pr-check --pr $CHANGE_ID --url $CIRCLE_BUILD_URL
 
+  # release:
+  #   <<: *defaults
+  #   steps:
+  #     - attach_workspace:
+  #         at: ~/design-systems-cli
+  #     - run: mkdir ~/.ssh/ && echo -e "Host github.com\n\tStrictHostKeyChecking no\n" > ~/.ssh/config
+  #     - run:
+  #         name: Release
+  #         command:  |
+  #           touch cli_version
+  #           yarn auto shipit
+  #     - persist_to_workspace:
+  #         root: ~/design-systems-cli
+  #         paths:
+  #           - cli_version                                 
   release:
     <<: *defaults
     steps:
@@ -90,14 +105,8 @@ jobs:
       - run: mkdir ~/.ssh/ && echo -e "Host github.com\n\tStrictHostKeyChecking no\n" > ~/.ssh/config
       - run:
           name: Release
-          command:  |
-            touch cli_version
-            yarn auto shipit
-      - persist_to_workspace:
-          root: ~/design-systems-cli
-          paths:
-            - cli_version                                 
-
+          command: yarn auto shipit
+          
   integration-ds:
     <<: *defaults    
     steps:
