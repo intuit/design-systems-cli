@@ -93,7 +93,7 @@ jobs:
           command:  |
             touch cli_version
             yarn auto shipit --quiet >> ~/design-systems-cli/cli_version
-            cat ~/design-systems-cli/cli_version
+            ls -l
       - persist_to_workspace:
           root: ~/design-systems-cli
           paths:
