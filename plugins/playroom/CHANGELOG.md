@@ -1,3 +1,15 @@
+# v1.7.0 (Wed Apr 29 2020)
+
+#### 🚀 Enhancement
+
+- Move story/snippet/test type-checking to respective plugins [#214](https://github.com/intuit/design-systems-cli/pull/214) ([@hipstersmoothie](https://github.com/hipstersmoothie))
+
+#### Authors: 1
+
+- Andrew Lisowski ([@hipstersmoothie](https://github.com/hipstersmoothie))
+
+---
+
 # v1.4.8 (Wed Mar 25 2020)
 
 #### 🐛 Bug Fix
