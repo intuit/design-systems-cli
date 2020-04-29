@@ -48,7 +48,9 @@ const createDepsSet = (
 
   const subDeps = [
     ...filterDeps(monorepo, packageJson, 'dependencies'),
-    ...filterDeps(monorepo, packageJson, 'devDependencies')
+    ...filterDeps(monorepo, packageJson, 'devDependencies'),
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    ...filterDeps(monorepo, packageJson, 'storyDependencies' as any)
   ];
 
   subDeps.forEach(dep => {

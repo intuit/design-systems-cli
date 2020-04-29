@@ -3,6 +3,7 @@
 // @ts-ignore
 import babelConfig from '@design-systems/build/babel.config';
 import { loadUserWebpackConfig } from '@design-systems/cli-utils';
+import ForkTsCheckerWebpackPlugin from 'fork-ts-checker-webpack-plugin';
 
 const config = babelConfig({ env: () => '' });
 
@@ -58,6 +59,14 @@ export default async ({
       }
     },
     'playroom'
+  );
+
+  config.plugins.push(
+    new ForkTsCheckerWebpackPlugin({
+      formatter: 'codeframe',
+      checkSyntacticErrors: true,
+      reportFiles: ['**/*.snippet.tsx', '!**/node_modules/**']
+    })
   );
 
   return {

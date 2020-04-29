@@ -22,6 +22,7 @@
     "@design-systems/cli-utils": "link:../../packages/cli-utils",
     "@design-systems/plugin": "link:../../packages/plugin",
     "chokidar": "3.3.1",
+    "dedent": "0.7.0",
     "find-package-json": "1.2.0",
     "resolve-cwd": "3.0.0",
     "tslib": "1.11.1"
