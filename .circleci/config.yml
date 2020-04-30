@@ -111,19 +111,19 @@ jobs:
             pwd
             ls -l
             ./packages/cli/bin/ds.js --version
-            # cd integration-ds && ./design-systems-cli/packages/cli/bin/ds.js build 
+            cd integration-ds && ./packages/cli/bin/ds.js build 
       - run:
           name: Build Storybook
-          command: cd integration-ds && ./../design-systems-cli/packages/cli/bin/ds.js storybook build               
+          command: cd integration-ds && ./packages/cli/bin/ds.js storybook build               
       - run:
           name: Size
-          command: cd integration-ds && ./../design-systems-cli/packages/cli/bin/ds.js size --ignore @integration-ds/babel-preset 
+          command: cd integration-ds && ./packages/cli/bin/ds.js size --ignore @integration-ds/babel-preset 
       - run:
           name: Test
-          command: cd integration-ds && ./../design-systems-cli/packages/cli/bin/ds.js test
+          command: cd integration-ds && ./packages/cli/bin/ds.js test
       - run:
           name: Lint
-          command: cd integration-ds && ./../design-systems-cli/packages/cli/bin/ds.js lint
+          command: cd integration-ds && ./packages/cli/bin/ds.js lint
 
   publishDocs:
     <<: *defaults
