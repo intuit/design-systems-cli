@@ -25,7 +25,9 @@ aliases:
   # Yarn commands
   - &yarn
     name: Install Dependencies
-    command: yarn install --frozen-lockfile --non-interactive
+    command: |
+      yarn install --frozen-lockfile --non-interactive
+      ls -l
   - &lint
     name: Lint
     command: yarn lint
@@ -43,8 +45,6 @@ jobs:
       - checkout
       - restore_cache: *restore-cache
       - run: *yarn
-      - run: |
-        ls -l      
       - save_cache: *save-cache
       - persist_to_workspace:
           root: .
@@ -155,7 +155,6 @@ workflows:
       - test:
           requires:
             - build
-      
       - pr-check:
           requires:
             - build
