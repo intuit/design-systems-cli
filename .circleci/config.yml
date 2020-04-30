@@ -25,11 +25,7 @@ aliases:
   # Yarn commands
   - &yarn
     name: Install Dependencies
-    command: |
-      pwd
-      yarn install --frozen-lockfile --non-interactive
-      ./packages/cli/bin/ds.js --version
-      ls -l
+    command: yarn install --frozen-lockfile --non-interactive
   - &lint
     name: Lint
     command: yarn lint
@@ -38,7 +34,12 @@ aliases:
     command: yarn test
   - &build
     name: Build
-    command: yarn build
+    command: |
+      yarn build
+      pwd
+      yarn install --frozen-lockfile --non-interactive
+      ./packages/cli/bin/ds.js --version
+      ls -l
 
 jobs:
   install:
@@ -153,7 +154,6 @@ workflows:
       - lint:
           requires:
             - build
-      
       - test:
           requires:
             - build
