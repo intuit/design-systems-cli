@@ -178,3 +178,4 @@ workflows:
             branches:
               only:
                 - master
+                
