@@ -155,7 +155,7 @@ workflows:
           requires:
             - install
 
-      - test
+      - test        
 
       - lint:
           requires:
