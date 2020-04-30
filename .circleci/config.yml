@@ -53,7 +53,7 @@ jobs:
           paths:
             - .
 
-            build:
+    build:
     <<: *defaults
     steps:
       - attach_workspace:
