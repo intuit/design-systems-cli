@@ -151,11 +151,12 @@ workflows:
     jobs:
       - install
 
+      - test        
+
       - build:
           requires:
             - install
 
-      - test        
 
       - lint:
           requires:
