@@ -92,7 +92,6 @@ jobs:
           name: Release
           command: |
             yarn auto shipit
-            yarn link
 
   integration-ds:
     <<: *defaults
@@ -106,15 +105,16 @@ jobs:
       - run:
           name: Install Dependencies
           command: cd integration-ds && yarn install
-      - run:
-          name: Update Canary CLI 
-          command: |
-            cd integration-ds
-            yarn link "@design-systems/monorepo"
+      # - run:
+      #     name: Update Canary CLI 
+      #     command: |
+      #       cd integration-ds
+      #       yarn link "@design-systems/monorepo"
       - run:
           name: Build
           command: |
             cd integration-ds 
+            ./../design-systems-cli/packages/cli/bin/ds.js version
             ./../design-systems-cli/packages/cli/bin/ds.js build 
       - run:
           name: Build Storybook
