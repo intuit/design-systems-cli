@@ -59,7 +59,7 @@ jobs:
           root: .
           paths:
             - .
-            
+
   lint:
     <<: *defaults
     steps:
@@ -141,15 +141,19 @@ workflows:
   build_and_test:
     jobs:
       - install
+
       - build:
           requires:
             - install
+      
       - lint:
           requires:
             - build
+      
       - test:
           requires:
             - build
+      
       - pr-check:
           requires:
             - build
@@ -157,6 +161,7 @@ workflows:
             branches:
               ignore:
                 - master
+      
       - release:
           requires:
             - test
