@@ -110,7 +110,7 @@ jobs:
           command: |
             pwd
             ls -l
-            ./design-systems-cli/packages/cli/bin/ds.js --version
+            ./packages/cli/bin/ds.js --version
             # cd integration-ds && ./design-systems-cli/packages/cli/bin/ds.js build 
       - run:
           name: Build Storybook
