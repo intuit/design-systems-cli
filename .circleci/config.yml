@@ -154,8 +154,8 @@ workflows:
       - build:
           requires:
             - install
-            
-      - test:
+
+      - test
 
       - lint:
           requires:
