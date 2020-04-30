@@ -119,7 +119,7 @@ jobs:
           command: cd integration-ds && ./../packages/cli/bin/ds.js test
       - run:
           name: Lint
-          command: cd integration-ds && ./../packages/cli/bin/ds.js lint
+          command: cd integration-ds && ./../packages/cli/bin/ds.js lint 
 
   publishDocs:
     <<: *defaults
