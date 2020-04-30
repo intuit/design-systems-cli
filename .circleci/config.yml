@@ -90,7 +90,7 @@ jobs:
       - run: mkdir ~/.ssh/ && echo -e "Host github.com\n\tStrictHostKeyChecking no\n" > ~/.ssh/config
       - run:
           name: Release
-          command:  |
+          command:
             yarn auto shipit
       - persist_to_workspace:
           root: ~/design-systems-cli
@@ -101,14 +101,14 @@ jobs:
           at: ~/design-systems-cli    
       - run:
           name: Get Integration Design Systems Repo
-          command: |
+          command:
             git clone https://github.com/design-systems-templates/integration-ds.git
       - run:
           name: Install Dependencies
           command: cd integration-ds && yarn install
       - run:
           name: Update Canary CLI 
-          command: |
+          command:
             cd integration-ds && yarn add -W @design-systems/cli@1.7.1-canary.215.4530.0
       - run:
           name: Build
