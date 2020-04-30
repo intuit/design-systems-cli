@@ -49,7 +49,7 @@ jobs:
           paths:
             - .
 
-    build:
+  build:
     <<: *defaults
     steps:
       - attach_workspace:
@@ -123,6 +123,7 @@ jobs:
       - run:
           name: Lint
           command: cd integration-ds && ./../design-systems-cli/packages/cli/bin/ds.js lint
+
   publishDocs:
     <<: *defaults
     steps:
@@ -144,7 +145,7 @@ workflows:
       - build:
           requires:
             - install
-
+      
       - lint:
           requires:
             - build
@@ -179,3 +180,4 @@ workflows:
             branches:
               only:
                 - master
+                
