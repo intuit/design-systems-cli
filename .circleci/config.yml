@@ -48,7 +48,7 @@ jobs:
           root: .
           paths:
             - .
-  test:
+  test-raj:
     <<: *defaults
     steps:
       - attach_workspace:
@@ -151,7 +151,7 @@ workflows:
     jobs:
       - install
 
-      - test        
+      - test-raj        
 
       - build:
           requires:
