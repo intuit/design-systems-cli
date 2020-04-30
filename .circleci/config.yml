@@ -114,7 +114,6 @@ jobs:
           name: Build
           command: |
             cd integration-ds 
-            ./../design-systems-cli/packages/cli/bin/ds.js version
             ./../design-systems-cli/packages/cli/bin/ds.js build 
       - run:
           name: Build Storybook
