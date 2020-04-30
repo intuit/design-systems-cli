@@ -34,12 +34,7 @@ aliases:
     command: yarn test
   - &build
     name: Build
-    command: |
-      yarn build
-      pwd
-      yarn install --frozen-lockfile --non-interactive
-      ./packages/cli/bin/ds.js --version
-      ls -l
+    command: yarn build
 
 jobs:
   install:
@@ -113,9 +108,9 @@ jobs:
       - run:
           name: Build with Canary Version (local mapping)
           command: |
-            cd integration-ds 
-            ./../design-systems-cli/packages/cli/bin/ds.js --version
-            ./../design-systems-cli/packages/cli/bin/ds.js build 
+            ls -l
+            ./design-systems-cli/packages/cli/bin/ds.js --version
+            # cd integration-ds && ./design-systems-cli/packages/cli/bin/ds.js build 
       - run:
           name: Build Storybook
           command: cd integration-ds && ./../design-systems-cli/packages/cli/bin/ds.js storybook build               
