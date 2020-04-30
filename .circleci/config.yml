@@ -90,10 +90,12 @@ jobs:
       - run: mkdir ~/.ssh/ && echo -e "Host github.com\n\tStrictHostKeyChecking no\n" > ~/.ssh/config
       - run:
           name: Release
-          command:
+          command: |
             yarn auto shipit
+            yarn link
       - persist_to_workspace:
           root: ~/design-systems-cli
+
   integration-ds:
     <<: *defaults    
     steps:
@@ -109,7 +111,7 @@ jobs:
       - run:
           name: Update Canary CLI 
           command:
-            cd integration-ds && yarn add -W @design-systems/cli@1.7.1-canary.215.4530.0
+            cd integration-ds && yarn link "@design-systems/monorepo"
       - run:
           name: Build
           command: cd integration-ds && yarn build
