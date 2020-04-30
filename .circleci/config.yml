@@ -59,6 +59,7 @@ jobs:
           root: .
           paths:
             - .
+            
   lint:
     <<: *defaults
     steps:
