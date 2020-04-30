@@ -108,6 +108,7 @@ jobs:
       - run:
           name: Build with Canary Version (local mapping)
           command: |
+            pwd
             ls -l
             ./design-systems-cli/packages/cli/bin/ds.js --version
             # cd integration-ds && ./design-systems-cli/packages/cli/bin/ds.js build 
