@@ -28,6 +28,7 @@ aliases:
     command: |
       pwd
       yarn install --frozen-lockfile --non-interactive
+      ./packages/cli/bin/ds.js --version
       ls -l
   - &lint
     name: Lint
