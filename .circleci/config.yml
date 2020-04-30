@@ -105,29 +105,24 @@ jobs:
       - run:
           name: Install Dependencies
           command: cd integration-ds && yarn install
-      # - run:
-      #     name: Update Canary CLI 
-      #     command: |
-      #       cd integration-ds
-      #       yarn link "@design-systems/monorepo"
       - run:
-          name: Build
+          name: Build with Canary Version (local mapping)
           command: |
             cd integration-ds 
             ./../design-systems-cli/packages/cli/bin/ds.js --version
             ./../design-systems-cli/packages/cli/bin/ds.js build 
       - run:
           name: Build Storybook
-          command: cd integration-ds && yarn build:storybook               
+          command: cd integration-ds && ./../design-systems-cli/packages/cli/bin/ds.js storybook build               
       - run:
           name: Size
-          command: cd integration-ds && yarn size --ignore @integration-ds/babel-preset 
+          command: cd integration-ds && ./../design-systems-cli/packages/cli/bin/ds.js size --ignore @integration-ds/babel-preset 
       - run:
           name: Test
-          command: cd integration-ds && yarn test
+          command: cd integration-ds && ./../design-systems-cli/packages/cli/bin/ds.js test
       - run:
           name: Lint
-          command: cd integration-ds && yarn lint
+          command: cd integration-ds && ./../design-systems-cli/packages/cli/bin/ds.js lint
 
   publishDocs:
     <<: *defaults
