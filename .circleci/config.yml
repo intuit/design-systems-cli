@@ -48,6 +48,16 @@ jobs:
           root: .
           paths:
             - .
+  test:
+    <<: *defaults
+    steps:
+      - attach_workspace:
+          at: ~/design-systems-cli
+      - run:
+          name: Test
+          command: |
+            ls -l
+
 
   build:
     <<: *defaults
@@ -144,7 +154,9 @@ workflows:
       - build:
           requires:
             - install
-      
+            
+      - test:
+
       - lint:
           requires:
             - build
