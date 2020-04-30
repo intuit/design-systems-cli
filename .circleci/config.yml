@@ -27,7 +27,7 @@ aliases:
     name: Install Dependencies
     command: |
       yarn install --frozen-lockfile --non-interactive
-      ./../design-systems-cli/packages/cli/bin/ds.js --version
+      pwd
       ls -l
   - &lint
     name: Lint
