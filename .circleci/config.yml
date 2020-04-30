@@ -43,23 +43,17 @@ jobs:
       - checkout
       - restore_cache: *restore-cache
       - run: *yarn
+      - run:
+          name: Test
+          command: |
+            ls -l      
       - save_cache: *save-cache
       - persist_to_workspace:
           root: .
           paths:
             - .
-  test-raj:
-    <<: *defaults
-    steps:
-      - attach_workspace:
-          at: ~/design-systems-cli
-      - run:
-          name: Test
-          command: |
-            ls -l
 
-
-  build:
+            build:
     <<: *defaults
     steps:
       - attach_workspace:
@@ -151,12 +145,9 @@ workflows:
     jobs:
       - install
 
-      - test-raj        
-
       - build:
           requires:
             - install
-
 
       - lint:
           requires:
