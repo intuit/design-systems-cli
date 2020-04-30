@@ -59,7 +59,6 @@ jobs:
           root: .
           paths:
             - .
-
   lint:
     <<: *defaults
     steps:
@@ -91,7 +90,41 @@ jobs:
       - run: mkdir ~/.ssh/ && echo -e "Host github.com\n\tStrictHostKeyChecking no\n" > ~/.ssh/config
       - run:
           name: Release
-          command: yarn auto shipit
+          command:  |
+            yarn auto shipit
+      - persist_to_workspace:
+          root: ~/design-systems-cli
+  integration-ds:
+    <<: *defaults    
+    steps:
+      - attach_workspace:
+          at: ~/design-systems-cli    
+      - run:
+          name: Get Integration Design Systems Repo
+          command: |
+            git clone https://github.com/design-systems-templates/integration-ds.git
+      - run:
+          name: Install Dependencies
+          command: cd integration-ds && yarn install
+      - run:
+          name: Update Canary CLI 
+          command: |
+            cd integration-ds && yarn add -W @design-systems/cli@1.7.1-canary.215.4530.0
+      - run:
+          name: Build
+          command: cd integration-ds && yarn build
+      - run:
+          name: Build Storybook
+          command: cd integration-ds && yarn build:storybook               
+      - run:
+          name: Size
+          command: cd integration-ds && yarn size --ignore @integration-ds/babel-preset 
+      - run:
+          name: Test
+          command: cd integration-ds && yarn test
+      - run:
+          name: Lint
+          command: cd integration-ds && yarn lint
 
   publishDocs:
     <<: *defaults
@@ -110,19 +143,15 @@ workflows:
   build_and_test:
     jobs:
       - install
-
       - build:
           requires:
             - install
-
       - lint:
           requires:
             - build
-
       - test:
           requires:
             - build
-
       - pr-check:
           requires:
             - build
@@ -130,12 +159,18 @@ workflows:
             branches:
               ignore:
                 - master
-
       - release:
           requires:
             - test
             - lint
-
+      - integration-ds:
+          requires:
+            - release
+          filters:
+            branches:
+              ignore:
+                - master
+                - renovate.*
       - publishDocs:
           requires:
             - release
