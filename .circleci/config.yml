@@ -95,10 +95,10 @@ jobs:
             yarn link
 
   integration-ds:
-    <<: *defaults    
+    <<: *defaults
     steps:
       - attach_workspace:
-          at: ~/design-systems-cli    
+          at: ~/design-systems-cli
       - run:
           name: Get Integration Design Systems Repo
           command:
@@ -113,7 +113,7 @@ jobs:
             yarn link "@design-systems/monorepo"
       - run:
           name: Build
-          command: cd integration-ds && yarn build
+          command: cd integration-ds && sh ./../design-systems-cli/packages/cli/bin/ds.js build 
       - run:
           name: Build Storybook
           command: cd integration-ds && yarn build:storybook               
