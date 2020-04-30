@@ -108,8 +108,9 @@ jobs:
           command: cd integration-ds && yarn install
       - run:
           name: Update Canary CLI 
-          command:
-            cd integration-ds && yarn link "@design-systems/monorepo"
+          command: |
+            cd integration-ds
+            yarn link "@design-systems/monorepo"
       - run:
           name: Build
           command: cd integration-ds && yarn build
