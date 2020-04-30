@@ -107,7 +107,7 @@ jobs:
           command: cd integration-ds && yarn install
       - run:
           name: Build with Canary Version (local mapping)
-          command: cd integration-ds && ./../packages/cli/bin/ds.js build 
+          command: cd integration-ds && npx lerna run build --stream
       - run:
           name: Build Storybook
           command: cd integration-ds && ./../packages/cli/bin/ds.js storybook build               
