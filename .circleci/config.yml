@@ -26,8 +26,8 @@ aliases:
   - &yarn
     name: Install Dependencies
     command: |
-      yarn install --frozen-lockfile --non-interactive
       pwd
+      yarn install --frozen-lockfile --non-interactive
       ls -l
   - &lint
     name: Lint
