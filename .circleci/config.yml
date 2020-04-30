@@ -113,7 +113,9 @@ jobs:
             yarn link "@design-systems/monorepo"
       - run:
           name: Build
-          command: cd integration-ds && ./../design-systems-cli/packages/cli/bin/ds.js build 
+          command: |
+            cd integration-ds 
+            ./../design-systems-cli/packages/cli/bin/ds.js build 
       - run:
           name: Build Storybook
           command: cd integration-ds && yarn build:storybook               
