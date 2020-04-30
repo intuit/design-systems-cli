@@ -93,8 +93,6 @@ jobs:
           command: |
             yarn auto shipit
             yarn link
-      - persist_to_workspace:
-          root: ~/design-systems-cli
 
   integration-ds:
     <<: *defaults    
