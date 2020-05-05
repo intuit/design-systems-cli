@@ -31,6 +31,6 @@
   "devDependencies": {
     "@babel/core": "7.9.0",
     "@babel/types": "7.9.0",
-    "@types/node": "13.9.3"
+    "@types/node": "13.13.5"
   }
 }
