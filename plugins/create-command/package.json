@@ -1,6 +1,6 @@
 {
   "name": "@design-systems/create-command",
-  "version": "1.7.0",
+  "version": "1.7.1",
   "description": "The create command for @design-systems-cli",
   "main": "dist/index.js",
   "author": "Adam Dierkens <adam@dierkens.com>",
