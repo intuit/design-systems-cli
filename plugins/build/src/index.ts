@@ -270,8 +270,7 @@ export default class BuildPlugin implements Plugin<BuildArgs> {
     }
   };
 
-  isIgnored = (filename: string) =>
-    match(`./${filename}`, this.buildArgs.ignore);
+  isIgnored = (filename: string) => match(filename, this.buildArgs.ignore);
 
   watch = async () => {
     const watcher = fileWatcher(
@@ -306,7 +305,7 @@ export default class BuildPlugin implements Plugin<BuildArgs> {
     this.buildArgs = { ...this.buildArgs, ...args };
     this.typescriptCompiler = new TypescriptCompiler(this.buildArgs);
     const startTime = Date.now();
-    const { watch, outputDirectory, ignore } = this.buildArgs;
+    const { watch, outputDirectory } = this.buildArgs;
 
     // Since watching happens across everything in parallel,
     // leave any old build there for now
@@ -318,7 +317,7 @@ export default class BuildPlugin implements Plugin<BuildArgs> {
 
     // Kick off all of the transforms in parallel
     const transformed = files
-      .map(nextFile => !match(nextFile, ignore) && this.transformFile(nextFile))
+      .map(nextFile => !this.isIgnored(nextFile) && this.transformFile(nextFile))
       .filter(
         (i): i is Promise<undefined | SuccessState> => typeof i !== 'boolean'
       );
