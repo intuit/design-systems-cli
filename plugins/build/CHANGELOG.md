@@ -1,3 +1,15 @@
+# v1.7.1 (Fri May 08 2020)
+
+#### 🐛 Bug Fix
+
+- fix build --watch building ignored files [#246](https://github.com/intuit/design-systems-cli/pull/246) ([@hipstersmoothie](https://github.com/hipstersmoothie))
+
+#### Authors: 1
+
+- Andrew Lisowski ([@hipstersmoothie](https://github.com/hipstersmoothie))
+
+---
+
 # v1.7.0 (Wed Apr 29 2020)
 
 #### 🚀 Enhancement
