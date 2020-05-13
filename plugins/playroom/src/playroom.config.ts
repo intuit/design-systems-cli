@@ -1,10 +1,19 @@
 /* eslint-disable @typescript-eslint/ban-ts-ignore, @typescript-eslint/no-var-requires */
 
+import path from 'path';
+import fs from 'fs';
 // @ts-ignore
 import babelConfig from '@design-systems/build/babel.config';
-import { loadUserWebpackConfig } from '@design-systems/cli-utils';
-import ForkTsCheckerWebpackPlugin from 'fork-ts-checker-webpack-plugin';
+import {
+  createLogger,
+  loadUserWebpackConfig,
+  getMonorepoRoot
+} from '@design-systems/cli-utils';
 
+import ForkTsCheckerWebpackPlugin from 'fork-ts-checker-webpack-plugin';
+import { Snippet } from 'playroom';
+
+const logger = createLogger({ scope: 'playroom' });
 const config = babelConfig({ env: () => '' });
 
 // Allows us to define snippets in TypeScript
@@ -26,6 +35,40 @@ require('@babel/register')({
   ],
   extensions: ['.ts', '.tsx', '.jsx', '.js', '.mjs']
 });
+
+// TODO: remove this or change based on advice after PR
+interface PlayroomConfig {
+  components: string;
+  outputPath: string;
+  title?: string;
+  themes?: string;
+  widths?: number[];
+  snippets?: Snippet[] | string;
+  frameComponent?: string;
+  exampleCode?: string;
+  cwd?: string;
+  storageKey?: string;
+  webpackConfig?: () => void;
+  baseUrl?: string;
+}
+
+/**
+ * Modifies the playroom config by trying to load the user's custom config.
+ */
+const loadUserPlayroomConfig = (config: PlayroomConfig): PlayroomConfig => {
+  const userConfigPath = path.join(getMonorepoRoot(), 'playroom.config.js');
+
+  if (fs.existsSync(userConfigPath)) {
+    logger.debug(`Custom playroom config file: ${userConfigPath}`);
+    const getUserConfig = require(userConfigPath);
+    const userConfig = getUserConfig({ config });
+
+    logger.trace('Customized playroom config:', userConfig);
+    return userConfig;
+  }
+
+  return config;
+};
 
 export default async ({
   entry,
@@ -69,7 +112,7 @@ export default async ({
     })
   );
 
-  return {
+  const playroomConfig = {
     components: entry,
     outputPath: './out/playroom',
 
@@ -80,4 +123,7 @@ export default async ({
     typeScriptFiles: ['components/**/src/**/*.{ts,tsx}', '!**/node_modules'],
     webpackConfig: () => webpackConfig
   };
+
+  logger.trace('Default playroom config:', playroomConfig);
+  return loadUserPlayroomConfig(playroomConfig);
 };
