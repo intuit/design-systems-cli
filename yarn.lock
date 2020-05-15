@@ -1915,7 +1915,7 @@
     minimist "^1.2.0"
 
 "@design-systems/build@link:plugins/build":
-  version "1.5.1"
+  version "1.7.1"
   dependencies:
     "@babel/code-frame" "7.8.3"
     "@babel/core" "7.9.0"
@@ -1956,7 +1956,7 @@
     typescript "3.8.3"
 
 "@design-systems/bundle@link:plugins/bundle":
-  version "1.5.1"
+  version "1.7.1"
   dependencies:
     "@design-systems/build" "link:plugins/build"
     "@design-systems/cli-utils" "link:packages/cli-utils"
@@ -1974,7 +1974,7 @@
     webpack "4.41.5"
 
 "@design-systems/clean@link:plugins/clean":
-  version "1.5.1"
+  version "1.7.1"
   dependencies:
     "@design-systems/cli-utils" "link:packages/cli-utils"
     "@design-systems/plugin" "link:packages/plugin"
@@ -1983,7 +1983,7 @@
     tslib "1.11.1"
 
 "@design-systems/cli-utils@link:packages/cli-utils":
-  version "1.5.1"
+  version "1.7.1"
   dependencies:
     find-up "4.1.0"
     npm-which "3.0.1"
@@ -1993,7 +1993,7 @@
     webpack "4.41.5"
 
 "@design-systems/core@link:packages/core":
-  version "1.5.1"
+  version "1.7.1"
   dependencies:
     "@design-systems/build" "link:plugins/build"
     "@design-systems/bundle" "link:plugins/bundle"
@@ -2013,7 +2013,7 @@
     tslib "1.11.1"
 
 "@design-systems/create-command@link:plugins/create-command":
-  version "1.5.1"
+  version "1.7.1"
   dependencies:
     "@design-systems/cli-utils" "link:packages/cli-utils"
     "@design-systems/create" "link:packages/create"
@@ -2032,20 +2032,21 @@
     tslib "1.11.1"
 
 "@design-systems/create@link:packages/create":
-  version "1.5.1"
+  version "1.7.1"
 
 "@design-systems/dev@link:plugins/dev":
-  version "1.5.1"
+  version "1.7.1"
   dependencies:
     "@design-systems/cli-utils" "link:packages/cli-utils"
     "@design-systems/plugin" "link:packages/plugin"
     chokidar "3.3.1"
+    dedent "0.7.0"
     find-package-json "1.2.0"
     resolve-cwd "3.0.0"
     tslib "1.11.1"
 
 "@design-systems/eslint-config@link:packages/eslint-config":
-  version "1.5.1"
+  version "1.7.1"
   dependencies:
     "@design-systems/cli-utils" "link:packages/cli-utils"
     "@typescript-eslint/eslint-plugin" "2.17.0"
@@ -2068,24 +2069,24 @@
     tslib "1.11.1"
 
 "@design-systems/lint@link:plugins/lint":
-  version "1.5.1"
+  version "1.7.1"
   dependencies:
     "@design-systems/cli-utils" "link:packages/cli-utils"
     "@design-systems/eslint-config" "link:packages/eslint-config"
     "@design-systems/plugin" "link:packages/plugin"
     "@design-systems/stylelint-config" "link:packages/stylelint-config"
     eslint "6.8.0"
-    eslint-formatter-github "0.4.2"
+    eslint-formatter-github "^1.0.0"
     eslint-formatter-pretty "3.0.1"
     fast-glob "3.2.2"
     get-monorepo-packages "1.2.0"
     stylelint "13.2.1"
-    stylelint-formatter-github "0.3.2"
+    stylelint-formatter-github "^1.0.0"
     stylelint-formatter-pretty "2.0.0"
     tslib "1.11.1"
 
 "@design-systems/load-config@link:packages/load-config":
-  version "1.5.1"
+  version "1.7.1"
   dependencies:
     "@design-systems/core" "link:packages/core"
     "@design-systems/plugin" "link:packages/plugin"
@@ -2099,7 +2100,7 @@
     tslib "1.11.1"
 
 "@design-systems/playroom@link:plugins/playroom":
-  version "1.5.1"
+  version "1.7.1"
   dependencies:
     "@babel/core" "7.9.0"
     "@babel/register" "7.9.0"
@@ -2110,6 +2111,7 @@
     css-loader "3.4.2"
     fast-glob "3.2.2"
     file-loader "5.0.2"
+    fork-ts-checker-webpack-plugin "4.1.3"
     fs-extra "8.1.0"
     playroom "0.16.1"
     react-element-to-jsx-string "14.3.1"
@@ -2118,14 +2120,14 @@
     webpack "4.41.5"
 
 "@design-systems/plugin@link:packages/plugin":
-  version "1.5.1"
+  version "1.7.1"
   dependencies:
     command-line-application "0.9.6"
     tslib "1.11.1"
     utility-types "3.10.0"
 
 "@design-systems/proof@link:plugins/proof":
-  version "1.5.1"
+  version "1.7.1"
   dependencies:
     "@babel/core" "7.9.0"
     "@babel/plugin-transform-runtime" "7.9.0"
@@ -2143,7 +2145,7 @@
     tslib "1.11.1"
 
 "@design-systems/size@link:plugins/size":
-  version "1.5.1"
+  version "1.7.1"
   dependencies:
     "@design-systems/cli-utils" "link:packages/cli-utils"
     "@design-systems/plugin" "link:packages/plugin"
@@ -2173,7 +2175,7 @@
     webpack-sources "1.4.3"
 
 "@design-systems/storybook@link:plugins/storybook":
-  version "1.5.1"
+  version "1.7.1"
   dependencies:
     "@babel/core" "7.9.0"
     "@design-systems/build" "link:plugins/build"
@@ -2194,6 +2196,7 @@
     babel-loader "8.1.0"
     core-js "3.6.4"
     dedent "0.7.0"
+    fork-ts-checker-webpack-plugin "4.1.3"
     get-port "5.1.1"
     github-url-to-object "4.0.4"
     react-docgen-typescript-loader "3.6.0"
@@ -2208,7 +2211,7 @@
     webpack-filter-warnings-plugin "1.2.1"
 
 "@design-systems/stylelint-config@link:packages/stylelint-config":
-  version "1.5.1"
+  version "1.7.1"
   dependencies:
     stylelint-a11y "1.2.3"
     stylelint-config-css-modules "2.2.0"
@@ -2222,7 +2225,7 @@
     tslib "1.11.1"
 
 "@design-systems/test@link:plugins/test":
-  version "1.5.1"
+  version "1.7.1"
   dependencies:
     "@babel/core" "7.9.0"
     "@design-systems/build" "link:plugins/build"
@@ -2236,13 +2239,13 @@
     env-ci "5.0.1"
     identity-obj-proxy "3.0.0"
     jest "25.1.0"
-    jest-github-reporter "0.4.4"
+    jest-github-reporter "^1.0.0"
     jest-junit "10.0.0"
     polyfill-object.fromentries "1.0.1"
     tslib "1.11.1"
 
 "@design-systems/update@link:plugins/update":
-  version "1.5.1"
+  version "1.7.1"
   dependencies:
     "@design-systems/cli-utils" "link:packages/cli-utils"
     "@design-systems/plugin" "link:packages/plugin"
@@ -3366,6 +3369,18 @@
     before-after-hook "^2.1.0"
     universal-user-agent "^5.0.0"
 
+"@octokit/core@^2.4.3":
+  version "2.5.0"
+  resolved "https://registry.yarnpkg.com/@octokit/core/-/core-2.5.0.tgz#4706258893a7ac6ab35d58d2fb9f2d2ba19a41a5"
+  integrity sha512-uvzmkemQrBgD8xuGbjhxzJN1darJk9L2cS+M99cHrDG2jlSVpxNJVhoV86cXdYBqdHCc9Z995uLCczaaHIYA6Q==
+  dependencies:
+    "@octokit/auth-token" "^2.4.0"
+    "@octokit/graphql" "^4.3.1"
+    "@octokit/request" "^5.4.0"
+    "@octokit/types" "^2.0.0"
+    before-after-hook "^2.1.0"
+    universal-user-agent "^5.0.0"
+
 "@octokit/endpoint@^5.5.0":
   version "5.5.1"
   resolved "https://registry.yarnpkg.com/@octokit/endpoint/-/endpoint-5.5.1.tgz#2eea81e110ca754ff2de11c79154ccab4ae16b3f"
@@ -3374,6 +3389,15 @@
     "@octokit/types" "^2.0.0"
     is-plain-object "^3.0.0"
     universal-user-agent "^4.0.0"
+
+"@octokit/endpoint@^6.0.1":
+  version "6.0.1"
+  resolved "https://registry.yarnpkg.com/@octokit/endpoint/-/endpoint-6.0.1.tgz#16d5c0e7a83e3a644d1ddbe8cded6c3d038d31d7"
+  integrity sha512-pOPHaSz57SFT/m3R5P8MUu4wLPszokn5pXcB/pzavLTQf2jbU+6iayTvzaY6/BiotuRS0qyEUkx3QglT4U958A==
+  dependencies:
+    "@octokit/types" "^2.11.1"
+    is-plain-object "^3.0.0"
+    universal-user-agent "^5.0.0"
 
 "@octokit/graphql@4.3.1", "@octokit/graphql@^4.3.1":
   version "4.3.1"
@@ -3404,6 +3428,13 @@
   dependencies:
     "@octokit/types" "^2.0.1"
 
+"@octokit/plugin-paginate-rest@^2.2.0":
+  version "2.2.0"
+  resolved "https://registry.yarnpkg.com/@octokit/plugin-paginate-rest/-/plugin-paginate-rest-2.2.0.tgz#9ae0c14c1b90ec0d96d2ef1b44706b4505a91cee"
+  integrity sha512-KoNxC3PLNar8UJwR+1VMQOw2IoOrrFdo5YOiDKnBhpVbKpw+zkBKNMNKwM44UWL25Vkn0Sl3nYIEGKY+gW5ebw==
+  dependencies:
+    "@octokit/types" "^2.12.1"
+
 "@octokit/plugin-request-log@^1.0.0":
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/@octokit/plugin-request-log/-/plugin-request-log-1.0.0.tgz#eef87a431300f6148c39a7f75f8cfeb218b2547e"
@@ -3415,6 +3446,14 @@
   integrity sha512-EZi/AWhtkdfAYi01obpX0DF7U6b1VRr30QNQ5xSFPITMdLSfhcBqjamE3F+sKcxPbD7eZuMHu3Qkk2V+JGxBDQ==
   dependencies:
     "@octokit/types" "^2.0.1"
+    deprecation "^2.3.1"
+
+"@octokit/plugin-rest-endpoint-methods@3.10.0":
+  version "3.10.0"
+  resolved "https://registry.yarnpkg.com/@octokit/plugin-rest-endpoint-methods/-/plugin-rest-endpoint-methods-3.10.0.tgz#47f780d69192e45f09f71ded76f0b121b40e2d48"
+  integrity sha512-Z2DBsdnkWKuVBVFiLoEUKP/82ylH4Ij5F1Mss106hnQYXTxDfCWAyHW+hJ6ophuHVJ9Flaaue3fYn4CggzkHTg==
+  dependencies:
+    "@octokit/types" "^2.14.0"
     deprecation "^2.3.1"
 
 "@octokit/plugin-retry@3.0.1":
@@ -3451,6 +3490,15 @@
     deprecation "^2.0.0"
     once "^1.4.0"
 
+"@octokit/request-error@^2.0.0":
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/@octokit/request-error/-/request-error-2.0.0.tgz#94ca7293373654400fbb2995f377f9473e00834b"
+  integrity sha512-rtYicB4Absc60rUv74Rjpzek84UbVHGHJRu4fNVlZ1mCcyUPPuzFfG9Rn6sjHrd95DEsmjSt1Axlc699ZlbDkw==
+  dependencies:
+    "@octokit/types" "^2.0.0"
+    deprecation "^2.0.0"
+    once "^1.4.0"
+
 "@octokit/request@^5.0.0", "@octokit/request@^5.2.0", "@octokit/request@^5.3.0":
   version "5.3.1"
   resolved "https://registry.yarnpkg.com/@octokit/request/-/request-5.3.1.tgz#3a1ace45e6f88b1be4749c5da963b3a3b4a2f120"
@@ -3473,6 +3521,20 @@
     "@octokit/endpoint" "^5.5.0"
     "@octokit/request-error" "^1.0.1"
     "@octokit/types" "^2.0.0"
+    deprecation "^2.0.0"
+    is-plain-object "^3.0.0"
+    node-fetch "^2.3.0"
+    once "^1.4.0"
+    universal-user-agent "^5.0.0"
+
+"@octokit/request@^5.4.0":
+  version "5.4.2"
+  resolved "https://registry.yarnpkg.com/@octokit/request/-/request-5.4.2.tgz#74f8e5bbd39dc738a1b127629791f8ad1b3193ee"
+  integrity sha512-zKdnGuQ2TQ2vFk9VU8awFT4+EYf92Z/v3OlzRaSh4RIP0H6cvW1BFPXq4XYvNez+TPQjqN+0uSkCYnMFFhcFrw==
+  dependencies:
+    "@octokit/endpoint" "^6.0.1"
+    "@octokit/request-error" "^2.0.0"
+    "@octokit/types" "^2.11.1"
     deprecation "^2.0.0"
     is-plain-object "^3.0.0"
     node-fetch "^2.3.0"
@@ -3537,6 +3599,16 @@
     once "^1.4.0"
     universal-user-agent "^4.0.0"
 
+"@octokit/rest@^17.0.0":
+  version "17.8.0"
+  resolved "https://registry.yarnpkg.com/@octokit/rest/-/rest-17.8.0.tgz#85da66a98d9f5dfadab079dbb15f6031bd7e5460"
+  integrity sha512-m2pdo9+DoEoqQ7wRXV1ihffhE1gbvoC20nvchphluEusbZI6Y9HyXABGiXL+mByy2uUMR2cgBDqBJQQ6bY8Uvg==
+  dependencies:
+    "@octokit/core" "^2.4.3"
+    "@octokit/plugin-paginate-rest" "^2.2.0"
+    "@octokit/plugin-request-log" "^1.0.0"
+    "@octokit/plugin-rest-endpoint-methods" "3.10.0"
+
 "@octokit/types@^2.0.0":
   version "2.0.2"
   resolved "https://registry.yarnpkg.com/@octokit/types/-/types-2.0.2.tgz#0888497f5a664e28b0449731d5e88e19b2a74f90"
@@ -3548,6 +3620,13 @@
   version "2.5.0"
   resolved "https://registry.yarnpkg.com/@octokit/types/-/types-2.5.0.tgz#f1bbd147e662ae2c79717d518aac686e58257773"
   integrity sha512-KEnLwOfdXzxPNL34fj508bhi9Z9cStyN7qY1kOfVahmqtAfrWw6Oq3P4R+dtsg0lYtZdWBpUrS/Ixmd5YILSww==
+  dependencies:
+    "@types/node" ">= 8"
+
+"@octokit/types@^2.11.1", "@octokit/types@^2.12.1", "@octokit/types@^2.14.0":
+  version "2.15.0"
+  resolved "https://registry.yarnpkg.com/@octokit/types/-/types-2.15.0.tgz#b2070520207727bc6ab3a9caa1e4f60b0434bfa8"
+  integrity sha512-0mnpenB8rLhBVu8VUklp38gWi+EatjvcEcLWcdProMKauSaQWWepOAybZ714sOGsEyhXPlIcHICggn8HUsCXVw==
   dependencies:
     "@types/node" ">= 8"
 
@@ -5485,7 +5564,7 @@ ansi-colors@^3.0.0, ansi-colors@^3.2.1:
   resolved "https://registry.yarnpkg.com/ansi-colors/-/ansi-colors-3.2.4.tgz#e3a3da4bfbae6c86a9c285625de124a234026fbf"
   integrity sha512-hHUXGagefjN2iRrID63xckIvotOXOojhQKWIPUZ4mNUZ9nLZW+7FMNoE1lOkEhNWYsx/7ysGIuJYCiMAA9FnrA==
 
-ansi-escapes@^3.0.0, ansi-escapes@^3.1.0, ansi-escapes@^3.2.0:
+ansi-escapes@^3.0.0, ansi-escapes@^3.2.0:
   version "3.2.0"
   resolved "https://registry.yarnpkg.com/ansi-escapes/-/ansi-escapes-3.2.0.tgz#8780b98ff9dbf5638152d1f1fe5c1d7b4442976b"
   integrity sha512-cBhpre4ma+U0T1oM5fXg7Dy1Jw7zzwv7lt/GoCpr+hDQJoYnKVPLL4dCvSEFMmQurOQvSrwT7SL/DAlhBI97RQ==
@@ -7977,18 +8056,6 @@ crc@^3.4.4:
   dependencies:
     buffer "^5.1.0"
 
-create-check@^0.5.0:
-  version "0.5.0"
-  resolved "https://registry.yarnpkg.com/create-check/-/create-check-0.5.0.tgz#179e91819bd6a5fe35dd9994508bed5a30bea1cc"
-  integrity sha512-ZrcvZbv9rC38WWg3+y0goXd7A1RoWEsMdFIxVDVZo5WtvrLDos/1vTb6+ApcwQnk/iisLOC3kY0QSS7TmP1ICg==
-  dependencies:
-    "@octokit/app" "^4.1.0"
-    "@octokit/rest" "^16.28.7"
-    await-to-js "^2.1.1"
-    env-ci "^4.1.1"
-    execa "^2.0.4"
-    lodash.chunk "^4.2.0"
-
 create-check@^0.6.0:
   version "0.6.33"
   resolved "https://registry.yarnpkg.com/create-check/-/create-check-0.6.33.tgz#d4168a03bc213705b274cb52fba363d41f809eae"
@@ -7996,6 +8063,18 @@ create-check@^0.6.0:
   dependencies:
     "@octokit/app" "^4.1.0"
     "@octokit/rest" "^16.43.1"
+    await-to-js "^2.1.1"
+    env-ci "^5.0.0"
+    execa "^4.0.0"
+    lodash.chunk "^4.2.0"
+
+create-check@^0.6.1, create-check@^0.6.36:
+  version "0.6.36"
+  resolved "https://registry.yarnpkg.com/create-check/-/create-check-0.6.36.tgz#844324160ce6f02064ba5e2add49d83634bae922"
+  integrity sha512-vJWNjvQ+srQOElppvkE+s/xbcInpTJQI/RnN0NlXfZesf4HlkDySxIKKySA0idA+abR7/4UT7D8+aRD7hlMtCg==
+  dependencies:
+    "@octokit/app" "^4.1.0"
+    "@octokit/rest" "^17.0.0"
     await-to-js "^2.1.1"
     env-ci "^5.0.0"
     execa "^4.0.0"
@@ -9208,7 +9287,7 @@ entities@^2.0.0:
   resolved "https://registry.yarnpkg.com/entities/-/entities-2.0.0.tgz#68d6084cab1b079767540d80e56a39b423e4abf4"
   integrity sha512-D9f7V0JSRwIxlRI2mjMqufDrRDnx8p+eEOz7aUM9SuvF8gsBzra0/6tbjl1m8eQHrZlYj6PxqE00hZ1SAIKPLw==
 
-env-ci@4.5.2, env-ci@^4.1.1:
+env-ci@4.5.2:
   version "4.5.2"
   resolved "https://registry.yarnpkg.com/env-ci/-/env-ci-4.5.2.tgz#40b08825dcf4ed5b2cddd3d638190571cf96347a"
   integrity sha512-lS+edpNp2+QXEPkx6raEMIjKxKKWnJ4+VWzovYJ2NLYiJAYenSAXotFfVdgaFxdbVnvAbUI8epQDa1u12ERxfQ==
@@ -9427,16 +9506,15 @@ eslint-config-xo@0.29.1:
   dependencies:
     confusing-browser-globals "1.0.9"
 
-eslint-formatter-github@0.4.2:
-  version "0.4.2"
-  resolved "https://registry.yarnpkg.com/eslint-formatter-github/-/eslint-formatter-github-0.4.2.tgz#4c0553616ae5b30077ad8a522fcf83105ef8e30e"
-  integrity sha512-y2Na/F6HHtMyt5zRCVt3fctsfbZe6801zuFpf0a+Csj4gb2OfShKmuZ3yBSyYkvWpSwzNpjowTCMqg4522AGlw==
+eslint-formatter-github@^1.0.0:
+  version "1.0.11"
+  resolved "https://registry.yarnpkg.com/eslint-formatter-github/-/eslint-formatter-github-1.0.11.tgz#383e2a6c61bb5dc336a8e049329af46b2d11ae17"
+  integrity sha512-xRuHyazNeWugWqTrgpeXtlduha0vBdARKy8oWh85c8K2W8gWaqtI0D79l8w7mC/UP0fFPrrBopfvntc52ZW5ng==
   dependencies:
-    "@octokit/rest" "^16.28.7"
-    create-check "^0.5.0"
-    eslint-formatter-pretty "^2.1.1"
+    create-check "^0.6.0"
+    eslint-formatter-pretty "^3.0.0"
 
-eslint-formatter-pretty@3.0.1:
+eslint-formatter-pretty@3.0.1, eslint-formatter-pretty@^3.0.0:
   version "3.0.1"
   resolved "https://registry.yarnpkg.com/eslint-formatter-pretty/-/eslint-formatter-pretty-3.0.1.tgz#97603fcb2ddcc6dd60662d6e9f327a734cc55a54"
   integrity sha512-hhQ/ASD4i6BAEalcEfUxesFtJFftT8xFsimCzUpPbTzygJ4J17yCGcJ3XKCB2g7XTJTv0pi7rVTadfHVmtfSRA==
@@ -9448,19 +9526,6 @@ eslint-formatter-pretty@3.0.1:
     plur "^3.0.1"
     string-width "^4.2.0"
     supports-hyperlinks "^2.0.0"
-
-eslint-formatter-pretty@^2.1.1:
-  version "2.1.1"
-  resolved "https://registry.yarnpkg.com/eslint-formatter-pretty/-/eslint-formatter-pretty-2.1.1.tgz#0794a1009195d14e448053fe99667413b7d02e44"
-  integrity sha512-gWfagucSWBn82WxzwFloBTLAcwYDgnpAfiV5pQfyAV5YpZikuLflRU8nc3Ts9wnNvLhwk4blzb42/C495Yw7BA==
-  dependencies:
-    ansi-escapes "^3.1.0"
-    chalk "^2.1.0"
-    eslint-rule-docs "^1.1.5"
-    log-symbols "^2.0.0"
-    plur "^3.0.1"
-    string-width "^2.0.0"
-    supports-hyperlinks "^1.0.1"
 
 "eslint-import-resolver-lerna@https://github.com/hipstersmoothie/eslint-import-resolver-lerna.git#catch":
   version "1.1.0"
@@ -9788,21 +9853,6 @@ execa@^1.0.0:
     p-finally "^1.0.0"
     signal-exit "^3.0.0"
     strip-eof "^1.0.0"
-
-execa@^2.0.4:
-  version "2.1.0"
-  resolved "https://registry.yarnpkg.com/execa/-/execa-2.1.0.tgz#e5d3ecd837d2a60ec50f3da78fd39767747bbe99"
-  integrity sha512-Y/URAVapfbYy2Xp/gb6A0E7iR8xeqOCXsuuaoMn7A5PzrXUK84E1gyiEfq0wQd/GHA6GsoHWwhNq8anb0mleIw==
-  dependencies:
-    cross-spawn "^7.0.0"
-    get-stream "^5.0.0"
-    is-stream "^2.0.0"
-    merge-stream "^2.0.0"
-    npm-run-path "^3.0.0"
-    onetime "^5.1.0"
-    p-finally "^2.0.0"
-    signal-exit "^3.0.2"
-    strip-final-newline "^2.0.0"
 
 execa@^3.2.0:
   version "3.4.0"
@@ -12628,13 +12678,13 @@ jest-get-type@^25.1.0:
   resolved "https://registry.yarnpkg.com/jest-get-type/-/jest-get-type-25.1.0.tgz#1cfe5fc34f148dc3a8a3b7275f6b9ce9e2e8a876"
   integrity sha512-yWkBnT+5tMr8ANB6V+OjmrIJufHtCAqI5ic2H40v+tRqxDmE0PGnIiTyvRWFOMtmVHYpwRqyazDbTnhpjsGvLw==
 
-jest-github-reporter@0.4.4:
-  version "0.4.4"
-  resolved "https://registry.yarnpkg.com/jest-github-reporter/-/jest-github-reporter-0.4.4.tgz#97ac29b7f8f99431934ed95af3bcd4049fdc761c"
-  integrity sha512-pAsB4pu3cC9cwepwJKI+h88zAHr+nJ36wiur61aQP9GSnDcuqRdEUWNYIrndDbpNQ7h6T4apdaTb61nX0EMbhQ==
+jest-github-reporter@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/jest-github-reporter/-/jest-github-reporter-1.0.0.tgz#a1068dd01676ec206f91b7d9a5177346a56bdb64"
+  integrity sha512-EmyBES0lqS8q+N8BWzROPev1VHrmkxjaeDwqjn+t16do152mp1KLjx6/d2g3xzQNRnIy5tEJeK/6Nylvhk/jqg==
   dependencies:
     "@octokit/rest" "^16.28.7"
-    create-check "^0.6.0"
+    create-check "^0.6.1"
     strip-ansi "^6.0.0"
 
 jest-haste-map@^25.1.0:
@@ -13653,7 +13703,7 @@ lodash@^4.0.1, lodash@^4.17.11, lodash@^4.17.12, lodash@^4.17.13, lodash@^4.17.1
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.15.tgz#b447f6670a0455bbfeedd11392eff330ea097548"
   integrity sha512-8xOcRHvCjnocdS5cpwXQXVzmmh5e5+saE2QGoeQmbKmRS6J3VQppPOIt0MnmE+4xlZoumy0GPG0D0MVIQbNA1A==
 
-log-symbols@^2.0.0, log-symbols@^2.1.0, log-symbols@^2.2.0:
+log-symbols@^2.1.0, log-symbols@^2.2.0:
   version "2.2.0"
   resolved "https://registry.yarnpkg.com/log-symbols/-/log-symbols-2.2.0.tgz#5740e1c5d6f0dfda4ad9323b5332107ef6b4c40a"
   integrity sha512-VeIAFslyIerEJLXHziedo2basKbMKtTw3vfn5IzG0XTjhAVEJyNHnL2p7vc+wBDSdQuUpNw3M2u6xb9QsAY5Eg==
@@ -14863,13 +14913,6 @@ npm-run-path@^2.0.0:
   integrity sha1-NakjLfo11wZ7TLLd8jV7GHFTbF8=
   dependencies:
     path-key "^2.0.0"
-
-npm-run-path@^3.0.0:
-  version "3.1.0"
-  resolved "https://registry.yarnpkg.com/npm-run-path/-/npm-run-path-3.1.0.tgz#7f91be317f6a466efed3c9f2980ad8a4ee8b0fa5"
-  integrity sha512-Dbl4A/VfiVGLgQv29URL9xshU8XDY1GeLy+fsaZ1AA8JDSfjvr5P5+pzRbWqRSBxk6/DW7MIh8lTM/PaGnP2kg==
-  dependencies:
-    path-key "^3.0.0"
 
 npm-run-path@^4.0.0:
   version "4.0.1"
@@ -19354,13 +19397,12 @@ stylelint-declaration-block-no-ignored-properties@2.3.0:
   dependencies:
     postcss "^7.0.27"
 
-stylelint-formatter-github@0.3.2:
-  version "0.3.2"
-  resolved "https://registry.yarnpkg.com/stylelint-formatter-github/-/stylelint-formatter-github-0.3.2.tgz#0e30c8c062d3650ddf3b8d6cc2e34bf2b5c7da6d"
-  integrity sha512-IVa4LqFqq7a4Tfh2S7+TTbH7eVGBvVKKG2R9t4K4uqlo1mYt522lT58Tf6gU1dWRQMDxSdcYDQIps5c/PczPaQ==
+stylelint-formatter-github@^1.0.0:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/stylelint-formatter-github/-/stylelint-formatter-github-1.0.1.tgz#3d6daa27e824272e61b830be5db731bb50a9767b"
+  integrity sha512-OSJRwzj7k/K/7JefV+g3PCN66AsMXOzng2W6AUFxvDgoXV8SRdLPqDvNmBcGOR9Y9bIGiMZS7uK83Aj7NxBCDQ==
   dependencies:
-    "@octokit/rest" "^16.28.7"
-    create-check "^0.5.0"
+    create-check "^0.6.36"
     stylelint-formatter-pretty "^1.1.2"
 
 stylelint-formatter-pretty@2.0.0:
@@ -19496,7 +19538,7 @@ supports-color@^3.2.3:
   dependencies:
     has-flag "^1.0.0"
 
-supports-color@^5.0.0, supports-color@^5.3.0, supports-color@^5.4.0:
+supports-color@^5.3.0, supports-color@^5.4.0:
   version "5.5.0"
   resolved "https://registry.yarnpkg.com/supports-color/-/supports-color-5.5.0.tgz#e2e69a44ac8772f78a1ec0b35b689df6530efc8f"
   integrity sha512-QjVjwdXIt408MIiAqCX4oUKsgU2EqAGzs2Ppkm4aQYbjm+ZEWEcW4SfFNTr4uMNZma0ey4f5lgLrkB0aX0QMow==
@@ -19516,14 +19558,6 @@ supports-color@~5.0.0:
   integrity sha512-7FQGOlSQ+AQxBNXJpVDj8efTA/FtyB5wcNE1omXXJ0cq6jm1jjDwuROlYDbnzHqdNPqliWFhcioCWSyav+xBnA==
   dependencies:
     has-flag "^2.0.0"
-
-supports-hyperlinks@^1.0.1:
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/supports-hyperlinks/-/supports-hyperlinks-1.0.1.tgz#71daedf36cc1060ac5100c351bb3da48c29c0ef7"
-  integrity sha512-HHi5kVSefKaJkGYXbDuKbUGRVxqnWGn3J2e39CYcNJEfWciGq2zYtOhXLTlvrOZW1QU7VX67w7fMmWafHX9Pfw==
-  dependencies:
-    has-flag "^2.0.0"
-    supports-color "^5.0.0"
 
 supports-hyperlinks@^2.0.0:
   version "2.0.0"
