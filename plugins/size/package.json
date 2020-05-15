@@ -23,7 +23,7 @@
     "@design-systems/plugin": "link:../../packages/plugin",
     "@royriojas/get-exports-from-file": "https://github.com/hipstersmoothie/get-exports-from-file#all",
     "change-case": "4.1.1",
-    "chokidar": "3.3.1",
+    "chokidar": "3.4.0",
     "colorette": "1.1.0",
     "commently": "5.73.5",
     "cross-spawn": "7.0.1",
