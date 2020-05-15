@@ -53,7 +53,7 @@
     "@types/mini-css-extract-plugin": "0.9.1",
     "@types/opn": "5.1.0",
     "@types/optimize-css-assets-webpack-plugin": "5.0.1",
-    "@types/table": "4.0.7",
+    "@types/table": "5.0.0",
     "@types/terser-webpack-plugin": "2.2.0",
     "@types/webpack-bundle-analyzer": "2.13.3",
     "@types/webpack-sources": "0.1.6"
