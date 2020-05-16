@@ -46,10 +46,12 @@ export default function getSnippets() {
     // Support for old format
     return [
       ...all,
-      ...Object.entries(all).map(([name, code]) => ({
-        name,
-        code: renderSnippet(code)
-      }))
+      ...Object.entries(componentSnippets).map(
+        ([name, code]: [string, any]) => ({
+          name,
+          code: renderSnippet(code)
+        })
+      )
     ];
   }, [] as Snippet[]);
 
