@@ -1,3 +1,16 @@
+# v1.7.3 (Mon May 18 2020)
+
+#### 🐛 Bug Fix
+
+- `@design-systems/playroom`
+  - fix playroom snippets old format support [#250](https://github.com/intuit/design-systems-cli/pull/250) ([@orther](https://github.com/orther))
+
+#### Authors: 1
+
+- Brandon Orther ([@orther](https://github.com/orther))
+
+---
+
 # v1.7.2 (Fri May 15 2020)
 
 #### 🐛 Bug Fix
