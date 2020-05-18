@@ -1,3 +1,16 @@
+# v1.7.4 (Mon May 18 2020)
+
+#### ⚠️  Pushed to `master`
+
+- `@design-systems/build`
+  - Fix: Build snippets again ([@hipstersmoothie](https://github.com/hipstersmoothie))
+
+#### Authors: 1
+
+- Andrew Lisowski ([@hipstersmoothie](https://github.com/hipstersmoothie))
+
+---
+
 # v1.7.3 (Mon May 18 2020)
 
 #### 🐛 Bug Fix
