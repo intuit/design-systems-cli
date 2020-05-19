@@ -1,5 +1,4 @@
 /* eslint-disable @typescript-eslint/ban-ts-ignore, @typescript-eslint/no-var-requires */
-
 import path from 'path';
 import fs from 'fs';
 // @ts-ignore
@@ -36,7 +35,6 @@ require('@babel/register')({
   extensions: ['.ts', '.tsx', '.jsx', '.js', '.mjs']
 });
 
-// TODO: remove this or change based on advice after PR
 interface PlayroomConfig {
   components: string;
   outputPath: string;
@@ -55,19 +53,20 @@ interface PlayroomConfig {
 /**
  * Modifies the playroom config by trying to load the user's custom config.
  */
-const loadUserPlayroomConfig = (config: PlayroomConfig): PlayroomConfig => {
+const loadUserPlayroomConfig = (baseConfig: PlayroomConfig): PlayroomConfig => {
   const userConfigPath = path.join(getMonorepoRoot(), 'playroom.config.js');
 
   if (fs.existsSync(userConfigPath)) {
     logger.debug(`Custom playroom config file: ${userConfigPath}`);
+    // eslint-disable-next-line global-require, import/no-dynamic-require
     const getUserConfig = require(userConfigPath);
-    const userConfig = getUserConfig({ config });
+    const userConfig = getUserConfig(baseConfig);
 
     logger.trace('Customized playroom config:', userConfig);
     return userConfig;
   }
 
-  return config;
+  return baseConfig;
 };
 
 export default async ({
