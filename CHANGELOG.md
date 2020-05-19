@@ -1,3 +1,16 @@
+# v1.8.0 (Tue May 19 2020)
+
+#### 🚀 Enhancement
+
+- `@design-systems/playroom`
+  - feat: enable custom playroom config [#251](https://github.com/intuit/design-systems-cli/pull/251) ([@orther](https://github.com/orther))
+
+#### Authors: 1
+
+- Brandon Orther ([@orther](https://github.com/orther))
+
+---
+
 # v1.7.4 (Mon May 18 2020)
 
 #### ⚠️  Pushed to `master`
