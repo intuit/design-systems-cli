@@ -188,6 +188,7 @@ async function lintCSS(args: LintArgs): Promise<number> {
     logger.trace('Stylelint Results', JSON.stringify(results, null, 2));
 
     if (hasError) {
+      logger.error('Stylelint Results', JSON.stringify(results, null, 2));
       logger.error('Project contains CSS errors', cssFormatter(results));
     } else {
       logger.success('CSS');
