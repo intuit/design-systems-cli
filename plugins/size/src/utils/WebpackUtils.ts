@@ -173,6 +173,11 @@ async function getSizes(options: GetSizesOptions & CommonOptions) {
       fs.copyFileSync(browsersList, path.join(dir, '.browserslistrc'));
     }
 
+    const npmrc = path.join(getMonorepoRoot(), '.npmrc');
+    if (options.registry && fs.existsSync(npmrc)) {
+      fs.copyFileSync(npmrc, path.join(dir, '.npmrc'));
+    }
+
     logger.debug(`Installing: ${options.name}`);
     if (options.registry) {
       execSync(

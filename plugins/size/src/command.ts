@@ -69,7 +69,7 @@ const command: CliCommand = {
     {
       name: 'registry',
       type: String,
-      description: 'The registry to install packages from',
+      description: 'The registry to install packages from. The plugin will use a local .npmrc file if available for authentication.',
       config: true
     },
     {
