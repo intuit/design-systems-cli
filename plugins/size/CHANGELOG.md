@@ -1,3 +1,19 @@
+# v1.9.0 (Thu May 21 2020)
+
+:tada: This release contains work from a new contributor! :tada:
+
+Thank you, null[@hainessss](https://github.com/hainessss), for all your work!
+
+#### 🚀 Enhancement
+
+- copy .npmrc to temp. [#255](https://github.com/intuit/design-systems-cli/pull/255) ([@hainessss](https://github.com/hainessss))
+
+#### Authors: 1
+
+- [@hainessss](https://github.com/hainessss)
+
+---
+
 # v1.4.10 (Mon Apr 06 2020)
 
 #### 🐛 Bug Fix
