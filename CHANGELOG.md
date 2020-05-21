@@ -1,3 +1,16 @@
+# v1.8.1 (Wed May 20 2020)
+
+#### 🐛 Bug Fix
+
+- `@design-systems/build`
+  - loosen ts dep [#254](https://github.com/intuit/design-systems-cli/pull/254) ([@hipstersmoothie](https://github.com/hipstersmoothie))
+
+#### Authors: 1
+
+- Andrew Lisowski ([@hipstersmoothie](https://github.com/hipstersmoothie))
+
+---
+
 # v1.8.0 (Tue May 19 2020)
 
 #### 🚀 Enhancement
