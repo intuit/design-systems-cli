@@ -55,6 +55,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <td align="center"><a href="https://github.com/vasikarla"><img src="https://avatars0.githubusercontent.com/u/1945958?v=4" width="100px;" alt=""/><br /><sub><b>Raj Vasikarla</b></sub></a><br /><a href="https://github.com/intuit/design-systems-cli/commits?author=vasikarla" title="Code">💻</a></td>
     <td align="center"><a href="http://uptrend.tech"><img src="https://avatars3.githubusercontent.com/u/126236?v=4" width="100px;" alt=""/><br /><sub><b>Brandon Orther</b></sub></a><br /><a href="https://github.com/intuit/design-systems-cli/commits?author=orther" title="Documentation">📖</a> <a href="https://github.com/intuit/design-systems-cli/commits?author=orther" title="Code">💻</a></td>
     <td align="center"><a href="https://github.com/alan-cruz2"><img src="https://avatars3.githubusercontent.com/u/11319336?v=4" width="100px;" alt=""/><br /><sub><b>alan-cruz2</b></sub></a><br /><a href="https://github.com/intuit/design-systems-cli/commits?author=alan-cruz2" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/hainessss"><img src="https://avatars1.githubusercontent.com/u/6373177?v=4" width="100px;" alt=""/><br /><sub><b>hainessss</b></sub></a><br /><a href="https://github.com/intuit/design-systems-cli/commits?author=hainessss" title="Code">💻</a></td>
   </tr>
 </table>
 
