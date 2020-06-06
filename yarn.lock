@@ -2287,7 +2287,7 @@
     dedent "0.7.0"
     fast-glob "3.2.2"
     file-loader "6.0.0"
-    fork-ts-checker-webpack-plugin "4.1.3"
+    fork-ts-checker-webpack-plugin "4.1.6"
     fs-extra "9.0.1"
     playroom "0.16.1"
     react-element-to-jsx-string "14.3.1"
@@ -2372,7 +2372,7 @@
     babel-loader "8.1.0"
     core-js "3.6.5"
     dedent "0.7.0"
-    fork-ts-checker-webpack-plugin "4.1.3"
+    fork-ts-checker-webpack-plugin "4.1.6"
     get-port "5.1.1"
     github-url-to-object "4.0.4"
     react-docgen-typescript-loader "3.7.2"
@@ -10732,12 +10732,12 @@ fork-ts-checker-webpack-plugin@1.5.0:
     tapable "^1.0.0"
     worker-rpc "^0.1.0"
 
-fork-ts-checker-webpack-plugin@4.1.3:
-  version "4.1.3"
-  resolved "https://registry.yarnpkg.com/fork-ts-checker-webpack-plugin/-/fork-ts-checker-webpack-plugin-4.1.3.tgz#306f1566fc1c916816830b3de4e53da8d6d6a9e2"
-  integrity sha512-ErA8cFsPfAIOx2UFoRlMraGVB1Ye3bXQTdNW6lmeKQDuNnkORqJmA9bcReNxJj5kVHeKkKcNZv3f6PMyeugO+w==
+fork-ts-checker-webpack-plugin@4.1.6:
+  version "4.1.6"
+  resolved "https://registry.yarnpkg.com/fork-ts-checker-webpack-plugin/-/fork-ts-checker-webpack-plugin-4.1.6.tgz#5055c703febcf37fa06405d400c122b905167fc5"
+  integrity sha512-DUxuQaKoqfNne8iikd14SAkh5uw4+8vNifp6gmA73yYNS6ywLIWSLD/n/mBzHQRpW3J7rbATEakmiA8JvkTyZw==
   dependencies:
-    babel-code-frame "^6.22.0"
+    "@babel/code-frame" "^7.5.5"
     chalk "^2.4.1"
     micromatch "^3.1.10"
     minimatch "^3.0.4"
@@ -20855,10 +20855,10 @@ upath@^1.1.1, upath@^1.2.0:
   resolved "https://registry.yarnpkg.com/upath/-/upath-1.2.0.tgz#8f66dbcd55a883acdae4408af8b035a5044c1894"
   integrity sha512-aZwGpamFO61g3OlfT7OQCHqhGnW43ieH9WZeP7QxN/G/jS4jfqUkZxoryvJgVPEcrl5NL/ggHsSmLMHuH64Lhg==
 
-update-check@1.5.3:
-  version "1.5.3"
-  resolved "https://registry.yarnpkg.com/update-check/-/update-check-1.5.3.tgz#45240fcfb8755a7c7fa68bbdd9eda026a41639ed"
-  integrity sha512-6KLU4/dd0Tg/l0xwL+f9V7kEIPSL1vOIbnNnhSLiRDlj4AVG6Ks9Zoc9Jgt9kIgWFPZ/wp2AHgmG7xNf15TJOA==
+update-check@1.5.4:
+  version "1.5.4"
+  resolved "https://registry.yarnpkg.com/update-check/-/update-check-1.5.4.tgz#5b508e259558f1ad7dbc8b4b0457d4c9d28c8743"
+  integrity sha512-5YHsflzHP4t1G+8WGPlvKbJEbAJGCgw+Em+dGR1KmBUbr1J36SJBqlHLjR7oob7sco5hWHGQVcr9B2poIVDDTQ==
   dependencies:
     registry-auth-token "3.3.2"
     registry-url "3.1.0"
