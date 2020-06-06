@@ -2154,7 +2154,7 @@
     change-case "4.1.1"
     chokidar "3.4.0"
     colorette "1.1.0"
-    commently "5.73.5"
+    commently "5.81.2"
     cross-spawn "7.0.1"
     css-loader "3.4.2"
     diff2html "3.1.6"
@@ -7693,10 +7693,10 @@ comment-parser@^0.7.2:
   resolved "https://registry.yarnpkg.com/comment-parser/-/comment-parser-0.7.2.tgz#baf6d99b42038678b81096f15b630d18142f4b8a"
   integrity sha512-4Rjb1FnxtOcv9qsfuaNuVsmmVn4ooVoBHzYfyKteiXwIU84PClyGA5jASoFMwPV93+FPh9spwueXauxFJZkGAg==
 
-commently@5.73.5:
-  version "5.73.5"
-  resolved "https://registry.yarnpkg.com/commently/-/commently-5.73.5.tgz#4b2ea1c9b036026e900ca89b64ffcd0ac3a17072"
-  integrity sha512-z9r38IuqT7ox2rEudwhN5UoOwfwGnJQhpiQDa8gcamLHOd/a3o9+wYE/V0wiXxk8pSAePmh49/K37fjzJUmuOg==
+commently@5.81.2:
+  version "5.81.2"
+  resolved "https://registry.yarnpkg.com/commently/-/commently-5.81.2.tgz#5c260f5e6238575ce25ec661d4ebde6d6f4b166c"
+  integrity sha512-EM9KLegdIXxpFXwRCvW7J9NrLKnv3FrQd/silYS3BpIuj7/HNNEapPdM9wnaqPlMIej4WpearPRcl71ENOuhvA==
   dependencies:
     "@octokit/rest" "16.33.1"
     debug "4.1.1"
