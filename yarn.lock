@@ -2310,13 +2310,13 @@
     "@babel/preset-typescript" "7.9.0"
     "@design-systems/cli-utils" "link:packages/cli-utils"
     "@design-systems/plugin" "link:packages/plugin"
-    "@proof-ui/a11y-plugin" "^0.0.13"
-    "@proof-ui/add-all-plugin" "^0.0.13"
-    "@proof-ui/babel-plugin" "^0.0.13"
-    "@proof-ui/cli" "^0.0.13"
-    "@proof-ui/config" "^0.0.13"
-    "@proof-ui/junit-plugin" "^0.0.13"
-    "@proof-ui/skip-tests-plugin" "^0.0.13"
+    "@proof-ui/a11y-plugin" "^0.0.19"
+    "@proof-ui/add-all-plugin" "^0.0.19"
+    "@proof-ui/babel-plugin" "^0.0.19"
+    "@proof-ui/cli" "^0.0.19"
+    "@proof-ui/config" "^0.0.19"
+    "@proof-ui/junit-plugin" "^0.0.19"
+    "@proof-ui/skip-tests-plugin" "^0.0.19"
     babel-preset-power-assert "3.0.0"
     tslib "1.11.1"
 
@@ -2357,7 +2357,7 @@
     "@design-systems/build" "link:plugins/build"
     "@design-systems/cli-utils" "link:packages/cli-utils"
     "@design-systems/plugin" "link:packages/plugin"
-    "@proof-ui/storybook" "^0.0.13"
+    "@proof-ui/storybook" "^0.0.19"
     "@storybook/addon-a11y" "5.3.17"
     "@storybook/addon-actions" "5.3.17"
     "@storybook/addon-backgrounds" "5.3.17"
@@ -3806,34 +3806,34 @@
   dependencies:
     "@types/node" ">= 8"
 
-"@proof-ui/a11y-plugin@^0.0.13":
-  version "0.0.13"
-  resolved "https://registry.yarnpkg.com/@proof-ui/a11y-plugin/-/a11y-plugin-0.0.13.tgz#95eacb2766a3f19d3a4a977916db4cc4d50e846b"
-  integrity sha512-/w10gOyZ5TcNXlfv1d41goUmNwxEdUNsePbyptPaVb23eISUY8Qj1/8FcYwEsc0OR6HnSRDPWskTlImwuygrLQ==
+"@proof-ui/a11y-plugin@^0.0.19":
+  version "0.0.19"
+  resolved "https://registry.yarnpkg.com/@proof-ui/a11y-plugin/-/a11y-plugin-0.0.19.tgz#b28b1acc1fbf635fe1deec50d43cd9599781a7df"
+  integrity sha512-SqNBiqPoNULR9F4+qp0spulKWw3Nmv7rRPiCEQ0WV+9HIlUPXIQE5dDDLYKiDtPgdWl3bHiSuZdNzv7VxNF5rA==
   dependencies:
     axe-core "3.1.2"
 
-"@proof-ui/add-all-plugin@^0.0.13":
-  version "0.0.13"
-  resolved "https://registry.yarnpkg.com/@proof-ui/add-all-plugin/-/add-all-plugin-0.0.13.tgz#475b7ef931c6989b8f7fa6c21bf29fd30da32915"
-  integrity sha512-OTIHa9lLa/gzBjl3vnyzElemLa7FYp0ASrSe5MLC38JAnAZfg0vsTcCZqbZRgX6iUGPYzUY+hLVzNuBT0vQ7/w==
+"@proof-ui/add-all-plugin@^0.0.19":
+  version "0.0.19"
+  resolved "https://registry.yarnpkg.com/@proof-ui/add-all-plugin/-/add-all-plugin-0.0.19.tgz#c6f7bc70011bc99a7acd8b6dc47cb3f10d0c79ca"
+  integrity sha512-jfDcAeoFYZGRpEdToOY/8mhEIvhnrzeNWX9qW1ATKuLJ8UsrMYixjLf+5whZFixoP5bblepdL/waQJAPlcgjFQ==
 
-"@proof-ui/babel-plugin@^0.0.13":
-  version "0.0.13"
-  resolved "https://registry.yarnpkg.com/@proof-ui/babel-plugin/-/babel-plugin-0.0.13.tgz#b242379f560ec4db2f845186d4425f713d416011"
-  integrity sha512-4eiGV6g2VpoVk/DnoPcsJbvAEMqa/IExAFhtk2wAHEw1hVVzpqTw4q62TqZzjlAGabEfadV3Vd8H93c5bkm5gQ==
+"@proof-ui/babel-plugin@^0.0.19":
+  version "0.0.19"
+  resolved "https://registry.yarnpkg.com/@proof-ui/babel-plugin/-/babel-plugin-0.0.19.tgz#d2eadc8e2dde48d8ba5733fa7a7a7d971c83471f"
+  integrity sha512-Weypn9li4nUN1F/yZCbvbIucuwysty1r7j9uBsVJIpUFT3tfOfY6W7fmmAZmlfyvH6xzGVs1SVdCe7H/hEharA==
   dependencies:
     "@babel/core" "^7.5.4"
     "@babel/register" "^7.4.4"
     babel-preset-power-assert "^3.0.0"
 
-"@proof-ui/browser@^0.0.13":
-  version "0.0.13"
-  resolved "https://registry.yarnpkg.com/@proof-ui/browser/-/browser-0.0.13.tgz#d639d6dd4dd65efc47994eaa1b31e28a2b6f731a"
-  integrity sha512-8UY6kBv1k+CBjo9IRFO/zV7Gv6ZkZeWmRtI6T6MF+xpcUyxQC8sFy6uNqEOSmLJbgRgnYhh5fuQonuTlUqqz8w==
+"@proof-ui/browser@^0.0.19":
+  version "0.0.19"
+  resolved "https://registry.yarnpkg.com/@proof-ui/browser/-/browser-0.0.19.tgz#9d35946d26c4e8d61e616dc8331163c37ec6d94c"
+  integrity sha512-NBWFcvUVFbtRsSTJ1Oy5O/pL0o+PcLiTAqx2CTmRKuTSGe6lwWHNWVes49NLtno9dqKN60VMzK5qcj/4YHc/pA==
   dependencies:
-    "@proof-ui/logger" "^0.0.13"
-    "@proof-ui/utils" "^0.0.13"
+    "@proof-ui/logger" "^0.0.19"
+    "@proof-ui/utils" "^0.0.19"
     "@types/tapable" "^1.0.4"
     "@types/url-join" "4.0.0"
     "@types/url-parse" "1.4.3"
@@ -3845,93 +3845,93 @@
     url-parse "1.4.7"
     webdriverio "^4.14.0"
 
-"@proof-ui/cli-plugin@^0.0.13":
-  version "0.0.13"
-  resolved "https://registry.yarnpkg.com/@proof-ui/cli-plugin/-/cli-plugin-0.0.13.tgz#89179225fd71449496c53991dc099ed663461f30"
-  integrity sha512-uoDvb7zf1A77LMV/D9DbXoxcBPbf8xiryCUQnmh2x2roiTcYI5B8YoLcyRXM69KQP6/pBObBtRNZbs21DfYINw==
+"@proof-ui/cli-plugin@^0.0.19":
+  version "0.0.19"
+  resolved "https://registry.yarnpkg.com/@proof-ui/cli-plugin/-/cli-plugin-0.0.19.tgz#30d592b5ffc31821910dcf457370f4dd8754387d"
+  integrity sha512-aYg1wu6djzBx8vFC5GIK4qo/ARmgFoRh9GZ4r3WfjS9drwoqfLjrhb88ESD/7eCQnZLcLQxzHoxI1r9Yy+SdpQ==
 
-"@proof-ui/cli@^0.0.13":
-  version "0.0.13"
-  resolved "https://registry.yarnpkg.com/@proof-ui/cli/-/cli-0.0.13.tgz#83ce12a08d4f241bbf27f7d1336b58a48cd66342"
-  integrity sha512-i1pu5FPJn62ff3icc3nRzc8YFDSfyWAk3p2LjHjGkWIBKwxBAfsNMmFCpgwEI7q1YPDjB18a2hwjf0SQg0gEHw==
+"@proof-ui/cli@^0.0.19":
+  version "0.0.19"
+  resolved "https://registry.yarnpkg.com/@proof-ui/cli/-/cli-0.0.19.tgz#6a2ba7d9a5b7fefbc80cef06d0b3721f39fcb02b"
+  integrity sha512-gBPoyu9srFGS7R3sVaU9Snust/feDKrxLCix3nqY4xxcJk+oG/Im6Jk7pV8xf+1gt/iaK4vOXowdXfRRwV3jjw==
   dependencies:
-    "@proof-ui/babel-plugin" "^0.0.13"
-    "@proof-ui/cli-plugin" "^0.0.13"
-    "@proof-ui/config" "^0.0.13"
-    "@proof-ui/console-plugin" "^0.0.13"
-    "@proof-ui/core" "^0.0.13"
-    "@proof-ui/logger" "^0.0.13"
+    "@proof-ui/babel-plugin" "^0.0.19"
+    "@proof-ui/cli-plugin" "^0.0.19"
+    "@proof-ui/config" "^0.0.19"
+    "@proof-ui/console-plugin" "^0.0.19"
+    "@proof-ui/core" "^0.0.19"
+    "@proof-ui/logger" "^0.0.19"
     chalk "^2.4.2"
     command-line-application "^0.1.8"
     url "^0.11.0"
 
-"@proof-ui/config@^0.0.13":
-  version "0.0.13"
-  resolved "https://registry.yarnpkg.com/@proof-ui/config/-/config-0.0.13.tgz#71052c1ce71a77bda7d1fd1592631cb1ad4991f2"
-  integrity sha512-QubZht0yk+jz/ZuzaC2JPGSg2KetTf0+cT5iXMAeBtEs7XMmZ/T3sbXkUMJXzWTuOim4h8AYKR+GuyoyShX9Cw==
+"@proof-ui/config@^0.0.19":
+  version "0.0.19"
+  resolved "https://registry.yarnpkg.com/@proof-ui/config/-/config-0.0.19.tgz#28a0f2c1b97b7f25f4270da6e13e2ff52de3fda3"
+  integrity sha512-NFCDLpWEnraOw38ejxz8D4pBMiglDORkMKJud9x1pbkPW6xQYDdN80x5lfD01mZgRFeFyD79BV9FrlIitUQ/Zg==
   dependencies:
-    "@proof-ui/browser" "^0.0.13"
-    "@proof-ui/logger" "^0.0.13"
+    "@proof-ui/browser" "^0.0.19"
+    "@proof-ui/logger" "^0.0.19"
     cosmiconfig "^5.2.1"
 
-"@proof-ui/console-plugin@^0.0.13":
-  version "0.0.13"
-  resolved "https://registry.yarnpkg.com/@proof-ui/console-plugin/-/console-plugin-0.0.13.tgz#8e7a87d7a616e09784d5917a02553dc278953dd1"
-  integrity sha512-wgIPjAmpG1/KvvMeKJSwYe/4t2LynZGAiDgdeE6FBEmTJsQSK1lu2329NijquTsDaMsUuOXT9bKQQRBSHsfmIw==
+"@proof-ui/console-plugin@^0.0.19":
+  version "0.0.19"
+  resolved "https://registry.yarnpkg.com/@proof-ui/console-plugin/-/console-plugin-0.0.19.tgz#2a8ac57197a6e9984ffbfcd2a536f1738180c556"
+  integrity sha512-3SAldxue3f4MJsGWg7z80tQRsiLmoFMDxMYM2JiKQ1QyModG0G29e3PnUQY8SY+pKbKlvkomnN0XSpPKCE2iYg==
   dependencies:
     chalk "^2.4.2"
 
-"@proof-ui/core@^0.0.13":
-  version "0.0.13"
-  resolved "https://registry.yarnpkg.com/@proof-ui/core/-/core-0.0.13.tgz#0ed464886ad761fd67025e02586a76d84891fea0"
-  integrity sha512-EBzJ76kfQhWuQvNTdLlZT6DNCnwd9AZ/bp8ODCByJLmfaQoT/TKj8ItlqpnX7u6C3JSjxCsVXGfaHEk3i9FGbg==
+"@proof-ui/core@^0.0.19":
+  version "0.0.19"
+  resolved "https://registry.yarnpkg.com/@proof-ui/core/-/core-0.0.19.tgz#02c1981efe2e6cec3ad0555407bb50dc63ea6a9d"
+  integrity sha512-2rvlFR+9trjSb3dbGBYsF8hBqYfOimWJnmyh11JJjqyzXvMrOGE4FAxa4x2hyFiXj+wfHUM4c8eHS60b7VKLPw==
   dependencies:
-    "@proof-ui/browser" "^0.0.13"
-    "@proof-ui/logger" "^0.0.13"
-    "@proof-ui/test" "^0.0.13"
+    "@proof-ui/browser" "^0.0.19"
+    "@proof-ui/logger" "^0.0.19"
+    "@proof-ui/test" "^0.0.19"
     "@types/tapable" "^1.0.4"
     promise-pool-executor "^1.1.1"
     tapable "^1.1.3"
 
-"@proof-ui/junit-plugin@^0.0.13":
-  version "0.0.13"
-  resolved "https://registry.yarnpkg.com/@proof-ui/junit-plugin/-/junit-plugin-0.0.13.tgz#90f1005a7d4d295ed2976e4337acfae9d9649ee4"
-  integrity sha512-0Z+kPFax117mkos63QNaNIG5gwxMHlJbdhqjBqYJBDeiGKz8MOqUZyzStqUWU/STC+5hNkNw2brzckCOdsOtrg==
+"@proof-ui/junit-plugin@^0.0.19":
+  version "0.0.19"
+  resolved "https://registry.yarnpkg.com/@proof-ui/junit-plugin/-/junit-plugin-0.0.19.tgz#4108ac5c12d85bfd9e5d0fe9438f37d7bb4f9096"
+  integrity sha512-O0RrCMetOKZqgZn7/0wxNqtWC6dprd3oyKz4HWJiarart+KzDlwFhsNqZ+APIFzEwGLYELAJifEWTzAlCVOiRA==
   dependencies:
     junit-report-builder "^1.3.2"
     xmlbuilder "^13.0.2"
 
-"@proof-ui/logger@^0.0.13":
-  version "0.0.13"
-  resolved "https://registry.yarnpkg.com/@proof-ui/logger/-/logger-0.0.13.tgz#a34e9b2ff11f2c81295b7ec55c9a401214f52b04"
-  integrity sha512-DUfsfAHYts6K7Uatdecc6F2TrrYQxRZ/OZu7L6NB8Fk2NQecMAIG5R2HSQ2mBu4yiIfQyf5wAzg71cWjelgZ6Q==
+"@proof-ui/logger@^0.0.19":
+  version "0.0.19"
+  resolved "https://registry.yarnpkg.com/@proof-ui/logger/-/logger-0.0.19.tgz#248432d477a4a3cfe05c88a6e32b96f20a099480"
+  integrity sha512-tsYl7UiIdlWWFSqhto//rWABfgFD/k2YV3rMyrqeD9r+jvX7i5az4q9U5ohwjRyuU3SLzkWLaFPgDTOcvW7olw==
   dependencies:
     "@types/signale" "^1.2.1"
     signale "^1.4.0"
 
-"@proof-ui/skip-tests-plugin@^0.0.13":
-  version "0.0.13"
-  resolved "https://registry.yarnpkg.com/@proof-ui/skip-tests-plugin/-/skip-tests-plugin-0.0.13.tgz#049b97139b30685e7593f0e918325f4d42007984"
-  integrity sha512-XX1ETsMzW8/GnsOWtRLlJg7zKJzxNqyIw6icvFxPfoWETyTouOheVJfSuNIxZfm8Ik5AHaZCnldJKKRm02IZGw==
+"@proof-ui/skip-tests-plugin@^0.0.19":
+  version "0.0.19"
+  resolved "https://registry.yarnpkg.com/@proof-ui/skip-tests-plugin/-/skip-tests-plugin-0.0.19.tgz#09d9703938cce69147c701626fa70f7cb6e74e70"
+  integrity sha512-jgaI4JMvrRFMCqupZW2K3OcpcCPhBsVsksDQyM3GwG7bmMqsYQJCWAm+lwhFR7hVfa4WWQ4ilZK42TW/1KLcTg==
 
-"@proof-ui/storybook@^0.0.13":
-  version "0.0.13"
-  resolved "https://registry.yarnpkg.com/@proof-ui/storybook/-/storybook-0.0.13.tgz#18c1b3c68fc91ff9d245aa405d3b251c71d5ffd7"
-  integrity sha512-LyGJxUHp98FTh4Kx72Me7K1d26ujojywnIX4HWb4Q78+1YTF/eDj7CCYZcDbYc/kYdpmN7ZI2ei1LklsSvmGtQ==
+"@proof-ui/storybook@^0.0.19":
+  version "0.0.19"
+  resolved "https://registry.yarnpkg.com/@proof-ui/storybook/-/storybook-0.0.19.tgz#2bd86d41c4ec83de21888a7f77d6a867bb44b5ee"
+  integrity sha512-2NlaaQJyaUthU3h3mxhN2L2aeHkrr+rNj/vXwwRlmkXeuOuNon9fP8gEPpFcAZf9L2gt3rYHSJmvXYt/aQAYhQ==
 
-"@proof-ui/test@^0.0.13":
-  version "0.0.13"
-  resolved "https://registry.yarnpkg.com/@proof-ui/test/-/test-0.0.13.tgz#3bf7ee8e09304a60df9a7411afc211d4e7a32fd3"
-  integrity sha512-i8retH8AKMV7TB2aoq5FYUs2yvBD9N0cnGVdBo/COcDdZhRcP5qyS5VgYE+m7Srnr3Pu32UrkdSXnj18ClVdVQ==
+"@proof-ui/test@^0.0.19":
+  version "0.0.19"
+  resolved "https://registry.yarnpkg.com/@proof-ui/test/-/test-0.0.19.tgz#0e0c503785dcc76e40a9d5248cf817a41dbaad77"
+  integrity sha512-yMBvTpI7n2rhQp+FCBzrcOEvHvJ0tHV5hZI/cNQBIzjb9pFWhd7Pq8fVqtYTACDnNrgYRTKAgZOcSEADw6RBig==
   dependencies:
-    "@proof-ui/browser" "^0.0.13"
+    "@proof-ui/browser" "^0.0.19"
     "@types/power-assert" "^1.5.0"
     power-assert "^1.6.1"
 
-"@proof-ui/utils@^0.0.13":
-  version "0.0.13"
-  resolved "https://registry.yarnpkg.com/@proof-ui/utils/-/utils-0.0.13.tgz#a2828f3401245bf1d539915fc3f0a2b0ded47582"
-  integrity sha512-RMq9wtwLtME+pmG09s9Cz5YcKCylsxZsiEHBCNO9P00vd1vg1f2s2ui/SD4reBvAliJRHoMJ+3mtVqUSpy9f6Q==
+"@proof-ui/utils@^0.0.19":
+  version "0.0.19"
+  resolved "https://registry.yarnpkg.com/@proof-ui/utils/-/utils-0.0.19.tgz#667124ca2266b10ad2f8e5c0f1ecb91d0c796d48"
+  integrity sha512-/LT7c/SiqOssiUFrqHWVSl190rvA8G2CoVdJxtuGM9TP0SKZ9SbUczcWJTlXdUNKCfv8KFRbPKerwAgAq3AWHQ==
 
 "@reach/router@^1.2.1":
   version "1.2.1"
