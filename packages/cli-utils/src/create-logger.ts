@@ -122,8 +122,11 @@ export function createLogger({
     scoped.disable();
   }
 
+  /** Conditionally call the trace logger */
   scoped.trace = (...args) => callIfVerbose('trace', trace, ...args);
+  /** Conditionally call the skip logger */
   scoped.skip = (...args) => callIfVerbose('trace', skip, ...args);
+  /** Conditionally call the debug logger */
   scoped.debug = (...args) => callIfVerbose('debug', debug, ...args);
 
   return scoped;

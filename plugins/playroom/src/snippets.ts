@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import path from 'path';
 import glob from 'fast-glob';
 import jsxToString from 'react-element-to-jsx-string';
@@ -17,7 +18,7 @@ const renderSnippet = (code: string | React.ReactNode) =>
         displayName: component =>
           component &&
           typeof component === 'object' &&
-          ((component as any).type.displayName ||
+          ((component as åany).type.displayName ||
             (component as any).type.name ||
             (component as any).type)
       });

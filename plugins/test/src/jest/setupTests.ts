@@ -10,6 +10,7 @@ window.matchMedia =
 
 // @ts-ignore
 if (global.document) {
+  /** Create a mock for createRange */
   document.createRange = () => ({
     setStart: () => {
       // range polyfill 
