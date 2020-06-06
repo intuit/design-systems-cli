@@ -23,7 +23,7 @@
     "stylelint-config-recommended": "3.0.0",
     "stylelint-config-styled-components": "0.1.1",
     "stylelint-declaration-block-no-ignored-properties": "2.3.0",
-    "stylelint-order": "4.0.0",
+    "stylelint-order": "4.1.0",
     "stylelint-processor-styled-components": "1.10.0",
     "stylelint-selector-tag-no-without-class": "2.0.3",
     "tslib": "1.11.1"
