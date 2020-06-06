@@ -47,7 +47,7 @@
     "@types/fs-extra": "8.1.0",
     "@types/inquirer": "6.5.0",
     "change-case": "4.1.1",
-    "cli-spinners": "2.2.0",
+    "cli-spinners": "2.3.0",
     "colorette": "1.1.0",
     "command-line-application": "0.9.6",
     "copy-template-dir": "1.4.0",
