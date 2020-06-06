@@ -32,7 +32,7 @@
   },
   "devDependencies": {
     "@types/marked-terminal": "3.1.1",
-    "@types/node-fetch": "2.5.5",
+    "@types/node-fetch": "2.5.7",
     "@types/semver": "7.1.0"
   }
 }
