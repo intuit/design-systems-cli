@@ -22,7 +22,7 @@
     "@design-systems/cli-utils": "link:../../packages/cli-utils",
     "@design-systems/plugin": "link:../../packages/plugin",
     "chalk": "3.0.0",
-    "colorette": "1.1.0",
+    "colorette": "1.2.0",
     "fs-extra": "9.0.1",
     "marked": "0.8.0",
     "marked-terminal": "4.1.0",

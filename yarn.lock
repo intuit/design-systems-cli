@@ -2109,7 +2109,7 @@
     change-case "4.1.1"
     chokidar "3.4.0"
     clean-css "4.2.3"
-    colorette "1.1.0"
+    colorette "1.2.0"
     dedent "0.7.0"
     fast-glob "3.2.2"
     fs-extra "9.0.1"
@@ -2195,7 +2195,7 @@
     "@design-systems/plugin" "link:packages/plugin"
     change-case "4.1.1"
     cli-spinners "2.3.0"
-    colorette "1.1.0"
+    colorette "1.2.0"
     copy-template-dir "1.4.0"
     dedent "0.7.0"
     degit "https://github.com/hipstersmoothie/degit.git#private-release"
@@ -2328,7 +2328,7 @@
     "@royriojas/get-exports-from-file" "https://github.com/hipstersmoothie/get-exports-from-file#all"
     change-case "4.1.1"
     chokidar "3.4.0"
-    colorette "1.1.0"
+    colorette "1.2.0"
     commently "5.81.2"
     cross-spawn "7.0.1"
     css-loader "3.4.2"
@@ -2426,7 +2426,7 @@
     "@design-systems/cli-utils" "link:packages/cli-utils"
     "@design-systems/plugin" "link:packages/plugin"
     chalk "3.0.0"
-    colorette "1.1.0"
+    colorette "1.2.0"
     fs-extra "9.0.1"
     marked "0.8.0"
     marked-terminal "4.1.0"
@@ -7736,10 +7736,10 @@ color@^3.0.0:
     color-convert "^1.9.1"
     color-string "^1.5.2"
 
-colorette@1.1.0:
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/colorette/-/colorette-1.1.0.tgz#1f943e5a357fac10b4e0f5aaef3b14cdc1af6ec7"
-  integrity sha512-6S062WDQUXi6hOfkO/sBPVwE5ASXY4G2+b4atvhJfSsuUUhIaUKlkjLe9692Ipyt5/a+IPF5aVTu3V5gvXq5cg==
+colorette@1.2.0:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/colorette/-/colorette-1.2.0.tgz#45306add826d196e8c87236ac05d797f25982e63"
+  integrity sha512-soRSroY+OF/8OdA3PTQXwaDJeMc7TfknKKrxeSCencL2a4+Tx5zhxmmv7hdpCjhKBjehzp8+bwe/T68K0hpIjw==
 
 colors@1.0.3:
   version "1.0.3"
@@ -20855,10 +20855,10 @@ upath@^1.1.1, upath@^1.2.0:
   resolved "https://registry.yarnpkg.com/upath/-/upath-1.2.0.tgz#8f66dbcd55a883acdae4408af8b035a5044c1894"
   integrity sha512-aZwGpamFO61g3OlfT7OQCHqhGnW43ieH9WZeP7QxN/G/jS4jfqUkZxoryvJgVPEcrl5NL/ggHsSmLMHuH64Lhg==
 
-update-check@1.5.3:
-  version "1.5.3"
-  resolved "https://registry.yarnpkg.com/update-check/-/update-check-1.5.3.tgz#45240fcfb8755a7c7fa68bbdd9eda026a41639ed"
-  integrity sha512-6KLU4/dd0Tg/l0xwL+f9V7kEIPSL1vOIbnNnhSLiRDlj4AVG6Ks9Zoc9Jgt9kIgWFPZ/wp2AHgmG7xNf15TJOA==
+update-check@1.5.4:
+  version "1.5.4"
+  resolved "https://registry.yarnpkg.com/update-check/-/update-check-1.5.4.tgz#5b508e259558f1ad7dbc8b4b0457d4c9d28c8743"
+  integrity sha512-5YHsflzHP4t1G+8WGPlvKbJEbAJGCgw+Em+dGR1KmBUbr1J36SJBqlHLjR7oob7sco5hWHGQVcr9B2poIVDDTQ==
   dependencies:
     registry-auth-token "3.3.2"
     registry-url "3.1.0"
