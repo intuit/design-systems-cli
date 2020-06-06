@@ -24,7 +24,7 @@
     "@royriojas/get-exports-from-file": "https://github.com/hipstersmoothie/get-exports-from-file#all",
     "change-case": "4.1.1",
     "chokidar": "3.4.0",
-    "colorette": "1.1.0",
+    "colorette": "1.2.0",
     "commently": "5.81.2",
     "cross-spawn": "7.0.3",
     "css-loader": "3.4.2",
