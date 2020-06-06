@@ -2157,7 +2157,7 @@
     commently "5.81.2"
     cross-spawn "7.0.1"
     css-loader "3.4.2"
-    diff2html "3.1.6"
+    diff2html "3.1.7"
     file-size "1.0.0"
     fs-extra "9.0.1"
     get-monorepo-packages "1.2.0"
@@ -8881,15 +8881,15 @@ diff-sequences@^25.1.0:
   resolved "https://registry.yarnpkg.com/diff-sequences/-/diff-sequences-25.1.0.tgz#fd29a46f1c913fd66c22645dc75bffbe43051f32"
   integrity sha512-nFIfVk5B/NStCsJ+zaPO4vYuLjlzQ6uFvPxzYyHlejNZ/UGa7G/n7peOXVrVNvRuyfstt+mZQYGpjxg9Z6N8Kw==
 
-diff2html@3.1.6:
-  version "3.1.6"
-  resolved "https://registry.yarnpkg.com/diff2html/-/diff2html-3.1.6.tgz#4cc59cb8abeda00ba2d98047ffbb0c267cf1e423"
-  integrity sha512-XWceXI/tvT6YIHpO1kUY8y/fEDUdV3Du//0McAuK2/Fikc/MU2cyoFS5PXVuOFA5DO5otvPyeJmFan2iNUWkVg==
+diff2html@3.1.7:
+  version "3.1.7"
+  resolved "https://registry.yarnpkg.com/diff2html/-/diff2html-3.1.7.tgz#2641a510e359743164d41dad30db1246e92b136c"
+  integrity sha512-inGdGsbKPt4s5ceH3QZZS2mZqp4eroiQoKEtYOGuSDGGm0X7K8Jsd472KxSSdi8s8d4jkDI6o5SJ/rMeJPs5mg==
   dependencies:
     diff "4.0.2"
     hogan.js "3.0.2"
   optionalDependencies:
-    highlight.js "9.18.1"
+    highlight.js "10.0.2"
 
 diff@4.0.2:
   version "4.0.2"
@@ -11383,10 +11383,10 @@ hex-color-regex@^1.1.0:
   resolved "https://registry.yarnpkg.com/hex-color-regex/-/hex-color-regex-1.1.0.tgz#4c06fccb4602fe2602b3c93df82d7e7dbf1a8a8e"
   integrity sha512-l9sfDFsuqtOqKDsQdqrMRk0U85RZc0RtOR9yPI7mRVOa4FsR/BVnZ0shmQRM96Ji99kYZP/7hn1cedc1+ApsTQ==
 
-highlight.js@9.18.1:
-  version "9.18.1"
-  resolved "https://registry.yarnpkg.com/highlight.js/-/highlight.js-9.18.1.tgz#ed21aa001fe6252bb10a3d76d47573c6539fe13c"
-  integrity sha512-OrVKYz70LHsnCgmbXctv/bfuvntIKDz177h0Co37DQ5jamGZLVmoCVMtjMtNZY3X9DrCcKfklHPNeA0uPZhSJg==
+highlight.js@10.0.2:
+  version "10.0.2"
+  resolved "https://registry.yarnpkg.com/highlight.js/-/highlight.js-10.0.2.tgz#d2c732544f8f68bceaf0cefb4b0575bce8eddbee"
+  integrity sha512-2gMT2MHU6/2OjAlnaOE2LFdr9dwviDN3Q2lSw7Ois3/5uTtahbgYTkr4EPoY828ps+2eQWiixPTF8+phU6Ofkg==
 
 highlight.js@~9.13.0:
   version "9.13.1"
