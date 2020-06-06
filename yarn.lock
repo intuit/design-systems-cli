@@ -1915,7 +1915,7 @@
     minimist "^1.2.0"
 
 "@design-systems/build@link:plugins/build":
-  version "1.7.2"
+  version "1.9.0"
   dependencies:
     "@babel/code-frame" "7.8.3"
     "@babel/core" "7.9.0"
@@ -1953,10 +1953,10 @@
     tapable "1.1.3"
     tslib "1.11.1"
     type-fest "0.12.0"
-    typescript "3.8.3"
+    typescript "^3.8.3"
 
 "@design-systems/bundle@link:plugins/bundle":
-  version "1.7.2"
+  version "1.9.0"
   dependencies:
     "@design-systems/build" "link:plugins/build"
     "@design-systems/cli-utils" "link:packages/cli-utils"
@@ -1974,7 +1974,7 @@
     webpack "4.41.5"
 
 "@design-systems/clean@link:plugins/clean":
-  version "1.7.2"
+  version "1.9.0"
   dependencies:
     "@design-systems/cli-utils" "link:packages/cli-utils"
     "@design-systems/plugin" "link:packages/plugin"
@@ -1983,7 +1983,7 @@
     tslib "1.11.1"
 
 "@design-systems/cli-utils@link:packages/cli-utils":
-  version "1.7.2"
+  version "1.9.0"
   dependencies:
     find-up "4.1.0"
     npm-which "3.0.1"
@@ -1993,7 +1993,7 @@
     webpack "4.41.5"
 
 "@design-systems/core@link:packages/core":
-  version "1.7.2"
+  version "1.9.0"
   dependencies:
     "@design-systems/build" "link:plugins/build"
     "@design-systems/bundle" "link:plugins/bundle"
@@ -2013,7 +2013,7 @@
     tslib "1.11.1"
 
 "@design-systems/create-command@link:plugins/create-command":
-  version "1.7.2"
+  version "1.9.0"
   dependencies:
     "@design-systems/cli-utils" "link:packages/cli-utils"
     "@design-systems/create" "link:packages/create"
@@ -2032,10 +2032,10 @@
     tslib "1.11.1"
 
 "@design-systems/create@link:packages/create":
-  version "1.7.2"
+  version "1.9.0"
 
 "@design-systems/dev@link:plugins/dev":
-  version "1.7.2"
+  version "1.9.0"
   dependencies:
     "@design-systems/cli-utils" "link:packages/cli-utils"
     "@design-systems/plugin" "link:packages/plugin"
@@ -2046,7 +2046,7 @@
     tslib "1.11.1"
 
 "@design-systems/eslint-config@link:packages/eslint-config":
-  version "1.7.2"
+  version "1.9.0"
   dependencies:
     "@design-systems/cli-utils" "link:packages/cli-utils"
     "@typescript-eslint/eslint-plugin" "2.17.0"
@@ -2069,7 +2069,7 @@
     tslib "1.11.1"
 
 "@design-systems/lint@link:plugins/lint":
-  version "1.7.2"
+  version "1.9.0"
   dependencies:
     "@design-systems/cli-utils" "link:packages/cli-utils"
     "@design-systems/eslint-config" "link:packages/eslint-config"
@@ -2086,7 +2086,7 @@
     tslib "1.11.1"
 
 "@design-systems/load-config@link:packages/load-config":
-  version "1.7.2"
+  version "1.9.0"
   dependencies:
     "@design-systems/core" "link:packages/core"
     "@design-systems/plugin" "link:packages/plugin"
@@ -2100,7 +2100,7 @@
     tslib "1.11.1"
 
 "@design-systems/playroom@link:plugins/playroom":
-  version "1.7.2"
+  version "1.9.0"
   dependencies:
     "@babel/core" "7.9.0"
     "@babel/register" "7.9.0"
@@ -2109,6 +2109,7 @@
     "@design-systems/plugin" "link:packages/plugin"
     babel-plugin-import-redirect "1.1.1"
     css-loader "3.4.2"
+    dedent "0.7.0"
     fast-glob "3.2.2"
     file-loader "6.0.0"
     fork-ts-checker-webpack-plugin "4.1.3"
@@ -2120,14 +2121,14 @@
     webpack "4.41.5"
 
 "@design-systems/plugin@link:packages/plugin":
-  version "1.7.2"
+  version "1.9.0"
   dependencies:
     command-line-application "0.9.6"
     tslib "1.11.1"
     utility-types "3.10.0"
 
 "@design-systems/proof@link:plugins/proof":
-  version "1.7.2"
+  version "1.9.0"
   dependencies:
     "@babel/core" "7.9.0"
     "@babel/plugin-transform-runtime" "7.9.0"
@@ -2145,7 +2146,7 @@
     tslib "1.11.1"
 
 "@design-systems/size@link:plugins/size":
-  version "1.7.2"
+  version "1.9.0"
   dependencies:
     "@design-systems/cli-utils" "link:packages/cli-utils"
     "@design-systems/plugin" "link:packages/plugin"
@@ -2175,7 +2176,7 @@
     webpack-sources "1.4.3"
 
 "@design-systems/storybook@link:plugins/storybook":
-  version "1.7.2"
+  version "1.9.0"
   dependencies:
     "@babel/core" "7.9.0"
     "@design-systems/build" "link:plugins/build"
@@ -2211,7 +2212,7 @@
     webpack-filter-warnings-plugin "1.2.1"
 
 "@design-systems/stylelint-config@link:packages/stylelint-config":
-  version "1.7.2"
+  version "1.9.0"
   dependencies:
     stylelint-a11y "1.2.3"
     stylelint-config-css-modules "2.2.0"
@@ -2225,7 +2226,7 @@
     tslib "1.11.1"
 
 "@design-systems/test@link:plugins/test":
-  version "1.7.2"
+  version "1.9.0"
   dependencies:
     "@babel/core" "7.9.0"
     "@design-systems/build" "link:plugins/build"
@@ -2245,7 +2246,7 @@
     tslib "1.11.1"
 
 "@design-systems/update@link:plugins/update":
-  version "1.7.2"
+  version "1.9.0"
   dependencies:
     "@design-systems/cli-utils" "link:packages/cli-utils"
     "@design-systems/plugin" "link:packages/plugin"
@@ -2255,7 +2256,7 @@
     marked "0.8.0"
     marked-terminal "4.1.0"
     node-fetch "2.6.0"
-    semver "7.1.3"
+    semver "7.3.2"
     tslib "1.11.1"
 
 "@emotion/cache@^10.0.27", "@emotion/cache@^10.0.9":
@@ -4834,10 +4835,10 @@
   dependencies:
     "@types/node" "*"
 
-"@types/semver@7.1.0":
-  version "7.1.0"
-  resolved "https://registry.yarnpkg.com/@types/semver/-/semver-7.1.0.tgz#c8c630d4c18cd326beff77404887596f96408408"
-  integrity sha512-pOKLaubrAEMUItGNpgwl0HMFPrSAFic8oSVIvfu1UwcgGNmNyK9gyhBHKmBnUTwwVvpZfkzUC0GaMgnL6P86uA==
+"@types/semver@7.2.0":
+  version "7.2.0"
+  resolved "https://registry.yarnpkg.com/@types/semver/-/semver-7.2.0.tgz#0d72066965e910531e1db4621c15d0ca36b8d83b"
+  integrity sha512-TbB0A8ACUWZt3Y6bQPstW9QNbhNeebdgLX4T/ZfkrswAfUzRiXrgd9seol+X379Wa589Pu4UEx9Uok0D4RjRCQ==
   dependencies:
     "@types/node" "*"
 
@@ -18416,10 +18417,10 @@ semver@7.0.0:
   resolved "https://registry.yarnpkg.com/semver/-/semver-7.0.0.tgz#5f3ca35761e47e05b206c6daff2cf814f0316b8e"
   integrity sha512-+GB6zVA9LWh6zovYQLALHwv5rb2PHGlJi3lfiqIHxR0uuwCgefcOJc59v9fv1w8GbStwxuuqqAjI9NMAOOgq1A==
 
-semver@7.1.3:
-  version "7.1.3"
-  resolved "https://registry.yarnpkg.com/semver/-/semver-7.1.3.tgz#e4345ce73071c53f336445cfc19efb1c311df2a6"
-  integrity sha512-ekM0zfiA9SCBlsKa2X1hxyxiI4L3B6EbVJkkdgQXnSEEaHlGdvyodMruTiulSRWMMB4NeIuYNMC9rTKTz97GxA==
+semver@7.3.2:
+  version "7.3.2"
+  resolved "https://registry.yarnpkg.com/semver/-/semver-7.3.2.tgz#604962b052b81ed0786aae84389ffba70ffd3938"
+  integrity sha512-OrOb32TeeambH6UrhtShmF7CRDqhL6/5XpPNp2DuRH6+9QLw/orhp72j87v8Qa1ScDkvrrBNpZcDejAirJmfXQ==
 
 semver@^6.0.0, semver@^6.1.2, semver@^6.2.0, semver@^6.3.0:
   version "6.3.0"
@@ -20368,10 +20369,15 @@ typescript@3.7.5:
   resolved "https://registry.yarnpkg.com/typescript/-/typescript-3.7.5.tgz#0692e21f65fd4108b9330238aac11dd2e177a1ae"
   integrity sha512-/P5lkRXkWHNAbcJIiHPfRoKqyd7bsyCma1hZNUGfn20qm64T6ZBlrzprymeu918H+mB/0rIg2gGK/BXkhhYgBw==
 
-typescript@3.8.3, typescript@^3.7.5:
+typescript@^3.7.5:
   version "3.8.3"
   resolved "https://registry.yarnpkg.com/typescript/-/typescript-3.8.3.tgz#409eb8544ea0335711205869ec458ab109ee1061"
   integrity sha512-MYlEfn5VrLNsgudQTVJeNaQFUAI7DkhnOjdpAp4T+ku1TfQClewlbSuTVHiA+8skNBgaf02TL/kLOvig4y3G8w==
+
+typescript@^3.8.3:
+  version "3.9.5"
+  resolved "https://registry.yarnpkg.com/typescript/-/typescript-3.9.5.tgz#586f0dba300cde8be52dd1ac4f7e1009c1b13f36"
+  integrity sha512-hSAifV3k+i6lEoCJ2k6R2Z/rp/H3+8sdmcn5NrS3/3kE7+RyZXm9aqvxWqjEXHAd8b0pShatpcdMTvEdvAJltQ==
 
 typical@^2.6.1:
   version "2.6.1"
@@ -20596,10 +20602,10 @@ upath@^1.1.1, upath@^1.2.0:
   resolved "https://registry.yarnpkg.com/upath/-/upath-1.2.0.tgz#8f66dbcd55a883acdae4408af8b035a5044c1894"
   integrity sha512-aZwGpamFO61g3OlfT7OQCHqhGnW43ieH9WZeP7QxN/G/jS4jfqUkZxoryvJgVPEcrl5NL/ggHsSmLMHuH64Lhg==
 
-update-check@1.5.4:
-  version "1.5.4"
-  resolved "https://registry.yarnpkg.com/update-check/-/update-check-1.5.4.tgz#5b508e259558f1ad7dbc8b4b0457d4c9d28c8743"
-  integrity sha512-5YHsflzHP4t1G+8WGPlvKbJEbAJGCgw+Em+dGR1KmBUbr1J36SJBqlHLjR7oob7sco5hWHGQVcr9B2poIVDDTQ==
+update-check@1.5.3:
+  version "1.5.3"
+  resolved "https://registry.yarnpkg.com/update-check/-/update-check-1.5.3.tgz#45240fcfb8755a7c7fa68bbdd9eda026a41639ed"
+  integrity sha512-6KLU4/dd0Tg/l0xwL+f9V7kEIPSL1vOIbnNnhSLiRDlj4AVG6Ks9Zoc9Jgt9kIgWFPZ/wp2AHgmG7xNf15TJOA==
   dependencies:
     registry-auth-token "3.3.2"
     registry-url "3.1.0"
