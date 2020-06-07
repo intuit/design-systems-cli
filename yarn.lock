@@ -1215,7 +1215,7 @@
     tapable "1.1.3"
     tslib "1.11.1"
     type-fest "0.15.0"
-    typescript "^3.8.3"
+    typescript "3.9.5"
 
 "@design-systems/bundle@link:plugins/bundle":
   version "1.9.0"
@@ -12206,9 +12206,9 @@ jest-get-type@^26.0.0:
   integrity sha512-zRc1OAPnnws1EVfykXOj19zo2EMw5Hi6HLbFCSjpuJiXtOWAYIjNsHVSbpQ8bDX7L5BGYGI8m+HmKdjHYFF0kg==
 
 jest-github-reporter@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/jest-github-reporter/-/jest-github-reporter-1.0.0.tgz#a1068dd01676ec206f91b7d9a5177346a56bdb64"
-  integrity sha512-EmyBES0lqS8q+N8BWzROPev1VHrmkxjaeDwqjn+t16do152mp1KLjx6/d2g3xzQNRnIy5tEJeK/6Nylvhk/jqg==
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/jest-github-reporter/-/jest-github-reporter-1.0.1.tgz#f8d373acb143ac03acded6305248a929c25fa5af"
+  integrity sha512-3sXqc0AOepXadE0QHt44eYcOj3vWnsbJf3GEjQA6BEJwxgSYQH0eECP/oOZLtwRLUoSIRispsfRSw8rttpsLvA==
   dependencies:
     "@octokit/rest" "^16.28.7"
     create-check "^0.6.1"
@@ -12491,9 +12491,9 @@ jest-worker@^24.9.0:
     supports-color "^6.1.0"
 
 jest-worker@^25.1.0:
-  version "25.1.0"
-  resolved "https://registry.yarnpkg.com/jest-worker/-/jest-worker-25.1.0.tgz#75d038bad6fdf58eba0d2ec1835856c497e3907a"
-  integrity sha512-ZHhHtlxOWSxCoNOKHGbiLzXnl42ga9CxDr27H36Qn+15pQZd3R/F24jrmjDelw9j/iHUIWMWs08/u2QN50HHOg==
+  version "25.5.0"
+  resolved "https://registry.yarnpkg.com/jest-worker/-/jest-worker-25.5.0.tgz#2611d071b79cea0f43ee57a3d118593ac1547db1"
+  integrity sha512-/dsSmUkIy5EBGfv/IjjqmFxrNAUpBERfGs1oHROyD7yxjG/w+t0GOJDX8O1k32ySmd7+a5IhnJU2qQFcJ4n1vw==
   dependencies:
     merge-stream "^2.0.0"
     supports-color "^7.0.0"
@@ -19864,20 +19864,15 @@ typescript-memoize@^1.0.0-alpha.3:
   dependencies:
     core-js "2.4.1"
 
-typescript@3.7.5:
-  version "3.7.5"
-  resolved "https://registry.yarnpkg.com/typescript/-/typescript-3.7.5.tgz#0692e21f65fd4108b9330238aac11dd2e177a1ae"
-  integrity sha512-/P5lkRXkWHNAbcJIiHPfRoKqyd7bsyCma1hZNUGfn20qm64T6ZBlrzprymeu918H+mB/0rIg2gGK/BXkhhYgBw==
+typescript@3.9.5:
+  version "3.9.5"
+  resolved "https://registry.yarnpkg.com/typescript/-/typescript-3.9.5.tgz#586f0dba300cde8be52dd1ac4f7e1009c1b13f36"
+  integrity sha512-hSAifV3k+i6lEoCJ2k6R2Z/rp/H3+8sdmcn5NrS3/3kE7+RyZXm9aqvxWqjEXHAd8b0pShatpcdMTvEdvAJltQ==
 
 typescript@^3.7.5:
   version "3.8.3"
   resolved "https://registry.yarnpkg.com/typescript/-/typescript-3.8.3.tgz#409eb8544ea0335711205869ec458ab109ee1061"
   integrity sha512-MYlEfn5VrLNsgudQTVJeNaQFUAI7DkhnOjdpAp4T+ku1TfQClewlbSuTVHiA+8skNBgaf02TL/kLOvig4y3G8w==
-
-typescript@^3.8.3:
-  version "3.9.5"
-  resolved "https://registry.yarnpkg.com/typescript/-/typescript-3.9.5.tgz#586f0dba300cde8be52dd1ac4f7e1009c1b13f36"
-  integrity sha512-hSAifV3k+i6lEoCJ2k6R2Z/rp/H3+8sdmcn5NrS3/3kE7+RyZXm9aqvxWqjEXHAd8b0pShatpcdMTvEdvAJltQ==
 
 typical@^2.6.1:
   version "2.6.1"
