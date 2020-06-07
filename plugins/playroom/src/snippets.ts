@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
+
 import path from 'path';
 import glob from 'fast-glob';
 import jsxToString from 'react-element-to-jsx-string';
@@ -30,7 +32,7 @@ export default function getSnippets() {
   ]);
 
   const snippets = packageSnippets.reduce((all, file) => {
-    // eslint-disable-next-line global-require, import/no-dynamic-require
+    // eslint-disable-next-line global-require, import/no-dynamic-require, @typescript-eslint/no-var-requires
     const componentSnippets = require(path.resolve(file.toString())).default;
 
     if (Array.isArray(componentSnippets)) {
