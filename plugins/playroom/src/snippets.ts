@@ -6,7 +6,8 @@ import jsxToString from 'react-element-to-jsx-string';
 interface Snippet {
   /** The name of the snippet */
   name: string;
-  /** the actual snippet */ code: React.ReactNode;
+  /** the actual snippet */ 
+  code: React.ReactNode;
 }
 
 /** Render a snippet to a string */
@@ -18,7 +19,7 @@ const renderSnippet = (code: string | React.ReactNode) =>
         displayName: component =>
           component &&
           typeof component === 'object' &&
-          ((component as åany).type.displayName ||
+          ((component as any).type.displayName ||
             (component as any).type.name ||
             (component as any).type)
       });
