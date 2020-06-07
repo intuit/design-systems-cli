@@ -115,8 +115,6 @@ async function lintCSS(args: LintArgs): Promise<number> {
         config: {
           ...config,
           processors: undefined,
-          // eslint-disable-next-line @typescript-eslint/ban-ts-ignore
-          // @ts-ignore
           codeProcessors: undefined
         }
       });
