@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import path from 'path';
 import glob from 'fast-glob';
 import jsxToString from 'react-element-to-jsx-string';
@@ -5,7 +6,8 @@ import jsxToString from 'react-element-to-jsx-string';
 interface Snippet {
   /** The name of the snippet */
   name: string;
-  /** the actual snippet */ code: React.ReactNode;
+  /** the actual snippet */ 
+  code: React.ReactNode;
 }
 
 /** Render a snippet to a string */
