@@ -73,7 +73,7 @@ export default async function(
                 output: {
                   ecma: 5,
                   comments: false,
-                  // eslint-disable-next-line @typescript-eslint/camelcase
+                  // eslint-disable-next-line camelcase
                   ascii_only: true
                 }
               },

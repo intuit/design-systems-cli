@@ -178,6 +178,7 @@ module.exports = {
         // just rely on typescript inference
         '@typescript-eslint/explicit-function-return-type': 0,
         '@typescript-eslint/explicit-member-accessibility': 0,
+        "@typescript-eslint/explicit-module-boundary-types": 0,
 
         'jsdoc/require-jsdoc': [
           2,
@@ -216,7 +217,8 @@ module.exports = {
         'jsx-a11y/no-static-element-interactions': 0,
         'jsx-a11y/jsx-a11y/anchor-has-content': 0,
         // devDependencies are all in the root
-        'import/no-extraneous-dependencies': 0
+        'import/no-extraneous-dependencies': 0,
+        "@typescript-eslint/ban-ts-comment": 0,
       }
     },
     {
