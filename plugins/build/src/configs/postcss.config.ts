@@ -18,7 +18,7 @@ module.exports = function(ctx: PostCSSContext = { outDir: 'dist' }) {
     plugins: [
       nested,
       modules({
-        camelCase: true,
+        localsConvention: 'camelCase',
         generateScopedName(name: string, filename: string, css: string) {
           const base = path.basename(filename, '.css');
           const pkgJson = pkgUp.sync({ cwd: path.dirname(filename) });
@@ -44,7 +44,7 @@ module.exports = function(ctx: PostCSSContext = { outDir: 'dist' }) {
           return `${base}-${name}-${hashString.substr(hashString.length - 7)}`;
         },
         async getJSON(
-          cssFileName: string,
+          _: string,
           json: Record<string, string>,
           outputFileName: string
         ) {
