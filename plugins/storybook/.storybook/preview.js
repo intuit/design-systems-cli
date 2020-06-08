@@ -1,11 +1,11 @@
-import { addDecorator, addParameters } from '@storybook/react';
-import { withA11y } from '@storybook/addon-a11y';
-import { withPropsTable } from 'storybook-addon-react-docgen';
-import { withKnobs } from '@storybook/addon-knobs';
-import { themes as storybookThemes, ThemeContext } from '@storybook/theming';
-import { jsxDecorator } from 'storybook-addon-jsx';
-import { select } from '@storybook/addon-knobs';
-import configProof from '@proof-ui/storybook';
+const { addDecorator, addParameters } = require('@storybook/react');
+const { withA11y } = require('@storybook/addon-a11y');
+const { withPropsTable } = require('storybook-addon-react-docgen');
+const { withKnobs } = require('@storybook/addon-knobs');
+const { themes: storybookThemes, ThemeContext } = require('@storybook/theming');
+const { jsxDecorator } = require('storybook-addon-jsx');
+const { select } = require('@storybook/addon-knobs');
+const configProof = require('@proof-ui/storybook').default;
 
 configProof();
 

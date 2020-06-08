@@ -1,8 +1,9 @@
-import modifyWebpack from './modify-webpack';
+const modifyWebpack = require('./modify-webpack');
+const path = require('path')
 
-export const addons = [
+const addons = [
   // Panels
-  '@storybook/addon-notes', // TODO register panel?
+  '@storybook/addon-notes/register-panel',
   'storybook-addon-react-docgen',
   'storybook-addon-jsx',
   '@storybook/addon-knobs',
@@ -11,18 +12,17 @@ export const addons = [
   // Tools
   '@storybook/addon-backgrounds',
   'storybook-dark-mode',
-  'storybook-addon-sketch', // TODO storybook-addon-sketch/register-options?
+  'storybook-addon-sketch/register-options',
   '@storybook/addon-viewport',
-  '@storybook/addon-a11y' // TODO check this works
+  '@storybook/addon-a11y'
 ];
 
-// TODO does this work?
-export const entries = [
-  require.context(
-    COMPONENT,
-    true,
-    /^\.\/((?!node_modules).)*\.stories\.(tsx|ts|js|jsx|mdx)$/
-  )
+const stories = [
+  path.join(process.env.COMPONENT, '**/*.stories.tsx')
 ];
 
-export const webpackFinal = modifyWebpack;
+module.exports = {
+  addons,
+  stories, 
+  webpackFinal: modifyWebpack
+}

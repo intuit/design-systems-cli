@@ -32,7 +32,7 @@ export default class StorybookPlugin implements Plugin<StorybookArgs> {
 
   async run(args: StorybookArgs) {
     try {
-      const configDir = path.join(getMonorepoRoot(), '../.storybook');
+      const configDir = path.join(getMonorepoRoot(), '.storybook');
       process.env.COMPONENT = process.cwd();
 
       if (args._command[1] === 'build') {

@@ -1450,12 +1450,11 @@
     fork-ts-checker-webpack-plugin "4.1.6"
     get-port "5.1.1"
     github-url-to-object "4.0.4"
-    react-docgen-typescript-loader "3.7.2"
     source-map-loader "0.2.4"
     story2sketch "1.7.0"
     storybook-addon-jsx "^7.1.15"
-    storybook-addon-react-docgen "^1.2.32"
-    storybook-addon-sketch "^0.1.0"
+    storybook-addon-react-docgen "^1.2.34"
+    storybook-addon-sketch "^0.2.0"
     storybook-dark-mode "^0.6.0"
     tslib "1.11.1"
     webpack "4.41.5"
@@ -16939,7 +16938,7 @@ react-dev-utils@^10.0.0:
     strip-ansi "6.0.0"
     text-table "0.2.0"
 
-react-docgen-typescript-loader@3.7.2, react-docgen-typescript-loader@^3.7.2:
+react-docgen-typescript-loader@^3.7.2:
   version "3.7.2"
   resolved "https://registry.yarnpkg.com/react-docgen-typescript-loader/-/react-docgen-typescript-loader-3.7.2.tgz#45cb2305652c0602767242a8700ad1ebd66bbbbd"
   integrity sha512-fNzUayyUGzSyoOl7E89VaPKJk9dpvdSgyXg81cUkwy0u+NBvkzQG3FC5WBIlXda0k/iaxS+PWi+OC+tUiGxzPA==
@@ -18867,7 +18866,7 @@ store2@^2.7.1:
   resolved "https://registry.yarnpkg.com/store2/-/store2-2.10.0.tgz#46b82bb91878daf1b0d56dec2f1d41e54d5103cf"
   integrity sha512-tWEpK0snS2RPUq1i3R6OahfJNjWCQYNxq0+by1amCSuw0mXtymJpzmZIeYpA1UAa+7B0grCpNYIbDcd7AgTbFg==
 
-story2sketch@1.7.0, story2sketch@^1.5.0:
+story2sketch@1.7.0:
   version "1.7.0"
   resolved "https://registry.yarnpkg.com/story2sketch/-/story2sketch-1.7.0.tgz#47a3b332fb9207d07fb64319dc07ecdb586545ab"
   integrity sha512-CP/cLvTceoqQ8BeV30l5yLkFUdBJ61bsjakVKjl8GAI9/Cf6EmB9yzT+K5RDuKMVrajbiVSYwteB8TNSRJUR6A==
@@ -18894,24 +18893,24 @@ storybook-addon-jsx@^7.1.15:
     react-element-to-jsx-string "^14.3.1"
     storybook-pretty-props "^1.0.3"
 
-storybook-addon-react-docgen@^1.2.32:
-  version "1.2.32"
-  resolved "https://registry.yarnpkg.com/storybook-addon-react-docgen/-/storybook-addon-react-docgen-1.2.32.tgz#3226fca12a0b5a971f6bdac1830281f83c96d0f2"
-  integrity sha512-qCn/8bNLptJvok79AbhyRcUquzSl3WH3Sck1Bi60MpU00GHyYCqE8JeAfuQPPUh7ocMpqitw0Z+Prz4gzhuFOg==
+storybook-addon-react-docgen@^1.2.34:
+  version "1.2.35"
+  resolved "https://registry.yarnpkg.com/storybook-addon-react-docgen/-/storybook-addon-react-docgen-1.2.35.tgz#cbece9df94004db95047933defb2fc7e9054b9b7"
+  integrity sha512-tqWh1apJrczBaRNnxpKldI56EbZAtgKhDkRMqPoKq8b6bALfZwsjBiSbNtvL4G27S4Tag8YjWdLAKbxXBTpVoQ==
   dependencies:
     nested-object-assign "^1.0.3"
     prop-types "^15.6.2"
     react-addons-create-fragment "^15.6.2"
     react-lifecycles-compat "^3.0.4"
+    storybook-pretty-props "^1.1.1"
 
-storybook-addon-sketch@^0.1.0:
-  version "0.1.0"
-  resolved "https://registry.yarnpkg.com/storybook-addon-sketch/-/storybook-addon-sketch-0.1.0.tgz#c62ee46bfadfa62be2aa054dcd114eaf18d35d7c"
-  integrity sha512-BwhKKRlYqnIu9VE6D3HhZCU6W/qnadM1uUHD0OsklrCk6poQOqt51tSKqKyh0zkvVK+iYJ+ZgXiGbYs/YmwL2A==
+storybook-addon-sketch@^0.2.0:
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/storybook-addon-sketch/-/storybook-addon-sketch-0.2.0.tgz#5b9339aeb487b13bdb6c1db8b7156a5a7b1c7b42"
+  integrity sha512-Pjqxo5MTCtojEEtoLRgF5YRI/UgegLXvf8PTr8O6HwtzvR+FTQk15khHBEJUiaHfxqqm+fCo4IK+aMcl5ozLlQ==
   dependencies:
     "@types/url-join" "^4.0.0"
     file-saver "^2.0.1"
-    story2sketch "^1.5.0"
     url-join "^4.0.0"
 
 storybook-dark-mode@^0.6.0:
@@ -18926,6 +18925,13 @@ storybook-pretty-props@^1.0.3:
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/storybook-pretty-props/-/storybook-pretty-props-1.0.3.tgz#604974b998ffc680212bb7f3abc44fbfc9149119"
   integrity sha512-iySc0X6K1QHqDV2JzU0DhWWARWhyJGI/11BYlHEymlFYfmewmxK4g/Z/ebj0YrwURAItwxMJUfsN2oDbiV0D8A==
+
+storybook-pretty-props@^1.1.1:
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/storybook-pretty-props/-/storybook-pretty-props-1.1.1.tgz#91066f72217b897f6fb4bab41d43e54399111a23"
+  integrity sha512-JAYqbzxBXD1TGbU/h10KQ6iozuRNsz/rUs8NNFGwJS+B2X3rUom787OaEZpM4nhLauUGUf4/UU5F9L2clWe8QA==
+  dependencies:
+    prettier "^2.0.5"
 
 stream-browserify@^2.0.1:
   version "2.0.2"
