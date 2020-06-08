@@ -47,7 +47,6 @@ const command: CliCommand = {
 
       1. dark-logo.png - Logo for the storybook when it's in dark mode
       2. light-logo.png - Logo for the storybook when it's in light mode
-      3. middleware.js - provide express middleware to be used by storybook
     `
   }
 };
