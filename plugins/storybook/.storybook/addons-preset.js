@@ -19,7 +19,6 @@ function managerEntries(entry = []) {
       require.resolve('storybook-addon-jsx/register'),
       require.resolve('@storybook/addon-knobs/register'),
       require.resolve('@storybook/addon-actions/register'),
-      require.resolve('@storybook/addon-a11y/register'),
 
       // Tools
       require.resolve('@storybook/addon-backgrounds/register'),

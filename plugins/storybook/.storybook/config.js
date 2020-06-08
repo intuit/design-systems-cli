@@ -26,7 +26,6 @@ try {
 
 addDecorator(withKnobs);
 addDecorator(withPropsTable);
-addDecorator(withA11y);
 addDecorator(jsxDecorator);
 
 const brand = {
