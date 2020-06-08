@@ -39,17 +39,15 @@ const command: CliCommand = {
   footer: {
     header: 'Custom Storybook Configuration',
     content: dedent`
-      You can supply your own storybook settings by adding a \`.storybook\` directory at the root of the project.
+      The configuration for this package is now just a normal storybook preset!
+      This means that you configure storybook just like the story book docs suggests.
+      All you need to do is use our preset + load our "preview.js" if you want the default features we load.
 
-      It supports the following files:
+      It supports the following additional custom files:
 
-      1. addons.js - configure addon loading. It acts exactly how a config.js works in storybook. Overrides the default addons.js
-      2. config.js - configure extra addons and load your stories. It acts exactly how a config.js works in storybook, just with all our default decorators and parameters. If using this you MUST load your stories or add this line "require('@design-systems/storybook/.storybook/defaultConfig');"
+      1. dark-logo.png - Logo for the storybook when it's in dark mode
+      2. light-logo.png - Logo for the storybook when it's in light mode
       3. middleware.js - provide express middleware to be used by storybook
-      4. presets.js - configure storybook presets. It acts exactly how a presets.js works in storybook
-      5. webpack.config.js - configure extra webpack settings, works exactly like it does in storybook (ex: ({ config }) => config)
-      6. dark-logo.png - Logo for the storybook when it's in dark mode
-      7. light-logo.png - Logo for the storybook when it's in light mode
     `
   }
 };

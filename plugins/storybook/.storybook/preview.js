@@ -73,5 +73,3 @@ addParameters({
     }
   }
 });
-
-require(CONFIG_PATH);
