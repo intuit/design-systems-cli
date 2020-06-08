@@ -1455,7 +1455,7 @@
     story2sketch "1.7.0"
     storybook-addon-jsx "^7.1.15"
     storybook-addon-react-docgen "^1.2.32"
-    storybook-addon-sketch "^0.1.1"
+    storybook-addon-sketch "^0.2.0"
     storybook-dark-mode "^0.6.0"
     tslib "1.11.1"
     webpack "4.41.5"
@@ -18904,10 +18904,10 @@ storybook-addon-react-docgen@^1.2.32:
     react-addons-create-fragment "^15.6.2"
     react-lifecycles-compat "^3.0.4"
 
-storybook-addon-sketch@^0.1.1:
-  version "0.1.1"
-  resolved "https://registry.yarnpkg.com/storybook-addon-sketch/-/storybook-addon-sketch-0.1.1.tgz#b1118c3f72ea651b0f6fe20811359b224bfda8e7"
-  integrity sha512-2v4Kp94UsclGDQrBFf3WyCeAV+I916ynGebiAuzKcoiHfM07sgcDXI2jUN2VGRe+Ys2XmIwOMgHPQ9sXhJ3akw==
+storybook-addon-sketch@^0.2.0:
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/storybook-addon-sketch/-/storybook-addon-sketch-0.2.0.tgz#5b9339aeb487b13bdb6c1db8b7156a5a7b1c7b42"
+  integrity sha512-Pjqxo5MTCtojEEtoLRgF5YRI/UgegLXvf8PTr8O6HwtzvR+FTQk15khHBEJUiaHfxqqm+fCo4IK+aMcl5ozLlQ==
   dependencies:
     "@types/url-join" "^4.0.0"
     file-saver "^2.0.1"
