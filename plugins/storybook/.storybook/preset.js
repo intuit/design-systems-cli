@@ -1,6 +1,6 @@
-import modifyWebpack from './modify-webpack';
+const modifyWebpack = require('./modify-webpack');
 
-export const addons = [
+const addons = [
   // Panels
   '@storybook/addon-notes', // TODO register panel?
   'storybook-addon-react-docgen',
@@ -17,7 +17,7 @@ export const addons = [
 ];
 
 // TODO does this work?
-export const entries = [
+const entries = [
   require.context(
     COMPONENT,
     true,
@@ -25,4 +25,8 @@ export const entries = [
   )
 ];
 
-export const webpackFinal = modifyWebpack;
+module.exports = {
+  addons,
+  entries, 
+  webpackFinal: modifyWebpack
+}

@@ -1,16 +1,16 @@
-import fs from 'fs';
-import path from 'path';
-import webpack from 'webpack';
-import {
+const fs = require('fs');
+const path = require('path');
+const webpack = require('webpack');
+const {
   monorepoName,
   getMonorepoRoot,
   loadUserWebpackConfig
-} from '@design-systems/cli-utils';
-import { getPostCssConfig } from '@design-systems/build';
-import githubUrlToObject from 'github-url-to-object';
-import FilterWarningsPlugin from 'webpack-filter-warnings-plugin';
-import BABEL_CONFIG from '@design-systems/build/babel.config';
-import ForkTsCheckerWebpackPlugin from 'fork-ts-checker-webpack-plugin';
+} = require('@design-systems/cli-utils');
+const { getPostCssConfig } = require('@design-systems/build');
+const githubUrlToObject = require('github-url-to-object');
+const FilterWarningsPlugin = require('webpack-filter-warnings-plugin');
+const BABEL_CONFIG = require('@design-systems/build/babel.config');
+const ForkTsCheckerWebpackPlugin = require('fork-ts-checker-webpack-plugin');
 
 function findBabelRules(config) {
   return config.module.rules.filter(rule => {
