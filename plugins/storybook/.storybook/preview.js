@@ -5,7 +5,7 @@ const { withKnobs } = require('@storybook/addon-knobs');
 const { themes: storybookThemes, ThemeContext } = require('@storybook/theming');
 const { jsxDecorator } = require('storybook-addon-jsx');
 const { select } = require('@storybook/addon-knobs');
-const configProof = require('@proof-ui/storybook');
+const configProof = require('@proof-ui/storybook').default;
 
 configProof();
 
