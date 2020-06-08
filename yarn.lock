@@ -1454,7 +1454,7 @@
     source-map-loader "0.2.4"
     story2sketch "1.7.0"
     storybook-addon-jsx "^7.1.15"
-    storybook-addon-react-docgen "^1.2.32"
+    storybook-addon-react-docgen "^1.2.34"
     storybook-addon-sketch "^0.2.0"
     storybook-dark-mode "^0.6.0"
     tslib "1.11.1"
@@ -18894,15 +18894,16 @@ storybook-addon-jsx@^7.1.15:
     react-element-to-jsx-string "^14.3.1"
     storybook-pretty-props "^1.0.3"
 
-storybook-addon-react-docgen@^1.2.32:
-  version "1.2.32"
-  resolved "https://registry.yarnpkg.com/storybook-addon-react-docgen/-/storybook-addon-react-docgen-1.2.32.tgz#3226fca12a0b5a971f6bdac1830281f83c96d0f2"
-  integrity sha512-qCn/8bNLptJvok79AbhyRcUquzSl3WH3Sck1Bi60MpU00GHyYCqE8JeAfuQPPUh7ocMpqitw0Z+Prz4gzhuFOg==
+storybook-addon-react-docgen@^1.2.34:
+  version "1.2.35"
+  resolved "https://registry.yarnpkg.com/storybook-addon-react-docgen/-/storybook-addon-react-docgen-1.2.35.tgz#cbece9df94004db95047933defb2fc7e9054b9b7"
+  integrity sha512-tqWh1apJrczBaRNnxpKldI56EbZAtgKhDkRMqPoKq8b6bALfZwsjBiSbNtvL4G27S4Tag8YjWdLAKbxXBTpVoQ==
   dependencies:
     nested-object-assign "^1.0.3"
     prop-types "^15.6.2"
     react-addons-create-fragment "^15.6.2"
     react-lifecycles-compat "^3.0.4"
+    storybook-pretty-props "^1.1.1"
 
 storybook-addon-sketch@^0.2.0:
   version "0.2.0"
@@ -18925,6 +18926,13 @@ storybook-pretty-props@^1.0.3:
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/storybook-pretty-props/-/storybook-pretty-props-1.0.3.tgz#604974b998ffc680212bb7f3abc44fbfc9149119"
   integrity sha512-iySc0X6K1QHqDV2JzU0DhWWARWhyJGI/11BYlHEymlFYfmewmxK4g/Z/ebj0YrwURAItwxMJUfsN2oDbiV0D8A==
+
+storybook-pretty-props@^1.1.1:
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/storybook-pretty-props/-/storybook-pretty-props-1.1.1.tgz#91066f72217b897f6fb4bab41d43e54399111a23"
+  integrity sha512-JAYqbzxBXD1TGbU/h10KQ6iozuRNsz/rUs8NNFGwJS+B2X3rUom787OaEZpM4nhLauUGUf4/UU5F9L2clWe8QA==
+  dependencies:
+    prettier "^2.0.5"
 
 stream-browserify@^2.0.1:
   version "2.0.2"
