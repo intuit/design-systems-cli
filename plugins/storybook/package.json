@@ -10,7 +10,9 @@
   },
   "files": [
     "dist",
-    ".storybook"
+    ".storybook",
+    "preset.js",
+    "preview.js"
   ],
   "repository": {
     "type": "git",
