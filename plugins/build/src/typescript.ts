@@ -169,9 +169,12 @@ export default class TypescriptCompiler {
 
     this.logger.trace('Generating Types...');
 
-    const ignoredPatterns = Array.isArray(this.buildArgs.ignore)
-      ? this.buildArgs.ignore
-      : [this.buildArgs.ignore];
+    const ignoredPatterns = [
+      "**/*.snippet.*",
+      ...Array.isArray(this.buildArgs.ignore)
+        ? this.buildArgs.ignore
+        : [this.buildArgs.ignore],
+    ];
     
     /** Determine if a file should not be type-checked or emitted */
     const isIgnored = (file: string) =>
