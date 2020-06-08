@@ -1,16 +1,16 @@
-const fs = require('fs');
-const path = require('path');
-const webpack = require('webpack');
-const {
+import fs from 'fs';
+import path from 'path';
+import webpack from 'webpack';
+import {
   monorepoName,
   getMonorepoRoot,
   loadUserWebpackConfig
-} = require('@design-systems/cli-utils');
-const { getPostCssConfig } = require('@design-systems/build');
-const githubUrlToObject = require('github-url-to-object');
-const FilterWarningsPlugin = require('webpack-filter-warnings-plugin');
-const BABEL_CONFIG = require.resolve('@design-systems/build/babel.config');
-const ForkTsCheckerWebpackPlugin = require('fork-ts-checker-webpack-plugin');
+} from '@design-systems/cli-utils';
+import { getPostCssConfig } from '@design-systems/build';
+import githubUrlToObject from 'github-url-to-object';
+import FilterWarningsPlugin from 'webpack-filter-warnings-plugin';
+import BABEL_CONFIG from '@design-systems/build/babel.config';
+import ForkTsCheckerWebpackPlugin from 'fork-ts-checker-webpack-plugin';
 
 function findBabelRules(config) {
   return config.module.rules.filter(rule => {
@@ -40,10 +40,10 @@ function findBabelRules(config) {
 
 function modifyBabel(config, callback) {
   const rules = findBabelRules(config);
-  
+
   // Only the first rule is for src files
   if (rules[0]) {
-    callback(rules[0])
+    callback(rules[0]);
   }
 }
 
@@ -54,40 +54,31 @@ function addTypescript(config) {
     return;
   }
 
-  config.resolve.extensions.push('.ts', '.tsx', '.json');
-  config.module.rules.push({
-    test: /\.(ts|tsx)$/,
-    use: [
-      {
-        loader: 'babel-loader',
-        options: {
-          ...getUserBabelConfig(),
-          configFile: BABEL_CONFIG
-        }
-      },
-      {
-        loader: require.resolve('react-docgen-typescript-loader'),
-        options: {
-          tsconfigPath,
-          propFilter(prop) {
-            if (prop.parent) {
-              return !prop.parent.fileName.includes('@types/react');
-            }
+  // config.module.rules.push({
+  //   test: /\.(ts|tsx)$/,
+  //   use: [
+  //     {
+  //       loader: 'babel-loader',
+  //       options: {
+  //         ...getUserBabelConfig(),
+  //         configFile: BABEL_CONFIG
+  //       }
+  //     },
+  //     {
+  //       loader: require.resolve('react-docgen-typescript-loader'),
+  //       options: {
+  //         tsconfigPath,
+  //         propFilter(prop) {
+  //           if (prop.parent) {
+  //             return !prop.parent.fileName.includes('@types/react');
+  //           }
 
-            return true;
-          }
-        }
-      }
-    ]
-  });
-
-  config.plugins.push(
-    new ForkTsCheckerWebpackPlugin({
-      formatter: 'codeframe',
-      checkSyntacticErrors: true,
-      reportFiles: ['**/*.stories.tsx', '!**/node_modules/**']
-    })
-  );
+  //           return true;
+  //         }
+  //       }
+  //     }
+  //   ]
+  // });
 }
 
 async function addCss(config) {
@@ -197,7 +188,7 @@ function addReactElementHacksssss(config) {
   });
 }
 
-module.exports = async ({ config }) => {
+module.exports = async config => {
   addReactElementHacksssss(config);
   addCustomBabelOptions(config);
   addTypescript(config);

@@ -26,7 +26,6 @@ try {
 
 addDecorator(withKnobs);
 addDecorator(withPropsTable);
-addDecorator(withA11y);
 addDecorator(jsxDecorator);
 
 const brand = {
@@ -35,12 +34,15 @@ const brand = {
 };
 
 addParameters({
-  backgrounds: [
-    { name: 'white', value: 'white', default: true },
-    { name: 'dark', value: '#2f2f2f' },
-    { name: 'twitter', value: '#00aced' },
-    { name: 'facebook', value: '#3b5998' }
-  ],
+  backgrounds: {
+    default: 'white',
+    values: [
+      { name: 'white', value: 'white' },
+      { name: 'dark', value: '#2f2f2f' },
+      { name: 'twitter', value: '#00aced' },
+      { name: 'facebook', value: '#3b5998' }
+    ],
+  },
   knobs: {
     escapeHTML: false
   },
@@ -71,5 +73,3 @@ addParameters({
     }
   }
 });
-
-require(CONFIG_PATH);

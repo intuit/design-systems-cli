@@ -114,8 +114,7 @@ async function lintCSS(args: LintArgs): Promise<number> {
         files: files(args, 'css'),
         config: {
           ...config,
-          processors: undefined,
-          codeProcessors: undefined
+          processors: undefined
         }
       });
 
