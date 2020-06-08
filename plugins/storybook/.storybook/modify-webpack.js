@@ -155,7 +155,6 @@ function addReactElementHacksssss(config) {
 module.exports = async config => {
   addReactElementHacksssss(config);
   addCustomBabelOptions(config);
-  addTypescript(config);
   await addCss(config);
   addSourceMaps(config);
 

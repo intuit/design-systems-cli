@@ -12,13 +12,16 @@ const addons = [
   // Tools
   '@storybook/addon-backgrounds',
   'storybook-dark-mode',
-  'storybook-addon-sketch/register-options',
+  'storybook-addon-sketch/preset',
   '@storybook/addon-viewport',
   '@storybook/addon-a11y'
 ];
 
 const stories = [
-  path.join(process.env.COMPONENT, '**/*.stories.tsx')
+  path.join(process.env.COMPONENT, '**/*.stories.tsx'),
+  path.join(process.env.COMPONENT, '**/*.stories.js'),
+  path.join(process.env.COMPONENT, '**/*.stories.jsx'),
+  path.join(process.env.COMPONENT, '**/*.stories.mdx'),
 ];
 
 module.exports = {
