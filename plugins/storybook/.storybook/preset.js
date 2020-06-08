@@ -18,7 +18,10 @@ const addons = [
 ];
 
 const stories = [
-  path.join(process.env.COMPONENT, '**/*.stories.tsx')
+  path.join(process.env.COMPONENT, '**/*.stories.tsx'),
+  path.join(process.env.COMPONENT, '**/*.stories.js'),
+  path.join(process.env.COMPONENT, '**/*.stories.jsx'),
+  path.join(process.env.COMPONENT, '**/*.stories.mdx'),
 ];
 
 module.exports = {
