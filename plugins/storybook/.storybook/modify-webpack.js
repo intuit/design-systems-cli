@@ -9,7 +9,6 @@ const {
 const { getPostCssConfig } = require('@design-systems/build');
 const githubUrlToObject = require('github-url-to-object');
 const FilterWarningsPlugin = require('webpack-filter-warnings-plugin');
-const BABEL_CONFIG = require('@design-systems/build/babel.config');
 const ForkTsCheckerWebpackPlugin = require('fork-ts-checker-webpack-plugin');
 
 function findBabelRules(config) {
@@ -45,40 +44,6 @@ function modifyBabel(config, callback) {
   if (rules[0]) {
     callback(rules[0]);
   }
-}
-
-function addTypescript(config) {
-  const tsconfigPath = path.resolve(getMonorepoRoot(), 'tsconfig.json');
-
-  if (!fs.existsSync(tsconfigPath)) {
-    return;
-  }
-
-  // config.module.rules.push({
-  //   test: /\.(ts|tsx)$/,
-  //   use: [
-  //     {
-  //       loader: 'babel-loader',
-  //       options: {
-  //         ...getUserBabelConfig(),
-  //         configFile: BABEL_CONFIG
-  //       }
-  //     },
-  //     {
-  //       loader: require.resolve('react-docgen-typescript-loader'),
-  //       options: {
-  //         tsconfigPath,
-  //         propFilter(prop) {
-  //           if (prop.parent) {
-  //             return !prop.parent.fileName.includes('@types/react');
-  //           }
-
-  //           return true;
-  //         }
-  //       }
-  //     }
-  //   ]
-  // });
 }
 
 async function addCss(config) {
@@ -149,7 +114,6 @@ function addCustomBabelOptions(config) {
 
   modifyBabel(config, rule => {
     rule.use[0].options = { ...rule.use[0].options, ...rest };
-    rule.use[0].options.configFile = BABEL_CONFIG;
 
     const {
       presets: defaultPresets = [],
