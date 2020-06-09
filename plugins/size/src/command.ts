@@ -82,8 +82,9 @@ const command: CliCommand = {
     {
       name: 'failureThreshold',
       type: Number,
-      description: 'Failure Threshold for Size'
-    },    
+      description: 'Failure Threshold for Size',
+      config: true
+    }    
   ]
 };
 
