@@ -40,8 +40,9 @@ const POSTCSS_CONFIG = path.join(__dirname, './configs/postcss.config.js');
 
 /** Find all matching globs. */
 function match(file: string, globs: string | string[]) {
+  const resolved = path.resolve(file)
   const globArr = Array.isArray(globs) ? globs : [globs];
-  return globArr.find(currGlob => minimatch(file, currGlob));
+  return globArr.find(currGlob => minimatch(resolved, currGlob));
 }
 
 export { getPostCssConfig, getPostCssConfigSync } from './postcss';
