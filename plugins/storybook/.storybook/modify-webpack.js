@@ -130,7 +130,7 @@ function addCustomBabelOptions(config) {
 function addSourceMaps(config) {
   config.module.rules.push({
     test: /\.(js|css)$/,
-    exclude: /core-js/,
+    exclude: /node_modules/,
     include: new RegExp(monorepoName()),
     use: ['source-map-loader'],
     enforce: 'pre'
