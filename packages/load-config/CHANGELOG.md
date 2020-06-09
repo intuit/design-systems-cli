@@ -1,3 +1,21 @@
+# v1.10.0 (Tue Jun 09 2020)
+
+:tada: This release contains work from a new contributor! :tada:
+
+Thank you, WhiteSource Renovate ([@renovate-bot](https://github.com/renovate-bot)), for all your work!
+
+#### 🔩 Dependency Updates
+
+- Update dependency resolve to v1.17.0 [#228](https://github.com/intuit/design-systems-cli/pull/228) ([@renovate-bot](https://github.com/renovate-bot) [@renovate[bot]](https://github.com/renovate[bot]))
+- Update dependency @types/flat to v5 [#188](https://github.com/intuit/design-systems-cli/pull/188) ([@renovate-bot](https://github.com/renovate-bot) [@renovate[bot]](https://github.com/renovate[bot]))
+
+#### Authors: 2
+
+- [@renovate[bot]](https://github.com/renovate[bot])
+- WhiteSource Renovate ([@renovate-bot](https://github.com/renovate-bot))
+
+---
+
 # v1.4.7 (Tue Mar 24 2020)
 
 :tada: This release contains work from a new contributor! :tada:

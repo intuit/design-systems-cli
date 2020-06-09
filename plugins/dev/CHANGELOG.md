@@ -1,3 +1,20 @@
+# v1.10.0 (Tue Jun 09 2020)
+
+:tada: This release contains work from a new contributor! :tada:
+
+Thank you, WhiteSource Renovate ([@renovate-bot](https://github.com/renovate-bot)), for all your work!
+
+#### 🔩 Dependency Updates
+
+- Update dependency chokidar to v3.4.0 [#219](https://github.com/intuit/design-systems-cli/pull/219) ([@renovate-bot](https://github.com/renovate-bot) [@renovate[bot]](https://github.com/renovate[bot]))
+
+#### Authors: 2
+
+- [@renovate[bot]](https://github.com/renovate[bot])
+- WhiteSource Renovate ([@renovate-bot](https://github.com/renovate-bot))
+
+---
+
 # v1.7.0 (Wed Apr 29 2020)
 
 #### 🚀 Enhancement

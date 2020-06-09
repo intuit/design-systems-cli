@@ -1,3 +1,26 @@
+# v1.10.0 (Tue Jun 09 2020)
+
+:tada: This release contains work from a new contributor! :tada:
+
+Thank you, WhiteSource Renovate ([@renovate-bot](https://github.com/renovate-bot)), for all your work!
+
+#### 🔩 Dependency Updates
+
+- Update dependency marked to v1 [#241](https://github.com/intuit/design-systems-cli/pull/241) ([@renovate-bot](https://github.com/renovate-bot) [@renovate[bot]](https://github.com/renovate[bot]))
+- Update dependency chalk to v4 [#240](https://github.com/intuit/design-systems-cli/pull/240) ([@renovate-bot](https://github.com/renovate-bot) [@renovate[bot]](https://github.com/renovate[bot]))
+- Update dependency colorette to v1.2.0 [#258](https://github.com/intuit/design-systems-cli/pull/258) ([@renovate-bot](https://github.com/renovate-bot) [@renovate[bot]](https://github.com/renovate[bot]))
+- Update dependency semver to v7.3.2 [#229](https://github.com/intuit/design-systems-cli/pull/229) ([@renovate-bot](https://github.com/renovate-bot) [@renovate[bot]](https://github.com/renovate[bot]))
+- Update dependency fs-extra to v9 [#190](https://github.com/intuit/design-systems-cli/pull/190) ([@renovate-bot](https://github.com/renovate-bot) [@renovate[bot]](https://github.com/renovate[bot]))
+- Update dependency marked-terminal to v4.1.0 [#225](https://github.com/intuit/design-systems-cli/pull/225) ([@renovate-bot](https://github.com/renovate-bot) [@renovate[bot]](https://github.com/renovate[bot]))
+- Update dependency @types/node-fetch to v2.5.7 [#218](https://github.com/intuit/design-systems-cli/pull/218) ([@renovate-bot](https://github.com/renovate-bot) [@renovate[bot]](https://github.com/renovate[bot]))
+
+#### Authors: 2
+
+- [@renovate[bot]](https://github.com/renovate[bot])
+- WhiteSource Renovate ([@renovate-bot](https://github.com/renovate-bot))
+
+---
+
 # v1.4.7 (Tue Mar 24 2020)
 
 :tada: This release contains work from a new contributor! :tada:

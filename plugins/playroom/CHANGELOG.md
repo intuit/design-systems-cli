@@ -1,3 +1,27 @@
+# v1.10.0 (Tue Jun 09 2020)
+
+:tada: This release contains work from a new contributor! :tada:
+
+Thank you, WhiteSource Renovate ([@renovate-bot](https://github.com/renovate-bot)), for all your work!
+
+#### 🔩 Dependency Updates
+
+- Update babel monorepo [#168](https://github.com/intuit/design-systems-cli/pull/168) ([@renovate-bot](https://github.com/renovate-bot) [@hipstersmoothie](https://github.com/hipstersmoothie) [@renovate[bot]](https://github.com/renovate[bot]))
+- Update dependency css-loader to v3.5.3 [#224](https://github.com/intuit/design-systems-cli/pull/224) ([@renovate-bot](https://github.com/renovate-bot) [@renovate[bot]](https://github.com/renovate[bot]))
+- Update dependency playroom to v0.21.1 [#227](https://github.com/intuit/design-systems-cli/pull/227) ([@renovate-bot](https://github.com/renovate-bot) [@renovate[bot]](https://github.com/renovate[bot]))
+- Update dependency fork-ts-checker-webpack-plugin to v4.1.6 [#260](https://github.com/intuit/design-systems-cli/pull/260) ([@renovate-bot](https://github.com/renovate-bot) [@renovate[bot]](https://github.com/renovate[bot]))
+- Update dependency fs-extra to v9 [#190](https://github.com/intuit/design-systems-cli/pull/190) ([@renovate-bot](https://github.com/renovate-bot) [@renovate[bot]](https://github.com/renovate[bot]))
+- Update dependency style-loader to v1.2.1 [#230](https://github.com/intuit/design-systems-cli/pull/230) ([@renovate-bot](https://github.com/renovate-bot) [@renovate[bot]](https://github.com/renovate[bot]))
+- Update dependency file-loader to v6 [#189](https://github.com/intuit/design-systems-cli/pull/189) ([@renovate-bot](https://github.com/renovate-bot) [@renovate[bot]](https://github.com/renovate[bot]))
+
+#### Authors: 3
+
+- [@renovate[bot]](https://github.com/renovate[bot])
+- Andrew Lisowski ([@hipstersmoothie](https://github.com/hipstersmoothie))
+- WhiteSource Renovate ([@renovate-bot](https://github.com/renovate-bot))
+
+---
+
 # v1.8.0 (Tue May 19 2020)
 
 #### 🚀 Enhancement

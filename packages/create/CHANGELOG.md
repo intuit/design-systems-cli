@@ -1,3 +1,23 @@
+# v1.10.0 (Tue Jun 09 2020)
+
+:tada: This release contains work from a new contributor! :tada:
+
+Thank you, WhiteSource Renovate ([@renovate-bot](https://github.com/renovate-bot)), for all your work!
+
+#### 🔩 Dependency Updates
+
+- Update dependency colorette to v1.2.0 [#258](https://github.com/intuit/design-systems-cli/pull/258) ([@renovate-bot](https://github.com/renovate-bot) [@renovate[bot]](https://github.com/renovate[bot]))
+- Update dependency ts-loader to v7 [#244](https://github.com/intuit/design-systems-cli/pull/244) ([@renovate-bot](https://github.com/renovate-bot) [@renovate[bot]](https://github.com/renovate[bot]))
+- Update dependency fs-extra to v9 [#190](https://github.com/intuit/design-systems-cli/pull/190) ([@renovate-bot](https://github.com/renovate-bot) [@renovate[bot]](https://github.com/renovate[bot]))
+- Update dependency cli-spinners to v2.3.0 [#220](https://github.com/intuit/design-systems-cli/pull/220) ([@renovate-bot](https://github.com/renovate-bot) [@renovate[bot]](https://github.com/renovate[bot]))
+
+#### Authors: 2
+
+- [@renovate[bot]](https://github.com/renovate[bot])
+- WhiteSource Renovate ([@renovate-bot](https://github.com/renovate-bot))
+
+---
+
 # v1.4.11 (Tue Apr 07 2020)
 
 #### 🐛 Bug Fix

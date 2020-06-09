@@ -1,3 +1,33 @@
+# v1.10.0 (Tue Jun 09 2020)
+
+:tada: This release contains work from a new contributor! :tada:
+
+Thank you, WhiteSource Renovate ([@renovate-bot](https://github.com/renovate-bot)), for all your work!
+
+#### 🚀 Enhancement
+
+- feat: adding ability to send failure threshold from args [#275](https://github.com/intuit/design-systems-cli/pull/275) ([@vasikarla](https://github.com/vasikarla))
+
+#### 🔩 Dependency Updates
+
+- Update dependency css-loader to v3.5.3 [#224](https://github.com/intuit/design-systems-cli/pull/224) ([@renovate-bot](https://github.com/renovate-bot) [@renovate[bot]](https://github.com/renovate[bot]))
+- Update dependency colorette to v1.2.0 [#258](https://github.com/intuit/design-systems-cli/pull/258) ([@renovate-bot](https://github.com/renovate-bot) [@renovate[bot]](https://github.com/renovate[bot]))
+- Update dependency cross-spawn to v7.0.3 [#223](https://github.com/intuit/design-systems-cli/pull/223) ([@renovate-bot](https://github.com/renovate-bot) [@renovate[bot]](https://github.com/renovate[bot]))
+- Update dependency diff2html to v3.1.7 [#259](https://github.com/intuit/design-systems-cli/pull/259) ([@renovate-bot](https://github.com/renovate-bot) [@renovate[bot]](https://github.com/renovate[bot]))
+- Update dependency commently to v5.81.2 [#221](https://github.com/intuit/design-systems-cli/pull/221) ([@renovate-bot](https://github.com/renovate-bot) [@renovate[bot]](https://github.com/renovate[bot]))
+- Update dependency fs-extra to v9 [#190](https://github.com/intuit/design-systems-cli/pull/190) ([@renovate-bot](https://github.com/renovate-bot) [@renovate[bot]](https://github.com/renovate[bot]))
+- Update dependency webpack-bundle-analyzer to v3.8.0 [#184](https://github.com/intuit/design-systems-cli/pull/184) ([@renovate-bot](https://github.com/renovate-bot) [@renovate[bot]](https://github.com/renovate[bot]))
+- Update dependency chokidar to v3.4.0 [#219](https://github.com/intuit/design-systems-cli/pull/219) ([@renovate-bot](https://github.com/renovate-bot) [@renovate[bot]](https://github.com/renovate[bot]))
+- Update dependency @types/table to v5 [#239](https://github.com/intuit/design-systems-cli/pull/239) ([@renovate-bot](https://github.com/renovate-bot) [@renovate[bot]](https://github.com/renovate[bot]))
+
+#### Authors: 3
+
+- [@renovate[bot]](https://github.com/renovate[bot])
+- Raj Vasikarla ([@vasikarla](https://github.com/vasikarla))
+- WhiteSource Renovate ([@renovate-bot](https://github.com/renovate-bot))
+
+---
+
 # v1.9.0 (Thu May 21 2020)
 
 :tada: This release contains work from a new contributor! :tada:
