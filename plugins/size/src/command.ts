@@ -78,7 +78,12 @@ const command: CliCommand = {
       description:
         'Comment on the Pull request with the results. (Only from CI + must set env var GH_TOKEN. In jenkins OWNER and REPO must also be set. In enterprise you must also set GITHUB_URL)',
       config: true
-    }
+    },
+    {
+      name: 'failureThreshold',
+      type: String,
+      description: 'Failure Threshold for Size'
+    },    
   ]
 };
 

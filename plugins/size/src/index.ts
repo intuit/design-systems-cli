@@ -12,7 +12,6 @@ import { startAnalyze } from "./utils/WebpackUtils";
 import { createDiff } from "./utils/DiffUtils";
 
 const logger = createLogger({ scope: 'size' });
-const FAILURE_THRESHOLD = 5;
 
 const cssHeader = [
   'master: js',
@@ -30,6 +29,10 @@ const defaultHeader = ['master', 'pr', '+/-', '%'];
 /** A plugin to determine the size changes of packages. */
 export default class SizePlugin implements Plugin<SizeArgs> {
   async run(args: SizeArgs) {
+
+    let FAILURE_THRESHOLD = args.failureThreshold || 5;
+    logger.debug(`FAILURE_THRESHOLD : ${FAILURE_THRESHOLD}`);
+
     if (args.ci) {
       logger.disable();
     }

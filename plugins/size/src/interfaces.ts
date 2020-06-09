@@ -19,6 +19,8 @@ export interface SizeArgs {
   ignore?: string[]
   /** The registry to install packages from */
   registry?: string
+  /** Size Failure Threshold */
+  failureThreshold?: number
 }
 
 export interface Export {
