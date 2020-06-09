@@ -30,7 +30,7 @@ const defaultHeader = ['master', 'pr', '+/-', '%'];
 export default class SizePlugin implements Plugin<SizeArgs> {
   async run(args: SizeArgs) {
 
-    let FAILURE_THRESHOLD = args.failureThreshold || 5;
+    const FAILURE_THRESHOLD = args.failureThreshold || 5;
     logger.info(`FAILURE_THRESHOLD : ${FAILURE_THRESHOLD}`);
 
     if (args.ci) {
