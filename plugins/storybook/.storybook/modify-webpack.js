@@ -128,10 +128,10 @@ function addCustomBabelOptions(config) {
 }
 
 function addSourceMaps(config) {
-  // TODO only load source maps for current monorepo
   config.module.rules.push({
     test: /\.(js|css)$/,
     exclude: /core-js/,
+    include: new RegExp(monorepoName()),
     use: ['source-map-loader'],
     enforce: 'pre'
   });
