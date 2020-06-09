@@ -1,5 +1,6 @@
 const modifyWebpack = require('./modify-webpack');
-const path = require('path')
+const path = require('path');
+const glob = require('fast-glob');
 
 const addons = [
   // Panels
@@ -14,18 +15,16 @@ const addons = [
   'storybook-dark-mode',
   'storybook-addon-sketch/preset',
   '@storybook/addon-viewport',
-  '@storybook/addon-a11y'
+  '@storybook/addon-a11y',
 ];
 
-const stories = [
-  path.join(process.env.COMPONENT, '**/*.stories.tsx'),
-  path.join(process.env.COMPONENT, '**/*.stories.js'),
-  path.join(process.env.COMPONENT, '**/*.stories.jsx'),
-  path.join(process.env.COMPONENT, '**/*.stories.mdx'),
-];
+const stories = glob.sync(
+  path.join(process.env.COMPONENT, '**/*.stories.(tsx|js|jsx|mdx)'),
+  { ignore: ['**/node_modules'] }
+);
 
 module.exports = {
   addons,
-  stories, 
-  webpackFinal: modifyWebpack
-}
+  stories,
+  webpackFinal: modifyWebpack,
+};
