@@ -198,7 +198,7 @@ export default class TypescriptCompiler {
               
               if (isIgnored(fileName)) {
                 // Don't type check stories
-                content = `// @ts-nocheck\n${content}`;
+                content = '// @ts-nocheck';
               }
 
               return content;
