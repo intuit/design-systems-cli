@@ -64,7 +64,7 @@ async function lintJS(args: LintArgs): Promise<number> {
     fix: args.fix,
     cache: !args.noCache && !bustCache,
     cacheLocation,
-    extensions: ['ts', 'tsx', 'js', 'jsx'],
+    extensions: ['ts', 'tsx', 'js', 'jsx', 'mdx'],
     ignorePath: path.join(__dirname, '../../.eslintignore'),
     reportUnusedDisableDirectives: true
   });
@@ -72,7 +72,7 @@ async function lintJS(args: LintArgs): Promise<number> {
   const lintFiles = isRoot ? getPackageFolders() : ['src'];
 
   const report = linter.executeOnFiles(
-    args.files ? files(args, 'ts|tsx|js|jsx') : lintFiles
+    args.files ? files(args, 'ts|tsx|js|jsx|mdx') : lintFiles
   );
 
   if (args.fix) {
@@ -182,7 +182,7 @@ async function lintCSS(args: LintArgs): Promise<number> {
       };
     });
 
-    logger.trace('Stylelint Results', JSON.stringify(results, null, 2));
+    logger.trace('Stylelint Results', results);
 
     if (hasError) {
       logger.error('Project contains CSS errors', cssFormatter(results));
