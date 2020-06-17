@@ -228,6 +228,25 @@ module.exports = {
         '@typescript-eslint/no-explicit-any': 0,
         '@typescript-eslint/ban-ts-ignore': 0
       }
+    },
+    {
+      files: ['*.mdx'],
+      parser: 'eslint-mdx',
+      plugins: ['mdx'],
+      globals: {
+        React: true
+      },
+      rules: {
+        'import/no-extraneous-dependencies': 0,
+        // This is how we use jsx in mdx
+        'no-unused-expressions': 0,
+        // in mdx it's already in scope
+        'react/react-in-jsx-scope': 0,
+        // jsx is allowed in mdx
+        'react/jsx-filename-extension': 0,
+        // No exported function in MDX
+        "jsdoc/require-jsdoc": 0
+      }
     }
   ].filter(Boolean)
 };
