@@ -39,7 +39,7 @@
     "auto": "9.21.0",
     "change-case": "4.1.1",
     "copy-template-dir": "1.4.0",
-    "lerna": "3.22.0",
+    "lerna": "3.22.1",
     "prettier": "2.0.5",
     "rimraf": "3.0.2",
     "signale": "1.4.0",
