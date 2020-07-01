@@ -1153,7 +1153,7 @@
     minimist "^1.2.0"
 
 "@design-systems/build@link:plugins/build":
-  version "1.9.0"
+  version "1.10.0"
   dependencies:
     "@babel/code-frame" "7.10.1"
     "@babel/core" "7.10.2"
@@ -1194,7 +1194,7 @@
     typescript "^3.8.3"
 
 "@design-systems/bundle@link:plugins/bundle":
-  version "1.9.0"
+  version "1.10.0"
   dependencies:
     "@design-systems/build" "link:plugins/build"
     "@design-systems/cli-utils" "link:packages/cli-utils"
@@ -1212,7 +1212,7 @@
     webpack "4.41.5"
 
 "@design-systems/clean@link:plugins/clean":
-  version "1.9.0"
+  version "1.10.0"
   dependencies:
     "@design-systems/cli-utils" "link:packages/cli-utils"
     "@design-systems/plugin" "link:packages/plugin"
@@ -1221,7 +1221,7 @@
     tslib "1.11.1"
 
 "@design-systems/cli-utils@link:packages/cli-utils":
-  version "1.9.0"
+  version "1.10.0"
   dependencies:
     find-up "4.1.0"
     npm-which "3.0.1"
@@ -1231,7 +1231,7 @@
     webpack "4.41.5"
 
 "@design-systems/core@link:packages/core":
-  version "1.9.0"
+  version "1.10.0"
   dependencies:
     "@design-systems/build" "link:plugins/build"
     "@design-systems/bundle" "link:plugins/bundle"
@@ -1251,7 +1251,7 @@
     tslib "1.11.1"
 
 "@design-systems/create-command@link:plugins/create-command":
-  version "1.9.0"
+  version "1.10.0"
   dependencies:
     "@design-systems/cli-utils" "link:packages/cli-utils"
     "@design-systems/create" "link:packages/create"
@@ -1270,10 +1270,10 @@
     tslib "1.11.1"
 
 "@design-systems/create@link:packages/create":
-  version "1.9.0"
+  version "1.10.0"
 
 "@design-systems/dev@link:plugins/dev":
-  version "1.9.0"
+  version "1.10.0"
   dependencies:
     "@design-systems/cli-utils" "link:packages/cli-utils"
     "@design-systems/plugin" "link:packages/plugin"
@@ -1284,7 +1284,7 @@
     tslib "1.11.1"
 
 "@design-systems/eslint-config@link:packages/eslint-config":
-  version "1.9.0"
+  version "1.10.0"
   dependencies:
     "@design-systems/cli-utils" "link:packages/cli-utils"
     "@typescript-eslint/eslint-plugin" "2.17.0"
@@ -1307,7 +1307,7 @@
     tslib "1.11.1"
 
 "@design-systems/lint@link:plugins/lint":
-  version "1.9.0"
+  version "1.10.0"
   dependencies:
     "@design-systems/cli-utils" "link:packages/cli-utils"
     "@design-systems/eslint-config" "link:packages/eslint-config"
@@ -1324,7 +1324,7 @@
     tslib "1.11.1"
 
 "@design-systems/load-config@link:packages/load-config":
-  version "1.9.0"
+  version "1.10.0"
   dependencies:
     "@design-systems/core" "link:packages/core"
     "@design-systems/plugin" "link:packages/plugin"
@@ -1338,7 +1338,7 @@
     tslib "1.11.1"
 
 "@design-systems/playroom@link:plugins/playroom":
-  version "1.9.0"
+  version "1.10.0"
   dependencies:
     "@babel/core" "7.10.2"
     "@babel/register" "7.10.1"
@@ -1359,14 +1359,14 @@
     webpack "4.41.5"
 
 "@design-systems/plugin@link:packages/plugin":
-  version "1.9.0"
+  version "1.10.0"
   dependencies:
     command-line-application "0.9.6"
     tslib "1.11.1"
     utility-types "3.10.0"
 
 "@design-systems/proof@link:plugins/proof":
-  version "1.9.0"
+  version "1.10.0"
   dependencies:
     "@babel/core" "7.10.2"
     "@babel/plugin-transform-runtime" "7.10.1"
@@ -1384,7 +1384,7 @@
     tslib "1.11.1"
 
 "@design-systems/size@link:plugins/size":
-  version "1.9.0"
+  version "1.10.0"
   dependencies:
     "@design-systems/cli-utils" "link:packages/cli-utils"
     "@design-systems/plugin" "link:packages/plugin"
@@ -1414,7 +1414,7 @@
     webpack-sources "1.4.3"
 
 "@design-systems/storybook@link:plugins/storybook":
-  version "1.9.0"
+  version "1.10.0"
   dependencies:
     "@babel/core" "7.10.2"
     "@design-systems/build" "link:plugins/build"
@@ -1450,7 +1450,7 @@
     webpack-filter-warnings-plugin "1.2.1"
 
 "@design-systems/stylelint-config@link:packages/stylelint-config":
-  version "1.9.0"
+  version "1.10.0"
   dependencies:
     stylelint-a11y "1.2.3"
     stylelint-config-css-modules "2.2.0"
@@ -1464,7 +1464,7 @@
     tslib "1.11.1"
 
 "@design-systems/test@link:plugins/test":
-  version "1.9.0"
+  version "1.10.0"
   dependencies:
     "@babel/core" "7.10.2"
     "@design-systems/build" "link:plugins/build"
@@ -1484,7 +1484,7 @@
     tslib "1.11.1"
 
 "@design-systems/update@link:plugins/update":
-  version "1.9.0"
+  version "1.10.0"
   dependencies:
     "@design-systems/cli-utils" "link:packages/cli-utils"
     "@design-systems/plugin" "link:packages/plugin"
@@ -6503,7 +6503,7 @@ check-types@^8.0.3:
   resolved "https://registry.yarnpkg.com/check-types/-/check-types-8.0.3.tgz#3356cca19c889544f2d7a95ed49ce508a0ecf552"
   integrity sha512-YpeKZngUmG65rLudJ4taU7VLkOCTMhNl/u4ctNC56LQS/zJTyNH0Lrtwm1tfTsbLlwvlfsA2d1c8vCf/Kh2KwQ==
 
-chokidar@3.4.0:
+chokidar@3.4.0, chokidar@^3.3.0:
   version "3.4.0"
   resolved "https://registry.yarnpkg.com/chokidar/-/chokidar-3.4.0.tgz#b30611423ce376357c765b9b8f904b9fba3c0be8"
   integrity sha512-aXAaho2VJtisB/1fg1+3nlLJqGOuewTzQpd/Tz0yTg2R0e4IGtshYvtjowyEumcBv2z+y4+kc75Mz7j5xJskcQ==
@@ -6518,7 +6518,7 @@ chokidar@3.4.0:
   optionalDependencies:
     fsevents "~2.1.2"
 
-chokidar@^2.0.2, chokidar@^2.0.4, chokidar@^2.1.5, chokidar@^2.1.8:
+chokidar@^2.0.2, chokidar@^2.0.4, chokidar@^2.1.8:
   version "2.1.8"
   resolved "https://registry.yarnpkg.com/chokidar/-/chokidar-2.1.8.tgz#804b3a7b6a99358c3c5c61e71d8728f041cff917"
   integrity sha512-ZmZUazfOzf0Nve7duiCKD23PFSCs4JPoYyccjUFF3aQkQadqBhfzhjkwBH2mNOG9cTBwhamM37EIsIkZw3nRgg==
@@ -8242,20 +8242,20 @@ dns-txt@^2.0.2:
   dependencies:
     buffer-indexof "^1.0.0"
 
-docsify-cli@4.4.0:
-  version "4.4.0"
-  resolved "https://registry.yarnpkg.com/docsify-cli/-/docsify-cli-4.4.0.tgz#ca68b4941207f7d1ceffb4bc9f01043657077e0a"
-  integrity sha512-Ve3aUIGbjPpcjRtb3QHJQ9wI0fETMve1bBdTIztWfPnAJ2tOAYO7XUDHe9864RheGOli5s8iI3BviY6CS1ZImA==
+docsify-cli@4.4.1:
+  version "4.4.1"
+  resolved "https://registry.yarnpkg.com/docsify-cli/-/docsify-cli-4.4.1.tgz#02316d7d0167de01a3ffb330c122e0900357ff1b"
+  integrity sha512-M5VU/8UCILz87D519KnURH3LA+A3RAAqj7ifDv4xOUf4c32QDkWSETS3yLmXlTNdxhATVi5P1fVklnvVW4uOyw==
   dependencies:
     chalk "^2.4.2"
     connect "^3.6.0"
     connect-livereload "^0.6.0"
     cp-file "^7.0.0"
-    docsify ">=3"
+    docsify "^4.10.2"
     docsify-server-renderer ">=4"
     fs-extra "^8.1.0"
     get-port "^5.0.0"
-    livereload "^0.8.2"
+    livereload "^0.9.1"
     lru-cache "^5.1.1"
     open "^6.4.0"
     serve-static "^1.12.1"
@@ -8273,7 +8273,21 @@ docsify-server-renderer@>=4:
     node-fetch "^2.6.0"
     resolve-pathname "^3.0.0"
 
-docsify@>=3, docsify@^4.8.0:
+docsify@^4.10.2:
+  version "4.11.4"
+  resolved "https://registry.yarnpkg.com/docsify/-/docsify-4.11.4.tgz#cd1d4b4eaf84f1c9bf090c64fbc32e4b3bfc1dea"
+  integrity sha512-Qwt98y6ddM2Wb46gRH/zQpEAvw70AlIpzVlB9Wi2u2T2REg9O+bXMpJ27F5TaRTn2bD6SF1VyZYNUfimpihZwQ==
+  dependencies:
+    dompurify "^2.0.8"
+    marked "^0.7.0"
+    medium-zoom "^1.0.5"
+    opencollective-postinstall "^2.0.2"
+    prismjs "^1.19.0"
+    strip-indent "^3.0.0"
+    tinydate "^1.0.0"
+    tweezer.js "^1.4.0"
+
+docsify@^4.8.0:
   version "4.10.2"
   resolved "https://registry.yarnpkg.com/docsify/-/docsify-4.10.2.tgz#0e4e7efad511b75680c69a4d648253e63c8cf647"
   integrity sha512-Y1LbI29X9c4uRVEp7wGOYhy8lDrn47o96or0Dbj+pElxWk1cLYQ5CVYPHnf75P3oM1CrEGIrazac6AjYXaD1kw==
@@ -8362,6 +8376,11 @@ domhandler@^2.3.0:
   integrity sha512-JiK04h0Ht5u/80fdLMCEmV4zkNh2BcoMFBmZ/91WtYZ8qVXSKjiw7fXMgFPnHcSZgOo3XdinHvmnDUeMf5R4wA==
   dependencies:
     domelementtype "1"
+
+dompurify@^2.0.8:
+  version "2.0.12"
+  resolved "https://registry.yarnpkg.com/dompurify/-/dompurify-2.0.12.tgz#284a2b041e1c60b8e72d7b4d2fadad36141254ae"
+  integrity sha512-Fl8KseK1imyhErHypFPA8qpq9gPzlsJ/EukA6yk9o0gX23p1TzC+rh9LqNg1qvErRTc0UNMYlKxEGSfSh43NDg==
 
 domutils@1.5.1:
   version "1.5.1"
@@ -12871,12 +12890,18 @@ lines-and-columns@^1.1.6:
   resolved "https://registry.yarnpkg.com/lines-and-columns/-/lines-and-columns-1.1.6.tgz#1c00c743b433cd0a4e80758f7b64a57440d9ff00"
   integrity sha1-HADHQ7QzzQpOgHWPe2SldEDZ/wA=
 
-livereload@^0.8.2:
-  version "0.8.2"
-  resolved "https://registry.yarnpkg.com/livereload/-/livereload-0.8.2.tgz#0ebb756cd5150bc956e33110b884bc2d7d87b723"
-  integrity sha512-8wCvhiCL4cGVoT3U5xoe+UjpiiVZLrlOvr6dbhb1VlyC5QarhrlyRRt4z7EMGO4KSgXj+tKF/dr284F28/wI+g==
+livereload-js@^3.1.0:
+  version "3.2.3"
+  resolved "https://registry.yarnpkg.com/livereload-js/-/livereload-js-3.2.3.tgz#64beff07ce5b2a74485d1a08c2ec04ac68e021bc"
+  integrity sha512-dXL/WgTGI2K3oeYX/z1lngFXSKtjCB2j7n9WSSluoU6/6+N4LWNoMiCBFNgn8dh3luBn4JBajVSvM5I7Xn6SLA==
+
+livereload@^0.9.1:
+  version "0.9.1"
+  resolved "https://registry.yarnpkg.com/livereload/-/livereload-0.9.1.tgz#65125dabdf2db4fd3f1169e953fe56e3bcc6f477"
+  integrity sha512-9g7sua11kkyZNo2hLRCG3LuZZwqexoyEyecSlV8cAsfAVVCZqLzVir6XDqmH0r+Vzgnd5LrdHDMyjtFnJQLAYw==
   dependencies:
-    chokidar "^2.1.5"
+    chokidar "^3.3.0"
+    livereload-js "^3.1.0"
     opts ">= 1.2.0"
     ws "^6.2.1"
 
@@ -13447,7 +13472,7 @@ media-typer@0.3.0:
   resolved "https://registry.yarnpkg.com/media-typer/-/media-typer-0.3.0.tgz#8710d7af0aa626f8fffa1ce00168545263255748"
   integrity sha1-hxDXrwqmJvj/+hzgAWhUUmMlV0g=
 
-medium-zoom@^1.0.4:
+medium-zoom@^1.0.4, medium-zoom@^1.0.5:
   version "1.0.5"
   resolved "https://registry.yarnpkg.com/medium-zoom/-/medium-zoom-1.0.5.tgz#81413dda20ccdd857141ff420cfab788dd32e20e"
   integrity sha512-aLGa6WlTuFKWvH88bqTrY5ztJMN+D0hd8UX6BYc4YSoPayppzETjZUcdVcksgaoQEMg4cZSmXPg846fTp2rjRQ==
@@ -16051,6 +16076,13 @@ prismjs@^1.15.0, prismjs@^1.8.4:
   version "1.18.0"
   resolved "https://registry.yarnpkg.com/prismjs/-/prismjs-1.18.0.tgz#8f04dd47fa232cbd27d1ca969107580ff43f06e4"
   integrity sha512-N0r3i/Cto516V8+GKKamhsPVZSFcO0TMUBtIDW6uq6BVqoC3FNtZVZ+cmH16N2XtGQlgRN+sFUTjOdCsEP51qw==
+  optionalDependencies:
+    clipboard "^2.0.0"
+
+prismjs@^1.19.0:
+  version "1.20.0"
+  resolved "https://registry.yarnpkg.com/prismjs/-/prismjs-1.20.0.tgz#9b685fc480a3514ee7198eac6a3bf5024319ff03"
+  integrity sha512-AEDjSrVNkynnw6A+B1DsFkd6AVdTnp+/WoUixFRULlCLZVRZlVQMVWio/16jv7G1FscUxQxOQhWwApgbnxr6kQ==
   optionalDependencies:
     clipboard "^2.0.0"
 
