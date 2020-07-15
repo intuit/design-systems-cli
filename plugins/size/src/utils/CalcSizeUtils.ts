@@ -169,7 +169,7 @@ function getChangedPackages() {
       execOptions: { maxBuffer: Infinity },
       branch: `${lastTag.trim()}..HEAD`,
     })
-      .reduce<string[]>((all, commit) => [...all, ...commit.files], [])
+      .reduce<string[]>((files, commit) => [...files, ...commit.files], [])
       .map((file) => path.resolve(path.join(process.cwd(), file)));
     const changedDeps: string[] = [];
 
