@@ -153,7 +153,9 @@ function getChangedPackages() {
 
   try {
     // this assumes on master whereas we want the last tag
-    const packages = execSync('lerna changed --ndjson', { stdio: ['pipe'] })
+    const packages = execSync('lerna changed --ndjson --toposort', {
+      stdio: ['pipe'],
+    })
       .toString()
       .trim()
       .split('\n');
@@ -169,11 +171,35 @@ function getChangedPackages() {
     })
       .reduce<string[]>((all, commit) => [...all, ...commit.files], [])
       .map((file) => path.resolve(path.join(process.cwd(), file)));
+    const changedDeps: string[] = [];
 
     return packages
       .map((p: string) => JSON.parse(p))
       .filter((json: Record<string, any>) =>
-        changedFiles.some((file) => file.includes(json.location))
+        changedFiles.some((file) => {
+          const hasChangedFiles = file.includes(json.location);
+
+          if (hasChangedFiles) {
+            changedDeps.push(json.name);
+          } else {
+            // Check if a dep has changed too
+            const packageJson = JSON.parse(
+              fs.readFileSync(path.join(json.location, 'package.json'), {
+                encoding: 'utf-8',
+              })
+            );
+            const hasChangedDep = Object.keys(packageJson).some((dep) =>
+              changedDeps.includes(dep)
+            );
+
+            if (hasChangedDep) {
+              changedDeps.push(json.name);
+              return hasChangedDep;
+            }
+          }
+
+          return hasChangedFiles;
+        })
       )
       .map((json: Record<string, any>) => {
         return { location: json.location, package: { ...json } };
