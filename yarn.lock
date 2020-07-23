@@ -1524,7 +1524,7 @@
     storybook-addon-jsx "^7.3.0"
     storybook-addon-react-docgen "^1.2.38"
     storybook-addon-sketch "^0.2.0"
-    storybook-dark-mode "^0.6.2-canary.106.2091.0"
+    storybook-dark-mode "^0.6.2-canary.106.2226.0"
     tslib "1.11.1"
     webpack "4.41.5"
     webpack-filter-warnings-plugin "1.2.1"
@@ -19240,10 +19240,10 @@ storybook-addon-sketch@^0.2.0:
     file-saver "^2.0.1"
     url-join "^4.0.0"
 
-storybook-dark-mode@^0.6.2-canary.106.2091.0:
-  version "0.6.2-canary.108.2080.0"
-  resolved "https://registry.yarnpkg.com/storybook-dark-mode/-/storybook-dark-mode-0.6.2-canary.108.2080.0.tgz#e5e2972d6f0e239a07268b61f1b658efa3c7f012"
-  integrity sha512-9dpM5sIGyIFIMYruVJy9t5mhCSLRJjcxQX0Q0t+KvMz8DSDdv5oGfuKVIDsLsygoBiK7jubd4nNvxlqtgPOWoA==
+storybook-dark-mode@^0.6.2-canary.106.2226.0:
+  version "0.6.2-canary.112.2207.0"
+  resolved "https://registry.yarnpkg.com/storybook-dark-mode/-/storybook-dark-mode-0.6.2-canary.112.2207.0.tgz#95d6fa43abbb037611740f4c4fd0ef51d915eefa"
+  integrity sha512-bXatpl2exCA7EmjPEdHmXWuxV8sHLMlJkBkUb8kr4aOGE1ePCnIoy9Jv/lNJmYtZjINud0GEPKKkTBbjw2GSww==
   dependencies:
     fast-deep-equal "^3.0.0"
     memoizerific "^1.11.3"
