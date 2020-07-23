@@ -1,11 +1,10 @@
-const { addDecorator, addParameters } = require('@storybook/react');
-const { withA11y } = require('@storybook/addon-a11y');
-const { withPropsTable } = require('storybook-addon-react-docgen');
-const { withKnobs } = require('@storybook/addon-knobs');
-const { themes: storybookThemes, ThemeContext } = require('@storybook/theming');
-const { jsxDecorator } = require('storybook-addon-jsx');
-const { select } = require('@storybook/addon-knobs');
-const configProof = require('@proof-ui/storybook').default;
+import { withA11y } from '@storybook/addon-a11y';
+import { withPropsTable } from 'storybook-addon-react-docgen';
+import { withKnobs } from '@storybook/addon-knobs';
+import { themes as storybookThemes, ThemeContext } from '@storybook/theming';
+import { jsxDecorator } from 'storybook-addon-jsx';
+import { select } from '@storybook/addon-knobs';
+import configProof from '@proof-ui/storybook';
 
 configProof();
 
@@ -24,52 +23,50 @@ try {
   darkLogo = undefined;
 }
 
-addDecorator(withKnobs);
-addDecorator(withPropsTable);
-addDecorator(jsxDecorator);
+export const decorators = [withKnobs, withPropsTable, jsxDecorator];
 
 const brand = {
   brandTitle: MONOREPO_NAME + ' Storybook',
-  brandUrl: REPO_URL
+  brandUrl: REPO_URL,
 };
 
-addParameters({
+export const parameters = {
   backgrounds: {
     default: 'white',
     values: [
       { name: 'white', value: 'white' },
       { name: 'dark', value: '#2f2f2f' },
       { name: 'twitter', value: '#00aced' },
-      { name: 'facebook', value: '#3b5998' }
+      { name: 'facebook', value: '#3b5998' },
     ],
   },
   knobs: {
-    escapeHTML: false
+    escapeHTML: false,
   },
   darkMode: {
     light: Object.assign({}, storybookThemes.light, brand, {
-      brandImage: lightLogo
+      brandImage: lightLogo,
     }),
     dark: Object.assign({}, storybookThemes.dark, brand, {
-      brandImage: darkLogo
-    })
+      brandImage: darkLogo,
+    }),
   },
   a11y: {
     config: {
       rules: [
         {
           id: 'duplicate-id',
-          enabled: false
+          enabled: false,
         },
         {
           id: 'heading-order',
-          enabled: false
+          enabled: false,
         },
         {
           id: 'label',
-          none: ['help-same-as-label', 'multiple-label']
-        }
-      ]
-    }
-  }
-});
+          none: ['help-same-as-label', 'multiple-label'],
+        },
+      ],
+    },
+  },
+};

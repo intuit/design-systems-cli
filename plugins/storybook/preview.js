@@ -1,2 +1,1 @@
-/* eslint-disable import/no-unassigned-import */
-require('./.storybook/preview');
+module.exports = require('./.storybook/preview');

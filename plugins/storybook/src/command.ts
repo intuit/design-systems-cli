@@ -14,9 +14,9 @@ const command: CliCommand = {
           name: 'sketch',
           type: Boolean,
           description: 'Generate sketch assets for the storybook',
-          config: true
-        }
-      ]
+          config: true,
+        },
+      ],
     },
     {
       name: 'start',
@@ -26,19 +26,21 @@ const command: CliCommand = {
         {
           name: 'ci',
           type: Boolean,
-          description: 'Start the storybook server in CI mode'
+          description: 'Start the storybook server in CI mode',
         },
         {
           name: 'findPort',
           type: Boolean,
-          description: 'Automatically assign a port if the default (6006) is occupied'
-        }        
-      ]
-    }
+          description:
+            'Automatically assign a port if the default (6006) is occupied',
+        },
+      ],
+    },
   ],
-  footer: {
-    header: 'Custom Storybook Configuration',
-    content: dedent`
+  footer: [
+    {
+      header: 'Custom Storybook Configuration',
+      content: dedent`
       The configuration for this package is now just a normal storybook preset!
       This means that you configure storybook just like the story book docs suggests.
       All you need to do is use our preset + load our "preview.js" if you want the default features we load.
@@ -47,8 +49,27 @@ const command: CliCommand = {
 
       1. dark-logo.png - Logo for the storybook when it's in dark mode
       2. light-logo.png - Logo for the storybook when it's in light mode
-    `
-  }
+    `,
+    },
+    {
+      code: true,
+      content: dedent`
+        \`\`\`js
+        import * as dsPreview from "@design-systems/storybook/preview";
+
+        export const decorators = [
+          ...dsPreview.decorators,
+          // YOUR DECORATORS
+        ];
+
+        export const parameters = {
+          ...dsPreview.parameters,
+          // YOUR PARAMETERS
+        };
+        \`\`\`
+      `,
+    },
+  ],
 };
 
 export default command;
