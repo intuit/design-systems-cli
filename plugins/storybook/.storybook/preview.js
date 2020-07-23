@@ -23,7 +23,7 @@ try {
   darkLogo = undefined;
 }
 
-export const decorators = [withKnobs, withPropsTable, jsxDecorator];
+export const decorators = [withPropsTable, jsxDecorator];
 
 const brand = {
   brandTitle: MONOREPO_NAME + ' Storybook',
