@@ -1153,7 +1153,7 @@
     minimist "^1.2.0"
 
 "@design-systems/build@link:plugins/build":
-  version "1.9.0"
+  version "1.10.0"
   dependencies:
     "@babel/code-frame" "7.10.1"
     "@babel/core" "7.10.2"
@@ -1194,7 +1194,7 @@
     typescript "^3.8.3"
 
 "@design-systems/bundle@link:plugins/bundle":
-  version "1.9.0"
+  version "1.10.0"
   dependencies:
     "@design-systems/build" "link:plugins/build"
     "@design-systems/cli-utils" "link:packages/cli-utils"
@@ -1212,7 +1212,7 @@
     webpack "4.41.5"
 
 "@design-systems/clean@link:plugins/clean":
-  version "1.9.0"
+  version "1.10.0"
   dependencies:
     "@design-systems/cli-utils" "link:packages/cli-utils"
     "@design-systems/plugin" "link:packages/plugin"
@@ -1221,7 +1221,7 @@
     tslib "1.11.1"
 
 "@design-systems/cli-utils@link:packages/cli-utils":
-  version "1.9.0"
+  version "1.10.0"
   dependencies:
     find-up "4.1.0"
     npm-which "3.0.1"
@@ -1231,7 +1231,7 @@
     webpack "4.41.5"
 
 "@design-systems/core@link:packages/core":
-  version "1.9.0"
+  version "1.10.0"
   dependencies:
     "@design-systems/build" "link:plugins/build"
     "@design-systems/bundle" "link:plugins/bundle"
@@ -1251,7 +1251,7 @@
     tslib "1.11.1"
 
 "@design-systems/create-command@link:plugins/create-command":
-  version "1.9.0"
+  version "1.10.0"
   dependencies:
     "@design-systems/cli-utils" "link:packages/cli-utils"
     "@design-systems/create" "link:packages/create"
@@ -1270,10 +1270,10 @@
     tslib "1.11.1"
 
 "@design-systems/create@link:packages/create":
-  version "1.9.0"
+  version "1.10.0"
 
 "@design-systems/dev@link:plugins/dev":
-  version "1.9.0"
+  version "1.10.0"
   dependencies:
     "@design-systems/cli-utils" "link:packages/cli-utils"
     "@design-systems/plugin" "link:packages/plugin"
@@ -1284,7 +1284,7 @@
     tslib "1.11.1"
 
 "@design-systems/eslint-config@link:packages/eslint-config":
-  version "1.9.0"
+  version "1.10.0"
   dependencies:
     "@design-systems/cli-utils" "link:packages/cli-utils"
     "@typescript-eslint/eslint-plugin" "2.17.0"
@@ -1307,7 +1307,7 @@
     tslib "1.11.1"
 
 "@design-systems/lint@link:plugins/lint":
-  version "1.9.0"
+  version "1.10.0"
   dependencies:
     "@design-systems/cli-utils" "link:packages/cli-utils"
     "@design-systems/eslint-config" "link:packages/eslint-config"
@@ -1324,7 +1324,7 @@
     tslib "1.11.1"
 
 "@design-systems/load-config@link:packages/load-config":
-  version "1.9.0"
+  version "1.10.0"
   dependencies:
     "@design-systems/core" "link:packages/core"
     "@design-systems/plugin" "link:packages/plugin"
@@ -1338,7 +1338,7 @@
     tslib "1.11.1"
 
 "@design-systems/playroom@link:plugins/playroom":
-  version "1.9.0"
+  version "1.10.0"
   dependencies:
     "@babel/core" "7.10.2"
     "@babel/register" "7.10.1"
@@ -1359,14 +1359,14 @@
     webpack "4.41.5"
 
 "@design-systems/plugin@link:packages/plugin":
-  version "1.9.0"
+  version "1.10.0"
   dependencies:
     command-line-application "0.9.6"
     tslib "1.11.1"
     utility-types "3.10.0"
 
 "@design-systems/proof@link:plugins/proof":
-  version "1.9.0"
+  version "1.10.0"
   dependencies:
     "@babel/core" "7.10.2"
     "@babel/plugin-transform-runtime" "7.10.1"
@@ -1384,7 +1384,7 @@
     tslib "1.11.1"
 
 "@design-systems/size@link:plugins/size":
-  version "1.9.0"
+  version "1.10.0"
   dependencies:
     "@design-systems/cli-utils" "link:packages/cli-utils"
     "@design-systems/plugin" "link:packages/plugin"
@@ -1414,7 +1414,7 @@
     webpack-sources "1.4.3"
 
 "@design-systems/storybook@link:plugins/storybook":
-  version "1.9.0"
+  version "1.10.0"
   dependencies:
     "@babel/core" "7.10.2"
     "@design-systems/build" "link:plugins/build"
@@ -1450,7 +1450,7 @@
     webpack-filter-warnings-plugin "1.2.1"
 
 "@design-systems/stylelint-config@link:packages/stylelint-config":
-  version "1.9.0"
+  version "1.10.0"
   dependencies:
     stylelint-a11y "1.2.3"
     stylelint-config-css-modules "2.2.0"
@@ -1464,7 +1464,7 @@
     tslib "1.11.1"
 
 "@design-systems/test@link:plugins/test":
-  version "1.9.0"
+  version "1.10.0"
   dependencies:
     "@babel/core" "7.10.2"
     "@design-systems/build" "link:plugins/build"
@@ -1479,12 +1479,12 @@
     identity-obj-proxy "3.0.0"
     jest "25.1.0"
     jest-github-reporter "^1.0.0"
-    jest-junit "10.0.0"
+    jest-junit "11.1.0"
     polyfill-object.fromentries "1.0.1"
     tslib "1.11.1"
 
 "@design-systems/update@link:plugins/update":
-  version "1.9.0"
+  version "1.10.0"
   dependencies:
     "@design-systems/cli-utils" "link:packages/cli-utils"
     "@design-systems/plugin" "link:packages/plugin"
@@ -12136,13 +12136,12 @@ jest-jasmine2@^25.1.0:
     pretty-format "^25.1.0"
     throat "^5.0.0"
 
-jest-junit@10.0.0:
-  version "10.0.0"
-  resolved "https://registry.yarnpkg.com/jest-junit/-/jest-junit-10.0.0.tgz#c94b91c24920a327c9d2a075e897b2dba4af494b"
-  integrity sha512-dbOVRyxHprdSpwSAR9/YshLwmnwf+RSl5hf0kCGlhAcEeZY9aRqo4oNmaT0tLC16Zy9D0zekDjWkjHGjXlglaQ==
+jest-junit@11.1.0:
+  version "11.1.0"
+  resolved "https://registry.yarnpkg.com/jest-junit/-/jest-junit-11.1.0.tgz#79cd53948e44d62b2b30fa23ea0d7a899d2c8d7a"
+  integrity sha512-c2LFOyKY7+ZxL5zSu+WHmHfsJ2wqbOpeYJ4Uu26yMhFxny2J2NQj6AVS7M+Eaxji9Q/oIDDK5tQy0DGzDp9xOw==
   dependencies:
-    jest-validate "^24.9.0"
-    mkdirp "^0.5.1"
+    mkdirp "^1.0.4"
     strip-ansi "^5.2.0"
     uuid "^3.3.3"
     xml "^1.0.1"
@@ -12315,18 +12314,6 @@ jest-util@^25.1.0:
     chalk "^3.0.0"
     is-ci "^2.0.0"
     mkdirp "^0.5.1"
-
-jest-validate@^24.9.0:
-  version "24.9.0"
-  resolved "https://registry.yarnpkg.com/jest-validate/-/jest-validate-24.9.0.tgz#0775c55360d173cd854e40180756d4ff52def8ab"
-  integrity sha512-HPIt6C5ACwiqSiwi+OfSSHbK8sG7akG8eATl+IPKaeIjtPOeBUd/g3J7DghugzxrGjI93qS/+RPKe1H6PqvhRQ==
-  dependencies:
-    "@jest/types" "^24.9.0"
-    camelcase "^5.3.1"
-    chalk "^2.0.1"
-    jest-get-type "^24.9.0"
-    leven "^3.1.0"
-    pretty-format "^24.9.0"
 
 jest-validate@^25.1.0:
   version "25.1.0"
@@ -13855,7 +13842,7 @@ mkdirp@0.3.0:
   resolved "https://registry.yarnpkg.com/mkdirp/-/mkdirp-0.3.0.tgz#1bbf5ab1ba827af23575143490426455f481fe1e"
   integrity sha1-G79asbqCevI1dRQ0kEJkVfSB/h4=
 
-mkdirp@1.0.4:
+mkdirp@1.0.4, mkdirp@^1.0.4:
   version "1.0.4"
   resolved "https://registry.yarnpkg.com/mkdirp/-/mkdirp-1.0.4.tgz#3eb5ed62622756d79a5f0e2a221dfebad75c2f7e"
   integrity sha512-vVqVZQyf3WLx2Shd0qJ9xuvqgAyKPLAiqITEtqW0oIUjzo3PePDd6fW9iFz30ef7Ysp/oiWqbhszeGWW2T6Gzw==
