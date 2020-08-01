@@ -1153,7 +1153,7 @@
     minimist "^1.2.0"
 
 "@design-systems/build@link:plugins/build":
-  version "1.9.0"
+  version "1.10.0"
   dependencies:
     "@babel/code-frame" "7.10.1"
     "@babel/core" "7.10.2"
@@ -1184,7 +1184,7 @@
     postcss-icss-selectors "2.0.3"
     postcss-load-config "2.1.0"
     postcss-modules "2.0.0"
-    postcss-nested "4.2.1"
+    postcss-nested "4.2.3"
     postcss-url "8.0.0"
     pretty-bytes "5.3.0"
     pretty-ms "7.0.0"
@@ -1194,7 +1194,7 @@
     typescript "^3.8.3"
 
 "@design-systems/bundle@link:plugins/bundle":
-  version "1.9.0"
+  version "1.10.0"
   dependencies:
     "@design-systems/build" "link:plugins/build"
     "@design-systems/cli-utils" "link:packages/cli-utils"
@@ -1212,7 +1212,7 @@
     webpack "4.41.5"
 
 "@design-systems/clean@link:plugins/clean":
-  version "1.9.0"
+  version "1.10.0"
   dependencies:
     "@design-systems/cli-utils" "link:packages/cli-utils"
     "@design-systems/plugin" "link:packages/plugin"
@@ -1221,7 +1221,7 @@
     tslib "1.11.1"
 
 "@design-systems/cli-utils@link:packages/cli-utils":
-  version "1.9.0"
+  version "1.10.0"
   dependencies:
     find-up "4.1.0"
     npm-which "3.0.1"
@@ -1231,7 +1231,7 @@
     webpack "4.41.5"
 
 "@design-systems/core@link:packages/core":
-  version "1.9.0"
+  version "1.10.0"
   dependencies:
     "@design-systems/build" "link:plugins/build"
     "@design-systems/bundle" "link:plugins/bundle"
@@ -1251,7 +1251,7 @@
     tslib "1.11.1"
 
 "@design-systems/create-command@link:plugins/create-command":
-  version "1.9.0"
+  version "1.10.0"
   dependencies:
     "@design-systems/cli-utils" "link:packages/cli-utils"
     "@design-systems/create" "link:packages/create"
@@ -1270,10 +1270,10 @@
     tslib "1.11.1"
 
 "@design-systems/create@link:packages/create":
-  version "1.9.0"
+  version "1.10.0"
 
 "@design-systems/dev@link:plugins/dev":
-  version "1.9.0"
+  version "1.10.0"
   dependencies:
     "@design-systems/cli-utils" "link:packages/cli-utils"
     "@design-systems/plugin" "link:packages/plugin"
@@ -1284,7 +1284,7 @@
     tslib "1.11.1"
 
 "@design-systems/eslint-config@link:packages/eslint-config":
-  version "1.9.0"
+  version "1.10.0"
   dependencies:
     "@design-systems/cli-utils" "link:packages/cli-utils"
     "@typescript-eslint/eslint-plugin" "2.17.0"
@@ -1307,7 +1307,7 @@
     tslib "1.11.1"
 
 "@design-systems/lint@link:plugins/lint":
-  version "1.9.0"
+  version "1.10.0"
   dependencies:
     "@design-systems/cli-utils" "link:packages/cli-utils"
     "@design-systems/eslint-config" "link:packages/eslint-config"
@@ -1324,7 +1324,7 @@
     tslib "1.11.1"
 
 "@design-systems/load-config@link:packages/load-config":
-  version "1.9.0"
+  version "1.10.0"
   dependencies:
     "@design-systems/core" "link:packages/core"
     "@design-systems/plugin" "link:packages/plugin"
@@ -1338,7 +1338,7 @@
     tslib "1.11.1"
 
 "@design-systems/playroom@link:plugins/playroom":
-  version "1.9.0"
+  version "1.10.0"
   dependencies:
     "@babel/core" "7.10.2"
     "@babel/register" "7.10.1"
@@ -1359,14 +1359,14 @@
     webpack "4.41.5"
 
 "@design-systems/plugin@link:packages/plugin":
-  version "1.9.0"
+  version "1.10.0"
   dependencies:
     command-line-application "0.9.6"
     tslib "1.11.1"
     utility-types "3.10.0"
 
 "@design-systems/proof@link:plugins/proof":
-  version "1.9.0"
+  version "1.10.0"
   dependencies:
     "@babel/core" "7.10.2"
     "@babel/plugin-transform-runtime" "7.10.1"
@@ -1384,7 +1384,7 @@
     tslib "1.11.1"
 
 "@design-systems/size@link:plugins/size":
-  version "1.9.0"
+  version "1.10.0"
   dependencies:
     "@design-systems/cli-utils" "link:packages/cli-utils"
     "@design-systems/plugin" "link:packages/plugin"
@@ -1414,7 +1414,7 @@
     webpack-sources "1.4.3"
 
 "@design-systems/storybook@link:plugins/storybook":
-  version "1.9.0"
+  version "1.10.0"
   dependencies:
     "@babel/core" "7.10.2"
     "@design-systems/build" "link:plugins/build"
@@ -1450,7 +1450,7 @@
     webpack-filter-warnings-plugin "1.2.1"
 
 "@design-systems/stylelint-config@link:packages/stylelint-config":
-  version "1.9.0"
+  version "1.10.0"
   dependencies:
     stylelint-a11y "1.2.3"
     stylelint-config-css-modules "2.2.0"
@@ -1464,7 +1464,7 @@
     tslib "1.11.1"
 
 "@design-systems/test@link:plugins/test":
-  version "1.9.0"
+  version "1.10.0"
   dependencies:
     "@babel/core" "7.10.2"
     "@design-systems/build" "link:plugins/build"
@@ -1484,7 +1484,7 @@
     tslib "1.11.1"
 
 "@design-systems/update@link:plugins/update":
-  version "1.9.0"
+  version "1.10.0"
   dependencies:
     "@design-systems/cli-utils" "link:packages/cli-utils"
     "@design-systems/plugin" "link:packages/plugin"
@@ -15592,12 +15592,12 @@ postcss-modules@2.0.0:
     postcss "^7.0.1"
     string-hash "^1.1.1"
 
-postcss-nested@4.2.1:
-  version "4.2.1"
-  resolved "https://registry.yarnpkg.com/postcss-nested/-/postcss-nested-4.2.1.tgz#4bc2e5b35e3b1e481ff81e23b700da7f82a8b248"
-  integrity sha512-AMayXX8tS0HCp4O4lolp4ygj9wBn32DJWXvG6gCv+ZvJrEa00GUxJcJEEzMh87BIe6FrWdYkpR2cuyqHKrxmXw==
+postcss-nested@4.2.3:
+  version "4.2.3"
+  resolved "https://registry.yarnpkg.com/postcss-nested/-/postcss-nested-4.2.3.tgz#c6f255b0a720549776d220d00c4b70cd244136f6"
+  integrity sha512-rOv0W1HquRCamWy2kFl3QazJMMe1ku6rCFoAAH+9AcxdbpDeBr6k968MLWuLjvjMcGEip01ak09hKOEgpK9hvw==
   dependencies:
-    postcss "^7.0.21"
+    postcss "^7.0.32"
     postcss-selector-parser "^6.0.2"
 
 postcss-normalize-charset@^4.0.1:
