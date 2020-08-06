@@ -20,7 +20,7 @@
   },
   "dependencies": {
     "command-line-application": "0.9.6",
-    "tslib": "1.11.1",
+    "tslib": "2.0.1",
     "utility-types": "3.10.0"
   },
   "keywords": [

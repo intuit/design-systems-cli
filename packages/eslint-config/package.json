@@ -31,6 +31,6 @@
     "eslint-plugin-prettier": "3.1.2",
     "eslint-plugin-react": "7.19.0",
     "eslint-plugin-react-hooks": "2.5.1",
-    "tslib": "1.11.1"
+    "tslib": "2.0.1"
   }
 }
