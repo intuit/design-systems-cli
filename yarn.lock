@@ -1685,7 +1685,6 @@
     "@design-systems/build" "link:plugins/build"
     "@design-systems/cli-utils" "link:packages/cli-utils"
     "@design-systems/plugin" "link:packages/plugin"
-    "@proof-ui/storybook" "^0.0.19"
     "@storybook/addon-a11y" "6.0.0-rc.14"
     "@storybook/addon-actions" "6.0.0-rc.14"
     "@storybook/addon-backgrounds" "6.0.0-rc.14"
@@ -3282,11 +3281,6 @@
   version "0.1.1"
   resolved "https://registry.yarnpkg.com/@proof-ui/skip-tests-plugin/-/skip-tests-plugin-0.1.1.tgz#7725a7cf9bd92b4674e682f2338f74baefcd9038"
   integrity sha512-l4Zchz6dgnYJ4oFF1aWZvvgYkDCAjfa0yUWpmGGj8S3oUrMn0bezEXlEknBTrYyJu7fV/MZqaV4qPmhBzf36eA==
-
-"@proof-ui/storybook@^0.0.19":
-  version "0.0.19"
-  resolved "https://registry.yarnpkg.com/@proof-ui/storybook/-/storybook-0.0.19.tgz#2bd86d41c4ec83de21888a7f77d6a867bb44b5ee"
-  integrity sha512-2NlaaQJyaUthU3h3mxhN2L2aeHkrr+rNj/vXwwRlmkXeuOuNon9fP8gEPpFcAZf9L2gt3rYHSJmvXYt/aQAYhQ==
 
 "@proof-ui/test@^0.1.1":
   version "0.1.1"
