@@ -36,7 +36,6 @@
     "tslib": "1.11.1"
   },
   "devDependencies": {
-    "@types/signale": "1.4.1",
-    "@types/webdriverio": "4.13.3"
+    "@types/signale": "1.4.1"
   }
 }
