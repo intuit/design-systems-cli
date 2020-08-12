@@ -50,7 +50,7 @@
     "storybook-addon-react-docgen": "^1.2.38",
     "storybook-addon-sketch": "^0.2.0",
     "storybook-dark-mode": "^0.6.2-canary.106.2226.0",
-    "tslib": "1.11.1",
+    "tslib": "2.0.1",
     "webpack": "4.44.1",
     "webpack-filter-warnings-plugin": "1.2.1"
   },
