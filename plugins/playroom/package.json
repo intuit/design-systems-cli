@@ -27,7 +27,7 @@
     "babel-plugin-import-redirect": "1.1.1",
     "css-loader": "3.5.3",
     "dedent": "0.7.0",
-    "fast-glob": "3.2.2",
+    "fast-glob": "3.2.4",
     "file-loader": "6.0.0",
     "fork-ts-checker-webpack-plugin": "4.1.6",
     "fs-extra": "9.0.1",
