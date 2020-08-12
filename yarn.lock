@@ -1651,7 +1651,7 @@
     file-loader "6.0.0"
     fork-ts-checker-webpack-plugin "4.1.6"
     fs-extra "9.0.1"
-    playroom "0.21.1"
+    playroom "0.21.2"
     react-element-to-jsx-string "14.3.1"
     style-loader "1.2.1"
     tslib "1.11.1"
@@ -16389,10 +16389,10 @@ pkg-up@^2.0.0:
   dependencies:
     find-up "^2.1.0"
 
-playroom@0.21.1:
-  version "0.21.1"
-  resolved "https://registry.yarnpkg.com/playroom/-/playroom-0.21.1.tgz#5a91602f323975c41870ea2bd86eba8c18c09c99"
-  integrity sha512-GhowhPDwzlYctfZ40YvcWVSpwkZaZ0b0n+k7LwBgtXjRUIxpC4rxpzhHM84xFzFqGh8ecOXNnhhfRem3BzvyQw==
+playroom@0.21.2:
+  version "0.21.2"
+  resolved "https://registry.yarnpkg.com/playroom/-/playroom-0.21.2.tgz#e898630599c8fcbce8a3084a053d7d22662e74a1"
+  integrity sha512-i93r8AVQovR2jJMNC/3hPW6n235btU6eB/EgoJWdSWKggIu7Zw/ZxGsvpmhFIDcE/GZTyKRM04yG03Ki1fViFw==
   dependencies:
     "@babel/cli" "^7.8.3"
     "@babel/core" "^7.8.3"
