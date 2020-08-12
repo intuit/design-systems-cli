@@ -1,3 +1,26 @@
+# v1.10.0 (Tue Jun 09 2020)
+
+:tada: This release contains work from a new contributor! :tada:
+
+Thank you, WhiteSource Renovate ([@renovate-bot](https://github.com/renovate-bot)), for all your work!
+
+#### 🔩 Dependency Updates
+
+- Update babel monorepo [#168](https://github.com/intuit/design-systems-cli/pull/168) ([@renovate-bot](https://github.com/renovate-bot) [@hipstersmoothie](https://github.com/hipstersmoothie) [@renovate[bot]](https://github.com/renovate[bot]))
+- Update dependency fork-ts-checker-webpack-plugin to v4.1.6 [#260](https://github.com/intuit/design-systems-cli/pull/260) ([@renovate-bot](https://github.com/renovate-bot) [@renovate[bot]](https://github.com/renovate[bot]))
+- Update proof to ^0.0.19 [#236](https://github.com/intuit/design-systems-cli/pull/236) ([@renovate-bot](https://github.com/renovate-bot) [@renovate[bot]](https://github.com/renovate[bot]))
+- Update dependency storybook-dark-mode to ^0.6.0 [#180](https://github.com/intuit/design-systems-cli/pull/180) ([@renovate-bot](https://github.com/renovate-bot) [@renovate[bot]](https://github.com/renovate[bot]))
+- Update dependency core-js to v3.6.5 [#222](https://github.com/intuit/design-systems-cli/pull/222) ([@renovate-bot](https://github.com/renovate-bot) [@renovate[bot]](https://github.com/renovate[bot]))
+- Update dependency react-docgen-typescript-loader to v3.7.2 [#179](https://github.com/intuit/design-systems-cli/pull/179) ([@renovate-bot](https://github.com/renovate-bot) [@renovate[bot]](https://github.com/renovate[bot]))
+
+#### Authors: 3
+
+- [@renovate[bot]](https://github.com/renovate[bot])
+- Andrew Lisowski ([@hipstersmoothie](https://github.com/hipstersmoothie))
+- WhiteSource Renovate ([@renovate-bot](https://github.com/renovate-bot))
+
+---
+
 # v1.7.0 (Wed Apr 29 2020)
 
 #### 🚀 Enhancement

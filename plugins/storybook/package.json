@@ -1,6 +1,6 @@
 {
   "name": "@design-systems/storybook",
-  "version": "1.9.0",
+  "version": "1.10.0",
   "description": "The storybook command for @design-systems-cli",
   "main": "dist/index.js",
   "author": "Adam Dierkens <adam@dierkens.com>",
@@ -26,7 +26,6 @@
     "@design-systems/build": "link:../build",
     "@design-systems/cli-utils": "link:../../packages/cli-utils",
     "@design-systems/plugin": "link:../../packages/plugin",
-    "@proof-ui/storybook": "^0.0.19",
     "@storybook/addon-a11y": "6.0.0-rc.14",
     "@storybook/addon-actions": "6.0.0-rc.14",
     "@storybook/addon-backgrounds": "6.0.0-rc.14",
