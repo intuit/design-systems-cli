@@ -106,8 +106,13 @@ export default async ({
   config.plugins.push(
     new ForkTsCheckerWebpackPlugin({
       formatter: 'codeframe',
-      checkSyntacticErrors: true,
-      reportFiles: ['**/*.snippet.tsx', '!**/node_modules/**']
+      reportFiles: ['**/*.snippet.tsx', '!**/node_modules/**'],
+      typescript: {
+        diagnosticOptions: {
+          semantic: true,
+          syntactic: true,
+        },
+      },
     })
   );
 
