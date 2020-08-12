@@ -1504,7 +1504,7 @@
     commently "5.87.0"
     cross-spawn "7.0.3"
     css-loader "3.5.3"
-    diff2html "3.1.7"
+    diff2html "3.1.11"
     file-size "1.0.0"
     fs-extra "9.0.1"
     get-monorepo-packages "1.2.0"
@@ -8819,10 +8819,10 @@ diff-sequences@^26.3.0:
   resolved "https://registry.yarnpkg.com/diff-sequences/-/diff-sequences-26.3.0.tgz#62a59b1b29ab7fd27cef2a33ae52abe73042d0a2"
   integrity sha512-5j5vdRcw3CNctePNYN0Wy2e/JbWT6cAYnXv5OuqPhDpyCGc0uLu2TK0zOCJWNB9kOIfYMSpIulRaDgIi4HJ6Ig==
 
-diff2html@3.1.7:
-  version "3.1.7"
-  resolved "https://registry.yarnpkg.com/diff2html/-/diff2html-3.1.7.tgz#2641a510e359743164d41dad30db1246e92b136c"
-  integrity sha512-inGdGsbKPt4s5ceH3QZZS2mZqp4eroiQoKEtYOGuSDGGm0X7K8Jsd472KxSSdi8s8d4jkDI6o5SJ/rMeJPs5mg==
+diff2html@3.1.11:
+  version "3.1.11"
+  resolved "https://registry.yarnpkg.com/diff2html/-/diff2html-3.1.11.tgz#c8c4b350917a25c63b24d4f4eb530ee9b78b4d03"
+  integrity sha512-EtzNnfhT4XzxIUvIw5mhUGxGYDzce9lxkqtSHWq4yas+UrEjwzm5A2pYIaFOikupbFITd9RaHpu0ocErJ1myRw==
   dependencies:
     diff "4.0.2"
     hogan.js "3.0.2"
