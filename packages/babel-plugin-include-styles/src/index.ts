@@ -76,6 +76,7 @@ export default function includeStyles(
   }
 
   return {
+    /** Initialization code */
     pre: () => {
       cssImports = new Set<string>();
     },

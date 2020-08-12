@@ -36,8 +36,11 @@ interface WithAddDiagnostic {
 const CSS_EXTENSION_REGEX = /\.css['"]$/;
 
 const FORMAT_HOST = {
+  /** Implement ts compiler getCurrentDirectory */
   getCurrentDirectory: () => ts.sys.getCurrentDirectory(),
+  /** Implement ts compiler getNewLine */
   getNewLine: () => ts.sys.newLine,
+  /** Implement ts compiler getCanonicalFileName */
   getCanonicalFileName: (filename: string) =>
     ts.sys.useCaseSensitiveFileNames ? filename : filename.toLowerCase()
 };
@@ -159,6 +162,7 @@ export default class TypescriptCompiler {
     this.buildArgs = args;
   }
 
+  /** Build the types for the project */
   buildTypes = async (watch: boolean) => {
     const isTrace = getLogLevel() === 'trace';
 
@@ -236,6 +240,7 @@ export default class TypescriptCompiler {
         ...postcssConfig.plugins,
         postcssIcssSelectors({
           mode: 'local',
+          /** Create the scope for the css selectors */
           generateScopedName: name => name
         })
       ]);

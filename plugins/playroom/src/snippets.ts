@@ -16,6 +16,7 @@ const renderSnippet = (code: string | React.ReactNode) =>
     ? code
     : jsxToString(code, {
         showDefaultProps: false,
+        /** Find the name of the component */
         displayName: component =>
           component &&
           typeof component === 'object' &&
