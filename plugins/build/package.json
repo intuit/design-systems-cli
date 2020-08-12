@@ -38,7 +38,7 @@
     "change-case": "4.1.1",
     "chokidar": "3.4.2",
     "clean-css": "4.2.3",
-    "colorette": "1.2.0",
+    "colorette": "1.2.1",
     "dedent": "0.7.0",
     "fast-glob": "3.2.2",
     "fs-extra": "9.0.1",

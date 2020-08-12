@@ -48,7 +48,7 @@
     "@types/inquirer": "6.5.0",
     "change-case": "4.1.1",
     "cli-spinners": "2.4.0",
-    "colorette": "1.2.0",
+    "colorette": "1.2.1",
     "command-line-application": "0.10.1",
     "copy-template-dir": "1.4.0",
     "dedent": "0.7.0",
