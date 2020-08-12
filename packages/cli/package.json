@@ -26,7 +26,7 @@
     "@design-systems/cli-utils": "link:../cli-utils",
     "@design-systems/core": "link:../core",
     "@design-systems/load-config": "link:../load-config",
-    "command-line-application": "0.9.6",
+    "command-line-application": "0.10.1",
     "deepmerge": "4.2.2",
     "dlv": "1.1.3",
     "dotenv": "8.2.0",

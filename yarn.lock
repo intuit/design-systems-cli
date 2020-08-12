@@ -1660,7 +1660,7 @@
 "@design-systems/plugin@link:packages/plugin":
   version "1.10.0"
   dependencies:
-    command-line-application "0.9.6"
+    command-line-application "0.10.1"
     tslib "1.11.1"
     utility-types "3.10.0"
 
@@ -7699,21 +7699,7 @@ comma-separated-tokens@^1.0.0:
   resolved "https://registry.yarnpkg.com/comma-separated-tokens/-/comma-separated-tokens-1.0.7.tgz#419cd7fb3258b1ed838dc0953167a25e152f5b59"
   integrity sha512-Jrx3xsP4pPv4AwJUDWY9wOXGtwPXARej6Xd99h4TUGotmf8APuquKMpK+dnD3UgyxK7OEWaisjZz+3b5jtL6xQ==
 
-command-line-application@0.9.6, command-line-application@^0.9.6:
-  version "0.9.6"
-  resolved "https://registry.yarnpkg.com/command-line-application/-/command-line-application-0.9.6.tgz#03da3db29a0dbee1af601f03198a2f2425d67803"
-  integrity sha512-7wc7YX7s/hqZWKp4r37IBlW/Bhh92HWeQW2VV++Mt9x35AKFntz9f7A94Zz+AsImHZmRGHd8iNW5m0jUd4GQpg==
-  dependencies:
-    "@types/command-line-args" "^5.0.0"
-    "@types/command-line-usage" "^5.0.1"
-    chalk "^2.4.1"
-    command-line-args "^5.1.1"
-    command-line-usage "^6.0.0"
-    meant "^1.0.1"
-    remove-markdown "^0.3.0"
-    tslib "1.10.0"
-
-command-line-application@^0.10.1:
+command-line-application@0.10.1, command-line-application@^0.10.1:
   version "0.10.1"
   resolved "https://registry.yarnpkg.com/command-line-application/-/command-line-application-0.10.1.tgz#9ee0db7e41fe69f532eef0747e9ae958c0d348ae"
   integrity sha512-PWZ4nRkz09MbBRocqEe/Fil3RjTaMNqw0didl1n/i3flDcw/vecVfvsw3r+ZHhGs4BOuW7sk3cEYSdfM3Wv5/Q==
@@ -7739,6 +7725,20 @@ command-line-application@^0.8.0:
     command-line-usage "^5.0.5"
     meant "^1.0.1"
     remove-markdown "^0.3.0"
+
+command-line-application@^0.9.6:
+  version "0.9.6"
+  resolved "https://registry.yarnpkg.com/command-line-application/-/command-line-application-0.9.6.tgz#03da3db29a0dbee1af601f03198a2f2425d67803"
+  integrity sha512-7wc7YX7s/hqZWKp4r37IBlW/Bhh92HWeQW2VV++Mt9x35AKFntz9f7A94Zz+AsImHZmRGHd8iNW5m0jUd4GQpg==
+  dependencies:
+    "@types/command-line-args" "^5.0.0"
+    "@types/command-line-usage" "^5.0.1"
+    chalk "^2.4.1"
+    command-line-args "^5.1.1"
+    command-line-usage "^6.0.0"
+    meant "^1.0.1"
+    remove-markdown "^0.3.0"
+    tslib "1.10.0"
 
 command-line-args@^5.1.1:
   version "5.1.1"
