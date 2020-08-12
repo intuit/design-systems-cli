@@ -4,7 +4,6 @@
   "prHourlyLimit": 0,
   "prConcurrentLimit": 0,
   "separateMajorMinor": false,
-  "schedule": "before 3am on the first day of the month",
   "patch": {
     "labels": ["dependency-update"]
   },
