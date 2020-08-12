@@ -29,7 +29,7 @@
     "dedent": "0.7.0",
     "fast-glob": "3.2.4",
     "file-loader": "6.0.0",
-    "fork-ts-checker-webpack-plugin": "4.1.6",
+    "fork-ts-checker-webpack-plugin": "5.0.14",
     "fs-extra": "9.0.1",
     "playroom": "0.21.1",
     "react-element-to-jsx-string": "14.3.1",
