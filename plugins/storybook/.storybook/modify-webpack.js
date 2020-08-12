@@ -9,7 +9,6 @@ const {
 const { getPostCssConfig } = require('@design-systems/build');
 const githubUrlToObject = require('github-url-to-object');
 const FilterWarningsPlugin = require('webpack-filter-warnings-plugin');
-const ForkTsCheckerWebpackPlugin = require('fork-ts-checker-webpack-plugin');
 
 function findBabelRules(config) {
   return config.module.rules.filter(rule => {
