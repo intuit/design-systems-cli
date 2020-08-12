@@ -51,7 +51,7 @@
     "storybook-addon-sketch": "^0.2.0",
     "storybook-dark-mode": "^0.6.2-canary.106.2226.0",
     "tslib": "1.11.1",
-    "webpack": "4.41.5",
+    "webpack": "4.44.1",
     "webpack-filter-warnings-plugin": "1.2.1"
   },
   "peerDependencies": {
