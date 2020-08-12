@@ -1280,7 +1280,7 @@
     change-case "4.1.1"
     chokidar "3.4.2"
     clean-css "4.2.3"
-    colorette "1.2.0"
+    colorette "1.2.1"
     dedent "0.7.0"
     fast-glob "3.2.4"
     fs-extra "9.0.1"
@@ -1366,7 +1366,7 @@
     "@design-systems/plugin" "link:packages/plugin"
     change-case "4.1.1"
     cli-spinners "2.4.0"
-    colorette "1.2.0"
+    colorette "1.2.1"
     copy-template-dir "1.4.0"
     dedent "0.7.0"
     degit "https://github.com/hipstersmoothie/degit.git#private-release"
@@ -1500,7 +1500,7 @@
     "@royriojas/get-exports-from-file" "https://github.com/hipstersmoothie/get-exports-from-file#all"
     change-case "4.1.1"
     chokidar "3.4.2"
-    colorette "1.2.0"
+    colorette "1.2.1"
     commently "5.87.0"
     cross-spawn "7.0.3"
     css-loader "3.5.3"
@@ -1598,7 +1598,7 @@
     "@design-systems/cli-utils" "link:packages/cli-utils"
     "@design-systems/plugin" "link:packages/plugin"
     chalk "4.1.0"
-    colorette "1.2.0"
+    colorette "1.2.1"
     fs-extra "9.0.1"
     marked "1.1.1"
     marked-terminal "4.1.0"
@@ -7492,12 +7492,7 @@ color@^3.0.0:
     color-convert "^1.9.1"
     color-string "^1.5.2"
 
-colorette@1.2.0:
-  version "1.2.0"
-  resolved "https://registry.yarnpkg.com/colorette/-/colorette-1.2.0.tgz#45306add826d196e8c87236ac05d797f25982e63"
-  integrity sha512-soRSroY+OF/8OdA3PTQXwaDJeMc7TfknKKrxeSCencL2a4+Tx5zhxmmv7hdpCjhKBjehzp8+bwe/T68K0hpIjw==
-
-colorette@^1.2.1:
+colorette@1.2.1, colorette@^1.2.1:
   version "1.2.1"
   resolved "https://registry.yarnpkg.com/colorette/-/colorette-1.2.1.tgz#4d0b921325c14faf92633086a536db6e89564b1b"
   integrity sha512-puCDz0CzydiSYOrnXpz/PKd69zRrribezjtE9yd4zvytoRc8+RY/KJPvtPFKZS3E3wP6neGyMe0vOTlHO5L3Pw==
