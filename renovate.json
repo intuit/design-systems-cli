@@ -1,6 +1,6 @@
 {
   "extends": ["group:monorepos", "packages:postcss"],
-  “masterIssue”: true,
+  "masterIssue": true,
   "automerge": false,
   "prHourlyLimit": 0,
   "prConcurrentLimit": 0,
