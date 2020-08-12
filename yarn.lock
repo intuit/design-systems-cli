@@ -1288,7 +1288,7 @@
     minimatch "3.0.4"
     pkg-up "3.1.0"
     postcss "7.0.32"
-    postcss-hexrgba "2.0.0"
+    postcss-hexrgba "2.0.1"
     postcss-icss-selectors "2.0.3"
     postcss-load-config "2.1.0"
     postcss-modules "3.2.0"
@@ -16366,12 +16366,13 @@ postcss-flexbugs-fixes@^4.1.0:
   dependencies:
     postcss "^7.0.0"
 
-postcss-hexrgba@2.0.0:
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/postcss-hexrgba/-/postcss-hexrgba-2.0.0.tgz#1bdae7640047470b6935d8b0e5369f4acc987eb5"
-  integrity sha512-qZmURatbgathSg00kCAKG4h6iUwKnRbhMMWNN6V5u4NTKjuTplxi+CrhbHvQ8BNulTA4B51/RIWnNIoulJIDlg==
+postcss-hexrgba@2.0.1:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/postcss-hexrgba/-/postcss-hexrgba-2.0.1.tgz#c0200574277994ad061cd7a5267796331bb9a449"
+  integrity sha512-u3R4THvbCk3hNkbDquwhvP68QfMxjolgi4BD/hybR9n4/vVFWme5+kdSn/dIpH+UfEqfsWmIBg7ZYBTsI3pk/Q==
   dependencies:
     postcss "^7.0.14"
+    postcss-value-parser "^4.1.0"
 
 postcss-html@^0.36.0:
   version "0.36.0"
