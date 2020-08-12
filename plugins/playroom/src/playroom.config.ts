@@ -9,7 +9,6 @@ import {
   getMonorepoRoot
 } from '@design-systems/cli-utils';
 
-import ForkTsCheckerWebpackPlugin from 'fork-ts-checker-webpack-plugin';
 import { Snippet } from 'playroom';
 
 const logger = createLogger({ scope: 'playroom' });
@@ -101,14 +100,6 @@ export default async ({
       }
     },
     'playroom'
-  );
-
-  config.plugins.push(
-    new ForkTsCheckerWebpackPlugin({
-      formatter: 'codeframe',
-      checkSyntacticErrors: true,
-      reportFiles: ['**/*.snippet.tsx', '!**/node_modules/**']
-    })
   );
 
   const playroomConfig = {
