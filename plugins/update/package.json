@@ -21,7 +21,7 @@
   "dependencies": {
     "@design-systems/cli-utils": "link:../../packages/cli-utils",
     "@design-systems/plugin": "link:../../packages/plugin",
-    "chalk": "4.0.0",
+    "chalk": "4.1.0",
     "colorette": "1.2.0",
     "fs-extra": "9.0.1",
     "marked": "1.1.0",
