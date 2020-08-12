@@ -31,7 +31,7 @@
     "postcss-loader": "3.0.0",
     "style-loader": "1.2.1",
     "terser-webpack-plugin": "4.1.0",
-    "tslib": "1.11.1",
+    "tslib": "2.0.1",
     "webpack": "4.44.1"
   }
 }

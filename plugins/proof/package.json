@@ -33,7 +33,7 @@
     "@proof-ui/junit-plugin": "^0.1.4",
     "@proof-ui/skip-tests-plugin": "^0.1.4",
     "babel-preset-power-assert": "3.0.0",
-    "tslib": "1.11.1"
+    "tslib": "2.0.1"
   },
   "devDependencies": {
     "@types/signale": "1.4.1"
