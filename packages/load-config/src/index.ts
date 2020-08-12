@@ -193,6 +193,8 @@ export function loadConfig({ cwd }: LoadConfigOptions = {}): Schema {
       `${moduleName}.config.js`,
       `${moduleName}.config.json`
     ],
+
+    /** Transform the raw config into a full config (load extended config) */
     transform: result => {
       // Config extending ripped from https://github.com/prettier/prettier/pull/5963
       if (result && result.config) {

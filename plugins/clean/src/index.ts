@@ -37,7 +37,9 @@ export default class CleanPlugin implements Plugin<CleanArgs> {
 
       if (cleanModules) {
         progressLogger.pending('Cleaning node_modules...');
-        await new Promise(r => setTimeout(r, 1000));
+        await new Promise((r) => {
+          setTimeout(r, 1000);
+        });
 
         try {
           const result = await exec('yarn lerna clean --yes');
@@ -53,20 +55,22 @@ export default class CleanPlugin implements Plugin<CleanArgs> {
       progressLogger.pending(
         `Cleaning ${cleanDist ? 'all' : 'some'} dist files...`
       );
-      await new Promise(r => setTimeout(r, 2000));
+      await new Promise((r) => {
+        setTimeout(r, 2000);
+      });
 
       const dist = await glob('{packages,components}/**/dist', {
-        onlyDirectories: true
+        onlyDirectories: true,
       });
       const tsBuildInfo = await glob(
         '{packages,components}/**/tsconfig.tsbuildinfo'
       );
 
       await Promise.all([
-        ...(cleanDist ? dist.map(d => fs.remove(d)) : []),
-        ...(cleanDist ? tsBuildInfo.map(d => fs.remove(d)) : []),
+        ...(cleanDist ? dist.map((d) => fs.remove(d)) : []),
+        ...(cleanDist ? tsBuildInfo.map((d) => fs.remove(d)) : []),
         fs.remove('coverage'),
-        fs.remove('out')
+        fs.remove('out'),
       ]);
 
       progressLogger.success('Cleaned build files');

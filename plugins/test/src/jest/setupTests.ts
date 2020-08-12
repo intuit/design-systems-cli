@@ -12,9 +12,11 @@ window.matchMedia =
 if (global.document) {
   /** Create a mock for createRange */
   document.createRange = () => ({
+    /** Start stub */
     setStart: () => {
       // range polyfill 
     },
+    /** End stub */
     setEnd: () => {
       // range polyfill 
     },
