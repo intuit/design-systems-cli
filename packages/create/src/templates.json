@@ -42,25 +42,25 @@
       "name": "ts",
       "url": "https://github.com/design-systems-templates/component-template",
       "description": "A TypeScript component",
-      "sha": "5e8602231a72b3c6bbd65c68bbf3d4a2b9c79078"
+      "sha": "9ea2fb660b2f3001db49d3250ad9925f633cef72"
     },
     {
       "name": "js",
       "url": "https://github.com/design-systems-templates/component-template",
       "description": "A JavaScript component",
-      "sha": "a9a328b83a4f3d478f39f1d60a05d9a78d0da6e4"
+      "sha": "5c9ec0f4d5d55c14112ef22deb4663491d75d936"
     },
     {
       "name": "styled-components",
       "url": "https://github.com/design-systems-templates/component-template",
       "description": "A TypeScript styled-components component",
-      "sha": "a7d2141880a93ce82be3fda7748affb47cc426e9"
+      "sha": "d7bf8713ec2bc39d7e0883f6da913184f144afbe"
     },
     {
       "name": "styled-components-js",
       "url": "https://github.com/design-systems-templates/component-template",
       "description": "A JavaScript styled-components component",
-      "sha": "3d1980259416f21c7c14f282048083d4c1b0063f"
+      "sha": "08ecbf7a6dc01bffead3df1fd5b35af13cd07878"
     }
   ],
   "package": [
@@ -68,13 +68,13 @@
       "name": "ts",
       "url": "https://github.com/design-systems-templates/package-template",
       "description": "A TypeScript package",
-      "sha": "e5b05e8a930dbaa8372bcee651b2d0b39dcb3108"
+      "sha": "4d6ccd553f088c618c7285c474228b6a4732da3e"
     },
     {
       "name": "js",
       "url": "https://github.com/design-systems-templates/package-template",
       "description": "A JavaScript package",
-      "sha": "da68a8a3ce8c7c5f973512ea615db51bc2edd22d"
+      "sha": "aa4afacb3564b7147f2043dc0948e62fd58ad5c5"
     }
   ]
 }
