@@ -1409,7 +1409,7 @@
     eslint-plugin-jsdoc "30.2.2"
     eslint-plugin-jsx-a11y "6.3.1"
     eslint-plugin-mdx "1.8.1"
-    eslint-plugin-no-explicit-type-exports "0.11.2"
+    eslint-plugin-no-explicit-type-exports "0.11.4"
     eslint-plugin-prettier "3.1.4"
     eslint-plugin-react "7.20.6"
     eslint-plugin-react-hooks "4.0.8"
@@ -9565,10 +9565,10 @@ eslint-plugin-mdx@1.8.1:
   optionalDependencies:
     rebass "^4.0.7"
 
-eslint-plugin-no-explicit-type-exports@0.11.2:
-  version "0.11.2"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-no-explicit-type-exports/-/eslint-plugin-no-explicit-type-exports-0.11.2.tgz#0a5614e524ab6c998edcf43469fa2be1e40d6961"
-  integrity sha512-31ENjg0spSvrZdUSFZour0HbcBEHi2e1Q6+Ffwi9c+j05C3X9rlSl08OHscI+4vDrw/NifW0yHYov/4Pg+P5xw==
+eslint-plugin-no-explicit-type-exports@0.11.4:
+  version "0.11.4"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-no-explicit-type-exports/-/eslint-plugin-no-explicit-type-exports-0.11.4.tgz#cc20c92b14bff8553039b2d8b8861956e75be491"
+  integrity sha512-lmtbW7OyBgBnLeU38BFHSzW2aPT304XQejm5//W+GZulzmb8yX1l0P+4rP1nOUl7shWN/3ptlYtKwFVuQkxGww==
   dependencies:
     "@typescript-eslint/experimental-utils" "^2.27.0"
     eslint-import-resolver-node "^0.3.2"
