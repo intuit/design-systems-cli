@@ -20,57 +20,10 @@
     io-ts "^2.1.2"
     tslib "2.0.1"
 
-"@auto-it/bot-list@9.50.4":
-  version "9.50.4"
-  resolved "https://registry.yarnpkg.com/@auto-it/bot-list/-/bot-list-9.50.4.tgz#d466c477554390534126980444cb670a3ec98b14"
-  integrity sha512-SIyRpVmmgGJSp6j73W18thp7CU3QCuLqkJF0YmzIBnYsz5jstTYqKwvIAuKLg7PFgZAKQBuHNW3ZDNR8rxYdeA==
-
 "@auto-it/bot-list@9.50.5":
   version "9.50.5"
   resolved "https://registry.yarnpkg.com/@auto-it/bot-list/-/bot-list-9.50.5.tgz#11f68cb5620f63b36590f43d3eef6d841eebb055"
   integrity sha512-AL7yrcOxB5ARfZ2a7isHEz3MuYQwvAnL4rFmVTrAvRt8kQjvPStly3x0Spi13Y0DJph1uon6ZvS+zAX3F2IifA==
-
-"@auto-it/core@9.50.4":
-  version "9.50.4"
-  resolved "https://registry.yarnpkg.com/@auto-it/core/-/core-9.50.4.tgz#2df1a679fe250d88d3ecb0300603d6e15a62cc60"
-  integrity sha512-Men/s4zu+QDTGsipGvEMt/uLcfrFRoxluRDoTJfA20h+BmUJ5nVgw25L3hAdyV8RHV1rRDzeF/FW/TgJRZeLBg==
-  dependencies:
-    "@auto-it/bot-list" "9.50.4"
-    "@octokit/plugin-enterprise-compatibility" "^1.2.2"
-    "@octokit/plugin-retry" "^3.0.1"
-    "@octokit/plugin-throttling" "^3.2.0"
-    "@octokit/rest" "^18.0.0"
-    await-to-js "^2.1.1"
-    chalk "^4.0.0"
-    cosmiconfig "7.0.0"
-    deepmerge "^4.0.0"
-    dotenv "^8.0.0"
-    endent "^2.0.1"
-    enquirer "^2.3.4"
-    env-ci "^5.0.1"
-    fast-glob "^3.1.1"
-    fp-ts "^2.5.3"
-    fromentries "^1.2.0"
-    gitlog "^4.0.0"
-    https-proxy-agent "^5.0.0"
-    import-cwd "^3.0.0"
-    import-from "^3.0.0"
-    io-ts "^2.1.2"
-    lodash.chunk "^4.2.0"
-    log-symbols "^4.0.0"
-    node-fetch "2.6.0"
-    parse-author "^2.0.0"
-    parse-github-url "1.0.2"
-    pretty-ms "^7.0.0"
-    semver "^7.0.0"
-    signale "^1.4.0"
-    tapable "^2.0.0-beta.2"
-    terminal-link "^2.1.1"
-    tinycolor2 "^1.4.1"
-    tslib "2.0.1"
-    type-fest "^0.16.0"
-    typescript-memoize "^1.0.0-alpha.3"
-    url-join "^4.0.0"
 
 "@auto-it/core@9.50.5":
   version "9.50.5"
@@ -126,12 +79,12 @@
     tslib "2.0.1"
     url-join "^4.0.0"
 
-"@auto-it/npm@9.50.4":
-  version "9.50.4"
-  resolved "https://registry.yarnpkg.com/@auto-it/npm/-/npm-9.50.4.tgz#066ac7b3a111afaef6eb802a5431677244982c48"
-  integrity sha512-9bMz/2+z5gYoqHgwdXNWH8BOIeGAZXNoqyGMZczzZG/VMMdyPT0RltFPXgQ/7o7iITonXQ+Y1l/YubbYl24VbQ==
+"@auto-it/npm@9.50.5":
+  version "9.50.5"
+  resolved "https://registry.yarnpkg.com/@auto-it/npm/-/npm-9.50.5.tgz#232e3dc835c3e21a6b23649755164243b2cacad6"
+  integrity sha512-JgB8kDR+GYmZ6aaqXO/PXGQmbAX/23/OHXFEZ0ix8WzKTdOxwNxnnEyDS2do8yq3Pf2vg12ytFo3QZFQ2MFLyQ==
   dependencies:
-    "@auto-it/core" "9.50.4"
+    "@auto-it/core" "9.50.5"
     await-to-js "^2.1.1"
     env-ci "^5.0.1"
     fp-ts "^2.5.3"
@@ -145,17 +98,6 @@
     typescript-memoize "^1.0.0-alpha.3"
     url-join "^4.0.0"
     user-home "^2.0.0"
-
-"@auto-it/released@9.50.4":
-  version "9.50.4"
-  resolved "https://registry.yarnpkg.com/@auto-it/released/-/released-9.50.4.tgz#532a9f969550bdba200ad37f2531e7a40263f83d"
-  integrity sha512-xFSFwYn+MApTIcPJzm8/+1XrbYkCrgSOJ2mV13poZCdTQhKRjDYJzirpTpAY5QYbbz4iCW6XwKZ7ZkpP5c9Y8g==
-  dependencies:
-    "@auto-it/core" "9.50.4"
-    deepmerge "^4.0.0"
-    fp-ts "^2.5.3"
-    io-ts "^2.1.2"
-    tslib "2.0.1"
 
 "@auto-it/released@9.50.5":
   version "9.50.5"
@@ -5792,14 +5734,14 @@ author-regex@^1.0.0:
   resolved "https://registry.yarnpkg.com/author-regex/-/author-regex-1.0.0.tgz#d08885be6b9bbf9439fe087c76287245f0a81450"
   integrity sha1-0IiFvmubv5Q5/gh8dihyRfCoFFA=
 
-auto@9.50.4:
-  version "9.50.4"
-  resolved "https://registry.yarnpkg.com/auto/-/auto-9.50.4.tgz#887043a9aadcda4b7d69370d03b10b117a7eacfe"
-  integrity sha512-NX0frLwEp9tKS0quYg3NNSaJ4Mnxix6HBrhmyMmyHywAwAx1F9GIkI+q56Nbmke9vNQCI++74NHw00KJPEmbeg==
+auto@9.50.5:
+  version "9.50.5"
+  resolved "https://registry.yarnpkg.com/auto/-/auto-9.50.5.tgz#4341c29e1f1943055334e0137fcfa6b3ea804526"
+  integrity sha512-88dsKHoivkLXk8q10gJeYmtAvFjRRWOLmCpjh2xdZ5NzYjW5jTv9HHV3ce0jFeBW2kHUcaf/T7jV9h4z1sOm4A==
   dependencies:
-    "@auto-it/core" "9.50.4"
-    "@auto-it/npm" "9.50.4"
-    "@auto-it/released" "9.50.4"
+    "@auto-it/core" "9.50.5"
+    "@auto-it/npm" "9.50.5"
+    "@auto-it/released" "9.50.5"
     await-to-js "^2.1.1"
     chalk "^4.0.0"
     command-line-application "^0.10.1"
