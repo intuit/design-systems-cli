@@ -69,7 +69,7 @@ async function addCss(config) {
             loader: 'css-loader',
             options: {
               sourceMap: true,
-              exportLocalsConvention: 'camelCase',
+              localsConvention: 'camelCase',
               importLoaders: 1,
               modules: {
                 localIdentName: '[name]-[local]'
