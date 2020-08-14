@@ -24,7 +24,7 @@
     "@design-systems/eslint-config": "link:../../packages/eslint-config",
     "@design-systems/plugin": "link:../../packages/plugin",
     "@design-systems/stylelint-config": "link:../../packages/stylelint-config",
-    "eslint": "7.6.0",
+    "eslint": "7.7.0",
     "eslint-formatter-github": "^1.0.0",
     "eslint-formatter-pretty": "4.0.0",
     "fast-glob": "3.2.4",
