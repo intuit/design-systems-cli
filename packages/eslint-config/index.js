@@ -10,8 +10,7 @@ const exists = (filepath) => {
   }
 };
 
-const arrowContext =
-  '*:not(Property):not(CallExpression):not(ArrayExpression):not(ReturnStatement):not(JSXExpressionContainer):not(AssignmentPattern):not(NewExpression):not(ArrowFunctionExpression) > ArrowFunctionExpression';
+const arrowContext = 'VariableDeclarator > ArrowFunctionExpression';
 
 module.exports = {
   env: { jest: true, browser: true },
