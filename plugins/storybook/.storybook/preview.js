@@ -1,13 +1,9 @@
-import { addDecorator, addParameters } from '@storybook/react';
 import { withA11y } from '@storybook/addon-a11y';
 import { withPropsTable } from 'storybook-addon-react-docgen';
 import { withKnobs } from '@storybook/addon-knobs';
 import { themes as storybookThemes, ThemeContext } from '@storybook/theming';
 import { jsxDecorator } from 'storybook-addon-jsx';
 import { select } from '@storybook/addon-knobs';
-import configProof from '@proof-ui/storybook';
-
-configProof();
 
 let lightLogo;
 let darkLogo;
@@ -24,52 +20,50 @@ try {
   darkLogo = undefined;
 }
 
-addDecorator(withKnobs);
-addDecorator(withPropsTable);
-addDecorator(withA11y);
-addDecorator(jsxDecorator);
+export const decorators = [withPropsTable, jsxDecorator];
 
 const brand = {
   brandTitle: MONOREPO_NAME + ' Storybook',
-  brandUrl: REPO_URL
+  brandUrl: REPO_URL,
 };
 
-addParameters({
-  backgrounds: [
-    { name: 'white', value: 'white', default: true },
-    { name: 'dark', value: '#2f2f2f' },
-    { name: 'twitter', value: '#00aced' },
-    { name: 'facebook', value: '#3b5998' }
-  ],
+export const parameters = {
+  backgrounds: {
+    default: 'white',
+    values: [
+      { name: 'white', value: 'white' },
+      { name: 'dark', value: '#2f2f2f' },
+      { name: 'twitter', value: '#00aced' },
+      { name: 'facebook', value: '#3b5998' },
+    ],
+  },
   knobs: {
-    escapeHTML: false
+    escapeHTML: false,
   },
   darkMode: {
     light: Object.assign({}, storybookThemes.light, brand, {
-      brandImage: lightLogo
+      brandImage: lightLogo,
     }),
     dark: Object.assign({}, storybookThemes.dark, brand, {
-      brandImage: darkLogo
-    })
+      brandImage: darkLogo,
+    }),
   },
   a11y: {
     config: {
       rules: [
         {
           id: 'duplicate-id',
-          enabled: false
+          enabled: false,
         },
         {
           id: 'heading-order',
-          enabled: false
+          enabled: false,
         },
         {
           id: 'label',
-          none: ['help-same-as-label', 'multiple-label']
-        }
-      ]
-    }
-  }
-});
-
-require(CONFIG_PATH);
+          none: ['help-same-as-label', 'multiple-label'],
+        },
+      ],
+    },
+  },
+};

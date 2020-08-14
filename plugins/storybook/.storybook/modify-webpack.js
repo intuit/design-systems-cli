@@ -9,8 +9,6 @@ const {
 const { getPostCssConfig } = require('@design-systems/build');
 const githubUrlToObject = require('github-url-to-object');
 const FilterWarningsPlugin = require('webpack-filter-warnings-plugin');
-const BABEL_CONFIG = require.resolve('@design-systems/build/babel.config');
-const ForkTsCheckerWebpackPlugin = require('fork-ts-checker-webpack-plugin');
 
 function findBabelRules(config) {
   return config.module.rules.filter(rule => {
@@ -40,54 +38,11 @@ function findBabelRules(config) {
 
 function modifyBabel(config, callback) {
   const rules = findBabelRules(config);
-  
+
   // Only the first rule is for src files
   if (rules[0]) {
-    callback(rules[0])
+    callback(rules[0]);
   }
-}
-
-function addTypescript(config) {
-  const tsconfigPath = path.resolve(getMonorepoRoot(), 'tsconfig.json');
-
-  if (!fs.existsSync(tsconfigPath)) {
-    return;
-  }
-
-  config.resolve.extensions.push('.ts', '.tsx', '.json');
-  config.module.rules.push({
-    test: /\.(ts|tsx)$/,
-    use: [
-      {
-        loader: 'babel-loader',
-        options: {
-          ...getUserBabelConfig(),
-          configFile: BABEL_CONFIG
-        }
-      },
-      {
-        loader: require.resolve('react-docgen-typescript-loader'),
-        options: {
-          tsconfigPath,
-          propFilter(prop) {
-            if (prop.parent) {
-              return !prop.parent.fileName.includes('@types/react');
-            }
-
-            return true;
-          }
-        }
-      }
-    ]
-  });
-
-  config.plugins.push(
-    new ForkTsCheckerWebpackPlugin({
-      formatter: 'codeframe',
-      checkSyntacticErrors: true,
-      reportFiles: ['**/*.stories.tsx', '!**/node_modules/**']
-    })
-  );
 }
 
 async function addCss(config) {
@@ -158,7 +113,6 @@ function addCustomBabelOptions(config) {
 
   modifyBabel(config, rule => {
     rule.use[0].options = { ...rule.use[0].options, ...rest };
-    rule.use[0].options.configFile = BABEL_CONFIG;
 
     const {
       presets: defaultPresets = [],
@@ -173,10 +127,10 @@ function addCustomBabelOptions(config) {
 }
 
 function addSourceMaps(config) {
-  // TODO only load source maps for current monorepo
   config.module.rules.push({
     test: /\.(js|css)$/,
-    exclude: /core-js/,
+    exclude: /node_modules/,
+    include: new RegExp(monorepoName()),
     use: ['source-map-loader'],
     enforce: 'pre'
   });
@@ -197,10 +151,9 @@ function addReactElementHacksssss(config) {
   });
 }
 
-module.exports = async ({ config }) => {
+module.exports = async config => {
   addReactElementHacksssss(config);
   addCustomBabelOptions(config);
-  addTypescript(config);
   await addCss(config);
   addSourceMaps(config);
 

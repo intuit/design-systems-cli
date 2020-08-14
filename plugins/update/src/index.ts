@@ -2,7 +2,7 @@ import {
   createLogger,
   getMonorepoRoot,
   monorepoName,
-  getLogLevel
+  getLogLevel,
 } from '@design-systems/cli-utils';
 import { Plugin } from '@design-systems/plugin';
 import { execSync, ExecSyncOptions } from 'child_process';
@@ -19,14 +19,16 @@ const logger = createLogger({ scope: 'update' });
 
 marked.setOptions({
   renderer: new TerminalRenderer({
-    firstHeading: heading =>
+    /** Render the heading */
+    firstHeading: (heading) =>
       colorette.bgBlackBright(colorette.whiteBright(heading)),
     heading: colorette.yellow,
     link: colorette.cyan,
-    href: href => colorette.cyan(colorette.underline(href)),
+    /** Render links */
+    href: (href) => colorette.cyan(colorette.underline(href)),
     codespan: colorette.gray,
-    tab: 2
-  })
+    tab: 2,
+  }),
 });
 
 interface UpdatePluginOptions {
@@ -39,7 +41,7 @@ interface UpdatePluginOptions {
 
 const logLevel = getLogLevel();
 const execOptions: ExecSyncOptions = {
-  stdio: logLevel === 'debug' || logLevel === 'trace' ? 'inherit' : 'ignore'
+  stdio: logLevel === 'debug' || logLevel === 'trace' ? 'inherit' : 'ignore',
 };
 
 /** Get the current installed version of @design-systems/cli */
@@ -51,7 +53,7 @@ async function getCliVersion() {
   const { dependencies = {}, devDependencies = {} } = packageJson;
   const cli = Object.entries<string>({
     ...dependencies,
-    ...devDependencies
+    ...devDependencies,
   }).find(([dep]) => dep === '@design-systems/cli');
 
   return cli ? cli[1] : '';
@@ -83,7 +85,7 @@ export default class UpdatePlugin implements Plugin<UpdatePluginOptions> {
     const { version } = coerce(rawVersion) || { version: '' };
     const notes = await getReleaseNotes(version);
     const latest = execSync('npm view @design-systems/cli version', {
-      encoding: 'utf8'
+      encoding: 'utf8',
     }).trim();
 
     if (eq(latest, rawVersion)) {
@@ -123,7 +125,7 @@ export default class UpdatePlugin implements Plugin<UpdatePluginOptions> {
     logger.info('Updating CLI version in root...');
     execSync(`yarn add -DW @design-systems/cli`, {
       ...execOptions,
-      stdio: 'inherit'
+      stdio: 'inherit',
     });
 
     logger.success('Updated to latest version of `@design-systems/cli`!');

@@ -1,4 +1,4 @@
-/* eslint-disable @typescript-eslint/ban-ts-ignore */
+/* eslint-disable @typescript-eslint/ban-ts-comment */
 
 window.matchMedia =
   window.matchMedia ||
@@ -10,10 +10,13 @@ window.matchMedia =
 
 // @ts-ignore
 if (global.document) {
+  /** Create a mock for createRange */
   document.createRange = () => ({
+    /** Start stub */
     setStart: () => {
       // range polyfill 
     },
+    /** End stub */
     setEnd: () => {
       // range polyfill 
     },

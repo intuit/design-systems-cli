@@ -10,7 +10,8 @@ export const defaults = {
     '**/*.+(md|mdx)',
     '**/__tests__/**',
     '**/__snapshots__/**',
-    '**/*.+(stories|test).*'
+    '**/*.+(stories|test).*',
+    '**/stories/*'
   ]
 };
 

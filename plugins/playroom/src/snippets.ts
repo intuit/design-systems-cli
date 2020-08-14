@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import path from 'path';
 import glob from 'fast-glob';
 import jsxToString from 'react-element-to-jsx-string';
@@ -5,7 +6,8 @@ import jsxToString from 'react-element-to-jsx-string';
 interface Snippet {
   /** The name of the snippet */
   name: string;
-  /** the actual snippet */ code: React.ReactNode;
+  /** the actual snippet */ 
+  code: React.ReactNode;
 }
 
 /** Render a snippet to a string */
@@ -14,6 +16,7 @@ const renderSnippet = (code: string | React.ReactNode) =>
     ? code
     : jsxToString(code, {
         showDefaultProps: false,
+        /** Find the name of the component */
         displayName: component =>
           component &&
           typeof component === 'object' &&
@@ -30,7 +33,7 @@ export default function getSnippets() {
   ]);
 
   const snippets = packageSnippets.reduce((all, file) => {
-    // eslint-disable-next-line global-require, import/no-dynamic-require
+    // eslint-disable-next-line global-require, import/no-dynamic-require, @typescript-eslint/no-var-requires
     const componentSnippets = require(path.resolve(file.toString())).default;
 
     if (Array.isArray(componentSnippets)) {

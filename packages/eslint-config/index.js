@@ -4,11 +4,13 @@ const path = require('path');
 const monorepoRoot = require('@design-systems/cli-utils').getMonorepoRoot();
 
 /** Determine if a filepath exists. */
-const exists = filepath => {
+const exists = (filepath) => {
   if (fs.existsSync(filepath)) {
     return filepath;
   }
 };
+
+const arrowContext = 'VariableDeclarator > ArrowFunctionExpression';
 
 module.exports = {
   env: { jest: true, browser: true },
@@ -21,7 +23,7 @@ module.exports = {
     'xo-react/space',
     'plugin:jest/recommended',
     'prettier',
-    'prettier/react'
+    'prettier/react',
   ],
 
   plugins: ['prettier', 'jest', 'react-hooks', 'eslint-plugin-jsdoc'],
@@ -29,16 +31,16 @@ module.exports = {
   settings: {
     'import/resolver': {
       node: {
-        extensions: ['.js', '.jsx', '.ts', '.tsx']
+        extensions: ['.js', '.jsx', '.ts', '.tsx'],
       },
       'eslint-import-resolver-lerna': {
         packages: [
           exists(path.join(monorepoRoot, 'components')),
           exists(path.join(monorepoRoot, 'packages')),
-          exists(path.join(monorepoRoot, 'plugins'))
-        ].filter(Boolean)
-      }
-    }
+          exists(path.join(monorepoRoot, 'plugins')),
+        ].filter(Boolean),
+      },
+    },
   },
   rules: {
     // stylistic
@@ -64,8 +66,8 @@ module.exports = {
         js: 'never',
         jsx: 'never',
         ts: 'never',
-        tsx: 'never'
-      }
+        tsx: 'never',
+      },
     ],
 
     /* airbnb */
@@ -87,8 +89,8 @@ module.exports = {
     'jsx-a11y/aria-role': [
       2,
       {
-        ignoreNonDOM: true
-      }
+        ignoreNonDOM: true,
+      },
     ],
     // Sometimes it makes sense not to
     'import/prefer-default-export': 0,
@@ -111,7 +113,7 @@ module.exports = {
     // Only allow JSX in tsx + js files
     'react/jsx-filename-extension': [
       2,
-      { extensions: ['.js', '.jsx', '.tsx'] }
+      { extensions: ['.js', '.jsx', '.tsx'] },
     ],
     'react/default-props-match-prop-types': 2,
 
@@ -144,12 +146,12 @@ module.exports = {
       2,
       {
         require: {
-          ArrowFunctionExpression: true,
           FunctionDeclaration: true,
-          ClassDeclaration: true
-        }
-      }
-    ]
+          ClassDeclaration: true,
+        },
+        contexts: [arrowContext],
+      },
+    ],
   },
   overrides: [
     {
@@ -157,15 +159,16 @@ module.exports = {
       parser: '@typescript-eslint/parser',
       parserOptions: {
         project: './tsconfig.json',
-        sourceType: 'module'
+        sourceType: 'module',
       },
       extends: [
         'plugin:@typescript-eslint/recommended',
-        'prettier/@typescript-eslint'
+        'prettier/@typescript-eslint',
       ],
       plugins: ['@typescript-eslint', 'eslint-plugin-no-explicit-type-exports'],
       rules: {
         'react/prop-types': 0,
+        'react/default-props-match-prop-types': 0,
         'no-explicit-type-exports/no-explicit-type-exports': 2,
         'no-unused-expressions': 0,
         //  !!! Add this back once TS plugins supports `as const`
@@ -178,25 +181,25 @@ module.exports = {
         // just rely on typescript inference
         '@typescript-eslint/explicit-function-return-type': 0,
         '@typescript-eslint/explicit-member-accessibility': 0,
+        '@typescript-eslint/explicit-module-boundary-types': 0,
 
         'jsdoc/require-jsdoc': [
           2,
           {
-            contexts: ['TSPropertySignature'],
             require: {
-              ArrowFunctionExpression: true,
               FunctionDeclaration: true,
-              ClassDeclaration: true
-            }
-          }
-        ]
-      }
+              ClassDeclaration: true,
+            },
+            contexts: ['TSPropertySignature', arrowContext],
+          },
+        ],
+      },
     },
     {
       files: ['*.{js,jsx}'],
       rules: {
-        '@typescript-eslint/no-var-requires': 'off'
-      }
+        '@typescript-eslint/no-var-requires': 'off',
+      },
     },
     {
       files: [
@@ -206,7 +209,7 @@ module.exports = {
         'theme.*',
         '*.config.*',
         '*.d.ts',
-        '*.snippet.*'
+        '*.snippet.*',
       ],
       rules: {
         'jsdoc/require-jsdoc': 0,
@@ -216,16 +219,36 @@ module.exports = {
         'jsx-a11y/no-static-element-interactions': 0,
         'jsx-a11y/jsx-a11y/anchor-has-content': 0,
         // devDependencies are all in the root
-        'import/no-extraneous-dependencies': 0
-      }
+        'import/no-extraneous-dependencies': 0,
+        '@typescript-eslint/ban-ts-comment': 0,
+      },
     },
     {
       files: ['*.test.{ts,tsx}', '*.stories.{ts,tsx}'],
       rules: {
         '@typescript-eslint/no-non-null-assertion': 0,
         '@typescript-eslint/no-explicit-any': 0,
-        '@typescript-eslint/ban-ts-ignore': 0
-      }
-    }
-  ].filter(Boolean)
+        '@typescript-eslint/ban-ts-ignore': 0,
+      },
+    },
+    {
+      files: ['*.mdx'],
+      parser: 'eslint-mdx',
+      plugins: ['mdx'],
+      globals: {
+        React: true,
+      },
+      rules: {
+        'import/no-extraneous-dependencies': 0,
+        // This is how we use jsx in mdx
+        'no-unused-expressions': 0,
+        // in mdx it's already in scope
+        'react/react-in-jsx-scope': 0,
+        // jsx is allowed in mdx
+        'react/jsx-filename-extension': 0,
+        // No exported function in MDX
+        'jsdoc/require-jsdoc': 0,
+      },
+    },
+  ].filter(Boolean),
 };

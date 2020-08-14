@@ -24,16 +24,16 @@
     "@design-systems/create": "link:../../packages/create",
     "@design-systems/plugin": "link:../../packages/plugin",
     "change-case": "4.1.1",
-    "cli-spinners": "2.3.0",
-    "colorette": "1.2.0",
+    "cli-spinners": "2.4.0",
+    "colorette": "1.2.1",
     "copy-template-dir": "1.4.0",
     "dedent": "0.7.0",
     "degit": "https://github.com/hipstersmoothie/degit.git#private-release",
     "fs-extra": "9.0.1",
-    "inquirer": "7.1.0",
-    "progress-estimator": "0.2.2",
+    "inquirer": "7.3.3",
+    "progress-estimator": "0.3.0",
     "terminal-link": "2.1.1",
     "title-case": "3.0.2",
-    "tslib": "1.11.1"
+    "tslib": "2.0.1"
   }
 }

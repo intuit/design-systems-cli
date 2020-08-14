@@ -122,6 +122,8 @@ const askName = async (type: CreationChoice, force?: boolean) =>
   prompt({
     type: 'input',
     message: `What's the ${type} name?`,
+
+    /** Validate the user's name input */
     validate: input => {
       if (force) {
         return true;
@@ -154,6 +156,8 @@ const askAuthor = async () =>
     type: 'input',
     message: "What's your name?",
     default: defaultAuthorName,
+
+    /** Validate the user's name input */
     validate: input => {
       if (!input) {
         return 'Author name is required';
@@ -169,6 +173,8 @@ const askEmail = async () =>
     type: 'input',
     message: "What's your email?",
     default: defaultAuthorEmail,
+
+    /** Validate the user's email input */
     validate: input => {
       if (!input) {
         return 'Author email is required';
@@ -191,6 +197,8 @@ const askRepo = async () =>
   prompt({
     type: 'input',
     message: 'Repository url or owner/repo:',
+
+    /** Validate the user's repo input */
     validate: input => {
       if (!input) {
         return 'Repository is required';

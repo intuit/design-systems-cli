@@ -40,8 +40,9 @@ const POSTCSS_CONFIG = path.join(__dirname, './configs/postcss.config.js');
 
 /** Find all matching globs. */
 function match(file: string, globs: string | string[]) {
+  const resolved = path.resolve(file)
   const globArr = Array.isArray(globs) ? globs : [globs];
-  return globArr.find(currGlob => minimatch(file, currGlob));
+  return globArr.find(currGlob => minimatch(resolved, currGlob));
 }
 
 export { getPostCssConfig, getPostCssConfigSync } from './postcss';
@@ -67,6 +68,7 @@ export default class BuildPlugin implements Plugin<BuildArgs> {
 
   private typescriptCompiler!: TypescriptCompiler;
 
+  /** Minify and combine all the css */
   generateCSS = async () => {
     if (this.cssFiles.size === 0) {
       return;
@@ -134,8 +136,10 @@ export default class BuildPlugin implements Plugin<BuildArgs> {
     this.logger.complete('Generated merged css');
   };
 
+  /** Getall all files in the input directory */
   getFileList = async () => glob(`${this.buildArgs.inputDirectory}/**/*.*`);
 
+  /** Run relevant transforms on a file */
   transformFile = async (file: string) => {
     const { inputDirectory, outputDirectory } = this.buildArgs;
 
@@ -186,6 +190,7 @@ export default class BuildPlugin implements Plugin<BuildArgs> {
     }
   };
 
+  /** Logic on what to do when a file changes */
   onAddOrChanged = async (file: string) => {
     this.logger.info(`File changed: ${file}`);
     const extname = path.extname(file);
@@ -225,6 +230,7 @@ export default class BuildPlugin implements Plugin<BuildArgs> {
     this.logger.watch('Watching for changes');
   };
 
+  /** Logic on what to do when a file is deleted */
   onDelete = async (file: string) => {
     const { inputDirectory, outputDirectory } = this.buildArgs;
     this.logger.info(`File deleted: ${file}`);
@@ -270,8 +276,10 @@ export default class BuildPlugin implements Plugin<BuildArgs> {
     }
   };
 
+  /** Check if a file is ignored */
   isIgnored = (filename: string) => match(filename, this.buildArgs.ignore);
 
+  /** Run the build in watch mode */
   watch = async () => {
     const watcher = fileWatcher(
       [this.buildArgs.inputDirectory, 'tsconfig.json'],
@@ -301,6 +309,7 @@ export default class BuildPlugin implements Plugin<BuildArgs> {
     });
   };
 
+  /** Run the plugin */
   async run(args: BuildArgs) {
     this.buildArgs = { ...this.buildArgs, ...args };
     this.typescriptCompiler = new TypescriptCompiler(this.buildArgs);

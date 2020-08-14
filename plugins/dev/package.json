@@ -21,11 +21,11 @@
   "dependencies": {
     "@design-systems/cli-utils": "link:../../packages/cli-utils",
     "@design-systems/plugin": "link:../../packages/plugin",
-    "chokidar": "3.4.0",
+    "chokidar": "3.4.2",
     "dedent": "0.7.0",
     "find-package-json": "1.2.0",
     "resolve-cwd": "3.0.0",
-    "tslib": "1.11.1"
+    "tslib": "2.0.1"
   },
   "devDependencies": {
     "@types/find-package-json": "1.1.1"

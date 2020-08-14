@@ -22,9 +22,9 @@
   "dependencies": {
     "@design-systems/cli-utils": "link:../../packages/cli-utils",
     "@design-systems/plugin": "link:../../packages/plugin",
-    "fast-glob": "3.2.2",
+    "fast-glob": "3.2.4",
     "fs-extra": "9.0.1",
-    "tslib": "1.11.1"
+    "tslib": "2.0.1"
   },
   "devDependencies": {
     "@types/fs-extra": "9.0.1"

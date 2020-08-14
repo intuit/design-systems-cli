@@ -1,4 +1,4 @@
-/* eslint-disable @typescript-eslint/ban-ts-ignore, @typescript-eslint/no-var-requires */
+/* eslint-disable @typescript-eslint/no-var-requires */
 import path from 'path';
 import fs from 'fs';
 // @ts-ignore
@@ -9,7 +9,6 @@ import {
   getMonorepoRoot
 } from '@design-systems/cli-utils';
 
-import ForkTsCheckerWebpackPlugin from 'fork-ts-checker-webpack-plugin';
 import { Snippet } from 'playroom';
 
 const logger = createLogger({ scope: 'playroom' });
@@ -101,14 +100,6 @@ export default async ({
       }
     },
     'playroom'
-  );
-
-  config.plugins.push(
-    new ForkTsCheckerWebpackPlugin({
-      formatter: 'codeframe',
-      checkSyntacticErrors: true,
-      reportFiles: ['**/*.snippet.tsx', '!**/node_modules/**']
-    })
   );
 
   const playroomConfig = {

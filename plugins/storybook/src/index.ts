@@ -1,6 +1,6 @@
 /* eslint-disable no-underscore-dangle */
 
-import { createLogger } from '@design-systems/cli-utils';
+import { createLogger, getMonorepoRoot } from '@design-systems/cli-utils';
 import { Plugin } from '@design-systems/plugin';
 import path from 'path';
 import getPort from 'get-port';
@@ -32,6 +32,7 @@ export default class StorybookPlugin implements Plugin<StorybookArgs> {
 
   async run(args: StorybookArgs) {
     try {
+      const configDir = path.join(getMonorepoRoot(), '.storybook');
       process.env.COMPONENT = process.cwd();
 
       if (args._command[1] === 'build') {
@@ -39,7 +40,7 @@ export default class StorybookPlugin implements Plugin<StorybookArgs> {
 
         await storybook({
           mode: 'static',
-          configDir: path.join(__dirname, '../.storybook'),
+          configDir,
           outputDir: 'out'
         });
 
@@ -60,6 +61,7 @@ export default class StorybookPlugin implements Plugin<StorybookArgs> {
         
         // Checking if the findPort is set to true and auto-assigning a port
         let port = 6006;
+
         if ('findPort' in args && args.findPort === true) {
           port = await getPort();
           this.logger.debug(`Random available port used for Storybook 
@@ -69,7 +71,7 @@ export default class StorybookPlugin implements Plugin<StorybookArgs> {
         storybook({
           mode: 'dev',
           port,
-          configDir: path.join(__dirname, '../.storybook'),
+          configDir,
           ci: 'ci' in args && args.ci
         });
       }
