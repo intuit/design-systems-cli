@@ -1,3 +1,15 @@
+# v2.0.1 (Tue Aug 25 2020)
+
+#### 🐛 Bug Fix
+
+- fail build if code doesn't transpile [#458](https://github.com/intuit/design-systems-cli/pull/458) ([@hipstersmoothie](https://github.com/hipstersmoothie))
+
+#### Authors: 1
+
+- Andrew Lisowski ([@hipstersmoothie](https://github.com/hipstersmoothie))
+
+---
+
 # v2.0.0 (Fri Aug 14 2020)
 
 ### Release Notes
