@@ -152,7 +152,7 @@ export default async function transpile(
 
     logger.trace(error.stack);
 
-    return { success: false };
+    process.exit(1);
   }
 
   return { success: true };
