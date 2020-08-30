@@ -1261,7 +1261,7 @@
     minimist "^1.2.0"
 
 "@design-systems/build@link:plugins/build":
-  version "1.10.0"
+  version "2.0.1"
   dependencies:
     "@babel/code-frame" "7.10.4"
     "@babel/core" "7.11.1"
@@ -1302,7 +1302,7 @@
     typescript "3.9.7"
 
 "@design-systems/bundle@link:plugins/bundle":
-  version "1.10.0"
+  version "2.0.1"
   dependencies:
     "@design-systems/build" "link:plugins/build"
     "@design-systems/cli-utils" "link:packages/cli-utils"
@@ -1320,7 +1320,7 @@
     webpack "4.44.1"
 
 "@design-systems/clean@link:plugins/clean":
-  version "1.10.0"
+  version "2.0.1"
   dependencies:
     "@design-systems/cli-utils" "link:packages/cli-utils"
     "@design-systems/plugin" "link:packages/plugin"
@@ -1329,7 +1329,7 @@
     tslib "2.0.1"
 
 "@design-systems/cli-utils@link:packages/cli-utils":
-  version "1.10.0"
+  version "2.0.1"
   dependencies:
     find-up "5.0.0"
     npm-which "3.0.1"
@@ -1339,7 +1339,7 @@
     webpack "4.44.1"
 
 "@design-systems/core@link:packages/core":
-  version "1.10.0"
+  version "2.0.1"
   dependencies:
     "@design-systems/build" "link:plugins/build"
     "@design-systems/bundle" "link:plugins/bundle"
@@ -1359,7 +1359,7 @@
     tslib "2.0.1"
 
 "@design-systems/create-command@link:plugins/create-command":
-  version "1.10.0"
+  version "2.0.1"
   dependencies:
     "@design-systems/cli-utils" "link:packages/cli-utils"
     "@design-systems/create" "link:packages/create"
@@ -1378,10 +1378,10 @@
     tslib "2.0.1"
 
 "@design-systems/create@link:packages/create":
-  version "1.10.0"
+  version "2.0.1"
 
 "@design-systems/dev@link:plugins/dev":
-  version "1.10.0"
+  version "2.0.1"
   dependencies:
     "@design-systems/cli-utils" "link:packages/cli-utils"
     "@design-systems/plugin" "link:packages/plugin"
@@ -1392,7 +1392,7 @@
     tslib "2.0.1"
 
 "@design-systems/eslint-config@link:packages/eslint-config":
-  version "1.10.0"
+  version "2.0.1"
   dependencies:
     "@design-systems/cli-utils" "link:packages/cli-utils"
     "@typescript-eslint/eslint-plugin" "3.9.0"
@@ -1416,7 +1416,7 @@
     tslib "2.0.1"
 
 "@design-systems/lint@link:plugins/lint":
-  version "1.10.0"
+  version "2.0.1"
   dependencies:
     "@design-systems/cli-utils" "link:packages/cli-utils"
     "@design-systems/eslint-config" "link:packages/eslint-config"
@@ -1433,7 +1433,7 @@
     tslib "2.0.1"
 
 "@design-systems/load-config@link:packages/load-config":
-  version "1.10.0"
+  version "2.0.1"
   dependencies:
     "@design-systems/core" "link:packages/core"
     "@design-systems/plugin" "link:packages/plugin"
@@ -1447,7 +1447,7 @@
     tslib "2.0.1"
 
 "@design-systems/playroom@link:plugins/playroom":
-  version "1.10.0"
+  version "2.0.1"
   dependencies:
     "@babel/core" "7.11.1"
     "@babel/register" "7.10.5"
@@ -1467,14 +1467,14 @@
     webpack "4.44.1"
 
 "@design-systems/plugin@link:packages/plugin":
-  version "1.10.0"
+  version "2.0.1"
   dependencies:
     command-line-application "0.10.1"
     tslib "2.0.1"
     utility-types "3.10.0"
 
 "@design-systems/proof@link:plugins/proof":
-  version "1.10.0"
+  version "2.0.1"
   dependencies:
     "@babel/core" "7.11.1"
     "@babel/plugin-transform-runtime" "7.11.0"
@@ -1492,7 +1492,7 @@
     tslib "2.0.1"
 
 "@design-systems/size@link:plugins/size":
-  version "1.10.0"
+  version "2.0.1"
   dependencies:
     "@design-systems/cli-utils" "link:packages/cli-utils"
     "@design-systems/plugin" "link:packages/plugin"
@@ -1512,7 +1512,7 @@
     markdown-table "2.0.0"
     mini-css-extract-plugin "0.10.0"
     opn "5.5.0"
-    optimize-css-assets-webpack-plugin "5.0.3"
+    optimize-css-assets-webpack-plugin "5.0.4"
     signale "1.4.0"
     table "5.4.6"
     terser-webpack-plugin "4.1.0"
@@ -1523,7 +1523,7 @@
     webpack-sources "1.4.3"
 
 "@design-systems/storybook@link:plugins/storybook":
-  version "1.10.0"
+  version "2.0.1"
   dependencies:
     "@babel/core" "7.11.1"
     "@design-systems/build" "link:plugins/build"
@@ -1557,7 +1557,7 @@
     webpack-filter-warnings-plugin "1.2.1"
 
 "@design-systems/stylelint-config@link:packages/stylelint-config":
-  version "1.10.0"
+  version "2.0.1"
   dependencies:
     stylelint-a11y "1.2.3"
     stylelint-config-css-modules "2.2.0"
@@ -1571,7 +1571,7 @@
     tslib "2.0.1"
 
 "@design-systems/test@link:plugins/test":
-  version "1.10.0"
+  version "2.0.1"
   dependencies:
     "@babel/core" "7.11.1"
     "@design-systems/build" "link:plugins/build"
@@ -1591,7 +1591,7 @@
     tslib "2.0.1"
 
 "@design-systems/update@link:plugins/update":
-  version "1.10.0"
+  version "2.0.1"
   dependencies:
     "@design-systems/cli-utils" "link:packages/cli-utils"
     "@design-systems/plugin" "link:packages/plugin"
@@ -15396,10 +15396,10 @@ optimist@^0.6.1:
     minimist "~0.0.1"
     wordwrap "~0.0.2"
 
-optimize-css-assets-webpack-plugin@5.0.3:
-  version "5.0.3"
-  resolved "https://registry.yarnpkg.com/optimize-css-assets-webpack-plugin/-/optimize-css-assets-webpack-plugin-5.0.3.tgz#e2f1d4d94ad8c0af8967ebd7cf138dcb1ef14572"
-  integrity sha512-q9fbvCRS6EYtUKKSwI87qm2IxlyJK5b4dygW1rKUBT6mMDhdG5e5bZT63v6tnJR9F9FB/H5a0HTmtw+laUBxKA==
+optimize-css-assets-webpack-plugin@5.0.4:
+  version "5.0.4"
+  resolved "https://registry.yarnpkg.com/optimize-css-assets-webpack-plugin/-/optimize-css-assets-webpack-plugin-5.0.4.tgz#85883c6528aaa02e30bbad9908c92926bb52dc90"
+  integrity sha512-wqd6FdI2a5/FdoiCNNkEvLeA//lHHfG24Ln2Xm2qqdIk4aOlsR18jwpyOihqQ8849W3qu2DX8fOYxpvTMj+93A==
   dependencies:
     cssnano "^4.1.10"
     last-call-webpack-plugin "^3.0.0"

@@ -37,7 +37,7 @@
     "markdown-table": "2.0.0",
     "mini-css-extract-plugin": "0.10.0",
     "opn": "5.5.0",
-    "optimize-css-assets-webpack-plugin": "5.0.3",
+    "optimize-css-assets-webpack-plugin": "5.0.4",
     "signale": "1.4.0",
     "table": "5.4.6",
     "terser-webpack-plugin": "4.1.0",
