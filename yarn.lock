@@ -1496,7 +1496,7 @@
     fast-glob "3.2.4"
     file-loader "6.1.0"
     fs-extra "9.0.1"
-    playroom "0.21.2"
+    playroom "0.21.3"
     react-element-to-jsx-string "14.3.1"
     style-loader "1.2.1"
     tslib "2.0.1"
@@ -16112,10 +16112,10 @@ pkg-up@^2.0.0:
   dependencies:
     find-up "^2.1.0"
 
-playroom@0.21.2:
-  version "0.21.2"
-  resolved "https://registry.yarnpkg.com/playroom/-/playroom-0.21.2.tgz#e898630599c8fcbce8a3084a053d7d22662e74a1"
-  integrity sha512-i93r8AVQovR2jJMNC/3hPW6n235btU6eB/EgoJWdSWKggIu7Zw/ZxGsvpmhFIDcE/GZTyKRM04yG03Ki1fViFw==
+playroom@0.21.3:
+  version "0.21.3"
+  resolved "https://registry.yarnpkg.com/playroom/-/playroom-0.21.3.tgz#d4e532cc6fd0cf9f31bf557830d9e2db16679487"
+  integrity sha512-NHYGEk+I/3TIMxzkda51u98F05TwvDBmp4IePAt+n+ToKVeiPta9IhIwZCd4DjXQAtZjmfoIaU8b4elqVRGB4A==
   dependencies:
     "@babel/cli" "^7.8.3"
     "@babel/core" "^7.8.3"
