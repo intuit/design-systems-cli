@@ -1500,7 +1500,7 @@
     change-case "4.1.1"
     chokidar "3.4.2"
     colorette "1.2.1"
-    commently "6.0.2"
+    commently "6.0.6"
     cross-spawn "7.0.3"
     css-loader "3.5.3"
     diff2html "3.1.11"
@@ -1580,7 +1580,7 @@
     "@jest/transform" "26.3.0"
     "@jest/types" "26.3.0"
     "@testing-library/jest-dom" "5.11.3"
-    "@types/jest" "26.0.9"
+    "@types/jest" "26.0.10"
     babel-plugin-istanbul "6.0.0"
     env-ci "5.0.2"
     identity-obj-proxy "3.0.0"
@@ -4351,10 +4351,18 @@
   dependencies:
     "@types/istanbul-lib-report" "*"
 
-"@types/jest@*", "@types/jest@26.0.9":
+"@types/jest@*":
   version "26.0.9"
   resolved "https://registry.yarnpkg.com/@types/jest/-/jest-26.0.9.tgz#0543b57da5f0cd949c5f423a00c56c492289c989"
   integrity sha512-k4qFfJ5AUKrWok5KYXp2EPm89b0P/KZpl7Vg4XuOTVVQEhLDBDBU3iBFrjjdgd8fLw96aAtmnwhXHl63bWeBQQ==
+  dependencies:
+    jest-diff "^25.2.1"
+    pretty-format "^25.2.1"
+
+"@types/jest@26.0.10":
+  version "26.0.10"
+  resolved "https://registry.yarnpkg.com/@types/jest/-/jest-26.0.10.tgz#8faf7e9756c033c39014ae76a7329efea00ea607"
+  integrity sha512-i2m0oyh8w/Lum7wWK/YOZJakYF8Mx08UaKA1CtbmFeDquVhAEdA7znacsVSf2hJ1OQ/OfVMGN90pw/AtzF8s/Q==
   dependencies:
     jest-diff "^25.2.1"
     pretty-format "^25.2.1"
@@ -7530,10 +7538,10 @@ comment-parser@^0.7.5:
   resolved "https://registry.yarnpkg.com/comment-parser/-/comment-parser-0.7.5.tgz#06db157a3b34addf8502393743e41897e2c73059"
   integrity sha512-iH9YA35ccw94nx5244GVkpyC9eVTsL71jZz6iz5w6RIf79JLF2AsXHXq9p6Oaohyl3sx5qSMnGsWUDFIAfWL4w==
 
-commently@6.0.2:
-  version "6.0.2"
-  resolved "https://registry.yarnpkg.com/commently/-/commently-6.0.2.tgz#5d8aa18235bc3200c171258f82beda202518a60e"
-  integrity sha512-cLna1jpcvD7KdOGmYMjuH8woE+8SrS6NkToEExyMlOYEMRyLZ2QDene/CB3TOHm5yLYgDutOW5ZPlmgTDneCDw==
+commently@6.0.6:
+  version "6.0.6"
+  resolved "https://registry.yarnpkg.com/commently/-/commently-6.0.6.tgz#23284cb40886aec8f0bfcfefe44307451181259c"
+  integrity sha512-SFGNNo1O99t2d9/0Bv/dxq+ISZ+L8J+9V56n+lbfysgIHkdCxlNOoKJahA6sTLc8HJzqbBcZh6k5oeifGXaGrg==
   dependencies:
     "@octokit/rest" "16.33.1"
     debug "4.1.1"
