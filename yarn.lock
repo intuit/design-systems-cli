@@ -1514,7 +1514,7 @@
     opn "5.5.0"
     optimize-css-assets-webpack-plugin "5.0.4"
     signale "1.4.0"
-    table "5.4.6"
+    table "6.0.1"
     terser-webpack-plugin "4.1.0"
     tslib "2.0.1"
     webpack "4.44.1"
@@ -19937,17 +19937,7 @@ table-layout@^1.0.0:
     typical "^5.0.0"
     wordwrapjs "^4.0.0"
 
-table@5.4.6, table@^5.2.3:
-  version "5.4.6"
-  resolved "https://registry.yarnpkg.com/table/-/table-5.4.6.tgz#1292d19500ce3f86053b05f0e8e7e4a3bb21079e"
-  integrity sha512-wmEc8m4fjnob4gt5riFRtTu/6+4rSe12TpAELNSqHMfF3IqnA+CH37USM6/YR3qRZv7e56kAEAtd6nKZaxe0Ug==
-  dependencies:
-    ajv "^6.10.2"
-    lodash "^4.17.14"
-    slice-ansi "^2.1.0"
-    string-width "^3.0.0"
-
-table@^6.0.1:
+table@6.0.1, table@^6.0.1:
   version "6.0.1"
   resolved "https://registry.yarnpkg.com/table/-/table-6.0.1.tgz#334fd5d74590251f6893f1296c29d533bbac1b32"
   integrity sha512-fmr6168splcy/3XIvhSm5w6hYYOqyr3plAsd7OqoerzyoMnIpoxYuwrpdO2Cm22dh6KCnvirvigPrFZp+tdWFA==
@@ -19956,6 +19946,16 @@ table@^6.0.1:
     lodash "^4.17.20"
     slice-ansi "^4.0.0"
     string-width "^4.2.0"
+
+table@^5.2.3:
+  version "5.4.6"
+  resolved "https://registry.yarnpkg.com/table/-/table-5.4.6.tgz#1292d19500ce3f86053b05f0e8e7e4a3bb21079e"
+  integrity sha512-wmEc8m4fjnob4gt5riFRtTu/6+4rSe12TpAELNSqHMfF3IqnA+CH37USM6/YR3qRZv7e56kAEAtd6nKZaxe0Ug==
+  dependencies:
+    ajv "^6.10.2"
+    lodash "^4.17.14"
+    slice-ansi "^2.1.0"
+    string-width "^3.0.0"
 
 tapable@1.1.3, tapable@^1.0.0, tapable@^1.1.3:
   version "1.1.3"
