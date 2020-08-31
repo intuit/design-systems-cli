@@ -43,7 +43,7 @@
     "fast-glob": "3.2.4",
     "get-port": "5.1.1",
     "github-url-to-object": "4.0.4",
-    "source-map-loader": "1.0.1",
+    "source-map-loader": "1.1.0",
     "story2sketch": "1.7.0",
     "storybook-addon-jsx": "^7.3.0",
     "storybook-addon-react-docgen": "^1.2.38",
