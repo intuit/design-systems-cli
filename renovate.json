@@ -17,6 +17,7 @@
   "digest": {
     "labels": ["dependency-update"]
   },
+  "ignoreDeps": ["@storybook/addon-notes"],
   "packageRules": [
     {
       "packagePatterns": ["@proof-ui"],
