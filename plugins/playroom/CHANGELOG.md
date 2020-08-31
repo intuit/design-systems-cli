@@ -1,3 +1,44 @@
+# v2.0.2 (Mon Aug 31 2020)
+
+#### 🐛 Bug Fix
+
+- Update storybook monorepo [#469](https://github.com/intuit/design-systems-cli/pull/469) ([@renovate-bot](https://github.com/renovate-bot) [@hipstersmoothie](https://github.com/hipstersmoothie))
+- Update babel monorepo to v7.11.5 ([@renovate-bot](https://github.com/renovate-bot))
+- Update dependency playroom to v0.21.3 ([@renovate-bot](https://github.com/renovate-bot))
+- Update dependency @babel/core to v7.11.4 ([@renovate-bot](https://github.com/renovate-bot))
+- Update dependency file-loader to v6.1.0 ([@renovate-bot](https://github.com/renovate-bot))
+
+#### 🔩 Dependency Updates
+
+- Update dependency postcss-modules to v3.2.2 [#450](https://github.com/intuit/design-systems-cli/pull/450) ([@renovate-bot](https://github.com/renovate-bot) [@renovate[bot]](https://github.com/renovate[bot]))
+- Update dependency commently to v6.2.1 [#466](https://github.com/intuit/design-systems-cli/pull/466) ([@renovate-bot](https://github.com/renovate-bot) [@renovate[bot]](https://github.com/renovate[bot]))
+- Update dependency table to v6 [#463](https://github.com/intuit/design-systems-cli/pull/463) ([@renovate-bot](https://github.com/renovate-bot) [@renovate[bot]](https://github.com/renovate[bot]))
+- Update dependency source-map-loader to v1.1.0 [#447](https://github.com/intuit/design-systems-cli/pull/447) ([@renovate-bot](https://github.com/renovate-bot) [@renovate[bot]](https://github.com/renovate[bot]))
+- Update dependency typescript to v4 [#451](https://github.com/intuit/design-systems-cli/pull/451) ([@renovate-bot](https://github.com/renovate-bot) [@renovate[bot]](https://github.com/renovate[bot]))
+- Update dependency jest to v26.4.2 [#449](https://github.com/intuit/design-systems-cli/pull/449) ([@renovate-bot](https://github.com/renovate-bot) [@renovate[bot]](https://github.com/renovate[bot]))
+- Update dependency @types/inquirer to v7.3.1 [#448](https://github.com/intuit/design-systems-cli/pull/448) ([@renovate-bot](https://github.com/renovate-bot) [@renovate[bot]](https://github.com/renovate[bot]))
+- Update dependency @types/semver to v7.3.3 [#445](https://github.com/intuit/design-systems-cli/pull/445) ([@renovate-bot](https://github.com/renovate-bot) [@renovate[bot]](https://github.com/renovate[bot]))
+- Update dependency playroom to v0.21.3 [#444](https://github.com/intuit/design-systems-cli/pull/444) ([@renovate-bot](https://github.com/renovate-bot) [@renovate[bot]](https://github.com/renovate[bot]))
+- Update dependency diff2html to v3.1.12 [#443](https://github.com/intuit/design-systems-cli/pull/443) ([@renovate-bot](https://github.com/renovate-bot) [@renovate[bot]](https://github.com/renovate[bot]))
+- Update babel monorepo to v7.11.5 [#470](https://github.com/intuit/design-systems-cli/pull/470) ([@renovate-bot](https://github.com/renovate-bot) [@renovate[bot]](https://github.com/renovate[bot]))
+- Update auto to v9.52.0 [#452](https://github.com/intuit/design-systems-cli/pull/452) ([@renovate-bot](https://github.com/renovate-bot) [@renovate[bot]](https://github.com/renovate[bot]))
+- Update dependency @babel/core to v7.11.4 [#453](https://github.com/intuit/design-systems-cli/pull/453) ([@renovate-bot](https://github.com/renovate-bot) [@renovate[bot]](https://github.com/renovate[bot]))
+- Update dependency @types/node to v14.6.2 [#446](https://github.com/intuit/design-systems-cli/pull/446) ([@renovate-bot](https://github.com/renovate-bot) [@renovate[bot]](https://github.com/renovate[bot]))
+- Update dependency @types/eslint to v7.2.2 [#454](https://github.com/intuit/design-systems-cli/pull/454) ([@renovate-bot](https://github.com/renovate-bot) [@renovate[bot]](https://github.com/renovate[bot]))
+- Update dependency prettier to v2.1.1 [#457](https://github.com/intuit/design-systems-cli/pull/457) ([@renovate-bot](https://github.com/renovate-bot) [@renovate[bot]](https://github.com/renovate[bot]))
+- Update dependency mini-css-extract-plugin to v0.11.0 [#459](https://github.com/intuit/design-systems-cli/pull/459) ([@renovate-bot](https://github.com/renovate-bot) [@renovate[bot]](https://github.com/renovate[bot]))
+- Update dependency pretty-bytes to v5.4.1 [#460](https://github.com/intuit/design-systems-cli/pull/460) ([@renovate-bot](https://github.com/renovate-bot) [@renovate[bot]](https://github.com/renovate[bot]))
+- Update dependency optimize-css-assets-webpack-plugin to v5.0.4 [#462](https://github.com/intuit/design-systems-cli/pull/462) ([@renovate-bot](https://github.com/renovate-bot) [@renovate[bot]](https://github.com/renovate[bot]))
+- Update dependency file-loader to v6.1.0 [#464](https://github.com/intuit/design-systems-cli/pull/464) ([@renovate-bot](https://github.com/renovate-bot) [@renovate[bot]](https://github.com/renovate[bot]))
+
+#### Authors: 3
+
+- [@renovate[bot]](https://github.com/renovate[bot])
+- Andrew Lisowski ([@hipstersmoothie](https://github.com/hipstersmoothie))
+- WhiteSource Renovate ([@renovate-bot](https://github.com/renovate-bot))
+
+---
+
 # v2.0.1 (Tue Aug 25 2020)
 
 #### 🐛 Bug Fix

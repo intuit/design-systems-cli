@@ -1,3 +1,30 @@
+# v2.0.2 (Mon Aug 31 2020)
+
+#### 🐛 Bug Fix
+
+- Update storybook monorepo [#469](https://github.com/intuit/design-systems-cli/pull/469) ([@renovate-bot](https://github.com/renovate-bot) [@hipstersmoothie](https://github.com/hipstersmoothie))
+- Update dependency stylelint to v13.7.0 ([@renovate-bot](https://github.com/renovate-bot))
+- Update dependency @types/eslint to v7.2.2 ([@renovate-bot](https://github.com/renovate-bot))
+
+#### 🔩 Dependency Updates
+
+- Update dependency @types/node to v14.6.2 [#446](https://github.com/intuit/design-systems-cli/pull/446) ([@renovate-bot](https://github.com/renovate-bot) [@renovate[bot]](https://github.com/renovate[bot]))
+- Update dependency @types/eslint to v7.2.2 [#454](https://github.com/intuit/design-systems-cli/pull/454) ([@renovate-bot](https://github.com/renovate-bot) [@renovate[bot]](https://github.com/renovate[bot]))
+- Update dependency prettier to v2.1.1 [#457](https://github.com/intuit/design-systems-cli/pull/457) ([@renovate-bot](https://github.com/renovate-bot) [@renovate[bot]](https://github.com/renovate[bot]))
+- Update dependency mini-css-extract-plugin to v0.11.0 [#459](https://github.com/intuit/design-systems-cli/pull/459) ([@renovate-bot](https://github.com/renovate-bot) [@renovate[bot]](https://github.com/renovate[bot]))
+- Update dependency pretty-bytes to v5.4.1 [#460](https://github.com/intuit/design-systems-cli/pull/460) ([@renovate-bot](https://github.com/renovate-bot) [@renovate[bot]](https://github.com/renovate[bot]))
+- Update dependency optimize-css-assets-webpack-plugin to v5.0.4 [#462](https://github.com/intuit/design-systems-cli/pull/462) ([@renovate-bot](https://github.com/renovate-bot) [@renovate[bot]](https://github.com/renovate[bot]))
+- Update dependency file-loader to v6.1.0 [#464](https://github.com/intuit/design-systems-cli/pull/464) ([@renovate-bot](https://github.com/renovate-bot) [@renovate[bot]](https://github.com/renovate[bot]))
+- Update dependency stylelint to v13.7.0 [#465](https://github.com/intuit/design-systems-cli/pull/465) ([@renovate-bot](https://github.com/renovate-bot) [@renovate[bot]](https://github.com/renovate[bot]))
+
+#### Authors: 3
+
+- [@renovate[bot]](https://github.com/renovate[bot])
+- Andrew Lisowski ([@hipstersmoothie](https://github.com/hipstersmoothie))
+- WhiteSource Renovate ([@renovate-bot](https://github.com/renovate-bot))
+
+---
+
 # v2.0.0 (Fri Aug 14 2020)
 
 ### Release Notes

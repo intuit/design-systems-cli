@@ -1,3 +1,19 @@
+# v2.0.2 (Mon Aug 31 2020)
+
+#### 🐛 Bug Fix
+
+- Update storybook monorepo [#469](https://github.com/intuit/design-systems-cli/pull/469) ([@renovate-bot](https://github.com/renovate-bot) [@hipstersmoothie](https://github.com/hipstersmoothie))
+
+#### 🔩 Dependency Updates
+
+
+#### Authors: 2
+
+- Andrew Lisowski ([@hipstersmoothie](https://github.com/hipstersmoothie))
+- WhiteSource Renovate ([@renovate-bot](https://github.com/renovate-bot))
+
+---
+
 # v2.0.1 (Tue Aug 25 2020)
 
 #### 🐛 Bug Fix

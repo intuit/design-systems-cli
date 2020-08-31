@@ -1,3 +1,28 @@
+# v2.0.2 (Mon Aug 31 2020)
+
+#### 🐛 Bug Fix
+
+- Update storybook monorepo [#469](https://github.com/intuit/design-systems-cli/pull/469) ([@renovate-bot](https://github.com/renovate-bot) [@hipstersmoothie](https://github.com/hipstersmoothie))
+- Update dependency @types/semver to v7.3.3 ([@renovate-bot](https://github.com/renovate-bot))
+
+#### 🔩 Dependency Updates
+
+- Update dependency commently to v6.2.1 [#466](https://github.com/intuit/design-systems-cli/pull/466) ([@renovate-bot](https://github.com/renovate-bot) [@renovate[bot]](https://github.com/renovate[bot]))
+- Update dependency table to v6 [#463](https://github.com/intuit/design-systems-cli/pull/463) ([@renovate-bot](https://github.com/renovate-bot) [@renovate[bot]](https://github.com/renovate[bot]))
+- Update dependency source-map-loader to v1.1.0 [#447](https://github.com/intuit/design-systems-cli/pull/447) ([@renovate-bot](https://github.com/renovate-bot) [@renovate[bot]](https://github.com/renovate[bot]))
+- Update dependency typescript to v4 [#451](https://github.com/intuit/design-systems-cli/pull/451) ([@renovate-bot](https://github.com/renovate-bot) [@renovate[bot]](https://github.com/renovate[bot]))
+- Update dependency jest to v26.4.2 [#449](https://github.com/intuit/design-systems-cli/pull/449) ([@renovate-bot](https://github.com/renovate-bot) [@renovate[bot]](https://github.com/renovate[bot]))
+- Update dependency @types/inquirer to v7.3.1 [#448](https://github.com/intuit/design-systems-cli/pull/448) ([@renovate-bot](https://github.com/renovate-bot) [@renovate[bot]](https://github.com/renovate[bot]))
+- Update dependency @types/semver to v7.3.3 [#445](https://github.com/intuit/design-systems-cli/pull/445) ([@renovate-bot](https://github.com/renovate-bot) [@renovate[bot]](https://github.com/renovate[bot]))
+
+#### Authors: 3
+
+- [@renovate[bot]](https://github.com/renovate[bot])
+- Andrew Lisowski ([@hipstersmoothie](https://github.com/hipstersmoothie))
+- WhiteSource Renovate ([@renovate-bot](https://github.com/renovate-bot))
+
+---
+
 # v2.0.0 (Fri Aug 14 2020)
 
 ### Release Notes
