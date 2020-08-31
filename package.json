@@ -40,7 +40,7 @@
     "change-case": "4.1.1",
     "copy-template-dir": "1.4.0",
     "lerna": "3.22.1",
-    "prettier": "2.0.5",
+    "prettier": "2.1.1",
     "rimraf": "3.0.2",
     "signale": "1.4.0",
     "typescript": "3.9.7"
