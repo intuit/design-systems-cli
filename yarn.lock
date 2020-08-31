@@ -1503,7 +1503,7 @@
     commently "6.0.2"
     cross-spawn "7.0.3"
     css-loader "3.5.3"
-    diff2html "3.1.11"
+    diff2html "3.1.12"
     file-size "1.0.0"
     fs-extra "9.0.1"
     get-monorepo-packages "1.2.0"
@@ -8700,15 +8700,15 @@ diff-sequences@^26.3.0:
   resolved "https://registry.yarnpkg.com/diff-sequences/-/diff-sequences-26.3.0.tgz#62a59b1b29ab7fd27cef2a33ae52abe73042d0a2"
   integrity sha512-5j5vdRcw3CNctePNYN0Wy2e/JbWT6cAYnXv5OuqPhDpyCGc0uLu2TK0zOCJWNB9kOIfYMSpIulRaDgIi4HJ6Ig==
 
-diff2html@3.1.11:
-  version "3.1.11"
-  resolved "https://registry.yarnpkg.com/diff2html/-/diff2html-3.1.11.tgz#c8c4b350917a25c63b24d4f4eb530ee9b78b4d03"
-  integrity sha512-EtzNnfhT4XzxIUvIw5mhUGxGYDzce9lxkqtSHWq4yas+UrEjwzm5A2pYIaFOikupbFITd9RaHpu0ocErJ1myRw==
+diff2html@3.1.12:
+  version "3.1.12"
+  resolved "https://registry.yarnpkg.com/diff2html/-/diff2html-3.1.12.tgz#47178e9277f2d2c797558a232f45d8fbdaa7bb92"
+  integrity sha512-iUFPcwhsb2e6ng7ct9VGntOomhCb5qRy1tuSCz2RpTk/3Y0fRjfySHEeL95rYvWqawfGrj/7OjPR/kGOTIT/9w==
   dependencies:
     diff "4.0.2"
     hogan.js "3.0.2"
   optionalDependencies:
-    highlight.js "10.0.2"
+    highlight.js "10.1.2"
 
 diff@4.0.2:
   version "4.0.2"
@@ -11314,10 +11314,10 @@ hex-color-regex@^1.1.0:
   resolved "https://registry.yarnpkg.com/hex-color-regex/-/hex-color-regex-1.1.0.tgz#4c06fccb4602fe2602b3c93df82d7e7dbf1a8a8e"
   integrity sha512-l9sfDFsuqtOqKDsQdqrMRk0U85RZc0RtOR9yPI7mRVOa4FsR/BVnZ0shmQRM96Ji99kYZP/7hn1cedc1+ApsTQ==
 
-highlight.js@10.0.2:
-  version "10.0.2"
-  resolved "https://registry.yarnpkg.com/highlight.js/-/highlight.js-10.0.2.tgz#d2c732544f8f68bceaf0cefb4b0575bce8eddbee"
-  integrity sha512-2gMT2MHU6/2OjAlnaOE2LFdr9dwviDN3Q2lSw7Ois3/5uTtahbgYTkr4EPoY828ps+2eQWiixPTF8+phU6Ofkg==
+highlight.js@10.1.2:
+  version "10.1.2"
+  resolved "https://registry.yarnpkg.com/highlight.js/-/highlight.js-10.1.2.tgz#c20db951ba1c22c055010648dfffd7b2a968e00c"
+  integrity sha512-Q39v/Mn5mfBlMff9r+zzA+gWxRsCRKwEMvYTiisLr/XUiFI/4puWt0Ojdko3R3JCNWGdOWaA5g/Yxqa23kC5AA==
 
 highlight.js@~9.13.0:
   version "9.13.1"
