@@ -1,3 +1,16 @@
+# v2.0.3 (Fri Sep 04 2020)
+
+#### 🐛 Bug Fix
+
+- print storybook build error [#478](https://github.com/intuit/design-systems-cli/pull/478) ([@hipstersmoothie](https://github.com/hipstersmoothie))
+- print storybook build error ([@hipstersmoothie](https://github.com/hipstersmoothie))
+
+#### Authors: 1
+
+- Andrew Lisowski ([@hipstersmoothie](https://github.com/hipstersmoothie))
+
+---
+
 # v2.0.2 (Mon Aug 31 2020)
 
 #### 🐛 Bug Fix
