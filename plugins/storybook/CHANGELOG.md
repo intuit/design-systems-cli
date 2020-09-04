@@ -1,3 +1,16 @@
+# v2.0.4 (Fri Sep 04 2020)
+
+#### 🐛 Bug Fix
+
+- use my addon-notes replacement [#479](https://github.com/intuit/design-systems-cli/pull/479) ([@hipstersmoothie](https://github.com/hipstersmoothie))
+- use my addon-notes replacement ([@hipstersmoothie](https://github.com/hipstersmoothie))
+
+#### Authors: 1
+
+- Andrew Lisowski ([@hipstersmoothie](https://github.com/hipstersmoothie))
+
+---
+
 # v2.0.3 (Fri Sep 04 2020)
 
 #### 🐛 Bug Fix
