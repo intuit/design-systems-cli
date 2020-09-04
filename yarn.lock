@@ -2,12 +2,6 @@
 # yarn lockfile v1
 
 
-<<<<<<< ours
-"@auto-it/all-contributors@9.52.0":
-  version "9.52.0"
-  resolved "https://registry.yarnpkg.com/@auto-it/all-contributors/-/all-contributors-9.52.0.tgz#10114704539f7bb250c601f051446095ca2c0825"
-  integrity sha512-YHF0NzvajJ/jTbVaaBIlmE7ZDodZ1aJ2GWV21qB5NLc9ARtV7B+nXsL380E7nHl7r6Hozni5cAH9v+V4v/j2ng==
-=======
 "@alisowski/storybook-addon-notes@^6.0.1":
   version "6.0.1"
   resolved "https://registry.yarnpkg.com/@alisowski/storybook-addon-notes/-/storybook-addon-notes-6.0.1.tgz#6ac669890f003f1ea499c895b84448616f6f5832"
@@ -22,11 +16,10 @@
     "@storybook/theming" "^6.0.0"
     markdown-to-jsx "^6.10.3"
 
-"@auto-it/all-contributors@9.50.5":
-  version "9.50.5"
-  resolved "https://registry.yarnpkg.com/@auto-it/all-contributors/-/all-contributors-9.50.5.tgz#f0ee432ae4d79e0feb1a7a0305cfe6c6404ed2b7"
-  integrity sha512-ZOxglUvd4zZtQ1O8BVuNaqsCS3oPHPWYhjDmXnqZ+7k6tgqoxzS/ma6ET3ksSK6L7o95mAzF7DvGnDh82DJfoA==
->>>>>>> theirs
+"@auto-it/all-contributors@9.52.0":
+  version "9.52.0"
+  resolved "https://registry.yarnpkg.com/@auto-it/all-contributors/-/all-contributors-9.52.0.tgz#10114704539f7bb250c601f051446095ca2c0825"
+  integrity sha512-YHF0NzvajJ/jTbVaaBIlmE7ZDodZ1aJ2GWV21qB5NLc9ARtV7B+nXsL380E7nHl7r6Hozni5cAH9v+V4v/j2ng==
   dependencies:
     "@auto-it/bot-list" "9.52.0"
     "@auto-it/core" "9.52.0"
@@ -1427,7 +1420,7 @@
     minimist "^1.2.0"
 
 "@design-systems/build@link:plugins/build":
-  version "2.0.1"
+  version "2.0.3"
   dependencies:
     "@babel/code-frame" "7.10.4"
     "@babel/core" "7.11.5"
@@ -1468,7 +1461,7 @@
     typescript "4.0.2"
 
 "@design-systems/bundle@link:plugins/bundle":
-  version "2.0.1"
+  version "2.0.3"
   dependencies:
     "@design-systems/build" "link:plugins/build"
     "@design-systems/cli-utils" "link:packages/cli-utils"
@@ -1486,7 +1479,7 @@
     webpack "4.44.1"
 
 "@design-systems/clean@link:plugins/clean":
-  version "2.0.1"
+  version "2.0.3"
   dependencies:
     "@design-systems/cli-utils" "link:packages/cli-utils"
     "@design-systems/plugin" "link:packages/plugin"
@@ -1495,7 +1488,7 @@
     tslib "2.0.1"
 
 "@design-systems/cli-utils@link:packages/cli-utils":
-  version "2.0.1"
+  version "2.0.3"
   dependencies:
     find-up "5.0.0"
     npm-which "3.0.1"
@@ -1505,7 +1498,7 @@
     webpack "4.44.1"
 
 "@design-systems/core@link:packages/core":
-  version "2.0.1"
+  version "2.0.3"
   dependencies:
     "@design-systems/build" "link:plugins/build"
     "@design-systems/bundle" "link:plugins/bundle"
@@ -1525,7 +1518,7 @@
     tslib "2.0.1"
 
 "@design-systems/create-command@link:plugins/create-command":
-  version "2.0.1"
+  version "2.0.3"
   dependencies:
     "@design-systems/cli-utils" "link:packages/cli-utils"
     "@design-systems/create" "link:packages/create"
@@ -1544,10 +1537,10 @@
     tslib "2.0.1"
 
 "@design-systems/create@link:packages/create":
-  version "2.0.1"
+  version "2.0.3"
 
 "@design-systems/dev@link:plugins/dev":
-  version "2.0.1"
+  version "2.0.3"
   dependencies:
     "@design-systems/cli-utils" "link:packages/cli-utils"
     "@design-systems/plugin" "link:packages/plugin"
@@ -1558,7 +1551,7 @@
     tslib "2.0.1"
 
 "@design-systems/eslint-config@link:packages/eslint-config":
-  version "2.0.1"
+  version "2.0.3"
   dependencies:
     "@design-systems/cli-utils" "link:packages/cli-utils"
     "@typescript-eslint/eslint-plugin" "3.9.0"
@@ -1582,7 +1575,7 @@
     tslib "2.0.1"
 
 "@design-systems/lint@link:plugins/lint":
-  version "2.0.1"
+  version "2.0.3"
   dependencies:
     "@design-systems/cli-utils" "link:packages/cli-utils"
     "@design-systems/eslint-config" "link:packages/eslint-config"
@@ -1599,7 +1592,7 @@
     tslib "2.0.1"
 
 "@design-systems/load-config@link:packages/load-config":
-  version "2.0.1"
+  version "2.0.3"
   dependencies:
     "@design-systems/core" "link:packages/core"
     "@design-systems/plugin" "link:packages/plugin"
@@ -1613,7 +1606,7 @@
     tslib "2.0.1"
 
 "@design-systems/playroom@link:plugins/playroom":
-  version "2.0.1"
+  version "2.0.3"
   dependencies:
     "@babel/core" "7.11.5"
     "@babel/register" "7.11.5"
@@ -1633,14 +1626,14 @@
     webpack "4.44.1"
 
 "@design-systems/plugin@link:packages/plugin":
-  version "2.0.1"
+  version "2.0.3"
   dependencies:
     command-line-application "0.10.1"
     tslib "2.0.1"
     utility-types "3.10.0"
 
 "@design-systems/proof@link:plugins/proof":
-  version "2.0.1"
+  version "2.0.3"
   dependencies:
     "@babel/core" "7.11.5"
     "@babel/plugin-transform-runtime" "7.11.5"
@@ -1658,7 +1651,7 @@
     tslib "2.0.1"
 
 "@design-systems/size@link:plugins/size":
-  version "2.0.1"
+  version "2.0.3"
   dependencies:
     "@design-systems/cli-utils" "link:packages/cli-utils"
     "@design-systems/plugin" "link:packages/plugin"
@@ -1689,14 +1682,10 @@
     webpack-sources "1.4.3"
 
 "@design-systems/storybook@link:plugins/storybook":
-  version "2.0.1"
+  version "2.0.3"
   dependencies:
-<<<<<<< ours
-    "@babel/core" "7.11.5"
-=======
     "@alisowski/storybook-addon-notes" "^6.0.1"
-    "@babel/core" "7.11.1"
->>>>>>> theirs
+    "@babel/core" "7.11.5"
     "@design-systems/build" "link:plugins/build"
     "@design-systems/cli-utils" "link:packages/cli-utils"
     "@design-systems/plugin" "link:packages/plugin"
@@ -1726,7 +1715,7 @@
     webpack-filter-warnings-plugin "1.2.1"
 
 "@design-systems/stylelint-config@link:packages/stylelint-config":
-  version "2.0.1"
+  version "2.0.3"
   dependencies:
     stylelint-a11y "1.2.3"
     stylelint-config-css-modules "2.2.0"
@@ -1740,7 +1729,7 @@
     tslib "2.0.1"
 
 "@design-systems/test@link:plugins/test":
-  version "2.0.1"
+  version "2.0.3"
   dependencies:
     "@babel/core" "7.11.5"
     "@design-systems/build" "link:plugins/build"
@@ -1760,7 +1749,7 @@
     tslib "2.0.1"
 
 "@design-systems/update@link:plugins/update":
-  version "2.0.1"
+  version "2.0.3"
   dependencies:
     "@design-systems/cli-utils" "link:packages/cli-utils"
     "@design-systems/plugin" "link:packages/plugin"
