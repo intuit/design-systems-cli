@@ -17,8 +17,12 @@
   "digest": {
     "labels": ["dependency-update"]
   },
-  "ignoreDeps": ["@storybook/addon-notes"],
   "packageRules": [
+    {
+      "packagePatterns": ["@storybook"],
+      "groupName": "storybook",
+      "rangeStrategy": "bump"
+    },
     {
       "packagePatterns": ["@proof-ui"],
       "groupName": "proof"

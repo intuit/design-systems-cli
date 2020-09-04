@@ -4,7 +4,7 @@ const glob = require('fast-glob');
 
 const addons = [
   // Panels
-  '@storybook/addon-notes/register-panel',
+  '@alisowski/storybook-addon-notes/register-panel',
   'storybook-addon-react-docgen',
   'storybook-addon-jsx',
   '@storybook/addon-knobs',
