@@ -77,7 +77,7 @@ export default class StorybookPlugin implements Plugin<StorybookArgs> {
       }
     } catch (e) {
       this.logger.error('Failed to build storybook');
-      this.logger.trace(e)
+      this.logger.error(e)
       process.exit(1);
     }
   }
