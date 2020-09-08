@@ -388,7 +388,7 @@ export default class BuildPlugin implements Plugin<BuildArgs> {
     await this.generateCSS();
 
     if (importCss) {
-      this.addCSSImport();
+      await this.addCSSImport();
     }
 
     const hasTSFiles = files.some((file) =>
