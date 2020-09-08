@@ -17,7 +17,7 @@ import { getOutPath } from './utils';
 import transpileJS, {
   getJSOutputFiles,
   BABEL_CONFIG,
-  SuccessState
+  SuccessState,
 } from './babel';
 import transpileCSS, { getCSSPath } from './postcss';
 import { defaults } from './command';
@@ -34,6 +34,8 @@ export interface BuildArgs {
   outputDirectory: string;
   /** The name of the concatenated css for the component */
   cssMain: string;
+  /** Whether to add an automatic CSS import to the ESM entry */
+  importCss: boolean;
   /** What files to ignore during the build. */
   ignore: string | string[];
 }
@@ -42,9 +44,9 @@ const POSTCSS_CONFIG = path.join(__dirname, './configs/postcss.config.js');
 
 /** Find all matching globs. */
 function match(file: string, globs: string | string[]) {
-  const resolved = path.resolve(file)
+  const resolved = path.resolve(file);
   const globArr = Array.isArray(globs) ? globs : [globs];
-  return globArr.find(currGlob => minimatch(resolved, currGlob));
+  return globArr.find((currGlob) => minimatch(resolved, currGlob));
 }
 
 export { getPostCssConfig, getPostCssConfigSync } from './postcss';
@@ -59,7 +61,7 @@ export { getBabelConfig, getBabelOptions } from './babel';
  */
 export default class BuildPlugin implements Plugin<BuildArgs> {
   public hooks = {
-    processCSSFiles: new SyncBailHook<CleanCSS.Source[]>(['cssFiles'])
+    processCSSFiles: new SyncBailHook<CleanCSS.Source[]>(['cssFiles']),
   };
 
   private logger = createLogger({ scope: 'build' });
@@ -69,6 +71,52 @@ export default class BuildPlugin implements Plugin<BuildArgs> {
   private buildArgs: BuildArgs = defaults;
 
   private typescriptCompiler!: TypescriptCompiler;
+
+  /**
+   * Add a CSS import to the module build of the package
+   * This makes CSS imports automatic, while not adding it for NodeJS tools
+   */
+  addCSSImport = async () => {
+    this.logger.trace('Import CSS: Adding CSS import to ESM entry');
+
+    // Don't add an import if there is no CSS file
+    if (this.cssFiles.size === 0) {
+      this.logger.trace(
+        'Import CSS: Skipping CSS import because no CSS was built for this package'
+      );
+      return;
+    }
+
+    const packageExists = fs.existsSync(
+      path.join(process.cwd(), 'package.json')
+    );
+    if (!packageExists) return;
+
+    let entry = path.join(
+      process.cwd(),
+      this.buildArgs.outputDirectory,
+      'esm',
+      'index.js'
+    );
+    const packageJson = JSON.parse(
+      await fs.readFile(path.join(process.cwd(), 'package.json'), 'utf8')
+    );
+
+    if (packageJson && packageJson.module) {
+      entry = path.join(process.cwd(), packageJson.module);
+      this.logger.trace('Import CSS: Module entry found', entry);
+    }
+
+    const entryExists = fs.existsSync(entry);
+    if (!entryExists) return;
+
+    try {
+      fs.appendFileSync(entry, `\nimport "../${this.buildArgs.cssMain}"`);
+      this.logger.complete('Added CSS import to module entry');
+    } catch (e) {
+      this.logger.error('Import CSS: Error appending CSS import', e);
+    }
+  };
 
   /** Minify and combine all the css */
   generateCSS = async () => {
@@ -88,7 +136,7 @@ export default class BuildPlugin implements Plugin<BuildArgs> {
       sourceMapInlineSources: true,
       level: this.buildArgs.cssOptimizationLevel,
       rebase: false,
-      rebaseTo: this.buildArgs.outputDirectory
+      rebaseTo: this.buildArgs.outputDirectory,
     });
 
     const cssToMinify = Array.from(this.cssFiles.entries()).map(
@@ -97,8 +145,8 @@ export default class BuildPlugin implements Plugin<BuildArgs> {
           styles: css,
           sourceMap: map
             .toString()
-            .replace(/<input css (\d+)>/g, '../src/<input css $1>')
-        }
+            .replace(/<input css (\d+)>/g, '../src/<input css $1>'),
+        },
       })
     );
 
@@ -159,10 +207,10 @@ export default class BuildPlugin implements Plugin<BuildArgs> {
             inDir: inputDirectory,
             outDir: outputDirectory,
             configFile: POSTCSS_CONFIG,
-            watch: this.buildArgs.watch
+            watch: this.buildArgs.watch,
           })
             // Save the CSS output for merging later
-            .then(css => css && this.cssFiles.set(path.resolve(file), css))
+            .then((css) => css && this.cssFiles.set(path.resolve(file), css))
         );
       case '.js':
       case '.jsx':
@@ -214,7 +262,7 @@ export default class BuildPlugin implements Plugin<BuildArgs> {
 
     if (file.includes('theme.')) {
       await Promise.all(
-        [...this.cssFiles.keys()].map(async cssFile =>
+        [...this.cssFiles.keys()].map(async (cssFile) =>
           this.transformFile(cssFile)
         )
       );
@@ -250,7 +298,7 @@ export default class BuildPlugin implements Plugin<BuildArgs> {
         await Promise.all([
           this.generateCSS(),
           fs.remove(cssPath),
-          fs.remove(`${cssPath}.json`)
+          fs.remove(`${cssPath}.json`),
         ]);
         return;
       }
@@ -287,7 +335,7 @@ export default class BuildPlugin implements Plugin<BuildArgs> {
       [this.buildArgs.inputDirectory, 'tsconfig.json'],
       {
         awaitWriteFinish: true,
-        ignoreInitial: false
+        ignoreInitial: false,
       }
     );
 
@@ -316,7 +364,7 @@ export default class BuildPlugin implements Plugin<BuildArgs> {
     this.buildArgs = { ...this.buildArgs, ...args };
     this.typescriptCompiler = new TypescriptCompiler(this.buildArgs);
     const startTime = Date.now();
-    const { watch, outputDirectory } = this.buildArgs;
+    const { watch, outputDirectory, importCss } = this.buildArgs;
 
     // Since watching happens across everything in parallel,
     // leave any old build there for now
@@ -328,7 +376,9 @@ export default class BuildPlugin implements Plugin<BuildArgs> {
 
     // Kick off all of the transforms in parallel
     const transformed = files
-      .map(nextFile => !this.isIgnored(nextFile) && this.transformFile(nextFile))
+      .map(
+        (nextFile) => !this.isIgnored(nextFile) && this.transformFile(nextFile)
+      )
       .filter(
         (i): i is Promise<undefined | SuccessState> => typeof i !== 'boolean'
       );
@@ -337,11 +387,17 @@ export default class BuildPlugin implements Plugin<BuildArgs> {
     const results = await Promise.all(transformed);
     await this.generateCSS();
 
-    const hasTSFiles = files.some(file => path.extname(file).startsWith('.ts'));
+    if (importCss) {
+      this.addCSSImport();
+    }
+
+    const hasTSFiles = files.some((file) =>
+      path.extname(file).startsWith('.ts')
+    );
     if (hasTSFiles) {
       if (
         results.find(
-          result => result && result.success !== undefined && !result.success
+          (result) => result && result.success !== undefined && !result.success
         )
       ) {
         this.logger.info('Skipping type build. Build errors found.');

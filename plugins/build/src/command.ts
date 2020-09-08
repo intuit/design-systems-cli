@@ -7,13 +7,14 @@ export const defaults = {
   inputDirectory: 'src',
   outputDirectory: 'dist',
   cssMain: 'main.css',
+  importCss: false,
   ignore: [
     '**/*.+(md|mdx)',
     '**/__tests__/**',
     '**/__snapshots__/**',
     '**/*.+(stories|test).*',
-    '**/stories/*'
-  ]
+    '**/stories/*',
+  ],
 };
 
 const command: CliCommand = {
@@ -25,7 +26,7 @@ const command: CliCommand = {
       name: 'watch',
       alias: 'w',
       type: Boolean,
-      description: 'Watch for file changes and recompile.'
+      description: 'Watch for file changes and recompile.',
     },
     {
       name: 'ignore',
@@ -33,7 +34,7 @@ const command: CliCommand = {
       multiple: true,
       description: 'A minimatch to ignore',
       defaultValue: defaults.ignore,
-      config: true
+      config: true,
     },
     {
       name: 'css-optimization-level',
@@ -41,13 +42,20 @@ const command: CliCommand = {
       description: 'What clean-css optimization level to use',
       defaultValue: defaults.cssOptimizationLevel,
       config: true,
-    }
+    },
+    {
+      name: 'importCss',
+      type: Boolean,
+      description: 'Automatically add a CSS import into the ESM output file.',
+      defaultValue: defaults.importCss,
+      config: true,
+    },
   ],
   footer: [
     {
       header: 'Custom Babel Config',
       content:
-        'To customize your babel configuration, create a .babelrc at the root of the project.'
+        'To customize your babel configuration, create a .babelrc at the root of the project.',
     },
     {
       header: 'Custom PostCSS Config',
@@ -56,8 +64,8 @@ const command: CliCommand = {
           To customize your postcss configuration, create a postcss.config.js at your package or monorepo root.
 
           It must use the base config for css modules to function properly.
-        `
-      ]
+        `,
+      ],
     },
     {
       code: true,
@@ -78,9 +86,9 @@ const command: CliCommand = {
           }
         });
         \`\`\`
-      `
-    }
-  ]
+      `,
+    },
+  ],
 };
 
 export default command;
