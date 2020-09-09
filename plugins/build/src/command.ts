@@ -8,6 +8,7 @@ export const defaults = {
   outputDirectory: 'dist',
   cssMain: 'main.css',
   importCss: false,
+  multipleCss: [],
   ignore: [
     '**/*.+(md|mdx)',
     '**/__tests__/**',
@@ -48,6 +49,14 @@ const command: CliCommand = {
       type: Boolean,
       description: 'Automatically add a CSS import into the ESM output file.',
       defaultValue: defaults.importCss,
+      config: true,
+    },
+    {
+      name: 'multipleCss',
+      type: String,
+      multiple: true,
+      description:
+        'Multiple PostCSS configurations to use, allowing multiple output CSS files.',
       config: true,
     },
   ],

@@ -36,6 +36,8 @@ export interface BuildArgs {
   cssMain: string;
   /** Whether to add an automatic CSS import to the ESM entry */
   importCss: boolean;
+  /** List of multiple extra PostCSS config files to run. */
+  multipleCss: string[];
   /** What files to ignore during the build. */
   ignore: string | string[];
 }
@@ -49,8 +51,16 @@ function match(file: string, globs: string | string[]) {
   return globArr.find((currGlob) => minimatch(resolved, currGlob));
 }
 
+/** Allow users to specify filename without the extension */
+function makeCSSFilename(filename: string) {
+  if (filename.endsWith('.css')) return filename;
+  return `${filename}.css`;
+}
+
 export { getPostCssConfig, getPostCssConfigSync } from './postcss';
 export { getBabelConfig, getBabelOptions } from './babel';
+
+type CSSResult = { [key: string]: Map<string, postcss.Result> };
 
 /**
  * Build looks for js and css files in src/ and outputs a CJS, ESM, and CSS builds to /dist.
@@ -66,7 +76,7 @@ export default class BuildPlugin implements Plugin<BuildArgs> {
 
   private logger = createLogger({ scope: 'build' });
 
-  private cssFiles = new Map<string, postcss.Result>();
+  private cssFiles: CSSResult = {};
 
   private buildArgs: BuildArgs = defaults;
 
@@ -80,7 +90,7 @@ export default class BuildPlugin implements Plugin<BuildArgs> {
     this.logger.trace('Import CSS: Adding CSS import to ESM entry');
 
     // Don't add an import if there is no CSS file
-    if (this.cssFiles.size === 0) {
+    if (Object.keys(this.cssFiles).length === 0) {
       this.logger.trace(
         'Import CSS: Skipping CSS import because no CSS was built for this package'
       );
@@ -111,7 +121,10 @@ export default class BuildPlugin implements Plugin<BuildArgs> {
     if (!entryExists) return;
 
     try {
-      fs.appendFileSync(entry, `\nimport "../${this.buildArgs.cssMain}"`);
+      fs.appendFileSync(
+        entry,
+        `\nimport "../${makeCSSFilename(this.buildArgs.cssMain)}"`
+      );
       this.logger.complete('Added CSS import to module entry');
     } catch (e) {
       this.logger.error('Import CSS: Error appending CSS import', e);
@@ -120,55 +133,58 @@ export default class BuildPlugin implements Plugin<BuildArgs> {
 
   /** Minify and combine all the css */
   generateCSS = async () => {
-    if (this.cssFiles.size === 0) {
+    if (Object.keys(this.cssFiles).length === 0) {
       return;
     }
 
-    this.logger.trace('Generating merged css...');
+    for (const [buildName, files] of Object.entries(this.cssFiles)) {
+      this.logger.trace(
+        `Generating merged css for ${makeCSSFilename(buildName)}`
+      );
 
-    const outFile = path.join(
-      this.buildArgs.outputDirectory,
-      this.buildArgs.cssMain
-    );
+      const outFile = path.join(
+        this.buildArgs.outputDirectory,
+        makeCSSFilename(buildName)
+      );
 
-    const clean = new CleanCSS({
-      sourceMap: true,
-      sourceMapInlineSources: true,
-      level: this.buildArgs.cssOptimizationLevel,
-      rebase: false,
-      rebaseTo: this.buildArgs.outputDirectory,
-    });
+      const clean = new CleanCSS({
+        sourceMap: true,
+        sourceMapInlineSources: true,
+        level: this.buildArgs.cssOptimizationLevel,
+        rebase: false,
+        rebaseTo: this.buildArgs.outputDirectory,
+      });
 
-    const cssToMinify = Array.from(this.cssFiles.entries()).map(
-      ([file, { css, map }]) => ({
-        [file]: {
-          styles: css,
-          sourceMap: map
-            .toString()
-            .replace(/<input css (\d+)>/g, '../src/<input css $1>'),
-        },
-      })
-    );
+      const cssToMinify = Array.from(files.entries()).map(
+        ([file, { css, map }]) => ({
+          [file]: {
+            styles: css,
+            sourceMap: map
+              .toString()
+              .replace(/<input css (\d+)>/g, '../src/<input css $1>'),
+          },
+        })
+      );
 
-    const minified = clean.minify(
-      this.hooks.processCSSFiles.call(cssToMinify) || cssToMinify
-    );
+      const minified = clean.minify(
+        this.hooks.processCSSFiles.call(cssToMinify) || cssToMinify
+      );
 
-    if (minified.errors.length > 0) {
-      this.logger.debug('Errors\n\n', minified.errors.join('\n '), '\n');
-    }
+      if (minified.errors.length > 0) {
+        this.logger.debug('Errors\n\n', minified.errors.join('\n '), '\n');
+      }
 
-    if (minified.warnings.length > 0) {
-      this.logger.debug('Warnings\n\n', minified.warnings.join('\n '), '\n');
-    }
+      if (minified.warnings.length > 0) {
+        this.logger.debug('Warnings\n\n', minified.warnings.join('\n '), '\n');
+      }
 
-    const duration = formatTime(minified.stats.timeSpent);
-    const efficiency = minified.stats.efficiency.toPrecision(2);
-    const difference = formatBytes(
-      minified.stats.originalSize - minified.stats.minifiedSize
-    );
+      const duration = formatTime(minified.stats.timeSpent);
+      const efficiency = minified.stats.efficiency.toPrecision(2);
+      const difference = formatBytes(
+        minified.stats.originalSize - minified.stats.minifiedSize
+      );
 
-    this.logger.debug(dedent`
+      this.logger.debug(dedent`
       CSS minification results:
 
       Original: ${formatBytes(minified.stats.originalSize)}
@@ -177,13 +193,16 @@ export default class BuildPlugin implements Plugin<BuildArgs> {
       ${difference} -${efficiency}% ${duration}\n
     `);
 
-    await fs.outputFile(`${outFile}.map`, minified.sourceMap);
-    await fs.outputFile(
-      outFile,
-      `${minified.styles}\n/*# sourceMappingURL=${this.buildArgs.cssMain}.map */`
-    );
+      await fs.outputFile(`${outFile}.map`, minified.sourceMap);
+      await fs.outputFile(
+        outFile,
+        `${minified.styles}\n/*# sourceMappingURL=${makeCSSFilename(
+          buildName
+        )}.map */`
+      );
 
-    this.logger.complete('Generated merged css');
+      this.logger.complete(`Generated merged ${makeCSSFilename(buildName)}`);
+    }
   };
 
   /** Getall all files in the input directory */
@@ -198,20 +217,71 @@ export default class BuildPlugin implements Plugin<BuildArgs> {
     }
 
     switch (path.extname(file)) {
-      case '.css':
+      case '.css': {
         this.logger.pending(`CSS -> ${file}`);
 
-        return (
-          transpileCSS({
-            inFile: file,
-            inDir: inputDirectory,
-            outDir: outputDirectory,
-            configFile: POSTCSS_CONFIG,
-            watch: this.buildArgs.watch,
-          })
-            // Save the CSS output for merging later
-            .then((css) => css && this.cssFiles.set(path.resolve(file), css))
-        );
+        if (this.buildArgs.multipleCss.length === 0) {
+          // Single PostCSS build
+          const CSSMain = this.buildArgs.cssMain;
+          if (!this.cssFiles[CSSMain]) {
+            this.cssFiles[CSSMain] = new Map<string, postcss.Result>();
+          }
+
+          return (
+            transpileCSS({
+              inFile: file,
+              inDir: inputDirectory,
+              outDir: outputDirectory,
+              configFile: POSTCSS_CONFIG,
+              watch: this.buildArgs.watch,
+            })
+              // Save the CSS output for merging later
+              .then(
+                (css) =>
+                  css &&
+                  this.cssFiles[this.buildArgs.cssMain].set(
+                    path.resolve(file),
+                    css
+                  )
+              )
+          );
+        }
+
+        // Multiple PostCSS Builds
+        const promises: Promise<
+          void | postcss.Result | Map<string, postcss.Result>
+        >[] = [];
+        for (const [buildName, configPath] of Object.entries(
+          this.buildArgs.multipleCss
+        )) {
+          this.logger.trace(
+            `Multiple CSS Builds detected, building file for ${makeCSSFilename(
+              buildName
+            )}`
+          );
+          if (!this.cssFiles[buildName]) {
+            this.cssFiles[buildName] = new Map<string, postcss.Result>();
+          }
+
+          promises.push(
+            transpileCSS({
+              inFile: file,
+              inDir: inputDirectory,
+              outDir: outputDirectory,
+              configFile: configPath,
+              watch: this.buildArgs.watch,
+            })
+              // Save the CSS output for merging later
+              .then(
+                (css) =>
+                  css && this.cssFiles[buildName].set(path.resolve(file), css)
+              )
+          );
+        }
+
+        return Promise.all(promises);
+      }
+
       case '.js':
       case '.jsx':
       case '.ts':
@@ -262,9 +332,11 @@ export default class BuildPlugin implements Plugin<BuildArgs> {
 
     if (file.includes('theme.')) {
       await Promise.all(
-        [...this.cssFiles.keys()].map(async (cssFile) =>
-          this.transformFile(cssFile)
-        )
+        Object.keys(this.cssFiles).map((buildName) => {
+          return [...this.cssFiles[buildName].keys()].map(async (cssFile) =>
+            this.transformFile(cssFile)
+          );
+        })
       );
     }
 
@@ -289,8 +361,10 @@ export default class BuildPlugin implements Plugin<BuildArgs> {
       case '.css': {
         const fName = path.resolve(file);
 
-        if (this.cssFiles.has(fName)) {
-          this.cssFiles.delete(fName);
+        for (const [, files] of Object.entries(this.cssFiles)) {
+          if (files.has(fName)) {
+            files.delete(fName);
+          }
         }
 
         const cssPath = getCSSPath(file, inputDirectory, outputDirectory);
