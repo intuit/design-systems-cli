@@ -22,18 +22,19 @@ export function getCSSPath(inFile: string, inDir: string, outDir: string) {
  * Check package and monorepo cwd for postcss.config.js and returns
  * path. Defaults to empty string.
  */
-function getUserPostcssConfig(cwd: string = process.cwd()): string {
-  const CONFIG_FILENAME = 'postcss.config.js';
-
+function getUserPostcssConfig(
+  cwd: string = process.cwd(),
+  configFilename = 'postcss.config.js'
+): string {
   // Try package cwd
-  const pkgConfigPath = path.join(cwd, CONFIG_FILENAME);
+  const pkgConfigPath = path.join(cwd, configFilename);
 
   if (fs.existsSync(pkgConfigPath)) {
     return pkgConfigPath;
   }
 
   // Try monorepo cwd
-  const monoRepoConfigPath = path.join(getMonorepoRoot(cwd), CONFIG_FILENAME);
+  const monoRepoConfigPath = path.join(getMonorepoRoot(cwd), configFilename);
 
   if (fs.existsSync(monoRepoConfigPath)) {
     return monoRepoConfigPath;
@@ -78,17 +79,17 @@ export async function getPostCssConfig({
   configFile = require.resolve('./configs/postcss.config'),
   outDir = 'dist',
   cwd = process.cwd(),
-  reportError = true
+  reportError = true,
 }: LoadOptions) {
   const context = useModules
     ? {
         env: 'module',
-        outDir
+        outDir,
       }
     : {};
 
   try {
-    return await postcssload(context, getUserPostcssConfig(cwd));
+    return await postcssload(context, getUserPostcssConfig(cwd, configFile));
   } catch (error) {
     if (reportError) {
       reportConfigError(error);
@@ -105,12 +106,12 @@ export function getPostCssConfigSync({
   configFile = require.resolve('./configs/postcss.config'),
   outDir = 'dist',
   cwd = process.cwd(),
-  reportError = true
+  reportError = true,
 }: LoadOptions): PostCSSConfig {
   const context = useModules
     ? {
         env: 'module',
-        outDir
+        outDir,
       }
     : {};
 
@@ -151,14 +152,14 @@ export default async function transpile({
   inDir,
   outDir,
   configFile,
-  watch
+  watch,
 }: TranspileOptions): Promise<postcss.Result | void> {
   // Append .js to the end of the file so auto importing works
   const cssFile = getCSSPath(inFile, inDir, outDir);
   const { plugins, options } = await getPostCssConfig({
     useModules: true,
     configFile,
-    outDir
+    outDir,
   });
 
   const processor = postcss(plugins);
@@ -170,7 +171,7 @@ export default async function transpile({
       plugins,
       to: cssFile,
       from: inFile,
-      map: { inline: false }
+      map: { inline: false },
     });
 
     await fs.outputFile(
@@ -199,7 +200,7 @@ export default async function transpile({
           error.source,
           { start: { line, column } },
           { highlightCode: true }
-        )
+        ),
       });
     }
 

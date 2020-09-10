@@ -23,6 +23,13 @@ import transpileCSS, { getCSSPath } from './postcss';
 import { defaults } from './command';
 import TypescriptCompiler from './typescript';
 
+interface CSSBuild {
+  /** Name of the CSS build ex "main" */
+  name: string;
+  /** Path to the PostCSS configuration */
+  path: string;
+}
+
 export interface BuildArgs {
   /** Start the build in watch mode */
   watch: boolean;
@@ -35,9 +42,9 @@ export interface BuildArgs {
   /** The name of the concatenated css for the component */
   cssMain: string;
   /** Whether to add an automatic CSS import to the ESM entry */
-  importCss: boolean;
-  /** List of multiple extra PostCSS config files to run. */
-  multipleCss: string[];
+  cssImport: boolean;
+  /** List of multiple extra PostCSS config files to run */
+  cssConfigs: CSSBuild[];
   /** What files to ignore during the build. */
   ignore: string | string[];
 }
@@ -220,10 +227,12 @@ export default class BuildPlugin implements Plugin<BuildArgs> {
       case '.css': {
         this.logger.pending(`CSS -> ${file}`);
 
-        if (this.buildArgs.multipleCss.length === 0) {
+        if (this.buildArgs.cssConfigs.length === 0) {
           // Single PostCSS build
           const CSSMain = this.buildArgs.cssMain;
+          this.logger.trace(`Single PostCSS build requested`);
           if (!this.cssFiles[CSSMain]) {
+            this.logger.trace(`Creating map for ${CSSMain}`);
             this.cssFiles[CSSMain] = new Map<string, postcss.Result>();
           }
 
@@ -236,14 +245,10 @@ export default class BuildPlugin implements Plugin<BuildArgs> {
               watch: this.buildArgs.watch,
             })
               // Save the CSS output for merging later
-              .then(
-                (css) =>
-                  css &&
-                  this.cssFiles[this.buildArgs.cssMain].set(
-                    path.resolve(file),
-                    css
-                  )
-              )
+              .then((css) => {
+                this.logger.trace(`Completed CSS transpile for ${file}`);
+                css && this.cssFiles[CSSMain].set(path.resolve(file), css);
+              })
           );
         }
 
@@ -251,16 +256,14 @@ export default class BuildPlugin implements Plugin<BuildArgs> {
         const promises: Promise<
           void | postcss.Result | Map<string, postcss.Result>
         >[] = [];
-        for (const [buildName, configPath] of Object.entries(
-          this.buildArgs.multipleCss
-        )) {
+        for (const config of this.buildArgs.cssConfigs) {
           this.logger.trace(
             `Multiple CSS Builds detected, building file for ${makeCSSFilename(
-              buildName
+              config.name
             )}`
           );
-          if (!this.cssFiles[buildName]) {
-            this.cssFiles[buildName] = new Map<string, postcss.Result>();
+          if (!this.cssFiles[config.name]) {
+            this.cssFiles[config.name] = new Map<string, postcss.Result>();
           }
 
           promises.push(
@@ -268,13 +271,13 @@ export default class BuildPlugin implements Plugin<BuildArgs> {
               inFile: file,
               inDir: inputDirectory,
               outDir: outputDirectory,
-              configFile: configPath,
+              configFile: config.path,
               watch: this.buildArgs.watch,
             })
               // Save the CSS output for merging later
               .then(
                 (css) =>
-                  css && this.cssFiles[buildName].set(path.resolve(file), css)
+                  css && this.cssFiles[config.name].set(path.resolve(file), css)
               )
           );
         }
@@ -438,7 +441,7 @@ export default class BuildPlugin implements Plugin<BuildArgs> {
     this.buildArgs = { ...this.buildArgs, ...args };
     this.typescriptCompiler = new TypescriptCompiler(this.buildArgs);
     const startTime = Date.now();
-    const { watch, outputDirectory, importCss } = this.buildArgs;
+    const { watch, outputDirectory, cssImport } = this.buildArgs;
 
     // Since watching happens across everything in parallel,
     // leave any old build there for now
@@ -459,9 +462,13 @@ export default class BuildPlugin implements Plugin<BuildArgs> {
 
     // We need to wait until all the CSS is done before merging them
     const results = await Promise.all(transformed);
+    this.logger.trace(
+      'CSS Files after transform',
+      JSON.stringify(this.cssFiles, null, 3)
+    );
     await this.generateCSS();
 
-    if (importCss) {
+    if (cssImport) {
       await this.addCSSImport();
     }
 

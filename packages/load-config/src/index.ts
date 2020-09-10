@@ -39,7 +39,7 @@ export function getValidationSchema(command: CliCommand) {
   const schema: TypedSchema = {};
 
   if (command.options) {
-    command.options.forEach(option => {
+    command.options.forEach((option) => {
       if (!option.config) {
         return;
       }
@@ -48,7 +48,7 @@ export function getValidationSchema(command: CliCommand) {
         type:
           (option.type === String && 'string') ||
           (option.type === Number && 'number') ||
-          'boolean'
+          'boolean',
       };
 
       if (option.multiple) {
@@ -64,7 +64,7 @@ export function getValidationSchema(command: CliCommand) {
   }
 
   if ('commands' in command) {
-    command.commands.forEach(subCommand => {
+    command.commands.forEach((subCommand) => {
       const subSchema = getValidationSchema(subCommand);
 
       if (Object.keys(subSchema).length > 0) {
@@ -84,13 +84,24 @@ const templates = {
     name: { type: 'string' },
     url: { type: 'string' },
     description: { type: 'string' },
-    sha: { type: 'string' }
+    sha: { type: 'string' },
   },
-  multiple: true
+  multiple: true,
+};
+
+const postCSSBuilds = {
+  description: 'An object defining multiple CSS build configurations',
+  typeName: 'CSSBuild',
+  type: {
+    name: { type: 'string' },
+    path: { type: 'string' },
+  },
+  multiple: true,
 };
 
 export const extraConfigurableOptions = {
-  create: { package: { templates }, component: { templates } }
+  create: { package: { templates }, component: { templates } },
+  build: { cssConfigs: { postCSSBuilds } },
 };
 
 /** Construct a validation schema with extraConfigurableOptions */
@@ -127,7 +138,7 @@ export function validateConfig(schema: Schema, command: CliCommand): Schema {
     }
 
     const pathWithSubType = parts
-      .map(part => (isNaN(Number(part)) ? part : 'type'))
+      .map((part) => (isNaN(Number(part)) ? part : 'type'))
       .join('.');
 
     const type =
@@ -166,9 +177,9 @@ export function validateConfig(schema: Schema, command: CliCommand): Schema {
       Object.entries(config).map(([configPath, value]) => [
         configPath
           .split('.')
-          .map(part => camelCase(part))
+          .map((part) => camelCase(part))
           .join('.'),
-        value
+        value,
       ])
     )
   );
@@ -191,16 +202,16 @@ export function loadConfig({ cwd }: LoadConfigOptions = {}): Schema {
       `.${moduleName}rc.yml`,
       `.${moduleName}rc.js`,
       `${moduleName}.config.js`,
-      `${moduleName}.config.json`
+      `${moduleName}.config.json`,
     ],
 
     /** Transform the raw config into a full config (load extended config) */
-    transform: result => {
+    transform: (result) => {
       // Config extending ripped from https://github.com/prettier/prettier/pull/5963
       if (result && result.config) {
         if (typeof result.config === 'string') {
           const modulePath = resolve.sync(result.config, {
-            basedir: path.dirname(result.filepath)
+            basedir: path.dirname(result.filepath),
           });
 
           // eslint-disable-next-line no-param-reassign, no-eval
@@ -219,7 +230,7 @@ export function loadConfig({ cwd }: LoadConfigOptions = {}): Schema {
       }
 
       return result;
-    }
+    },
   });
 
   const results = explorer.search(cwd || process.cwd());
