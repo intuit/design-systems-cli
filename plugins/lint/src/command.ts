@@ -29,6 +29,13 @@ const command: CliCommand = {
         'A list of files to lint. Omit to automatically scan the repo.',
       multiple: true,
       defaultOption: true
+    },
+    {
+      name: 'max-warnings',
+      type: Number,
+      description: 'An optional maximum number of warnings to show.',
+      multiple: false,
+      defaultValue: 0
     }
   ]
 };

@@ -23,12 +23,12 @@ export default class LintPlugin implements Plugin<LintArgs> {
     }
 
     try {
-      const jsErrors = await lintJS(args);
-      const cssErrors = await lintCSS(args);
+      const jsReturnCode = await lintJS(args);
+      const cssReturnCode = await lintCSS(args);
 
-      logger.debug({ jsErrors, cssErrors });
+      logger.debug({ jsReturnCode, cssReturnCode });
 
-      if (jsErrors + cssErrors > 0) {
+      if (jsReturnCode + cssReturnCode > 0) {
         process.exit(1);
       }
     } catch (e) {

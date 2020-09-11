@@ -9,6 +9,8 @@ export interface LintArgs {
     annotate?: boolean;
     /** An optional list of files to lint */
     files?: string[];
+    /** An optional maximum number of warnings to show */
+    maxWarnings?: number;
 }
 
 export type StylelintResult = stylelint.LinterResult & {
