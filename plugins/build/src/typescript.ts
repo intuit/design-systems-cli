@@ -1,7 +1,7 @@
 import {
   createLogger,
   getLogLevel,
-  getMonorepoRoot
+  getMonorepoRoot,
 } from '@design-systems/cli-utils';
 import fs from 'fs';
 import path from 'path';
@@ -42,7 +42,7 @@ const FORMAT_HOST = {
   getNewLine: () => ts.sys.newLine,
   /** Implement ts compiler getCanonicalFileName */
   getCanonicalFileName: (filename: string) =>
-    ts.sys.useCaseSensitiveFileNames ? filename : filename.toLowerCase()
+    ts.sys.useCaseSensitiveFileNames ? filename : filename.toLowerCase(),
 };
 
 /** Determine the relative file name to the file */
@@ -64,7 +64,7 @@ function relativeFile(file: ts.SourceFile) {
     fileName: path.relative(
       process.env.INIT_CWD || process.cwd(),
       file.fileName
-    )
+    ),
   };
 }
 
@@ -76,15 +76,15 @@ async function processCss(
   const ignore = ['node_modules', '.d.ts'];
   const files = project
     .getSourceFiles()
-    .filter(f => !ignore.find(i => f.fileName.includes(i)));
+    .filter((f) => !ignore.find((i) => f.fileName.includes(i)));
   const pendingCssResults = new Map<string, postcss.LazyResult>();
 
-  const cssPromises = files.map(async file => {
+  const cssPromises = files.map(async (file) => {
     const styles = new Map<string, Record<string, string>>();
     const results: [string, postcss.LazyResult][] = [];
 
     // 1. Find all css imports
-    file.forEachChild(node => {
+    file.forEachChild((node) => {
       // Dealing with "import * as css from 'foo.css'" only since namedImports variables get mangled
       if (
         ts.isImportDeclaration(node) &&
@@ -107,8 +107,8 @@ async function processCss(
                   start: node.moduleSpecifier.getStart(),
                   length: node.moduleSpecifier.getText().length,
                   file: relativeFile(file),
-                  code: 1337
-                }
+                  code: 1337,
+                },
               ],
               FORMAT_HOST
             )
@@ -121,7 +121,7 @@ async function processCss(
           results.push([importVar, pending]);
         } else {
           const promise = processor.process(fs.readFileSync(cssPath, 'utf8'), {
-            from: cssPath
+            from: cssPath,
           });
 
           pendingCssResults.set(cssPath, promise);
@@ -174,15 +174,15 @@ export default class TypescriptCompiler {
     this.logger.trace('Generating Types...');
 
     const ignoredPatterns = [
-      "**/*.snippet.*",
-      ...Array.isArray(this.buildArgs.ignore)
+      '**/*.snippet.*',
+      ...(Array.isArray(this.buildArgs.ignore)
         ? this.buildArgs.ignore
-        : [this.buildArgs.ignore],
+        : [this.buildArgs.ignore]),
     ];
-    
+
     /** Determine if a file should not be type-checked or emitted */
     const isIgnored = (file: string) =>
-      ignoredPatterns.some(pattern => minimatch(file, pattern));
+      ignoredPatterns.some((pattern) => minimatch(file, pattern));
 
     try {
       const diagnostics: ts.Diagnostic[] = [];
@@ -194,12 +194,12 @@ export default class TypescriptCompiler {
               return;
             }
 
-            fs.writeFileSync(fileName, content)
+            fs.writeFileSync(fileName, content);
           },
           readFile(fileName, encoding = 'utf8') {
             if (fs.existsSync(fileName)) {
               let content = fs.readFileSync(fileName, encoding);
-              
+
               if (isIgnored(fileName)) {
                 // Don't type check stories
                 content = '// @ts-nocheck';
@@ -207,11 +207,11 @@ export default class TypescriptCompiler {
 
               return content;
             }
-          }
+          },
         },
         undefined,
-        d => diagnostics.push(d),
-        d => this.logger.trace(d.messageText)
+        (d) => diagnostics.push(d),
+        (d) => this.logger.trace(d.messageText)
       );
 
       // The following options are not public but we want to override them
@@ -233,7 +233,7 @@ export default class TypescriptCompiler {
       const postcssConfig = getPostCssConfigSync({
         cwd: getMonorepoRoot(),
         useModules: false,
-        reportError: false
+        reportError: false,
       });
 
       const cssProcessor = postcss([
@@ -241,8 +241,8 @@ export default class TypescriptCompiler {
         postcssIcssSelectors({
           mode: 'local',
           /** Create the scope for the css selectors */
-          generateScopedName: name => name
-        })
+          generateScopedName: (name) => name,
+        }),
       ]);
 
       let project = solution.getNextInvalidatedProject();
@@ -251,12 +251,11 @@ export default class TypescriptCompiler {
         let css = new Map<string, Map<string, Record<string, string>>>();
 
         if ('getSourceFiles' in project) {
-          // eslint-disable-next-line no-await-in-loop
           css = await processCss(cssProcessor, project);
         }
 
         project.done(undefined, undefined, {
-          afterDeclarations: [this.findStyleUsage(css)]
+          afterDeclarations: [this.findStyleUsage(css)],
         });
 
         project = solution.getNextInvalidatedProject();
@@ -266,9 +265,9 @@ export default class TypescriptCompiler {
         const formattedDiagnostics = ts.formatDiagnosticsWithColorAndContext(
           diagnostics
             .sort((a, b) => (a.start || 0) - (b.start || 0))
-            .map(d => ({
+            .map((d) => ({
               ...d,
-              file: d.file ? relativeFile(d.file) : undefined
+              file: d.file ? relativeFile(d.file) : undefined,
             })),
           FORMAT_HOST
         );
@@ -297,7 +296,7 @@ export default class TypescriptCompiler {
   ) {
     return (
       ctx: ts.TransformationContext
-    ): ts.Transformer<ts.SourceFile | ts.Bundle> => sf => {
+    ): ts.Transformer<ts.SourceFile | ts.Bundle> => (sf) => {
       if (!('fileName' in sf)) {
         return sf;
       }
@@ -312,7 +311,7 @@ export default class TypescriptCompiler {
 
           if (style) {
             const classes = Object.keys(style);
-            const camelClasses = classes.map(s => camelCase(s));
+            const camelClasses = classes.map((s) => camelCase(s));
             const className = node.name.getText();
             const exists = Boolean(
               classes.includes(className) || camelClasses.includes(className)
@@ -326,7 +325,7 @@ export default class TypescriptCompiler {
                 start: node.name.getStart(),
                 length: className.length,
                 file: sf,
-                code: 1337
+                code: 1337,
               });
             }
           }
