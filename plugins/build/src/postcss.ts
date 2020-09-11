@@ -26,6 +26,7 @@ function getUserPostcssConfig(
   cwd: string = process.cwd(),
   configFilename = 'postcss.config.js'
 ): string {
+  logger.trace('Getting User PostCSS config at', configFilename);
   // Try package cwd
   const pkgConfigPath = path.join(cwd, configFilename);
 
@@ -116,7 +117,7 @@ export function getPostCssConfigSync({
     : {};
 
   try {
-    return postcssload.sync(context, getUserPostcssConfig(cwd));
+    return postcssload.sync(context, getUserPostcssConfig(cwd, configFile));
   } catch (error) {
     if (reportError) {
       reportConfigError(error);

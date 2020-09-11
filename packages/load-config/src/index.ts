@@ -101,7 +101,7 @@ const postCSSBuilds = {
 
 export const extraConfigurableOptions = {
   create: { package: { templates }, component: { templates } },
-  build: { cssConfigs: { postCSSBuilds } },
+  build: { cssConfigs: postCSSBuilds },
 };
 
 /** Construct a validation schema with extraConfigurableOptions */
