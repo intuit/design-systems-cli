@@ -9,7 +9,7 @@ export interface LintArgs {
     annotate?: boolean;
     /** An optional list of files to lint */
     files?: string[];
-    /** An optional maximum number of warnings to show */
+    /** An optional number of warnings to trigger nonzero exit code, default: 1 */
     maxWarnings?: number;
 }
 

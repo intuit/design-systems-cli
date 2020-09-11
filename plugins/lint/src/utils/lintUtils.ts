@@ -75,7 +75,7 @@ async function lintJS(args: LintArgs): Promise<number> {
     args.files ? files(args, 'ts|tsx|js|jsx|mdx') : lintFiles
   );
 
-  const maxWarnings = args.maxWarnings ? args.maxWarnings : 0;
+  const maxWarnings = args.maxWarnings ? args.maxWarnings : 1;
 
   if (args.fix) {
     CLIEngine.outputFixes(report);
@@ -88,7 +88,7 @@ async function lintJS(args: LintArgs): Promise<number> {
 
   if (report.errorCount > 0) {
     logger.error('Project contains JS errors', formattedResults);
-  } else if (report.warningCount > maxWarnings) {
+  } else if (report.warningCount >= maxWarnings) {
     logger.warn('Project contains JS warnings (maximum allowable: %s)', maxWarnings, formattedResults);
   } else {
     logger.success('JS');
@@ -98,7 +98,7 @@ async function lintJS(args: LintArgs): Promise<number> {
     await createESLintAnnotations(report.results);
   }
 
-  const returnCode = (report.errorCount > 0 || report.warningCount > maxWarnings) ? 1 : 0;
+  const returnCode = (report.errorCount > 0 || report.warningCount >= maxWarnings) ? 1 : 0;
   return returnCode;
 }
 

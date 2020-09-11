@@ -33,9 +33,9 @@ const command: CliCommand = {
     {
       name: 'max-warnings',
       type: Number,
-      description: 'An optional maximum number of warnings to show.',
+      description: 'Number of warnings to trigger nonzero exit code.',
       multiple: false,
-      defaultValue: 0
+      defaultValue: 1
     }
   ]
 };
