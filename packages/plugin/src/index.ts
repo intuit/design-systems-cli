@@ -32,7 +32,7 @@ export type MultiCommand = Overwrite<
 export type CliCommand = Command | MultiCommand;
 
 /** A plugin to the @design-systems/cli */
-export interface Plugin<T = any> {
+export interface Plugin<T = unknown> {
   /** Ran when the user inputs the registered command */
   run(args: T): Promise<void>;
 }

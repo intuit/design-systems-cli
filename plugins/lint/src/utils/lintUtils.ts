@@ -89,7 +89,7 @@ async function lintJS(args: LintArgs): Promise<number> {
   if (report.errorCount > 0) {
     logger.error('Project contains JS errors', formattedResults);
   } else if (report.warningCount >= maxWarnings) {
-    logger.warn('Project contains JS warnings (maximum allowable: %s)', maxWarnings, formattedResults);
+    logger.warn('Project contains JS warnings (maximum allowable: %s)', maxWarnings-1, formattedResults);
   } else {
     logger.success('JS');
   }
@@ -98,8 +98,7 @@ async function lintJS(args: LintArgs): Promise<number> {
     await createESLintAnnotations(report.results);
   }
 
-  const returnCode = (report.errorCount > 0 || report.warningCount >= maxWarnings) ? 1 : 0;
-  return returnCode;
+  return (report.errorCount > 0 || report.warningCount >= maxWarnings) ? 1 : 0;
 }
 
 /** Link CSS */
