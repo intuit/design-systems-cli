@@ -154,12 +154,14 @@ export default class BuildPlugin implements Plugin<BuildArgs> {
         makeCSSFilename(buildName)
       );
 
+      this.logger.info('Starting cleaning for ', outFile);
       const clean = new CleanCSS({
         sourceMap: true,
         sourceMapInlineSources: true,
         level: this.buildArgs.cssOptimizationLevel,
         rebase: false,
         rebaseTo: this.buildArgs.outputDirectory,
+        returnPromise: true,
       });
 
       const cssToMinify = Array.from(files.entries()).map(
@@ -173,42 +175,52 @@ export default class BuildPlugin implements Plugin<BuildArgs> {
         })
       );
 
-      const minified = clean.minify(
-        this.hooks.processCSSFiles.call(cssToMinify) || cssToMinify
-      );
+      this.logger.info('Minifying ', outFile);
+      try {
+        const minified = await clean.minify(
+          this.hooks.processCSSFiles.call(cssToMinify) || cssToMinify
+        );
 
-      if (minified.errors.length > 0) {
-        this.logger.debug('Errors\n\n', minified.errors.join('\n '), '\n');
+        if (minified.errors.length > 0) {
+          this.logger.debug('Errors\n\n', minified.errors.join('\n '), '\n');
+        }
+
+        if (minified.warnings.length > 0) {
+          this.logger.debug(
+            'Warnings\n\n',
+            minified.warnings.join('\n '),
+            '\n'
+          );
+        }
+
+        const duration = formatTime(minified.stats.timeSpent);
+        const efficiency = minified.stats.efficiency.toPrecision(2);
+        const difference = formatBytes(
+          minified.stats.originalSize - minified.stats.minifiedSize
+        );
+
+        this.logger.debug(dedent`
+        CSS minification results:
+  
+        Original: ${formatBytes(minified.stats.originalSize)}
+        Minified: ${formatBytes(minified.stats.minifiedSize)}
+  
+        ${difference} -${efficiency}% ${duration}\n
+      `);
+
+        await fs.outputFile(`${outFile}.map`, minified.sourceMap);
+        await fs.outputFile(
+          outFile,
+          `${minified.styles}\n/*# sourceMappingURL=${makeCSSFilename(
+            buildName
+          )}.map */`
+        );
+
+        this.logger.complete(`Generated merged ${makeCSSFilename(buildName)}`);
+      } catch (e) {
+        this.logger.error('Error minifying ', outFile, e);
+        this.logger.trace(cssToMinify);
       }
-
-      if (minified.warnings.length > 0) {
-        this.logger.debug('Warnings\n\n', minified.warnings.join('\n '), '\n');
-      }
-
-      const duration = formatTime(minified.stats.timeSpent);
-      const efficiency = minified.stats.efficiency.toPrecision(2);
-      const difference = formatBytes(
-        minified.stats.originalSize - minified.stats.minifiedSize
-      );
-
-      this.logger.debug(dedent`
-      CSS minification results:
-
-      Original: ${formatBytes(minified.stats.originalSize)}
-      Minified: ${formatBytes(minified.stats.minifiedSize)}
-
-      ${difference} -${efficiency}% ${duration}\n
-    `);
-
-      await fs.outputFile(`${outFile}.map`, minified.sourceMap);
-      await fs.outputFile(
-        outFile,
-        `${minified.styles}\n/*# sourceMappingURL=${makeCSSFilename(
-          buildName
-        )}.map */`
-      );
-
-      this.logger.complete(`Generated merged ${makeCSSFilename(buildName)}`);
     }
   };
 
