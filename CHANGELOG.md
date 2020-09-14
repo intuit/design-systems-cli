@@ -1,3 +1,16 @@
+# v2.2.0 (Mon Sep 14 2020)
+
+#### 🚀 Enhancement
+
+- `@design-systems/build`
+  - add css optimization level flag [#490](https://github.com/intuit/design-systems-cli/pull/490) ([@hipstersmoothie](https://github.com/hipstersmoothie))
+
+#### Authors: 1
+
+- Andrew Lisowski ([@hipstersmoothie](https://github.com/hipstersmoothie))
+
+---
+
 # v2.1.0 (Mon Sep 14 2020)
 
 :tada: This release contains work from a new contributor! :tada:

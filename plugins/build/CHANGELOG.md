@@ -1,3 +1,19 @@
+# v2.2.0 (Mon Sep 14 2020)
+
+#### 🚀 Enhancement
+
+- add css optimization level flag [#490](https://github.com/intuit/design-systems-cli/pull/490) ([@hipstersmoothie](https://github.com/hipstersmoothie))
+
+#### 🐛 Bug Fix
+
+- add css optimization level ([@hipstersmoothie](https://github.com/hipstersmoothie))
+
+#### Authors: 1
+
+- Andrew Lisowski ([@hipstersmoothie](https://github.com/hipstersmoothie))
+
+---
+
 # v2.0.2 (Mon Aug 31 2020)
 
 #### 🐛 Bug Fix
