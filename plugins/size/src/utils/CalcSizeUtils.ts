@@ -175,16 +175,16 @@ function getChangedPackages() {
 
     return packages
       .map((p: string) => JSON.parse(p))
-      .filter((json: Record<string, any>) =>
+      .filter((json: Record<string, unknown>) =>
         changedFiles.some((file) => {
-          const hasChangedFiles = file.includes(json.location);
+          const hasChangedFiles = file.includes(String(json.location));
 
           if (hasChangedFiles) {
-            changedDeps.push(json.name);
+            changedDeps.push(String(json.name));
           } else {
             // Check if a dep has changed too
             const packageJson = JSON.parse(
-              fs.readFileSync(path.join(json.location, 'package.json'), {
+              fs.readFileSync(path.join(String(json.location), 'package.json'), {
                 encoding: 'utf-8',
               })
             );
@@ -193,7 +193,7 @@ function getChangedPackages() {
             );
 
             if (hasChangedDep) {
-              changedDeps.push(json.name);
+              changedDeps.push(String(json.name));
               return hasChangedDep;
             }
           }
@@ -201,7 +201,7 @@ function getChangedPackages() {
           return hasChangedFiles;
         })
       )
-      .map((json: Record<string, any>) => {
+      .map((json) => {
         return { location: json.location, package: { ...json } };
       });
   } catch (error) {
