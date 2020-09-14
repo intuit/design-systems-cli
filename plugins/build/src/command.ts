@@ -3,6 +3,7 @@ import dedent from 'dedent';
 
 export const defaults = {
   watch: false,
+  cssOptimizationLevel: 2 as const,
   inputDirectory: 'src',
   outputDirectory: 'dist',
   cssMain: 'main.css',
@@ -33,6 +34,13 @@ const command: CliCommand = {
       description: 'A minimatch to ignore',
       defaultValue: defaults.ignore,
       config: true
+    },
+    {
+      name: 'css-optimization-level',
+      type: Number,
+      description: 'What clean-css optimization level to use',
+      defaultValue: defaults.cssOptimizationLevel,
+      config: true,
     }
   ],
   footer: [
