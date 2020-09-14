@@ -26,6 +26,8 @@ import TypescriptCompiler from './typescript';
 export interface BuildArgs {
   /** Start the build in watch mode */
   watch: boolean;
+  /** Optimization level for clean-css */
+  cssOptimizationLevel: 0 | 1 | 2;
   /** Directory with all the source files */
   inputDirectory: string;
   /** Directory to place all the build files */
@@ -84,7 +86,7 @@ export default class BuildPlugin implements Plugin<BuildArgs> {
     const clean = new CleanCSS({
       sourceMap: true,
       sourceMapInlineSources: true,
-      level: 2,
+      level: this.buildArgs.cssOptimizationLevel,
       rebase: false,
       rebaseTo: this.buildArgs.outputDirectory
     });
