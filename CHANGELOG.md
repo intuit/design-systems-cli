@@ -1,3 +1,16 @@
+# v2.2.1 (Mon Sep 14 2020)
+
+#### 🐛 Bug Fix
+
+- `@design-systems/lint`
+  - increase max number of lint warnings default [#491](https://github.com/intuit/design-systems-cli/pull/491) ([@hipstersmoothie](https://github.com/hipstersmoothie))
+
+#### Authors: 1
+
+- Andrew Lisowski ([@hipstersmoothie](https://github.com/hipstersmoothie))
+
+---
+
 # v2.2.0 (Mon Sep 14 2020)
 
 #### 🚀 Enhancement
