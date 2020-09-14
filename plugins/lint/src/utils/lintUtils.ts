@@ -89,7 +89,12 @@ async function lintJS(args: LintArgs): Promise<number> {
   if (report.errorCount > 0) {
     logger.error('Project contains JS errors', formattedResults);
   } else if (report.warningCount >= maxWarnings) {
-    logger.warn('Project contains JS warnings (maximum allowable: %s)', maxWarnings-1, formattedResults);
+    logger.warn(
+      `Project contains JS warnings (maximum allowable: ${maxWarnings - 1})`,
+      formattedResults
+    );
+  } else if (report.warningCount > 0) {
+    logger.warn('Project contains JS warnings', formattedResults);
   } else {
     logger.success('JS');
   }
