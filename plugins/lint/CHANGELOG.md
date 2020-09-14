@@ -1,3 +1,16 @@
+# v2.2.2 (Mon Sep 14 2020)
+
+#### 🐛 Bug Fix
+
+- still print warnings if they are present [#492](https://github.com/intuit/design-systems-cli/pull/492) ([@hipstersmoothie](https://github.com/hipstersmoothie))
+- still print warnings if they are present ([@hipstersmoothie](https://github.com/hipstersmoothie))
+
+#### Authors: 1
+
+- Andrew Lisowski ([@hipstersmoothie](https://github.com/hipstersmoothie))
+
+---
+
 # v2.2.1 (Mon Sep 14 2020)
 
 #### 🐛 Bug Fix
