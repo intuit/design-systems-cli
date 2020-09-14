@@ -1,3 +1,20 @@
+# v2.1.0 (Mon Sep 14 2020)
+
+:tada: This release contains work from a new contributor! :tada:
+
+Thank you, Athitya Kumar ([@athityakumar](https://github.com/athityakumar)), for all your work!
+
+#### 🚀 Enhancement
+
+- `@design-systems/plugin`, `@design-systems/lint`, `@design-systems/size`
+  - Adds support for --max-warnings flag in lint command [#485](https://github.com/intuit/design-systems-cli/pull/485) ([@athityakumar](https://github.com/athityakumar))
+
+#### Authors: 1
+
+- Athitya Kumar ([@athityakumar](https://github.com/athityakumar))
+
+---
+
 # v2.0.4 (Fri Sep 04 2020)
 
 #### 🐛 Bug Fix
