@@ -1,6 +1,6 @@
 {
   "name": "@design-systems/bundle",
-  "version": "2.2.0",
+  "version": "2.2.1",
   "description": "The bundle command for @design-systems-cli",
   "main": "dist/index.js",
   "author": "Adam Dierkens <adam@dierkens.com>",
