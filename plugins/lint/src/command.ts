@@ -35,7 +35,7 @@ const command: CliCommand = {
       type: Number,
       description: 'Number of warnings to trigger nonzero exit code.',
       multiple: false,
-      defaultValue: 1
+      defaultValue: Number.MAX_SAFE_INTEGER
     }
   ]
 };
