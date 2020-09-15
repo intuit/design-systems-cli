@@ -265,9 +265,6 @@ export default class BuildPlugin implements Plugin<BuildArgs> {
         }
 
         // Multiple PostCSS Builds
-        const promises: Promise<
-          void | postcss.Result | Map<string, postcss.Result>
-        >[] = [];
         for (const config of this.buildArgs.cssConfigs) {
           this.logger.trace(
             `Multiple CSS Builds detected, building file for ${makeCSSFilename(
@@ -278,23 +275,20 @@ export default class BuildPlugin implements Plugin<BuildArgs> {
             this.cssFiles[config.name] = new Map<string, postcss.Result>();
           }
 
-          promises.push(
-            transpileCSS({
-              inFile: file,
-              inDir: inputDirectory,
-              outDir: outputDirectory,
-              configFile: config.path,
-              watch: this.buildArgs.watch,
-            })
-              // Save the CSS output for merging later
-              .then(
-                (css) =>
-                  css && this.cssFiles[config.name].set(path.resolve(file), css)
-              )
-          );
+          const css = await transpileCSS({
+            inFile: file,
+            inDir: inputDirectory,
+            outDir: outputDirectory,
+            configFile: config.path,
+            watch: this.buildArgs.watch,
+          });
+
+          if (css) {
+            this.cssFiles[config.name].set(path.resolve(file), css);
+          }
         }
 
-        return Promise.all(promises);
+        break;
       }
 
       case '.js':
@@ -346,13 +340,11 @@ export default class BuildPlugin implements Plugin<BuildArgs> {
     }
 
     if (file.includes('theme.')) {
-      await Promise.all(
-        Object.keys(this.cssFiles).map((buildName) => {
-          return [...this.cssFiles[buildName].keys()].map(async (cssFile) =>
-            this.transformFile(cssFile)
-          );
-        })
-      );
+      for (const files of Object.values(this.cssFiles)) {
+        await Promise.all(
+          [...files.keys()].map(async (cssFile) => this.transformFile(cssFile))
+        );
+      }
     }
 
     if (extname === '.css' || file.includes('theme.')) {
