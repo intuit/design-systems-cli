@@ -279,7 +279,8 @@ export default class BuildPlugin implements Plugin<BuildArgs> {
             inFile: file,
             inDir: inputDirectory,
             outDir: outputDirectory,
-            configFile: config.path,
+            configFile: POSTCSS_CONFIG,
+            multiBuildConfigFile: config.path,
             watch: this.buildArgs.watch,
           });
 

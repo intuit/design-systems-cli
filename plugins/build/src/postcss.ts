@@ -23,6 +23,7 @@ export function getCSSPath(inFile: string, inDir: string, outDir: string) {
  * path. Defaults to empty string.
  */
 function getUserPostcssConfig(
+  multiBuildConfigFile?: string,
   cwd: string = process.cwd(),
   configFilename = 'postcss.config.js'
 ): string {
@@ -32,6 +33,18 @@ function getUserPostcssConfig(
 
   if (fs.existsSync(pkgConfigPath)) {
     return pkgConfigPath;
+  }
+
+  if (multiBuildConfigFile) {
+    // Try multi-build cwd
+    const monoRepoConfigPath = path.join(
+      getMonorepoRoot(cwd),
+      multiBuildConfigFile
+    );
+
+    if (fs.existsSync(monoRepoConfigPath)) {
+      return monoRepoConfigPath;
+    }
   }
 
   // Try monorepo cwd
@@ -50,6 +63,8 @@ interface LoadOptions {
   useModules?: boolean;
   /** The path to the config file */
   configFile?: string;
+  /** The path to the multibuild config file */
+  multiBuildConfigFile?: string;
   /** Where to store the build results */
   outDir?: string;
   /** Dir to start looking for configs in */
@@ -78,6 +93,7 @@ const reportConfigError = (error: Error) => {
 export async function getPostCssConfig({
   useModules,
   configFile = require.resolve('./configs/postcss.config'),
+  multiBuildConfigFile = undefined,
   outDir = 'dist',
   cwd = process.cwd(),
   reportError = true,
@@ -90,7 +106,10 @@ export async function getPostCssConfig({
     : {};
 
   try {
-    return await postcssload(context, getUserPostcssConfig(cwd, configFile));
+    return await postcssload(
+      context,
+      getUserPostcssConfig(multiBuildConfigFile, cwd)
+    );
   } catch (error) {
     if (reportError) {
       reportConfigError(error);
@@ -105,6 +124,7 @@ export async function getPostCssConfig({
 export function getPostCssConfigSync({
   useModules,
   configFile = require.resolve('./configs/postcss.config'),
+  multiBuildConfigFile = undefined,
   outDir = 'dist',
   cwd = process.cwd(),
   reportError = true,
@@ -117,7 +137,10 @@ export function getPostCssConfigSync({
     : {};
 
   try {
-    return postcssload.sync(context, getUserPostcssConfig(cwd, configFile));
+    return postcssload.sync(
+      context,
+      getUserPostcssConfig(multiBuildConfigFile, cwd)
+    );
   } catch (error) {
     if (reportError) {
       reportConfigError(error);
@@ -137,6 +160,8 @@ interface TranspileOptions {
   outDir: string;
   /** Where the postcss.config is */
   configFile: string;
+  /** A multibuild config file to use if not overridden */
+  multiBuildConfigFile?: string;
   /** The builder was started in watch mode */
   watch: boolean;
 }
@@ -153,6 +178,7 @@ export default async function transpile({
   inDir,
   outDir,
   configFile,
+  multiBuildConfigFile,
   watch,
 }: TranspileOptions): Promise<postcss.Result | void> {
   // Append .js to the end of the file so auto importing works
@@ -160,6 +186,7 @@ export default async function transpile({
   const { plugins, options } = await getPostCssConfig({
     useModules: true,
     configFile,
+    multiBuildConfigFile,
     outDir,
   });
 
