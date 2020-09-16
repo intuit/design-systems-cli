@@ -130,7 +130,7 @@ export default class BuildPlugin implements Plugin<BuildArgs> {
     try {
       fs.appendFileSync(
         entry,
-        `\nimport "../${makeCSSFilename(this.buildArgs.cssMain)}"`
+        `\nimport "../${makeCSSFilename(this.buildArgs.cssMain)}";`
       );
       this.logger.complete('Added CSS import to module entry');
     } catch (e) {
