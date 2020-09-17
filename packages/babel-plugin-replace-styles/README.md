@@ -47,3 +47,20 @@ Output:
 ```js
 import '../prefixed.css';
 ```
+
+Notes for setup:
+
+`babel-loader` will _not_ parse `node_modules` by default. You'll need to use [babel.config.json](https://babeljs.io/docs/en/configuration#babelconfigjs) (a `.babelrc` will not work), and you'll need to configure webpack to parse your node_modules. I've provided an example below:
+
+```js
+module: {
+      rules: [
+        {
+          include: [
+            path.join(__dirname, 'node_modules/@your-ds/'),
+            path.join(__dirname, 'src'),
+          ],
+          test: /\.(js|jsx|mjs|tsx|ts)$/,
+          loader: 'babel-loader',
+        },
+```
