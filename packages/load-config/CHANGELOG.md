@@ -1,3 +1,39 @@
+# v2.3.0 (Fri Sep 18 2020)
+
+### Release Notes
+
+_From #487_
+
+#### CSS Auto Imports
+
+The `build` plugin now supports a `cssImport` option, which automatically inserts an import for your main CSS output into the entry of your ESM build. This will make CSS work automatically for your design system users!
+
+#### Multi-Build CSS
+
+the `build` plugin now supports a `cssConfigs` option which will run multiple PostCSS builds for your CSS source. You can use this to, for example, make a second IE11 prefixed build of your styles.
+
+#### babel-plugin-replace-styles
+
+We added a new babel plugin that allows you to switch between multi-build CSS files, by modifying any automatic imports.
+
+---
+
+#### 🚀 Enhancement
+
+- Multi-Build CSS & CSS ESM Imports [#487](https://github.com/intuit/design-systems-cli/pull/487) ([@tylerkrupicka](https://github.com/tylerkrupicka) [@hipstersmoothie](https://github.com/hipstersmoothie))
+
+#### 🐛 Bug Fix
+
+- minor fixes for multi css build config ([@tylerkrupicka](https://github.com/tylerkrupicka))
+- iron out configuration ([@tylerkrupicka](https://github.com/tylerkrupicka))
+
+#### Authors: 2
+
+- Andrew Lisowski ([@hipstersmoothie](https://github.com/hipstersmoothie))
+- Tyler Krupicka ([@tylerkrupicka](https://github.com/tylerkrupicka))
+
+---
+
 # v2.2.2 (Mon Sep 14 2020)
 
 #### 🐛 Bug Fix
