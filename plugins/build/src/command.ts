@@ -96,6 +96,40 @@ const command: CliCommand = {
         \`\`\`
       `,
     },
+    {
+      header: 'Multi-Build CSS',
+      content: [
+        dedent`
+          If you want your project to build _multiple_ output CSS files, you can set up multiple PostCSS configs to be run.
+
+          Our PostCSS config loader requires normal PostCSS config filenames, so you'll need to put the files in separate directories.
+          The example below will generate two css files: \`main.css\` and \`alternate.css\`.
+        `,
+      ],
+    },
+    {
+      code: true,
+      content: dedent`
+        \`\`\`js
+        {
+          "build": {
+            "cssImport": true,
+            "cssMain": "main",
+            "cssConfigs": [
+              {
+                "name": "main",
+                "path": "./postcss/main/postcss.config.js"
+              },
+              {
+                "name": "alternate",
+                "path": "./postcss/alternate/postcss.config.js"
+              }
+            ]
+          }
+        }
+        \`\`\`
+      `,
+    },
   ],
 };
 
