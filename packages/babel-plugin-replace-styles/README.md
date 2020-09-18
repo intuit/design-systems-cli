@@ -56,13 +56,15 @@ Notes for setup:
 
 ```js
 module: {
-      rules: [
-        {
-          include: [
-            path.join(__dirname, 'node_modules/@your-ds/'),
-            path.join(__dirname, 'src'),
-          ],
-          test: /\.(js|jsx|mjs|tsx|ts)$/,
-          loader: 'babel-loader',
-        },
+  rules: [
+    {
+      include: [
+        path.join(__dirname, 'node_modules/@your-ds/'),
+        path.join(__dirname, 'src'),
+      ],
+      test: /\.(js|jsx|mjs|tsx|ts)$/,
+      loader: 'babel-loader',
+    },
+  ];
+}
 ```
