@@ -27,7 +27,7 @@ babel.config.json:
   "plugins": [
     [
       "@design-systems/babel-plugin-include-styles",
-      { "scope": "my-scope", "replace": "main", "use": "prefixed" }
+      { "scope": "your-ds", "replace": "main", "use": "prefixed" }
     ]
   ]
 }
