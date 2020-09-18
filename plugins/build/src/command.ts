@@ -7,13 +7,15 @@ export const defaults = {
   inputDirectory: 'src',
   outputDirectory: 'dist',
   cssMain: 'main.css',
+  cssImport: false,
+  cssConfigs: [],
   ignore: [
     '**/*.+(md|mdx)',
     '**/__tests__/**',
     '**/__snapshots__/**',
     '**/*.+(stories|test).*',
-    '**/stories/*'
-  ]
+    '**/stories/*',
+  ],
 };
 
 const command: CliCommand = {
@@ -25,7 +27,7 @@ const command: CliCommand = {
       name: 'watch',
       alias: 'w',
       type: Boolean,
-      description: 'Watch for file changes and recompile.'
+      description: 'Watch for file changes and recompile.',
     },
     {
       name: 'ignore',
@@ -33,7 +35,7 @@ const command: CliCommand = {
       multiple: true,
       description: 'A minimatch to ignore',
       defaultValue: defaults.ignore,
-      config: true
+      config: true,
     },
     {
       name: 'css-optimization-level',
@@ -41,13 +43,27 @@ const command: CliCommand = {
       description: 'What clean-css optimization level to use',
       defaultValue: defaults.cssOptimizationLevel,
       config: true,
-    }
+    },
+    {
+      name: 'cssMain',
+      type: String,
+      description: 'Customaize the name of the main output css file.',
+      defaultValue: defaults.cssMain,
+      config: true,
+    },
+    {
+      name: 'cssImport',
+      type: Boolean,
+      description: 'Automatically add a CSS import into the ESM output file.',
+      defaultValue: defaults.cssImport,
+      config: true,
+    },
   ],
   footer: [
     {
       header: 'Custom Babel Config',
       content:
-        'To customize your babel configuration, create a .babelrc at the root of the project.'
+        'To customize your babel configuration, create a .babelrc at the root of the project.',
     },
     {
       header: 'Custom PostCSS Config',
@@ -56,8 +72,8 @@ const command: CliCommand = {
           To customize your postcss configuration, create a postcss.config.js at your package or monorepo root.
 
           It must use the base config for css modules to function properly.
-        `
-      ]
+        `,
+      ],
     },
     {
       code: true,
@@ -78,9 +94,46 @@ const command: CliCommand = {
           }
         });
         \`\`\`
-      `
-    }
-  ]
+      `,
+    },
+    {
+      header: 'Multi-Build CSS',
+      content: [
+        dedent`
+          If you want your project to build _multiple_ output CSS files, you can set up multiple PostCSS configs to be run.
+
+          Our PostCSS config loader requires normal PostCSS config filenames, so you'll need to put the files in separate directories.
+          The example below will generate two css files: \`main.css\` and \`alternate.css\`.
+
+          You can also use this in conjunction with our [postcss-themed](https://github.com/intuit/postcss-themed) package to create
+          a different CSS file per theme!
+        `,
+      ],
+    },
+    {
+      code: true,
+      content: dedent`
+        \`\`\`js
+        {
+          "build": {
+            "cssImport": true,
+            "cssMain": "main",
+            "cssConfigs": [
+              {
+                "name": "main",
+                "path": "./postcss/main/postcss.config.js"
+              },
+              {
+                "name": "alternate",
+                "path": "./postcss/alternate/postcss.config.js"
+              }
+            ]
+          }
+        }
+        \`\`\`
+      `,
+    },
+  ],
 };
 
 export default command;

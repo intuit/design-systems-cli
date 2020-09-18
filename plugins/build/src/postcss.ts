@@ -22,18 +22,33 @@ export function getCSSPath(inFile: string, inDir: string, outDir: string) {
  * Check package and monorepo cwd for postcss.config.js and returns
  * path. Defaults to empty string.
  */
-function getUserPostcssConfig(cwd: string = process.cwd()): string {
-  const CONFIG_FILENAME = 'postcss.config.js';
-
+function getUserPostcssConfig(
+  multiBuildConfigFile?: string,
+  cwd: string = process.cwd(),
+  configFilename = 'postcss.config.js'
+): string {
+  logger.trace('Getting User PostCSS config at', configFilename);
   // Try package cwd
-  const pkgConfigPath = path.join(cwd, CONFIG_FILENAME);
+  const pkgConfigPath = path.join(cwd, configFilename);
 
   if (fs.existsSync(pkgConfigPath)) {
     return pkgConfigPath;
   }
 
+  if (multiBuildConfigFile) {
+    // Try multi-build cwd
+    const monoRepoConfigPath = path.join(
+      getMonorepoRoot(cwd),
+      multiBuildConfigFile
+    );
+
+    if (fs.existsSync(monoRepoConfigPath)) {
+      return monoRepoConfigPath;
+    }
+  }
+
   // Try monorepo cwd
-  const monoRepoConfigPath = path.join(getMonorepoRoot(cwd), CONFIG_FILENAME);
+  const monoRepoConfigPath = path.join(getMonorepoRoot(cwd), configFilename);
 
   if (fs.existsSync(monoRepoConfigPath)) {
     return monoRepoConfigPath;
@@ -48,6 +63,8 @@ interface LoadOptions {
   useModules?: boolean;
   /** The path to the config file */
   configFile?: string;
+  /** The path to the multibuild config file */
+  multiBuildConfigFile?: string;
   /** Where to store the build results */
   outDir?: string;
   /** Dir to start looking for configs in */
@@ -76,19 +93,23 @@ const reportConfigError = (error: Error) => {
 export async function getPostCssConfig({
   useModules,
   configFile = require.resolve('./configs/postcss.config'),
+  multiBuildConfigFile = undefined,
   outDir = 'dist',
   cwd = process.cwd(),
-  reportError = true
+  reportError = true,
 }: LoadOptions) {
   const context = useModules
     ? {
         env: 'module',
-        outDir
+        outDir,
       }
     : {};
 
   try {
-    return await postcssload(context, getUserPostcssConfig(cwd));
+    return await postcssload(
+      context,
+      getUserPostcssConfig(multiBuildConfigFile, cwd)
+    );
   } catch (error) {
     if (reportError) {
       reportConfigError(error);
@@ -103,19 +124,23 @@ export async function getPostCssConfig({
 export function getPostCssConfigSync({
   useModules,
   configFile = require.resolve('./configs/postcss.config'),
+  multiBuildConfigFile = undefined,
   outDir = 'dist',
   cwd = process.cwd(),
-  reportError = true
+  reportError = true,
 }: LoadOptions): PostCSSConfig {
   const context = useModules
     ? {
         env: 'module',
-        outDir
+        outDir,
       }
     : {};
 
   try {
-    return postcssload.sync(context, getUserPostcssConfig(cwd));
+    return postcssload.sync(
+      context,
+      getUserPostcssConfig(multiBuildConfigFile, cwd)
+    );
   } catch (error) {
     if (reportError) {
       reportConfigError(error);
@@ -135,6 +160,8 @@ interface TranspileOptions {
   outDir: string;
   /** Where the postcss.config is */
   configFile: string;
+  /** A multibuild config file to use if not overridden */
+  multiBuildConfigFile?: string;
   /** The builder was started in watch mode */
   watch: boolean;
 }
@@ -151,14 +178,16 @@ export default async function transpile({
   inDir,
   outDir,
   configFile,
-  watch
+  multiBuildConfigFile,
+  watch,
 }: TranspileOptions): Promise<postcss.Result | void> {
   // Append .js to the end of the file so auto importing works
   const cssFile = getCSSPath(inFile, inDir, outDir);
   const { plugins, options } = await getPostCssConfig({
     useModules: true,
     configFile,
-    outDir
+    multiBuildConfigFile,
+    outDir,
   });
 
   const processor = postcss(plugins);
@@ -170,7 +199,7 @@ export default async function transpile({
       plugins,
       to: cssFile,
       from: inFile,
-      map: { inline: false }
+      map: { inline: false },
     });
 
     await fs.outputFile(
@@ -199,7 +228,7 @@ export default async function transpile({
           error.source,
           { start: { line, column } },
           { highlightCode: true }
-        )
+        ),
       });
     }
 

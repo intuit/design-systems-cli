@@ -1,0 +1,34 @@
+{
+  "name": "@design-systems/babel-plugin-replace-styles",
+  "version": "2.2.2",
+  "description": "A babel plugin that replaces CSS imports for a scoped monorepo design system built with `@design-systems/cli`",
+  "main": "./dist/index.js",
+  "types": "./dist",
+  "author": "Tyler Krupicka Tyler_Krupicka@intuit.com",
+  "contributors": [
+    "Tyler Krupicka Tyler_Krupicka@intuit.com"
+  ],
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "build": "tsc --build tsconfig.json",
+    "test": "../cli/bin/ds.js test",
+    "lint": "../cli/bin/ds.js lint"
+  },
+  "files": [
+    "dist",
+    "!*.test.*",
+    "!__snapshots__",
+    "!__tests__"
+  ],
+  "dependencies": {
+    "tslib": "2.0.1"
+  },
+  "devDependencies": {
+    "@babel/core": "7.11.5",
+    "@babel/types": "7.11.5",
+    "@types/node": "14.6.2"
+  }
+}
