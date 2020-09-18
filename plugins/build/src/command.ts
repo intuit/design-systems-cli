@@ -104,6 +104,9 @@ const command: CliCommand = {
 
           Our PostCSS config loader requires normal PostCSS config filenames, so you'll need to put the files in separate directories.
           The example below will generate two css files: \`main.css\` and \`alternate.css\`.
+
+          You can also use this in conjunction with our [postcss-themed](https://github.com/intuit/postcss-themed) package to create
+          a different CSS file per theme!
         `,
       ],
     },

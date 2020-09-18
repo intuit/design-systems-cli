@@ -18,6 +18,8 @@ The only issue is, if we turn on automatic CSS imports, everyone will get `main`
 Enter this plugin. Now the team who needs prefixed CSS can install this and configure it to replace `main` with `prefixed` if it exists.
 Everyone only gets the CSS they need imported, and we can still have a nice auto-import by default.
 
+_Note: This also works well with [postcss-themed](https://github.com/intuit/postcss-themed); you can use this plugin to swap between different css files that contain different themes!_
+
 ## Usage
 
 babel.config.json:
