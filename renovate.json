@@ -24,6 +24,7 @@
       "rangeStrategy": "bump"
     },
     {
+      "packageNames": ["autoprefixer"],
       "packagePatterns": ["^postcss"],
       "groupName": "postcss",
       "rangeStrategy": "replace"
