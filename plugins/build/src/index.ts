@@ -11,7 +11,7 @@ import formatBytes from 'pretty-bytes';
 import formatTime from 'pretty-ms';
 
 import CleanCSS from 'clean-css';
-import postcss from 'postcss';
+import { Result } from 'postcss';
 
 import { getOutPath } from './utils';
 import transpileJS, {
@@ -67,7 +67,7 @@ function makeCSSFilename(filename: string) {
 export { getPostCssConfig, getPostCssConfigSync } from './postcss';
 export { getBabelConfig, getBabelOptions } from './babel';
 
-type CSSResult = { [key: string]: Map<string, postcss.Result> };
+type CSSResult = { [key: string]: Map<string, Result> };
 
 /**
  * Build looks for js and css files in src/ and outputs a CJS, ESM, and CSS builds to /dist.
@@ -245,7 +245,7 @@ export default class BuildPlugin implements Plugin<BuildArgs> {
           this.logger.trace(`Single PostCSS build requested`);
           if (!this.cssFiles[CSSMain]) {
             this.logger.trace(`Creating map for ${CSSMain}`);
-            this.cssFiles[CSSMain] = new Map<string, postcss.Result>();
+            this.cssFiles[CSSMain] = new Map<string, Result>();
           }
 
           return (
@@ -272,7 +272,7 @@ export default class BuildPlugin implements Plugin<BuildArgs> {
             )}`
           );
           if (!this.cssFiles[config.name]) {
-            this.cssFiles[config.name] = new Map<string, postcss.Result>();
+            this.cssFiles[config.name] = new Map<string, Result>();
           }
 
           const css = await transpileCSS({
