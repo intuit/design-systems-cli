@@ -2,7 +2,7 @@ import { createLogger } from '@design-systems/cli-utils';
 import { getMonorepoRoot } from '@design-systems/cli-utils';
 import fs from 'fs-extra';
 import path from 'path';
-import postcss from 'postcss';
+import postcss, { Result } from 'postcss';
 import postcssload, { PostCSSConfig } from 'postcss-load-config';
 import { codeFrameColumns } from '@babel/code-frame';
 
@@ -180,7 +180,7 @@ export default async function transpile({
   configFile,
   multiBuildConfigFile,
   watch,
-}: TranspileOptions): Promise<postcss.Result | void> {
+}: TranspileOptions): Promise<Result | void> {
   // Append .js to the end of the file so auto importing works
   const cssFile = getCSSPath(inFile, inDir, outDir);
   const { plugins, options } = await getPostCssConfig({

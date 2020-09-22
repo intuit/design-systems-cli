@@ -15,6 +15,9 @@ import minimatch from 'minimatch';
 import { BuildArgs } from '.';
 import { getPostCssConfigSync } from './postcss';
 
+type Processor = ReturnType<typeof postcss>;
+type LazyResult = ReturnType<Processor['process']>;
+
 interface DTsFile {
   /** In a d.ts file this is the AST for the actual program */
   externalModuleIndicator: ts.SourceFile;
@@ -70,18 +73,18 @@ function relativeFile(file: ts.SourceFile) {
 
 /** Find and process all the css files in a typescript AST */
 async function processCss(
-  processor: postcss.Processor,
+  processor: Processor,
   project: ts.BuildInvalidedProject<ts.EmitAndSemanticDiagnosticsBuilderProgram>
 ) {
   const ignore = ['node_modules', '.d.ts'];
   const files = project
     .getSourceFiles()
     .filter((f) => !ignore.find((i) => f.fileName.includes(i)));
-  const pendingCssResults = new Map<string, postcss.LazyResult>();
+  const pendingCssResults = new Map<string, LazyResult>();
 
   const cssPromises = files.map(async (file) => {
     const styles = new Map<string, Record<string, string>>();
-    const results: [string, postcss.LazyResult][] = [];
+    const results: [string, LazyResult][] = [];
 
     // 1. Find all css imports
     file.forEachChild((node) => {
@@ -137,7 +140,7 @@ async function processCss(
 
         styles.set(
           name,
-          result.root ? extractICSS(result.root, false).icssExports : {}
+          result.root ? extractICSS(result.root as any, false).icssExports : {}
         );
       })
     );
