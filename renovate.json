@@ -24,6 +24,11 @@
       "rangeStrategy": "bump"
     },
     {
+      "packagePatterns": ["^postcss"],
+      "groupName": "postcss",
+      "rangeStrategy": "replace"
+    },
+    {
       "packagePatterns": ["@proof-ui"],
       "groupName": "proof"
     },
