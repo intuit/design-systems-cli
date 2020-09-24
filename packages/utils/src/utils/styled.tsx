@@ -70,21 +70,25 @@ export function styled<T extends keyof JSX.IntrinsicElements>(
   /** The result "styled" component. */
   const Wrapped = React.forwardRef<HTMLElement, Props>((props, ref) => {
     const { as, ...rest } = props;
+    // eslint-disable-next-line @typescript-eslint/no-unnecessary-type-assertion
     const Component = (as || element) as any;
 
     return (
       <Component
         ref={ref}
         {...rest}
-        className={makeClass(className, props.className)}
+        // eslint-disable-next-line @typescript-eslint/no-unnecessary-type-assertion
+        className={makeClass(className, (props as any).className)}
       >
         {props.children}
       </Component>
     );
   }) as DocGen & Slotted & WithRef;
 
+  // eslint-disable-next-line no-underscore-dangle
   Wrapped._SLOT_ = slot || Symbol(element);
   Wrapped.displayName = name;
+  // eslint-disable-next-line no-underscore-dangle
   Wrapped.__docgenInfo = {
     description: description
       ? `${description} ${defaultDescription}`
