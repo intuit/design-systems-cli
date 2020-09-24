@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`it should create the instance 1`] = `
+<Text>
+  A string
+</Text>
+`;
