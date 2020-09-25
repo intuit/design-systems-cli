@@ -1,13 +1,15 @@
 {
   "name": "@design-systems/utils",
-  "version": "2.3.0",
+  "version": "2.5.0",
   "description": "Helper utilities for developing react components",
   "main": "./dist/cjs/index.js",
   "module": "./dist/esm/index.js",
   "types": "./dist",
   "repository": "https://github.com/intuit/design-systems-cli.git",
   "author": "Andrew Lisowski lisowski54@gmail.com",
-  "contributors": ["Andrew Lisowski lisowski54@gmail.com"],
+  "contributors": [
+    "Andrew Lisowski lisowski54@gmail.com"
+  ],
   "license": "MIT",
   "scripts": {
     "build": "yarn docs && ds build",
@@ -15,7 +17,13 @@
     "lint": "ds lint",
     "docs": "ts-readme"
   },
-  "files": ["dist", "src", "!*.test.*", "!__snapshots__", "!__tests__"],
+  "files": [
+    "dist",
+    "src",
+    "!*.test.*",
+    "!__snapshots__",
+    "!__tests__"
+  ],
   "dependencies": {
     "@babel/runtime": "~7.11.2",
     "clsx": "^1.0.4",
@@ -23,9 +31,9 @@
     "react-merge-refs": "^1.0.0"
   },
   "peerDependencies": {
+    "@types/react": "*",
     "react": ">= 16.8.6",
-    "react-dom": ">= 16.8.6",
-    "@types/react": "*"
+    "react-dom": ">= 16.8.6"
   },
   "publishConfig": {
     "access": "public"
