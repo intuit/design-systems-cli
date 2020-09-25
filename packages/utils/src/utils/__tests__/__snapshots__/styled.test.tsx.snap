@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render as custom element 1`] = `
+<a
+  class="css-class"
+  href="foo"
+>
+  link
+</a>
+`;
+
+exports[`should render as jsx element 1`] = `
+<span
+  class="css-class"
+/>
+`;
