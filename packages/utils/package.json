@@ -25,7 +25,10 @@
   "peerDependencies": {
     "react": ">= 16.8.6",
     "react-dom": ">= 16.8.6",
-    "@types/react@": "*"
+    "@types/react": "*"
+  },
+  "publishConfig": {
+    "access": "public"
   },
   "devDependencies": {
     "@design-systems/cli": "link:../cli",

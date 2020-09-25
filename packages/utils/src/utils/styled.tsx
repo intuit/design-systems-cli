@@ -70,14 +70,12 @@ export function styled<T extends keyof JSX.IntrinsicElements>(
   /** The result "styled" component. */
   const Wrapped = React.forwardRef<HTMLElement, Props>((props, ref) => {
     const { as, ...rest } = props;
-    // eslint-disable-next-line @typescript-eslint/no-unnecessary-type-assertion
     const Component = (as || element) as any;
 
     return (
       <Component
         ref={ref}
         {...rest}
-        // eslint-disable-next-line @typescript-eslint/no-unnecessary-type-assertion
         className={makeClass(className, (props as any).className)}
       >
         {props.children}

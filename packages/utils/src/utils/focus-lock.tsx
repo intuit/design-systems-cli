@@ -32,7 +32,7 @@ const FocusGuard = ({ active }: FocusLockProps) => (
 export const FocusLock = React.forwardRef<
   HTMLDivElement,
   FocusLockProps & Element<'div'>
->(({ active, onBlur = () => {}, ...html }, ref) => {
+>(({ active, onBlur = () => undefined, ...html }, ref) => {
   const trap = React.useRef<HTMLDivElement>(null);
 
   /** Trap the focus within the locks if active */

@@ -1,6 +1,10 @@
 import * as React from 'react';
-import { render } from '@testing-library/react';
+import { cleanup, render } from '@testing-library/react';
 import { Portal } from '../portal';
+
+afterEach(() => {
+  cleanup()
+})
 
 test('it should render the content in a dom node outside of the parent', () => {
   const { getByTestId } = render(

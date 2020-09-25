@@ -2,7 +2,9 @@ const base = require('@design-systems/test/jest.config.base');
 
 module.exports = {
   ...base,
-  setupFilesAfterEnv: undefined,
+  setupFilesAfterEnv: [
+    '@testing-library/jest-dom/extend-expect'
+  ],
   roots: ['<rootDir>', '<rootDir>/plugins/', '<rootDir>/packages/'],
   coverageDirectory: '<rootDir>/coverage/',
   collectCoverageFrom: [

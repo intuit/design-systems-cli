@@ -12,7 +12,7 @@ export interface DisplayNamed {
  * @example
  * displayName(Component, 'MyCoolComponent');
  */
-export const displayName = <T extends {}>(comp: T, name: string) => {
+export const displayName = <T extends Record<string, unknown>>(comp: T, name: string) => {
   const newComp: T & DisplayNamed = comp;
   newComp.displayName = name;
 

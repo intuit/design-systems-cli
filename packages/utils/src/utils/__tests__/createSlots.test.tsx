@@ -1,3 +1,6 @@
+/* eslint-disable react/no-unused-prop-types */
+/* eslint-disable no-underscore-dangle */
+
 import * as React from 'react';
 import { render } from '@testing-library/react';
 import { createSlots, isSlotOf, getSlotToken } from '../createSlots';
@@ -175,7 +178,7 @@ describe('slots using tokens', () => {
   });
 
   test('it should throw an error if creating an instance of a Symbol slot', () => {
-    jest.spyOn(console, 'error').mockImplementation(() => {});
+    jest.spyOn(console, 'error').mockImplementation(() => undefined);
     const renderComp = () =>
       render(
         <SymbolCard footer="footer">
