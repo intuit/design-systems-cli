@@ -1,3 +1,16 @@
+# v2.5.2 (Fri Sep 25 2020)
+
+#### 🐛 Bug Fix
+
+- `@design-systems/utils`
+  - update displayName type [#524](https://github.com/intuit/design-systems-cli/pull/524) ([@hipstersmoothie](https://github.com/hipstersmoothie))
+
+#### Authors: 1
+
+- Andrew Lisowski ([@hipstersmoothie](https://github.com/hipstersmoothie))
+
+---
+
 # v2.5.1 (Fri Sep 25 2020)
 
 #### 🐛 Bug Fix
