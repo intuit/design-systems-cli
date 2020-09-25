@@ -162,6 +162,8 @@ interface TranspileOptions {
   configFile: string;
   /** A multibuild config file to use if not overridden */
   multiBuildConfigFile?: string;
+  /** If this css file represents everything */
+  isCssMain: boolean;
   /** The builder was started in watch mode */
   watch: boolean;
 }
@@ -176,6 +178,7 @@ interface TranspileOptions {
 export default async function transpile({
   inFile,
   inDir,
+  isCssMain,
   outDir,
   configFile,
   multiBuildConfigFile,
@@ -197,17 +200,19 @@ export default async function transpile({
     const result = await processor.process(fileContents, {
       ...options,
       plugins,
-      to: cssFile,
+      to: isCssMain ? cssFile : undefined,
       from: inFile,
       map: { inline: false },
     });
 
-    await fs.outputFile(
-      `${cssFile}.map`,
-      result.map
-        .toString()
-        .replace(/<input css (\d+)>/g, '../src/<input css $1>')
-    );
+    if (isCssMain) {
+      await fs.outputFile(
+        `${cssFile}.map`,
+        result.map
+          .toString()
+          .replace(/<input css (\d+)>/g, '../src/<input css $1>')
+      );
+    }
 
     return result;
   } catch (error) {

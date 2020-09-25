@@ -254,6 +254,7 @@ export default class BuildPlugin implements Plugin<BuildArgs> {
               inDir: inputDirectory,
               outDir: outputDirectory,
               configFile: POSTCSS_CONFIG,
+              isCssMain: true,
               watch: this.buildArgs.watch,
             })
               // Save the CSS output for merging later
@@ -281,6 +282,7 @@ export default class BuildPlugin implements Plugin<BuildArgs> {
             outDir: outputDirectory,
             configFile: POSTCSS_CONFIG,
             multiBuildConfigFile: config.path,
+            isCssMain: this.buildArgs.cssMain === config.name,
             watch: this.buildArgs.watch,
           });
 
