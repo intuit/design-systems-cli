@@ -42,7 +42,7 @@
     "table": "6.0.1",
     "terser-webpack-plugin": "4.1.0",
     "tslib": "2.0.1",
-    "webpack": "4.44.1",
+    "webpack": "4.44.2",
     "webpack-bundle-analyzer": "3.8.0",
     "webpack-inject-plugin": "1.5.4",
     "webpack-sources": "1.4.3"

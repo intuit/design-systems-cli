@@ -24,7 +24,7 @@
     "signale": "1.4.0",
     "tslib": "2.0.1",
     "utility-types": "3.10.0",
-    "webpack": "4.44.1"
+    "webpack": "4.44.2"
   },
   "devDependencies": {
     "@types/signale": "1.4.1"

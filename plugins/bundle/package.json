@@ -32,6 +32,6 @@
     "style-loader": "1.2.1",
     "terser-webpack-plugin": "4.1.0",
     "tslib": "2.0.1",
-    "webpack": "4.44.1"
+    "webpack": "4.44.2"
   }
 }
