@@ -1,3 +1,21 @@
+# v2.4.0 (Fri Sep 25 2020)
+
+#### 🚀 Enhancement
+
+- `@design-systems/utils`
+  - Add utils from our design system [#515](https://github.com/intuit/design-systems-cli/pull/515) ([@hipstersmoothie](https://github.com/hipstersmoothie))
+
+#### 🏠 Internal
+
+- add autoprefixer to renovate postcss config [#511](https://github.com/intuit/design-systems-cli/pull/511) ([@hipstersmoothie](https://github.com/hipstersmoothie))
+- add postcss group [#509](https://github.com/intuit/design-systems-cli/pull/509) ([@hipstersmoothie](https://github.com/hipstersmoothie))
+
+#### Authors: 1
+
+- Andrew Lisowski ([@hipstersmoothie](https://github.com/hipstersmoothie))
+
+---
+
 # v2.3.0 (Fri Sep 18 2020)
 
 ### Release Notes
