@@ -1,3 +1,15 @@
+# v2.5.1 (Fri Sep 25 2020)
+
+#### 🐛 Bug Fix
+
+- Only generate .js file mappings for the main css output [#514](https://github.com/intuit/design-systems-cli/pull/514) ([@adierkens](https://github.com/adierkens))
+
+#### Authors: 1
+
+- Adam Dierkens ([@adierkens](https://github.com/adierkens))
+
+---
+
 # v2.0.4 (Fri Sep 04 2020)
 
 #### 🐛 Bug Fix
