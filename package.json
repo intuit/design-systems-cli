@@ -76,5 +76,8 @@
         "releaseType": "none"
       }
     ]
+  },
+  "engines": {
+    "node": ">=10.18.1"
   }
 }
