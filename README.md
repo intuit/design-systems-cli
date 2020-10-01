@@ -70,6 +70,9 @@ Thank you to all these wonderful people ([emoji key](https://allcontributors.org
     <td align="center"><a href="http://athityakumar.github.io/"><img src="https://avatars0.githubusercontent.com/u/17109060?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Athitya Kumar</b></sub></a><br /><a href="https://github.com/intuit/design-systems-cli/commits?author=athityakumar" title="Code">💻</a></td>
     <td align="center"><a href="https://jasonrundell.com/"><img src="https://avatars0.githubusercontent.com/u/524344?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Jason Rundell (he/him)</b></sub></a><br /><a href="https://github.com/intuit/design-systems-cli/commits?author=jasonrundell" title="Documentation">📖</a> <a href="https://github.com/intuit/design-systems-cli/commits?author=jasonrundell" title="Tests">⚠️</a> <a href="https://github.com/intuit/design-systems-cli/commits?author=jasonrundell" title="Code">💻</a></td>
   </tr>
+  <tr>
+    <td align="center"><a href="https://github.com/reubenae"><img src="https://avatars1.githubusercontent.com/u/17691502?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Reuben</b></sub></a><br /><a href="https://github.com/intuit/design-systems-cli/commits?author=reubenae" title="Documentation">📖</a></td>
+  </tr>
 </table>
 
 <!-- markdownlint-restore -->
