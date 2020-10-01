@@ -1,3 +1,29 @@
+# v2.5.4 (Thu Oct 01 2020)
+
+:tada: This release contains work from new contributors! :tada:
+
+Thanks for all your work!
+
+:heart: null[@conjurer2306](https://github.com/conjurer2306)
+
+:heart: Reuben ([@reubenae](https://github.com/reubenae))
+
+#### 🐛 Bug Fix
+
+- Update README.md [#541](https://github.com/intuit/design-systems-cli/pull/541) ([@conjurer2306](https://github.com/conjurer2306))
+
+#### 📝 Documentation
+
+- feat(readme): overview [#540](https://github.com/intuit/design-systems-cli/pull/540) (reuben_evans@intuit.com [@reubenae](https://github.com/reubenae))
+
+#### Authors: 3
+
+- [@conjurer2306](https://github.com/conjurer2306)
+- Reuben ([@reubenae](https://github.com/reubenae))
+- Reuben Evans (reuben_evans@intuit.com)
+
+---
+
 # v2.5.3 (Thu Oct 01 2020)
 
 :tada: This release contains work from a new contributor! :tada:
