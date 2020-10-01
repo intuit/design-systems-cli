@@ -3,7 +3,11 @@
 
   <h1></h1>
 
-  <p>A CLI toolbox for creating design systems</p>
+  <p>A CLI toolbox for creating design systems in minutes</p>
+
+  <p>Uses: Typescript, CSS, styled-components support</p>
+  <p>Outputs: CJS and MJS</p>
+  <p>No tooling configuration required</p>
 </div>
 
 <div align="center">
@@ -42,7 +46,7 @@ yarn run create:plugin "my plugin"
 
 ## Contributors ✨
 
-Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
+Thank you to all these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 <!-- prettier-ignore-start -->
