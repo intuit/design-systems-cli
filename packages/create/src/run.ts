@@ -16,7 +16,7 @@ import inquirer from 'inquirer';
 import { pascalCase, paramCase, camelCase } from 'change-case';
 import { titleCase } from 'title-case';
 import dedent from 'dedent';
-import createEstimator from 'progress-estimator';
+import createEstimator, { LogOption } from 'progress-estimator';
 import spinners from 'cli-spinners';
 import degit from 'degit';
 import crypto from 'crypto';
@@ -396,7 +396,7 @@ export default async function run(args: CreateArgs) {
           }
         }),
         'Installing dependencies',
-        72 * 1000
+        72 * 1000 as LogOption
       );
       execSync(
         `cd ${config.name} && git add . && git commit --no-verify -m 'Create new design system'`

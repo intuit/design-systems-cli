@@ -70,6 +70,7 @@
     "@types/postcss-nested": "4.1.0",
     "@types/postcss-url": "8.0.1",
     "@types/pretty-bytes": "5.2.0",
-    "@types/pretty-ms": "5.0.1"
+    "@types/pretty-ms": "5.0.1",
+    "@types/icss-utils": "4.1.0"
   }
 }
