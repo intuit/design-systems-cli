@@ -1,3 +1,19 @@
+# v2.5.3 (Thu Oct 01 2020)
+
+:tada: This release contains work from a new contributor! :tada:
+
+Thank you, Jason Rundell (he/him) ([@jasonrundell](https://github.com/jasonrundell)), for all your work!
+
+#### 🐛 Bug Fix
+
+- Fix/issues 523 tsc is not recognized [#528](https://github.com/intuit/design-systems-cli/pull/528) ([@jasonrundell](https://github.com/jasonrundell))
+
+#### Authors: 1
+
+- Jason Rundell (he/him) ([@jasonrundell](https://github.com/jasonrundell))
+
+---
+
 # v2.5.2 (Fri Sep 25 2020)
 
 #### 🐛 Bug Fix
