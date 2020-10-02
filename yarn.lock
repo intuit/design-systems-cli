@@ -1385,7 +1385,7 @@
     core-js-pure "^3.0.0"
     regenerator-runtime "^0.13.4"
 
-"@babel/runtime@7.11.2", "@babel/runtime@^7.1.2", "@babel/runtime@^7.10.2", "@babel/runtime@^7.10.4", "@babel/runtime@^7.3.1", "@babel/runtime@^7.3.4", "@babel/runtime@^7.4.2", "@babel/runtime@^7.4.4", "@babel/runtime@^7.5.0", "@babel/runtime@^7.5.1", "@babel/runtime@^7.5.4", "@babel/runtime@^7.5.5", "@babel/runtime@^7.6.3", "@babel/runtime@^7.7.2", "@babel/runtime@^7.7.6", "@babel/runtime@^7.8.4", "@babel/runtime@^7.8.7", "@babel/runtime@^7.9.2", "@babel/runtime@~7.11.2":
+"@babel/runtime@7.11.2", "@babel/runtime@^7.1.2", "@babel/runtime@^7.10.2", "@babel/runtime@^7.10.4", "@babel/runtime@^7.3.1", "@babel/runtime@^7.3.4", "@babel/runtime@^7.4.2", "@babel/runtime@^7.4.4", "@babel/runtime@^7.5.0", "@babel/runtime@^7.5.4", "@babel/runtime@^7.5.5", "@babel/runtime@^7.6.3", "@babel/runtime@^7.7.2", "@babel/runtime@^7.7.6", "@babel/runtime@^7.8.4", "@babel/runtime@^7.8.7", "@babel/runtime@^7.9.2", "@babel/runtime@~7.11.2":
   version "7.11.2"
   resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.11.2.tgz#f549c13c754cc40b87644b9fa9f09a6a95fe0736"
   integrity sha512-TeWkU52so0mPtDcaCTxNBI/IHiz0pZgr8VEFqXFtZWpYD08ZB6FaSwVAS8MKRQAP3bYKiVjwysOJgMFY28o6Tw==
@@ -1498,7 +1498,7 @@
     minimist "^1.2.0"
 
 "@design-systems/build@link:plugins/build":
-  version "2.5.2"
+  version "2.5.4"
   dependencies:
     "@babel/code-frame" "7.10.4"
     "@babel/core" "7.11.5"
@@ -1539,7 +1539,7 @@
     typescript "4.0.2"
 
 "@design-systems/bundle@link:plugins/bundle":
-  version "2.5.2"
+  version "2.5.4"
   dependencies:
     "@design-systems/build" "link:plugins/build"
     "@design-systems/cli-utils" "link:packages/cli-utils"
@@ -1557,7 +1557,7 @@
     webpack "4.44.1"
 
 "@design-systems/clean@link:plugins/clean":
-  version "2.5.2"
+  version "2.5.4"
   dependencies:
     "@design-systems/cli-utils" "link:packages/cli-utils"
     "@design-systems/plugin" "link:packages/plugin"
@@ -1566,7 +1566,7 @@
     tslib "2.0.1"
 
 "@design-systems/cli-utils@link:packages/cli-utils":
-  version "2.5.2"
+  version "2.5.4"
   dependencies:
     find-up "5.0.0"
     npm-which "3.0.1"
@@ -1576,7 +1576,7 @@
     webpack "4.44.1"
 
 "@design-systems/cli@link:packages/cli":
-  version "2.5.2"
+  version "2.5.4"
   dependencies:
     "@design-systems/cli-utils" "link:packages/cli-utils"
     "@design-systems/core" "link:packages/core"
@@ -1591,7 +1591,7 @@
     update-check "1.5.4"
 
 "@design-systems/core@link:packages/core":
-  version "2.5.2"
+  version "2.5.4"
   dependencies:
     "@design-systems/build" "link:plugins/build"
     "@design-systems/bundle" "link:plugins/bundle"
@@ -1611,7 +1611,7 @@
     tslib "2.0.1"
 
 "@design-systems/create-command@link:plugins/create-command":
-  version "2.5.2"
+  version "2.5.4"
   dependencies:
     "@design-systems/cli-utils" "link:packages/cli-utils"
     "@design-systems/create" "link:packages/create"
@@ -1630,10 +1630,10 @@
     tslib "2.0.1"
 
 "@design-systems/create@link:packages/create":
-  version "2.5.2"
+  version "2.5.4"
 
 "@design-systems/dev@link:plugins/dev":
-  version "2.5.2"
+  version "2.5.4"
   dependencies:
     "@design-systems/cli-utils" "link:packages/cli-utils"
     "@design-systems/plugin" "link:packages/plugin"
@@ -1644,7 +1644,7 @@
     tslib "2.0.1"
 
 "@design-systems/eslint-config@link:packages/eslint-config":
-  version "2.5.2"
+  version "2.5.4"
   dependencies:
     "@design-systems/cli-utils" "link:packages/cli-utils"
     "@typescript-eslint/eslint-plugin" "3.9.0"
@@ -1668,7 +1668,7 @@
     tslib "2.0.1"
 
 "@design-systems/lint@link:plugins/lint":
-  version "2.5.2"
+  version "2.5.4"
   dependencies:
     "@design-systems/cli-utils" "link:packages/cli-utils"
     "@design-systems/eslint-config" "link:packages/eslint-config"
@@ -1685,7 +1685,7 @@
     tslib "2.0.1"
 
 "@design-systems/load-config@link:packages/load-config":
-  version "2.5.2"
+  version "2.5.4"
   dependencies:
     "@design-systems/core" "link:packages/core"
     "@design-systems/plugin" "link:packages/plugin"
@@ -1699,7 +1699,7 @@
     tslib "2.0.1"
 
 "@design-systems/playroom@link:plugins/playroom":
-  version "2.5.2"
+  version "2.5.4"
   dependencies:
     "@babel/core" "7.11.5"
     "@babel/register" "7.11.5"
@@ -1719,14 +1719,14 @@
     webpack "4.44.1"
 
 "@design-systems/plugin@link:packages/plugin":
-  version "2.5.2"
+  version "2.5.4"
   dependencies:
     command-line-application "0.10.1"
     tslib "2.0.1"
     utility-types "3.10.0"
 
 "@design-systems/proof@link:plugins/proof":
-  version "2.5.2"
+  version "2.5.4"
   dependencies:
     "@babel/core" "7.11.5"
     "@babel/plugin-transform-runtime" "7.11.5"
@@ -1744,7 +1744,7 @@
     tslib "2.0.1"
 
 "@design-systems/size@link:plugins/size":
-  version "2.5.2"
+  version "2.5.4"
   dependencies:
     "@design-systems/cli-utils" "link:packages/cli-utils"
     "@design-systems/plugin" "link:packages/plugin"
@@ -1775,7 +1775,7 @@
     webpack-sources "1.4.3"
 
 "@design-systems/storybook@link:plugins/storybook":
-  version "2.5.2"
+  version "2.5.4"
   dependencies:
     "@alisowski/storybook-addon-notes" "^6.0.1"
     "@babel/core" "7.11.5"
@@ -1808,7 +1808,7 @@
     webpack-filter-warnings-plugin "1.2.1"
 
 "@design-systems/stylelint-config@link:packages/stylelint-config":
-  version "2.5.2"
+  version "2.5.4"
   dependencies:
     stylelint-a11y "1.2.3"
     stylelint-config-css-modules "2.2.0"
@@ -1822,7 +1822,7 @@
     tslib "2.0.1"
 
 "@design-systems/test@link:plugins/test":
-  version "2.5.2"
+  version "2.5.4"
   dependencies:
     "@babel/core" "7.11.5"
     "@design-systems/build" "link:plugins/build"
@@ -1842,7 +1842,7 @@
     tslib "2.0.1"
 
 "@design-systems/update@link:plugins/update":
-  version "2.5.2"
+  version "2.5.4"
   dependencies:
     "@design-systems/cli-utils" "link:packages/cli-utils"
     "@design-systems/plugin" "link:packages/plugin"
@@ -4070,21 +4070,6 @@
     aria-query "3.0.0"
     pretty-format "^24.8.0"
     wait-for-expect "^1.2.0"
-
-"@testing-library/jest-dom@4.0.0":
-  version "4.0.0"
-  resolved "https://registry.yarnpkg.com/@testing-library/jest-dom/-/jest-dom-4.0.0.tgz#56eee8dd183fe14a682fda7aca6413ec4e5303d2"
-  integrity sha512-YQA/LnRRfqHV5YRauawOGgMDgq43XfyqCz3whmxIPyrfvTdjLCNyY/BseGaa48y54yb3oiRo/NZT0oXNMQdkTA==
-  dependencies:
-    "@babel/runtime" "^7.5.1"
-    chalk "^2.4.1"
-    css "^2.2.3"
-    css.escape "^1.5.1"
-    jest-diff "^24.0.0"
-    jest-matcher-utils "^24.0.0"
-    lodash "^4.17.11"
-    pretty-format "^24.0.0"
-    redent "^3.0.0"
 
 "@testing-library/jest-dom@5.11.4":
   version "5.11.4"
@@ -8303,16 +8288,6 @@ css.escape@^1.5.1:
   resolved "https://registry.yarnpkg.com/css.escape/-/css.escape-1.5.1.tgz#42e27d4fa04ae32f931a4b4d4191fa9cddee97cb"
   integrity sha1-QuJ9T6BK4y+TGktNQZH6nN3ul8s=
 
-css@^2.2.3:
-  version "2.2.4"
-  resolved "https://registry.yarnpkg.com/css/-/css-2.2.4.tgz#c646755c73971f2bba6a601e2cf2fd71b1298929"
-  integrity sha512-oUnjmWpy0niI3x/mPL8dVEI1l7MnG3+HHyRPHf+YFSbK+svOhXpmSOcDURUh2aOCgl2grzrOPt1nHLuCVFULLw==
-  dependencies:
-    inherits "^2.0.3"
-    source-map "^0.6.1"
-    source-map-resolve "^0.5.2"
-    urix "^0.1.0"
-
 css@^3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/css/-/css-3.0.0.tgz#4447a4d58fdd03367c516ca9f64ae365cee4aa5d"
@@ -8820,11 +8795,6 @@ didyoumean@^1.2.1:
   version "1.2.1"
   resolved "https://registry.yarnpkg.com/didyoumean/-/didyoumean-1.2.1.tgz#e92edfdada6537d484d73c0172fd1eba0c4976ff"
   integrity sha1-6S7f2tplN9SE1zwBcv0eugxJdv8=
-
-diff-sequences@^24.9.0:
-  version "24.9.0"
-  resolved "https://registry.yarnpkg.com/diff-sequences/-/diff-sequences-24.9.0.tgz#5715d6244e2aa65f48bba0bc972db0b0b11e95b5"
-  integrity sha512-Dj6Wk3tWyTE+Fo1rW8v0Xhwk80um6yFYKbuAxc9c3EZxIHFDYwbi34Uk42u1CdnIiVorvt4RmlSDjIPyzGC2ew==
 
 diff-sequences@^25.2.6:
   version "25.2.6"
@@ -12941,16 +12911,6 @@ jest-config@^26.4.2:
     micromatch "^4.0.2"
     pretty-format "^26.4.2"
 
-jest-diff@^24.0.0, jest-diff@^24.9.0:
-  version "24.9.0"
-  resolved "https://registry.yarnpkg.com/jest-diff/-/jest-diff-24.9.0.tgz#931b7d0d5778a1baf7452cb816e325e3724055da"
-  integrity sha512-qMfrTs8AdJE2iqrTp0hzh7kTd2PQWrsFyj9tORoKmu32xjPjeE4NyjVRDz8ybYwqS2ik8N4hsIpiVTyFeo2lBQ==
-  dependencies:
-    chalk "^2.0.1"
-    diff-sequences "^24.9.0"
-    jest-get-type "^24.9.0"
-    pretty-format "^24.9.0"
-
 jest-diff@^25.2.1:
   version "25.5.0"
   resolved "https://registry.yarnpkg.com/jest-diff/-/jest-diff-25.5.0.tgz#1dd26ed64f96667c068cef026b677dfa01afcfa9"
@@ -13013,11 +12973,6 @@ jest-environment-node@^26.3.0:
     "@types/node" "*"
     jest-mock "^26.3.0"
     jest-util "^26.3.0"
-
-jest-get-type@^24.9.0:
-  version "24.9.0"
-  resolved "https://registry.yarnpkg.com/jest-get-type/-/jest-get-type-24.9.0.tgz#1684a0c8a50f2e4901b6644ae861f579eed2ef0e"
-  integrity sha512-lUseMzAley4LhIcpSP9Jf+fTrQ4a1yHQwLNeeVa2cEmbCGeoZAtYPOIv8JaxLD/sUpKxetKGP+gsHl8f8TSj8Q==
 
 jest-get-type@^25.2.6:
   version "25.2.6"
@@ -13100,16 +13055,6 @@ jest-leak-detector@^26.4.2:
   dependencies:
     jest-get-type "^26.3.0"
     pretty-format "^26.4.2"
-
-jest-matcher-utils@^24.0.0:
-  version "24.9.0"
-  resolved "https://registry.yarnpkg.com/jest-matcher-utils/-/jest-matcher-utils-24.9.0.tgz#f5b3661d5e628dffe6dd65251dfdae0e87c3a073"
-  integrity sha512-OZz2IXsu6eaiMAwe67c1T+5tUAtQyQx27/EMEkbFAGiw52tB9em+uGbzpcgYVpA8wl0hlxKPZxrly4CXU/GjHA==
-  dependencies:
-    chalk "^2.0.1"
-    jest-diff "^24.9.0"
-    jest-get-type "^24.9.0"
-    pretty-format "^24.9.0"
 
 jest-matcher-utils@^26.4.2:
   version "26.4.2"
@@ -17035,7 +16980,7 @@ pretty-error@^2.1.1:
     renderkid "^2.0.1"
     utila "~0.4"
 
-pretty-format@^24.0.0, pretty-format@^24.8.0, pretty-format@^24.9.0:
+pretty-format@^24.8.0:
   version "24.9.0"
   resolved "https://registry.yarnpkg.com/pretty-format/-/pretty-format-24.9.0.tgz#12fac31b37019a4eea3c11aa9a959eb7628aa7c9"
   integrity sha512-00ZMZUiHaJrNfk33guavqgvfJS30sLYf0f8+Srklv0AMPodGGHcoHgksZ3OThYnIvOd+8yMCn0YiEOogjlgsnA==
@@ -19337,7 +19282,7 @@ source-map-loader@1.1.0:
     source-map "^0.6.1"
     whatwg-mimetype "^2.3.0"
 
-source-map-resolve@^0.5.0, source-map-resolve@^0.5.2:
+source-map-resolve@^0.5.0:
   version "0.5.3"
   resolved "https://registry.yarnpkg.com/source-map-resolve/-/source-map-resolve-0.5.3.tgz#190866bece7553e1f8f267a2ee82c606b5509a1a"
   integrity sha512-Htz+RnsXWk5+P2slx5Jh3Q66vhQj1Cllm0zvnaY98+NFx+Dv2CF/f5O/t8x+KaNdrdIAsruNzoh/KpialbqAnw==
