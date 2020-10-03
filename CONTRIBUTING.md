@@ -4,9 +4,9 @@ We do not allow contributors to claim issues. If you find something interesting 
 
 1. Fork the repo
 2. Install dependencies locally `yarn`
-1. Make sure it builds `yarn start`
-1. Run the tests `yarn tests`
-1. Test your changes locally
-1. Ensure the code coverage is the same or higher than before your changes.
-1. Create a PR to the `master` branch
+3. Make sure it builds `yarn start`
+4. Run the tests `yarn tests`
+5. Test your changes locally
+6. Ensure the code coverage is the same or higher than before your changes.
+7. Create a PR to the `master` branch
 
