@@ -1498,7 +1498,7 @@
     minimist "^1.2.0"
 
 "@design-systems/build@link:plugins/build":
-  version "2.5.2"
+  version "2.5.4"
   dependencies:
     "@babel/code-frame" "7.10.4"
     "@babel/core" "7.11.5"
@@ -1539,7 +1539,7 @@
     typescript "4.0.2"
 
 "@design-systems/bundle@link:plugins/bundle":
-  version "2.5.2"
+  version "2.5.4"
   dependencies:
     "@design-systems/build" "link:plugins/build"
     "@design-systems/cli-utils" "link:packages/cli-utils"
@@ -1551,13 +1551,13 @@
     duplicate-package-checker-webpack-plugin "3.0.0"
     get-monorepo-packages "1.2.0"
     postcss-loader "3.0.0"
-    style-loader "1.2.1"
+    style-loader "1.3.0"
     terser-webpack-plugin "4.1.0"
     tslib "2.0.1"
     webpack "4.44.1"
 
 "@design-systems/clean@link:plugins/clean":
-  version "2.5.2"
+  version "2.5.4"
   dependencies:
     "@design-systems/cli-utils" "link:packages/cli-utils"
     "@design-systems/plugin" "link:packages/plugin"
@@ -1566,7 +1566,7 @@
     tslib "2.0.1"
 
 "@design-systems/cli-utils@link:packages/cli-utils":
-  version "2.5.2"
+  version "2.5.4"
   dependencies:
     find-up "5.0.0"
     npm-which "3.0.1"
@@ -1576,7 +1576,7 @@
     webpack "4.44.1"
 
 "@design-systems/cli@link:packages/cli":
-  version "2.5.2"
+  version "2.5.4"
   dependencies:
     "@design-systems/cli-utils" "link:packages/cli-utils"
     "@design-systems/core" "link:packages/core"
@@ -1591,7 +1591,7 @@
     update-check "1.5.4"
 
 "@design-systems/core@link:packages/core":
-  version "2.5.2"
+  version "2.5.4"
   dependencies:
     "@design-systems/build" "link:plugins/build"
     "@design-systems/bundle" "link:plugins/bundle"
@@ -1611,7 +1611,7 @@
     tslib "2.0.1"
 
 "@design-systems/create-command@link:plugins/create-command":
-  version "2.5.2"
+  version "2.5.4"
   dependencies:
     "@design-systems/cli-utils" "link:packages/cli-utils"
     "@design-systems/create" "link:packages/create"
@@ -1630,10 +1630,10 @@
     tslib "2.0.1"
 
 "@design-systems/create@link:packages/create":
-  version "2.5.2"
+  version "2.5.4"
 
 "@design-systems/dev@link:plugins/dev":
-  version "2.5.2"
+  version "2.5.4"
   dependencies:
     "@design-systems/cli-utils" "link:packages/cli-utils"
     "@design-systems/plugin" "link:packages/plugin"
@@ -1644,7 +1644,7 @@
     tslib "2.0.1"
 
 "@design-systems/eslint-config@link:packages/eslint-config":
-  version "2.5.2"
+  version "2.5.4"
   dependencies:
     "@design-systems/cli-utils" "link:packages/cli-utils"
     "@typescript-eslint/eslint-plugin" "3.9.0"
@@ -1668,7 +1668,7 @@
     tslib "2.0.1"
 
 "@design-systems/lint@link:plugins/lint":
-  version "2.5.2"
+  version "2.5.4"
   dependencies:
     "@design-systems/cli-utils" "link:packages/cli-utils"
     "@design-systems/eslint-config" "link:packages/eslint-config"
@@ -1685,7 +1685,7 @@
     tslib "2.0.1"
 
 "@design-systems/load-config@link:packages/load-config":
-  version "2.5.2"
+  version "2.5.4"
   dependencies:
     "@design-systems/core" "link:packages/core"
     "@design-systems/plugin" "link:packages/plugin"
@@ -1699,7 +1699,7 @@
     tslib "2.0.1"
 
 "@design-systems/playroom@link:plugins/playroom":
-  version "2.5.2"
+  version "2.5.4"
   dependencies:
     "@babel/core" "7.11.5"
     "@babel/register" "7.11.5"
@@ -1714,19 +1714,19 @@
     fs-extra "9.0.1"
     playroom "0.21.3"
     react-element-to-jsx-string "14.3.1"
-    style-loader "1.2.1"
+    style-loader "1.3.0"
     tslib "2.0.1"
     webpack "4.44.1"
 
 "@design-systems/plugin@link:packages/plugin":
-  version "2.5.2"
+  version "2.5.4"
   dependencies:
     command-line-application "0.10.1"
     tslib "2.0.1"
     utility-types "3.10.0"
 
 "@design-systems/proof@link:plugins/proof":
-  version "2.5.2"
+  version "2.5.4"
   dependencies:
     "@babel/core" "7.11.5"
     "@babel/plugin-transform-runtime" "7.11.5"
@@ -1744,7 +1744,7 @@
     tslib "2.0.1"
 
 "@design-systems/size@link:plugins/size":
-  version "2.5.2"
+  version "2.5.4"
   dependencies:
     "@design-systems/cli-utils" "link:packages/cli-utils"
     "@design-systems/plugin" "link:packages/plugin"
@@ -1775,7 +1775,7 @@
     webpack-sources "1.4.3"
 
 "@design-systems/storybook@link:plugins/storybook":
-  version "2.5.2"
+  version "2.5.4"
   dependencies:
     "@alisowski/storybook-addon-notes" "^6.0.1"
     "@babel/core" "7.11.5"
@@ -1808,7 +1808,7 @@
     webpack-filter-warnings-plugin "1.2.1"
 
 "@design-systems/stylelint-config@link:packages/stylelint-config":
-  version "2.5.2"
+  version "2.5.4"
   dependencies:
     stylelint-a11y "1.2.3"
     stylelint-config-css-modules "2.2.0"
@@ -1822,7 +1822,7 @@
     tslib "2.0.1"
 
 "@design-systems/test@link:plugins/test":
-  version "2.5.2"
+  version "2.5.4"
   dependencies:
     "@babel/core" "7.11.5"
     "@design-systems/build" "link:plugins/build"
@@ -1842,7 +1842,7 @@
     tslib "2.0.1"
 
 "@design-systems/update@link:plugins/update":
-  version "2.5.2"
+  version "2.5.4"
   dependencies:
     "@design-systems/cli-utils" "link:packages/cli-utils"
     "@design-systems/plugin" "link:packages/plugin"
@@ -19951,13 +19951,13 @@ strong-log-transformer@^2.0.0:
     minimist "^1.2.0"
     through "^2.3.4"
 
-style-loader@1.2.1, style-loader@^1.2.1:
-  version "1.2.1"
-  resolved "https://registry.yarnpkg.com/style-loader/-/style-loader-1.2.1.tgz#c5cbbfbf1170d076cfdd86e0109c5bba114baa1a"
-  integrity sha512-ByHSTQvHLkWE9Ir5+lGbVOXhxX10fbprhLvdg96wedFZb4NDekDPxVKv5Fwmio+QcMlkkNfuK+5W1peQ5CUhZg==
+style-loader@1.3.0:
+  version "1.3.0"
+  resolved "https://registry.yarnpkg.com/style-loader/-/style-loader-1.3.0.tgz#828b4a3b3b7e7aa5847ce7bae9e874512114249e"
+  integrity sha512-V7TCORko8rs9rIqkSrlMfkqA63DfoGBBJmK1kKGCcSi+BWb4cqz0SRsnp4l6rU5iwOEd0/2ePv68SV22VXon4Q==
   dependencies:
     loader-utils "^2.0.0"
-    schema-utils "^2.6.6"
+    schema-utils "^2.7.0"
 
 style-loader@^1.1.3:
   version "1.1.3"
@@ -19966,6 +19966,14 @@ style-loader@^1.1.3:
   dependencies:
     loader-utils "^1.2.3"
     schema-utils "^2.6.4"
+
+style-loader@^1.2.1:
+  version "1.2.1"
+  resolved "https://registry.yarnpkg.com/style-loader/-/style-loader-1.2.1.tgz#c5cbbfbf1170d076cfdd86e0109c5bba114baa1a"
+  integrity sha512-ByHSTQvHLkWE9Ir5+lGbVOXhxX10fbprhLvdg96wedFZb4NDekDPxVKv5Fwmio+QcMlkkNfuK+5W1peQ5CUhZg==
+  dependencies:
+    loader-utils "^2.0.0"
+    schema-utils "^2.6.6"
 
 style-search@^0.1.0:
   version "0.1.0"
