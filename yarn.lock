@@ -1498,7 +1498,7 @@
     minimist "^1.2.0"
 
 "@design-systems/build@link:plugins/build":
-  version "2.5.2"
+  version "2.5.4"
   dependencies:
     "@babel/code-frame" "7.10.4"
     "@babel/core" "7.11.5"
@@ -1539,7 +1539,7 @@
     typescript "4.0.2"
 
 "@design-systems/bundle@link:plugins/bundle":
-  version "2.5.2"
+  version "2.5.4"
   dependencies:
     "@design-systems/build" "link:plugins/build"
     "@design-systems/cli-utils" "link:packages/cli-utils"
@@ -1557,7 +1557,7 @@
     webpack "4.44.1"
 
 "@design-systems/clean@link:plugins/clean":
-  version "2.5.2"
+  version "2.5.4"
   dependencies:
     "@design-systems/cli-utils" "link:packages/cli-utils"
     "@design-systems/plugin" "link:packages/plugin"
@@ -1566,7 +1566,7 @@
     tslib "2.0.1"
 
 "@design-systems/cli-utils@link:packages/cli-utils":
-  version "2.5.2"
+  version "2.5.4"
   dependencies:
     find-up "5.0.0"
     npm-which "3.0.1"
@@ -1576,7 +1576,7 @@
     webpack "4.44.1"
 
 "@design-systems/cli@link:packages/cli":
-  version "2.5.2"
+  version "2.5.4"
   dependencies:
     "@design-systems/cli-utils" "link:packages/cli-utils"
     "@design-systems/core" "link:packages/core"
@@ -1591,7 +1591,7 @@
     update-check "1.5.4"
 
 "@design-systems/core@link:packages/core":
-  version "2.5.2"
+  version "2.5.4"
   dependencies:
     "@design-systems/build" "link:plugins/build"
     "@design-systems/bundle" "link:plugins/bundle"
@@ -1611,7 +1611,7 @@
     tslib "2.0.1"
 
 "@design-systems/create-command@link:plugins/create-command":
-  version "2.5.2"
+  version "2.5.4"
   dependencies:
     "@design-systems/cli-utils" "link:packages/cli-utils"
     "@design-systems/create" "link:packages/create"
@@ -1630,10 +1630,10 @@
     tslib "2.0.1"
 
 "@design-systems/create@link:packages/create":
-  version "2.5.2"
+  version "2.5.4"
 
 "@design-systems/dev@link:plugins/dev":
-  version "2.5.2"
+  version "2.5.4"
   dependencies:
     "@design-systems/cli-utils" "link:packages/cli-utils"
     "@design-systems/plugin" "link:packages/plugin"
@@ -1644,7 +1644,7 @@
     tslib "2.0.1"
 
 "@design-systems/eslint-config@link:packages/eslint-config":
-  version "2.5.2"
+  version "2.5.4"
   dependencies:
     "@design-systems/cli-utils" "link:packages/cli-utils"
     "@typescript-eslint/eslint-plugin" "3.9.0"
@@ -1668,7 +1668,7 @@
     tslib "2.0.1"
 
 "@design-systems/lint@link:plugins/lint":
-  version "2.5.2"
+  version "2.5.4"
   dependencies:
     "@design-systems/cli-utils" "link:packages/cli-utils"
     "@design-systems/eslint-config" "link:packages/eslint-config"
@@ -1685,7 +1685,7 @@
     tslib "2.0.1"
 
 "@design-systems/load-config@link:packages/load-config":
-  version "2.5.2"
+  version "2.5.4"
   dependencies:
     "@design-systems/core" "link:packages/core"
     "@design-systems/plugin" "link:packages/plugin"
@@ -1699,7 +1699,7 @@
     tslib "2.0.1"
 
 "@design-systems/playroom@link:plugins/playroom":
-  version "2.5.2"
+  version "2.5.4"
   dependencies:
     "@babel/core" "7.11.5"
     "@babel/register" "7.11.5"
@@ -1719,14 +1719,14 @@
     webpack "4.44.1"
 
 "@design-systems/plugin@link:packages/plugin":
-  version "2.5.2"
+  version "2.5.4"
   dependencies:
     command-line-application "0.10.1"
     tslib "2.0.1"
     utility-types "3.10.0"
 
 "@design-systems/proof@link:plugins/proof":
-  version "2.5.2"
+  version "2.5.4"
   dependencies:
     "@babel/core" "7.11.5"
     "@babel/plugin-transform-runtime" "7.11.5"
@@ -1744,7 +1744,7 @@
     tslib "2.0.1"
 
 "@design-systems/size@link:plugins/size":
-  version "2.5.2"
+  version "2.5.4"
   dependencies:
     "@design-systems/cli-utils" "link:packages/cli-utils"
     "@design-systems/plugin" "link:packages/plugin"
@@ -1762,7 +1762,7 @@
     gitlog "4.0.0"
     lodash.chunk "4.2.0"
     markdown-table "2.0.0"
-    mini-css-extract-plugin "0.11.0"
+    mini-css-extract-plugin "0.12.0"
     opn "5.5.0"
     optimize-css-assets-webpack-plugin "5.0.4"
     signale "1.4.0"
@@ -1775,7 +1775,7 @@
     webpack-sources "1.4.3"
 
 "@design-systems/storybook@link:plugins/storybook":
-  version "2.5.2"
+  version "2.5.4"
   dependencies:
     "@alisowski/storybook-addon-notes" "^6.0.1"
     "@babel/core" "7.11.5"
@@ -1808,7 +1808,7 @@
     webpack-filter-warnings-plugin "1.2.1"
 
 "@design-systems/stylelint-config@link:packages/stylelint-config":
-  version "2.5.2"
+  version "2.5.4"
   dependencies:
     stylelint-a11y "1.2.3"
     stylelint-config-css-modules "2.2.0"
@@ -1822,7 +1822,7 @@
     tslib "2.0.1"
 
 "@design-systems/test@link:plugins/test":
-  version "2.5.2"
+  version "2.5.4"
   dependencies:
     "@babel/core" "7.11.5"
     "@design-systems/build" "link:plugins/build"
@@ -1842,7 +1842,7 @@
     tslib "2.0.1"
 
 "@design-systems/update@link:plugins/update":
-  version "2.5.2"
+  version "2.5.4"
   dependencies:
     "@design-systems/cli-utils" "link:packages/cli-utils"
     "@design-systems/plugin" "link:packages/plugin"
@@ -14787,10 +14787,10 @@ min-indent@^1.0.0:
   resolved "https://registry.yarnpkg.com/min-indent/-/min-indent-1.0.0.tgz#cfc45c37e9ec0d8f0a0ec3dd4ef7f7c3abe39256"
   integrity sha1-z8RcN+nsDY8KDsPdTvf3w6vjklY=
 
-mini-css-extract-plugin@0.11.0:
-  version "0.11.0"
-  resolved "https://registry.yarnpkg.com/mini-css-extract-plugin/-/mini-css-extract-plugin-0.11.0.tgz#3918953075109d4ca204bf1e8a393a78d3cc821f"
-  integrity sha512-dVWGuWJlQw2lZxsxBI3hOsoxg1k3DruLR0foHQLSkQMfk+qLJbv9dUk8fjmjWQKN9ef2n54ehA2FjClAsQhrWQ==
+mini-css-extract-plugin@0.12.0:
+  version "0.12.0"
+  resolved "https://registry.yarnpkg.com/mini-css-extract-plugin/-/mini-css-extract-plugin-0.12.0.tgz#ddeb74fd6304ca9f99c1db74acc7d5b507705454"
+  integrity sha512-z6PQCe9rd1XUwZ8gMaEVwwRyZlrYy8Ba1gRjFP5HcV51HkXX+XlwZ+a1iAYTjSYwgNBXoNR7mhx79mDpOn5fdw==
   dependencies:
     loader-utils "^1.1.0"
     normalize-url "1.9.1"
