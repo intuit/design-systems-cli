@@ -40,7 +40,7 @@
     "optimize-css-assets-webpack-plugin": "5.0.4",
     "signale": "1.4.0",
     "table": "6.0.1",
-    "terser-webpack-plugin": "4.1.0",
+    "terser-webpack-plugin": "4.2.3",
     "tslib": "2.0.1",
     "webpack": "4.44.1",
     "webpack-bundle-analyzer": "3.8.0",
@@ -55,7 +55,7 @@
     "@types/opn": "5.1.0",
     "@types/optimize-css-assets-webpack-plugin": "5.0.1",
     "@types/table": "5.0.0",
-    "@types/terser-webpack-plugin": "4.1.0",
+    "@types/terser-webpack-plugin": "4.2.0",
     "@types/webpack-bundle-analyzer": "3.8.0",
     "@types/webpack-sources": "1.4.2"
   }
