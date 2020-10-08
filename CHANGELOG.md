@@ -1,3 +1,25 @@
+# v2.6.0 (Thu Oct 08 2020)
+
+:tada: This release contains work from a new contributor! :tada:
+
+Thank you, my99N ([@vzsky](https://github.com/vzsky)), for all your work!
+
+#### 🚀 Enhancement
+
+- `@design-systems/next-esm-css`
+  - add Next.js plugin to allow CSS imports for components build with 'ds build' [#552](https://github.com/intuit/design-systems-cli/pull/552) ([@hipstersmoothie](https://github.com/hipstersmoothie))
+
+#### 🏠 Internal
+
+- Create GitHub action to format using prettier [#538](https://github.com/intuit/design-systems-cli/pull/538) ([@vzsky](https://github.com/vzsky))
+
+#### Authors: 2
+
+- Andrew Lisowski ([@hipstersmoothie](https://github.com/hipstersmoothie))
+- my99N ([@vzsky](https://github.com/vzsky))
+
+---
+
 # v2.5.4 (Thu Oct 01 2020)
 
 :tada: This release contains work from new contributors! :tada:
