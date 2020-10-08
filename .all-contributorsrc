@@ -161,6 +161,17 @@
       "contributions": [
         "doc"
       ]
+    },
+    {
+      "login": "vzsky",
+      "name": "my99N",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/20735983?v=4",
+      "profile": "https://github.com/vzsky",
+      "contributions": [
+        "doc",
+        "test",
+        "code"
+      ]
     }
   ],
   "contributorsPerLine": 7
