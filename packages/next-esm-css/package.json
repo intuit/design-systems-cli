@@ -1,0 +1,16 @@
+{
+  "name": "@design-systems/next-esm-css",
+  "version": "2.5.4",
+  "main": "./src/index.js",
+  "repository": "https://github.com/intuit/design-systems-cli.git",
+  "author": "Andrew Lisowski lisowski54@gmail.com",
+  "contributors": ["Andrew Lisowski lisowski54@gmail.com"],
+  "license": "MIT",
+  "files": ["dist", "src", "!*.test.*", "!__snapshots__", "!__tests__"],
+  "dependencies": {
+    "@babel/runtime": "~7.11.2"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
