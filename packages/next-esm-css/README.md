@@ -27,3 +27,8 @@ module.exports = withEsmCss();
 ```
 
 Now Next.js won't break when you import a component build with `ds`!
+
+## Inspration
+
+This package heavily borrows from [next-transpiled-modules](https://www.npmjs.com/package/next-transpile-modules).
+You could use that package instead, but this package is a bit faster when building since it only affects CSS.
