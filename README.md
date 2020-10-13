@@ -24,13 +24,30 @@
 
 Design-systems-cli is basically a [Create React App](https://github.com/facebook/create-react-app) for design systems.
 
-The main benefit it brings you as a developer is time savings. Setting up all of the monorepo, storybook, and build tools for a design system takes over a week if you piece it together yourself. You can do it with this project in minutes.
+The main benefit it brings you as a developer is time savings. Setting up all of the monorepo, [storybook](https://storybook.js.org/), and build tools for a design system takes over a week if you piece it together yourself. You can do it with this project in minutes.
+
+### Features
+:star: Scaffold components and entire design systems
+
+:star: Build your components for multiple outputs (cjs and esm)
+
+:star: Write styles with styled-components or css-modules
+
+:star: Craft excellent components using Storybook
+
+:star: Let component consumer try your components with playroom
+
+:star: Testing and linting support
+
+:star: Typescript supported out of the box
+
+:star: Track the size of your components and debug the changes
 
 For the full documentation, go [here](https://intuit.github.io/design-systems-cli/#).
 
 ## Contributing
 
-To get started:
+To get set up, fork and clone the project then run the following command:
 
 ```sh
 yarn && yarn start
