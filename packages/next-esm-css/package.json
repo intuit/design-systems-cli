@@ -1,6 +1,6 @@
 {
   "name": "@design-systems/next-esm-css",
-  "version": "2.6.0",
+  "version": "2.6.1",
   "main": "./src/index.js",
   "repository": "https://github.com/intuit/design-systems-cli.git",
   "author": "Andrew Lisowski lisowski54@gmail.com",
