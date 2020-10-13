@@ -1,3 +1,32 @@
+# v2.6.1 (Tue Oct 13 2020)
+
+:tada: This release contains work from new contributors! :tada:
+
+Thanks for all your work!
+
+:heart: null[@edgarsherman](https://github.com/edgarsherman)
+
+:heart: null[@anjaliguptaz](https://github.com/anjaliguptaz)
+
+#### 🐛 Bug Fix
+
+- `@design-systems/create`
+  - fix: issue committing on windows [#558](https://github.com/intuit/design-systems-cli/pull/558) (edgar_sherman@intuit.com [@edgarsherman](https://github.com/edgarsherman))
+
+#### 📝 Documentation
+
+- Improve ReadMe #532 #hacktoberfest [#557](https://github.com/intuit/design-systems-cli/pull/557) (agupta18@intul18265e26b.corp.intuit.net [@hipstersmoothie](https://github.com/hipstersmoothie) [@anjaliguptaz](https://github.com/anjaliguptaz))
+
+#### Authors: 5
+
+- [@anjaliguptaz](https://github.com/anjaliguptaz)
+- [@edgarsherman](https://github.com/edgarsherman)
+- Andrew Lisowski ([@hipstersmoothie](https://github.com/hipstersmoothie))
+- anjaliguptaz@gmail.com (agupta18@intul18265e26b.corp.intuit.net)
+- Edgar Sherman (edgar_sherman@intuit.com)
+
+---
+
 # v2.6.0 (Thu Oct 08 2020)
 
 :tada: This release contains work from a new contributor! :tada:
