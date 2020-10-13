@@ -172,6 +172,15 @@
         "test",
         "code"
       ]
+    },
+    {
+      "login": "anjaliguptaz",
+      "name": "anjaliguptaz",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/13619573?v=4",
+      "profile": "https://github.com/anjaliguptaz",
+      "contributions": [
+        "doc"
+      ]
     }
   ],
   "contributorsPerLine": 7
