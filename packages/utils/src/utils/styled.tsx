@@ -49,7 +49,7 @@ interface WrappedComponent {
  * }
  */
 export function styled<T extends keyof JSX.IntrinsicElements>(
-  element: T,
+  element:  T | [T, ...React.ReactNode[]],
   options: string | WrappedComponent
 ) {
   const defaultDescription = `This component accepts all HTML attributes for a "${element}" element.`;
@@ -67,10 +67,14 @@ export function styled<T extends keyof JSX.IntrinsicElements>(
     React.PropsWithoutRef<Props> & React.RefAttributes<HTMLElement>
   >;
 
+  const elements = Array.isArray(element) ? element : [element];
+
   /** The result "styled" component. */
   const Wrapped = React.forwardRef<HTMLElement, Props>((props, ref) => {
-    const { as, ...rest } = props;
-    const Component = (as || element) as any;
+    const { as,  ...rest } = props;
+
+    const [component, ...innerElements] = elements as any;
+    const Component = as || component;
 
     return (
       <Component
@@ -78,13 +82,19 @@ export function styled<T extends keyof JSX.IntrinsicElements>(
         {...rest}
         className={makeClass(className, (props as any).className)}
       >
-        {props.children}
+        {innerElements.length
+          ? innerElements
+              .reverse()
+              .reduce((Children: React.ReactChildren, Parent: any) => {
+                return <Parent> {Children} </Parent>;
+              }, props.children)
+          : props.children}
       </Component>
     );
   }) as DocGen & Slotted & WithRef;
 
   // eslint-disable-next-line no-underscore-dangle
-  Wrapped._SLOT_ = slot || Symbol(element);
+  Wrapped._SLOT_ = slot || Symbol(elements[0]);
   Wrapped.displayName = name;
   // eslint-disable-next-line no-underscore-dangle
   Wrapped.__docgenInfo = {

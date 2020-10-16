@@ -379,7 +379,7 @@ all the same props as the element prop.
 
 **Parameters:**
 
-- element (`T`) - The html dom element to create a Component for
+- element (`T | [T, ...ReactNode[]]`) - The html dom element to create a Component for
 - options (`string | WrappedComponent`) - The class an metadata to attach to the Component
 
 **returns:** DocGen & Slotted & WithRef
