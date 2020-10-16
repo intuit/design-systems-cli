@@ -20,9 +20,9 @@
     "access": "public"
   },
   "dependencies": {
-    "@babel/core": "7.11.5",
-    "@babel/plugin-transform-runtime": "7.11.5",
-    "@babel/preset-typescript": "7.10.4",
+    "@babel/core": "7.12.3",
+    "@babel/plugin-transform-runtime": "7.12.1",
+    "@babel/preset-typescript": "7.12.1",
     "@design-systems/cli-utils": "link:../../packages/cli-utils",
     "@design-systems/plugin": "link:../../packages/plugin",
     "@proof-ui/a11y-plugin": "^0.1.4",
