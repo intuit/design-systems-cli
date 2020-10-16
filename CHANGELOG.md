@@ -1,3 +1,28 @@
+# v2.7.0 (Fri Oct 16 2020)
+
+:tada: This release contains work from a new contributor! :tada:
+
+Thank you, Kendall Gassner ([@kendallgassner](https://github.com/kendallgassner)), for all your work!
+
+#### 🚀 Enhancement
+
+- `@design-systems/utils`
+  - allowing more then one Component to be passed in to styled [#577](https://github.com/intuit/design-systems-cli/pull/577) ([@kendallgassner](https://github.com/kendallgassner))
+
+#### ⚠️ Pushed to `master`
+
+- `@design-systems/utils`
+  - Revert "add deprecation message" ([@hipstersmoothie](https://github.com/hipstersmoothie))
+- `@design-systems/utils`
+  - add deprecation message ([@hipstersmoothie](https://github.com/hipstersmoothie))
+
+#### Authors: 2
+
+- Andrew Lisowski ([@hipstersmoothie](https://github.com/hipstersmoothie))
+- Kendall Gassner ([@kendallgassner](https://github.com/kendallgassner))
+
+---
+
 # v2.6.1 (Tue Oct 13 2020)
 
 :tada: This release contains work from new contributors! :tada:
