@@ -49,7 +49,7 @@ interface WrappedComponent {
  * }
  */
 export function styled<T extends keyof JSX.IntrinsicElements>(
-  element:  T | [T, React.ReactElement[]],
+  element:  T | [T, React.ReactNode[]],
   options: string | WrappedComponent
 ) {
   const defaultDescription = `This component accepts all HTML attributes for a "${element}" element.`;
