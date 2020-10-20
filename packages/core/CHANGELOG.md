@@ -1,3 +1,21 @@
+# v2.7.1 (Tue Oct 20 2020)
+
+#### 🐛 Bug Fix
+
+- move postcss-themed reloading into postcss-themed package [#579](https://github.com/intuit/design-systems-cli/pull/579) ([@hipstersmoothie](https://github.com/hipstersmoothie))
+
+#### 🔩 Dependency Updates
+
+- Update dependency focus-lock to ^0.8.0 [#570](https://github.com/intuit/design-systems-cli/pull/570) ([@renovate-bot](https://github.com/renovate-bot) [@renovate[bot]](https://github.com/renovate[bot]))
+
+#### Authors: 3
+
+- [@renovate[bot]](https://github.com/renovate[bot])
+- Andrew Lisowski ([@hipstersmoothie](https://github.com/hipstersmoothie))
+- WhiteSource Renovate ([@renovate-bot](https://github.com/renovate-bot))
+
+---
+
 # v2.5.1 (Fri Sep 25 2020)
 
 #### 🐛 Bug Fix
