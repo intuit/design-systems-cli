@@ -1,3 +1,16 @@
+# v2.7.2 (Wed Oct 21 2020)
+
+#### 🐛 Bug Fix
+
+- `@design-systems/build`
+  - fix css source map generation [#580](https://github.com/intuit/design-systems-cli/pull/580) ([@hipstersmoothie](https://github.com/hipstersmoothie))
+
+#### Authors: 1
+
+- Andrew Lisowski ([@hipstersmoothie](https://github.com/hipstersmoothie))
+
+---
+
 # v2.7.1 (Tue Oct 20 2020)
 
 #### 🐛 Bug Fix
