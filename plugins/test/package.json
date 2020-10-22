@@ -20,7 +20,7 @@
     "access": "public"
   },
   "dependencies": {
-    "@babel/core": "7.11.5",
+    "@babel/core": "^7.11.5",
     "@design-systems/build": "link:../build",
     "@design-systems/cli-utils": "link:../../packages/cli-utils",
     "@design-systems/plugin": "link:../../packages/plugin",
