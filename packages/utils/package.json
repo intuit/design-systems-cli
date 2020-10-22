@@ -25,7 +25,7 @@
     "!__tests__"
   ],
   "dependencies": {
-    "@babel/runtime": "~7.11.2",
+    "@babel/runtime": "^7.11.2",
     "clsx": "^1.0.4",
     "focus-lock": "^0.8.0",
     "react-merge-refs": "^1.0.0"

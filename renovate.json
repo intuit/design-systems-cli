@@ -24,6 +24,11 @@
       "rangeStrategy": "bump"
     },
     {
+      "packagePatterns": ["@babel"],
+      "groupName": "babel",
+      "rangeStrategy": "bump"
+    },
+    {
       "packageNames": ["autoprefixer"],
       "packagePatterns": ["^postcss"],
       "groupName": "postcss",
