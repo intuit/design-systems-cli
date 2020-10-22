@@ -1,3 +1,16 @@
+# v2.7.3 (Thu Oct 22 2020)
+
+#### 🐛 Bug Fix
+
+- `@design-systems/babel-plugin-include-styles`, `@design-systems/babel-plugin-replace-styles`, `@design-systems/next-esm-css`, `@design-systems/utils`, `@design-systems/build`, `@design-systems/playroom`, `@design-systems/proof`, `@design-systems/storybook`, `@design-systems/test`
+  - loosen babel dep ranges [#581](https://github.com/intuit/design-systems-cli/pull/581) ([@hipstersmoothie](https://github.com/hipstersmoothie))
+
+#### Authors: 1
+
+- Andrew Lisowski ([@hipstersmoothie](https://github.com/hipstersmoothie))
+
+---
+
 # v2.7.2 (Wed Oct 21 2020)
 
 #### 🐛 Bug Fix
