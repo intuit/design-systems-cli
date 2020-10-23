@@ -9,7 +9,7 @@ module.exports = {
   ],
   collectCoverage: true,
   verbose: true,
-  moduleFileExtensions: ['js', 'json', 'ts', 'tsx'],
+  moduleFileExtensions: ['js', 'jsx', 'json', 'ts', 'tsx'],
   setupFiles: [path.join(__dirname, './jest/setupTests.js')],
   testPathIgnorePatterns: ['/node_modules/', '/dist/', '/helpers/'],
   moduleNameMapper: {
