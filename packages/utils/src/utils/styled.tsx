@@ -1,5 +1,6 @@
 import * as React from 'react';
 import makeClass from 'clsx';
+import { arrayify } from './arrayify';
 
 import { Element } from '..';
 
@@ -49,7 +50,7 @@ interface WrappedComponent {
  * }
  */
 export function styled<T extends keyof JSX.IntrinsicElements>(
-  element: T,
+  element: T | [T, ...((props: unknown) => JSX.Element)[]],
   options: string | WrappedComponent
 ) {
   const defaultDescription = `This component accepts all HTML attributes for a "${element}" element.`;
@@ -67,24 +68,33 @@ export function styled<T extends keyof JSX.IntrinsicElements>(
     React.PropsWithoutRef<Props> & React.RefAttributes<HTMLElement>
   >;
 
+  const elements = arrayify(element) as [
+    T,
+    ...((props: unknown) => JSX.Element)[]
+  ];
+
   /** The result "styled" component. */
   const Wrapped = React.forwardRef<HTMLElement, Props>((props, ref) => {
     const { as, ...rest } = props;
-    const Component = (as || element) as any;
+
+    /* If more then one component comes reduce into one component */
+    const Element = elements.reduce(
+      (Accumulator: any, CurrentValue: any) => (asProps: unknown) => (
+        <CurrentValue {...asProps} as={Accumulator} />
+      )
+    ) as any;
 
     return (
-      <Component
+      <Element
         ref={ref}
-        {...rest}
         className={makeClass(className, (props as any).className)}
-      >
-        {props.children}
-      </Component>
+        {...rest}
+      />
     );
   }) as DocGen & Slotted & WithRef;
 
   // eslint-disable-next-line no-underscore-dangle
-  Wrapped._SLOT_ = slot || Symbol(element);
+  Wrapped._SLOT_ = slot || Symbol(elements[0]);
   Wrapped.displayName = name;
   // eslint-disable-next-line no-underscore-dangle
   Wrapped.__docgenInfo = {
