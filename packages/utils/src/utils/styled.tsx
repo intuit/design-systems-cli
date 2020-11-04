@@ -73,18 +73,18 @@ export function styled<T extends keyof JSX.IntrinsicElements>(
     ...((props: unknown) => JSX.Element)[]
   ];
 
+  const ElementsReduced = [
+    ...elements
+  ].reduce((Accumulator: any, CurrentValue: any) => (asProps: unknown) => (
+    <CurrentValue {...asProps} as={Accumulator} />
+  )) as any;
+
   /** The result "styled" component. */
   const Wrapped = React.forwardRef<HTMLElement, Props>((props, ref) => {
     const { as, ...rest } = props;
 
     /* If more then one component comes reduce into one component */
-    const Component =
-      as ||
-      ([
-        ...elements
-      ].reduce((Accumulator: any, CurrentValue: any) => (asProps: unknown) => (
-        <CurrentValue {...asProps} as={Accumulator} />
-      )) as any);
+    const Component = as || ElementsReduced;
 
     return (
       <Component
