@@ -78,14 +78,14 @@ export function styled<T extends keyof JSX.IntrinsicElements>(
     const { as, ...rest } = props;
 
     /* If more then one component comes reduce into one component */
-    const Element = elements.reduce(
+    const Component = elements.reduce(
       (Accumulator: any, CurrentValue: any) => (asProps: unknown) => (
         <CurrentValue {...asProps} as={Accumulator} />
       )
     ) as any;
 
     return (
-      <Element
+      <Component
         ref={ref}
         className={makeClass(className, (props as any).className)}
         {...rest}
