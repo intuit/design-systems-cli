@@ -1,3 +1,34 @@
+# v2.7.4 (Thu Oct 22 2020)
+
+:tada: This release contains work from a new contributor! :tada:
+
+Thank you, null[@chaopan](https://github.com/chaopan), for all your work!
+
+#### 🐛 Bug Fix
+
+- adds jsx to jest moduleFileExtension list [#583](https://github.com/intuit/design-systems-cli/pull/583) (chao_pan@intuit.com [@chaopan](https://github.com/chaopan))
+- adds jsx to jest moduleFileExtension list (chao_pan@intuit.com)
+
+#### Authors: 2
+
+- [@chaopan](https://github.com/chaopan)
+- Pan, Chao (chao_pan@intuit.com)
+
+---
+
+# v2.7.3 (Thu Oct 22 2020)
+
+#### 🐛 Bug Fix
+
+- loosen babel dep ranges [#581](https://github.com/intuit/design-systems-cli/pull/581) ([@hipstersmoothie](https://github.com/hipstersmoothie))
+- loosen babel dep ranges ([@hipstersmoothie](https://github.com/hipstersmoothie))
+
+#### Authors: 1
+
+- Andrew Lisowski ([@hipstersmoothie](https://github.com/hipstersmoothie))
+
+---
+
 # v2.5.1 (Fri Sep 25 2020)
 
 #### 🐛 Bug Fix

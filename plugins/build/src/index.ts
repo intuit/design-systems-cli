@@ -208,7 +208,7 @@ export default class BuildPlugin implements Plugin<BuildArgs> {
         ${difference} -${efficiency}% ${duration}\n
       `);
 
-        await fs.outputFile(`${outFile}.map`, minified.sourceMap);
+        await fs.outputFile(`${outFile}.map`, minified.sourceMap.toString());
         await fs.outputFile(
           outFile,
           `${minified.styles}\n/*# sourceMappingURL=${makeCSSFilename(

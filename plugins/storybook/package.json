@@ -1,6 +1,6 @@
 {
   "name": "@design-systems/storybook",
-  "version": "2.6.1",
+  "version": "2.7.4",
   "description": "The storybook command for @design-systems-cli",
   "main": "dist/index.js",
   "author": "Adam Dierkens <adam@dierkens.com>",
@@ -23,7 +23,7 @@
   },
   "dependencies": {
     "@alisowski/storybook-addon-notes": "^6.0.1",
-    "@babel/core": "7.11.5",
+    "@babel/core": "^7.11.5",
     "@design-systems/build": "link:../build",
     "@design-systems/cli-utils": "link:../../packages/cli-utils",
     "@design-systems/plugin": "link:../../packages/plugin",
