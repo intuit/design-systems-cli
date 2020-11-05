@@ -1,3 +1,16 @@
+# v2.7.5 (Wed Nov 04 2020)
+
+#### 🐛 Bug Fix
+
+- `@design-systems/utils`
+  - Updated the 'styled' util to reduce all components in the element array into one component [#585](https://github.com/intuit/design-systems-cli/pull/585) ([@kendallgassner](https://github.com/kendallgassner))
+
+#### Authors: 1
+
+- Kendall Gassner ([@kendallgassner](https://github.com/kendallgassner))
+
+---
+
 # v2.7.4 (Thu Oct 22 2020)
 
 :tada: This release contains work from a new contributor! :tada:
