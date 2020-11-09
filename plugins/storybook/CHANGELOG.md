@@ -1,3 +1,23 @@
+# v2.8.0 (Mon Nov 09 2020)
+
+:tada: This release contains work from a new contributor! :tada:
+
+Thank you, Talor Anderson ([@Talor-A](https://github.com/Talor-A)), for all your work!
+
+#### 🚀 Enhancement
+
+- add storybook port option [#588](https://github.com/intuit/design-systems-cli/pull/588) ([@Talor-A](https://github.com/Talor-A))
+
+#### 🐛 Bug Fix
+
+- add storybook port ([@Talor-A](https://github.com/Talor-A))
+
+#### Authors: 1
+
+- Talor Anderson ([@Talor-A](https://github.com/Talor-A))
+
+---
+
 # v2.7.3 (Thu Oct 22 2020)
 
 #### 🐛 Bug Fix
