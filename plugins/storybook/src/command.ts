@@ -29,6 +29,11 @@ const command: CliCommand = {
           description: 'Start the storybook server in CI mode',
         },
         {
+          name: 'port',
+          type: Number,
+          description: 'Port to start the server on',
+        },
+        {
           name: 'findPort',
           type: Boolean,
           description:
