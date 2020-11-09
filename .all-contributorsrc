@@ -191,6 +191,15 @@
       "contributions": [
         "test"
       ]
+    },
+    {
+      "login": "Talor-A",
+      "name": "Talor Anderson",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/11509865?v=4",
+      "profile": "https://github.com/Talor-A",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "contributorsPerLine": 7
