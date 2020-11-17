@@ -51,8 +51,10 @@ export declare type Require<T, K extends keyof T> = T & Required<Pick<T, K>>;
  * )
  */
 export type Element<
-  T extends keyof JSX.IntrinsicElements
-> = React.PropsWithoutRef<JSX.IntrinsicElements[T]>;
+  T extends keyof JSX.IntrinsicElements | React.JSXElementConstructor<unknown>
+> = T extends keyof JSX.IntrinsicElements
+  ? React.PropsWithoutRef<JSX.IntrinsicElements[T]>
+  : React.ComponentProps<T>;
 
 /**
  * Create an interface that has all the properties of the input

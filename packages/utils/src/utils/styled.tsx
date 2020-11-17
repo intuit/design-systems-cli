@@ -32,7 +32,7 @@ interface WrappedComponent {
  * Create a react element with a className attached. The generated element accepts
  * all the same props as the element prop.
  *
- * @param element - The html dom element to create a Component for
+ * @param element - The html dom element or React component to create a Component for
  * @param options - The class an metadata to attach to the Component
  *
  * @example
@@ -49,8 +49,10 @@ interface WrappedComponent {
  *   </Wrapper>
  * }
  */
-export function styled<T extends keyof JSX.IntrinsicElements>(
-  element: T | [T, ...((props: any) => React.ReactNode)[]],
+export function styled<
+  T extends keyof JSX.IntrinsicElements | React.JSXElementConstructor<unknown>
+>(
+  element: T | [T, ...React.JSXElementConstructor<unknown>[]],
   options: string | WrappedComponent
 ) {
   const defaultDescription = `This component accepts all HTML attributes for a "${element}" element.`;
@@ -80,23 +82,25 @@ export function styled<T extends keyof JSX.IntrinsicElements>(
   )) as any;
 
   /** The result "styled" component. */
-  const Wrapped = React.forwardRef<HTMLElement, Props>((props, ref) => {
-    const { as, ...rest } = props;
+  const Wrapped = React.forwardRef(
+    (props: Props, ref: React.Ref<HTMLElement>) => {
+      const { as, ...rest } = props as any;
 
-    /* If more then one component comes reduce into one component */
-    const Component = as || ElementsReduced;
+      /* If more then one component comes reduce into one component */
+      const Component = as || ElementsReduced;
 
-    return (
-      <Component
-        ref={ref}
-        {...rest}
-        className={makeClass(className, (props as any).className)}
-      />
-    );
-  }) as DocGen & Slotted & WithRef;
+      return (
+        <Component
+          ref={ref}
+          {...rest}
+          className={makeClass(className, (props as any).className)}
+        />
+      );
+    }
+  ) as DocGen & Slotted & WithRef;
 
   // eslint-disable-next-line no-underscore-dangle
-  Wrapped._SLOT_ = slot || Symbol(elements[0]);
+  Wrapped._SLOT_ = slot || Symbol('component slot');
   Wrapped.displayName = name;
   // eslint-disable-next-line no-underscore-dangle
   Wrapped.__docgenInfo = {
