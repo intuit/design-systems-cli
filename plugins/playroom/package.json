@@ -28,7 +28,7 @@
     "css-loader": "3.5.3",
     "dedent": "0.7.0",
     "fast-glob": "3.2.4",
-    "file-loader": "6.1.0",
+    "file-loader": "6.2.0",
     "fs-extra": "9.0.1",
     "playroom": "0.21.3",
     "react-element-to-jsx-string": "14.3.1",
