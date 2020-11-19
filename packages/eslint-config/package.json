@@ -1,6 +1,6 @@
 {
   "name": "@design-systems/eslint-config",
-  "version": "2.8.1",
+  "version": "2.8.2",
   "description": "The eslint-config of the @design-systems CLI",
   "main": "index.js",
   "author": "Adam Dierkens <adam@dierkens.com>",
