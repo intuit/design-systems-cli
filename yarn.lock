@@ -2170,8 +2170,6 @@
     "@design-systems/build" "link:plugins/build"
     "@design-systems/cli-utils" "link:packages/cli-utils"
     "@design-systems/plugin" "link:packages/plugin"
-    "@types/case-sensitive-paths-webpack-plugin" "2.1.4"
-    "@types/duplicate-package-checker-webpack-plugin" "2.1.0"
     case-sensitive-paths-webpack-plugin "2.3.0"
     dedent "0.7.0"
     duplicate-package-checker-webpack-plugin "3.0.0"
@@ -4756,10 +4754,10 @@
     "@types/browserslist" "*"
     postcss "7.x.x"
 
-"@types/babel__code-frame@7.0.1":
-  version "7.0.1"
-  resolved "https://registry.yarnpkg.com/@types/babel__code-frame/-/babel__code-frame-7.0.1.tgz#baf2529c4abbfb5e4008c845efcfe39a187e2f99"
-  integrity sha512-FFfbQozKxYmOnCKFYV+EQprjBI7u2yaNc2ly/K9AhzyC8MzXtCtSRqptpw+HUJxhwCOo5mLwf1ATmzyhOaVbDg==
+"@types/babel__code-frame@7.0.2":
+  version "7.0.2"
+  resolved "https://registry.yarnpkg.com/@types/babel__code-frame/-/babel__code-frame-7.0.2.tgz#e0c0f1648cbc09a9d4e5b4ed2ae9a6f7c8f5aeb0"
+  integrity sha512-imO+jT/yjOKOAS5GQZ8SDtwiIloAGGr6OaZDKB0V5JVaSfGZLat5K5/ZRtyKW6R60XHV3RHYPTFfhYb+wDKyKg==
 
 "@types/babel__core@7.1.9", "@types/babel__core@^7.0.0":
   version "7.1.9"
