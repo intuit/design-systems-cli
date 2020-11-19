@@ -2170,8 +2170,6 @@
     "@design-systems/build" "link:plugins/build"
     "@design-systems/cli-utils" "link:packages/cli-utils"
     "@design-systems/plugin" "link:packages/plugin"
-    "@types/case-sensitive-paths-webpack-plugin" "2.1.4"
-    "@types/duplicate-package-checker-webpack-plugin" "2.1.0"
     case-sensitive-paths-webpack-plugin "2.3.0"
     dedent "0.7.0"
     duplicate-package-checker-webpack-plugin "3.0.0"
@@ -2338,7 +2336,7 @@
     fast-glob "3.2.4"
     file-loader "6.1.0"
     fs-extra "9.0.1"
-    playroom "0.21.3"
+    playroom "0.22.3"
     react-element-to-jsx-string "14.3.1"
     style-loader "1.2.1"
     tslib "2.0.1"
@@ -16981,10 +16979,10 @@ pkg-up@^2.0.0:
   dependencies:
     find-up "^2.1.0"
 
-playroom@0.21.3:
-  version "0.21.3"
-  resolved "https://registry.yarnpkg.com/playroom/-/playroom-0.21.3.tgz#d4e532cc6fd0cf9f31bf557830d9e2db16679487"
-  integrity sha512-NHYGEk+I/3TIMxzkda51u98F05TwvDBmp4IePAt+n+ToKVeiPta9IhIwZCd4DjXQAtZjmfoIaU8b4elqVRGB4A==
+playroom@0.22.3:
+  version "0.22.3"
+  resolved "https://registry.yarnpkg.com/playroom/-/playroom-0.22.3.tgz#64b73d040b37d894f4839914f2f9fa66b4d6bc74"
+  integrity sha512-wKHEnQKckvOXzuuO2weDMKlitW/mXdngN/DhQHxlIFz58r7AGMYGfSDru49Yn72SBtktFcfcIXhuHKVPE01DeA==
   dependencies:
     "@babel/cli" "^7.8.3"
     "@babel/core" "^7.8.3"
