@@ -24,7 +24,7 @@
     "@design-systems/create": "link:../../packages/create",
     "@design-systems/plugin": "link:../../packages/plugin",
     "change-case": "4.1.1",
-    "cli-spinners": "2.4.0",
+    "cli-spinners": "2.5.0",
     "colorette": "1.2.1",
     "copy-template-dir": "1.4.0",
     "dedent": "0.7.0",
