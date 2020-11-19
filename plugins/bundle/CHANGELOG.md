@@ -1,3 +1,23 @@
+# v2.8.1 (Thu Nov 19 2020)
+
+:tada: This release contains work from a new contributor! :tada:
+
+Thank you, Spencer Hamm ([@spentacular](https://github.com/spentacular)), for all your work!
+
+#### 🐛 Bug Fix
+
+- Update dependency webpack-inject-plugin to v1.5.5 [#592](https://github.com/intuit/design-systems-cli/pull/592) ([@renovate-bot](https://github.com/renovate-bot) [@renovate[bot]](https://github.com/renovate[bot]))
+- move types packages to devDependencies [#593](https://github.com/intuit/design-systems-cli/pull/593) ([@spentacular](https://github.com/spentacular))
+- move types packages to devDependencies ([@spentacular](https://github.com/spentacular))
+
+#### Authors: 3
+
+- [@renovate[bot]](https://github.com/renovate[bot])
+- Spencer Hamm ([@spentacular](https://github.com/spentacular))
+- WhiteSource Renovate ([@renovate-bot](https://github.com/renovate-bot))
+
+---
+
 # v2.7.3 (Thu Oct 22 2020)
 
 #### 🐛 Bug Fix
