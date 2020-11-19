@@ -30,7 +30,7 @@
     "fast-glob": "3.2.4",
     "file-loader": "6.1.0",
     "fs-extra": "9.0.1",
-    "playroom": "0.21.3",
+    "playroom": "0.22.3",
     "react-element-to-jsx-string": "14.3.1",
     "style-loader": "1.2.1",
     "tslib": "2.0.1",
