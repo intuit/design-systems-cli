@@ -1,3 +1,17 @@
+# v2.8.3 (Mon Nov 30 2020)
+
+#### 🐛 Bug Fix
+
+- `@design-systems/storybook`
+  - Update storybook to ^6.1.9 [#526](https://github.com/intuit/design-systems-cli/pull/526) ([@renovate-bot](https://github.com/renovate-bot) [@renovate[bot]](https://github.com/renovate[bot]))
+
+#### Authors: 2
+
+- [@renovate[bot]](https://github.com/renovate[bot])
+- WhiteSource Renovate ([@renovate-bot](https://github.com/renovate-bot))
+
+---
+
 # v2.8.2 (Thu Nov 19 2020)
 
 #### 🐛 Bug Fix
