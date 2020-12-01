@@ -16,6 +16,12 @@ const command: CliCommand = {
           description: 'Generate sketch assets for the storybook',
           config: true,
         },
+        {
+          name: 'extract',
+          type: Boolean,
+          description: 'Output a stories.json for storybook composition',
+          config: true,
+        },
       ],
     },
     {
