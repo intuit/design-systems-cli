@@ -1,3 +1,16 @@
+# v2.9.0 (Tue Dec 01 2020)
+
+#### 🚀 Enhancement
+
+- `@design-systems/storybook`
+  - add extract option for storybook composition [#597](https://github.com/intuit/design-systems-cli/pull/597) ([@hipstersmoothie](https://github.com/hipstersmoothie))
+
+#### Authors: 1
+
+- Andrew Lisowski ([@hipstersmoothie](https://github.com/hipstersmoothie))
+
+---
+
 # v2.8.3 (Mon Nov 30 2020)
 
 #### 🐛 Bug Fix
