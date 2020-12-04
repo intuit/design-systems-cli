@@ -13,7 +13,7 @@ module.exports = {
   setupFiles: [path.join(__dirname, './jest/setupTests.js')],
   testPathIgnorePatterns: ['/node_modules/', '/dist/', '/helpers/'],
   moduleNameMapper: {
-    '\\.css$': 'identity-obj-proxy'
+    '\\.(css|md)$': 'identity-obj-proxy'
   },
   transform: {
     '\\.(js|jsx|ts|tsx)$': path.join(__dirname, './jest/transform.js')
