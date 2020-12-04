@@ -1,3 +1,15 @@
+# v2.9.1 (Thu Dec 03 2020)
+
+#### 🐛 Bug Fix
+
+- add .md to identity-obj-proxy [#600](https://github.com/intuit/design-systems-cli/pull/600) ([@Talor-A](https://github.com/Talor-A))
+
+#### Authors: 1
+
+- Talor Anderson ([@Talor-A](https://github.com/Talor-A))
+
+---
+
 # v2.8.2 (Thu Nov 19 2020)
 
 #### 🐛 Bug Fix
