@@ -1,6 +1,6 @@
 {
   "name": "@design-systems/utils",
-  "version": "2.9.0",
+  "version": "2.9.1",
   "description": "Helper utilities for developing react components",
   "main": "./dist/cjs/index.js",
   "module": "./dist/esm/index.js",
