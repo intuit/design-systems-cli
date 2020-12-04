@@ -198,7 +198,9 @@
       "avatar_url": "https://avatars2.githubusercontent.com/u/11509865?v=4",
       "profile": "https://github.com/Talor-A",
       "contributions": [
-        "code"
+        "code",
+        "doc",
+        "test"
       ]
     },
     {
