@@ -26,26 +26,49 @@ export default function replaceStyles(
   { types }: Babel,
   { scope, use, replace = 'main' }: ReplaceStylesOptions
 ): babel.PluginObj {
-
   /**  Replace an import inside a component */
   function replaceCssImports(
     path: NodePath<BabelTypes.ImportDeclaration>,
     state: PluginPass,
     importName: string
   ) {
-    const isScope = state?.file?.opts?.filename && state.file.opts.filename.includes(`@${scope}/`);
+    const isScope =
+      state?.file?.opts?.filename &&
+      state.file.opts.filename.includes(`@${scope}/`);
 
     if (isScope && importName.includes(`${replace}.css`)) {
       // We found a candidate for replacement
       const dirname = nodePath.dirname(state.file.opts.filename as string);
-      const next = nodePath.join(dirname,importName.replace(replace, use));
-      
+      const next = nodePath.join(dirname, importName.replace(replace, use));
+
       if (exists(next)) {
         // Replacement exists
-        const importDeclaration = types.importDeclaration([], types.stringLiteral(`../${use}.css`));
+        const importDeclaration = types.importDeclaration(
+          [],
+          types.stringLiteral(`../${use}.css`)
+        );
         path.replaceInline(importDeclaration);
       }
-      
+    }
+  }
+
+  /**  Replace an css.js import inside a component */
+  function replaceCssJsImports(
+    path: NodePath<BabelTypes.ImportDeclaration>,
+    state: PluginPass,
+    importName: string
+  ) {
+    const isScope =
+      state?.file?.opts?.filename &&
+      state.file.opts.filename.includes(`@${scope}/`);
+
+    if (isScope && path.node.specifiers.length) {
+      const newImport = importName.replace('.css', `-${use}.css`);
+
+      if (exists(newImport)) {
+        // eslint-disable-next-line no-param-reassign
+        path.node.source.value = newImport;
+      }
     }
   }
 
@@ -54,6 +77,7 @@ export default function replaceStyles(
       ImportDeclaration(path, state) {
         const importName = path.node.source.value;
         replaceCssImports(path, state, importName);
+        replaceCssJsImports(path, state, importName);
       },
     },
   };
