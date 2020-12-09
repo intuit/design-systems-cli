@@ -62,12 +62,22 @@ export default function replaceStyles(
       state?.file?.opts?.filename &&
       state.file.opts.filename.includes(`@${scope}/`);
 
-    if (isScope && path.node.specifiers.length) {
+    if (
+      isScope &&
+      path.node.specifiers.length &&
+      importName.includes('.css') &&
+      !importName.includes(use)
+    ) {
+      const dirname = nodePath.dirname(state.file.opts.filename as string);
       const newImport = importName.replace('.css', `-${use}.css`);
+      const newImportPath = nodePath.join(dirname, newImport);
 
-      if (exists(newImport)) {
-        // eslint-disable-next-line no-param-reassign
-        path.node.source.value = newImport;
+      if (exists(newImportPath)) {
+        const importDeclaration = types.importDeclaration(
+          path.node.specifiers,
+          types.stringLiteral(newImport)
+        );
+        path.replaceWith(importDeclaration);
       }
     }
   }
