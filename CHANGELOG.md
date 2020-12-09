@@ -1,3 +1,16 @@
+# v2.10.0 (Wed Dec 09 2020)
+
+#### 🚀 Enhancement
+
+- `@design-systems/build`
+  - add moduleHash option for postcss configs [#602](https://github.com/intuit/design-systems-cli/pull/602) ([@hipstersmoothie](https://github.com/hipstersmoothie))
+
+#### Authors: 1
+
+- Andrew Lisowski ([@hipstersmoothie](https://github.com/hipstersmoothie))
+
+---
+
 # v2.9.1 (Thu Dec 03 2020)
 
 #### 🐛 Bug Fix
