@@ -243,6 +243,7 @@ export default class BuildPlugin implements Plugin<BuildArgs> {
           // Single PostCSS build
           const CSSMain = this.buildArgs.cssMain;
           this.logger.trace(`Single PostCSS build requested`);
+
           if (!this.cssFiles[CSSMain]) {
             this.logger.trace(`Creating map for ${CSSMain}`);
             this.cssFiles[CSSMain] = new Map<string, postcss.Result>();
@@ -281,6 +282,7 @@ export default class BuildPlugin implements Plugin<BuildArgs> {
             inDir: inputDirectory,
             outDir: outputDirectory,
             configFile: POSTCSS_CONFIG,
+            themeName: config.name,
             multiBuildConfigFile: config.path,
             isCssMain: this.buildArgs.cssMain === config.name,
             watch: this.buildArgs.watch,

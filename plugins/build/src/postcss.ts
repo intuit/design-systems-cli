@@ -75,6 +75,8 @@ interface LoadOptions {
    * and it doesn't have css (in the typescript build). We don't care about the error.
    */
   reportError?: boolean;
+  /** A multibuild theme name */
+  themeName?: string;
 }
 
 /** Fail the process if the postcss.config has errors */
@@ -97,11 +99,13 @@ export async function getPostCssConfig({
   outDir = 'dist',
   cwd = process.cwd(),
   reportError = true,
+  themeName,
 }: LoadOptions) {
   const context = useModules
     ? {
         env: 'module',
         outDir,
+        moduleHash: themeName,
       }
     : {};
 
@@ -160,6 +164,8 @@ interface TranspileOptions {
   outDir: string;
   /** Where the postcss.config is */
   configFile: string;
+  /** A multibuild theme name */
+  themeName?: string;
   /** A multibuild config file to use if not overridden */
   multiBuildConfigFile?: string;
   /** If this css file represents everything */
@@ -181,6 +187,7 @@ export default async function transpile({
   isCssMain,
   outDir,
   configFile,
+  themeName,
   multiBuildConfigFile,
   watch,
 }: TranspileOptions): Promise<postcss.Result | void> {
@@ -191,6 +198,7 @@ export default async function transpile({
     configFile,
     multiBuildConfigFile,
     outDir,
+    themeName,
   });
 
   const processor = postcss(plugins);
@@ -200,7 +208,7 @@ export default async function transpile({
     const result = await processor.process(fileContents, {
       ...options,
       plugins,
-      to: isCssMain ? cssFile : undefined,
+      to: isCssMain ? cssFile : cssFile.replace('.css', `-${themeName}.css`),
       from: inFile,
       map: { inline: false },
     });

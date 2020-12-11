@@ -133,27 +133,6 @@ const command: CliCommand = {
         \`\`\`
       `,
     },
-    {
-      header: 'Module Hash',
-      content: [
-        dedent`
-          If you are doing multi build css you might want to use our postcss config's \`moduleHash\` option.
-          This option will be added to the classnames that are produced so that if the application loads the single theme and multi-theme version of you component the classNames won't clash.
-        `,
-      ],
-    },
-    {
-      code: true,
-      content: dedent`
-        \`\`\`js
-        const defaultConfig = require('@design-systems/build/postcss.config');
-
-        module.exports = (ctx) => {
-          return defaultConfig({ ...ctx, moduleHash: 'my-theme' })
-        });
-        \`\`\`
-      `,
-    },
   ],
 };
 
