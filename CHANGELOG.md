@@ -1,3 +1,223 @@
+# v2.10.1 (Thu Dec 10 2020)
+
+#### 🐛 Bug Fix
+
+- `@design-systems/babel-plugin-replace-styles`, `@design-systems/build`
+  - integrate JSON file into single css theme builds [#603](https://github.com/intuit/design-systems-cli/pull/603) ([@hipstersmoothie](https://github.com/hipstersmoothie))
+
+#### Authors: 1
+
+- Andrew Lisowski ([@hipstersmoothie](https://github.com/hipstersmoothie))
+
+---
+
+# v2.10.0 (Wed Dec 09 2020)
+
+#### 🚀 Enhancement
+
+- `@design-systems/build`
+  - add moduleHash option for postcss configs [#602](https://github.com/intuit/design-systems-cli/pull/602) ([@hipstersmoothie](https://github.com/hipstersmoothie))
+
+#### Authors: 1
+
+- Andrew Lisowski ([@hipstersmoothie](https://github.com/hipstersmoothie))
+
+---
+
+# v2.9.1 (Thu Dec 03 2020)
+
+#### 🐛 Bug Fix
+
+- `@design-systems/test`
+  - add .md to identity-obj-proxy [#600](https://github.com/intuit/design-systems-cli/pull/600) ([@Talor-A](https://github.com/Talor-A))
+
+#### Authors: 1
+
+- Talor Anderson ([@Talor-A](https://github.com/Talor-A))
+
+---
+
+# v2.9.0 (Tue Dec 01 2020)
+
+#### 🚀 Enhancement
+
+- `@design-systems/storybook`
+  - add extract option for storybook composition [#597](https://github.com/intuit/design-systems-cli/pull/597) ([@hipstersmoothie](https://github.com/hipstersmoothie))
+
+#### Authors: 1
+
+- Andrew Lisowski ([@hipstersmoothie](https://github.com/hipstersmoothie))
+
+---
+
+# v2.8.3 (Mon Nov 30 2020)
+
+#### 🐛 Bug Fix
+
+- `@design-systems/storybook`
+  - Update storybook to ^6.1.9 [#526](https://github.com/intuit/design-systems-cli/pull/526) ([@renovate-bot](https://github.com/renovate-bot) [@renovate[bot]](https://github.com/renovate[bot]))
+
+#### Authors: 2
+
+- [@renovate[bot]](https://github.com/renovate[bot])
+- WhiteSource Renovate ([@renovate-bot](https://github.com/renovate-bot))
+
+---
+
+# v2.8.2 (Thu Nov 19 2020)
+
+#### 🐛 Bug Fix
+
+- `@design-systems/playroom`
+  - Update dependency playroom to v0.22.3 [#489](https://github.com/intuit/design-systems-cli/pull/489) ([@renovate-bot](https://github.com/renovate-bot) [@renovate[bot]](https://github.com/renovate[bot]))
+
+#### Authors: 2
+
+- [@renovate[bot]](https://github.com/renovate[bot])
+- WhiteSource Renovate ([@renovate-bot](https://github.com/renovate-bot))
+
+---
+
+# v2.8.1 (Thu Nov 19 2020)
+
+:tada: This release contains work from a new contributor! :tada:
+
+Thank you, Spencer Hamm ([@spentacular](https://github.com/spentacular)), for all your work!
+
+#### 🐛 Bug Fix
+
+- `@design-systems/size`
+  - Update dependency webpack-inject-plugin to v1.5.5 [#592](https://github.com/intuit/design-systems-cli/pull/592) ([@renovate-bot](https://github.com/renovate-bot) [@renovate[bot]](https://github.com/renovate[bot]))
+- `@design-systems/bundle`
+  - move types packages to devDependencies [#593](https://github.com/intuit/design-systems-cli/pull/593) ([@spentacular](https://github.com/spentacular))
+
+#### Authors: 3
+
+- [@renovate[bot]](https://github.com/renovate[bot])
+- Spencer Hamm ([@spentacular](https://github.com/spentacular))
+- WhiteSource Renovate ([@renovate-bot](https://github.com/renovate-bot))
+
+---
+
+# v2.8.0 (Mon Nov 09 2020)
+
+:tada: This release contains work from a new contributor! :tada:
+
+Thank you, Talor Anderson ([@Talor-A](https://github.com/Talor-A)), for all your work!
+
+#### 🚀 Enhancement
+
+- `@design-systems/storybook`
+  - add storybook port option [#588](https://github.com/intuit/design-systems-cli/pull/588) ([@Talor-A](https://github.com/Talor-A))
+
+#### Authors: 1
+
+- Talor Anderson ([@Talor-A](https://github.com/Talor-A))
+
+---
+
+# v2.7.5 (Wed Nov 04 2020)
+
+#### 🐛 Bug Fix
+
+- `@design-systems/utils`
+  - Updated the 'styled' util to reduce all components in the element array into one component [#585](https://github.com/intuit/design-systems-cli/pull/585) ([@kendallgassner](https://github.com/kendallgassner))
+
+#### Authors: 1
+
+- Kendall Gassner ([@kendallgassner](https://github.com/kendallgassner))
+
+---
+
+# v2.7.4 (Thu Oct 22 2020)
+
+:tada: This release contains work from a new contributor! :tada:
+
+Thank you, null[@chaopan](https://github.com/chaopan), for all your work!
+
+#### 🐛 Bug Fix
+
+- `@design-systems/test`
+  - adds jsx to jest moduleFileExtension list [#583](https://github.com/intuit/design-systems-cli/pull/583) (chao_pan@intuit.com [@chaopan](https://github.com/chaopan))
+
+#### Authors: 2
+
+- [@chaopan](https://github.com/chaopan)
+- Pan, Chao (chao_pan@intuit.com)
+
+---
+
+# v2.7.3 (Thu Oct 22 2020)
+
+#### 🐛 Bug Fix
+
+- `@design-systems/babel-plugin-include-styles`, `@design-systems/babel-plugin-replace-styles`, `@design-systems/next-esm-css`, `@design-systems/utils`, `@design-systems/build`, `@design-systems/playroom`, `@design-systems/proof`, `@design-systems/storybook`, `@design-systems/test`
+  - loosen babel dep ranges [#581](https://github.com/intuit/design-systems-cli/pull/581) ([@hipstersmoothie](https://github.com/hipstersmoothie))
+
+#### Authors: 1
+
+- Andrew Lisowski ([@hipstersmoothie](https://github.com/hipstersmoothie))
+
+---
+
+# v2.7.2 (Wed Oct 21 2020)
+
+#### 🐛 Bug Fix
+
+- `@design-systems/build`
+  - fix css source map generation [#580](https://github.com/intuit/design-systems-cli/pull/580) ([@hipstersmoothie](https://github.com/hipstersmoothie))
+
+#### Authors: 1
+
+- Andrew Lisowski ([@hipstersmoothie](https://github.com/hipstersmoothie))
+
+---
+
+# v2.7.1 (Tue Oct 20 2020)
+
+#### 🐛 Bug Fix
+
+- `@design-systems/storybook`
+  - move postcss-themed reloading into postcss-themed package [#579](https://github.com/intuit/design-systems-cli/pull/579) ([@hipstersmoothie](https://github.com/hipstersmoothie))
+
+#### 🔩 Dependency Updates
+
+- `@design-systems/utils`
+  - Update dependency focus-lock to ^0.8.0 [#570](https://github.com/intuit/design-systems-cli/pull/570) ([@renovate-bot](https://github.com/renovate-bot) [@renovate[bot]](https://github.com/renovate[bot]))
+
+#### Authors: 3
+
+- [@renovate[bot]](https://github.com/renovate[bot])
+- Andrew Lisowski ([@hipstersmoothie](https://github.com/hipstersmoothie))
+- WhiteSource Renovate ([@renovate-bot](https://github.com/renovate-bot))
+
+---
+
+# v2.7.0 (Fri Oct 16 2020)
+
+:tada: This release contains work from a new contributor! :tada:
+
+Thank you, Kendall Gassner ([@kendallgassner](https://github.com/kendallgassner)), for all your work!
+
+#### 🚀 Enhancement
+
+- `@design-systems/utils`
+  - allowing more then one Component to be passed in to styled [#577](https://github.com/intuit/design-systems-cli/pull/577) ([@kendallgassner](https://github.com/kendallgassner))
+
+#### ⚠️ Pushed to `master`
+
+- `@design-systems/utils`
+  - Revert "add deprecation message" ([@hipstersmoothie](https://github.com/hipstersmoothie))
+- `@design-systems/utils`
+  - add deprecation message ([@hipstersmoothie](https://github.com/hipstersmoothie))
+
+#### Authors: 2
+
+- Andrew Lisowski ([@hipstersmoothie](https://github.com/hipstersmoothie))
+- Kendall Gassner ([@kendallgassner](https://github.com/kendallgassner))
+
+---
+
 # v2.6.1 (Tue Oct 13 2020)
 
 :tada: This release contains work from new contributors! :tada:

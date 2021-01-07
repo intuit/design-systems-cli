@@ -1,3 +1,58 @@
+# v2.10.1 (Thu Dec 10 2020)
+
+#### 🐛 Bug Fix
+
+- integrate JSON file into single css theme builds [#603](https://github.com/intuit/design-systems-cli/pull/603) ([@hipstersmoothie](https://github.com/hipstersmoothie))
+- integrate JSON file into single css theme builds ([@hipstersmoothie](https://github.com/hipstersmoothie))
+
+#### Authors: 1
+
+- Andrew Lisowski ([@hipstersmoothie](https://github.com/hipstersmoothie))
+
+---
+
+# v2.10.0 (Wed Dec 09 2020)
+
+#### 🚀 Enhancement
+
+- add moduleHash option for postcss configs [#602](https://github.com/intuit/design-systems-cli/pull/602) ([@hipstersmoothie](https://github.com/hipstersmoothie))
+
+#### 🐛 Bug Fix
+
+- add moduleHash option for postcss configs ([@hipstersmoothie](https://github.com/hipstersmoothie))
+
+#### Authors: 1
+
+- Andrew Lisowski ([@hipstersmoothie](https://github.com/hipstersmoothie))
+
+---
+
+# v2.7.3 (Thu Oct 22 2020)
+
+#### 🐛 Bug Fix
+
+- loosen babel dep ranges [#581](https://github.com/intuit/design-systems-cli/pull/581) ([@hipstersmoothie](https://github.com/hipstersmoothie))
+- loosen babel dep ranges ([@hipstersmoothie](https://github.com/hipstersmoothie))
+
+#### Authors: 1
+
+- Andrew Lisowski ([@hipstersmoothie](https://github.com/hipstersmoothie))
+
+---
+
+# v2.7.2 (Wed Oct 21 2020)
+
+#### 🐛 Bug Fix
+
+- fix css source map generation [#580](https://github.com/intuit/design-systems-cli/pull/580) ([@hipstersmoothie](https://github.com/hipstersmoothie))
+- fix css source map generation ([@hipstersmoothie](https://github.com/hipstersmoothie))
+
+#### Authors: 1
+
+- Andrew Lisowski ([@hipstersmoothie](https://github.com/hipstersmoothie))
+
+---
+
 # v2.5.1 (Fri Sep 25 2020)
 
 #### 🐛 Bug Fix

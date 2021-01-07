@@ -1,3 +1,4 @@
+import endent from 'endent';
 import { transform } from './helpers/utils';
 import exists from '../exists';
 
@@ -10,16 +11,23 @@ test('should not change css import', () => {
 });
 
 test('should change the import', () => {
-  const source = 'import "../main.css";';
+  const source = `
+    import styles from './Button.css';
+    import "../main.css";
+  `;
   // @ts-ignore
   exists.mockReturnValueOnce(true).mockReturnValueOnce(true);
-  expect(transform(source, '@cgds/dist/test.js')).toBe('import "../test.css";');
+  // @ts-ignore
+  exists.mockReturnValueOnce(true).mockReturnValueOnce(true);
+  expect(transform(source, '@cgds/button/dist/test.js')).toBe(endent`
+    import styles from "./Button-test.css";
+    import "../test.css";
+  `);
 });
-
 
 test('should not change the import if the new file does not exist', () => {
   const source = 'import "../main.css";';
   // @ts-ignore
   exists.mockReturnValueOnce(true).mockReturnValueOnce(false);
-  expect(transform(source, '@cgds/dist/test.js')).toBe('import "../test.css";');
+  expect(transform(source, '@cgds/button/dist/test.js')).toBe('import "../test.css";');
 });

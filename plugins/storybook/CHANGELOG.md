@@ -1,3 +1,97 @@
+# v2.10.1 (Thu Dec 10 2020)
+
+#### 🐛 Bug Fix
+
+- integrate JSON file into single css theme builds [#603](https://github.com/intuit/design-systems-cli/pull/603) ([@hipstersmoothie](https://github.com/hipstersmoothie))
+
+#### Authors: 1
+
+- Andrew Lisowski ([@hipstersmoothie](https://github.com/hipstersmoothie))
+
+---
+
+# v2.9.0 (Tue Dec 01 2020)
+
+#### 🚀 Enhancement
+
+- add extract option for storybook composition [#597](https://github.com/intuit/design-systems-cli/pull/597) ([@hipstersmoothie](https://github.com/hipstersmoothie))
+
+#### 🐛 Bug Fix
+
+- add extract option for storybook composition ([@hipstersmoothie](https://github.com/hipstersmoothie))
+
+#### Authors: 1
+
+- Andrew Lisowski ([@hipstersmoothie](https://github.com/hipstersmoothie))
+
+---
+
+# v2.8.3 (Mon Nov 30 2020)
+
+#### 🐛 Bug Fix
+
+- Update storybook to ^6.1.9 [#526](https://github.com/intuit/design-systems-cli/pull/526) ([@renovate-bot](https://github.com/renovate-bot) [@renovate[bot]](https://github.com/renovate[bot]))
+- Update storybook to ^6.1.9 ([@renovate-bot](https://github.com/renovate-bot))
+
+#### Authors: 2
+
+- [@renovate[bot]](https://github.com/renovate[bot])
+- WhiteSource Renovate ([@renovate-bot](https://github.com/renovate-bot))
+
+---
+
+# v2.8.0 (Mon Nov 09 2020)
+
+:tada: This release contains work from a new contributor! :tada:
+
+Thank you, Talor Anderson ([@Talor-A](https://github.com/Talor-A)), for all your work!
+
+#### 🚀 Enhancement
+
+- add storybook port option [#588](https://github.com/intuit/design-systems-cli/pull/588) ([@Talor-A](https://github.com/Talor-A))
+
+#### 🐛 Bug Fix
+
+- add storybook port ([@Talor-A](https://github.com/Talor-A))
+
+#### Authors: 1
+
+- Talor Anderson ([@Talor-A](https://github.com/Talor-A))
+
+---
+
+# v2.7.3 (Thu Oct 22 2020)
+
+#### 🐛 Bug Fix
+
+- loosen babel dep ranges [#581](https://github.com/intuit/design-systems-cli/pull/581) ([@hipstersmoothie](https://github.com/hipstersmoothie))
+- loosen babel dep ranges ([@hipstersmoothie](https://github.com/hipstersmoothie))
+
+#### Authors: 1
+
+- Andrew Lisowski ([@hipstersmoothie](https://github.com/hipstersmoothie))
+
+---
+
+# v2.7.1 (Tue Oct 20 2020)
+
+#### 🐛 Bug Fix
+
+- move postcss-themed reloading into postcss-themed package [#579](https://github.com/intuit/design-systems-cli/pull/579) ([@hipstersmoothie](https://github.com/hipstersmoothie))
+- move postcss-themed reloading into postcss-themed package ([@hipstersmoothie](https://github.com/hipstersmoothie))
+
+#### 🔩 Dependency Updates
+
+- Update dependency focus-lock to ^0.8.0 [#570](https://github.com/intuit/design-systems-cli/pull/570) ([@renovate-bot](https://github.com/renovate-bot) [@renovate[bot]](https://github.com/renovate[bot]))
+
+#### Authors: 3
+
+- [@renovate[bot]](https://github.com/renovate[bot])
+- Andrew Lisowski ([@hipstersmoothie](https://github.com/hipstersmoothie))
+- WhiteSource Renovate ([@renovate-bot](https://github.com/renovate-bot))
+
+---
+
 # v2.5.1 (Fri Sep 25 2020)
 
 #### 🐛 Bug Fix

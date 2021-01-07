@@ -16,6 +16,12 @@ const command: CliCommand = {
           description: 'Generate sketch assets for the storybook',
           config: true,
         },
+        {
+          name: 'extract',
+          type: Boolean,
+          description: 'Output a stories.json for storybook composition',
+          config: true,
+        },
       ],
     },
     {
@@ -27,6 +33,11 @@ const command: CliCommand = {
           name: 'ci',
           type: Boolean,
           description: 'Start the storybook server in CI mode',
+        },
+        {
+          name: 'port',
+          type: Number,
+          description: 'Port to start the server on',
         },
         {
           name: 'findPort',
