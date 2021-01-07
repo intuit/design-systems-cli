@@ -1,3 +1,15 @@
+# v2.11.0 (Thu Jan 07 2021)
+
+#### 🐛 Bug Fix
+
+- merge with master ([@kendallgassner](https://github.com/kendallgassner))
+
+#### Authors: 1
+
+- Kendall Gassner ([@kendallgassner](https://github.com/kendallgassner))
+
+---
+
 # v2.10.1 (Thu Dec 10 2020)
 
 #### 🐛 Bug Fix

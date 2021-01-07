@@ -1,3 +1,16 @@
+# v2.11.0 (Thu Jan 07 2021)
+
+#### 🚀 Enhancement
+
+- `@design-systems/eslint-config`, `@design-systems/lint`
+  - Add eslint local dependency rule to ds lint [#608](https://github.com/intuit/design-systems-cli/pull/608) ([@kendallgassner](https://github.com/kendallgassner))
+
+#### Authors: 1
+
+- Kendall Gassner ([@kendallgassner](https://github.com/kendallgassner))
+
+---
+
 # v2.10.1 (Thu Dec 10 2020)
 
 #### 🐛 Bug Fix

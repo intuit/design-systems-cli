@@ -1,3 +1,20 @@
+# v2.11.0 (Thu Jan 07 2021)
+
+#### 🚀 Enhancement
+
+- Add eslint local dependency rule to ds lint [#608](https://github.com/intuit/design-systems-cli/pull/608) ([@kendallgassner](https://github.com/kendallgassner))
+
+#### 🐛 Bug Fix
+
+- merge with master ([@kendallgassner](https://github.com/kendallgassner))
+- add link and file plugin rule ([@kendallgassner](https://github.com/kendallgassner))
+
+#### Authors: 1
+
+- Kendall Gassner ([@kendallgassner](https://github.com/kendallgassner))
+
+---
+
 # v2.0.0 (Fri Aug 14 2020)
 
 ### Release Notes
