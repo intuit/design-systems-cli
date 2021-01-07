@@ -26,7 +26,13 @@ module.exports = {
     'prettier/react',
   ],
 
-  plugins: ['prettier', 'jest', 'react-hooks', 'eslint-plugin-jsdoc'],
+  plugins: [
+    'prettier',
+    'jest',
+    'react-hooks',
+    'eslint-plugin-jsdoc',
+    '@kendallgassner/eslint-plugin-package-json',
+  ],
 
   settings: {
     'import/resolver': {
@@ -71,7 +77,7 @@ module.exports = {
     ],
 
     /* airbnb */
-
+    '@kendallgassner/package-json/local-dependency': 2,
     // Need to name function for some stringification
     'func-names': 0,
     'import/no-unresolved': [2, { ignore: ['.css$'] }],
@@ -182,7 +188,6 @@ module.exports = {
         '@typescript-eslint/explicit-function-return-type': 0,
         '@typescript-eslint/explicit-member-accessibility': 0,
         '@typescript-eslint/explicit-module-boundary-types': 0,
-
         'jsdoc/require-jsdoc': [
           2,
           {
