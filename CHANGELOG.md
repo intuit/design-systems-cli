@@ -1,3 +1,16 @@
+# v2.12.0 (Thu Jan 14 2021)
+
+#### 🚀 Enhancement
+
+- `@design-systems/svg-icon-builder`
+  - Add Package: svg-icon-builder [#614](https://github.com/intuit/design-systems-cli/pull/614) ([@tylerkrupicka](https://github.com/tylerkrupicka))
+
+#### Authors: 1
+
+- Tyler Krupicka ([@tylerkrupicka](https://github.com/tylerkrupicka))
+
+---
+
 # v2.11.0 (Thu Jan 07 2021)
 
 #### 🚀 Enhancement
