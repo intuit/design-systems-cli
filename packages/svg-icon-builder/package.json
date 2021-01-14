@@ -24,7 +24,7 @@
     "clean": "ds clean",
     "build": "ds build",
     "start": "ds build --watch",
-    "test": "yarn build && ./bin/icon.js --svg ./svg --out output",
+    "test": "yarn build && ./bin/icon.js --svg ./svg --out output --overwrite",
     "help": "./bin/icon.js -h",
     "lint": "ds lint"
   },

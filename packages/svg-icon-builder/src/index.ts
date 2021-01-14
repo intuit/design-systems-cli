@@ -1,3 +1,4 @@
+/* eslint prefer-regex-literals: 0 */
 import { app } from 'command-line-application';
 import path from 'path';
 import fs from 'fs-extra';
@@ -114,7 +115,7 @@ export const getTransformedSvg = async (
   icon.svg = icon.svg.replace(/xlink:href/g, 'xlinkHref');
 
   // Get viewBox
-  const viewBoxRegex = /viewBox="(.*?)"/;
+  const viewBoxRegex = new RegExp('viewBox="(.*?)"');
   const viewBoxMatch = icon.svg.match(viewBoxRegex);
   if (viewBoxMatch && viewBoxMatch.length > 1) {
     // eslint-disable-next-line
@@ -122,7 +123,7 @@ export const getTransformedSvg = async (
   }
 
   // Unwrap SVG
-  const regex = /<svg[\\s\\S]*?>/;
+  const regex = new RegExp('<svg[\\s\\S]*?>');
   const tag = icon.svg.match(regex);
   if (tag) {
     icon.svg = icon.svg.replace(tag[0], '');
