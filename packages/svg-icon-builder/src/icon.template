@@ -1,0 +1,32 @@
+import React from 'react';
+import makeClass from 'clsx';
+import { IconProps, IconSizes } from '../props';
+
+import styles from '../Icon.css';
+
+/**
+ * {{iconName}}
+ *
+ * @param iconProps - SVG props
+ */
+const {{iconName}} = (iconProps: IconProps) => {
+  const { className, fill, size, inline, ...html } = iconProps;
+  const iconSize = size ? IconSizes[size] : undefined;
+
+  return (
+    <svg
+      aria-hidden
+      focusable="false"
+      viewBox="{{viewBox}}"  
+      className={makeClass(className, { [styles.inline]: inline })}
+      width={iconSize}
+      height={iconSize}
+      fill={fill || 'currentColor'}
+      {...html}
+    >
+      {{svg}}
+    </svg>
+  );
+};
+
+export default {{iconName}};
