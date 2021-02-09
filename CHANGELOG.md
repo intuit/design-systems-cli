@@ -1,3 +1,20 @@
+# v2.12.1 (Tue Feb 09 2021)
+
+:tada: This release contains work from a new contributor! :tada:
+
+Thank you, Adil Malik ([@amalik2](https://github.com/amalik2)), for all your work!
+
+#### 🐛 Bug Fix
+
+- `@design-systems/test`
+  - Enable json-summary coverage reporter [#619](https://github.com/intuit/design-systems-cli/pull/619) ([@amalik2](https://github.com/amalik2))
+
+#### Authors: 1
+
+- Adil Malik ([@amalik2](https://github.com/amalik2))
+
+---
+
 # v2.12.0 (Thu Jan 14 2021)
 
 #### 🚀 Enhancement
