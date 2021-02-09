@@ -203,6 +203,7 @@ module.exports = {
     {
       files: ['*.{js,jsx}'],
       rules: {
+        'jsdoc/no-types': 0,
         '@typescript-eslint/no-var-requires': 'off',
       },
     },
