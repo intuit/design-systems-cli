@@ -19,7 +19,7 @@ module.exports = {
     '\\.(js|jsx|ts|tsx)$': path.join(__dirname, './jest/transform.js')
   },
   coverageDirectory: 'target/coverage',
-  coverageReporters: ['text', 'cobertura', 'html', 'lcov'],
+  coverageReporters: ['text', 'cobertura', 'html', 'lcov', 'json-summary'],
   collectCoverageFrom: [
     '**/src/**',
     '!**/*.json',
