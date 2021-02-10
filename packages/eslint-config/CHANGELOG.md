@@ -1,3 +1,16 @@
+# v2.12.2 (Wed Feb 10 2021)
+
+#### 🐛 Bug Fix
+
+- turn off jsdoc/no-types for jsx files [#620](https://github.com/intuit/design-systems-cli/pull/620) ([@Talor-A](https://github.com/Talor-A))
+- turn off jsdoc/no-types for jsx files ([@Talor-A](https://github.com/Talor-A))
+
+#### Authors: 1
+
+- Talor Anderson ([@Talor-A](https://github.com/Talor-A))
+
+---
+
 # v2.11.0 (Thu Jan 07 2021)
 
 #### 🚀 Enhancement

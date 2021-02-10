@@ -1,3 +1,16 @@
+# v2.12.2 (Wed Feb 10 2021)
+
+#### 🐛 Bug Fix
+
+- `@design-systems/eslint-config`
+  - turn off jsdoc/no-types for jsx files [#620](https://github.com/intuit/design-systems-cli/pull/620) ([@Talor-A](https://github.com/Talor-A))
+
+#### Authors: 1
+
+- Talor Anderson ([@Talor-A](https://github.com/Talor-A))
+
+---
+
 # v2.12.1 (Tue Feb 09 2021)
 
 :tada: This release contains work from a new contributor! :tada:
