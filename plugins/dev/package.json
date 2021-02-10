@@ -1,6 +1,6 @@
 {
   "name": "@design-systems/dev",
-  "version": "2.12.1",
+  "version": "2.12.2",
   "description": "The dev command for @design-systems-cli",
   "main": "dist/index.js",
   "author": "Adam Dierkens <adam@dierkens.com>",
