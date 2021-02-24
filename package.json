@@ -16,7 +16,7 @@
     "test": "./packages/cli/bin/ds.js test",
     "create:plugin": "./scripts/create-plugin.js",
     "create:package": "./packages/cli/bin/ds.js create package",
-    "format" : "prettier --write ."
+    "format": "prettier --write ."
   },
   "workspaces": [
     "packages/*",
@@ -80,5 +80,8 @@
   },
   "engines": {
     "node": ">=10.18.1"
+  },
+  "dependencies": {
+    "yarn-deduplicate": "3.1.0"
   }
 }

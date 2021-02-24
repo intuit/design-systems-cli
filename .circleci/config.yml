@@ -104,7 +104,7 @@ jobs:
             git clone https://github.com/design-systems-templates/integration-ds.git
       - run:
           name: Install Dependencies
-          command: cd integration-ds && yarn install
+          command: cd integration-ds && yarn upgrade && yarn install
       - run:
           name: Build with Canary Version (local mapping)
           command: cd integration-ds && npx lerna run build --stream
