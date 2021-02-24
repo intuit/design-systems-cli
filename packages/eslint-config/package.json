@@ -14,7 +14,7 @@
   },
   "dependencies": {
     "@design-systems/cli-utils": "link:../cli-utils",
-    "@kendallgassner/eslint-plugin-package-json": "0.1.3",
+    "@kendallgassner/eslint-plugin-package-json": "0.2.1",
     "@typescript-eslint/eslint-plugin": "3.9.0",
     "@typescript-eslint/parser": "3.9.0",
     "babel-eslint": "10.1.0",
