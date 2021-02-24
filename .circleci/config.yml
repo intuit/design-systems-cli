@@ -93,6 +93,34 @@ jobs:
           name: Release
           command: yarn auto shipit
 
+  integration-ds:
+    <<: *defaults
+    steps:
+      - attach_workspace:
+          at: ~/design-systems-cli
+      - run:
+          name: Get Integration Design Systems Repo
+          command:
+            git clone https://github.com/design-systems-templates/integration-ds.git
+      - run:
+          name: Install Dependencies
+          command: cd integration-ds && yarn install
+      - run:
+          name: Build with Canary Version (local mapping)
+          command: cd integration-ds && npx lerna run build --stream
+      - run:
+          name: Build Storybook
+          command: cd integration-ds && ./../packages/cli/bin/ds.js storybook build               
+      - run:
+          name: Size
+          command: cd integration-ds && ./../packages/cli/bin/ds.js size --ignore @integration-ds/babel-preset 
+      - run:
+          name: Test
+          command: cd integration-ds && ./../packages/cli/bin/ds.js test
+      - run:
+          name: Lint
+          command: cd integration-ds && ./../packages/cli/bin/ds.js lint 
+
   publishDocs:
     <<: *defaults
     steps:
@@ -114,15 +142,13 @@ workflows:
       - build:
           requires:
             - install
-
+      
       - lint:
           requires:
             - build
-
       - test:
           requires:
             - build
-
       - pr-check:
           requires:
             - build
@@ -130,12 +156,18 @@ workflows:
             branches:
               ignore:
                 - master
-
       - release:
           requires:
             - test
             - lint
-
+      - integration-ds:
+          requires:
+            - release
+          filters:
+            branches:
+              ignore:
+                - master
+                - renovate.*
       - publishDocs:
           requires:
             - release
@@ -143,3 +175,4 @@ workflows:
             branches:
               only:
                 - master
+                
