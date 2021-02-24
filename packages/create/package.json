@@ -26,8 +26,8 @@
     "url": "https://github.com/intuit/design-systems-cli.git"
   },
   "peerDependencies": {
-    "@design-systems/cli-utils": "link:../cli-utils",
-    "@design-systems/plugin": "link:../plugin",
+    "@design-systems/cli-utils": ">= 2.x",
+    "@design-systems/plugin": ">= 2.x",
     "change-case": ">=3.x",
     "cli-spinners": ">=2.x",
     "colorette": ">=1.x",
