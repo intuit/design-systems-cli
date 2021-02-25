@@ -159,9 +159,9 @@ workflows:
           requires:
             - test
             - lint
-      # - integration-ds:
-      #     requires:
-      #       - release
+      - integration-ds:
+          requires:
+            - release
           filters:
             branches:
               ignore:
