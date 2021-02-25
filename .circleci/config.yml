@@ -99,7 +99,7 @@ jobs:
       - attach_workspace:
           at: ~/design-systems-cli
       - run:
-          name: Get Integration Design Systems Repo
+          name: Get Integration Design Systems Repository
           command:
             git clone https://github.com/design-systems-templates/integration-ds.git
       - run:
