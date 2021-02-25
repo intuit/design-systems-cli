@@ -132,13 +132,11 @@ jobs:
       - run:
           name: Publish Docs
           command: yarn lerna run --scope @design-systems/docs deploy
-
 workflows:
   version: 2
   build_and_test:
     jobs:
       - install
-
       - build:
           requires:
             - install
