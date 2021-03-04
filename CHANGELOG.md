@@ -1,3 +1,16 @@
+# v2.13.0 (Thu Mar 04 2021)
+
+#### 🚀 Enhancement
+
+- `@design-systems/build`
+  - add babel plugin macros to default build config [#636](https://github.com/intuit/design-systems-cli/pull/636) ([@hipstersmoothie](https://github.com/hipstersmoothie))
+
+#### Authors: 1
+
+- Andrew Lisowski ([@hipstersmoothie](https://github.com/hipstersmoothie))
+
+---
+
 # v2.12.3 (Thu Mar 04 2021)
 
 #### 🐛 Bug Fix
