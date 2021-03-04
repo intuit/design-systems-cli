@@ -5,6 +5,7 @@
   "main": "./dist/cjs/index.js",
   "module": "./dist/esm/index.js",
   "types": "./dist",
+  "sideEffects": false,
   "repository": "https://github.com/intuit/design-systems-cli.git",
   "author": "Andrew Lisowski lisowski54@gmail.com",
   "contributors": [
