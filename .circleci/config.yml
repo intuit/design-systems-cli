@@ -160,14 +160,7 @@ workflows:
           requires:
             - test
             - lint
-      # - integration-ds:
-      #     requires:
-      #       - release
-          filters:
-            branches:
-              ignore:
-                - master
-                - renovate.*
+
       - publishDocs:
           requires:
             - release
@@ -175,4 +168,3 @@ workflows:
             branches:
               only:
                 - master
-                
