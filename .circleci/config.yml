@@ -1,9 +1,8 @@
 version: 2.1
-
 defaults: &defaults
   working_directory: ~/design-systems-cli
   docker:
-    - image: circleci/node:10-browsers
+    - image: circleci/node:12-browsers
   environment:
     TZ: '/usr/share/zoneinfo/America/Los_Angeles'
 
@@ -99,7 +98,7 @@ jobs:
       - attach_workspace:
           at: ~/design-systems-cli
       - run:
-          name: Get Integration Design Systems Repo
+          name: Get Integration Design Systems Repository
           command:
             git clone https://github.com/design-systems-templates/integration-ds.git
       - run:
@@ -130,9 +129,8 @@ jobs:
       - run: git config --global user.email "lisowski54@gmail.com"
       - run: git config --global user.name "Andrew Lisowski"
       - run:
-          name: Publish Docs
+          name: Publish Docs.
           command: yarn lerna run --scope @design-systems/docs deploy
-
 workflows:
   version: 2
   build_and_test:
@@ -142,7 +140,6 @@ workflows:
       - build:
           requires:
             - install
-      
       - lint:
           requires:
             - build
@@ -160,9 +157,9 @@ workflows:
           requires:
             - test
             - lint
-      # - integration-ds:
-      #     requires:
-      #       - release
+      - integration-ds:
+          requires:
+            - release
           filters:
             branches:
               ignore:
@@ -175,4 +172,5 @@ workflows:
             branches:
               only:
                 - master
+
                 
