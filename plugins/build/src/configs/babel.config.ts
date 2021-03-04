@@ -19,6 +19,7 @@ export default function (api: babel.ConfigAPI) {
       '@babel/plugin-proposal-class-properties',
       '@babel/plugin-syntax-dynamic-import',
       'babel-plugin-styled-components',
+      'macros',
       [
         '@babel/plugin-transform-runtime',
         {
