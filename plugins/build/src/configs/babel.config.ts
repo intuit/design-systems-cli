@@ -1,6 +1,6 @@
 import babel from '@babel/core';
 
-export default function(api: babel.ConfigAPI) {
+export default function (api: babel.ConfigAPI) {
   const isTest = api.env('test');
 
   return {
@@ -13,7 +13,7 @@ export default function(api: babel.ConfigAPI) {
       // This must come after env! otherwise interfaces might remain in the mjs files
       '@babel/preset-typescript',
       '@babel/preset-react',
-      isTest && 'jest'
+      isTest && 'jest',
     ].filter(Boolean),
     plugins: [
       '@babel/plugin-proposal-class-properties',
@@ -22,9 +22,10 @@ export default function(api: babel.ConfigAPI) {
       [
         '@babel/plugin-transform-runtime',
         {
-          regenerator: true
-        }
-      ]
-    ].filter(Boolean)
+          regenerator: true,
+          version: '7.11.2',
+        },
+      ],
+    ].filter(Boolean),
   };
 }
