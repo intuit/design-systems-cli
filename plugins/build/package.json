@@ -33,6 +33,7 @@
     "@design-systems/cli-utils": "link:../../packages/cli-utils",
     "@design-systems/plugin": "link:../../packages/plugin",
     "autoprefixer": "9.8.6",
+    "babel-plugin-macros": "3.0.1",
     "babel-plugin-styled-components": "1.11.1",
     "babel-preset-jest": "26.3.0",
     "change-case": "4.1.1",
