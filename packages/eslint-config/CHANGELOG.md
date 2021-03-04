@@ -1,3 +1,21 @@
+# v2.12.3 (Thu Mar 04 2021)
+
+#### 🐛 Bug Fix
+
+- update @kendallgassner/eslint-plugin-package-json [#627](https://github.com/intuit/design-systems-cli/pull/627) ([@kendallgassner](https://github.com/kendallgassner))
+- update @kendallgassner/eslint-plugin-package-json ([@kendallgassner](https://github.com/kendallgassner))
+
+#### 🏠 Internal
+
+- feat: Integration Testing [#216](https://github.com/intuit/design-systems-cli/pull/216) (raj_vasikarla@intuit.com)
+
+#### Authors: 2
+
+- Kendall Gassner ([@kendallgassner](https://github.com/kendallgassner))
+- Raj Vasikarla ([@vasikarla](https://github.com/vasikarla))
+
+---
+
 # v2.12.2 (Wed Feb 10 2021)
 
 #### 🐛 Bug Fix

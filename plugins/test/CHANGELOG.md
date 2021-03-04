@@ -1,3 +1,15 @@
+# v2.12.3 (Thu Mar 04 2021)
+
+#### 🏠 Internal
+
+- feat: Integration Testing [#216](https://github.com/intuit/design-systems-cli/pull/216) (raj_vasikarla@intuit.com)
+
+#### Authors: 1
+
+- Raj Vasikarla ([@vasikarla](https://github.com/vasikarla))
+
+---
+
 # v2.12.1 (Tue Feb 09 2021)
 
 :tada: This release contains work from a new contributor! :tada:

@@ -1,3 +1,21 @@
+# v2.12.3 (Thu Mar 04 2021)
+
+#### 🐛 Bug Fix
+
+- use version in babel runtime for bundle size wins [#633](https://github.com/intuit/design-systems-cli/pull/633) ([@hipstersmoothie](https://github.com/hipstersmoothie))
+- use version in babel runtime for bundle size wins ([@hipstersmoothie](https://github.com/hipstersmoothie))
+
+#### 🏠 Internal
+
+- feat: Integration Testing [#216](https://github.com/intuit/design-systems-cli/pull/216) (raj_vasikarla@intuit.com)
+
+#### Authors: 2
+
+- Andrew Lisowski ([@hipstersmoothie](https://github.com/hipstersmoothie))
+- Raj Vasikarla ([@vasikarla](https://github.com/vasikarla))
+
+---
+
 # v2.10.1 (Thu Dec 10 2020)
 
 #### 🐛 Bug Fix

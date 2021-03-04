@@ -1,3 +1,21 @@
+# v2.12.3 (Thu Mar 04 2021)
+
+#### 🐛 Bug Fix
+
+- turn off side effects for utils [#634](https://github.com/intuit/design-systems-cli/pull/634) ([@hipstersmoothie](https://github.com/hipstersmoothie))
+- turn off side effects for utils ([@hipstersmoothie](https://github.com/hipstersmoothie))
+
+#### 🏠 Internal
+
+- feat: Integration Testing [#216](https://github.com/intuit/design-systems-cli/pull/216) (raj_vasikarla@intuit.com)
+
+#### Authors: 2
+
+- Andrew Lisowski ([@hipstersmoothie](https://github.com/hipstersmoothie))
+- Raj Vasikarla ([@vasikarla](https://github.com/vasikarla))
+
+---
+
 # v2.11.0 (Thu Jan 07 2021)
 
 #### 🐛 Bug Fix
