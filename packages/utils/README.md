@@ -278,7 +278,7 @@ Check to see if a child component is an instance of the given slot
 **Parameters:**
 
 - child (`any`) - The React child component instance to test
-- identifier (`symbol | ComponentClass<any, any> | FunctionComponent<any>`) - The React Component or Slot ID (Symbol) to test against
+- identifier (`symbol | AnyComponent`) - The React Component or Slot ID (Symbol) to test against
 
 **returns:** boolean
 
@@ -288,7 +288,7 @@ Forward a ref and make the returned component slottable.
 
 **Parameters:**
 
-- Component (`RefForwardingComponent<RefType, PropType>`) - Same props you give to React.forwardRef
+- Component (`ForwardRefRenderFunction<RefType, PropType>`) - Same props you give to React.forwardRef
 
 ```tsx
 export const SlottedComponentWithRef = forwardWithSlots<

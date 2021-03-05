@@ -70,11 +70,11 @@ export function isSlotOf(child: any, identifier: AnyComponent | symbol) {
  *  SubComponents
  * >((props, ref) => null);
  */
-export const forwardWithSlots = <RefType, PropType, Slots>(
-  Component: React.RefForwardingComponent<RefType, PropType>
+export const forwardWithSlots = <RefType, PropType, SlotsType>(
+  Component: React.ForwardRefRenderFunction<RefType, PropType>
 ) => {
   const forwarded = React.forwardRef(Component);
-  return forwarded as typeof forwarded & Slots;
+  return forwarded as typeof forwarded & SlotsType;
 };
 
 /**

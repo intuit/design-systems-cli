@@ -173,6 +173,7 @@ module.exports = {
       ],
       plugins: ['@typescript-eslint', 'eslint-plugin-no-explicit-type-exports'],
       rules: {
+        'no-use-before-define': 0,
         'react/prop-types': 0,
         'react/default-props-match-prop-types': 0,
         'no-explicit-type-exports/no-explicit-type-exports': 2,
