@@ -1,5 +1,5 @@
 {
-  "extends": ["group:monorepos", "packages:postcss"],
+  "extends": ["group:monorepos", "packages:postcss", "schedule:earlyMondays"],
   "masterIssue": true,
   "automerge": false,
   "prConcurrentLimit": 3,
