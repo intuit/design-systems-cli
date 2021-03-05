@@ -110,6 +110,9 @@ Thank you to all these wonderful people ([emoji key](https://allcontributors.org
     <td align="center"><a href="https://github.com/spentacular"><img src="https://avatars2.githubusercontent.com/u/1043478?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Spencer Hamm</b></sub></a><br /><a href="https://github.com/intuit/design-systems-cli/commits?author=spentacular" title="Code">💻</a></td>
     <td align="center"><a href="https://github.com/amalik2"><img src="https://avatars.githubusercontent.com/u/25858348?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Adil Malik</b></sub></a><br /><a href="https://github.com/intuit/design-systems-cli/commits?author=amalik2" title="Tests">⚠️</a></td>
   </tr>
+  <tr>
+    <td align="center"><a href="https://github.com/salilbc"><img src="https://avatars.githubusercontent.com/u/9673247?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Salil Cuncoliencar</b></sub></a><br /><a href="https://github.com/intuit/design-systems-cli/commits?author=salilbc" title="Documentation">📖</a> <a href="https://github.com/intuit/design-systems-cli/commits?author=salilbc" title="Tests">⚠️</a> <a href="https://github.com/intuit/design-systems-cli/commits?author=salilbc" title="Code">💻</a></td>
+  </tr>
 </table>
 
 <!-- markdownlint-restore -->
