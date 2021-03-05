@@ -27,7 +27,7 @@
     "babel-plugin-import-redirect": "1.1.1",
     "css-loader": "3.5.3",
     "dedent": "0.7.0",
-    "fast-glob": "3.2.4",
+    "fast-glob": "3.2.5",
     "file-loader": "6.2.0",
     "fs-extra": "9.0.1",
     "playroom": "0.22.3",
