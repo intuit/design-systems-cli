@@ -45,7 +45,13 @@ The main benefit it brings you as a developer is time savings. Setting up all of
 
 For the full documentation, go [here](https://intuit.github.io/design-systems-cli/#).
 
-## Contributing
+## Installation
+
+Ensure you have the following softwares installed:
+* `Node >= 10.18.1` - [Installation guide](https://nodejs.org/en/download/)
+* `Yarn` - [Installation guide](https://classic.yarnpkg.com/en/docs/install)
+
+### To get started:
 
 To get set up, fork and clone the project then run the following command:
 
@@ -60,6 +66,14 @@ To scaffold a new plugin inside this repo run the following command:
 ```sh
 yarn run create:plugin "my plugin"
 ```
+
+## Contributing
+
+Feel free to open an [issue](https://github.com/intuit/design-systems-cli/issues) or a [pull request](https://github.com/intuit/design-systems-cli/pulls)!
+
+Make sure to read our [code of conduct](./CODE_OF_CONDUCT.md).
+
+We actively welcome pull requests. Learn how to [contribute](./CONTRIBUTING.md).
 
 ## Contributors ✨
 
