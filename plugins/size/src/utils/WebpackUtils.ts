@@ -178,7 +178,7 @@ async function getSizes(options: GetSizesOptions & CommonOptions) {
       fs.copyFileSync(npmrc, path.join(dir, '.npmrc'));
     }
 
-    logger.info(`Installing: ${options.name}`);
+    logger.debug(`Installing: ${options.name}`);
     if (options.registry) {
       execSync(
         `yarn add ${options.name} --registry ${options.registry}`,
