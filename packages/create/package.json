@@ -57,7 +57,7 @@
     "inquirer": "7.3.3",
     "progress-estimator": "0.3.0",
     "terminal-link": "2.1.1",
-    "title-case": "3.0.2",
+    "title-case": "3.0.3",
     "ts-loader": "8.0.3",
     "tslib": "2.0.1",
     "webpack": "4.44.1",
