@@ -94,7 +94,7 @@ export function padScope(s: string, size = LOG_LENGTH) {
 /** Only call a function if the verbosity is high enough. */
 function callIfVerbose(
   level: LogLevel,
-  fn: (...args: string[]) => void,
+  fn: (...fnArgs: string[]) => void,
   ...args: string[]
 ) {
   if (logLevels.indexOf(logLevel) >= logLevels.indexOf(level)) {
