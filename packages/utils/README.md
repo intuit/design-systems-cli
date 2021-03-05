@@ -288,7 +288,7 @@ Forward a ref and make the returned component slottable.
 
 **Parameters:**
 
-- Component (`RefForwardingComponent<RefType, PropType>`) - Same props you give to React.forwardRef
+- Component (`ForwardRefRenderFunction<RefType, PropType>`) - Same props you give to React.forwardRef
 
 ```tsx
 export const SlottedComponentWithRef = forwardWithSlots<
