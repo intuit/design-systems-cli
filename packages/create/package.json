@@ -60,7 +60,7 @@
     "title-case": "3.0.2",
     "ts-loader": "8.0.3",
     "tslib": "2.0.1",
-    "webpack": "4.44.1",
+    "webpack": "5.24.3",
     "webpack-cli": "3.3.12"
   }
 }
