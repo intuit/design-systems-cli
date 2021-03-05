@@ -2,8 +2,7 @@
   "extends": ["group:monorepos", "packages:postcss"],
   "masterIssue": true,
   "automerge": false,
-  "prHourlyLimit": 0,
-  "prConcurrentLimit": 0,
+  "prConcurrentLimit": 3,
   "separateMajorMinor": false,
   "patch": {
     "labels": ["dependency-update"]
