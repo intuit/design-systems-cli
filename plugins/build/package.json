@@ -1,6 +1,6 @@
 {
   "name": "@design-systems/build",
-  "version": "2.13.0",
+  "version": "2.14.0",
   "description": "The build command for @design-systems-cli",
   "main": "dist/index.js",
   "author": "Adam Dierkens <adam@dierkens.com>",
@@ -67,11 +67,11 @@
     "@types/clean-css": "4.2.2",
     "@types/dedent": "0.7.0",
     "@types/fs-extra": "9.0.1",
+    "@types/icss-utils": "4.1.0",
     "@types/minimatch": "3.0.3",
     "@types/postcss-nested": "4.1.0",
     "@types/postcss-url": "8.0.1",
     "@types/pretty-bytes": "5.2.0",
-    "@types/pretty-ms": "5.0.1",
-    "@types/icss-utils": "4.1.0"
+    "@types/pretty-ms": "5.0.1"
   }
 }
