@@ -26,13 +26,13 @@
     "fs-extra": "9.0.1",
     "marked": "1.1.1",
     "marked-terminal": "4.1.1",
-    "node-fetch": "2.6.0",
+    "node-fetch": "2.6.1",
     "semver": "7.3.2",
     "tslib": "2.0.1"
   },
   "devDependencies": {
     "@types/marked-terminal": "3.1.1",
-    "@types/node-fetch": "2.5.7",
+    "@types/node-fetch": "2.5.8",
     "@types/semver": "7.3.3"
   }
 }
