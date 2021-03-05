@@ -25,7 +25,7 @@
     "@design-systems/plugin": "link:../../packages/plugin",
     "change-case": "4.1.1",
     "cli-spinners": "2.5.0",
-    "colorette": "1.2.1",
+    "colorette": "1.2.2",
     "copy-template-dir": "1.4.0",
     "dedent": "0.7.0",
     "degit": "https://github.com/hipstersmoothie/degit.git#private-release",
