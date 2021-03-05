@@ -383,7 +383,7 @@ export default async function run(args: CreateArgs) {
       logger.await('Running yarn. This may take a bit...');
 
       await estimator(
-        new Promise((res, rej) => {
+        new Promise<void>((res, rej) => {
           try {
             const isVerbose =
               getLogLevel() === 'debug' || getLogLevel() === 'trace';
