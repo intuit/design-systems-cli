@@ -303,7 +303,7 @@ async function calcSizeForAllPackages(args: SizeArgs) {
       const size = await diffSizeForPackage({
         name: packageJson.package.name,
         main: packagePath,
-        persist: undefined,
+        persist: args.persist,
         chunkByExport: args.detailed,
         registry: args.registry,
       });
