@@ -1,3 +1,17 @@
+# v2.8.1 (Thu Nov 19 2020)
+
+#### 🐛 Bug Fix
+
+- Update dependency webpack-inject-plugin to v1.5.5 [#592](https://github.com/intuit/design-systems-cli/pull/592) ([@renovate-bot](https://github.com/renovate-bot) [@renovate[bot]](https://github.com/renovate[bot]))
+- Update dependency webpack-inject-plugin to v1.5.5 ([@renovate-bot](https://github.com/renovate-bot))
+
+#### Authors: 2
+
+- [@renovate[bot]](https://github.com/renovate[bot])
+- WhiteSource Renovate ([@renovate-bot](https://github.com/renovate-bot))
+
+---
+
 # v2.1.0 (Mon Sep 14 2020)
 
 :tada: This release contains work from a new contributor! :tada:

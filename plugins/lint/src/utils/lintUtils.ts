@@ -8,17 +8,14 @@ import createStylelintAnnotations from 'stylelint-formatter-github/dist/create-c
 import cssFormatter from 'stylelint-formatter-pretty';
 import path from 'path';
 import stylelint from 'stylelint';
-import {
-  createLogger,
-  monorepoName
-} from '@design-systems/cli-utils';
+import { createLogger, monorepoName } from '@design-systems/cli-utils';
 import { LintArgs } from '../interfaces';
 import {
   attemptStylelint,
   getMonorepoRoot,
   getLastEdited,
   getPackageFolders,
-  files
+  files,
 } from './helperUtils';
 
 const logger = createLogger({ scope: 'lint' });
@@ -52,7 +49,7 @@ async function lintJS(args: LintArgs): Promise<number> {
     if (lastEslintRcUpdate > lastCacheUpdate) {
       logger.debug(`RC has been updated since last run, deleting cache.`);
       bustCache = true;
-    } else if (packages.find(c => c > lastCacheUpdate)) {
+    } else if (packages.find((c) => c > lastCacheUpdate)) {
       logger.debug(
         `A package.json has been updated since last run, deleting cache.`
       );
@@ -64,15 +61,15 @@ async function lintJS(args: LintArgs): Promise<number> {
     fix: args.fix,
     cache: !args.noCache && !bustCache,
     cacheLocation,
-    extensions: ['ts', 'tsx', 'js', 'jsx', 'mdx'],
+    extensions: ['ts', 'tsx', 'js', 'jsx', 'mdx', 'json'],
     ignorePath: path.join(__dirname, '../../.eslintignore'),
-    reportUnusedDisableDirectives: true
+    reportUnusedDisableDirectives: true,
   });
 
   const lintFiles = isRoot ? getPackageFolders() : ['src'];
 
   const report = linter.executeOnFiles(
-    args.files ? files(args, 'ts|tsx|js|jsx|mdx') : lintFiles
+    args.files ? files(args, 'ts|tsx|js|jsx|mdx|json') : lintFiles
   );
 
   const maxWarnings = args.maxWarnings ? args.maxWarnings : 1;
@@ -103,7 +100,7 @@ async function lintJS(args: LintArgs): Promise<number> {
     await createESLintAnnotations(report.results);
   }
 
-  return (report.errorCount > 0 || report.warningCount >= maxWarnings) ? 1 : 0;
+  return report.errorCount > 0 || report.warningCount >= maxWarnings ? 1 : 0;
 }
 
 /** Link CSS */
@@ -121,8 +118,8 @@ async function lintCSS(args: LintArgs): Promise<number> {
         files: files(args, 'css'),
         config: {
           ...config,
-          processors: undefined
-        }
+          processors: undefined,
+        },
       });
 
       if (results.output.includes('no match')) {
@@ -136,7 +133,7 @@ async function lintCSS(args: LintArgs): Promise<number> {
     const css = await attemptStylelint({
       files: files(args, 'css'),
       cache: !args.noCache,
-      cacheLocation
+      cacheLocation,
     });
     // Must run twice because https://github.com/stylelint/stylelint/issues/4203
     // Caching should help with speed
@@ -144,7 +141,7 @@ async function lintCSS(args: LintArgs): Promise<number> {
       files: files(args, 'css'),
       reportNeedlessDisables: true,
       cache: !args.noCache,
-      cacheLocation
+      cacheLocation,
     });
     const scripts = await attemptStylelint({
       files: files(args, 'js|jsx|ts|tsx'),
@@ -159,15 +156,15 @@ async function lintCSS(args: LintArgs): Promise<number> {
           'rule-empty-line-before': null,
           'at-rule-empty-line-before': null,
           'declaration-empty-line-before': null,
-          'order/order': null
-        }
-      }
+          'order/order': null,
+        },
+      },
     });
     const hasError =
       (css.errored && css.output) || (scripts.errored && scripts.output);
-    const results = [...css.results, ...scripts.results].map(result => {
+    const results = [...css.results, ...scripts.results].map((result) => {
       const disables = needlessDisables.find(
-        file => file.source === result.source
+        (file) => file.source === result.source
       );
 
       if (!disables) {
@@ -178,14 +175,14 @@ async function lintCSS(args: LintArgs): Promise<number> {
         ...result,
         warnings: [
           ...result.warnings,
-          ...disables.ranges.map(range => ({
+          ...disables.ranges.map((range) => ({
             rule: range.unusedRule,
             severity: 'warning' as stylelint.Severity,
             text: 'Needless stylint-disable',
             line: range.start,
-            column: 0
-          }))
-        ]
+            column: 0,
+          })),
+        ],
       };
     });
 
@@ -218,4 +215,4 @@ async function lintCSS(args: LintArgs): Promise<number> {
   }
 }
 
-export { lintJS, lintCSS }
+export { lintJS, lintCSS };

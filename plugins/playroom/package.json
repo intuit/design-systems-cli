@@ -1,6 +1,6 @@
 {
   "name": "@design-systems/playroom",
-  "version": "2.6.0",
+  "version": "2.13.0",
   "description": "The playroom command for @design-systems-cli",
   "main": "dist/index.js",
   "author": "Adam Dierkens <adam@dierkens.com>",
@@ -19,8 +19,8 @@
     "access": "public"
   },
   "dependencies": {
-    "@babel/core": "7.11.5",
-    "@babel/register": "7.11.5",
+    "@babel/core": "^7.13.8",
+    "@babel/register": "^7.13.8",
     "@design-systems/build": "link:../../plugins/build",
     "@design-systems/cli-utils": "link:../../packages/cli-utils",
     "@design-systems/plugin": "link:../../packages/plugin",
@@ -28,9 +28,9 @@
     "css-loader": "3.5.3",
     "dedent": "0.7.0",
     "fast-glob": "3.2.4",
-    "file-loader": "6.1.0",
+    "file-loader": "6.2.0",
     "fs-extra": "9.0.1",
-    "playroom": "0.21.3",
+    "playroom": "0.22.3",
     "react-element-to-jsx-string": "14.3.1",
     "style-loader": "1.2.1",
     "tslib": "2.0.1",

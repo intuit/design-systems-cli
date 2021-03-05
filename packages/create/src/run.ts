@@ -399,7 +399,7 @@ export default async function run(args: CreateArgs) {
         72 * 1000
       );
       execSync(
-        `cd ${config.name} && git add . && git commit --no-verify -m 'Create new design system'`
+        `cd ${config.name} && git add . && git commit --no-verify -m "Create new design system"`
       );
     }
 

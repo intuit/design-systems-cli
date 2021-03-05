@@ -11,9 +11,10 @@ import pkgUp from 'pkg-up';
 interface PostCSSContext {
   env?: string;
   outDir: string;
+  moduleHash?: string;
 }
 
-module.exports = function(ctx: PostCSSContext = { outDir: 'dist' }) {
+module.exports = function (ctx: PostCSSContext = { outDir: 'dist' }) {
   return {
     plugins: [
       nested,
@@ -32,6 +33,10 @@ module.exports = function(ctx: PostCSSContext = { outDir: 'dist' }) {
             .update(base)
             .update(name)
             .update(css);
+
+          if (ctx.moduleHash) {
+            hash.update(ctx.moduleHash);
+          }
 
           if (pkgJson) {
             try {
@@ -55,14 +60,14 @@ module.exports = function(ctx: PostCSSContext = { outDir: 'dist' }) {
 
             return Promise.all([
               fs.outputFile(cjs, code),
-              fs.outputFile(esm, code)
+              fs.outputFile(esm, code),
             ]);
           }
-        }
+        },
       }),
       hexRGBA,
       autoprefixer,
-      url({ url: 'inline' })
-    ]
+      url({ url: 'inline' }),
+    ],
   };
 };

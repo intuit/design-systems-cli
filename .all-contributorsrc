@@ -54,7 +54,9 @@
       "avatar_url": "https://avatars0.githubusercontent.com/u/15275462?s=400&v=4",
       "profile": "https://github.com/kendallgassner",
       "contributions": [
-        "code"
+        "code",
+        "doc",
+        "test"
       ]
     },
     {
@@ -171,6 +173,53 @@
         "doc",
         "test",
         "code"
+      ]
+    },
+    {
+      "login": "anjaliguptaz",
+      "name": "anjaliguptaz",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/13619573?v=4",
+      "profile": "https://github.com/anjaliguptaz",
+      "contributions": [
+        "doc"
+      ]
+    },
+    {
+      "login": "chaopan",
+      "name": "chaopan",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/7483159?v=4",
+      "profile": "https://github.com/chaopan",
+      "contributions": [
+        "test"
+      ]
+    },
+    {
+      "login": "Talor-A",
+      "name": "Talor Anderson",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/11509865?v=4",
+      "profile": "https://github.com/Talor-A",
+      "contributions": [
+        "code",
+        "doc",
+        "test"
+      ]
+    },
+    {
+      "login": "spentacular",
+      "name": "Spencer Hamm",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/1043478?v=4",
+      "profile": "https://github.com/spentacular",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "amalik2",
+      "name": "Adil Malik",
+      "avatar_url": "https://avatars.githubusercontent.com/u/25858348?v=4",
+      "profile": "https://github.com/amalik2",
+      "contributions": [
+        "test"
       ]
     }
   ],

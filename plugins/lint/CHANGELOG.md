@@ -1,3 +1,32 @@
+# v2.12.3 (Thu Mar 04 2021)
+
+#### 🏠 Internal
+
+- feat: Integration Testing [#216](https://github.com/intuit/design-systems-cli/pull/216) (raj_vasikarla@intuit.com)
+
+#### Authors: 1
+
+- Raj Vasikarla ([@vasikarla](https://github.com/vasikarla))
+
+---
+
+# v2.11.0 (Thu Jan 07 2021)
+
+#### 🚀 Enhancement
+
+- Add eslint local dependency rule to ds lint [#608](https://github.com/intuit/design-systems-cli/pull/608) ([@kendallgassner](https://github.com/kendallgassner))
+
+#### 🐛 Bug Fix
+
+- merge with master ([@kendallgassner](https://github.com/kendallgassner))
+- add link and file plugin rule ([@kendallgassner](https://github.com/kendallgassner))
+
+#### Authors: 1
+
+- Kendall Gassner ([@kendallgassner](https://github.com/kendallgassner))
+
+---
+
 # v2.2.2 (Mon Sep 14 2020)
 
 #### 🐛 Bug Fix

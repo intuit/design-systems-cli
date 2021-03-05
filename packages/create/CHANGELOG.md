@@ -1,3 +1,38 @@
+# v2.12.3 (Thu Mar 04 2021)
+
+#### 🐛 Bug Fix
+
+- fix peer dependencies in create [#625](https://github.com/intuit/design-systems-cli/pull/625) ([@kendallgassner](https://github.com/kendallgassner))
+
+#### 🏠 Internal
+
+- feat: Integration Testing [#216](https://github.com/intuit/design-systems-cli/pull/216) (raj_vasikarla@intuit.com)
+
+#### Authors: 2
+
+- Kendall Gassner ([@kendallgassner](https://github.com/kendallgassner))
+- Raj Vasikarla ([@vasikarla](https://github.com/vasikarla))
+
+---
+
+# v2.6.1 (Tue Oct 13 2020)
+
+:tada: This release contains work from a new contributor! :tada:
+
+Thank you, null[@edgarsherman](https://github.com/edgarsherman), for all your work!
+
+#### 🐛 Bug Fix
+
+- fix: issue committing on windows [#558](https://github.com/intuit/design-systems-cli/pull/558) (edgar_sherman@intuit.com [@edgarsherman](https://github.com/edgarsherman))
+- fix: issue committing on windows (edgar_sherman@intuit.com)
+
+#### Authors: 2
+
+- [@edgarsherman](https://github.com/edgarsherman)
+- Edgar Sherman (edgar_sherman@intuit.com)
+
+---
+
 # v2.0.2 (Mon Aug 31 2020)
 
 #### 🐛 Bug Fix

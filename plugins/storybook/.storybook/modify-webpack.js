@@ -183,26 +183,6 @@ module.exports = async config => {
     })
   );
 
-  // Rebuild CSS when `theme.ts` changes
-  config.plugins.push({
-    apply(compiler) {
-      compiler.hooks.emit.tap('Add Extra Resource Deps', compilation => {
-        compilation.modules.forEach(module => {
-          if (module.resource && module.resource.match(/\.css$/)) {
-            const themeFile = path.join(
-              path.dirname(module.resource),
-              'theme.ts'
-            );
-
-            if (fs.existsSync(themeFile)) {
-              module.buildInfo.fileDependencies.add(themeFile);
-            }
-          }
-        });
-      });
-    }
-  });
-
   config.plugins.push(
     new FilterWarningsPlugin({
       exclude: /\.storybook\/(?:(light|dark))-logo/

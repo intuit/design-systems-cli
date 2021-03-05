@@ -1,3 +1,88 @@
+# v2.12.3 (Thu Mar 04 2021)
+
+#### 🏠 Internal
+
+- feat: Integration Testing [#216](https://github.com/intuit/design-systems-cli/pull/216) (raj_vasikarla@intuit.com)
+
+#### Authors: 1
+
+- Raj Vasikarla ([@vasikarla](https://github.com/vasikarla))
+
+---
+
+# v2.12.1 (Tue Feb 09 2021)
+
+:tada: This release contains work from a new contributor! :tada:
+
+Thank you, Adil Malik ([@amalik2](https://github.com/amalik2)), for all your work!
+
+#### 🐛 Bug Fix
+
+- Enable json-summary coverage reporter [#619](https://github.com/intuit/design-systems-cli/pull/619) ([@amalik2](https://github.com/amalik2))
+- Enable json-summary coverage reporter ([@amalik2](https://github.com/amalik2))
+
+#### Authors: 1
+
+- Adil Malik ([@amalik2](https://github.com/amalik2))
+
+---
+
+# v2.10.1 (Thu Dec 10 2020)
+
+#### 🐛 Bug Fix
+
+- integrate JSON file into single css theme builds [#603](https://github.com/intuit/design-systems-cli/pull/603) ([@hipstersmoothie](https://github.com/hipstersmoothie))
+
+#### Authors: 1
+
+- Andrew Lisowski ([@hipstersmoothie](https://github.com/hipstersmoothie))
+
+---
+
+# v2.9.1 (Thu Dec 03 2020)
+
+#### 🐛 Bug Fix
+
+- add .md to identity-obj-proxy [#600](https://github.com/intuit/design-systems-cli/pull/600) ([@Talor-A](https://github.com/Talor-A))
+- add md to module-name-mapper ([@Talor-A](https://github.com/Talor-A))
+
+#### Authors: 1
+
+- Talor Anderson ([@Talor-A](https://github.com/Talor-A))
+
+---
+
+# v2.7.4 (Thu Oct 22 2020)
+
+:tada: This release contains work from a new contributor! :tada:
+
+Thank you, null[@chaopan](https://github.com/chaopan), for all your work!
+
+#### 🐛 Bug Fix
+
+- adds jsx to jest moduleFileExtension list [#583](https://github.com/intuit/design-systems-cli/pull/583) (chao_pan@intuit.com [@chaopan](https://github.com/chaopan))
+- adds jsx to jest moduleFileExtension list (chao_pan@intuit.com)
+
+#### Authors: 2
+
+- [@chaopan](https://github.com/chaopan)
+- Pan, Chao (chao_pan@intuit.com)
+
+---
+
+# v2.7.3 (Thu Oct 22 2020)
+
+#### 🐛 Bug Fix
+
+- loosen babel dep ranges [#581](https://github.com/intuit/design-systems-cli/pull/581) ([@hipstersmoothie](https://github.com/hipstersmoothie))
+- loosen babel dep ranges ([@hipstersmoothie](https://github.com/hipstersmoothie))
+
+#### Authors: 1
+
+- Andrew Lisowski ([@hipstersmoothie](https://github.com/hipstersmoothie))
+
+---
+
 # v2.5.1 (Fri Sep 25 2020)
 
 #### 🐛 Bug Fix

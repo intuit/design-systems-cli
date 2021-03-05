@@ -1,3 +1,59 @@
+# v2.12.3 (Thu Mar 04 2021)
+
+#### 🏠 Internal
+
+- feat: Integration Testing [#216](https://github.com/intuit/design-systems-cli/pull/216) (raj_vasikarla@intuit.com)
+
+#### Authors: 1
+
+- Raj Vasikarla ([@vasikarla](https://github.com/vasikarla))
+
+---
+
+# v2.10.1 (Thu Dec 10 2020)
+
+#### 🐛 Bug Fix
+
+- integrate JSON file into single css theme builds [#603](https://github.com/intuit/design-systems-cli/pull/603) ([@hipstersmoothie](https://github.com/hipstersmoothie))
+
+#### Authors: 1
+
+- Andrew Lisowski ([@hipstersmoothie](https://github.com/hipstersmoothie))
+
+---
+
+# v2.8.1 (Thu Nov 19 2020)
+
+:tada: This release contains work from a new contributor! :tada:
+
+Thank you, Spencer Hamm ([@spentacular](https://github.com/spentacular)), for all your work!
+
+#### 🐛 Bug Fix
+
+- Update dependency webpack-inject-plugin to v1.5.5 [#592](https://github.com/intuit/design-systems-cli/pull/592) ([@renovate-bot](https://github.com/renovate-bot) [@renovate[bot]](https://github.com/renovate[bot]))
+- move types packages to devDependencies [#593](https://github.com/intuit/design-systems-cli/pull/593) ([@spentacular](https://github.com/spentacular))
+- move types packages to devDependencies ([@spentacular](https://github.com/spentacular))
+
+#### Authors: 3
+
+- [@renovate[bot]](https://github.com/renovate[bot])
+- Spencer Hamm ([@spentacular](https://github.com/spentacular))
+- WhiteSource Renovate ([@renovate-bot](https://github.com/renovate-bot))
+
+---
+
+# v2.7.3 (Thu Oct 22 2020)
+
+#### 🐛 Bug Fix
+
+- loosen babel dep ranges [#581](https://github.com/intuit/design-systems-cli/pull/581) ([@hipstersmoothie](https://github.com/hipstersmoothie))
+
+#### Authors: 1
+
+- Andrew Lisowski ([@hipstersmoothie](https://github.com/hipstersmoothie))
+
+---
+
 # v2.5.1 (Fri Sep 25 2020)
 
 #### 🐛 Bug Fix

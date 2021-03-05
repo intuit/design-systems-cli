@@ -1,6 +1,6 @@
 {
   "name": "@design-systems/size",
-  "version": "2.6.0",
+  "version": "2.13.0",
   "description": "The size command for @design-systems-cli",
   "main": "dist/index.js",
   "author": "Adam Dierkens <adam@dierkens.com>",
@@ -44,7 +44,7 @@
     "tslib": "2.0.1",
     "webpack": "4.44.1",
     "webpack-bundle-analyzer": "3.8.0",
-    "webpack-inject-plugin": "1.5.4",
+    "webpack-inject-plugin": "1.5.5",
     "webpack-sources": "1.4.3"
   },
   "devDependencies": {

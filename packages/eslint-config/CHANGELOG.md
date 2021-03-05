@@ -1,3 +1,51 @@
+# v2.12.3 (Thu Mar 04 2021)
+
+#### 🐛 Bug Fix
+
+- update @kendallgassner/eslint-plugin-package-json [#627](https://github.com/intuit/design-systems-cli/pull/627) ([@kendallgassner](https://github.com/kendallgassner))
+- update @kendallgassner/eslint-plugin-package-json ([@kendallgassner](https://github.com/kendallgassner))
+
+#### 🏠 Internal
+
+- feat: Integration Testing [#216](https://github.com/intuit/design-systems-cli/pull/216) (raj_vasikarla@intuit.com)
+
+#### Authors: 2
+
+- Kendall Gassner ([@kendallgassner](https://github.com/kendallgassner))
+- Raj Vasikarla ([@vasikarla](https://github.com/vasikarla))
+
+---
+
+# v2.12.2 (Wed Feb 10 2021)
+
+#### 🐛 Bug Fix
+
+- turn off jsdoc/no-types for jsx files [#620](https://github.com/intuit/design-systems-cli/pull/620) ([@Talor-A](https://github.com/Talor-A))
+- turn off jsdoc/no-types for jsx files ([@Talor-A](https://github.com/Talor-A))
+
+#### Authors: 1
+
+- Talor Anderson ([@Talor-A](https://github.com/Talor-A))
+
+---
+
+# v2.11.0 (Thu Jan 07 2021)
+
+#### 🚀 Enhancement
+
+- Add eslint local dependency rule to ds lint [#608](https://github.com/intuit/design-systems-cli/pull/608) ([@kendallgassner](https://github.com/kendallgassner))
+
+#### 🐛 Bug Fix
+
+- merge with master ([@kendallgassner](https://github.com/kendallgassner))
+- add link and file plugin rule ([@kendallgassner](https://github.com/kendallgassner))
+
+#### Authors: 1
+
+- Kendall Gassner ([@kendallgassner](https://github.com/kendallgassner))
+
+---
+
 # v2.0.0 (Fri Aug 14 2020)
 
 ### Release Notes
