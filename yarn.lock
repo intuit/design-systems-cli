@@ -2419,15 +2419,23 @@
   resolved "https://registry.yarnpkg.com/@bcoe/v8-coverage/-/v8-coverage-0.2.3.tgz#75a2e8b51cb758a7553d6804a5932d7aace75c39"
   integrity sha512-0hYQ8SB4Db5zvZB4axdMHGwEaQjkZzFjQiN9LVYvIFB2nSUHW9tYpxWriPrWDASIxiaXax83REcLxuSdnGPZtw==
 
-"@brainly/html-sketchapp@^4.3.0":
-  version "4.4.0"
-  resolved "https://registry.yarnpkg.com/@brainly/html-sketchapp/-/html-sketchapp-4.4.0.tgz#56e0670d1d668ffff1e6a1c00ca41206d5865b6d"
-  integrity sha512-5NAJAyBdkXuWKK40D8zg93KWyUeM01rNqjSL8srdBoiHQGn77G+x7FQzdgQ5UNI15IvFJMK88CU4wyWLg/NIbQ==
+"@brainly/html-sketchapp@^4.4.1":
+  version "4.5.0"
+  resolved "https://registry.yarnpkg.com/@brainly/html-sketchapp/-/html-sketchapp-4.5.0.tgz#60f445cd8e080a3b20d0e4b4e20d124cc4a82cf6"
+  integrity sha512-I1y4F4pRfjo6FG5PxtRrhdiuLf6p2ND+/22aGbqRIKpcJY8/XHRKnJSQ1bHZh32fxO4AxK6Xl80wChBh1V4a/w==
   dependencies:
+    "@brainly/sketchapp-json-plugin" "^0.1.3"
     murmur2js "^1.0.0"
     normalize-css-color "^1.0.2"
     sketch-constants "^1.1.0"
-    sketchapp-json-plugin "^0.1.2"
+
+"@brainly/sketchapp-json-plugin@^0.1.3":
+  version "0.1.3"
+  resolved "https://registry.yarnpkg.com/@brainly/sketchapp-json-plugin/-/sketchapp-json-plugin-0.1.3.tgz#f8db1f829e32f547ad67d7ef7cd53a7faf69a5e0"
+  integrity sha512-9Pk8rQ20sdKYO/9GcxuZma9AcQ6b5qJDcRVtciQDxHS/MWuy7BRW/dCZCUzJMxoeYgsITd8L8QiwUyn++4pzhQ==
+  dependencies:
+    invariant "^2.2.2"
+    sketchapp-json-flow-types "^0.0.2"
 
 "@cnakazawa/watch@^1.0.3":
   version "1.0.3"
@@ -2739,7 +2747,7 @@
     get-port "5.1.1"
     github-url-to-object "4.0.4"
     source-map-loader "1.1.0"
-    story2sketch "1.7.0"
+    story2sketch "1.7.1"
     storybook-addon-jsx "^7.3.0"
     storybook-addon-react-docgen "^1.2.38"
     storybook-addon-sketch "^0.2.0"
@@ -21090,14 +21098,6 @@ sketchapp-json-flow-types@^0.0.2:
   resolved "https://registry.yarnpkg.com/sketchapp-json-flow-types/-/sketchapp-json-flow-types-0.0.2.tgz#226496e79f6a3845b89021d666b090ab4558d7d0"
   integrity sha1-ImSW559qOEW4kCHWZrCQq0VY19A=
 
-sketchapp-json-plugin@^0.1.2:
-  version "0.1.2"
-  resolved "https://registry.yarnpkg.com/sketchapp-json-plugin/-/sketchapp-json-plugin-0.1.2.tgz#f3a77cf309e82dfb0d4ca0de681a54b3c5ac7425"
-  integrity sha512-DnJZOWiBERwvCxZkr5cbM2UrkBXpdatykYqdJs61qZDmgciOzwd0SLBxKJzDJFYXZrAdDVtTDGFAn0JAwAhS4w==
-  dependencies:
-    invariant "^2.2.2"
-    sketchapp-json-flow-types "^0.0.2"
-
 slash@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/slash/-/slash-1.0.0.tgz#c41f2f6c39fc16d1cd17ad4b5d896114ae470d55"
@@ -21531,12 +21531,12 @@ store2@^2.7.1:
   resolved "https://registry.yarnpkg.com/store2/-/store2-2.10.0.tgz#46b82bb91878daf1b0d56dec2f1d41e54d5103cf"
   integrity sha512-tWEpK0snS2RPUq1i3R6OahfJNjWCQYNxq0+by1amCSuw0mXtymJpzmZIeYpA1UAa+7B0grCpNYIbDcd7AgTbFg==
 
-story2sketch@1.7.0:
-  version "1.7.0"
-  resolved "https://registry.yarnpkg.com/story2sketch/-/story2sketch-1.7.0.tgz#47a3b332fb9207d07fb64319dc07ecdb586545ab"
-  integrity sha512-CP/cLvTceoqQ8BeV30l5yLkFUdBJ61bsjakVKjl8GAI9/Cf6EmB9yzT+K5RDuKMVrajbiVSYwteB8TNSRJUR6A==
+story2sketch@1.7.1:
+  version "1.7.1"
+  resolved "https://registry.yarnpkg.com/story2sketch/-/story2sketch-1.7.1.tgz#a590fa3d1719621b0bd8e893923748590f95372f"
+  integrity sha512-XUpU1J1aP1DUEkZm8j8zDE19wgWNH7V5RSavAkzDzW8Sv3Vn3R3MRmUP9wynvU/Q/PExL7THBkk41SyFOLK0yQ==
   dependencies:
-    "@brainly/html-sketchapp" "^4.3.0"
+    "@brainly/html-sketchapp" "^4.4.1"
     babel-runtime "^6.26.0"
     chalk "^2.3.0"
     cosmiconfig "^4.0.0"
