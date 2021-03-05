@@ -19,41 +19,47 @@
   },
   "packageRules": [
     {
-      "packagePatterns": ["@storybook"],
+      "matchPackagePatterns": ["@storybook"],
       "groupName": "storybook",
       "rangeStrategy": "bump"
     },
     {
-      "packagePatterns": ["@babel"],
+      "matchPackagePatterns": ["@babel", "babel"],
       "groupName": "babel",
       "rangeStrategy": "bump"
     },
     {
-      "packageNames": ["autoprefixer"],
-      "packagePatterns": ["^postcss"],
+      "packageNames": ["autoprefixer", "icss-utils"],
+      "matchPackagePatterns": ["^postcss"],
       "groupName": "postcss",
       "rangeStrategy": "replace"
     },
     {
-      "packagePatterns": ["@proof-ui"],
+      "packageNames": ["@testing-library"],
+      "matchPackagePatterns": ["^@testing-library"],
+      "groupName": "testing-library",
+      "rangeStrategy": "replace"
+    },
+    {
+      "matchPackagePatterns": ["@proof-ui"],
       "groupName": "proof"
     },
     {
-      "packagePatterns": ["@reach"],
+      "matchPackagePatterns": ["@reach"],
       "groupName": "reach"
     },
     {
-      "packagePatterns": ["auto", "@auto-it"],
+      "matchPackagePatterns": ["auto", "@auto-it"],
       "groupName": "auto",
       "excludePackageNames": ["autoprefixer"]
     },
     {
       "extends": "packages:linters",
-      "packagePatterns": ["^eslint"],
+      "matchPackagePatterns": ["^eslint"],
       "groupName": "linters"
     },
     {
-      "packagePatterns": ["stylelint"],
+      "matchPackagePatterns": ["stylelint"],
       "groupName": "stylelint"
     }
   ]
