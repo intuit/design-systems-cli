@@ -255,7 +255,7 @@ async function reportResults(
 /** Create a table. */
 function table(data: (string | number)[][], isCi?: boolean) {
   if (isCi) {
-    return markdownTable(data);
+    return markdownTable(data as (string)[][]);
   }
 
   return cliTable(data);

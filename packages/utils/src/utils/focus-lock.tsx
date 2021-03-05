@@ -35,11 +35,13 @@ export const FocusLock = React.forwardRef<
 >(({ active, onBlur = () => undefined, ...html }, ref) => {
   const trap = React.useRef<HTMLDivElement>(null);
 
+  type TrapCurrent = NonNullable<typeof trap.current>;
+
   /** Trap the focus within the locks if active */
   const trapFocus = () => {
-    if (active && !focusInside(trap.current)) {
+    if (active && !focusInside(trap.current as TrapCurrent)) {
       setTimeout(
-        () => moveFocusInside(trap.current, document.activeElement),
+        () => moveFocusInside(trap.current as TrapCurrent, document.activeElement as HTMLInputElement),
         50
       );
     }
