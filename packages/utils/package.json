@@ -48,7 +48,7 @@
     "@types/react-dom": "16.9.0",
     "auto": "10.18.3",
     "husky": "3.0.1",
-    "lint-staged": "9.2.1",
+    "lint-staged": "10.5.4",
     "prettier": "1.19.1",
     "react": "16.8.6",
     "react-dom": "16.8.6",
