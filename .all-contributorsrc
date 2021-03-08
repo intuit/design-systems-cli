@@ -232,6 +232,17 @@
         "test",
         "code"
       ]
+    },
+    {
+      "login": "GauravKesarwani",
+      "name": "Gaurav Kesarwani",
+      "avatar_url": "https://avatars.githubusercontent.com/u/5545506?v=4",
+      "profile": "https://github.com/GauravKesarwani",
+      "contributions": [
+        "doc",
+        "test",
+        "code"
+      ]
     }
   ],
   "contributorsPerLine": 7
