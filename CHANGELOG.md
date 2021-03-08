@@ -1,3 +1,16 @@
+# v2.15.1 (Mon Mar 08 2021)
+
+#### 🐛 Bug Fix
+
+- `@design-systems/storybook`
+  - loosen storybook cli range [#642](https://github.com/intuit/design-systems-cli/pull/642) ([@hipstersmoothie](https://github.com/hipstersmoothie))
+
+#### Authors: 1
+
+- Andrew Lisowski ([@hipstersmoothie](https://github.com/hipstersmoothie))
+
+---
+
 # v2.15.0 (Mon Mar 08 2021)
 
 :tada: This release contains work from a new contributor! :tada:
