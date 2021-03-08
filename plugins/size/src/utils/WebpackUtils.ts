@@ -201,7 +201,7 @@ async function getSizes(options: GetSizesOptions & CommonOptions) {
   );
   logger.debug(`Completed building: ${dir}`);
   if (options.persist) {
-    const folder = `bundle-${options.scope}`;
+    const folder = `bundle-${options.scope}-${options.importName}`;
     const out = path.join(process.cwd(), folder);
     logger.info(`Persisting output to: ${folder}`);
     await fs.remove(out);
