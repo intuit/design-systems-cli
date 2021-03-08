@@ -1,3 +1,51 @@
+# v2.15.0 (Mon Mar 08 2021)
+
+:tada: This release contains work from a new contributor! :tada:
+
+Thank you, Gaurav Kesarwani ([@GauravKesarwani](https://github.com/GauravKesarwani)), for all your work!
+
+#### 🚀 Enhancement
+
+- `@design-systems/size`
+  - Persist size output [#641](https://github.com/intuit/design-systems-cli/pull/641) ([@GauravKesarwani](https://github.com/GauravKesarwani))
+
+#### 🔩 Dependency Updates
+
+- `@design-systems/test`
+  - Update dependency @types/jest to v26.0.20 [#473](https://github.com/intuit/design-systems-cli/pull/473) ([@renovate-bot](https://github.com/renovate-bot) [@renovate[bot]](https://github.com/renovate[bot]))
+- `@design-systems/update`
+  - Update dependency semver to v7.3.4 [#493](https://github.com/intuit/design-systems-cli/pull/493) ([@renovate-bot](https://github.com/renovate-bot) [@renovate[bot]](https://github.com/renovate[bot]))
+  - Update dependency node-fetch to v2.6.1 [#480](https://github.com/intuit/design-systems-cli/pull/480) ([@renovate-bot](https://github.com/renovate-bot) [@renovate[bot]](https://github.com/renovate[bot]))
+  - Update dependency marked-terminal to v4.1.1 [#632](https://github.com/intuit/design-systems-cli/pull/632) ([@renovate-bot](https://github.com/renovate-bot) [@renovate[bot]](https://github.com/renovate[bot]))
+- `@design-systems/size`
+  - Update dependency diff2html to v3.3.0 [#481](https://github.com/intuit/design-systems-cli/pull/481) ([@renovate-bot](https://github.com/renovate-bot) [@renovate[bot]](https://github.com/renovate[bot]))
+  - Update dependency table to v6.0.7 [#477](https://github.com/intuit/design-systems-cli/pull/477) ([@renovate-bot](https://github.com/renovate-bot) [@renovate[bot]](https://github.com/renovate[bot]))
+  - Update dependency commently to v6.18.3 [#475](https://github.com/intuit/design-systems-cli/pull/475) ([@renovate-bot](https://github.com/renovate-bot) [@renovate[bot]](https://github.com/renovate[bot]))
+- `@design-systems/babel-plugin-include-styles`, `@design-systems/babel-plugin-replace-styles`
+  - Update dependency @types/node to v14.14.31 [#474](https://github.com/intuit/design-systems-cli/pull/474) ([@renovate-bot](https://github.com/renovate-bot) [@renovate[bot]](https://github.com/renovate[bot]))
+- `@design-systems/svg-icon-builder`, `@design-systems/utils`
+  - Update auto to v10 [#484](https://github.com/intuit/design-systems-cli/pull/484) ([@renovate-bot](https://github.com/renovate-bot) [@renovate[bot]](https://github.com/renovate[bot]))
+- `@design-systems/create`
+  - Update dependency ts-loader to v8.0.17 [#508](https://github.com/intuit/design-systems-cli/pull/508) ([@renovate-bot](https://github.com/renovate-bot) [@renovate[bot]](https://github.com/renovate[bot]))
+- `@design-systems/create`, `@design-systems/create-command`
+  - Update dependency title-case to v3.0.3 [#599](https://github.com/intuit/design-systems-cli/pull/599) ([@renovate-bot](https://github.com/renovate-bot) [@renovate[bot]](https://github.com/renovate[bot]))
+- `@design-systems/playroom`
+  - Update dependency react-element-to-jsx-string to v14.3.2 [#584](https://github.com/intuit/design-systems-cli/pull/584) ([@renovate-bot](https://github.com/renovate-bot) [@renovate[bot]](https://github.com/renovate[bot]))
+- `@design-systems/utils`
+  - Update dependency @types/classnames to v2.2.11 [#568](https://github.com/intuit/design-systems-cli/pull/568) ([@renovate-bot](https://github.com/renovate-bot) [@renovate[bot]](https://github.com/renovate[bot]))
+- `@design-systems/create`, `@design-systems/build`, `@design-systems/create-command`, `@design-systems/size`, `@design-systems/update`
+  - Update dependency colorette to v1.2.2 [#629](https://github.com/intuit/design-systems-cli/pull/629) ([@renovate-bot](https://github.com/renovate-bot) [@renovate[bot]](https://github.com/renovate[bot]))
+- `@design-systems/build`, `@design-systems/clean`, `@design-systems/lint`, `@design-systems/playroom`, `@design-systems/storybook`
+  - Update dependency fast-glob to v3.2.5 [#615](https://github.com/intuit/design-systems-cli/pull/615) ([@renovate-bot](https://github.com/renovate-bot) [@renovate[bot]](https://github.com/renovate[bot]))
+
+#### Authors: 3
+
+- [@renovate[bot]](https://github.com/renovate[bot])
+- Gaurav Kesarwani ([@GauravKesarwani](https://github.com/GauravKesarwani))
+- WhiteSource Renovate ([@renovate-bot](https://github.com/renovate-bot))
+
+---
+
 # v2.14.0 (Fri Mar 05 2021)
 
 :tada: This release contains work from new contributors! :tada:
