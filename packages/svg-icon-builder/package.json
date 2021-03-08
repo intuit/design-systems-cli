@@ -1,6 +1,6 @@
 {
   "name": "@design-systems/svg-icon-builder",
-  "version": "2.14.0",
+  "version": "2.15.0",
   "main": "./dist/cjs/index.js",
   "description": "A simple CLI for generating icon components from SVGs.",
   "bin": {

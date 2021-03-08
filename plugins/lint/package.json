@@ -1,6 +1,6 @@
 {
   "name": "@design-systems/lint",
-  "version": "2.14.0",
+  "version": "2.15.0",
   "description": "The lint command for @design-systems-cli",
   "main": "dist/index.js",
   "author": "Adam Dierkens <adam@dierkens.com>",
