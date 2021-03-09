@@ -1,3 +1,16 @@
+# v2.15.2 (Tue Mar 09 2021)
+
+#### 🐛 Bug Fix
+
+- `@design-systems/eslint-config`
+  - upgrade eslint-plugin-react-hooks [#643](https://github.com/intuit/design-systems-cli/pull/643) ([@hipstersmoothie](https://github.com/hipstersmoothie))
+
+#### Authors: 1
+
+- Andrew Lisowski ([@hipstersmoothie](https://github.com/hipstersmoothie))
+
+---
+
 # v2.15.1 (Mon Mar 08 2021)
 
 #### 🐛 Bug Fix
