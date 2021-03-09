@@ -1,6 +1,6 @@
 {
   "name": "@design-systems/core",
-  "version": "2.15.1",
+  "version": "2.15.2",
   "description": "The core structure of the @design-systems CLI",
   "author": "Adam Dierkens <adam@dierkens.com>",
   "license": "MIT",
