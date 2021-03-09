@@ -32,7 +32,7 @@
     "eslint-plugin-no-explicit-type-exports": "0.11.4",
     "eslint-plugin-prettier": "3.1.4",
     "eslint-plugin-react": "7.20.6",
-    "eslint-plugin-react-hooks": "4.0.8",
+    "eslint-plugin-react-hooks": "4.2.0",
     "tslib": "2.0.1"
   }
 }
