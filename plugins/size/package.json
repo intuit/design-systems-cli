@@ -57,7 +57,7 @@
     "@types/optimize-css-assets-webpack-plugin": "5.0.1",
     "@types/table": "6.0.0",
     "@types/terser-webpack-plugin": "4.1.0",
-    "@types/webpack-bundle-analyzer": "3.8.0",
+    "@types/webpack-bundle-analyzer": "3.9.2",
     "@types/webpack-sources": "1.4.2"
   }
 }
