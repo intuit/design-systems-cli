@@ -15,6 +15,8 @@ export interface TestArgs {
   annotate?: boolean;
   /** Array of files, directories, or globs to find tests */
   files?: string[];
+    /** Run all tests serially in the current process, */
+  runInBand?: boolean;
 }
 
 /** A plugin to run tests. */
@@ -43,7 +45,8 @@ export default class TestPlugin implements Plugin<TestArgs> {
           updateSnapshot: args.update,
           watch: args.watch,
           testPathPattern: args.files,
-          ci: env().isCi
+          ci: env().isCi,
+          runInBand: args.runInBand
         },
         [process.cwd()]
       );
