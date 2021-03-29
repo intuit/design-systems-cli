@@ -1,3 +1,15 @@
+# v2.16.0 (Mon Mar 29 2021)
+
+#### 🚀 Enhancement
+
+- add command to run all tests synchronous [#644](https://github.com/intuit/design-systems-cli/pull/644) ([@kendallgassner](https://github.com/kendallgassner))
+
+#### Authors: 1
+
+- Kendall Gassner ([@kendallgassner](https://github.com/kendallgassner))
+
+---
+
 # v2.15.0 (Mon Mar 08 2021)
 
 :tada: This release contains work from a new contributor! :tada:
