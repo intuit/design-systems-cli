@@ -36,6 +36,11 @@ const command: CliCommand = {
       defaultOption: true,
       multiple: true,
       description: 'Array of files or directories to find test'
+    },
+    {
+      name: 'runInBand',
+      type: Boolean,
+      description: 'Run all tests serially in the current process.'
     }
   ]
 };
