@@ -278,7 +278,7 @@ Check to see if a child component is an instance of the given slot
 **Parameters:**
 
 - child (`any`) - The React child component instance to test
-- identifier (`symbol | AnyComponent`) - The React Component or Slot ID (Symbol) to test against
+- identifier (`symbol | ComponentClass<any, any> | FunctionComponent<any>`) - The React Component or Slot ID (Symbol) to test against
 
 **returns:** boolean
 
@@ -379,7 +379,7 @@ all the same props as the element prop.
 
 **Parameters:**
 
-- element (`T | [T, ...((props: any) => ReactNode)[]]`) - The html dom element to create a Component for
+- element (`T | [T, ...((props: any) => ReactNode)[]] | ((props: any) => ReactNode)`) - The html dom element to create a Component for
 - options (`string | WrappedComponent`) - The class an metadata to attach to the Component
 
 **returns:** DocGen & Slotted & WithRef
