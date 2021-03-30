@@ -1,3 +1,16 @@
+# v2.17.0 (Mon Mar 29 2021)
+
+#### 🚀 Enhancement
+
+- `@design-systems/utils`
+  - add react element as optional type in styled component [#646](https://github.com/intuit/design-systems-cli/pull/646) ([@kendallgassner](https://github.com/kendallgassner))
+
+#### Authors: 1
+
+- Kendall Gassner ([@kendallgassner](https://github.com/kendallgassner))
+
+---
+
 # v2.16.0 (Mon Mar 29 2021)
 
 #### 🚀 Enhancement
