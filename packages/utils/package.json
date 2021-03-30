@@ -13,7 +13,7 @@
   ],
   "license": "MIT",
   "scripts": {
-    "build": "yarn docs && ds build",
+    "build": "ds build",
     "test": "ds test",
     "lint": "ds lint",
     "docs": "ts-readme"
