@@ -243,6 +243,15 @@
         "test",
         "code"
       ]
+    },
+    {
+      "login": "nhoizey",
+      "name": "Nicolas Hoizey",
+      "avatar_url": "https://avatars.githubusercontent.com/u/78213?v=4",
+      "profile": "https://nicolas-hoizey.com/",
+      "contributions": [
+        "doc"
+      ]
     }
   ],
   "contributorsPerLine": 7

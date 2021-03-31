@@ -113,6 +113,7 @@ Thank you to all these wonderful people ([emoji key](https://allcontributors.org
   <tr>
     <td align="center"><a href="https://github.com/salilbc"><img src="https://avatars.githubusercontent.com/u/9673247?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Salil Cuncoliencar</b></sub></a><br /><a href="https://github.com/intuit/design-systems-cli/commits?author=salilbc" title="Documentation">📖</a> <a href="https://github.com/intuit/design-systems-cli/commits?author=salilbc" title="Tests">⚠️</a> <a href="https://github.com/intuit/design-systems-cli/commits?author=salilbc" title="Code">💻</a></td>
     <td align="center"><a href="https://github.com/GauravKesarwani"><img src="https://avatars.githubusercontent.com/u/5545506?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Gaurav Kesarwani</b></sub></a><br /><a href="https://github.com/intuit/design-systems-cli/commits?author=GauravKesarwani" title="Documentation">📖</a> <a href="https://github.com/intuit/design-systems-cli/commits?author=GauravKesarwani" title="Tests">⚠️</a> <a href="https://github.com/intuit/design-systems-cli/commits?author=GauravKesarwani" title="Code">💻</a></td>
+    <td align="center"><a href="https://nicolas-hoizey.com/"><img src="https://avatars.githubusercontent.com/u/78213?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Nicolas Hoizey</b></sub></a><br /><a href="https://github.com/intuit/design-systems-cli/commits?author=nhoizey" title="Documentation">📖</a></td>
   </tr>
 </table>
 
