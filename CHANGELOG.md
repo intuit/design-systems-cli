@@ -1,3 +1,20 @@
+# v2.17.1 (Wed Mar 31 2021)
+
+:tada: This release contains work from a new contributor! :tada:
+
+Thank you, Nicolas Hoizey ([@nhoizey](https://github.com/nhoizey)), for all your work!
+
+#### 🐛 Bug Fix
+
+- `@design-systems/docs`
+  - Fix multiple identical typos [#647](https://github.com/intuit/design-systems-cli/pull/647) ([@nhoizey](https://github.com/nhoizey))
+
+#### Authors: 1
+
+- Nicolas Hoizey ([@nhoizey](https://github.com/nhoizey))
+
+---
+
 # v2.17.0 (Mon Mar 29 2021)
 
 #### 🚀 Enhancement
