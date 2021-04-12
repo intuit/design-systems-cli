@@ -20,7 +20,6 @@ import {
 } from '../interfaces';
 import { getSizes } from './WebpackUtils';
 
-const FAILURE_THRESHOLD = 5;
 const RUNTIME_SIZE = 537;
 
 export const logger = createLogger({ scope: 'size' });
@@ -309,6 +308,7 @@ async function calcSizeForAllPackages(args: SizeArgs) {
       });
       results.push(size);
 
+      const FAILURE_THRESHOLD = args.failureThreshold || 5;
       if (size.percent > FAILURE_THRESHOLD && size.percent !== Infinity) {
         success = false;
         logger.error(`${packageJson.package.name} failed bundle size check :(`);
