@@ -1,3 +1,20 @@
+# v2.17.2 (Mon Apr 12 2021)
+
+:tada: This release contains work from a new contributor! :tada:
+
+Thank you, Raj Vasikarla ([@vasikarla](https://github.com/vasikarla)), for all your work!
+
+#### 🐛 Bug Fix
+
+- fix: enabling FAILURE_THRESHOLD to be read from cmdArgs [#649](https://github.com/intuit/design-systems-cli/pull/649) ([@vasikarla](https://github.com/vasikarla))
+- fix: enabling FAILURE_THRESHOLD to be read from cmdArgs ([@vasikarla](https://github.com/vasikarla))
+
+#### Authors: 1
+
+- Raj Vasikarla ([@vasikarla](https://github.com/vasikarla))
+
+---
+
 # v2.15.0 (Mon Mar 08 2021)
 
 :tada: This release contains work from a new contributor! :tada:
