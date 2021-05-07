@@ -5,7 +5,7 @@ import { Plugin } from '@design-systems/plugin';
 import path from 'path';
 import getPort from 'get-port';
 import storybook from '@storybook/react/standalone';
-import { extract } from '@storybook/cli/dist/extract';
+import { extract } from '@storybook/cli/dist/cjs/extract';
 
 import Story2sketch from 'story2sketch/lib/server/Story2sketch';
 import config from './story2sketch.config';
