@@ -32,7 +32,7 @@
     "fs-extra": "9.0.1",
     "playroom": "0.22.3",
     "react-element-to-jsx-string": "14.3.2",
-    "style-loader": "1.2.1",
+    "style-loader": "2.0.0",
     "tslib": "2.0.1",
     "webpack": "4.44.1"
   }
