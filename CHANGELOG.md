@@ -1,3 +1,20 @@
+# v2.17.3 (Sat May 15 2021)
+
+:tada: This release contains work from a new contributor! :tada:
+
+Thank you, Harris Borawski ([@hborawski](https://github.com/hborawski)), for all your work!
+
+#### 🐛 Bug Fix
+
+- `@design-systems/storybook`
+  - upgrade storybook to 6.2.9 [#651](https://github.com/intuit/design-systems-cli/pull/651) ([@hborawski](https://github.com/hborawski))
+
+#### Authors: 1
+
+- Harris Borawski ([@hborawski](https://github.com/hborawski))
+
+---
+
 # v2.17.2 (Mon Apr 12 2021)
 
 :tada: This release contains work from a new contributor! :tada:
