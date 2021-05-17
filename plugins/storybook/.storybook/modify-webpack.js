@@ -131,7 +131,7 @@ function addSourceMaps(config) {
     test: /\.(js|css)$/,
     exclude: /node_modules/,
     include: new RegExp(monorepoName()),
-    use: ['source-map-loader'],
+    use: [require.resolve('source-map-loader')],
     enforce: 'pre'
   });
 }
