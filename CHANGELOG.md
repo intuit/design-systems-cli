@@ -1,3 +1,16 @@
+# v2.17.4 (Mon May 17 2021)
+
+#### 🐛 Bug Fix
+
+- `@design-systems/storybook`
+  - Use resolved location for source-map-loader [#654](https://github.com/intuit/design-systems-cli/pull/654) ([@adierkens](https://github.com/adierkens))
+
+#### Authors: 1
+
+- Adam Dierkens ([@adierkens](https://github.com/adierkens))
+
+---
+
 # v2.17.3 (Sat May 15 2021)
 
 :tada: This release contains work from a new contributor! :tada:
