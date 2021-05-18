@@ -1,3 +1,16 @@
+# v2.17.5 (Tue May 18 2021)
+
+#### 🐛 Bug Fix
+
+- Don't minify or compact builds [#655](https://github.com/intuit/design-systems-cli/pull/655) ([@adierkens](https://github.com/adierkens))
+- Update babel.config.ts ([@adierkens](https://github.com/adierkens))
+
+#### Authors: 1
+
+- Adam Dierkens ([@adierkens](https://github.com/adierkens))
+
+---
+
 # v2.15.0 (Mon Mar 08 2021)
 
 :tada: This release contains work from a new contributor! :tada:

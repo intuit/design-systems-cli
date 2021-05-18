@@ -1,3 +1,16 @@
+# v2.17.5 (Tue May 18 2021)
+
+#### 🐛 Bug Fix
+
+- `@design-systems/build`
+  - Don't minify or compact builds [#655](https://github.com/intuit/design-systems-cli/pull/655) ([@adierkens](https://github.com/adierkens))
+
+#### Authors: 1
+
+- Adam Dierkens ([@adierkens](https://github.com/adierkens))
+
+---
+
 # v2.17.4 (Mon May 17 2021)
 
 #### 🐛 Bug Fix
