@@ -15,10 +15,10 @@
   "dependencies": {
     "@design-systems/cli-utils": "link:../cli-utils",
     "@kendallgassner/eslint-plugin-package-json": "0.2.1",
-    "@typescript-eslint/eslint-plugin": "4.25.0",
-    "@typescript-eslint/parser": "4.25.0",
+    "@typescript-eslint/eslint-plugin": "4.16.1",
+    "@typescript-eslint/parser": "4.16.1",
     "babel-eslint": "10.1.0",
-    "eslint": "7.27.0",
+    "eslint": "7.6.0",
     "eslint-config-airbnb": "18.2.0",
     "eslint-config-prettier": "6.11.0",
     "eslint-config-xo": "0.32.1",
@@ -27,11 +27,11 @@
     "eslint-plugin-import": "2.22.0",
     "eslint-plugin-jest": "23.20.0",
     "eslint-plugin-jsdoc": "30.2.2",
-    "eslint-plugin-jsx-a11y": "6.4.1",
-    "eslint-plugin-mdx": "1.13.0",
+    "eslint-plugin-jsx-a11y": "6.3.1",
+    "eslint-plugin-mdx": "1.8.1",
     "eslint-plugin-no-explicit-type-exports": "0.11.4",
     "eslint-plugin-prettier": "3.1.4",
-    "eslint-plugin-react": "7.23.2",
+    "eslint-plugin-react": "7.20.6",
     "eslint-plugin-react-hooks": "4.2.0",
     "tslib": "2.0.1"
   }
