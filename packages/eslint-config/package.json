@@ -15,10 +15,10 @@
   "dependencies": {
     "@design-systems/cli-utils": "link:../cli-utils",
     "@kendallgassner/eslint-plugin-package-json": "0.2.1",
-    "@typescript-eslint/eslint-plugin": "4.16.1",
-    "@typescript-eslint/parser": "4.16.1",
+    "@typescript-eslint/eslint-plugin": "4.25.0",
+    "@typescript-eslint/parser": "4.25.0",
     "babel-eslint": "10.1.0",
-    "eslint": "7.6.0",
+    "eslint": "7.27.0",
     "eslint-config-airbnb": "18.2.0",
     "eslint-config-prettier": "6.11.0",
     "eslint-config-xo": "0.32.1",
