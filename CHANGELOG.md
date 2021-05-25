@@ -1,3 +1,17 @@
+# v2.17.6 (Tue May 25 2021)
+
+#### 🐛 Bug Fix
+
+- `@design-systems/eslint-config`, `@design-systems/lint`
+  - Revert "Bump eslint plugin versions" [#658](https://github.com/intuit/design-systems-cli/pull/658) ([@adierkens](https://github.com/adierkens))
+  - Bump eslint plugin versions [#656](https://github.com/intuit/design-systems-cli/pull/656) ([@adierkens](https://github.com/adierkens))
+
+#### Authors: 1
+
+- Adam Dierkens ([@adierkens](https://github.com/adierkens))
+
+---
+
 # v2.17.5 (Tue May 18 2021)
 
 #### 🐛 Bug Fix
