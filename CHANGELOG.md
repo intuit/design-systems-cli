@@ -1,3 +1,20 @@
+# v2.17.7 (Thu Jun 10 2021)
+
+:tada: This release contains work from a new contributor! :tada:
+
+Thank you, Spencer Hamm ([@spentacular](https://github.com/spentacular)), for all your work!
+
+#### 🐛 Bug Fix
+
+- `@design-systems/storybook`
+  - fallback to cwd when running outside of cli [#659](https://github.com/intuit/design-systems-cli/pull/659) ([@spentacular](https://github.com/spentacular))
+
+#### Authors: 1
+
+- Spencer Hamm ([@spentacular](https://github.com/spentacular))
+
+---
+
 # v2.17.6 (Tue May 25 2021)
 
 #### 🐛 Bug Fix
