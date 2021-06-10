@@ -19,7 +19,10 @@ const addons = [
 ];
 
 const stories = glob.sync(
-  path.join(process.env.COMPONENT, '**/*.stories.(tsx|js|jsx|mdx)'),
+  path.join(
+    process.env.COMPONENT || process.cwd(),
+    '**/*.stories.(tsx|js|jsx|mdx)'
+  ),
   { ignore: ['**/node_modules'] }
 );
 
