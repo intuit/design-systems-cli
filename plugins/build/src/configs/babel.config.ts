@@ -13,15 +13,19 @@ export default function (api: babel.ConfigAPI) {
       isTest && 'jest',
     ].filter(Boolean),
     plugins: [
+      // Explicitly adding these here so they are added in { 'loose': false } mode
+      // See https://github.com/babel/babel/issues/11622#issuecomment-638609015
       '@babel/plugin-proposal-class-properties',
+      '@babel/plugin-proposal-private-methods',
       '@babel/plugin-syntax-dynamic-import',
+      '@babel/plugin-proposal-private-property-in-object',
       'babel-plugin-styled-components',
       'macros',
       [
         '@babel/plugin-transform-runtime',
         {
           regenerator: true,
-          version: '7.11.2',
+          version: '7.13.9',
         },
       ],
     ].filter(Boolean),
