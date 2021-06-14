@@ -31,7 +31,7 @@ aliases:
     command: yarn lint
   - &test
     name: Test
-    command: yarn test --maxWorkers=2
+    command: yarn test --runInBand
   - &build
     name: Build
     command: yarn build
