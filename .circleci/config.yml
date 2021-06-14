@@ -31,7 +31,7 @@ aliases:
     command: yarn lint
   - &test
     name: Test
-    command: yarn test
+    command: yarn test --runInBand
   - &build
     name: Build
     command: yarn build
@@ -110,16 +110,16 @@ jobs:
           command: cd integration-ds && npx lerna run build --stream
       - run:
           name: Build Storybook
-          command: cd integration-ds && ./../packages/cli/bin/ds.js storybook build               
+          command: cd integration-ds && ./../packages/cli/bin/ds.js storybook build
       - run:
           name: Size
-          command: cd integration-ds && ./../packages/cli/bin/ds.js size --ignore @integration-ds/babel-preset 
+          command: cd integration-ds && ./../packages/cli/bin/ds.js size --ignore @integration-ds/babel-preset
       - run:
           name: Test
           command: cd integration-ds && ./../packages/cli/bin/ds.js test
       - run:
           name: Lint
-          command: cd integration-ds && ./../packages/cli/bin/ds.js lint 
+          command: cd integration-ds && ./../packages/cli/bin/ds.js lint
 
   publishDocs:
     <<: *defaults
@@ -142,7 +142,7 @@ workflows:
       - build:
           requires:
             - install
-      
+
       - lint:
           requires:
             - build
