@@ -1,3 +1,23 @@
+# v2.17.8 (Mon Jun 14 2021)
+
+:tada: This release contains work from a new contributor! :tada:
+
+Thank you, Kelvin Nguyen ([@kelyvin](https://github.com/kelyvin)), for all your work!
+
+#### 🐛 Bug Fix
+
+- fix: Set CircleCI tests to leverage runInBand [#660](https://github.com/intuit/design-systems-cli/pull/660) ([@kelyvin](https://github.com/kelyvin))
+- `@design-systems/playroom`
+  - Update dependency playroom to v0.25.0 [#611](https://github.com/intuit/design-systems-cli/pull/611) ([@renovate-bot](https://github.com/renovate-bot) [@renovate[bot]](https://github.com/renovate[bot]))
+
+#### Authors: 3
+
+- [@renovate[bot]](https://github.com/renovate[bot])
+- Kelvin Nguyen ([@kelyvin](https://github.com/kelyvin))
+- WhiteSource Renovate ([@renovate-bot](https://github.com/renovate-bot))
+
+---
+
 # v2.17.7 (Thu Jun 10 2021)
 
 :tada: This release contains work from a new contributor! :tada:

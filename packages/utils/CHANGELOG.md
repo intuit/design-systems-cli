@@ -1,3 +1,16 @@
+# v2.17.8 (Mon Jun 14 2021)
+
+#### 🐛 Bug Fix
+
+- Update dependency playroom to v0.25.0 [#611](https://github.com/intuit/design-systems-cli/pull/611) ([@renovate-bot](https://github.com/renovate-bot) [@renovate[bot]](https://github.com/renovate[bot]))
+
+#### Authors: 2
+
+- [@renovate[bot]](https://github.com/renovate[bot])
+- WhiteSource Renovate ([@renovate-bot](https://github.com/renovate-bot))
+
+---
+
 # v2.17.0 (Mon Mar 29 2021)
 
 #### 🚀 Enhancement
