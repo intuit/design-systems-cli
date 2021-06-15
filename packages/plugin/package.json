@@ -1,6 +1,6 @@
 {
   "name": "@design-systems/plugin",
-  "version": "2.17.7",
+  "version": "2.17.8",
   "description": "Plugin structure for the @design-systems CLI",
   "main": "dist/index.js",
   "author": "Adam Dierkens <adam@dierkens.com>",
