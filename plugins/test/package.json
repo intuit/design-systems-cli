@@ -26,7 +26,7 @@
     "@design-systems/plugin": "link:../../packages/plugin",
     "@jest/transform": "26.3.0",
     "@jest/types": "26.3.0",
-    "@testing-library/jest-dom": "5.11.4",
+    "@testing-library/jest-dom": "5.14.1",
     "@types/jest": "26.0.20",
     "babel-plugin-istanbul": "6.0.0",
     "env-ci": "5.0.2",
