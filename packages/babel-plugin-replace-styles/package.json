@@ -1,6 +1,6 @@
 {
   "name": "@design-systems/babel-plugin-replace-styles",
-  "version": "2.17.8",
+  "version": "2.18.0",
   "description": "A babel plugin that replaces CSS imports for a scoped monorepo design system built with `@design-systems/cli`",
   "main": "./dist/index.js",
   "types": "./dist",
