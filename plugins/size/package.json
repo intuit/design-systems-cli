@@ -43,7 +43,7 @@
     "terser-webpack-plugin": "4.1.0",
     "tslib": "2.0.1",
     "webpack": "4.44.1",
-    "webpack-bundle-analyzer": "3.8.0",
+    "webpack-bundle-analyzer": "4.4.2",
     "webpack-inject-plugin": "1.5.5",
     "webpack-sources": "1.4.3"
   },
@@ -57,7 +57,7 @@
     "@types/optimize-css-assets-webpack-plugin": "5.0.1",
     "@types/table": "6.0.0",
     "@types/terser-webpack-plugin": "4.1.0",
-    "@types/webpack-bundle-analyzer": "3.8.0",
+    "@types/webpack-bundle-analyzer": "4.4.1",
     "@types/webpack-sources": "1.4.2"
   }
 }
