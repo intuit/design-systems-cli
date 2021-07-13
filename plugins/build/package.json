@@ -64,7 +64,7 @@
     "@types/autoprefixer": "9.7.2",
     "@types/babel__code-frame": "7.0.2",
     "@types/babel__core": "7.1.9",
-    "@types/clean-css": "4.2.2",
+    "@types/clean-css": "4.2.5",
     "@types/dedent": "0.7.0",
     "@types/fs-extra": "9.0.1",
     "@types/icss-utils": "4.1.0",
