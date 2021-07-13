@@ -1701,7 +1701,7 @@
     minimist "^1.2.0"
 
 "@design-systems/build@link:plugins/build":
-  version "2.17.6"
+  version "2.17.8"
   dependencies:
     "@babel/code-frame" "^7.12.13"
     "@babel/core" "^7.13.8"
@@ -1743,7 +1743,7 @@
     typescript "4.2.2"
 
 "@design-systems/bundle@link:plugins/bundle":
-  version "2.17.6"
+  version "2.17.8"
   dependencies:
     "@design-systems/build" "link:plugins/build"
     "@design-systems/cli-utils" "link:packages/cli-utils"
@@ -1759,7 +1759,7 @@
     webpack "4.44.1"
 
 "@design-systems/clean@link:plugins/clean":
-  version "2.17.6"
+  version "2.17.8"
   dependencies:
     "@design-systems/cli-utils" "link:packages/cli-utils"
     "@design-systems/plugin" "link:packages/plugin"
@@ -1768,7 +1768,7 @@
     tslib "2.0.1"
 
 "@design-systems/cli-utils@link:packages/cli-utils":
-  version "2.17.6"
+  version "2.17.8"
   dependencies:
     find-up "5.0.0"
     npm-which "3.0.1"
@@ -1778,7 +1778,7 @@
     webpack "4.44.1"
 
 "@design-systems/cli@link:packages/cli":
-  version "2.17.6"
+  version "2.17.8"
   dependencies:
     "@design-systems/cli-utils" "link:packages/cli-utils"
     "@design-systems/core" "link:packages/core"
@@ -1793,7 +1793,7 @@
     update-check "1.5.4"
 
 "@design-systems/core@link:packages/core":
-  version "2.17.6"
+  version "2.17.8"
   dependencies:
     "@design-systems/build" "link:plugins/build"
     "@design-systems/bundle" "link:plugins/bundle"
@@ -1813,7 +1813,7 @@
     tslib "2.0.1"
 
 "@design-systems/create-command@link:plugins/create-command":
-  version "2.17.6"
+  version "2.17.8"
   dependencies:
     "@design-systems/cli-utils" "link:packages/cli-utils"
     "@design-systems/create" "link:packages/create"
@@ -1832,10 +1832,10 @@
     tslib "2.0.1"
 
 "@design-systems/create@link:packages/create":
-  version "2.17.6"
+  version "2.17.8"
 
 "@design-systems/dev@link:plugins/dev":
-  version "2.17.6"
+  version "2.17.8"
   dependencies:
     "@design-systems/cli-utils" "link:packages/cli-utils"
     "@design-systems/plugin" "link:packages/plugin"
@@ -1846,7 +1846,7 @@
     tslib "2.0.1"
 
 "@design-systems/eslint-config@link:packages/eslint-config":
-  version "2.17.6"
+  version "2.17.8"
   dependencies:
     "@design-systems/cli-utils" "link:packages/cli-utils"
     "@kendallgassner/eslint-plugin-package-json" "0.2.1"
@@ -1871,7 +1871,7 @@
     tslib "2.0.1"
 
 "@design-systems/lint@link:plugins/lint":
-  version "2.17.6"
+  version "2.17.8"
   dependencies:
     "@design-systems/cli-utils" "link:packages/cli-utils"
     "@design-systems/eslint-config" "link:packages/eslint-config"
@@ -1888,7 +1888,7 @@
     tslib "2.0.1"
 
 "@design-systems/load-config@link:packages/load-config":
-  version "2.17.6"
+  version "2.17.8"
   dependencies:
     "@design-systems/core" "link:packages/core"
     "@design-systems/plugin" "link:packages/plugin"
@@ -1902,7 +1902,7 @@
     tslib "2.0.1"
 
 "@design-systems/playroom@link:plugins/playroom":
-  version "2.17.6"
+  version "2.17.8"
   dependencies:
     "@babel/core" "^7.13.8"
     "@babel/register" "^7.13.8"
@@ -1922,14 +1922,14 @@
     webpack "4.44.1"
 
 "@design-systems/plugin@link:packages/plugin":
-  version "2.17.6"
+  version "2.17.8"
   dependencies:
     command-line-application "0.10.1"
     tslib "2.0.1"
     utility-types "3.10.0"
 
 "@design-systems/proof@link:plugins/proof":
-  version "2.17.6"
+  version "2.17.8"
   dependencies:
     "@babel/core" "^7.13.8"
     "@babel/plugin-transform-runtime" "^7.13.9"
@@ -1947,7 +1947,7 @@
     tslib "2.0.1"
 
 "@design-systems/size@link:plugins/size":
-  version "2.17.6"
+  version "2.17.8"
   dependencies:
     "@design-systems/cli-utils" "link:packages/cli-utils"
     "@design-systems/plugin" "link:packages/plugin"
@@ -1978,7 +1978,7 @@
     webpack-sources "1.4.3"
 
 "@design-systems/storybook@link:plugins/storybook":
-  version "2.17.6"
+  version "2.17.8"
   dependencies:
     "@alisowski/storybook-addon-notes" "^6.0.1"
     "@babel/core" "^7.13.8"
@@ -2012,7 +2012,7 @@
     webpack-filter-warnings-plugin "1.2.1"
 
 "@design-systems/stylelint-config@link:packages/stylelint-config":
-  version "2.17.6"
+  version "2.17.8"
   dependencies:
     stylelint-a11y "1.2.3"
     stylelint-config-css-modules "2.2.0"
@@ -2026,7 +2026,7 @@
     tslib "2.0.1"
 
 "@design-systems/test@link:plugins/test":
-  version "2.17.6"
+  version "2.17.8"
   dependencies:
     "@babel/core" "^7.13.8"
     "@design-systems/build" "link:plugins/build"
@@ -2046,7 +2046,7 @@
     tslib "2.0.1"
 
 "@design-systems/update@link:plugins/update":
-  version "2.17.6"
+  version "2.17.8"
   dependencies:
     "@design-systems/cli-utils" "link:packages/cli-utils"
     "@design-systems/plugin" "link:packages/plugin"
@@ -5176,12 +5176,12 @@
   dependencies:
     "@types/node" "*"
 
-"@types/optimize-css-assets-webpack-plugin@5.0.1":
-  version "5.0.1"
-  resolved "https://registry.yarnpkg.com/@types/optimize-css-assets-webpack-plugin/-/optimize-css-assets-webpack-plugin-5.0.1.tgz#1f437ef9ef937b393687a8819be2d2fddc03b069"
-  integrity sha512-qyi5xmSl+DTmLFtVtelhso3VnNQYxltfgMa+Ed02xqNZCZBD0uYR6i64FmcwfieDzZRdwkJxt9o2JHq/5PBKQg==
+"@types/optimize-css-assets-webpack-plugin@5.0.4":
+  version "5.0.4"
+  resolved "https://registry.yarnpkg.com/@types/optimize-css-assets-webpack-plugin/-/optimize-css-assets-webpack-plugin-5.0.4.tgz#eb2c8b9d3f9f14b72639ac18a1a72998a4313083"
+  integrity sha512-dpRBcoyUD1uJLzyrnEl0LCwqPc/vprmOrl6fkk0dZEZe0b28rsB6t4WsbFNitFhD4oS8lRZO1+MiKzslfCTTNQ==
   dependencies:
-    "@types/webpack" "*"
+    "@types/webpack" "^4"
 
 "@types/overlayscrollbars@^1.12.0", "@types/overlayscrollbars@^1.9.0":
   version "1.12.0"
@@ -5476,6 +5476,18 @@
     "@types/tapable" "*"
     "@types/uglify-js" "*"
     "@types/webpack-sources" "*"
+    source-map "^0.6.0"
+
+"@types/webpack@^4":
+  version "4.41.30"
+  resolved "https://registry.yarnpkg.com/@types/webpack/-/webpack-4.41.30.tgz#fd3db6d0d41e145a8eeeafcd3c4a7ccde9068ddc"
+  integrity sha512-GUHyY+pfuQ6haAfzu4S14F+R5iGRwN6b2FRNJY7U0NilmFAqbsOfK6j1HwuLBAqwRIT+pVdNDJGJ6e8rpp0KHA==
+  dependencies:
+    "@types/node" "*"
+    "@types/tapable" "^1"
+    "@types/uglify-js" "*"
+    "@types/webpack-sources" "*"
+    anymatch "^3.0.0"
     source-map "^0.6.0"
 
 "@types/webpack@^4.41.26":
@@ -6204,6 +6216,14 @@ anymatch@^2.0.0:
   dependencies:
     micromatch "^3.1.4"
     normalize-path "^2.1.1"
+
+anymatch@^3.0.0:
+  version "3.1.2"
+  resolved "https://registry.yarnpkg.com/anymatch/-/anymatch-3.1.2.tgz#c0557c096af32f106198f4f4e2a383537e378716"
+  integrity sha512-P43ePfOAIupkguHUycrc4qJ9kz8ZiuOUijaETwX7THt0Y/GNK7v0aa8rY816xWjZ7rJdA5XdMcpVFTKMq+RvWg==
+  dependencies:
+    normalize-path "^3.0.0"
+    picomatch "^2.0.4"
 
 anymatch@^3.0.3, anymatch@^3.1.1, anymatch@~3.1.1:
   version "3.1.1"
