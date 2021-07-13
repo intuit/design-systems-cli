@@ -80,12 +80,13 @@ async function addCss(config) {
             loader: 'postcss-loader',
             options: {
               sourceMap: true,
-              ident: 'postcss',
-              plugins: (
-                await getPostCssConfig({
-                  useModules: false
-                })
-              ).plugins
+              postcssOptions: {
+                plugins: (
+                  await getPostCssConfig({
+                    useModules: false
+                  })
+                ).plugins
+              }
             }
           }
         ]
