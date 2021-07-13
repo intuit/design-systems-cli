@@ -44,7 +44,7 @@
   "devDependencies": {
     "@design-systems/cli-utils": "link:../cli-utils",
     "@types/dedent": "0.7.0",
-    "@types/fs-extra": "9.0.1",
+    "@types/fs-extra": "9.0.12",
     "@types/inquirer": "7.3.1",
     "change-case": "4.1.1",
     "cli-spinners": "2.5.0",

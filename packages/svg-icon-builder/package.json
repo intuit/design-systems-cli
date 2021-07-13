@@ -49,7 +49,7 @@
     "@auto-it/slack": "10.18.3",
     "@design-systems/cli": "link:../cli",
     "@types/change-case": "2.3.1",
-    "@types/fs-extra": "9.0.1",
+    "@types/fs-extra": "9.0.12",
     "@types/signale": "1.4.1",
     "@types/svgo": "1.3.3"
   }
