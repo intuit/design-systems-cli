@@ -28,7 +28,7 @@
   "dependencies": {
     "@babel/runtime": "^7.13.9",
     "clsx": "^1.0.4",
-    "focus-lock": "^0.8.0",
+    "focus-lock": "^0.9.0",
     "react-merge-refs": "^1.0.0"
   },
   "peerDependencies": {
