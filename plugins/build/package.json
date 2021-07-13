@@ -37,7 +37,7 @@
     "babel-plugin-styled-components": "1.12.0",
     "babel-preset-jest": "26.3.0",
     "change-case": "4.1.1",
-    "chokidar": "3.4.2",
+    "chokidar": "3.5.2",
     "clean-css": "4.2.3",
     "colorette": "1.2.2",
     "dedent": "0.7.0",
