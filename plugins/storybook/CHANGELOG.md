@@ -1,3 +1,23 @@
+# v2.18.0 (Tue Jul 13 2021)
+
+:tada: This release contains work from a new contributor! :tada:
+
+Thank you, Sean Powell ([@fattslug](https://github.com/fattslug)), for all your work!
+
+#### 🚀 Enhancement
+
+- Updating postcss-loader object [#662](https://github.com/intuit/design-systems-cli/pull/662) ([@fattslug](https://github.com/fattslug))
+
+#### 🐛 Bug Fix
+
+- Updating postcss-loader object ([@fattslug](https://github.com/fattslug))
+
+#### Authors: 1
+
+- Sean Powell ([@fattslug](https://github.com/fattslug))
+
+---
+
 # v2.17.7 (Thu Jun 10 2021)
 
 :tada: This release contains work from a new contributor! :tada:
