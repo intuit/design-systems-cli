@@ -38,7 +38,7 @@ export default class TestPlugin implements Plugin<TestArgs> {
     );
 
     try {
-      console.log('dev mode runCLI');
+      this.logger.info('dev mode runCLI');
       const { results } = await runCLI(
         {
           _: [],
