@@ -1,4 +1,4 @@
-import React from "react";
+import * as React from "react";
 
 /**
  * Only run a specific animation once a condition has changed.
@@ -25,9 +25,6 @@ export const useConditionalAnimation = (
   const entranceAnimation = React.useRef(defaultClass);
 
   React.useEffect(() => {
-    // When the LargeTitle renders the first time we want no
-    // entrance animation. Once the content starts overflowing
-    // is when the entrance animation is active.
     if (condition) {
       entranceAnimation.current = animation;
     }

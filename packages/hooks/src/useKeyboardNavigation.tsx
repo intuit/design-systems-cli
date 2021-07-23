@@ -1,6 +1,6 @@
 import * as React from "react";
 
-const STORAGE_KEY = "data-cgds-keyboard-nav";
+const STORAGE_KEY = "data-keyboard-nav";
 
 /** See if we have a stored keyboard navigation initial value */
 const getStoredValue = () => {
