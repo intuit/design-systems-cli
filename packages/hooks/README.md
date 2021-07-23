@@ -105,6 +105,20 @@ const ref = useRef<HTMLDivElement>(null);
 const isSticking = useStickyState(ref);
 ```
 
+### `useDarkMode` (function)
+
+Determine if the user has a "prefers-color-scheme" mode enabled in their browser.
+This is helpful for detecting if a user prefers dark mode.
+
+```tsx
+const Example = () => {
+  const isDarkMode = useDarkMode();
+  return (
+    <div className={makeClass(darkMode === "dark" && styles.dark)}>Content</div>
+  );
+};
+```
+
 ### `useKeyboardNavigation` (function)
 
 This hook allows you to determine when a user
@@ -133,6 +147,21 @@ const Example = () => {
 
   return (
     <div ref={ref}>{bottom ? "The bottom is scrolling" : "now it isn't!"}</div>
+  );
+};
+```
+
+### `useReducedMotion` (function)
+
+Determine if the user has "prefers-reduced-motion" enabled in their browser.
+
+```tsx
+const Example = () => {
+  const isReducedMotion = useReducedMotion();
+  return (
+    <div className={makeClass(!isReducedMotion && styles.animation)}>
+      Content
+    </div>
   );
 };
 ```

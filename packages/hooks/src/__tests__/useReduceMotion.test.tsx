@@ -1,33 +1,29 @@
 import { renderHook } from '@testing-library/react-hooks';
-import { useMatchMedia } from '../useMatchMedia';
+import { useReducedMotion } from '../useReducedMotion';
 
-test("it detect if media preference isn't set", () => {
+test("it detect if reduced motion isn't set", () => {
   // @ts-ignore
   jest.spyOn(window, 'matchMedia').mockImplementation(() => ({
     matches: false,
     addListener: jest.fn(),
-    removeListener: jest.fn(),
+    removeListener: jest.fn()
   }));
 
-  const { result } = renderHook(() =>
-    useMatchMedia('(prefers-reduced-motion: reduce)')
-  );
+  const { result } = renderHook(() => useReducedMotion());
   expect(result.current).toBe(false);
 });
 
-test('it detect if media preference is set', () => {
+test('it detect if reduced motion is set', () => {
   const addListener = jest.fn();
   const removeListener = jest.fn();
   // @ts-ignore
   jest.spyOn(window, 'matchMedia').mockImplementation(() => ({
     matches: true,
     addListener,
-    removeListener,
+    removeListener
   }));
 
-  const { result, unmount } = renderHook(() =>
-    useMatchMedia('(prefers-reduced-motion: reduce)')
-  );
+  const { result, unmount } = renderHook(() => useReducedMotion());
 
   expect(result.current).toBe(true);
   unmount();
