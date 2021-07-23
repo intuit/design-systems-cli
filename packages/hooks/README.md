@@ -105,21 +105,6 @@ const ref = useRef<HTMLDivElement>(null);
 const isSticking = useStickyState(ref);
 ```
 
-### `useDarkMode` (function)
-
-Determine if the user has a "prefers-color-scheme" mode enabled in their browser.
-This is helpful for detecting if a user prefers dark mode.
-
-```tsx
-const Example = () => {
-  const isDarkMode = useDarkMode();
-
-  return (
-    <div className={makeClass(darkMode === "dark" && styles.dark)}>Content</div>
-  );
-};
-```
-
 ### `useKeyboardNavigation` (function)
 
 This hook allows you to determine when a user
@@ -152,13 +137,13 @@ const Example = () => {
 };
 ```
 
-### `useReducedMotion` (function)
+### `useMatchMedia` (function)
 
-Determine if the user has "prefers-reduced-motion" enabled in their browser.
+Determine if the user has a media preference enabled in their browser.
 
 ```tsx
 const Example = () => {
-  const isReducedMotion = useReducedMotion();
+  const isReducedMotion = useMatchMedia('(prefers-reduced-motion: reduce)');
 
   return (
     <div className={makeClass(!isReducedMotion && styles.animation)}>
