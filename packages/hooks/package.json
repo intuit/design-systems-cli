@@ -11,6 +11,9 @@
     "Tyler Krupicka Tyler_Krupicka@intuit.com"
   ],
   "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "clean": "ds clean",
     "build": "ds build",
