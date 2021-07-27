@@ -5,7 +5,7 @@
   "module": "./dist/esm/index.js",
   "types": "./dist",
   "repository": "https://github.com/intuit/design-systems-cli",
-  "author": "Tyler Krupicka Tyler_Krupicka@intuit.com",
+  "author": "Melinda Li contact.melindali@gmail.com",
   "sideEffects": false,
   "contributors": [
     "Tyler Krupicka Tyler_Krupicka@intuit.com"
