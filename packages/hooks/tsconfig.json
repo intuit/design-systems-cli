@@ -1,0 +1,12 @@
+{
+    "extends": "../../tsconfig.build.json",
+    "include": [
+        "src/**/*",
+        "../../typings/**/*"
+    ],
+    "compilerOptions": {
+        "outDir": "./dist",
+        "rootDir": "./src",
+        "composite": true
+    }
+}
