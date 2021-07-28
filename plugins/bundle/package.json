@@ -22,7 +22,7 @@
     "@design-systems/build": "link:../build",
     "@design-systems/cli-utils": "link:../../packages/cli-utils",
     "@design-systems/plugin": "link:../../packages/plugin",
-    "case-sensitive-paths-webpack-plugin": "2.3.0",
+    "case-sensitive-paths-webpack-plugin": "2.4.0",
     "dedent": "0.7.0",
     "duplicate-package-checker-webpack-plugin": "3.0.0",
     "get-monorepo-packages": "1.2.0",
@@ -33,7 +33,7 @@
     "webpack": "4.44.1"
   },
   "devDependencies": {
-    "@types/case-sensitive-paths-webpack-plugin": "2.1.4",
+    "@types/case-sensitive-paths-webpack-plugin": "2.1.6",
     "@types/duplicate-package-checker-webpack-plugin": "2.1.0"
   }
 }
