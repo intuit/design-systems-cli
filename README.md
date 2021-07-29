@@ -116,6 +116,7 @@ Thank you to all these wonderful people ([emoji key](https://allcontributors.org
     <td align="center"><a href="https://nicolas-hoizey.com/"><img src="https://avatars.githubusercontent.com/u/78213?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Nicolas Hoizey</b></sub></a><br /><a href="https://github.com/intuit/design-systems-cli/commits?author=nhoizey" title="Documentation">📖</a></td>
     <td align="center"><a href="https://github.com/hborawski"><img src="https://avatars.githubusercontent.com/u/1325154?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Harris Borawski</b></sub></a><br /><a href="https://github.com/intuit/design-systems-cli/commits?author=hborawski" title="Code">💻</a></td>
     <td align="center"><a href="https://github.com/fattslug"><img src="https://avatars.githubusercontent.com/u/18297343?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Sean Powell</b></sub></a><br /><a href="https://github.com/intuit/design-systems-cli/commits?author=fattslug" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/melindali255"><img src="https://avatars.githubusercontent.com/u/29384338?v=4?s=100" width="100px;" alt=""/><br /><sub><b>melindali255</b></sub></a><br /><a href="https://github.com/intuit/design-systems-cli/commits?author=melindali255" title="Documentation">📖</a> <a href="https://github.com/intuit/design-systems-cli/commits?author=melindali255" title="Tests">⚠️</a> <a href="https://github.com/intuit/design-systems-cli/commits?author=melindali255" title="Code">💻</a></td>
   </tr>
 </table>
 

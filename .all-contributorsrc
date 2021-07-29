@@ -270,6 +270,17 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "melindali255",
+      "name": "melindali255",
+      "avatar_url": "https://avatars.githubusercontent.com/u/29384338?v=4",
+      "profile": "https://github.com/melindali255",
+      "contributions": [
+        "doc",
+        "test",
+        "code"
+      ]
     }
   ],
   "contributorsPerLine": 7
