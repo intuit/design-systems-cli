@@ -1,3 +1,21 @@
+# v2.19.0 (Wed Jul 28 2021)
+
+:tada: This release contains work from a new contributor! :tada:
+
+Thank you, null[@melindali255](https://github.com/melindali255), for all your work!
+
+#### 🚀 Enhancement
+
+- `@design-systems/hooks`
+  - Adding hook utilities [#665](https://github.com/intuit/design-systems-cli/pull/665) (melinda_li@intuit.com [@melindali255](https://github.com/melindali255))
+
+#### Authors: 2
+
+- [@melindali255](https://github.com/melindali255)
+- mli02 (melinda_li@intuit.com)
+
+---
+
 # v2.18.0 (Tue Jul 13 2021)
 
 :tada: This release contains work from a new contributor! :tada:
