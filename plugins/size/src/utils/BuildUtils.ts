@@ -6,7 +6,7 @@ import { getMonorepoRoot, createLogger } from '@design-systems/cli-utils';
 
 const logger = createLogger({ scope: 'size' });
 
-/** Runs ds build against specified commit */
+/** Builds the specified commit */
 export function buildPackages(args: {
   /** Merge base to run build */
   mergeBase: string
@@ -40,11 +40,11 @@ export function buildPackages(args: {
   return dir;
 }
 
-/** Get locally built package path */
+/** Get path to local built master package */
 export function getLocalPackage(
-  /** Locally built package name */
+  /** Package name */
   name: string,
-  /** Locally built monorepo root */
+  /** Path to local built master */
   local: string
 ) {
   const packages = execSync(`lerna list --ndjson`)
