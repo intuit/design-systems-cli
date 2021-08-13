@@ -23,6 +23,8 @@ export interface SizeArgs {
   failureThreshold?: number
   /** Run the plugin against merge base. (Will be slower due to additional build process) */
   mergeBase?: string
+  /** Build command for merge base */
+  buildCommand: string
 }
 
 export interface Export {

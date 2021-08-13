@@ -1,5 +1,4 @@
 import { execSync } from 'child_process';
-import fs from 'fs';
 import os from 'os';
 import path from 'path';
 import { getMonorepoRoot, createLogger } from '@design-systems/cli-utils';
@@ -10,8 +9,8 @@ const logger = createLogger({ scope: 'size' });
 export function buildPackages(args: {
   /** Merge base to run build */
   mergeBase: string
-  /** Package name to build. Defaults to monorepo root */
-  name?: string
+  /** Build command for merge base */
+  buildCommand: string
 }) {
   const id = Math.random().toString(36).substring(7);
   const dir = path.join(os.tmpdir(), `commit-build-${id}`);
@@ -24,16 +23,9 @@ export function buildPackages(args: {
   logger.info(`Installing dependencies for commit: ${commit} ...`);
   execSync('yarn', { cwd: dir });
 
-  const pkgDir = args.name ? getLocalPackage(args.name, dir) : dir;
-  if (!fs.existsSync(pkgDir)) {
-    logger.info(`Package ${args.name} doesn't exist in commit ${commit}`)
-    logger.info('Skipping build.')
-    return dir;
-  }
-
-  logger.info(`Running yarn build for commit: ${commit} ...`);
-  execSync('yarn build', {
-    cwd: pkgDir,
+  logger.info(`Running command "${args.buildCommand}" for commit: ${commit} ...`);
+  execSync(args.buildCommand, {
+    cwd: dir,
     stdio: 'inherit'
   });
 

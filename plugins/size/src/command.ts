@@ -94,6 +94,12 @@ const command: CliCommand = {
       type: String,
       description: 'Run the plugin against merge base. (Will be slower due to additional build process)'
     },
+    {
+      name: 'build-command',
+      type: String,
+      description: 'Build command for --merge-base (defaults to "yarn build")',
+      defaultValue: 'yarn build'
+    }
   ]
 };
 

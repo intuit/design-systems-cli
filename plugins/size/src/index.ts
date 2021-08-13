@@ -45,7 +45,7 @@ export default class SizePlugin implements Plugin<SizeArgs> {
     let local;
     if (fs.existsSync('lerna.json')) {
       if (args.mergeBase) {
-        local = buildPackages({ mergeBase: args.mergeBase });
+        local = buildPackages({ mergeBase: args.mergeBase, buildCommand: args.buildCommand });
       }
 
       calcSizeForAllPackages({
@@ -62,7 +62,7 @@ export default class SizePlugin implements Plugin<SizeArgs> {
     }
 
     if (args.mergeBase) {
-      local = buildPackages({ mergeBase: args.mergeBase, name });
+      local = buildPackages({ mergeBase: args.mergeBase, buildCommand: args.buildCommand });
     }
 
     if (args.analyze) {
