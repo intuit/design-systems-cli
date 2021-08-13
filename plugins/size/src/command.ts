@@ -18,6 +18,10 @@ const command: CliCommand = {
     {
       example: 'ds size --ignore @foo/bar @foo/baz',
       desc: 'Ignore the sizes of packages @foo/bar and @foo/baz'
+    },
+    {
+      example: 'ds size --merge-base prerelease',
+      desc: 'Show the size changes between current HEAD and prerelease branch'
     }
   ],
   options: [
@@ -84,7 +88,12 @@ const command: CliCommand = {
       type: Number,
       description: 'Failure Threshold for Size',
       config: true
-    }    
+    },
+    {
+      name: 'merge-base',
+      type: String,
+      description: 'Run the plugin against merge base. (Will be slower due to additional build process)'
+    },
   ]
 };
 
