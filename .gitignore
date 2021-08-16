@@ -60,5 +60,8 @@ jspm_packages/
 # next.js build output
 .next
 
+# VSCode workspace settings
+.vscode
+
 dist
 .DS_Store

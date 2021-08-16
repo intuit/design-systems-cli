@@ -16,9 +16,11 @@ import {
   Size,
   SizeResult,
   CommonOptions,
-  DiffSizeForPackageOptions,
+  CommonCalcSizeOptions,
+  DiffSizeForPackageOptions
 } from '../interfaces';
 import { getSizes } from './WebpackUtils';
+import { getLocalPackage } from './BuildUtils';
 
 const RUNTIME_SIZE = 537;
 
@@ -46,15 +48,16 @@ async function calcSizeForPackage({
   chunkByExport,
   diff,
   registry,
-}: CommonOptions): Promise<Size> {
+  local
+}: CommonOptions & CommonCalcSizeOptions): Promise<Size> {
   const sizes = await getSizes({
-    name,
+    name: local ? getLocalPackage(importName, local) : name,
     importName,
     scope,
     persist,
     chunkByExport,
     diff,
-    registry,
+    registry
   });
 
   const js = sizes.filter((size) => !size.chunkNames.includes('css'));
@@ -84,6 +87,7 @@ async function diffSizeForPackage({
   chunkByExport = false,
   diff = false,
   registry,
+  local
 }: DiffSizeForPackageOptions): Promise<SizeResult> {
   let master: Size;
 
@@ -96,6 +100,7 @@ async function diffSizeForPackage({
       chunkByExport,
       diff,
       registry,
+      local
     });
   } catch (error) {
     logger.error(
@@ -113,7 +118,7 @@ async function diffSizeForPackage({
     persist,
     chunkByExport,
     diff,
-    registry,
+    registry
   });
   const masterSize = master.js + master.css;
   const prSize = pr.js + pr.css;
@@ -147,7 +152,7 @@ export function mockPackage() {
 }
 
 /** Determine which packages have git changes. */
-function getChangedPackages() {
+function getChangedPackages({ mergeBase }: SizeArgs) {
   const all = getPackages('.');
 
   try {
@@ -161,12 +166,14 @@ function getChangedPackages() {
     const lastTag = execSync('git describe --tags --abbrev=0', {
       encoding: 'utf8',
     });
+    // Use commit-ish hash instead of the last tag if provided
+    const hash = mergeBase?.trim();
     const changedFiles = gitlog({
       repo: process.cwd(),
       number: Number.MAX_SAFE_INTEGER,
       fields: ['hash', 'authorName', 'authorEmail', 'rawBody'],
       execOptions: { maxBuffer: Infinity },
-      branch: `${lastTag.trim()}..HEAD`,
+      branch: `${hash || lastTag.trim()}..HEAD`,
     })
       .reduce<string[]>((files, commit) => [...files, ...commit.files], [])
       .map((file) => path.resolve(path.join(process.cwd(), file)));
@@ -261,7 +268,7 @@ function table(data: (string | number)[][], isCi?: boolean) {
 }
 
 /** Generate diff for all changed packages in the monorepo. */
-async function calcSizeForAllPackages(args: SizeArgs) {
+async function calcSizeForAllPackages(args: SizeArgs & CommonCalcSizeOptions) {
   const ignore = args.ignore || [];
   const interactive = new signale.Signale({
     interactive: true,
@@ -269,7 +276,7 @@ async function calcSizeForAllPackages(args: SizeArgs) {
   });
   const changedPackages = (args.all
     ? getPackages('.')
-    : getChangedPackages()
+    : getChangedPackages(args)
   ).filter((p) => !p.package.private && !ignore.includes(p.package.name));
   let success = true;
 
@@ -305,6 +312,7 @@ async function calcSizeForAllPackages(args: SizeArgs) {
         persist: args.persist,
         chunkByExport: args.detailed,
         registry: args.registry,
+        local: args.local
       });
       results.push(size);
 

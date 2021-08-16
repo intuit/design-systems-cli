@@ -15,6 +15,7 @@ import RelativeCommentsPlugin from '../RelativeCommentsPlugin';
 import { fromEntries } from './formatUtils';
 import { ConfigOptions, GetSizesOptions, CommonOptions } from '../interfaces';
 import { mockPackage } from './CalcSizeUtils';
+import { getLocalPackage } from './BuildUtils';
 
 const logger = createLogger({ scope: 'size' });
 
@@ -231,11 +232,11 @@ async function getSizes(options: GetSizesOptions & CommonOptions) {
 }
 
 /** Start the webpack bundle analyzer for both of the bundles. */
-async function startAnalyze(name: string, registry?: string) {
+async function startAnalyze(name: string, registry?: string, local?: string) {
   logger.start('Analyzing build output...');
   await Promise.all([
     getSizes({
-      name,
+      name: local ? getLocalPackage(name, local) : name,
       importName: name,
       scope: 'master',
       analyze: true,
