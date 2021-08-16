@@ -1,3 +1,16 @@
+# v4.13.0 (Mon Aug 16 2021)
+
+#### 🚀 Enhancement
+
+- `@design-systems/size`
+  - Implement --merge-base option in size plugin [#666](https://github.com/intuit/design-systems-cli/pull/666) ([@yucho](https://github.com/yucho))
+
+#### Authors: 1
+
+- Yucho Ho ([@yucho](https://github.com/yucho))
+
+---
+
 # v2.19.0 (Wed Jul 28 2021)
 
 :tada: This release contains work from a new contributor! :tada:
