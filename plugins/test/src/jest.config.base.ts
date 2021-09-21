@@ -29,5 +29,6 @@ module.exports = {
     '!**/__tests__/**',
     '!**/*.snap',
     '!**/dist/**'
-  ]
+  ],
+  testEnvironment: "jsdom"
 };
