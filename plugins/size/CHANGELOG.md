@@ -1,3 +1,25 @@
+# v4.13.0 (Mon Aug 16 2021)
+
+:tada: This release contains work from a new contributor! :tada:
+
+Thank you, Yucho Ho ([@yucho](https://github.com/yucho)), for all your work!
+
+#### 🚀 Enhancement
+
+- Implement --merge-base option in size plugin [#666](https://github.com/intuit/design-systems-cli/pull/666) ([@yucho](https://github.com/yucho))
+
+#### 🐛 Bug Fix
+
+- Add --build-commant option ([@yucho](https://github.com/yucho))
+- Edit comments ([@yucho](https://github.com/yucho))
+- Implement --merge-base option in size plugin ([@yucho](https://github.com/yucho))
+
+#### Authors: 1
+
+- Yucho Ho ([@yucho](https://github.com/yucho))
+
+---
+
 # v2.17.2 (Mon Apr 12 2021)
 
 :tada: This release contains work from a new contributor! :tada:

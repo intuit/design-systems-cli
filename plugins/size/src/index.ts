@@ -7,6 +7,7 @@ import {
   SizeArgs,
   SizeResult} from "./interfaces"
 import { formatLine, formatExports } from "./utils/formatUtils";
+import { buildPackages } from "./utils/BuildUtils";
 import { calcSizeForAllPackages, reportResults, table, diffSizeForPackage } from "./utils/CalcSizeUtils";
 import { startAnalyze } from "./utils/WebpackUtils";
 import { createDiff } from "./utils/DiffUtils";
@@ -37,8 +38,20 @@ export default class SizePlugin implements Plugin<SizeArgs> {
       logger.disable();
     }
 
+    if (Object.prototype.hasOwnProperty.call(args, 'mergeBase') && !args.mergeBase) {
+      throw new Error('You must specify a commit-ish when --merge-base is set')
+    }
+
+    let local;
     if (fs.existsSync('lerna.json')) {
-      calcSizeForAllPackages(args);
+      if (args.mergeBase) {
+        local = buildPackages({ mergeBase: args.mergeBase, buildCommand: args.buildCommand });
+      }
+
+      calcSizeForAllPackages({
+        ...args,
+        local
+      });
       return;
     }
 
@@ -48,8 +61,12 @@ export default class SizePlugin implements Plugin<SizeArgs> {
       throw new Error('Could not find "process.env.npm_package_name"');
     }
 
+    if (args.mergeBase) {
+      local = buildPackages({ mergeBase: args.mergeBase, buildCommand: args.buildCommand });
+    }
+
     if (args.analyze) {
-      await startAnalyze(name, args.registry);
+      await startAnalyze(name, args.registry, local);
       return;
     }
 
@@ -65,7 +82,8 @@ export default class SizePlugin implements Plugin<SizeArgs> {
       persist: args.persist || args.diff,
       chunkByExport: args.detailed,
       diff: args.diff,
-      registry: args.registry
+      registry: args.registry,
+      local
     });
     const header = args.css ? cssHeader : defaultHeader;
 

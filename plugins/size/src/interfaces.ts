@@ -21,6 +21,10 @@ export interface SizeArgs {
   registry?: string
   /** Size Failure Threshold */
   failureThreshold?: number
+  /** Run the plugin against merge base. (Will be slower due to additional build process) */
+  mergeBase?: string
+  /** Build command for merge base */
+  buildCommand: string
 }
 
 export interface Export {
@@ -70,9 +74,16 @@ export interface CommonOptions {
   diff?: boolean
   /** The registry to install packages from */
   registry?: string
+  /** Run the plugin against merge base. (Will be slower due to additional build process) */
+  mergeBase?: string
 }
 
-export interface GetSizesOptions {
+export interface CommonCalcSizeOptions {
+  /** Path to the local built master package */
+  local?: string
+}
+
+export interface GetSizesOptions extends CommonCalcSizeOptions {
   /** Whether to start the analyzer */
   analyze?: boolean
   /** What port to start the analyzer on */
@@ -81,9 +92,9 @@ export interface GetSizesOptions {
 
 type Scope = 'pr' | 'master'
 
-export interface DiffSizeForPackageOptions
-  extends Omit<CommonOptions, 'importName' | 'scope'> {
-  /** Path to the local built pacakge */
+export interface DiffSizeForPackageOptions extends CommonCalcSizeOptions,
+  Omit<CommonOptions, 'importName' | 'scope'> {
+  /** Path to the local built pr package */
   main: string
 }
 
