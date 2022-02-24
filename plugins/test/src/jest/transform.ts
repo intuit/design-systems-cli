@@ -30,8 +30,7 @@ export const canInstrument = true;
 export const getCacheKey: Transformer['getCacheKey'] = (
   fileData,
   filename,
-  configString,
-  { instrument, rootDir }
+  { instrument, configString, config: { rootDir } }
 ) => {
   const babelOptions = getBabelConfig(filename);
   const configPath = [babelOptions.config || '', babelOptions.babelrc || ''];
@@ -58,7 +57,6 @@ export const getCacheKey: Transformer['getCacheKey'] = (
 export const process: Transformer['process'] = (
   src,
   filename,
-  config,
   transformOptions
 ) => {
   const babelOptions = {
@@ -75,7 +73,7 @@ export const process: Transformer['process'] = (
         babelIstanbulPlugin,
         {
           // files outside `cwd` will not be instrumented
-          cwd: config.rootDir,
+          cwd: transformOptions.config.rootDir,
           exclude: []
         }
       ]
@@ -93,4 +91,10 @@ export const process: Transformer['process'] = (
   }
 
   return src;
+};
+
+export default {
+  canInstrument,
+  getCacheKey,
+  process,
 };

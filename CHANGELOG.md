@@ -1,3 +1,26 @@
+# v4.13.1 (Tue Sep 21 2021)
+
+:tada: This release contains work from a new contributor! :tada:
+
+Thank you, Jeremiah Zucker ([@sugarmanz](https://github.com/sugarmanz)), for all your work!
+
+#### 🐛 Bug Fix
+
+- `@design-systems/test`
+  - Jest 27 [#669](https://github.com/intuit/design-systems-cli/pull/669) ([@renovate-bot](https://github.com/renovate-bot) [@sugarmanz](https://github.com/sugarmanz))
+
+#### 🔩 Dependency Updates
+
+- `@design-systems/test`
+  - Update jest monorepo [#550](https://github.com/intuit/design-systems-cli/pull/550) ([@renovate-bot](https://github.com/renovate-bot))
+
+#### Authors: 2
+
+- Jeremiah Zucker ([@sugarmanz](https://github.com/sugarmanz))
+- WhiteSource Renovate ([@renovate-bot](https://github.com/renovate-bot))
+
+---
+
 # v4.13.0 (Mon Aug 16 2021)
 
 #### 🚀 Enhancement
