@@ -1,3 +1,17 @@
+# v4.14.0 (Thu Mar 17 2022)
+
+#### 🚀 Enhancement
+
+- `@design-systems/hooks`
+  - Add hooks to detect lessContrast + highContrast preferences [#681](https://github.com/intuit/design-systems-cli/pull/681) (kendallg@spotify.com [@kendallgassner](https://github.com/kendallgassner))
+
+#### Authors: 2
+
+- Kendall Gassner ([@kendallgassner](https://github.com/kendallgassner))
+- kendallgassner (kendallg@spotify.com)
+
+---
+
 # v4.13.1 (Tue Sep 21 2021)
 
 :tada: This release contains work from a new contributor! :tada:
