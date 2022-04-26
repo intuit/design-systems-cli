@@ -19,6 +19,8 @@ export interface SizeArgs {
   ignore?: string[]
   /** The registry to install packages from */
   registry?: string
+  /** Size limit failure threshold */
+  limit?: number
   /** Size Failure Threshold */
   failureThreshold?: number
   /** Run the plugin against merge base. (Will be slower due to additional build process) */
