@@ -87,9 +87,15 @@ export default class SizePlugin implements Plugin<SizeArgs> {
     });
     const header = args.css ? cssHeader : defaultHeader;
 
+    const underFailureThreshold = size &&
+        size.percent <= FAILURE_THRESHOLD ||
+        size.percent === Infinity;
+    const underSizeLimit = args.limit ? size.pr.js + size.pr.css <= args.limit : true;
+    const success = underFailureThreshold && underSizeLimit;
+
     await reportResults(
       name,
-      size.percent <= FAILURE_THRESHOLD || size.percent === Infinity,
+      success,
       Boolean(args.comment),
       table(
         args.detailed
@@ -107,7 +113,7 @@ export default class SizePlugin implements Plugin<SizeArgs> {
       createDiff();
     }
 
-    if (size && size.percent > FAILURE_THRESHOLD && size.percent !== Infinity) {
+    if (!success) {
       process.exit(1);
     }
   }
