@@ -90,6 +90,15 @@ export interface GetSizesOptions extends CommonCalcSizeOptions {
   analyze?: boolean
   /** What port to start the analyzer on */
   analyzerPort?: number
+  /** Working directory to execute analysis from */
+  dir: string
+}
+
+export interface LoadPackageOptions {
+  /** The name of the package to get size for */
+  name: string
+  /** The registry to install packages from */
+  registry?: string
 }
 
 type Scope = 'pr' | 'master'

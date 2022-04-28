@@ -161,20 +161,16 @@ async function runWebpack(config: webpack.Configuration): Promise<webpack.Stats>
 
 /** Install package to tmp dir and run webpack on it to calculate size. */
 async function getSizes(options: GetSizesOptions & CommonOptions) {
-  const dir = await loadPackage(options);
   const result = await runWebpack(
-    await config({
-      dir,
-      ...options
-    })
+    await config(options)
   );
-  logger.debug(`Completed building: ${dir}`);
+  logger.debug(`Completed building: ${options.dir}`);
   if (options.persist) {
     const folder = `bundle-${options.scope}-${options.importName}`;
     const out = path.join(process.cwd(), folder);
     logger.info(`Persisting output to: ${folder}`);
     await fs.remove(out);
-    await fs.copy(dir, out);
+    await fs.copy(options.dir, out);
     await fs.writeFile(`${out}/stats.json`, JSON.stringify(result.toJson()));
     await fs.writeFile(
       `${out}/.gitignore`,
@@ -186,7 +182,6 @@ async function getSizes(options: GetSizesOptions & CommonOptions) {
     execSync('git commit -m "init"', { cwd: out });
   }
 
-  fs.removeSync(dir);
   if (result.hasErrors()) {
     throw new Error(result.toString('errors-only'));
   }
@@ -202,13 +197,19 @@ async function getSizes(options: GetSizesOptions & CommonOptions) {
 /** Start the webpack bundle analyzer for both of the bundles. */
 async function startAnalyze(name: string, registry?: string, local?: string) {
   logger.start('Analyzing build output...');
+  const packageName = local ? getLocalPackage(name, local) : name;
+  const dir = await loadPackage({
+    name: packageName,
+    registry
+  });
   await Promise.all([
     getSizes({
-      name: local ? getLocalPackage(name, local) : name,
+      name: packageName,
       importName: name,
       scope: 'master',
       analyze: true,
-      registry
+      registry,
+      dir
     }),
     getSizes({
       name: process.cwd(),
@@ -216,9 +217,11 @@ async function startAnalyze(name: string, registry?: string, local?: string) {
       scope: 'pr',
       analyze: true,
       analyzerPort: 9000,
-      registry
+      registry,
+      dir
     })
   ]);
+  fs.removeSync(dir);
 }
 
 export { startAnalyze, runWebpack, config, getSizes };

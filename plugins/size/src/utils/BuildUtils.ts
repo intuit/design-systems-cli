@@ -4,7 +4,7 @@ import path from 'path';
 import fs from 'fs-extra';
 import { getMonorepoRoot, createLogger, getLogLevel } from '@design-systems/cli-utils';
 import { mockPackage } from './CalcSizeUtils';
-import { GetSizesOptions, CommonOptions } from '../interfaces';
+import { LoadPackageOptions } from '../interfaces';
 
 const logger = createLogger({ scope: 'size' });
 
@@ -59,7 +59,7 @@ export function getLocalPackage(
 }
 
 /** Install package to tmp dir */
-export async function loadPackage(options: GetSizesOptions & CommonOptions) {
+export async function loadPackage(options: LoadPackageOptions) {
   const dir = mockPackage();
   const execOptions: ExecSyncOptions = {
     cwd: dir,

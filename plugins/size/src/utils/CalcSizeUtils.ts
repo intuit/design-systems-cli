@@ -20,7 +20,7 @@ import {
   DiffSizeForPackageOptions
 } from '../interfaces';
 import { getSizes } from './WebpackUtils';
-import { getLocalPackage } from './BuildUtils';
+import { getLocalPackage, loadPackage } from './BuildUtils';
 
 const RUNTIME_SIZE = 537;
 
@@ -50,15 +50,22 @@ async function calcSizeForPackage({
   registry,
   local
 }: CommonOptions & CommonCalcSizeOptions): Promise<Size> {
+  const packageName = local ? getLocalPackage(importName, local) : name;
+  const dir = await loadPackage({
+    name: packageName,
+    registry
+  });
   const sizes = await getSizes({
-    name: local ? getLocalPackage(importName, local) : name,
+    name: packageName,
     importName,
     scope,
     persist,
     chunkByExport,
     diff,
-    registry
+    registry,
+    dir
   });
+  fs.removeSync(dir);
 
   const js = sizes.filter((size) => !size.chunkNames.includes('css'));
   const css = sizes.filter((size) => size.chunkNames.includes('css'));
