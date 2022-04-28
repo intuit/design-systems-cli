@@ -20,7 +20,7 @@
   },
   "dependencies": {
     "@design-systems/cli-utils": "link:../../packages/cli-utils",
-    "@design-systems/load-config": "link:../../packages/load-config",
+    "cosmiconfig": "7.0.0",
     "@design-systems/plugin": "link:../../packages/plugin",
     "@royriojas/get-exports-from-file": "https://github.com/hipstersmoothie/get-exports-from-file#all",
     "change-case": "4.1.1",

@@ -1,5 +1,5 @@
 import { monorepoName, createLogger } from '@design-systems/cli-utils';
-import { loadConfig } from '@design-systems/load-config';
+import { cosmiconfigSync as load } from 'cosmiconfig';
 import path from 'path';
 import fs from 'fs-extra';
 import os from 'os';
@@ -40,6 +40,21 @@ const cssHeader = [
 
 const defaultHeader = ['master', 'pr', '+/-', '%'];
 
+function loadConfig(cwd: string) {
+  return load('ds', {
+    searchPlaces: [
+      'package.json',
+      `.dsrc`,
+      `.dsrc.json`,
+      `.dsrc.yaml`,
+      `.dsrc.yml`,
+      `.dsrc.js`,
+      `ds.config.js`,
+      `ds.config.json`,
+    ]
+  }).search(cwd)?.config;
+}
+
 /** Calculate the bundled CSS and JS size. */
 async function calcSizeForPackage({
   name,
@@ -66,9 +81,7 @@ async function calcSizeForPackage({
     registry,
     dir
   });
-  const packageConfig = loadConfig({
-    cwd: path.join(dir, 'node_modules', packageName)
-  });
+  const packageConfig = loadConfig(path.join(dir, 'node_modules', packageName));
   fs.removeSync(dir);
 
   const js = sizes.filter((size) => !size.chunkNames.includes('css'));
