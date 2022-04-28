@@ -1,7 +1,10 @@
-import { execSync } from 'child_process';
+import { execSync, ExecSyncOptions } from 'child_process';
 import os from 'os';
 import path from 'path';
-import { getMonorepoRoot, createLogger } from '@design-systems/cli-utils';
+import fs from 'fs-extra';
+import { getMonorepoRoot, createLogger, getLogLevel } from '@design-systems/cli-utils';
+import { mockPackage } from './CalcSizeUtils';
+import { GetSizesOptions, CommonOptions } from '../interfaces';
 
 const logger = createLogger({ scope: 'size' });
 
@@ -53,4 +56,40 @@ export function getLocalPackage(
   }
 
   return path.join(local, path.relative(getMonorepoRoot(), pkg.location));
+}
+
+/** Install package to tmp dir */
+export async function loadPackage(options: GetSizesOptions & CommonOptions) {
+  const dir = mockPackage();
+  const execOptions: ExecSyncOptions = {
+    cwd: dir,
+    stdio: getLogLevel() === 'trace' ? 'inherit' : 'ignore'
+  };
+  try {
+    const browsersList = path.join(getMonorepoRoot(), '.browserslistrc');
+    if (fs.existsSync(browsersList)) {
+      fs.copyFileSync(browsersList, path.join(dir, '.browserslistrc'));
+    }
+
+    const npmrc = path.join(getMonorepoRoot(), '.npmrc');
+    if (options.registry && fs.existsSync(npmrc)) {
+      fs.copyFileSync(npmrc, path.join(dir, '.npmrc'));
+    }
+
+    logger.debug(`Installing: ${options.name}`);
+    if (options.registry) {
+      execSync(
+        `yarn add ${options.name} --registry ${options.registry}`,
+        execOptions
+      );
+    } else {
+      execSync(`yarn add ${options.name}`, execOptions);
+    }
+  } catch (error) {
+    logger.debug(error);
+    logger.warn(`Could not find package ${options.name}...`);
+    return [];
+  }
+
+  return dir;
 }

@@ -9,13 +9,11 @@ import Terser from 'terser-webpack-plugin';
 import MiniCssExtractPlugin from 'mini-css-extract-plugin';
 import OptimizeCSSAssetsPlugin from 'optimize-css-assets-webpack-plugin';
 import { BundleAnalyzerPlugin } from 'webpack-bundle-analyzer';
-import { getMonorepoRoot, getLogLevel } from '@design-systems/cli-utils';
-import { execSync, ExecSyncOptions } from 'child_process';
+import { execSync } from 'child_process';
 import RelativeCommentsPlugin from '../RelativeCommentsPlugin';
 import { fromEntries } from './formatUtils';
 import { ConfigOptions, GetSizesOptions, CommonOptions } from '../interfaces';
-import { mockPackage } from './CalcSizeUtils';
-import { getLocalPackage } from './BuildUtils';
+import { getLocalPackage, loadPackage } from './BuildUtils';
 
 const logger = createLogger({ scope: 'size' });
 
@@ -163,37 +161,7 @@ async function runWebpack(config: webpack.Configuration): Promise<webpack.Stats>
 
 /** Install package to tmp dir and run webpack on it to calculate size. */
 async function getSizes(options: GetSizesOptions & CommonOptions) {
-  const dir = mockPackage();
-  const execOptions: ExecSyncOptions = {
-    cwd: dir,
-    stdio: getLogLevel() === 'trace' ? 'inherit' : 'ignore'
-  };
-  try {
-    const browsersList = path.join(getMonorepoRoot(), '.browserslistrc');
-    if (fs.existsSync(browsersList)) {
-      fs.copyFileSync(browsersList, path.join(dir, '.browserslistrc'));
-    }
-
-    const npmrc = path.join(getMonorepoRoot(), '.npmrc');
-    if (options.registry && fs.existsSync(npmrc)) {
-      fs.copyFileSync(npmrc, path.join(dir, '.npmrc'));
-    }
-
-    logger.debug(`Installing: ${options.name}`);
-    if (options.registry) {
-      execSync(
-        `yarn add ${options.name} --registry ${options.registry}`,
-        execOptions
-      );
-    } else {
-      execSync(`yarn add ${options.name}`, execOptions);
-    }
-  } catch (error) {
-    logger.debug(error);
-    logger.warn(`Could not find package ${options.name}...`);
-    return [];
-  }
-
+  const dir = await loadPackage(options);
   const result = await runWebpack(
     await config({
       dir,
