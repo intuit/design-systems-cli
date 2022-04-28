@@ -95,7 +95,7 @@ const command: CliCommand = {
       description: 'Size limit failure threshold',
       config: true,
       scope: 'Local'
-    }
+    },
     {
       name: 'merge-base',
       type: String,

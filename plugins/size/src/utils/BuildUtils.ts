@@ -14,7 +14,7 @@ export function buildPackages(args: {
   mergeBase: string
   /** Build command for merge base */
   buildCommand: string
-}) {
+}): string {
   const id = Math.random().toString(36).substring(7);
   const dir = path.join(os.tmpdir(), `commit-build-${id}`);
   const root = getMonorepoRoot();
@@ -59,7 +59,7 @@ export function getLocalPackage(
 }
 
 /** Install package to tmp dir */
-export async function loadPackage(options: LoadPackageOptions) {
+export async function loadPackage(options: LoadPackageOptions): Promise<string> {
   const dir = mockPackage();
   const execOptions: ExecSyncOptions = {
     cwd: dir,
@@ -88,7 +88,7 @@ export async function loadPackage(options: LoadPackageOptions) {
   } catch (error) {
     logger.debug(error);
     logger.warn(`Could not find package ${options.name}...`);
-    return [];
+    return './';
   }
 
   return dir;

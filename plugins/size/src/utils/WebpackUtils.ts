@@ -159,7 +159,7 @@ async function runWebpack(config: webpack.Configuration): Promise<webpack.Stats>
   });
 }
 
-/** Install package to tmp dir and run webpack on it to calculate size. */
+/** Run webpack on package directory to calculate size. */
 async function getSizes(options: GetSizesOptions & CommonOptions) {
   const result = await runWebpack(
     await config(options)

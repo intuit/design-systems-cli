@@ -146,7 +146,7 @@ async function diffSizeForPackage({
 }
 
 /** Create a mock npm package in a tmp dir on the system. */
-export function mockPackage() {
+export function mockPackage(): string {
   const id = Math.random().toString(36).substring(7);
   const dir = path.join(os.tmpdir(), `package-size-${id}`);
 

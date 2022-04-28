@@ -9,6 +9,8 @@ import { Overwrite } from 'utility-types';
 export type Option = AppOption & {
   /** Whether the Option should be configurable via ds.config.json */
   config?: boolean;
+  /** Whether or not the option is available in the global or local scope */
+  scope?: string;
 };
 
 interface Configurable {
