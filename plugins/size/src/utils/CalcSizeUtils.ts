@@ -1,4 +1,5 @@
 import { monorepoName, createLogger } from '@design-systems/cli-utils';
+import { loadConfig } from '@design-systems/load-config';
 import path from 'path';
 import fs from 'fs-extra';
 import os from 'os';
@@ -65,6 +66,9 @@ async function calcSizeForPackage({
     registry,
     dir
   });
+  const packageConfig = loadConfig({
+    cwd: path.join(dir, 'node_modules', packageName)
+  });
   fs.removeSync(dir);
 
   const js = sizes.filter((size) => !size.chunkNames.includes('css'));
@@ -83,6 +87,7 @@ async function calcSizeForPackage({
     js: js.length ? js.reduce((acc, i) => i.size + acc, 0) - RUNTIME_SIZE : 0, // Minus webpack runtime size;
     css: css.length ? css.reduce((acc, i) => i.size + acc, 0) : 0,
     exported: sizes,
+    limit: packageConfig?.size?.sizeLimit
   };
 }
 
@@ -136,6 +141,7 @@ async function diffSizeForPackage({
     master,
     pr,
     percent,
+    localBudget: pr.limit
   };
 }
 

@@ -90,7 +90,7 @@ export default class SizePlugin implements Plugin<SizeArgs> {
     const underFailureThreshold = size &&
         size.percent <= FAILURE_THRESHOLD ||
         size.percent === Infinity;
-    const underSizeLimit = args.limit ? size.pr.js + size.pr.css <= args.limit : true;
+    const underSizeLimit = size.localBudget ? size.pr.js + size.pr.css <= size.localBudget : true;
     const success = underFailureThreshold && underSizeLimit;
 
     await reportResults(

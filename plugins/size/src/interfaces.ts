@@ -20,7 +20,7 @@ export interface SizeArgs {
   /** The registry to install packages from */
   registry?: string
   /** Size limit failure threshold */
-  limit?: number
+  sizeLimit?: number
   /** Size Failure Threshold */
   failureThreshold?: number
   /** Run the plugin against merge base. (Will be slower due to additional build process) */
@@ -45,6 +45,8 @@ export interface Size {
   js: number
   /** Top level exports of package */
   exported?: Export[]
+  /** Maximum bundle size as defined by the package */
+  limit?: number
 }
 
 export interface SizeResult {
@@ -54,6 +56,8 @@ export interface SizeResult {
   pr: Size
   /** The difference between sizes */
   percent: number
+  /** The total number of bytes allowed as defined in the local changeset */
+  localBudget?: number
 }
 
 export interface ConfigOptions {
