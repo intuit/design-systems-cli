@@ -46,11 +46,16 @@ const makeType = ({ type, typeName, multiple }) => {
   return multiple ? `${typeString}[]` : typeString;
 };
 
+/** Determine supported scope for option */
+const makeScope = ({ scope }) => {
+  return scope || 'Global'
+}
+
 /** Generate a table for an array of options */
 function generateOptionTable(options) {
   let text = dedent`\n
-    | Name | Type | Description |
-    | ---- | ---- | ----------- |
+    | Name | Type | Scope | Description |
+    | ---- | ---- | ----- | ----------- |
   `;
 
   Object.entries(options).forEach(([option, value]) => {
@@ -58,7 +63,7 @@ function generateOptionTable(options) {
       return;
     }
 
-    text += `\n| ${option} | ${makeType(value)} | ${value.description} |`;
+    text += `\n| ${option} | ${makeType(value)} | ${makeScope(value)} | ${value.description} |`;
   });
 
   return text;
@@ -82,7 +87,7 @@ async function generateConfigDocs() {
 
     \`@design-systems/cli\` supports a wide array of configuration files. 
     
-    Add one of the following to to the root of the project:
+    Add one of the following to to the root of the project and/or the root of a given submodule:
 
     - a \`ds\` key in the \`package.json\`
     - \`.dsrc\`
@@ -92,6 +97,8 @@ async function generateConfigDocs() {
     - \`.dsrc.js\`
     - \`ds.config.js\`
     - \`ds.config.json\`
+
+    !> The package-specific configuration feature is in very early stages, and only supports options with the **Local** scope.
 
     ## Structure
 
