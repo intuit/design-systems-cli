@@ -40,6 +40,7 @@ const cssHeader = [
 
 const defaultHeader = ['master', 'pr', '+/-', '%'];
 
+/** Load package-specific configuration options. */
 function loadConfig(cwd: string) {
   return load('ds', {
     searchPlaces: [
