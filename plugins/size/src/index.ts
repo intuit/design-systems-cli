@@ -8,7 +8,7 @@ import {
   SizeResult} from "./interfaces"
 import { formatLine, formatExports } from "./utils/formatUtils";
 import { buildPackages } from "./utils/BuildUtils";
-import { calcSizeForAllPackages, reportResults, table, diffSizeForPackage } from "./utils/CalcSizeUtils";
+import { calcSizeForAllPackages, reportResults, table, diffSizeForPackage, sizePassesMuster } from "./utils/CalcSizeUtils";
 import { startAnalyze } from "./utils/WebpackUtils";
 import { createDiff } from "./utils/DiffUtils";
 
@@ -86,12 +86,7 @@ export default class SizePlugin implements Plugin<SizeArgs> {
       local
     });
     const header = args.css ? cssHeader : defaultHeader;
-
-    const underFailureThreshold = size &&
-        size.percent <= FAILURE_THRESHOLD ||
-        size.percent === Infinity;
-    const underSizeLimit = size.localBudget ? size.pr.js + size.pr.css <= size.localBudget : true;
-    const success = underFailureThreshold && underSizeLimit;
+    const success = sizePassesMuster(size, FAILURE_THRESHOLD);
 
     await reportResults(
       name,

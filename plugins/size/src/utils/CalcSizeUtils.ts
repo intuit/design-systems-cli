@@ -294,6 +294,15 @@ function table(data: (string | number)[][], isCi?: boolean) {
   return cliTable(data);
 }
 
+/** Analyzes a SizeResult to determine if it passes or fails */
+export function sizePassesMuster(size: SizeResult, failureThreshold: number) {
+  const underFailureThreshold = size &&
+    size.percent <= failureThreshold ||
+    size.percent === Infinity;
+  const underSizeLimit = size.localBudget ? size.pr.js + size.pr.css <= size.localBudget : true;
+  return underFailureThreshold && underSizeLimit;
+}
+
 /** Generate diff for all changed packages in the monorepo. */
 async function calcSizeForAllPackages(args: SizeArgs & CommonCalcSizeOptions) {
   const ignore = args.ignore || [];
@@ -344,11 +353,13 @@ async function calcSizeForAllPackages(args: SizeArgs & CommonCalcSizeOptions) {
       results.push(size);
 
       const FAILURE_THRESHOLD = args.failureThreshold || 5;
-      if (size.percent > FAILURE_THRESHOLD && size.percent !== Infinity) {
-        success = false;
-        logger.error(`${packageJson.package.name} failed bundle size check :(`);
-      } else {
+
+      success = sizePassesMuster(size, FAILURE_THRESHOLD);
+
+      if (success) {
         logger.success(`${packageJson.package.name} passed bundle size check!`);
+      } else {
+        logger.error(`${packageJson.package.name} failed bundle size check :(`);
       }
 
       return args.detailed
