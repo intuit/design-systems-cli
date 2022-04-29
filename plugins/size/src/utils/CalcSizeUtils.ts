@@ -82,7 +82,8 @@ async function calcSizeForPackage({
     registry,
     dir
   });
-  const packageConfig = loadConfig(path.join(dir, 'node_modules', packageName));
+  const packageDir = local ? path.join(dir, 'node_modules', packageName) : name;
+  const packageConfig = loadConfig(packageDir);
   fs.removeSync(dir);
 
   const js = sizes.filter((size) => !size.chunkNames.includes('css'));
