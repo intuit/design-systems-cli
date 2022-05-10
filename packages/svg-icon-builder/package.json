@@ -25,6 +25,7 @@
     "build": "ds build",
     "start": "ds build --watch",
     "test": "yarn build && ./bin/icon.js --svg ./svg --out output --overwrite",
+    "test:colored": "yarn build && ./bin/icon.js --svg ./svg --out output --no-strip-color --overwrite",
     "help": "./bin/icon.js -h",
     "lint": "ds lint"
   },
