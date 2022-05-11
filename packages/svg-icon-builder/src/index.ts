@@ -133,7 +133,7 @@ export const getTransformedSvg = async (
   const svgAttributesKeys = ["viewBox", "fill"] as const;
 
   svgAttributesKeys.forEach((attribute) => {
-    const regex = new RegExp('fill="(.*?)"');
+    const regex = new RegExp(attribute + '="(.*?)"');
     const match = icon.svg?.match(regex);
 
     if (match && match.length > 1) {
