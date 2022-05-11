@@ -80,6 +80,7 @@ You can see an example template in `/src/icon.template`. The basic variables ava
 - `titleCase`: Icon title with spaces (Achievement Icon).
 - `viewBox`: The viewBox attribute, which is needed to get nice resizing.
 - `svg`: All of the SVG inside the svg tag.
+- `fill`: The fill attribute from the SVG, if a top level fill is needed.
 
 The default template uses TypeScript and makes some assumptions about your project structure, so you'll probably want to copy and modify it.
 
