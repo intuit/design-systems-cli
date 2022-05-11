@@ -47,6 +47,22 @@ export const getSVGFiles = (directory: string): string[] => {
   return filenames;
 };
 
+/**
+ * Get a string representation of an element's attribute (key & value)
+ *
+ * @param attribute - The name of the attribute
+ *
+ * @param htmlString - The element's markup
+ */
+export const getAttributeString = (attribute: string, htmlString: string) => {
+  const attributeRegex = new RegExp(`${attribute}="(.*?)"`);
+  const attributeMatch = htmlString.match(attributeRegex);
+
+  if (attributeMatch && attributeMatch.length > 1) {
+    return attributeMatch[1];
+  }
+}
+
 interface GetTransformedSvg {
   /** Remove color from SVG */
   stripColor: boolean;
@@ -129,23 +145,21 @@ export const getTransformedSvg = async (
   // xlink:href has been deprecated for href
   icon.svg = icon.svg.replace(/xlink:href/g, 'href');
 
-  // Get the attributes for the SVG element
-  const svgAttributesKeys = ["viewBox", "fill"] as const;
+  // Get viewBox
+  const viewBoxMatch = getAttributeString("viewBox", icon.svg);
 
-  svgAttributesKeys.forEach((attribute) => {
-    const regex = new RegExp(`${attribute}="(.*?)"`);
-    const match = icon.svg?.match(regex);
-
-    if (match && match.length > 1) {
-      // eslint-disable-next-line
-      icon[attribute] = match[1];
-    }
-  })
+  if (viewBoxMatch) icon.viewBox = viewBoxMatch;
 
   // Unwrap SVG
   const regex = new RegExp('<svg[\\s\\S]*?>');
   const tag = icon.svg.match(regex);
+
   if (tag) {
+    // Get SVG fill
+    const fillMatch = getAttributeString("fill", tag[0]);
+
+    if (fillMatch) icon.fill = fillMatch;
+
     icon.svg = icon.svg.replace(tag[0], '');
     icon.svg = icon.svg.replace('</svg>', '');
   }

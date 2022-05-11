@@ -21,7 +21,7 @@ const {{iconName}} = (iconProps: IconProps) => {
       className={makeClass(className, { [styles.inline]: inline })}
       width={iconSize}
       height={iconSize}
-      fill={fill || "{{fill}}"}
+      fill={fill || 'currentColor'}
       {...html}
     >
       {{svg}}
