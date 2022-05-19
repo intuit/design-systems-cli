@@ -10,6 +10,8 @@ import logger from './logger';
 import cli from './cli';
 
 export interface IconOptions {
+  /** The fill of the SVG being processed */
+  fill?: string;
   /** The SVG being processed. */
   svg?: string;
   /** The viewBox of the SVG being processed. */
@@ -44,6 +46,22 @@ export const getSVGFiles = (directory: string): string[] => {
   });
   return filenames;
 };
+
+/**
+ * Get a string representation of an element's attribute (key & value)
+ *
+ * @param attribute - The name of the attribute
+ *
+ * @param htmlString - The element's markup
+ */
+export const getAttributeString = (attribute: string, htmlString: string) => {
+  const attributeRegex = new RegExp(`${attribute}="(.*?)"`);
+  const attributeMatch = htmlString.match(attributeRegex);
+
+  if (attributeMatch && attributeMatch.length > 1) {
+    return attributeMatch[1];
+  }
+}
 
 interface GetTransformedSvg {
   /** Remove color from SVG */
@@ -103,29 +121,45 @@ export const getTransformedSvg = async (
     icon.svg = optimized.data;
   }
 
-  // Replace attributes for JSX
-  icon.svg = icon.svg.replace(/stroke-miterlimit/g, 'strokeMiterlimit');
-  icon.svg = icon.svg.replace(/stroke-dasharray/g, 'strokeDasharray');
-  icon.svg = icon.svg.replace(/clip-path/g, 'clipPath');
-  icon.svg = icon.svg.replace(/fill-rule/g, 'fillRule');
-  icon.svg = icon.svg.replace(/clip-rule/g, 'clipRule');
-  icon.svg = icon.svg.replace(/stroke-width/g, 'strokeWidth');
-  icon.svg = icon.svg.replace(/stroke-linecap/g, 'strokeLinecap');
-  icon.svg = icon.svg.replace(/stroke-linejoin/g, 'strokeLinejoin');
-  icon.svg = icon.svg.replace(/xlink:href/g, 'xlinkHref');
+  // Replace any invalid JSX attributes
+  const invalidAttributes = [
+    "stroke-miterlimit",
+    "stroke-dasharray",
+    "clip-path",
+    "fill-opacity",
+    "fill-rule",
+    "clip-rule",
+    "stop-color",
+    "stroke-width",
+    "stroke-linecap",
+    "stroke-linejoin"
+  ];
+
+  invalidAttributes.forEach((attribute) => {
+    icon.svg = icon.svg?.replace(
+      new RegExp(attribute, "g"),
+      changeCase.camelCase(attribute)
+    );
+  });
+
+  // xlink:href has been deprecated for href
+  icon.svg = icon.svg.replace(/xlink:href/g, 'href');
 
   // Get viewBox
-  const viewBoxRegex = new RegExp('viewBox="(.*?)"');
-  const viewBoxMatch = icon.svg.match(viewBoxRegex);
-  if (viewBoxMatch && viewBoxMatch.length > 1) {
-    // eslint-disable-next-line
-    icon.viewBox = viewBoxMatch[1];
-  }
+  const viewBoxMatch = getAttributeString("viewBox", icon.svg);
+
+  if (viewBoxMatch) icon.viewBox = viewBoxMatch;
 
   // Unwrap SVG
   const regex = new RegExp('<svg[\\s\\S]*?>');
   const tag = icon.svg.match(regex);
+
   if (tag) {
+    // Get SVG fill
+    const fillMatch = getAttributeString("fill", tag[0]);
+
+    if (fillMatch) icon.fill = fillMatch;
+
     icon.svg = icon.svg.replace(tag[0], '');
     icon.svg = icon.svg.replace('</svg>', '');
   }
