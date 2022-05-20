@@ -32,7 +32,7 @@
     "file-size": "1.0.0",
     "fs-extra": "9.0.1",
     "get-monorepo-packages": "1.2.0",
-    "gitlog": "4.0.0",
+    "gitlog": "4.0.4",
     "lodash.chunk": "4.2.0",
     "markdown-table": "2.0.0",
     "mini-css-extract-plugin": "0.11.0",
