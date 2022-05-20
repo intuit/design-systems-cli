@@ -121,6 +121,7 @@ Thank you to all these wonderful people ([emoji key](https://allcontributors.org
   </tr>
   <tr>
     <td align="center"><a href="https://github.com/sugarmanz"><img src="https://avatars.githubusercontent.com/u/9255651?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Jeremiah Zucker</b></sub></a><br /><a href="https://github.com/intuit/design-systems-cli/commits?author=sugarmanz" title="Tests">⚠️</a></td>
+    <td align="center"><a href="https://github.com/abdelgzali"><img src="https://avatars.githubusercontent.com/u/16235866?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Abd El-Ghazali</b></sub></a><br /><a href="https://github.com/intuit/design-systems-cli/commits?author=abdelgzali" title="Documentation">📖</a> <a href="https://github.com/intuit/design-systems-cli/commits?author=abdelgzali" title="Code">💻</a></td>
   </tr>
 </table>
 
