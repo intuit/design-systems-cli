@@ -1,3 +1,16 @@
+# v4.15.0 (Fri May 20 2022)
+
+#### 🔩 Dependency Updates
+
+- Update auto [#442](https://github.com/intuit/design-systems-cli/pull/442) ([@renovate-bot](https://github.com/renovate-bot) [@renovate[bot]](https://github.com/renovate[bot]))
+
+#### Authors: 2
+
+- [@renovate[bot]](https://github.com/renovate[bot])
+- WhiteSource Renovate ([@renovate-bot](https://github.com/renovate-bot))
+
+---
+
 # v2.17.8 (Mon Jun 14 2021)
 
 #### 🐛 Bug Fix

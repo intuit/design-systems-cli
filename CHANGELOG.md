@@ -1,3 +1,27 @@
+# v4.15.0 (Fri May 20 2022)
+
+:tada: This release contains work from a new contributor! :tada:
+
+Thank you, Abd El-Ghazali ([@abdelgzali](https://github.com/abdelgzali)), for all your work!
+
+#### 🚀 Enhancement
+
+- `@design-systems/svg-icon-builder`
+  - Add "fill" icon option & expand invalid attributes regex for svg-icon-builder [#692](https://github.com/intuit/design-systems-cli/pull/692) (abdalkadir_elghazali@intuit.com)
+
+#### 🔩 Dependency Updates
+
+- `@design-systems/svg-icon-builder`, `@design-systems/utils`
+  - Update auto [#442](https://github.com/intuit/design-systems-cli/pull/442) ([@renovate-bot](https://github.com/renovate-bot) [@renovate[bot]](https://github.com/renovate[bot]))
+
+#### Authors: 3
+
+- [@renovate[bot]](https://github.com/renovate[bot])
+- Abd El-Ghazali ([@abdelgzali](https://github.com/abdelgzali))
+- WhiteSource Renovate ([@renovate-bot](https://github.com/renovate-bot))
+
+---
+
 # v4.14.0 (Thu Mar 17 2022)
 
 #### 🚀 Enhancement
