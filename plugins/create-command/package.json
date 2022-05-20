@@ -23,7 +23,7 @@
     "@design-systems/cli-utils": "link:../../packages/cli-utils",
     "@design-systems/create": "link:../../packages/create",
     "@design-systems/plugin": "link:../../packages/plugin",
-    "change-case": "4.1.1",
+    "change-case": "4.1.2",
     "cli-spinners": "2.5.0",
     "colorette": "1.2.2",
     "copy-template-dir": "1.4.0",

@@ -22,7 +22,7 @@
     "@design-systems/cli-utils": "link:../../packages/cli-utils",
     "@design-systems/plugin": "link:../../packages/plugin",
     "@royriojas/get-exports-from-file": "https://github.com/hipstersmoothie/get-exports-from-file#all",
-    "change-case": "4.1.1",
+    "change-case": "4.1.2",
     "chokidar": "3.4.2",
     "colorette": "1.2.2",
     "commently": "6.18.3",
