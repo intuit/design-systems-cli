@@ -46,7 +46,7 @@
     "@testing-library/react-hooks": "1.1.0",
     "@types/classnames": "2.2.11",
     "@types/react-dom": "16.9.0",
-    "auto": "10.18.3",
+    "auto": "10.36.5",
     "husky": "3.0.1",
     "lint-staged": "9.2.1",
     "prettier": "1.19.1",
