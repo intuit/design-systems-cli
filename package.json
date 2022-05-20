@@ -16,7 +16,7 @@
     "test": "./packages/cli/bin/ds.js test",
     "create:plugin": "./scripts/create-plugin.js",
     "create:package": "./packages/cli/bin/ds.js create package",
-    "format" : "prettier --write ."
+    "format": "prettier --write ."
   },
   "workspaces": [
     "packages/*",
@@ -32,6 +32,10 @@
   "publishConfig": {
     "registry": "https://registry.npmjs.org/",
     "access": "public"
+  },
+  "resolutions": {
+    "@types/eslint": "7.2.2",
+    "@types/reach__router": "1.3.7"
   },
   "devDependencies": {
     "@auto-it/all-contributors": "10.36.5",
