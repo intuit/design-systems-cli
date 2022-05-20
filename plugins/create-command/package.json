@@ -30,7 +30,7 @@
     "dedent": "0.7.0",
     "degit": "https://github.com/hipstersmoothie/degit.git#private-release",
     "fs-extra": "9.0.1",
-    "inquirer": "7.3.3",
+    "inquirer": "8.2.4",
     "progress-estimator": "0.3.0",
     "terminal-link": "2.1.1",
     "title-case": "3.0.3",
