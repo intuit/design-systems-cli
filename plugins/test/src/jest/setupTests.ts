@@ -1,12 +1,15 @@
 /* eslint-disable @typescript-eslint/ban-ts-comment */
 
-window.matchMedia =
-  window.matchMedia ||
-  function() {
-    return {
-      matches: false
+if (typeof window !== 'undefined') {
+  window.matchMedia =
+    window.matchMedia ||
+    function() {
+      return {
+        matches: false
+      };
     };
-  };
+}
+
 
 // @ts-ignore
 if (global.document) {
