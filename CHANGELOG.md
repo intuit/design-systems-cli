@@ -1,3 +1,30 @@
+# v4.15.1 (Tue May 31 2022)
+
+:tada: This release contains work from a new contributor! :tada:
+
+Thank you, Spencer Hamm ([@spentacular](https://github.com/spentacular)), for all your work!
+
+#### 🐛 Bug Fix
+
+- `@design-systems/test`
+  - Guard against `window` not existing in test setup [#699](https://github.com/intuit/design-systems-cli/pull/699) ([@adierkens](https://github.com/adierkens))
+- `@design-systems/core`
+  - remove bin from core package because it doesn't exist [#667](https://github.com/intuit/design-systems-cli/pull/667) (spencer_hamm@intuit.com)
+
+#### 🔩 Dependency Updates
+
+- `@design-systems/svg-icon-builder`
+  - Update dependency endent to v2.1.0 [#695](https://github.com/intuit/design-systems-cli/pull/695) ([@renovate-bot](https://github.com/renovate-bot) [@renovate[bot]](https://github.com/renovate[bot]))
+
+#### Authors: 4
+
+- [@renovate[bot]](https://github.com/renovate[bot])
+- Adam Dierkens ([@adierkens](https://github.com/adierkens))
+- Spencer Hamm ([@spentacular](https://github.com/spentacular))
+- WhiteSource Renovate ([@renovate-bot](https://github.com/renovate-bot))
+
+---
+
 # v4.15.0 (Fri May 20 2022)
 
 :tada: This release contains work from a new contributor! :tada:

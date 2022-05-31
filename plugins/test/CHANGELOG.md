@@ -1,3 +1,19 @@
+# v4.15.1 (Tue May 31 2022)
+
+#### 🐛 Bug Fix
+
+- Guard against `window` not existing in test setup [#699](https://github.com/intuit/design-systems-cli/pull/699) ([@adierkens](https://github.com/adierkens))
+- remove bin from core package because it doesn't exist [#667](https://github.com/intuit/design-systems-cli/pull/667) (spencer_hamm@intuit.com)
+- Update setupTests.ts ([@adierkens](https://github.com/adierkens))
+- Merge branch 'master' into remove-core-bin (spencer_hamm@intuit.com)
+
+#### Authors: 2
+
+- Adam Dierkens ([@adierkens](https://github.com/adierkens))
+- Spencer Hamm ([@spentacular](https://github.com/spentacular))
+
+---
+
 # v4.13.1 (Tue Sep 21 2021)
 
 :tada: This release contains work from a new contributor! :tada:

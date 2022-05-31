@@ -1,3 +1,16 @@
+# v4.15.1 (Tue May 31 2022)
+
+#### 🐛 Bug Fix
+
+- remove bin from core package because it doesn't exist [#667](https://github.com/intuit/design-systems-cli/pull/667) (spencer_hamm@intuit.com)
+- Merge branch 'master' into remove-core-bin (spencer_hamm@intuit.com)
+
+#### Authors: 1
+
+- Spencer Hamm ([@spentacular](https://github.com/spentacular))
+
+---
+
 # v2.17.8 (Mon Jun 14 2021)
 
 #### 🐛 Bug Fix

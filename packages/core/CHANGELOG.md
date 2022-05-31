@@ -1,3 +1,23 @@
+# v4.15.1 (Tue May 31 2022)
+
+:tada: This release contains work from a new contributor! :tada:
+
+Thank you, Spencer Hamm ([@spentacular](https://github.com/spentacular)), for all your work!
+
+#### 🐛 Bug Fix
+
+- Guard against `window` not existing in test setup [#699](https://github.com/intuit/design-systems-cli/pull/699) ([@adierkens](https://github.com/adierkens))
+- remove bin from core package because it doesn't exist [#667](https://github.com/intuit/design-systems-cli/pull/667) (spencer_hamm@intuit.com)
+- Merge branch 'master' into remove-core-bin (spencer_hamm@intuit.com)
+- remove bin from core package because it doesn't exist (spencer_hamm@intuit.com)
+
+#### Authors: 2
+
+- Adam Dierkens ([@adierkens](https://github.com/adierkens))
+- Spencer Hamm ([@spentacular](https://github.com/spentacular))
+
+---
+
 # v2.17.8 (Mon Jun 14 2021)
 
 #### 🐛 Bug Fix

@@ -1,3 +1,22 @@
+# v4.15.1 (Tue May 31 2022)
+
+#### 🐛 Bug Fix
+
+- remove bin from core package because it doesn't exist [#667](https://github.com/intuit/design-systems-cli/pull/667) (spencer_hamm@intuit.com)
+- Merge branch 'master' into remove-core-bin (spencer_hamm@intuit.com)
+
+#### 🔩 Dependency Updates
+
+- Update dependency endent to v2.1.0 [#695](https://github.com/intuit/design-systems-cli/pull/695) ([@renovate-bot](https://github.com/renovate-bot) [@renovate[bot]](https://github.com/renovate[bot]))
+
+#### Authors: 3
+
+- [@renovate[bot]](https://github.com/renovate[bot])
+- Spencer Hamm ([@spentacular](https://github.com/spentacular))
+- WhiteSource Renovate ([@renovate-bot](https://github.com/renovate-bot))
+
+---
+
 # v4.15.0 (Fri May 20 2022)
 
 :tada: This release contains work from a new contributor! :tada:
