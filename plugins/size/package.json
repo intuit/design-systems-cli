@@ -1,6 +1,6 @@
 {
   "name": "@design-systems/size",
-  "version": "4.15.0",
+  "version": "4.15.1",
   "description": "The size command for @design-systems-cli",
   "main": "dist/index.js",
   "author": "Adam Dierkens <adam@dierkens.com>",
