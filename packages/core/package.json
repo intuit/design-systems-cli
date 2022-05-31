@@ -17,9 +17,6 @@
     "bin",
     "dist"
   ],
-  "bin": {
-    "ds": "./bin/ds.js"
-  },
   "repository": {
     "type": "git",
     "url": "https://github.com/intuit/design-systems-cli.git"
