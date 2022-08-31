@@ -49,8 +49,11 @@ async function attemptStylelint(
   try {
     return (await stylelint.lint(options)) as StylelintResult;
   } catch (error) {
-    if (error.message.includes('No files matching the pattern')) {
+    if (error?.message.includes('No files matching the pattern')) {
       return {
+        cwd: "",
+        reportedDisables: [],
+        ruleMetadata: {},
         results: [],
         output: 'no match',
         errored: false
