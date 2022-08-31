@@ -28,7 +28,7 @@
     "stylelint-declaration-block-no-ignored-properties": "2.5.0",
     "stylelint-order": "5.0.0",
     "stylelint-selector-tag-no-without-class": "2.0.5",
-    "tslib": "2.4.0"
+    "tslib": "2.0.1"
   },
   "peerDependencies": {
     "stylelint": ">14.x"
