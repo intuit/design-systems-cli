@@ -1,3 +1,16 @@
+# v4.15.2 (Mon Dec 26 2022)
+
+#### 🐛 Bug Fix
+
+- fix esm css.js output [#709](https://github.com/intuit/design-systems-cli/pull/709) ([@hipstersmoothie](https://github.com/hipstersmoothie))
+- fix esm css.js output ([@hipstersmoothie](https://github.com/hipstersmoothie))
+
+#### Authors: 1
+
+- Andrew Lisowski ([@hipstersmoothie](https://github.com/hipstersmoothie))
+
+---
+
 # v2.17.5 (Tue May 18 2021)
 
 #### 🐛 Bug Fix
