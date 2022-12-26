@@ -56,11 +56,10 @@ module.exports = function (ctx: PostCSSContext = { outDir: 'dist' }) {
           if (outputFileName) {
             const cjs = `${outputFileName.replace('dist', 'dist/cjs')}.js`;
             const esm = `${outputFileName.replace('dist', 'dist/esm')}.js`;
-            const code = `module.exports = ${JSON.stringify(json)};`;
 
             return Promise.all([
-              fs.outputFile(cjs, code),
-              fs.outputFile(esm, code),
+              fs.outputFile(cjs, `module.exports = ${JSON.stringify(json)};`),
+              fs.outputFile(esm, `export default ${JSON.stringify(json)};`),
             ]);
           }
         },
