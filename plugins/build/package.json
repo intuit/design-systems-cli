@@ -46,7 +46,7 @@
     "icss-utils": "4.1.1",
     "minimatch": "3.0.4",
     "pkg-up": "3.1.0",
-    "postcss": "7.0.32",
+    "postcss": "7.0.36",
     "postcss-hexrgba": "2.0.1",
     "postcss-icss-selectors": "2.0.3",
     "postcss-load-config": "2.1.0",
