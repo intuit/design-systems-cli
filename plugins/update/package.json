@@ -1,6 +1,6 @@
 {
   "name": "@design-systems/update",
-  "version": "4.15.1",
+  "version": "4.15.2",
   "description": "The update command for @design-systems-cli",
   "main": "dist/index.js",
   "author": "Adam Dierkens <adam@dierkens.com>",

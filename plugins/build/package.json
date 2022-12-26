@@ -1,6 +1,6 @@
 {
   "name": "@design-systems/build",
-  "version": "4.15.1",
+  "version": "4.15.2",
   "description": "The build command for @design-systems-cli",
   "main": "dist/index.js",
   "author": "Adam Dierkens <adam@dierkens.com>",
