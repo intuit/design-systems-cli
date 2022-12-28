@@ -1,14 +1,7 @@
 module.exports = {
-  processors: [
-    [
-      'stylelint-processor-styled-components',
-      { strict: true, ignoreFiles: ['**/*.css'] }
-    ]
-  ],
   extends: [
-    'stylelint-config-recommended',
+    'stylelint-config-standard',
     'stylelint-config-css-modules',
-    'stylelint-config-styled-components',
     'stylelint-config-prettier'
   ],
   plugins: [
@@ -16,6 +9,16 @@ module.exports = {
     'stylelint-a11y',
     'stylelint-declaration-block-no-ignored-properties',
     'stylelint-selector-tag-no-without-class'
+  ],
+  overrides: [
+    {
+      files: ['**/*.scss'],
+      customSyntax: require.resolve('postcss-scss')
+    },
+    {
+      files: ['**/*.less'],
+      customSyntax: require.resolve('postcss-less')
+    }
   ],
   rules: {
     'length-zero-no-unit': true,

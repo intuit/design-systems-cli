@@ -176,9 +176,9 @@ async function lintCSS(args: LintArgs): Promise<number> {
         warnings: [
           ...result.warnings,
           ...disables.ranges.map((range) => ({
-            rule: range.unusedRule,
+            rule: range.rule,
             severity: 'warning' as stylelint.Severity,
-            text: 'Needless stylint-disable',
+            text: 'Needless stylelint-disable',
             line: range.start,
             column: 0,
           })),

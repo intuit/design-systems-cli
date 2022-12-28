@@ -25,7 +25,6 @@ export default class LintPlugin implements Plugin<LintArgs> {
     try {
       const jsReturnCode = await lintJS(args);
       const cssReturnCode = await lintCSS(args);
-
       logger.debug({ jsReturnCode, cssReturnCode });
 
       if (jsReturnCode + cssReturnCode > 0) {
