@@ -4,7 +4,7 @@ import { CLIArguments, main } from '@proof-ui/cli';
 import { getConfig } from '@proof-ui/config';
 
 /**
- * The design-systems plugin for cross-browser integration testing through proof
+ * The design-systems plugin for cross-browser integration testing through proof.
  */
 export default class ProofPlugin implements Plugin<CLIArguments> {
   private logger = createLogger({ scope: 'proof' });
