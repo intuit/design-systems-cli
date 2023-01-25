@@ -35,7 +35,7 @@
     "tslib": "2.0.1"
   },
   "devDependencies": {
-    "@types/eslint": "8.4.10",
+    "@types/eslint": "7.2.2",
     "@types/stylelint": "9.10.1"
   }
 }
