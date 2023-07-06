@@ -1,4 +1,3 @@
-// const process = require('process');
 import fs from 'fs';
 import path from 'path';
 import brotli from 'brotli';
