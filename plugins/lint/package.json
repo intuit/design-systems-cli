@@ -29,7 +29,7 @@
     "eslint-formatter-pretty": "4.0.0",
     "fast-glob": "3.2.5",
     "get-monorepo-packages": "1.2.0",
-    "stylelint": "13.7.0",
+    "stylelint": "15.10.1",
     "stylelint-formatter-github": "^1.0.0",
     "stylelint-formatter-pretty": "2.1.0",
     "tslib": "2.0.1"
