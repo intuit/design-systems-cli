@@ -1,5 +1,4 @@
 import * as React from 'react';
-import { fromEntries } from './fromEntries';
 import { isReactInstanceOf } from './isReactInstanceOf';
 import { createInstanceIfDefined } from './createInstanceIfDefined';
 import { arrayify } from './arrayify';
@@ -58,11 +57,11 @@ export function isSlotOf(child: any, identifier: AnyComponent | symbol) {
     : isReactInstanceOf(child, identifier as AnyComponent);
 }
 
-/** 
+/**
  * Forward a ref and make the returned component slottable.
- * 
+ *
  * @param Component - Same props you give to React.forwardRef
- * 
+ *
  * @example
  * export const SlottedComponentWithRef = forwardWithSlots<
  *  HTMLDivElement,
@@ -128,10 +127,11 @@ export function createSlots<InputProps extends Props>(
 ): InputProps {
   const otherChildren: React.ReactNode[] = [];
   const slotNames = Object.keys(componentMapping);
-  const components: ComponentMapStrict = fromEntries(
+  const components = Object.fromEntries(
     slotNames.map(slot => [slot, arrayify(componentMapping[slot])])
-  );
-  const slots: Slots = fromEntries(
+  ) as ComponentMapStrict;
+
+  const slots: Slots = Object.fromEntries(
     slotNames.map(prop => {
       const SlotComp = components[prop][0];
       const slotProps = props[prop];
@@ -145,11 +145,11 @@ export function createSlots<InputProps extends Props>(
       return [prop, createInstanceIfDefined(slotProps, SlotComp)];
     })
   );
-  const passThroughProps: InputProps = fromEntries(
+  const passThroughProps = Object.fromEntries(
     Object.entries(props).filter(
       ([key]) => componentMapping[key] === undefined && !omit.includes(key)
     )
-  );
+  ) as InputProps;
 
   React.Children.forEach(props.children, child => {
     const slotName = slotNames.find(propName =>
