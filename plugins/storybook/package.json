@@ -1,6 +1,6 @@
 {
   "name": "@design-systems/storybook",
-  "version": "4.15.2",
+  "version": "4.15.3",
   "description": "The storybook command for @design-systems-cli",
   "main": "dist/index.js",
   "author": "Adam Dierkens <adam@dierkens.com>",
