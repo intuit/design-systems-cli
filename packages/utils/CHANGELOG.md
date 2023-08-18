@@ -1,3 +1,16 @@
+# v4.15.3 (Thu Aug 17 2023)
+
+#### 🐛 Bug Fix
+
+- Remove fromEntries ponyfill [#722](https://github.com/intuit/design-systems-cli/pull/722) ([@adierkens](https://github.com/adierkens))
+- Remove fromEntries ponyfill ([@adierkens](https://github.com/adierkens))
+
+#### Authors: 1
+
+- Adam Dierkens ([@adierkens](https://github.com/adierkens))
+
+---
+
 # v4.15.1 (Tue May 31 2022)
 
 #### 🐛 Bug Fix
