@@ -24,9 +24,9 @@
     "@design-systems/eslint-config": "link:../../packages/eslint-config",
     "@design-systems/plugin": "link:../../packages/plugin",
     "@design-systems/stylelint-config": "link:../../packages/stylelint-config",
-    "eslint": "7.6.0",
+    "eslint": "8.47.0",
     "eslint-formatter-github": "^1.0.0",
-    "eslint-formatter-pretty": "4.0.0",
+    "eslint-formatter-pretty": "5.0.0",
     "fast-glob": "3.2.5",
     "get-monorepo-packages": "1.2.0",
     "stylelint": "13.7.0",
@@ -35,7 +35,7 @@
     "tslib": "2.0.1"
   },
   "devDependencies": {
-    "@types/eslint": "7.2.2",
+    "@types/eslint": "8.44.2",
     "@types/stylelint": "9.10.1"
   }
 }
