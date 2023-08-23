@@ -1,3 +1,22 @@
+# v4.15.4 (Wed Aug 23 2023)
+
+#### 🐛 Bug Fix
+
+- `@design-systems/storybook`
+  - fix: update storybook-addon-react-docgen version [#723](https://github.com/intuit/design-systems-cli/pull/723) (yucho_ho@intuit.com)
+
+#### 🔩 Dependency Updates
+
+- `@design-systems/update`
+  - Update dependency semver to v7.5.2 [SECURITY] [#717](https://github.com/intuit/design-systems-cli/pull/717) ([@renovate[bot]](https://github.com/renovate[bot]))
+
+#### Authors: 2
+
+- [@renovate[bot]](https://github.com/renovate[bot])
+- Yucho Ho ([@yucho](https://github.com/yucho))
+
+---
+
 # v4.15.3 (Thu Aug 17 2023)
 
 #### 🐛 Bug Fix

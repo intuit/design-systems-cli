@@ -1,3 +1,15 @@
+# v4.15.4 (Wed Aug 23 2023)
+
+#### 🔩 Dependency Updates
+
+- Update dependency semver to v7.5.2 [SECURITY] [#717](https://github.com/intuit/design-systems-cli/pull/717) ([@renovate[bot]](https://github.com/renovate[bot]))
+
+#### Authors: 1
+
+- [@renovate[bot]](https://github.com/renovate[bot])
+
+---
+
 # v2.15.0 (Mon Mar 08 2021)
 
 :tada: This release contains work from a new contributor! :tada:

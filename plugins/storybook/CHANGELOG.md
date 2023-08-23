@@ -1,3 +1,15 @@
+# v4.15.4 (Wed Aug 23 2023)
+
+#### 🐛 Bug Fix
+
+- fix: update storybook-addon-react-docgen version [#723](https://github.com/intuit/design-systems-cli/pull/723) (yucho_ho@intuit.com)
+
+#### Authors: 1
+
+- Yucho Ho ([@yucho](https://github.com/yucho))
+
+---
+
 # v2.18.0 (Tue Jul 13 2021)
 
 :tada: This release contains work from a new contributor! :tada:
