@@ -1,6 +1,6 @@
 {
   "name": "@design-systems/bundle",
-  "version": "4.15.3",
+  "version": "4.15.4",
   "description": "The bundle command for @design-systems-cli",
   "main": "dist/index.js",
   "author": "Adam Dierkens <adam@dierkens.com>",
