@@ -55,7 +55,7 @@ export default class TestPlugin implements Plugin<TestArgs> {
         await createJestAnnotations(results);
       }
 
-      if (results.numFailedTests > 0) {
+      if (!results.success) {
         process.exit(1);
       }
     } catch (e) {
