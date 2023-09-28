@@ -1,3 +1,5 @@
+.idea/**
+
 # These files are generated
 packages/docs/src/generated
 
