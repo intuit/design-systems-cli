@@ -51,6 +51,8 @@ Ensure you have the following softwares installed:
 * `Node >= 10.18.1` - [Installation guide](https://nodejs.org/en/download/)
 * `Yarn` - [Installation guide](https://classic.yarnpkg.com/en/docs/install)
 
+If node-gyp throws errors during installation, installation may still be successful
+
 ### To get started:
 
 To get set up, fork and clone the project then run the following command:
