@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>@design-systems/docs</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="description" content="Description" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple.css"
+      title="Simple"
+    />
+
+    <style>
+      :root {
+        --search-input-background-color: #fafafc;
+        --sidebar-background: rgb(244, 245, 248);
+        --sidebar-name-color: rgb(19, 22, 31);
+        --sidebar-name-padding: 15px;
+        --sidebar-nav-link-text-decoration: none;
+        --sidebar-nav-link-text-decoration--active: none;
+        --sidebar-nav-link-text-decoration--hover: #309bc3;
+        --sidebar-nav-link-color--hover: rgba(19, 22, 31, 0.5);
+        --sidebar-nav-link-color: rgba(19, 22, 31, 0.5);
+        --sidebar-nav-link-color--active: rgb(19, 22, 31);
+        --sidebar-nav-link-before-content-l3: '';
+        --sidebar-nav-link-before-margin-l3: 0;
+        --sidebar-nav-indent: 10px;
+        --sidebar-toggle-background: transparent;
+        --sidebar-nav-link-font-weight--hover: 600;
+
+        --code-inline-color: rgb(125, 137, 156);
+        --code-inline-background: rgb(245, 246, 247);
+        /* --sidebar-nav-link-color: rgb(77, 77, 77); */
+        /* --sidebar-nav-link-font-weight: 600; */
+
+        --heading-color: rgb(57, 58, 61);
+        --heading-h1-font-weight: 600;
+        --heading-h1-font-size: 48px;
+        --heading-font-family: 'Source Sans Pro', sans-serif;
+
+        --theme-color: #309bc3;
+      }
+
+      .sidebar-nav > ul > li > p > a,
+      .sidebar-nav > ul > li {
+        color: rgb(19, 22, 31);
+        font-weight: 600;
+        font-size: 18px;
+      }
+
+      .sidebar-nav > ul > li > p > a:hover {
+        color: #309bc3;
+      }
+
+      .sidebar-nav li > a {
+        position: relative;
+        font-size: 14px;
+      }
+
+      .sidebar-nav p.active > a {
+        color: rgb(48, 155, 195);
+        font-weight: 600;
+      }
+
+      h1 code,
+      h2 code,
+      h3 code,
+      h4 code,
+      h5 code,
+      h6 code {
+        font-size: inherit !important;
+      }
+
+      .sidebar > h1 .app-name-link {
+        font-weight: 600;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="app"></div>
+
+    <script>
+      window.$docsify = {
+        name: '@design-systems/cli',
+        repo: 'https://github.com/intuit/design-systems-cli',
+        logo: 'logo.png',
+        auto2top: true,
+        loadSidebar: true,
+        subMaxLevel: 2,
+        coverpage: true,
+        onlyCover: true
+      };
+    </script>
+    <script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/docsify-themeable@0"></script>
+    <script src="//unpkg.com/docsify/lib/plugins/search.min.js"></script>
+    <script src="//unpkg.com/docsify-copy-code"></script>
+    <script src="//unpkg.com/prismjs/components/prism-bash.min.js"></script>
+    <script src="//unpkg.com/prismjs/components/prism-jsx.min.js"></script>
+    <script src="//unpkg.com/prismjs/components/prism-typescript.min.js"></script>
+    <script src="//unpkg.com/prismjs/components/prism-tsx.min.js"></script>
+    <script src="//unpkg.com/prismjs/components/prism-json.min.js"></script>
+    <script>
+      if (typeof navigator.serviceWorker !== 'undefined') {
+        navigator.serviceWorker.register('sw.js');
+      }
+    </script>
+  </body>
+</html>
