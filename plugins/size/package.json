@@ -54,7 +54,7 @@
     "@types/markdown-table": "2.0.0",
     "@types/mini-css-extract-plugin": "0.9.1",
     "@types/opn": "5.1.0",
-    "@types/optimize-css-assets-webpack-plugin": "5.0.1",
+    "@types/optimize-css-assets-webpack-plugin": "5.0.5",
     "@types/table": "6.0.0",
     "@types/terser-webpack-plugin": "4.1.0",
     "@types/webpack-bundle-analyzer": "3.8.0",
