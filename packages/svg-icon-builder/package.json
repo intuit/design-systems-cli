@@ -37,7 +37,7 @@
     "!__tests__"
   ],
   "dependencies": {
-    "change-case": "3.1.0",
+    "change-case": "4.1.2",
     "command-line-application": "0.10.1",
     "endent": "2.1.0",
     "fs-extra": "9.0.1",
