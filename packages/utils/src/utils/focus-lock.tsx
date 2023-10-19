@@ -40,10 +40,11 @@ export const FocusLock = React.forwardRef<
   /** Trap the focus within the locks if active */
   const trapFocus = () => {
     if (active && !focusInside(trap.current as TrapCurrent)) {
-      setTimeout(
+      const interval = setTimeout(
         () => moveFocusInside(trap.current as TrapCurrent, document.activeElement as HTMLInputElement),
         50
       );
+      return () => clearTimeout(interval);
     }
   };
 
