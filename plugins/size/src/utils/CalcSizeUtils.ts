@@ -1,4 +1,5 @@
 import { monorepoName, createLogger } from '@design-systems/cli-utils';
+import { cosmiconfigSync as load } from 'cosmiconfig';
 import path from 'path';
 import fs from 'fs-extra';
 import os from 'os';
@@ -20,7 +21,7 @@ import {
   DiffSizeForPackageOptions
 } from '../interfaces';
 import { getSizes } from './WebpackUtils';
-import { getLocalPackage } from './BuildUtils';
+import { getLocalPackage, loadPackage } from './BuildUtils';
 
 const RUNTIME_SIZE = 537;
 
@@ -39,6 +40,22 @@ const cssHeader = [
 
 const defaultHeader = ['master', 'pr', '+/-', '%'];
 
+/** Load package-specific configuration options. */
+function loadConfig(cwd: string) {
+  return load('ds', {
+    searchPlaces: [
+      'package.json',
+      `.dsrc`,
+      `.dsrc.json`,
+      `.dsrc.yaml`,
+      `.dsrc.yml`,
+      `.dsrc.js`,
+      `ds.config.js`,
+      `ds.config.json`,
+    ]
+  }).search(cwd)?.config;
+}
+
 /** Calculate the bundled CSS and JS size. */
 async function calcSizeForPackage({
   name,
@@ -50,15 +67,24 @@ async function calcSizeForPackage({
   registry,
   local
 }: CommonOptions & CommonCalcSizeOptions): Promise<Size> {
+  const packageName = local ? getLocalPackage(importName, local) : name;
+  const dir = await loadPackage({
+    name: packageName,
+    registry
+  });
   const sizes = await getSizes({
-    name: local ? getLocalPackage(importName, local) : name,
+    name: packageName,
     importName,
     scope,
     persist,
     chunkByExport,
     diff,
-    registry
+    registry,
+    dir
   });
+  const packageDir = local ? path.join(dir, 'node_modules', packageName) : name;
+  const packageConfig = loadConfig(packageDir);
+  fs.removeSync(dir);
 
   const js = sizes.filter((size) => !size.chunkNames.includes('css'));
   const css = sizes.filter((size) => size.chunkNames.includes('css'));
@@ -76,6 +102,7 @@ async function calcSizeForPackage({
     js: js.length ? js.reduce((acc, i) => i.size + acc, 0) - RUNTIME_SIZE : 0, // Minus webpack runtime size;
     css: css.length ? css.reduce((acc, i) => i.size + acc, 0) : 0,
     exported: sizes,
+    limit: packageConfig?.size?.sizeLimit
   };
 }
 
@@ -129,11 +156,12 @@ async function diffSizeForPackage({
     master,
     pr,
     percent,
+    localBudget: pr.limit
   };
 }
 
 /** Create a mock npm package in a tmp dir on the system. */
-export function mockPackage() {
+export function mockPackage(): string {
   const id = Math.random().toString(36).substring(7);
   const dir = path.join(os.tmpdir(), `package-size-${id}`);
 
@@ -267,6 +295,15 @@ function table(data: (string | number)[][], isCi?: boolean) {
   return cliTable(data);
 }
 
+/** Analyzes a SizeResult to determine if it passes or fails */
+export function sizePassesMuster(size: SizeResult, failureThreshold: number) {
+  const underFailureThreshold = size &&
+    size.percent <= failureThreshold ||
+    size.percent === Infinity;
+  const underSizeLimit = size.localBudget ? size.pr.js + size.pr.css <= size.localBudget : true;
+  return underFailureThreshold && underSizeLimit;
+}
+
 /** Generate diff for all changed packages in the monorepo. */
 async function calcSizeForAllPackages(args: SizeArgs & CommonCalcSizeOptions) {
   const ignore = args.ignore || [];
@@ -317,11 +354,13 @@ async function calcSizeForAllPackages(args: SizeArgs & CommonCalcSizeOptions) {
       results.push(size);
 
       const FAILURE_THRESHOLD = args.failureThreshold || 5;
-      if (size.percent > FAILURE_THRESHOLD && size.percent !== Infinity) {
-        success = false;
-        logger.error(`${packageJson.package.name} failed bundle size check :(`);
-      } else {
+
+      success = sizePassesMuster(size, FAILURE_THRESHOLD);
+
+      if (success) {
         logger.success(`${packageJson.package.name} passed bundle size check!`);
+      } else {
+        logger.error(`${packageJson.package.name} failed bundle size check :(`);
       }
 
       return args.detailed

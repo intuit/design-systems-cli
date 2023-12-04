@@ -19,6 +19,8 @@ export interface SizeArgs {
   ignore?: string[]
   /** The registry to install packages from */
   registry?: string
+  /** Size limit failure threshold */
+  sizeLimit?: number
   /** Size Failure Threshold */
   failureThreshold?: number
   /** Run the plugin against merge base. (Will be slower due to additional build process) */
@@ -43,6 +45,8 @@ export interface Size {
   js: number
   /** Top level exports of package */
   exported?: Export[]
+  /** Maximum bundle size as defined by the package */
+  limit?: number
 }
 
 export interface SizeResult {
@@ -52,6 +56,8 @@ export interface SizeResult {
   pr: Size
   /** The difference between sizes */
   percent: number
+  /** The total number of bytes allowed as defined in the local changeset */
+  localBudget?: number
 }
 
 export interface ConfigOptions {
@@ -88,6 +94,15 @@ export interface GetSizesOptions extends CommonCalcSizeOptions {
   analyze?: boolean
   /** What port to start the analyzer on */
   analyzerPort?: number
+  /** Working directory to execute analysis from */
+  dir: string
+}
+
+export interface LoadPackageOptions {
+  /** The name of the package to get size for */
+  name: string
+  /** The registry to install packages from */
+  registry?: string
 }
 
 type Scope = 'pr' | 'master'

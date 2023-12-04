@@ -90,6 +90,13 @@ const command: CliCommand = {
       config: true
     },
     {
+      name: 'sizeLimit',
+      type: Number,
+      description: 'Size limit failure threshold',
+      config: true,
+      scope: 'Local'
+    },
+    {
       name: 'merge-base',
       type: String,
       description: 'Run the plugin against merge base. (Will be slower due to additional build process)'

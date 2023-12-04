@@ -20,6 +20,7 @@
   },
   "dependencies": {
     "@design-systems/cli-utils": "link:../../packages/cli-utils",
+    "cosmiconfig": "7.0.0",
     "@design-systems/plugin": "link:../../packages/plugin",
     "@royriojas/get-exports-from-file": "https://github.com/hipstersmoothie/get-exports-from-file#all",
     "change-case": "4.1.1",
@@ -42,6 +43,7 @@
     "table": "6.0.7",
     "terser-webpack-plugin": "4.1.0",
     "tslib": "2.0.1",
+    "utility-types": "3.10.0",
     "webpack": "4.44.1",
     "webpack-bundle-analyzer": "3.8.0",
     "webpack-inject-plugin": "1.5.5",
