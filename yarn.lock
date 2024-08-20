@@ -1915,7 +1915,7 @@
     sketchapp-json-plugin "^0.1.2"
 
 "@design-systems/build@link:plugins/build":
-  version "4.15.3"
+  version "4.15.4"
   dependencies:
     "@babel/code-frame" "^7.12.13"
     "@babel/core" "^7.13.8"
@@ -1957,7 +1957,7 @@
     typescript "4.2.2"
 
 "@design-systems/bundle@link:plugins/bundle":
-  version "4.15.3"
+  version "4.15.4"
   dependencies:
     "@design-systems/build" "link:plugins/build"
     "@design-systems/cli-utils" "link:packages/cli-utils"
@@ -1973,7 +1973,7 @@
     webpack "4.44.1"
 
 "@design-systems/clean@link:plugins/clean":
-  version "4.15.3"
+  version "4.15.4"
   dependencies:
     "@design-systems/cli-utils" "link:packages/cli-utils"
     "@design-systems/plugin" "link:packages/plugin"
@@ -1982,7 +1982,7 @@
     tslib "2.0.1"
 
 "@design-systems/cli-utils@link:packages/cli-utils":
-  version "4.15.3"
+  version "4.15.4"
   dependencies:
     find-up "5.0.0"
     npm-which "3.0.1"
@@ -1992,7 +1992,7 @@
     webpack "4.44.1"
 
 "@design-systems/cli@link:packages/cli":
-  version "4.15.3"
+  version "4.15.4"
   dependencies:
     "@design-systems/cli-utils" "link:packages/cli-utils"
     "@design-systems/core" "link:packages/core"
@@ -2007,7 +2007,7 @@
     update-check "1.5.4"
 
 "@design-systems/core@link:packages/core":
-  version "4.15.3"
+  version "4.15.4"
   dependencies:
     "@design-systems/build" "link:plugins/build"
     "@design-systems/bundle" "link:plugins/bundle"
@@ -2027,7 +2027,7 @@
     tslib "2.0.1"
 
 "@design-systems/create-command@link:plugins/create-command":
-  version "4.15.3"
+  version "4.15.4"
   dependencies:
     "@design-systems/cli-utils" "link:packages/cli-utils"
     "@design-systems/create" "link:packages/create"
@@ -2046,10 +2046,10 @@
     tslib "2.0.1"
 
 "@design-systems/create@link:packages/create":
-  version "4.15.3"
+  version "4.15.4"
 
 "@design-systems/dev@link:plugins/dev":
-  version "4.15.3"
+  version "4.15.4"
   dependencies:
     "@design-systems/cli-utils" "link:packages/cli-utils"
     "@design-systems/plugin" "link:packages/plugin"
@@ -2060,7 +2060,7 @@
     tslib "2.0.1"
 
 "@design-systems/eslint-config@link:packages/eslint-config":
-  version "4.15.3"
+  version "4.15.4"
   dependencies:
     "@design-systems/cli-utils" "link:packages/cli-utils"
     "@kendallgassner/eslint-plugin-package-json" "0.2.1"
@@ -2085,7 +2085,7 @@
     tslib "2.0.1"
 
 "@design-systems/lint@link:plugins/lint":
-  version "4.15.3"
+  version "4.15.4"
   dependencies:
     "@design-systems/cli-utils" "link:packages/cli-utils"
     "@design-systems/eslint-config" "link:packages/eslint-config"
@@ -2102,7 +2102,7 @@
     tslib "2.0.1"
 
 "@design-systems/load-config@link:packages/load-config":
-  version "4.15.3"
+  version "4.15.4"
   dependencies:
     "@design-systems/core" "link:packages/core"
     "@design-systems/plugin" "link:packages/plugin"
@@ -2116,7 +2116,7 @@
     tslib "2.0.1"
 
 "@design-systems/playroom@link:plugins/playroom":
-  version "4.15.3"
+  version "4.15.4"
   dependencies:
     "@babel/core" "^7.13.8"
     "@babel/register" "^7.13.8"
@@ -2136,14 +2136,14 @@
     webpack "4.44.1"
 
 "@design-systems/plugin@link:packages/plugin":
-  version "4.15.3"
+  version "4.15.4"
   dependencies:
     command-line-application "0.10.1"
     tslib "2.0.1"
     utility-types "3.10.0"
 
 "@design-systems/proof@link:plugins/proof":
-  version "4.15.3"
+  version "4.15.4"
   dependencies:
     "@babel/core" "^7.13.8"
     "@babel/plugin-transform-runtime" "^7.13.9"
@@ -2161,7 +2161,7 @@
     tslib "2.0.1"
 
 "@design-systems/size@link:plugins/size":
-  version "4.15.3"
+  version "4.15.4"
   dependencies:
     "@design-systems/cli-utils" "link:packages/cli-utils"
     "@design-systems/plugin" "link:packages/plugin"
@@ -2192,7 +2192,7 @@
     webpack-sources "1.4.3"
 
 "@design-systems/storybook@link:plugins/storybook":
-  version "4.15.3"
+  version "4.15.4"
   dependencies:
     "@alisowski/storybook-addon-notes" "^6.0.1"
     "@babel/core" "^7.13.8"
@@ -2210,7 +2210,7 @@
     "@storybook/react" "^6.2.9"
     "@storybook/theming" "^6.2.9"
     babel-loader "8.1.0"
-    core-js "3.6.5"
+    core-js "3.38.1"
     dedent "0.7.0"
     fast-glob "3.2.5"
     get-port "5.1.1"
@@ -2226,7 +2226,7 @@
     webpack-filter-warnings-plugin "1.2.1"
 
 "@design-systems/stylelint-config@link:packages/stylelint-config":
-  version "4.15.3"
+  version "4.15.4"
   dependencies:
     stylelint-a11y "1.2.3"
     stylelint-config-css-modules "2.2.0"
@@ -2240,7 +2240,7 @@
     tslib "2.0.1"
 
 "@design-systems/test@link:plugins/test":
-  version "4.15.3"
+  version "4.15.4"
   dependencies:
     "@babel/core" "^7.13.8"
     "@design-systems/build" "link:plugins/build"
@@ -2260,7 +2260,7 @@
     tslib "2.0.1"
 
 "@design-systems/update@link:plugins/update":
-  version "4.15.3"
+  version "4.15.4"
   dependencies:
     "@design-systems/cli-utils" "link:packages/cli-utils"
     "@design-systems/plugin" "link:packages/plugin"
@@ -2274,7 +2274,7 @@
     tslib "2.0.1"
 
 "@design-systems/utils@link:packages/utils":
-  version "4.15.3"
+  version "4.15.4"
   dependencies:
     "@babel/runtime" "^7.13.9"
     clsx "^1.0.4"
@@ -9158,10 +9158,10 @@ core-js@2.4.1:
   resolved "https://registry.yarnpkg.com/core-js/-/core-js-2.4.1.tgz#4de911e667b0eae9124e34254b53aea6fc618d3e"
   integrity sha1-TekR5mew6ukSTjQlS1OupvxhjT4=
 
-core-js@3.6.5, core-js@^3.6.5:
-  version "3.6.5"
-  resolved "https://registry.yarnpkg.com/core-js/-/core-js-3.6.5.tgz#7395dc273af37fb2e50e9bd3d9fe841285231d1a"
-  integrity sha512-vZVEEwZoIsI+vPEuoF9Iqf5H7/M3eeQqWlQnYa8FSKKePuYTf5MWnxb5SDAzCa60b3JBRS5g9b+Dq7b1y/RCrA==
+core-js@3.38.1:
+  version "3.38.1"
+  resolved "https://registry.yarnpkg.com/core-js/-/core-js-3.38.1.tgz#aa375b79a286a670388a1a363363d53677c0383e"
+  integrity sha512-OP35aUorbU3Zvlx7pjsFdu1rGNnD4pgw/CWoYzRY3t2EzoVT7shKHY1dlAy3f41cGIO7ZDPQimhGFTlEYkG/Hw==
 
 core-js@^2.0.0, core-js@^2.4.0:
   version "2.6.11"
@@ -9172,6 +9172,11 @@ core-js@^3.0.1, core-js@^3.0.4:
   version "3.6.2"
   resolved "https://registry.yarnpkg.com/core-js/-/core-js-3.6.2.tgz#2799ea1a59050f0acf50dfe89b916d6503b16caa"
   integrity sha512-hIE5dXkRzRvnZ5vhkRfQxUvDxQZmD9oueA08jDYRBKJHx+VIl/Pne/e0A4x9LObEEthC/TqiZybUoNM4tRgnKg==
+
+core-js@^3.6.5:
+  version "3.6.5"
+  resolved "https://registry.yarnpkg.com/core-js/-/core-js-3.6.5.tgz#7395dc273af37fb2e50e9bd3d9fe841285231d1a"
+  integrity sha512-vZVEEwZoIsI+vPEuoF9Iqf5H7/M3eeQqWlQnYa8FSKKePuYTf5MWnxb5SDAzCa60b3JBRS5g9b+Dq7b1y/RCrA==
 
 core-js@^3.8.2:
   version "3.11.3"
