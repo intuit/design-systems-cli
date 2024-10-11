@@ -29,13 +29,13 @@
     "eslint-formatter-pretty": "4.0.0",
     "fast-glob": "3.2.5",
     "get-monorepo-packages": "1.2.0",
-    "stylelint": "13.7.0",
+    "stylelint": "16.10.0",
     "stylelint-formatter-github": "^1.0.0",
-    "stylelint-formatter-pretty": "2.1.0",
+    "stylelint-formatter-pretty": "4.0.1",
     "tslib": "2.0.1"
   },
   "devDependencies": {
     "@types/eslint": "7.2.2",
-    "@types/stylelint": "9.10.1"
+    "@types/stylelint": "14.0.0"
   }
 }
