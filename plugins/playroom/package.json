@@ -33,7 +33,7 @@
     "playroom": "0.25.0",
     "react-element-to-jsx-string": "14.3.2",
     "style-loader": "1.2.1",
-    "tslib": "2.0.1",
+    "tslib": "2.8.0",
     "webpack": "4.44.1"
   }
 }
