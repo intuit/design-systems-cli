@@ -37,7 +37,7 @@
     "@design-systems/test": "link:../../plugins/test",
     "@design-systems/update": "link:../../plugins/update",
     "import-cwd": "3.0.0",
-    "tslib": "2.0.1"
+    "tslib": "2.8.0"
   },
   "keywords": [
     "cli"
