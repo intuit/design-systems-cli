@@ -27,6 +27,7 @@ async function getPackageJson() {
 /** Warn the user if the installed CLI version is less than the latest. */
 async function checkForNewerVersion() {
   if (isCi) {
+    log.debug('test');
     return;
   }
 
