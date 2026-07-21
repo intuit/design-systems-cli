@@ -35,19 +35,42 @@ export const FocusLock = React.forwardRef<
 >(({ active, onBlur = () => undefined, ...html }, ref) => {
   const trap = React.useRef<HTMLDivElement>(null);
 
-  type TrapCurrent = NonNullable<typeof trap.current>;
+  const timeoutRef = React.useRef<ReturnType<typeof setTimeout>>();
+
+  // cancel any pending focus change
+  const cancelPendingFocus = React.useCallback(() => {
+    if (timeoutRef.current !== undefined) {
+      clearTimeout(timeoutRef.current);
+      timeoutRef.current = undefined;
+    }
+  }, []);
 
   /** Trap the focus within the locks if active */
-  const trapFocus = () => {
-    if (active && !focusInside(trap.current as TrapCurrent)) {
-      setTimeout(
-        () => moveFocusInside(trap.current as TrapCurrent, document.activeElement as HTMLInputElement),
-        50
-      );
-    }
-  };
+  const trapFocus = React.useCallback(() => {
+    cancelPendingFocus();
 
-  React.useEffect(trapFocus);
+    if (!active || !trap.current || focusInside(trap.current)) {
+      return;
+    }
+
+    timeoutRef.current = setTimeout(() => {
+      const currentTrap = trap.current;
+      timeoutRef.current = undefined;
+
+      if (active && currentTrap && !focusInside(currentTrap)) {
+        moveFocusInside(
+          currentTrap,
+          document.activeElement as HTMLInputElement
+        );
+      }
+    }, 50);
+  }, [active, cancelPendingFocus]);
+
+  React.useEffect(() => {
+    trapFocus();
+
+    return cancelPendingFocus;
+  }, [cancelPendingFocus, trapFocus]);
 
   return (
     <>
