@@ -11,17 +11,16 @@ aliases:
   # Circle related commands
   - &restore-cache
     keys:
-      # Find a cache corresponding to this specific package.json checksum
+      # Find a cache corresponding to this specific lockfile checksum
       # when this file is changed, this key will fail
-      - design-systems-cli-{{ checksum "yarn.lock" }}-{{ checksum ".circleci/config.yml" }}
-      - design-systems-cli-{{ checksum "yarn.lock" }}
+      - design-systems-cli-v2-{{ checksum "yarn.lock" }}-{{ checksum ".circleci/config.yml" }}
+      - design-systems-cli-v2-{{ checksum "yarn.lock" }}
       # Find the most recent cache used from any branch
-      - design-systems-cli-
+      - design-systems-cli-v2-
   - &save-cache
-    key: design-systems-cli-{{ checksum "yarn.lock" }}-{{ checksum ".circleci/config.yml" }}
+    key: design-systems-cli-v2-{{ checksum "yarn.lock" }}-{{ checksum ".circleci/config.yml" }}
     paths:
       - ~/.cache/yarn
-      - node_modules
   # Yarn commands
   - &yarn
     name: Install Dependencies
@@ -81,7 +80,7 @@ jobs:
           at: ~/design-systems-cli
       - run:
           name: Check PR for semantic version label
-          command: yarn auto pr-check --pr $CHANGE_ID --url $CIRCLE_BUILD_URL
+          command: yarn auto pr-check --url "$CIRCLE_BUILD_URL"
 
   release:
     <<: *defaults
