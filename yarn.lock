@@ -21,13 +21,13 @@
   resolved "https://registry.yarnpkg.com/@atomist/slack-messages/-/slack-messages-1.2.2.tgz#782d31936a0363e4458272bcc8fbe4f7651292ee"
   integrity sha512-K1kQv1BZVtMXQqdpNZt9Pgh85KwamsWX9gYyq1xG4cpyb+EacfMiNfumrju16piFXanCUrCR0P1DowPjV2qV/A==
 
-"@auto-it/all-contributors@10.36.5":
-  version "10.36.5"
-  resolved "https://registry.yarnpkg.com/@auto-it/all-contributors/-/all-contributors-10.36.5.tgz#9a69585f397192c7a3ef4b2dce2999f487dd8067"
-  integrity sha512-T2TJH/6J9P3kdpsjUh3JpwH39TiId85TbF7mp5Ldj3KCFWOkEqRw60/GQVc/Zuh6D4f9fpal/gUe4ViHXfgbYA==
+"@auto-it/all-contributors@11.3.6":
+  version "11.3.6"
+  resolved "https://registry.yarnpkg.com/@auto-it/all-contributors/-/all-contributors-11.3.6.tgz#dab224c9b548f5aef1a5bc4d94e8d4182db27843"
+  integrity sha512-y1JGSs8MUr8lPsdziVhCan/dVhX0FmYYxjbLCJR4Po3Nc14d8kNzuKc5coCj66L40sCrjQHs4KyxoRxTbdRADg==
   dependencies:
-    "@auto-it/bot-list" "10.36.5"
-    "@auto-it/core" "10.36.5"
+    "@auto-it/bot-list" "11.3.6"
+    "@auto-it/core" "11.3.6"
     "@octokit/rest" "^18.12.0"
     all-contributors-cli "6.19.0"
     anymatch "^3.1.1"
@@ -43,6 +43,11 @@
   version "10.36.5"
   resolved "https://registry.yarnpkg.com/@auto-it/bot-list/-/bot-list-10.36.5.tgz#bd83300f315ef8df97e5c28bc0bf44a9401b1708"
   integrity sha512-nEXcOa8UVHYzVdszPKTGldoE2h1mI2RvrHpqtOpjTNuUOy3eb8QuaAu8nSI2AsUPEWFToPLgdxgz90iAeDInRg==
+
+"@auto-it/bot-list@11.3.6":
+  version "11.3.6"
+  resolved "https://registry.yarnpkg.com/@auto-it/bot-list/-/bot-list-11.3.6.tgz#9e1e040e947591595f3d2869397e88b1e47c4d50"
+  integrity sha512-BtFOhGv+V47TAYr77uiFz0l807g655Wcui/1KOJpqUYvF07MjG3+D8Ob4sMl8ewDQfgtAMTJKJF3S7AUdKPQng==
 
 "@auto-it/core@10.36.5":
   version "10.36.5"
@@ -89,13 +94,59 @@
     typescript-memoize "^1.0.0-alpha.3"
     url-join "^4.0.0"
 
-"@auto-it/first-time-contributor@10.36.5":
-  version "10.36.5"
-  resolved "https://registry.yarnpkg.com/@auto-it/first-time-contributor/-/first-time-contributor-10.36.5.tgz#3795d5d44bfef613f784841df0df0efd81700ae0"
-  integrity sha512-kNpQdz6qPrm+8ubCogTTYiGj/2oJI8pfVxta1U6vhz7LCs2umvY3QbR2g46Sl2fsBsL+ZQ8cm80Re8ndCruF9g==
+"@auto-it/core@11.3.6":
+  version "11.3.6"
+  resolved "https://registry.yarnpkg.com/@auto-it/core/-/core-11.3.6.tgz#1ddececa517f43218cf27029fb6f2b1f7a18c651"
+  integrity sha512-OE7feN8pbpcSCiWaOHYah+oXsinhJ6OfDrsLyPywNSfEPjal4q18ss2iQX1zTmrFIEjDSmptdjqlmwx+dm/8wQ==
   dependencies:
-    "@auto-it/bot-list" "10.36.5"
-    "@auto-it/core" "10.36.5"
+    "@auto-it/bot-list" "11.3.6"
+    "@endemolshinegroup/cosmiconfig-typescript-loader" "^3.0.2"
+    "@octokit/core" "^3.5.1"
+    "@octokit/plugin-enterprise-compatibility" "1.3.0"
+    "@octokit/plugin-retry" "^3.0.9"
+    "@octokit/plugin-throttling" "^3.6.2"
+    "@octokit/rest" "^18.12.0"
+    await-to-js "^3.0.0"
+    chalk "^4.0.0"
+    cosmiconfig "7.0.0"
+    deepmerge "^4.0.0"
+    dotenv "^8.0.0"
+    endent "^2.1.0"
+    enquirer "^2.3.4"
+    env-ci "^5.0.1"
+    fast-glob "^3.1.1"
+    fp-ts "^2.5.3"
+    fromentries "^1.2.0"
+    gitlog "^4.0.3"
+    https-proxy-agent "^5.0.0"
+    import-cwd "^3.0.0"
+    import-from "^3.0.0"
+    io-ts "^2.1.2"
+    lodash.chunk "^4.2.0"
+    log-symbols "^4.0.0"
+    node-fetch "2.6.7"
+    parse-author "^2.0.0"
+    parse-github-url "1.0.2"
+    pretty-ms "^7.0.0"
+    requireg "^0.2.2"
+    semver "^7.0.0"
+    signale "^1.4.0"
+    tapable "^2.2.0"
+    terminal-link "^2.1.1"
+    tinycolor2 "^1.4.1"
+    ts-node "^10.9.1"
+    tslib "2.1.0"
+    type-fest "^0.21.1"
+    typescript-memoize "^1.0.0-alpha.3"
+    url-join "^4.0.0"
+
+"@auto-it/first-time-contributor@11.3.6":
+  version "11.3.6"
+  resolved "https://registry.yarnpkg.com/@auto-it/first-time-contributor/-/first-time-contributor-11.3.6.tgz#920e312ba12d71dd0b60d7cdb7ecd5527c1382e6"
+  integrity sha512-okT0uyc1wOOq0Olnck8oDoKqlBkzt31PsFUdfiYzRMZMEd0p6bRB45I3GAkZHjtnqOdC7EtfqTcSG+7NPV0AoQ==
+  dependencies:
+    "@auto-it/bot-list" "11.3.6"
+    "@auto-it/core" "11.3.6"
     array.prototype.flatmap "^1.2.2"
     endent "^2.1.0"
     tslib "2.1.0"
@@ -113,18 +164,18 @@
     tslib "2.1.0"
     url-join "^4.0.0"
 
-"@auto-it/npm@10.36.5":
-  version "10.36.5"
-  resolved "https://registry.yarnpkg.com/@auto-it/npm/-/npm-10.36.5.tgz#c6398b7b4d7d57d649bc5e4e63e87780f3be1bd4"
-  integrity sha512-Tct2LxqECJR/kG2+yAlJFi5NtE+JqfoO48hGOAk94sZvET29jWN8hln1eHPI2SIA1a1VOddQsSHbCEbGzrgTeg==
+"@auto-it/npm@11.3.6":
+  version "11.3.6"
+  resolved "https://registry.yarnpkg.com/@auto-it/npm/-/npm-11.3.6.tgz#27fc0f8625c6d0aba7cd3400152089219ea0f1a9"
+  integrity sha512-yKYvlBcIRIOlFLJFpAq2ipdGihqyxAf5KZ9YeDxF/xN54XUV5A5kQqohSpAckxpWKBwxPIKODdLyY5Y0Tm0qfQ==
   dependencies:
-    "@auto-it/core" "10.36.5"
-    "@auto-it/package-json-utils" "10.36.5"
+    "@auto-it/core" "11.3.6"
+    "@auto-it/package-json-utils" "11.3.6"
     await-to-js "^3.0.0"
     endent "^2.1.0"
     env-ci "^5.0.1"
     fp-ts "^2.5.3"
-    get-monorepo-packages "^1.1.0"
+    get-monorepo-packages "^1.3.0"
     io-ts "^2.1.2"
     registry-url "^5.1.0"
     semver "^7.0.0"
@@ -133,21 +184,21 @@
     url-join "^4.0.0"
     user-home "^2.0.0"
 
-"@auto-it/package-json-utils@10.36.5":
-  version "10.36.5"
-  resolved "https://registry.yarnpkg.com/@auto-it/package-json-utils/-/package-json-utils-10.36.5.tgz#a29bb06a545377419ec002697e2024608debbedf"
-  integrity sha512-rS0RjNj3dO/YUsyTdXxmjzvfdaXBQaChxQUful2LCHMoFPuAzlh7Sk8HGR/h1tp5NVw3998GwaglCENSpEIFYA==
+"@auto-it/package-json-utils@11.3.6":
+  version "11.3.6"
+  resolved "https://registry.yarnpkg.com/@auto-it/package-json-utils/-/package-json-utils-11.3.6.tgz#6ecdb0e8dc7ec6dd3919d91c12223cc079661b7e"
+  integrity sha512-j1GT9alk4kJoyyuAxqqHD7okHQjJuJXeAMTMRt4ZpjDjElPuPbxvzjM+QZNuxaMTyjxRoT2YbFyx0uIt7pqXlQ==
   dependencies:
     parse-author "^2.0.0"
     parse-github-url "1.0.2"
 
-"@auto-it/released@10.36.5":
-  version "10.36.5"
-  resolved "https://registry.yarnpkg.com/@auto-it/released/-/released-10.36.5.tgz#61dd553047b03fb4d0c41bdb6c14862cf1660a7c"
-  integrity sha512-dbSxtnjSlPVy1D/BBZw2DW3aSVVvujebS32zaiPzy6gsvvkwlzavpm1iuG5jfmdo5Ai490CGcIePMWbhZ7lqXA==
+"@auto-it/released@11.3.6":
+  version "11.3.6"
+  resolved "https://registry.yarnpkg.com/@auto-it/released/-/released-11.3.6.tgz#6c70f91603cff145664c4a7e5fe63bdf5f8e3924"
+  integrity sha512-mhe1QjEylUjONE24LUij3A0BCXvadABhbyPS+Jxq6hFS5Rh/gkOmxSuCa1HpO6DSsVdM0gOSF8ZYhUJ/9vHT8A==
   dependencies:
-    "@auto-it/bot-list" "10.36.5"
-    "@auto-it/core" "10.36.5"
+    "@auto-it/bot-list" "11.3.6"
+    "@auto-it/core" "11.3.6"
     deepmerge "^4.0.0"
     fp-ts "^2.5.3"
     io-ts "^2.1.2"
@@ -166,6 +217,17 @@
     io-ts "^2.1.2"
     node-fetch "2.6.7"
     tslib "2.1.0"
+
+"@auto-it/version-file@11.3.6":
+  version "11.3.6"
+  resolved "https://registry.yarnpkg.com/@auto-it/version-file/-/version-file-11.3.6.tgz#8fc537d92cb767e15b4579891c821cb9c4260171"
+  integrity sha512-dtf2T02ryIdX1GWQ9jeLW7EQj1IOBNFQX4BGS2uAddjszsd65hYNoRFMzQ+T/tr7j5Fn9RDaxXLamwYfaSPn9Q==
+  dependencies:
+    "@auto-it/core" "11.3.6"
+    fp-ts "^2.5.3"
+    io-ts "^2.1.2"
+    semver "^7.0.0"
+    tslib "1.10.0"
 
 "@babel/cli@^7.8.3":
   version "7.13.0"
@@ -1914,8 +1976,15 @@
     sketch-constants "^1.1.0"
     sketchapp-json-plugin "^0.1.2"
 
+"@cspotcode/source-map-support@^0.8.0":
+  version "0.8.1"
+  resolved "https://registry.yarnpkg.com/@cspotcode/source-map-support/-/source-map-support-0.8.1.tgz#00629c35a688e05a88b1cda684fb9d5e73f000a1"
+  integrity sha512-IchNf6dN4tHoMFIn/7OE8LWZ19Y6q/67Bmf6vnGREv8RSbBVb9LPJxEcnwrcwX6ixSvaiGoomAUvu4YSxXrVgw==
+  dependencies:
+    "@jridgewell/trace-mapping" "0.3.9"
+
 "@design-systems/build@link:plugins/build":
-  version "4.15.3"
+  version "4.15.4"
   dependencies:
     "@babel/code-frame" "^7.12.13"
     "@babel/core" "^7.13.8"
@@ -1957,7 +2026,7 @@
     typescript "4.2.2"
 
 "@design-systems/bundle@link:plugins/bundle":
-  version "4.15.3"
+  version "4.15.4"
   dependencies:
     "@design-systems/build" "link:plugins/build"
     "@design-systems/cli-utils" "link:packages/cli-utils"
@@ -1973,7 +2042,7 @@
     webpack "4.44.1"
 
 "@design-systems/clean@link:plugins/clean":
-  version "4.15.3"
+  version "4.15.4"
   dependencies:
     "@design-systems/cli-utils" "link:packages/cli-utils"
     "@design-systems/plugin" "link:packages/plugin"
@@ -1982,7 +2051,7 @@
     tslib "2.0.1"
 
 "@design-systems/cli-utils@link:packages/cli-utils":
-  version "4.15.3"
+  version "4.15.4"
   dependencies:
     find-up "5.0.0"
     npm-which "3.0.1"
@@ -1992,7 +2061,7 @@
     webpack "4.44.1"
 
 "@design-systems/cli@link:packages/cli":
-  version "4.15.3"
+  version "4.15.4"
   dependencies:
     "@design-systems/cli-utils" "link:packages/cli-utils"
     "@design-systems/core" "link:packages/core"
@@ -2007,7 +2076,7 @@
     update-check "1.5.4"
 
 "@design-systems/core@link:packages/core":
-  version "4.15.3"
+  version "4.15.4"
   dependencies:
     "@design-systems/build" "link:plugins/build"
     "@design-systems/bundle" "link:plugins/bundle"
@@ -2027,7 +2096,7 @@
     tslib "2.0.1"
 
 "@design-systems/create-command@link:plugins/create-command":
-  version "4.15.3"
+  version "4.15.4"
   dependencies:
     "@design-systems/cli-utils" "link:packages/cli-utils"
     "@design-systems/create" "link:packages/create"
@@ -2046,10 +2115,10 @@
     tslib "2.0.1"
 
 "@design-systems/create@link:packages/create":
-  version "4.15.3"
+  version "4.15.4"
 
 "@design-systems/dev@link:plugins/dev":
-  version "4.15.3"
+  version "4.15.4"
   dependencies:
     "@design-systems/cli-utils" "link:packages/cli-utils"
     "@design-systems/plugin" "link:packages/plugin"
@@ -2060,7 +2129,7 @@
     tslib "2.0.1"
 
 "@design-systems/eslint-config@link:packages/eslint-config":
-  version "4.15.3"
+  version "4.15.4"
   dependencies:
     "@design-systems/cli-utils" "link:packages/cli-utils"
     "@kendallgassner/eslint-plugin-package-json" "0.2.1"
@@ -2085,7 +2154,7 @@
     tslib "2.0.1"
 
 "@design-systems/lint@link:plugins/lint":
-  version "4.15.3"
+  version "4.15.4"
   dependencies:
     "@design-systems/cli-utils" "link:packages/cli-utils"
     "@design-systems/eslint-config" "link:packages/eslint-config"
@@ -2102,7 +2171,7 @@
     tslib "2.0.1"
 
 "@design-systems/load-config@link:packages/load-config":
-  version "4.15.3"
+  version "4.15.4"
   dependencies:
     "@design-systems/core" "link:packages/core"
     "@design-systems/plugin" "link:packages/plugin"
@@ -2116,7 +2185,7 @@
     tslib "2.0.1"
 
 "@design-systems/playroom@link:plugins/playroom":
-  version "4.15.3"
+  version "4.15.4"
   dependencies:
     "@babel/core" "^7.13.8"
     "@babel/register" "^7.13.8"
@@ -2136,14 +2205,14 @@
     webpack "4.44.1"
 
 "@design-systems/plugin@link:packages/plugin":
-  version "4.15.3"
+  version "4.15.4"
   dependencies:
     command-line-application "0.10.1"
     tslib "2.0.1"
     utility-types "3.10.0"
 
 "@design-systems/proof@link:plugins/proof":
-  version "4.15.3"
+  version "4.15.4"
   dependencies:
     "@babel/core" "^7.13.8"
     "@babel/plugin-transform-runtime" "^7.13.9"
@@ -2161,7 +2230,7 @@
     tslib "2.0.1"
 
 "@design-systems/size@link:plugins/size":
-  version "4.15.3"
+  version "4.15.4"
   dependencies:
     "@design-systems/cli-utils" "link:packages/cli-utils"
     "@design-systems/plugin" "link:packages/plugin"
@@ -2192,7 +2261,7 @@
     webpack-sources "1.4.3"
 
 "@design-systems/storybook@link:plugins/storybook":
-  version "4.15.3"
+  version "4.15.4"
   dependencies:
     "@alisowski/storybook-addon-notes" "^6.0.1"
     "@babel/core" "^7.13.8"
@@ -2226,7 +2295,7 @@
     webpack-filter-warnings-plugin "1.2.1"
 
 "@design-systems/stylelint-config@link:packages/stylelint-config":
-  version "4.15.3"
+  version "4.15.4"
   dependencies:
     stylelint-a11y "1.2.3"
     stylelint-config-css-modules "2.2.0"
@@ -2240,7 +2309,7 @@
     tslib "2.0.1"
 
 "@design-systems/test@link:plugins/test":
-  version "4.15.3"
+  version "4.15.4"
   dependencies:
     "@babel/core" "^7.13.8"
     "@design-systems/build" "link:plugins/build"
@@ -2260,7 +2329,7 @@
     tslib "2.0.1"
 
 "@design-systems/update@link:plugins/update":
-  version "4.15.3"
+  version "4.15.4"
   dependencies:
     "@design-systems/cli-utils" "link:packages/cli-utils"
     "@design-systems/plugin" "link:packages/plugin"
@@ -2274,7 +2343,7 @@
     tslib "2.0.1"
 
 "@design-systems/utils@link:packages/utils":
-  version "4.15.3"
+  version "4.15.4"
   dependencies:
     "@babel/runtime" "^7.13.9"
     clsx "^1.0.4"
@@ -2642,6 +2711,24 @@
     "@types/node" "*"
     "@types/yargs" "^15.0.0"
     chalk "^4.0.0"
+
+"@jridgewell/resolve-uri@^3.0.3":
+  version "3.1.2"
+  resolved "https://registry.yarnpkg.com/@jridgewell/resolve-uri/-/resolve-uri-3.1.2.tgz#7a0ee601f60f99a20c7c7c5ff0c80388c1189bd6"
+  integrity sha512-bRISgCIjP20/tbWSPWMEi54QVPRZExkuD9lJL+UIxUKtwVJA8wW1Trb1jMs1RFXo1CBTNZ/5hpC9QvmKWdopKw==
+
+"@jridgewell/sourcemap-codec@^1.4.10":
+  version "1.5.5"
+  resolved "https://registry.yarnpkg.com/@jridgewell/sourcemap-codec/-/sourcemap-codec-1.5.5.tgz#6912b00d2c631c0d15ce1a7ab57cd657f2a8f8ba"
+  integrity sha512-cYQ9310grqxueWbl+WuIUIaiUaDcj7WOq5fVhEljNVgRfOUhY9fy2zTvfoqWsnebh8Sl70VScFbICvJnLKB0Og==
+
+"@jridgewell/trace-mapping@0.3.9":
+  version "0.3.9"
+  resolved "https://registry.yarnpkg.com/@jridgewell/trace-mapping/-/trace-mapping-0.3.9.tgz#6534fd5933a53ba7cbf3a17615e273a0d1273ff9"
+  integrity sha512-3Belt6tdc8bPgAtbcmdtNJlirVoTmEb5e2gC94PnkwEW9jI6CAHUeoG85tjWP5WquqfavoMtMwiG4P926ZKKuQ==
+  dependencies:
+    "@jridgewell/resolve-uri" "^3.0.3"
+    "@jridgewell/sourcemap-codec" "^1.4.10"
 
 "@kendallgassner/eslint-plugin-package-json@0.2.1":
   version "0.2.1"
@@ -5016,6 +5103,26 @@
   resolved "https://registry.yarnpkg.com/@tootallnate/once/-/once-1.1.2.tgz#ccb91445360179a04e7fe6aff78c00ffc1eeaf82"
   integrity sha512-RbzJvlNzmRq5c3O09UipeuXno4tA1FE6ikOjxZK0tuxVv3412l64l5t1W5pj4+rJq9vpkm/kwiR07aZXnsKPxw==
 
+"@tsconfig/node10@^1.0.7":
+  version "1.0.12"
+  resolved "https://registry.yarnpkg.com/@tsconfig/node10/-/node10-1.0.12.tgz#be57ceac1e4692b41be9de6be8c32a106636dba4"
+  integrity sha512-UCYBaeFvM11aU2y3YPZ//O5Rhj+xKyzy7mvcIoAjASbigy8mHMryP5cK7dgjlz2hWxh1g5pLw084E0a/wlUSFQ==
+
+"@tsconfig/node12@^1.0.7":
+  version "1.0.11"
+  resolved "https://registry.yarnpkg.com/@tsconfig/node12/-/node12-1.0.11.tgz#ee3def1f27d9ed66dac6e46a295cffb0152e058d"
+  integrity sha512-cqefuRsh12pWyGsIoBKJA9luFu3mRxCA+ORZvA4ktLSzIuCUtWVxGIuXigEwO5/ywWFMZ2QEGKWvkZG1zDMTag==
+
+"@tsconfig/node14@^1.0.0":
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/@tsconfig/node14/-/node14-1.0.3.tgz#e4386316284f00b98435bf40f72f75a09dabf6c1"
+  integrity sha512-ysT8mhdixWK6Hw3i1V2AeRqZ5WfXg1G43mqoYlM2nc6388Fq5jcXyr5mRsqViLx/GJYdoL0bfXD8nmF+Zn/Iow==
+
+"@tsconfig/node16@^1.0.2":
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/@tsconfig/node16/-/node16-1.0.4.tgz#0b92dcc0cc1c81f6f306a381f28e31b1a56536e9"
+  integrity sha512-vxhUy4J8lyeyinH7Azl1pdd43GJhZH/tP2weN8TntQblOY+A0XbT8DJk1/oCPuOOyg/Ja757rG0CgHcWC8OfMA==
+
 "@types/anymatch@*":
   version "1.3.1"
   resolved "https://registry.yarnpkg.com/@types/anymatch/-/anymatch-1.3.1.tgz#336badc1beecb9dacc38bea2cf32adf627a8421a"
@@ -6298,6 +6405,13 @@ acorn-walk@^7.1.1:
   resolved "https://registry.yarnpkg.com/acorn-walk/-/acorn-walk-7.1.1.tgz#345f0dffad5c735e7373d2fec9a1023e6a44b83e"
   integrity sha512-wdlPY2tm/9XBr7QkKlq0WQVgiuGTX6YWPyRyBviSoScBuLfTVQhvwg6wJ369GJ/1nPfTLMfnrFIfjqVg6d+jQQ==
 
+acorn-walk@^8.1.1:
+  version "8.3.5"
+  resolved "https://registry.yarnpkg.com/acorn-walk/-/acorn-walk-8.3.5.tgz#8a6b8ca8fc5b34685af15dabb44118663c296496"
+  integrity sha512-HEHNfbars9v4pgpW6SO1KSPkfoS0xVOM/9UzkJltjlsHZmJasxg8aXkuZa7SMf8vKGIBhpUsPluQSqhJFCqebw==
+  dependencies:
+    acorn "^8.11.0"
+
 acorn@^6.2.1:
   version "6.4.0"
   resolved "https://registry.yarnpkg.com/acorn/-/acorn-6.4.0.tgz#b659d2ffbafa24baf5db1cdbb2c94a983ecd2784"
@@ -6317,6 +6431,11 @@ acorn@^7.3.1:
   version "7.4.0"
   resolved "https://registry.yarnpkg.com/acorn/-/acorn-7.4.0.tgz#e1ad486e6c54501634c6c397c5c121daa383607c"
   integrity sha512-+G7P8jJmCHr+S+cLfQxygbWhXy+8YTVGzAkpEbcLo2mLoL7tij/VG41QSHACSf5QgYRhMZYHuNc6drJaO0Da+w==
+
+acorn@^8.11.0, acorn@^8.4.1:
+  version "8.17.0"
+  resolved "https://registry.yarnpkg.com/acorn/-/acorn-8.17.0.tgz#1785adb84faf8d8add10369b93826fc2bd08f1fe"
+  integrity sha512-xRQbDb9BnwDafYNn6Vwl839DYVjqXYb1XVGtWAZ1kcDc6iwAL4hg3B1dZlRiuENFeO2H53gFG3in621AdERVAg==
 
 acorn@^8.2.4:
   version "8.5.0"
@@ -6942,14 +7061,15 @@ author-regex@^1.0.0:
   resolved "https://registry.yarnpkg.com/author-regex/-/author-regex-1.0.0.tgz#d08885be6b9bbf9439fe087c76287245f0a81450"
   integrity sha1-0IiFvmubv5Q5/gh8dihyRfCoFFA=
 
-auto@10.36.5:
-  version "10.36.5"
-  resolved "https://registry.yarnpkg.com/auto/-/auto-10.36.5.tgz#dd15c5d970a5d8c6b2821da26acb2db6fdfb884b"
-  integrity sha512-BKH2Vetv3Kkrd1COPnpvfm93+p5XlGjmg+EnBYyha6+bpXKUu1rwd3emr+5VLD32jkwoh5UnPJ0/PiMNGVB7vQ==
+auto@11.3.6:
+  version "11.3.6"
+  resolved "https://registry.yarnpkg.com/auto/-/auto-11.3.6.tgz#4cb2a61ac1e32825c13a254663c68270778e9b87"
+  integrity sha512-Db13X4WVNPzPtWKSoiOzhfW2g3zNUTDR1X3wkQPdIW21xtajwm5Taqg3BXWR2u7/45W0bU+6YykVgioNRwrwIw==
   dependencies:
-    "@auto-it/core" "10.36.5"
-    "@auto-it/npm" "10.36.5"
-    "@auto-it/released" "10.36.5"
+    "@auto-it/core" "11.3.6"
+    "@auto-it/npm" "11.3.6"
+    "@auto-it/released" "11.3.6"
+    "@auto-it/version-file" "11.3.6"
     await-to-js "^3.0.0"
     chalk "^4.0.0"
     command-line-application "^0.10.1"
@@ -12256,10 +12376,18 @@ get-intrinsic@^1.0.2:
     has "^1.0.3"
     has-symbols "^1.0.1"
 
-get-monorepo-packages@1.2.0, get-monorepo-packages@^1.1.0:
+get-monorepo-packages@1.2.0:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/get-monorepo-packages/-/get-monorepo-packages-1.2.0.tgz#3eee88d30b11a5f65955dec6ae331958b2a168e4"
   integrity sha512-aDP6tH+eM3EuVSp3YyCutOcFS4Y9AhRRH9FAd+cjtR/g63Hx+DCXdKoP1ViRPUJz5wm+BOEXB4FhoffGHxJ7jQ==
+  dependencies:
+    globby "^7.1.1"
+    load-json-file "^4.0.0"
+
+get-monorepo-packages@^1.3.0:
+  version "1.3.0"
+  resolved "https://registry.yarnpkg.com/get-monorepo-packages/-/get-monorepo-packages-1.3.0.tgz#4fd82bff2290765b9ef2e08856c9f1e63f21b5eb"
+  integrity sha512-A/s881nNcKhoM7RgkvYFTOtGO+dy4EWbyRaatncPEhhlJAaZRlpfHwuT68p5GJenEt81nnjJOwGg0WKLkR5ZdQ==
   dependencies:
     globby "^7.1.1"
     load-json-file "^4.0.0"
@@ -23108,6 +23236,25 @@ ts-loader@8.0.17:
     micromatch "^4.0.0"
     semver "^7.3.4"
 
+ts-node@^10.9.1:
+  version "10.9.2"
+  resolved "https://registry.yarnpkg.com/ts-node/-/ts-node-10.9.2.tgz#70f021c9e185bccdca820e26dc413805c101c71f"
+  integrity sha512-f0FFpIdcHgn8zcPSbf1dRevwt047YMnaiJM3u2w2RewrB+fob/zePZcrOyQoLMMO7aBIddLcQIEK5dYjkLnGrQ==
+  dependencies:
+    "@cspotcode/source-map-support" "^0.8.0"
+    "@tsconfig/node10" "^1.0.7"
+    "@tsconfig/node12" "^1.0.7"
+    "@tsconfig/node14" "^1.0.0"
+    "@tsconfig/node16" "^1.0.2"
+    acorn "^8.4.1"
+    acorn-walk "^8.1.1"
+    arg "^4.1.0"
+    create-require "^1.1.0"
+    diff "^4.0.1"
+    make-error "^1.1.1"
+    v8-compile-cache-lib "^3.0.1"
+    yn "3.1.1"
+
 ts-node@^9, ts-node@^9.1.1:
   version "9.1.1"
   resolved "https://registry.yarnpkg.com/ts-node/-/ts-node-9.1.1.tgz#51a9a450a3e959401bda5f004a72d54b936d376d"
@@ -23876,6 +24023,11 @@ uuid@^8.0.0:
   version "8.3.0"
   resolved "https://registry.yarnpkg.com/uuid/-/uuid-8.3.0.tgz#ab738085ca22dc9a8c92725e459b1d507df5d6ea"
   integrity sha512-fX6Z5o4m6XsXBdli9g7DtWgAx+osMsRRZFKma1mIUsLCz6vRvv+pz5VNbyu9UEDzpMWulZfvpgb/cmDXVulYFQ==
+
+v8-compile-cache-lib@^3.0.1:
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/v8-compile-cache-lib/-/v8-compile-cache-lib-3.0.1.tgz#6336e8d71965cb3d35a1bbb7868445a7c05264bf"
+  integrity sha512-wa7YjyUGfNZngI/vtK0UHAN+lgDCxBPCylVXGp0zu59Fz5aiGtNXaq3DhIov063MorB+VfufLh3JlF2KdTK3xg==
 
 v8-compile-cache@^2.0.3:
   version "2.1.0"
